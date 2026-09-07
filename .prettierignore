@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+build
+package-lock.json
+lib/generated
+# Written by scripts/gen-content.mjs and scripts/gen-treatment-details.ts.
+# `npm run content:check-treatment-details` compares treatment-details.json with
+# the generator's output byte for byte, so reformatting it would fail the check.
+content/generated
+design_handoff_mone_beauty_clinic
+scraped_content

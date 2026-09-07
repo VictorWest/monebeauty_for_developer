@@ -1,0 +1,958 @@
+{
+  "Nav": {
+    "about": "About Us",
+    "instrumental": "Instrumental cosmetology",
+    "endospheres": "Endospheres therapy",
+    "laser": "Laser hair removal",
+    "rf": "Microneedle RF lifting",
+    "trichology": "Trichology",
+    "arosha": "Arosha",
+    "services": "Services",
+    "face": "Facial treatments",
+    "body": "Body treatments",
+    "serviceTricho": "Trichology",
+    "serviceLaser": "Laser hair removal",
+    "serviceRf": "Microneedle RF",
+    "eyebrows": "Eyebrows & lashes",
+    "packages": "Packages",
+    "giftCards": "Gift cards",
+    "catalog": "Catalog",
+    "bookTime": "Book time",
+    "injectable": "Injectable Aesthetic Medicine",
+    "consultation": "Medical Consultation"
+  },
+  "Header": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "account": "My account"
+  },
+  "Footer": {
+    "navHeading": "Navigation",
+    "contactsHeading": "Contacts",
+    "openingHours": "Opening hours",
+    "hours": "Mon–Sun: By agreement",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "cookies": "Cookies Policy"
+  },
+  "Common": {
+    "readMore": "Read more",
+    "seeMore": "See more",
+    "seeLess": "See less",
+    "allServices": "See more services",
+    "backToCatalog": "Back to catalog",
+    "bookTime": "Book time",
+    "book": "Book",
+    "bookThis": "Book this treatment",
+    "chooseServiceEyebrow": "Book online",
+    "chooseServiceHeading": "Select a service to book"
+  },
+  "Chat": {
+    "title": "Need help?",
+    "subtitle": "We're here for you.",
+    "open": "Open chat",
+    "close": "Close chat",
+    "welcome": "Ask about treatments, products, booking, or clinic details. I answer from approved Mone Beauty Clinic content only.",
+    "placeholder": "Type your question...",
+    "send": "Send message",
+    "thinking": "Thinking...",
+    "error": "Chat is temporarily unavailable. Please try again or contact the clinic directly.",
+    "assistantUnavailable": "The assistant is temporarily unavailable. You can retry, book online, contact the clinic, or ask a human to follow up.",
+    "retry": "Retry",
+    "bookOnline": "Book online",
+    "contactClinic": "Contact clinic",
+    "humanFollowUp": "Human follow-up",
+    "sources": "Sources",
+    "consent": "I agree that this chat can be stored so Mone Beauty Clinic can respond and improve service, in line with the <link>Privacy Policy</link>.",
+    "book": "Book this service",
+    "handoff": "Ask a human to follow up",
+    "sendHandoff": "Send handoff",
+    "handoffSent": "Your request has been sent to the clinic.",
+    "humanConnected": "A clinic team member can now reply here. New messages are also sent to the contact channel you provided.",
+    "humanPlaceholder": "Write a message to the clinic...",
+    "operatorFallback": "Mone Beauty Clinic",
+    "handoffError": "The handoff could not be sent. Please call or email the clinic.",
+    "handoffValidation": "Enter your name, a message, and at least one valid email address or phone number, then accept the consent checkbox.",
+    "cancel": "Cancel",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message for the clinic"
+    }
+  },
+  "CookieConsent": {
+    "title": "Cookie preferences",
+    "body": "We use essential storage for the site to work. Analytics loads only if you accept it.",
+    "accept": "Accept analytics",
+    "decline": "Decline"
+  },
+  "Home": {
+    "metaTitle": "Instrumental cosmetology & beauty care in Helsinki",
+    "metaDescription": "Mone Beauty Clinic — an aesthetic-medicine clinic in Helsinki: endospheres therapy, laser, RF lifting, trichology, facial & body care, and AROSHA products.",
+    "servicesEyebrow": "Services",
+    "servicesHeading": "Our services",
+    "featured": {
+      "endospheres": {
+        "title": "Endospheres therapy",
+        "description": "An innovative procedure that utilizes a unique device based on radiofrequency and vacuum technology. This treatment helps improve the skin, reduce cellulite, increase skin firmness and tone, and enhance microcirculation."
+      },
+      "arosha": {
+        "title": "Arosha Boost",
+        "description": "AROSHA has developed intensive products and programs that suit every customer's requirements. Depending on the desired result, the clinic team will help you choose the right protocol."
+      },
+      "facial": {
+        "title": "Facial treatments",
+        "description": "At our salon, we use the most effective hardware and cosmetic procedures for the face to highlight your natural beauty and give your skin a healthy, radiant appearance."
+      }
+    },
+    "aroshaEyebrow": "Arosha",
+    "aroshaHeading": "AROSHA",
+    "aroshaIntro": "AROSHA is the European leader in the worldwide number of body products sold in the area. The AROSHA brand is characterized by traditionally high Italian quality, ease of use and solves the most complex problems, with results that are visible after a short period of use.",
+    "heroEyebrow": "Aesthetic Medicine Clinic · Helsinki",
+    "heroBookCta": "Book online",
+    "heroServicesCta": "Our services",
+    "heroTrust": {
+      "byAppointment": {
+        "title": "By appointment",
+        "desc": "Book a time that suits you — Mon–Sun by agreement."
+      },
+      "location": {
+        "title": "Helsinki",
+        "desc": "Solvikinkatu 5, 00990 Helsinki."
+      },
+      "instrumental": {
+        "title": "Instrumental cosmetology",
+        "desc": "Endospheres, laser, RF lifting & trichology."
+      },
+      "products": {
+        "title": "AROSHA & DIXIDOX",
+        "desc": "Professional body & hair-care product lines."
+      }
+    }
+  },
+  "HomeEditorial": {
+    "hero": {
+      "eyebrow": "Aesthetic Medicine Clinic · Helsinki",
+      "heading": "Next-Generation Aesthetic Medicine",
+      "lead": "A comprehensive approach to beauty, skin health, and the natural harmony of face, body, and hair.",
+      "book": "Book online",
+      "services": "Explore services"
+    },
+    "facts": {
+      "location": {
+        "title": "Helsinki clinic",
+        "body": "Solvikinkatu 5, 00990 Helsinki"
+      },
+      "hours": {
+        "title": "By appointment",
+        "body": "Open Monday–Sunday by agreement"
+      },
+      "approach": {
+        "title": "Personal approach",
+        "body": "Care planned around every individual visit"
+      }
+    },
+    "standard": {
+      "eyebrow": "Standard of care",
+      "heading": "A considered clinic experience",
+      "items": [
+        {
+          "title": "Choose",
+          "body": "Explore approved treatment information and select the service that fits your visit."
+        },
+        {
+          "title": "Book",
+          "body": "Choose a service, then see the clinic's available appointment times."
+        },
+        {
+          "title": "Visit",
+          "body": "Receive your confirmation and meet the clinic team at the agreed time."
+        }
+      ]
+    },
+    "services": {
+      "eyebrow": "Clinical services",
+      "heading": "Care for face, body and hair",
+      "featured": "Featured treatment",
+      "stubs": {
+        "injectable": "Injectable Aesthetic Medicine",
+        "consultation": "Medical Consultation"
+      }
+    },
+    "technology": {
+      "eyebrow": "Clinical technology",
+      "heading": "Technology in experienced hands"
+    },
+    "products": {
+      "eyebrow": "Clinic selection",
+      "heading": "Professional care, continued at home",
+      "lead": "Explore the current AROSHA body-care and DIXIDOX De Luxe trichology collections.",
+      "all": "View full catalog"
+    },
+    "booking": {
+      "eyebrow": "Book online",
+      "heading": "Begin with one simple choice",
+      "lead": "Select a service here and continue directly to the clinic's live appointment times.",
+      "placeholder": "Select a service",
+      "cta": "Continue to booking"
+    },
+    "contact": {
+      "eyebrow": "Clinic standard",
+      "heading": "A calm, personal clinic in Helsinki",
+      "lead": "Mone Beauty Clinic brings together aesthetic medicine, advanced technologies, and attentive care. Visits are arranged by appointment."
+    }
+  },
+  "HomeReference": {
+    "nav": {
+      "treatments": "Treatments",
+      "technologies": "Technologies",
+      "products": "Products",
+      "standard": "Standard of Care",
+      "consultation": "Consultation",
+      "menu": "Menu"
+    },
+    "common": {
+      "bookOnline": "Book Online",
+      "book": "Book",
+      "readMore": "Read more"
+    },
+    "hero": {
+      "metaLeft": "Licensed Medical Clinic · Helsinki",
+      "metaRight": "Face · Body · Hair",
+      "title": "Next-generation aesthetic medicine.",
+      "lead": "A comprehensive approach to beauty, skin health, and the natural harmony of face, body, and hair. Mone is a licensed medical clinic offering safe, evidence-based procedures and personalized treatment plans.",
+      "explore": "Explore Treatments",
+      "imageAlt": "A clinician performing a treatment at Mone Beauty Clinic",
+      "tag": "Solvikinkatu 5, Helsinki",
+      "facts": {
+        "location": {
+          "label": "Location",
+          "value": "Solvikinkatu 5, 00990 Helsinki"
+        },
+        "hours": {
+          "label": "Hours",
+          "value": "By agreement · Booking 24/7"
+        },
+        "telephone": {
+          "label": "Telephone",
+          "value": "+358 40 129 3800"
+        }
+      }
+    },
+    "standard": {
+      "marker": "01 · Standard of Care",
+      "title": "Our standard of care",
+      "lead": "Every treatment is planned and performed to medical standards, following a defined clinical pathway from first consultation to ongoing maintenance.",
+      "items": {
+        "consultation": {
+          "title": "Consultation",
+          "body": "A structured medical consultation to review history, concerns, and expectations."
+        },
+        "diagnosis": {
+          "title": "Diagnosis",
+          "body": "Instrumental skin and scalp analysis to establish an accurate baseline."
+        },
+        "plan": {
+          "title": "Treatment plan",
+          "body": "A written plan defining procedures, their sequence, and the expected timeline."
+        },
+        "care": {
+          "title": "Care",
+          "body": "Professional home care and scheduled follow-up to maintain results."
+        }
+      },
+      "credentials": {
+        "licensed": "Licensed clinic",
+        "eu": "EU standards",
+        "evidence": "Evidence-based",
+        "personalized": "Personalized programs",
+        "gdpr": "GDPR confidentiality"
+      }
+    },
+    "areas": {
+      "marker": "Your journey to the best version of yourself",
+      "title": "Our treatment areas",
+      "lead": "Personalized solutions for your face, body, and hair. Care that delivers lasting results.",
+      "items": {
+        "face": {
+          "title": "Face",
+          "body": "Healthy skin, preserved youth, and natural beauty."
+        },
+        "body": {
+          "title": "Body",
+          "body": "Improved skin quality, body contouring, and comprehensive body care."
+        },
+        "hair": {
+          "title": "Hair",
+          "body": "Healthy scalp, stronger hair, and effective hair restoration."
+        },
+        "men": {
+          "title": "Treatments for men",
+          "body": "Personalized solutions for men's skin, body, and hair care tailored to their needs."
+        }
+      },
+      "benefits": {
+        "personalized": "Personalized approach",
+        "natural": "Natural results",
+        "longTerm": "Long-term care"
+      }
+    },
+    "treatments": {
+      "marker": "02 · Treatments",
+      "title": "Clinical services",
+      "lead": "Ten treatment categories, each planned around a diagnosis. Select a treatment to request an appointment, or read the full protocol."
+    },
+    "services": {
+      "facial": {
+        "name": "Facial treatments",
+        "description": "Diagnostic-led facials for skin health and barrier repair."
+      },
+      "body": {
+        "name": "Body treatments",
+        "description": "Targeted body programs for contour, tone, and circulation."
+      },
+      "endospheres": {
+        "name": "Endospheres therapy",
+        "description": "Compressive microvibration for lymphatic drainage and firmness."
+      },
+      "laser": {
+        "name": "Laser hair removal",
+        "description": "Medical diode laser for permanent hair reduction."
+      },
+      "rf": {
+        "name": "Microneedle RF lifting",
+        "description": "Radiofrequency microneedling for collagen remodeling."
+      },
+      "trichology": {
+        "name": "Trichology care",
+        "description": "Scalp and hair diagnostics with clinical treatment protocols."
+      },
+      "brows": {
+        "name": "Eyebrow & eyelash treatments",
+        "description": "Precision brow and lash shaping and tinting."
+      },
+      "packages": {
+        "name": "Service packages",
+        "description": "Combined treatment courses planned across sessions."
+      }
+    },
+    "technology": {
+      "marker": "03 · Technologies",
+      "title": "Clinical technologies",
+      "lead": "The devices behind our treatments. Each is a medical-grade system, operated by trained clinicians and selected for documented results.",
+      "items": {
+        "endospheres": {
+          "name": "Endospheres Therapy",
+          "spec": "Non-invasive · 45 min",
+          "body": "Compressive microvibration delivered through a matrix of rotating spheres to support drainage and skin tone."
+        },
+        "laser": {
+          "name": "Laser Hair Removal",
+          "spec": "Non-invasive · 30 min",
+          "body": "A medical diode laser targeting the hair follicle across all treatable body areas."
+        },
+        "rf": {
+          "name": "Microneedle RF Lifting",
+          "spec": "Minimally invasive · 60 min",
+          "body": "Insulated microneedles deliver radiofrequency into the dermis to stimulate collagen."
+        },
+        "trichology": {
+          "name": "Trichology",
+          "spec": "Diagnostic · 45 min",
+          "body": "Instrumental scalp analysis guiding targeted hair and scalp treatment protocols."
+        }
+      }
+    },
+    "products": {
+      "marker": "04 · Products",
+      "title": "Professional products",
+      "lead": "Professional formulations dispensed as part of your treatment plan. Two clinical lines continue your results between appointments.",
+      "tabs": {
+        "AROSHA_BODY": "AROSHA",
+        "DIXIDOX_TRICHO": "DIXIDOX de Luxe"
+      },
+      "add": "Add to cart",
+      "note": "Dispensed as part of your treatment plan.",
+      "all": "View full formulary — 31 products"
+    },
+    "booking": {
+      "marker": "05 · Consultation",
+      "title": "Book a consultation",
+      "lead": "Begin with a consultation. We review your history and concerns, examine the area, and prepare a written treatment plan.",
+      "intro": "Appointments are arranged by agreement. Choose a treatment and a preferred date, and we will confirm your time by email.",
+      "requested": "Requested treatment",
+      "whatsapp": "WhatsApp — message the clinic",
+      "gdpr": "Your information is processed confidentially in accordance with GDPR and used only to arrange your appointment. See our <link>Privacy Policy</link>.",
+      "fields": {
+        "name": "Full name",
+        "phone": "Phone",
+        "email": "Email",
+        "treatment": "Treatment",
+        "date": "Preferred date",
+        "notes": "Notes"
+      },
+      "select": "Select a treatment",
+      "notesPlaceholder": "Anything we should know before your consultation.",
+      "submit": "Request appointment"
+    },
+    "footer": {
+      "about": "A licensed medical clinic in Helsinki for aesthetic medicine, skin, body, and hair.",
+      "clinic": "Clinic",
+      "hours": "Hours",
+      "byAgreement": "By agreement",
+      "booking247": "Online booking 24/7",
+      "explore": "Explore",
+      "legal": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "cookies": "Cookies Policy"
+    }
+  },
+  "Catalog": {
+    "categoryGiftCards": "Gift cards",
+    "categoryTreatments": "Prepaid treatments",
+    "categoryOther": "More from Mone Beauty",
+    "metaTitle": "Catalog",
+    "metaDescription": "AROSHA and DIXIDOX De Luxe professional products at Mone Beauty Clinic, Helsinki.",
+    "title": "Catalog",
+    "intro": "Professional AROSHA body products and DIXIDOX De Luxe trichology line.",
+    "intoBasket": "Into a basket",
+    "categoryBody": "AROSHA body",
+    "categoryTricho": "DIXIDOX trichology"
+  },
+  "Product": {
+    "description": "Description",
+    "seeAlso": "See also",
+    "backToCatalog": "Back to catalog",
+    "intoBasket": "Into a basket"
+  },
+  "Booking": {
+    "metaTitle": "Book an appointment",
+    "eyebrow": "Booking",
+    "heading": "Book an appointment",
+    "intro": "Choose a treatment, pick a time, and confirm — it takes under a minute.",
+    "steps": {
+      "service": "Service",
+      "specialist": "Specialist",
+      "time": "Time",
+      "you": "You"
+    },
+    "services": {
+      "facial": "Facial treatments",
+      "body": "Body treatments",
+      "endospheres": "Endospheres therapy",
+      "laser": "Laser hair removal",
+      "rf": "Microneedle RF",
+      "trichology": "Trichology",
+      "brows": "Brows & lashes",
+      "packages": "Treatment packages"
+    },
+    "context": {
+      "service": "Selected service",
+      "procedure": "Selected procedure",
+      "duration": "{minutes} min",
+      "priceFrom": "From {price}"
+    },
+    "offerAccount": {
+      "title": "Sign in to use this offer",
+      "body": "The introductory price is reserved for new Endospheres clients with a Mone Beauty Clinic account.",
+      "signIn": "Sign in",
+      "create": "Create account"
+    },
+    "pickSpecialist": "Choose a specialist",
+    "loadingSpecialists": "Loading specialists…",
+    "noSpecialists": "No specialist is currently available online for this procedure.",
+    "pickDate": "Choose a date",
+    "pickTime": "Choose a time",
+    "pickDateFirst": "Select a date to see available times.",
+    "loadingDates": "Loading available dates…",
+    "noDates": "No online appointments are currently available in the next 60 days.",
+    "loading": "Loading available times…",
+    "noTimes": "No open times on this day — please pick another date.",
+    "fields": {
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "notes": "Notes (optional)",
+      "consent": "I agree to Mone Beauty Clinic storing my details to manage this appointment, in line with the <link>Privacy Policy</link>.",
+      "procedureConsent": "I confirm the procedure-specific booking information."
+    },
+    "submit": "Confirm booking",
+    "submitting": "Booking…",
+    "summary": {
+      "service": "Treatment",
+      "procedure": "Procedure",
+      "specialist": "Specialist",
+      "time": "Time",
+      "reference": "Reference"
+    },
+    "savedProfile": "Saved profile details",
+    "editProfile": "Edit profile",
+    "consultation": {
+      "required": "Complete or reconfirm your consultation form before booking while signed in.",
+      "complete": "Open my profile",
+      "heading": "Consultation information",
+      "dateOfBirth": "Date of birth",
+      "chooseDateOfBirth": "Choose date of birth",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "confirmed": {
+      "title": "Your appointment is booked",
+      "body": "Your appointment is confirmed. We've emailed the details, including a link to reschedule or cancel.",
+      "again": "Book another",
+      "manage": "Manage this appointment"
+    },
+    "errors": {
+      "slotTaken": "Sorry, that time was just taken. Please choose another.",
+      "unavailable": "Online booking is temporarily unavailable. Please call or email us and we'll arrange your visit.",
+      "generic": "Please check the form and try again.",
+      "consultationRequired": "Complete every required consultation field and both acknowledgments.",
+      "consultationInvalid": "Check your date of birth and consultation answers.",
+      "consultationStale": "The consultation form changed while it was open. Refresh the page and complete the current form.",
+      "consultationUnavailable": "The consultation form is temporarily unavailable. Please call or email us to arrange your visit.",
+      "offerAccountRequired": "Create an account or sign in before booking this offer.",
+      "offerNotEligible": "This introductory offer is only available before your first non-cancelled Endospheres appointment. Please choose the regular 75-minute treatment; your selected time has been kept."
+    },
+    "fallback": "Prefer to book directly? Reach us and we'll be glad to arrange your visit."
+  },
+  "Basket": {
+    "metaTitle": "Basket",
+    "heading": "Your basket",
+    "empty": "Your basket is empty.",
+    "browse": "Browse the catalog",
+    "summary": "Order summary",
+    "items": "Items",
+    "subtotal": "Subtotal",
+    "checkout": "Checkout",
+    "increase": "Increase quantity",
+    "decrease": "Decrease quantity",
+    "remove": "Remove"
+  },
+  "Cart": {
+    "added": "Added",
+    "addedToBasket": "{name} was added to your basket.",
+    "viewBasket": "View basket",
+    "dismiss": "Close notification",
+    "openBasket": "Open basket, {count} items"
+  },
+  "Checkout": {
+    "metaTitle": "Checkout",
+    "eyebrow": "Checkout",
+    "heading": "Confirm your order",
+    "intro": "Enter your details, choose pickup or Finland delivery, and continue to secure Stripe payment.",
+    "summary": "Order summary",
+    "address": {
+      "heading": "Delivery address",
+      "default": "Default",
+      "new": "Use a new address",
+      "recipient": "Recipient",
+      "line1": "Street address",
+      "line2": "Address line 2 (optional)",
+      "postalCode": "Postal code",
+      "city": "City",
+      "save": "Save this address to my account",
+      "stripeConfirm": "You can confirm or correct the address again in secure Stripe Checkout. Changes there apply to this order only."
+    },
+    "fulfillment": {
+      "heading": "Handover",
+      "pickup": "Free clinic pickup",
+      "shipping": "Finland delivery"
+    },
+    "fields": {
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "notes": "Notes (optional)",
+      "consent": "I agree to Mone Beauty Clinic storing my details to process this order, in line with the <link>Privacy Policy</link>."
+    },
+    "submit": "Continue to secure payment",
+    "submitting": "Opening payment...",
+    "cancelled": "Payment was cancelled. Your basket is still available if you want to try again.",
+    "cancelError": "We could not cancel the payment session safely. Please try again or contact the clinic.",
+    "errors": {
+      "product_unavailable": "One or more products are no longer available online.",
+      "currency_unavailable": "This basket cannot be charged in EUR.",
+      "fulfillment_required": "Choose clinic pickup or Finland delivery.",
+      "address_invalid": "Please select or enter a valid Finland delivery address.",
+      "payment_unavailable": "Secure payment is temporarily unavailable. Please try again shortly.",
+      "invalid_json": "The order could not be read. Please try again.",
+      "name_required": "Please enter your full name.",
+      "phone_required": "Please enter your phone number.",
+      "phone_invalid": "Enter an international phone number beginning with +.",
+      "email_required": "Please enter a valid email address.",
+      "recipient_required": "Please enter the recipient's name.",
+      "line1_required": "Please enter the delivery street address.",
+      "postal_code_invalid": "Enter a valid five-digit Finnish postal code.",
+      "city_required": "Please enter the delivery city.",
+      "consent_required": "Please accept the privacy consent before submitting.",
+      "empty_cart": "Your basket is empty.",
+      "unavailable": "Checkout is temporarily unavailable. Please call or email us.",
+      "generic": "Please check the form and try again."
+    }
+  },
+  "Order": {
+    "paymentStatus": "Payment",
+    "voucher": "Voucher code",
+    "paymentStates": {
+      "UNPAID": "Not paid",
+      "PROCESSING": "Processing",
+      "PAID": "Paid",
+      "PARTIALLY_REFUNDED": "Partially refunded",
+      "REFUNDED": "Refunded",
+      "FAILED": "Payment failed",
+      "CANCELLED": "Payment cancelled",
+      "EXPIRED": "Payment expired"
+    },
+    "metaTitle": "Order received",
+    "heading": "Order received",
+    "intro": "Thank you. We have received your order request and will contact you to confirm the details.",
+    "reference": "Reference",
+    "total": "Total",
+    "status": "Status",
+    "cancellationReason": "Cancellation reason",
+    "states": {
+      "READY_FOR_PICKUP": "Ready for pickup",
+      "SHIPPED": "Order shipped",
+      "PENDING": "Request received",
+      "CONFIRMED": "Order confirmed",
+      "PAID": "Order confirmed",
+      "FULFILLED": "Order fulfilled",
+      "CANCELLED": "Order cancelled"
+    },
+    "stateDescriptions": {
+      "READY_FOR_PICKUP": "Your order is ready to collect at the clinic.",
+      "SHIPPED": "Your order has been dispatched.",
+      "PENDING": "The clinic is reviewing your order request.",
+      "CONFIRMED": "The clinic has confirmed your order.",
+      "PAID": "The clinic has confirmed your order.",
+      "FULFILLED": "This order has been fulfilled.",
+      "CANCELLED": "This order has been cancelled."
+    },
+    "backToCatalog": "Back to catalog"
+  },
+  "Staff": {
+    "metaTitle": "Staff schedule",
+    "eyebrow": "Staff",
+    "heading": "Schedule",
+    "intro": "Manage open slots, closed times, and the day’s appointments. Authentication and role gating are added in the next phase.",
+    "controls": "Controls",
+    "date": "Date",
+    "workingHours": "Working hours",
+    "startHour": "Start",
+    "endHour": "End",
+    "stepMin": "Slot",
+    "daysAhead": "Days",
+    "apply": "Apply range",
+    "schedule": "Daily schedule",
+    "refresh": "Refresh",
+    "save": "Save day",
+    "saving": "Saving...",
+    "saved": "Schedule saved.",
+    "applied": "Working hours applied.",
+    "loading": "Loading schedule...",
+    "noSlots": "No slots on this day.",
+    "days": {
+      "0": "Sun",
+      "1": "Mon",
+      "2": "Tue",
+      "3": "Wed",
+      "4": "Thu",
+      "5": "Fri",
+      "6": "Sat"
+    },
+    "slotStatus": {
+      "open": "Open",
+      "closed": "Closed",
+      "booked": "Booked"
+    },
+    "errors": {
+      "load": "Could not load schedule.",
+      "save": "Could not save this day.",
+      "apply": "Could not apply working hours."
+    }
+  },
+  "Legal": {
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms of Use",
+    "cookiesTitle": "Cookies Policy",
+    "lastUpdated": "Last updated",
+    "privacyBody": [
+      "Online-store payments are processed by Stripe. Mone Beauty Clinic stores the order, payment status, fulfilment choice, and delivery address where needed, but never stores complete card details.",
+      "Mone Beauty Clinic processes personal data to provide appointments, product orders, customer support, CRM follow-up, and legally required administration. Typical data includes name, phone, email, booking/order details, consent records, and messages you choose to send.",
+      "Health-related notes, contraindications, and treatment comments are treated as special-category data. Access is role-restricted and sensitive access is audited in the admin system.",
+      "Data is processed on the basis of appointment/order performance, legal obligations, consent, and legitimate interest in safe clinic operations. Marketing communication is used only where consent is recorded.",
+      "You can request access, export, correction, or erasure of your data by contacting info@monebeauty.fi. Some accounting or appointment records may need to be retained where required by law.",
+      "The clinic uses EU-oriented hosting and limits third-party processing. Analytics cookies load only after cookie consent."
+    ],
+    "termsBody": [
+      "The website provides information, booking, product order requests, and contact channels for Mone Beauty Clinic. Content is informational and does not replace personal consultation with a qualified professional.",
+      "Appointments are subject to clinic confirmation and availability. The cancellation and rescheduling policy published on this page applies to all appointments.",
+      "Online-store purchases are charged securely through Stripe. Physical goods are collected from the clinic or delivered within Finland; digital voucher codes are delivered by email after confirmed payment. Appointment bookings are paid at the clinic and are never charged through Stripe.",
+      "Do not misuse the website, attempt unauthorized access, or submit false information. Internal admin and staff areas are restricted to authorized users only.",
+      "The clinic may update these terms as services, legal requirements, or website features change."
+    ],
+    "cookiesBody": [
+      "Essential cookies and local storage are used for basic website functions such as cart state, language-aware navigation, session security, and cookie consent choices.",
+      "Analytics cookies are optional. Google Analytics is loaded only after you accept analytics cookies in the cookie banner.",
+      "You can decline analytics cookies and continue using the website. You can reset your choice by clearing this site's browser storage.",
+      "Chat transcripts are stored only when you give GDPR consent in the chat widget."
+    ]
+  },
+  "Admin": {
+    "appName": "Mone Beauty Admin",
+    "menu": "Open navigation",
+    "close": "Close navigation",
+    "expandSidebar": "Expand navigation",
+    "collapseSidebar": "Collapse navigation",
+    "logout": "Sign out",
+    "locale": "Interface language",
+    "nav": {
+      "dashboard": "Dashboard",
+      "clients": "Clients",
+      "staff": "Staff accounts",
+      "settings": "My settings",
+      "audit": "Audit log",
+      "integrations": "Integration logs",
+      "calendar": "Calendar",
+      "appointments": "Appointments",
+      "orders": "Orders",
+      "services": "Clinical services",
+      "technologies": "Technologies",
+      "content": "Content pages",
+      "products": "Professional products",
+      "pricing": "Pricing",
+      "blog": "Articles",
+      "chat": "Conversations"
+    },
+    "login": {
+      "eyebrow": "Staff and administration",
+      "title": "Sign in to the work portal",
+      "email": "Email",
+      "password": "Password",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "submit": "Sign in",
+      "invalid": "The email or password is incorrect."
+    },
+    "media": {
+      "changeImage": "Change image",
+      "removeImage": "Remove image",
+      "uploadProgress": "Uploading {percent}%",
+      "processing": "Processing image…",
+      "requiredImage": "An image is required.",
+      "success": "Image uploaded.",
+      "typeError": "Use JPG, PNG, WebP, AVIF, or GIF images.",
+      "sizeError": "Each image must be 25 MB or smaller.",
+      "uploadError": "Upload failed. Try again."
+    },
+    "dashboard": {
+      "title": "Operations dashboard",
+      "subtitle": "Publication, client, booking, shop, and support overview.",
+      "recent": "Recent business activity",
+      "emptyActivity": "No recent business activity.",
+      "quick": "Quick create",
+      "needsAction": "{count} need confirmation",
+      "activity": {
+        "categories": {
+          "appointment": "Appointment",
+          "order": "Order",
+          "chat": "Conversation",
+          "treatment": "Treatment"
+        },
+        "actions": {
+          "appointmentBooked": "New treatment booked",
+          "appointmentConfirmed": "Appointment confirmed",
+          "appointmentRescheduled": "Appointment rescheduled",
+          "appointmentCompleted": "Treatment completed",
+          "appointmentCancelled": "Appointment cancelled",
+          "orderPlaced": "New order placed",
+          "orderConfirmed": "Order confirmed",
+          "orderFulfilled": "Order fulfilled",
+          "orderCancelled": "Order cancelled",
+          "chatHandoffRequested": "Customer requested human help",
+          "chatResolved": "Conversation resolved",
+          "chatReopened": "Conversation reopened",
+          "chatArchived": "Conversation archived",
+          "treatmentCreated": "Treatment created",
+          "treatmentUpdated": "Treatment updated",
+          "treatmentArchived": "Treatment archived",
+          "treatmentDeleted": "Treatment deleted"
+        },
+        "statuses": {
+          "BOOKED": "Booked",
+          "CONFIRMED": "Confirmed",
+          "RESCHEDULED": "Rescheduled",
+          "COMPLETED": "Completed",
+          "CANCELLED": "Cancelled",
+          "PENDING": "Pending",
+          "PAID": "Paid",
+          "FULFILLED": "Fulfilled",
+          "OPEN": "Open",
+          "RESOLVED": "Resolved"
+        }
+      }
+    },
+    "common": {
+      "new": "New",
+      "save": "Save",
+      "saving": "Saving…",
+      "delete": "Delete",
+      "archive": "Archive",
+      "restore": "Restore",
+      "edit": "Edit",
+      "search": "Search",
+      "empty": "No records found.",
+      "actions": "Actions",
+      "status": "Status",
+      "draft": "Draft",
+      "published": "Published",
+      "archived": "Archived",
+      "global": "Global settings",
+      "locales": "Localized content",
+      "slug": "Slug",
+      "publicPath": "Public path",
+      "order": "Order",
+      "images": "Image",
+      "price": "Price",
+      "category": "Category",
+      "title": "Title",
+      "body": "Body",
+      "summary": "Summary",
+      "seoTitle": "SEO title",
+      "seoDescription": "SEO description",
+      "seoIndexable": "Allow search engines to index this locale",
+      "imageAlt": "Image alt text",
+      "label": "Label",
+      "unit": "Unit",
+      "preview": "Preview",
+      "back": "Back",
+      "confirmDelete": "Delete permanently when no historical records reference this item.",
+      "required": "Complete the required fields.",
+      "updated": "Changes saved.",
+      "notProvided": "Not provided"
+    },
+    "modules": {
+      "clients": "Clients",
+      "staff": "Staff accounts",
+      "settings": "My settings",
+      "audit": "Audit log",
+      "integrations": "Integration logs",
+      "calendar": "Calendar",
+      "appointments": "Appointments",
+      "orders": "Orders",
+      "services": "Clinical services",
+      "technologies": "Clinical technologies",
+      "content": "Content pages",
+      "products": "Professional products",
+      "pricing": "Pricing",
+      "blog": "Articles",
+      "chat": "Conversations"
+    }
+  },
+  "AdminOperations": {
+    "payment": "Payment",
+    "fulfillment": "Fulfilment",
+    "ready": "Mark ready for pickup",
+    "ship": "Mark shipped",
+    "refund": "Refund through Stripe",
+    "refundAmount": "Refund amount (EUR)",
+    "refundReason": "Refund reason",
+    "voucherCode": "Voucher code",
+    "redemptionAmount": "Redemption amount (gift cards)",
+    "redeem": "Redeem voucher",
+    "cancellationRequests": "Cancellation requests",
+    "pendingCancellationRequest": "Cancellation request awaiting review",
+    "approveRequest": "Approve request",
+    "rejectRequest": "Reject request",
+    "decisionReasonOptional": "Decision note (optional)",
+    "decisionReasonRequired": "Rejection reason",
+    "requestStatusLabels": {
+      "PENDING": "Pending",
+      "APPROVED": "Approved",
+      "REJECTED": "Rejected"
+    },
+    "paymentStatusLabels": {
+      "UNPAID": "Unpaid",
+      "PROCESSING": "Processing",
+      "PAID": "Paid",
+      "PARTIALLY_REFUNDED": "Partially refunded",
+      "REFUNDED": "Refunded",
+      "FAILED": "Failed",
+      "CANCELLED": "Cancelled",
+      "EXPIRED": "Expired"
+    },
+    "orders": "Orders",
+    "appointments": "Appointments",
+    "orderDescription": "Review requests, confirm availability, and manage customer communication.",
+    "appointmentDescription": "Review upcoming visits, confirm times, and manage changes.",
+    "search": "Search records",
+    "all": "All statuses",
+    "active": "Active",
+    "from": "From",
+    "until": "Until",
+    "filtering": "Filtering…",
+    "automatic": "Filters update automatically.",
+    "empty": "No matching records.",
+    "reference": "Reference",
+    "customer": "Customer",
+    "items": "Items",
+    "total": "Total",
+    "submitted": "Submitted",
+    "status": "Status",
+    "contact": "Contact",
+    "notes": "Submitted notes",
+    "locale": "Customer language",
+    "service": "Service",
+    "time": "Time",
+    "history": "Change history",
+    "communications": "Communication history",
+    "noCommunications": "No communications recorded.",
+    "confirm": "Confirm",
+    "fulfill": "Mark fulfilled",
+    "complete": "Mark completed",
+    "cancel": "Cancel",
+    "reason": "Customer-facing cancellation reason",
+    "reschedule": "Reschedule",
+    "chooseTime": "Choose an available time",
+    "chooseDate": "Choose date",
+    "showTimes": "Show available times",
+    "retry": "Retry failed delivery",
+    "attempts": "attempts",
+    "accepted": "Accepted",
+    "failed": "Failed",
+    "skipped": "Skipped",
+    "back": "Back",
+    "custom": "Send a custom message",
+    "email": "Email",
+    "sms": "SMS",
+    "to": "To",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message",
+    "segments": "Characters / encoding / segments",
+    "transactional": "Use this only for information directly related to this record.",
+    "statusLabels": {
+      "READY_FOR_PICKUP": "Ready for pickup",
+      "SHIPPED": "Shipped",
+      "PENDING": "Pending",
+      "AWAITING_PAYMENT": "Awaiting payment",
+      "PENDING_REQUEST": "Cancellation requested",
+      "PAID": "Paid (legacy)",
+      "FULFILLED": "Fulfilled",
+      "BOOKED": "Awaiting confirmation",
+      "CONFIRMED": "Confirmed",
+      "COMPLETED": "Completed",
+      "CANCELLED": "Cancelled",
+      "RESCHEDULED": "Awaiting confirmation"
+    }
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist.",
+    "home": "Back to home"
+  }
+}

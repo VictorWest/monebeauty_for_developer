@@ -1,0 +1,242 @@
+Select services to drag and drop list
+×Close
+You can select 24 services to drag & drop list. Drag & drop name cannot be longer than 14 characters.
+Service name	Drag & drop name		
+	Ruokatauko	
+Ruokatauko
+	Henkilökohtainen meno	
+Henkilökoh
+	Työmeno	
+Työmeno
+	Sairasloma	
+Sairasloma
+	Loma	
+Loma
+	Brow Lift-kulmien laminointi ja kestovärjäys	
+Kulmien vä
+	Ripsien kestotaivutus & värjäys	
+Ripsien ke
+	Kulmien värjäys ja muotoilu	
+Kulmien vä
+	Kasvojen puhdistus	
+Ultraäänip
+	Yksilöllinen hoito israelilaisella ammattikosmetiikalla Shor	
+Mekaaninen
+	Fraktionaalinen mesoterapia	
+Timanttihi
+	Kasvojen kuorinta	
+Mikroneula
+	Mikrovirrat kasvoille	
+Kasvohoito
+	Kasvojen hieronta Endosfääriterapia	
+Kasvojen h
+	Papilloomien poisto	
+Papilloomi
+	PRX -piling kasvoille	
+PRX  -pili
+	PRX Plus	
+PRX Plus 
+	Kosmetologin konsultaatio	
+Kosmetolog
+	Paketti: Endospheres-terapia 45 min + AROSHA-sidekääre + pressoterapia	
+HOI Hoitop
+	Paketti: Endospheres-terapia koko vartalolle 75 min + AROSHA-sidekääre	
+DET Pakett
+	Paketti: Endospheres-terapia koko vartalolle 60 min + Endospheres-kasvohoito + AROSHA-sidekääre	
+HOI Pakett
+	Endospheres-terapia 45 min	
+Endosphere
+	Arosha-sidekäärehoito + pressoterapia	
+Lymfaterap
+	Endospheres Therapy	
+Endosphere
+	Endospheres-terapia 60 min	
+Endosphere
+	Endospheres-terapia 75 min	
+Endosphere
+	Kestopigmentointi: Kulmat Gradien Brows	
+Kestopigme
+	Kestopigmentointi: Ylärajaus luonnollinen / ripsientyvitäyttö	
+Kestopigme
+	Kestopigmentointi: Silmanrajaus / Eyeliner	
+Kestopigme
+	Kestopigmentointi:Silmänrajaus varjostuksen kanssa Eyeshadow-tekniikalla	
+Kestopigme
+	Kestopigmentointi: Huulet Akvarellihuulet	
+Kestopigme
+	Kestopigmentointi: Vahvistus kulmat	
+Kestopigme
+	Kestopigmentointi: Vahvistus Eyeliner	
+Kestopigme
+	Kestopigmentointi: Vahvistus huulet	
+Kestopigme
+	Konsultointi kestopigmentointia	
+Konsultoin
+	Endosphères Therapy hieronta koko vartalo 60 min	
+Endosphère
+	Endosphères Therapy hieronta Selluliittihoito 45min	
+Endosphère
+	Endosphères Therapy hieronta 30 min	
+Endosphère
+	Pressoterapia	
+Pressotera
+	Arosha-vartalokääre	
+Arosha-var
+	Endosphères Therapy hieronta miehille 30 min	
+Endosphère
+	Endosphères Therapy hieronta koko vartalolle 75min	
+Endosphere
+	Ylähuuli	
+Ylähuuli
+	Leuka	
+Leuka
+	Ylähuuli + leuka	
+Ylähuuli +
+	Bakenbardit	
+Bakenbardi
+	Posket	
+Posket
+	Koko kasvot	
+Koko kasvo
+	Otsa	
+Otsa
+	Kädet – yläosa	
+Kädet – yl
+	Kaula edestä	
+Kaula edes
+	Kaula takaa	
+Kaula taka
+	Rinta	
+Rinta 
+	Rinta (mies)	
+MIE Rinta 
+	Pehkeet	
+Pehkeet
+	Selkä	
+Selkä
+	Selkä (mies)	
+MIE Selkä 
+	Kainalot	
+Kainalot
+	Bikinilinja	
+Bikinilinj
+	Syvä bikinialue	
+Syvä bikin
+	Areola	
+Areola
+	Brasilialainen bikini	
+Brasiliala
+	Kaula edestä (mies)	
+Miehen Kau
+	Kaula takaa (mies)	
+MIE Kaula 
+	Jalat kokonaan	
+Jalat koko
+	Reidet	
+Reidet
+	Sääret + polvet	
+Sääret + p
+	Kainalot + bikinilinja	
+Kainalot +
+	Kainalot + brasilialainen bikini	
+Kainalot +
+	Brasilialainen bikini + jalat kokonaan	
+Brasiliala
+	Kainalot + brasilialainen bikini + jalat kokonaan	
+Kainalot +
+	Koko keho	
+Koko keho
+	Kädet – alaosa	
+Kädet – al
+	Kädet – kokonaan	
+Kädet – ko
+	Vatsa	
+Vatsa
+	Vatsalinja	
+Vatsalinja
+	Pakarat	
+Pakarat
+	Vatsa (mies)	
+MIE Vatsa 
+	Päänahan ja hiusten tietokoneellinen analyysi	
+Päänahan j
+	Päänahan mesoterapia	
+Päänahan m
+	Päänahan kuorinta	
+Päänahan k
+	LED-valohoito päänahalle	
+LED-valoho
+	Hiusten filler-hoito	
+Hiusten fi
+	BioRePeel-kuorintahoito	
+BioRePeel-
+	Endosphères Therapy hieronta 75 min 12 kerta	
+Hoitopaket
+	Endosphères Therapy hieronta 75 min 6 kerta	
+EXP Koko v
+	Endosphères Therapy hieronta 60 min 12 kerta	
+EXP Koko v
+	Endosphères Therapy hieronta 60 min 6 kerta	
+Endosphere
+	Endosphères Therapy hieronta 45 min 12 kerta	
+Endosphere
+	Endosphères Therapy hieronta 45 min 6 kerta	
+Endosphere
+	Endosphères Therapy hieronta 30 min 6 kerta	
+Endosphère
+	Endosphères Therapy hieronta 30 min 12 kerta	
+Endosphère
+	Endosphères Therapy kasvolle 6 kerta	
+Endosphère
+	Fraktio-mesoterapia 5 kerta	
+Fraktio-me
+	Lipolyytti vartalolle (yksi alue)	
+YKS Lipoly
+	Lipolyysi kasvoille: kaksoisleuan ja kasvojen alaosan muotoilu	
+Lipolyysi 
+	Täyteainehoito	
+Täyteaineh
+	Biorevitalisaatio	
+Biorevital
+	Kasvojen muotoilu	
+Kasvojen m
+	Lankakohotus	
+Lankakohot
+	RRS-biorevitalisaatio — “5 nuoruuspistettä”	
+RRS-biorev
+	Huulten muotoilu hyaluronihappotäyteaineella — 1 ml	
+Huulten mu
+	Lankakohotus	
+Lankakohot
+	Mesoten Aqualight (”Dolphin Skin”)	
+”DO Mesote
+	Koko kasvot	
+Koko kasvo
+	Otsa	
+Otsa
+	Silmien ympäristö	
+Silmien ym
+	Posket	
+Posket
+	Kasvot + kaula	
+Kasvot + k
+	Leuka ja kasvojen ovaali	
+Leuka ja k
+	Kaula	
+Kaula
+	Dekoltee	
+Dekoltee
+	Vatsa	
+Vatsa
+	Reidet	
+Reidet
+	Polvet	
+Polvet
+	Pakarat	
+Pakarat
+	Kädet (sisäosa, olkapäät)	
+SIS Kädet 
+	Kasvot + kaula + dekoltee	
+Kasvot + k
+	Vatsa + reidet + pakarat	
+Vatsa + re

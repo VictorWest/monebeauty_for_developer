@@ -1,0 +1,1481 @@
+"use client";
+
+import { useState, useCallback, useEffect, useRef } from "react";
+import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import {
+  ArrowRight,
+  CheckCircle,
+  Phone,
+  EnvelopeSimple,
+} from "@phosphor-icons/react";
+import { ButtonAction } from "@/components/ui/Button";
+import { BookingCalendar } from "@/components/booking/BookingCalendar";
+import { TimePicker } from "@/components/ui/TimePicker";
+import { cn } from "@/lib/cn";
+import { Link, useRouter } from "@/i18n/navigation";
+import {
+  BOOKING_HANDOFF_KEY,
+  isValidPreferredDate,
+  parseBookingHandoff,
+} from "@/lib/booking-handoff";
+import type {
+  BookingContext,
+  BookingProcedureContext,
+  BookingServiceOption,
+} from "@/lib/booking-context";
+import { PUBLIC_PATHS } from "@/lib/public-routes";
+import { BUSINESS_HOURS } from "@/lib/booking-config";
+import { clinicTodayYmd } from "@/lib/clinic-date";
+import { DatePicker } from "@/components/ui/CalendarPicker";
+import type {
+  BookingConsultationConfig,
+  ConsultationAnswer,
+  SavedConsultationAnswers,
+} from "@/lib/consultation-types";
+
+type Slot = {
+  start: string;
+  label: string;
+};
+type Specialist = { id: string; name: string };
+type Fallback = {
+  phone: string;
+  phoneHref: string;
+  email: string;
+  emailHref: string;
+};
+type CancellationPolicyNotice = {
+  text: string;
+  linkLabel: string;
+  href: string;
+};
+
+type ConsultationState = {
+  dateOfBirth: string;
+  answers: Record<string, ConsultationAnswer>;
+  healthConsent: boolean;
+  accuracyAcknowledged: boolean;
+};
+
+type Step = 1 | 2 | 3 | 4;
+
+function addDays(value: string, days: number) {
+  const date = new Date(`${value}T00:00:00.000Z`);
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
+}
+
+export function BookingWizard({
+  services,
+  initialContext,
+  initialSpecialistId,
+  fallback,
+  initialDetails,
+  verifiedEmail,
+  clientSignedIn,
+  consultationCurrent,
+  consultationConfig,
+  savedConsultation,
+  consultationAvailable,
+  profileHref,
+  procedureConsent,
+  offerLoginHref,
+  offerRegisterHref,
+  cancellationPolicy,
+}: {
+  services: BookingServiceOption[];
+  initialContext?: BookingContext;
+  initialSpecialistId?: string;
+  fallback: Fallback;
+  initialDetails?: { fullName: string; phone: string; email: string };
+  verifiedEmail?: boolean;
+  clientSignedIn: boolean;
+  consultationCurrent: boolean;
+  consultationConfig: BookingConsultationConfig | null;
+  savedConsultation: SavedConsultationAnswers | null;
+  consultationAvailable: boolean;
+  profileHref: string;
+  procedureConsent: { version: number; wording: string };
+  offerLoginHref: string;
+  offerRegisterHref: string;
+  cancellationPolicy: CancellationPolicyNotice;
+}) {
+  const t = useTranslations("Booking");
+  const locale = useLocale();
+  const router = useRouter();
+  const initialService = initialContext?.service.key;
+  const initialOption = initialContext?.procedure ?? null;
+  const initialOptionKey = initialOption?.key;
+
+  const [step, setStep] = useState<Step>(initialOption ? 2 : 1);
+  const [service, setService] = useState<string | null>(initialService ?? null);
+  const [procedure, setProcedure] = useState<BookingProcedureContext | null>(
+    initialOption,
+  );
+  const [date, setDate] = useState<string | null>(null);
+  const [slot, setSlot] = useState<Slot | null>(null);
+  const [specialists, setSpecialists] = useState<Specialist[]>([]);
+  const [specialist, setSpecialist] = useState<Specialist | null>(null);
+  const [specialistsLoading, setSpecialistsLoading] = useState(false);
+  const [specialistsDegraded, setSpecialistsDegraded] = useState(false);
+
+  const [slots, setSlots] = useState<Slot[]>([]);
+  const [slotsLoading, setSlotsLoading] = useState(false);
+  const [slotsDegraded, setSlotsDegraded] = useState(false);
+  const [datesLoading, setDatesLoading] = useState(Boolean(initialService));
+  const [datesDegraded, setDatesDegraded] = useState(false);
+  const [availableDates, setAvailableDates] = useState<string[] | undefined>();
+
+  const [form, setForm] = useState({
+    fullName: initialDetails?.fullName ?? "",
+    phone: initialDetails?.phone ?? "",
+    email: initialDetails?.email ?? "",
+    notes: "",
+  });
+  const [consent, setConsent] = useState(false);
+  const [procedureAcknowledged, setProcedureAcknowledged] = useState(false);
+  const [consultation, setConsultation] = useState(() => ({
+    dateOfBirth: savedConsultation?.dateOfBirth ?? "",
+    answers: savedConsultation?.answers ?? {},
+    healthConsent: false,
+    accuracyAcknowledged: false,
+  }));
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [showFallback, setShowFallback] = useState(false);
+  const [confirmation, setConfirmation] = useState<{
+    id: string;
+    start: string;
+    manageUrl?: string;
+  } | null>(null);
+  const slotsRequest = useRef<AbortController | null>(null);
+  const datesRequest = useRef<AbortController | null>(null);
+  const specialistsSelectionKey = useRef<string | null>(null);
+  const procedureKey = procedure?.key;
+  const specialistId = specialist?.id;
+  const consultationRequired = !clientSignedIn || !consultationCurrent;
+
+  const dateTimeFmt = new Intl.DateTimeFormat(locale, {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "Europe/Helsinki",
+  });
+
+  const loadSpecialists = useCallback(
+    async (svc: string, option: string, preferredId?: string) => {
+      specialistsSelectionKey.current = `${svc}:${option}:${preferredId ?? ""}`;
+      setSpecialistsLoading(true);
+      setSpecialistsDegraded(false);
+      setSpecialists([]);
+      setSpecialist(null);
+      try {
+        const response = await fetch(
+          `/api/booking/specialists?service=${encodeURIComponent(svc)}&option=${encodeURIComponent(option)}&locale=${encodeURIComponent(locale)}`,
+          { cache: "no-store" },
+        );
+        const payload = await response.json();
+        if (!response.ok || !Array.isArray(payload.specialists))
+          throw new Error("specialists_unavailable");
+        const available = payload.specialists as Specialist[];
+        setSpecialists(available);
+        const preferred = available.find((item) => item.id === preferredId);
+        if (preferred || available.length === 1) {
+          const selected = preferred ?? available[0];
+          specialistsSelectionKey.current = `${svc}:${option}:${selected.id}`;
+          setSpecialist(selected);
+          setStep(3);
+          if (selected.id !== preferredId) {
+            router.replace({
+              pathname: PUBLIC_PATHS.booking,
+              query: { service: svc, option, specialist: selected.id },
+            });
+          }
+        } else {
+          setStep(2);
+        }
+      } catch {
+        setSpecialistsDegraded(true);
+        setStep(2);
+      } finally {
+        setSpecialistsLoading(false);
+      }
+    },
+    [locale, router],
+  );
+
+  const loadSlots = useCallback(
+    async (
+      d: string,
+      svc: string,
+      option: string,
+      specialistId: string,
+      background = false,
+    ) => {
+      slotsRequest.current?.abort();
+      const controller = new AbortController();
+      slotsRequest.current = controller;
+      if (!background) {
+        setSlotsLoading(true);
+        setSlotsDegraded(false);
+        setSlots([]);
+      }
+      try {
+        const res = await fetch(
+          `/api/booking/slots?date=${encodeURIComponent(d)}&service=${encodeURIComponent(svc)}&option=${encodeURIComponent(option)}&specialist=${encodeURIComponent(specialistId)}&locale=${encodeURIComponent(locale)}`,
+          { cache: "no-store", signal: controller.signal },
+        );
+        if (!res.ok) throw new Error("slots_unavailable");
+        const data = await res.json();
+        const nextSlots = Array.isArray(data.slots)
+          ? (data.slots as Slot[])
+          : [];
+        setSlots(nextSlots);
+        setSlotsDegraded(Boolean(data.degraded));
+        setSlot((current) => {
+          if (
+            current &&
+            !nextSlots.some((candidate) => candidate.start === current.start)
+          ) {
+            setStep(3);
+            setError(t("errors.slotTaken"));
+            return null;
+          }
+          return current;
+        });
+      } catch (cause) {
+        if (cause instanceof DOMException && cause.name === "AbortError")
+          return;
+        setSlotsDegraded(true);
+      } finally {
+        if (slotsRequest.current === controller) {
+          slotsRequest.current = null;
+          setSlotsLoading(false);
+        }
+      }
+    },
+    [locale, t],
+  );
+
+  const loadAvailableDates = useCallback(
+    async (
+      svc: string,
+      option: string,
+      specialistId: string,
+      background = false,
+    ) => {
+      datesRequest.current?.abort();
+      const controller = new AbortController();
+      datesRequest.current = controller;
+      if (!background) {
+        setDatesLoading(true);
+        setDatesDegraded(false);
+        setAvailableDates(undefined);
+      }
+      const from = clinicTodayYmd();
+      const to = addDays(from, BUSINESS_HOURS.daysAhead);
+      try {
+        const response = await fetch(
+          `/api/booking/availability?from=${from}&to=${to}&service=${encodeURIComponent(svc)}&option=${encodeURIComponent(option)}&specialist=${encodeURIComponent(specialistId)}&locale=${encodeURIComponent(locale)}`,
+          { cache: "no-store", signal: controller.signal },
+        );
+        const payload = await response.json();
+        if (!response.ok || payload.degraded || !Array.isArray(payload.dates)) {
+          throw new Error("availability_unavailable");
+        }
+        const dates = payload.dates as string[];
+        setAvailableDates(dates);
+        setDatesDegraded(false);
+        setDate((current) =>
+          current && !dates.includes(current) ? null : current,
+        );
+        setSlot((current) =>
+          current && !dates.includes(current.start.slice(0, 10))
+            ? null
+            : current,
+        );
+      } catch (cause) {
+        if (cause instanceof DOMException && cause.name === "AbortError")
+          return;
+        if (!background) {
+          setAvailableDates(undefined);
+          setDatesDegraded(true);
+        }
+      } finally {
+        if (datesRequest.current === controller) {
+          datesRequest.current = null;
+          setDatesLoading(false);
+        }
+      }
+    },
+    [locale],
+  );
+
+  useEffect(
+    () => () => {
+      slotsRequest.current?.abort();
+      datesRequest.current?.abort();
+    },
+    [],
+  );
+
+  useEffect(() => {
+    if (!service || !procedureKey || !specialistId || !date || confirmation)
+      return;
+    const refresh = () => {
+      if (document.hidden) return;
+      void loadSlots(date, service, procedureKey, specialistId, true);
+      void loadAvailableDates(service, procedureKey, specialistId, true);
+    };
+    const onFocus = () => refresh();
+    window.addEventListener("focus", onFocus);
+    const timer = window.setInterval(refresh, 30_000);
+    return () => {
+      window.removeEventListener("focus", onFocus);
+      window.clearInterval(timer);
+    };
+  }, [
+    confirmation,
+    date,
+    loadAvailableDates,
+    loadSlots,
+    procedureKey,
+    service,
+    specialistId,
+  ]);
+
+  useEffect(() => {
+    if (!initialService || !initialOptionKey) return;
+    const selectionKey = `${initialService}:${initialOptionKey}:${initialSpecialistId ?? ""}`;
+    if (specialistsSelectionKey.current === selectionKey) return;
+    const timer = window.setTimeout(() => {
+      void loadSpecialists(
+        initialService,
+        initialOptionKey,
+        initialSpecialistId,
+      );
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [initialOptionKey, initialService, initialSpecialistId, loadSpecialists]);
+
+  useEffect(() => {
+    if (!service || !procedureKey || !specialistId) return;
+    const timer = window.setTimeout(
+      () => void loadAvailableDates(service, procedureKey, specialistId),
+      0,
+    );
+    return () => window.clearTimeout(timer);
+  }, [loadAvailableDates, procedureKey, service, specialistId]);
+
+  useEffect(() => {
+    let raw: string | null = null;
+    try {
+      raw = window.sessionStorage.getItem(BOOKING_HANDOFF_KEY);
+      window.sessionStorage.removeItem(BOOKING_HANDOFF_KEY);
+    } catch {
+      return;
+    }
+    const handoff = parseBookingHandoff(raw);
+    if (!handoff) return;
+
+    window.queueMicrotask(() => {
+      const text = (value: unknown) =>
+        typeof value === "string" ? value.slice(0, 2000) : "";
+      setForm({
+        fullName: text(handoff.fullName) || initialDetails?.fullName || "",
+        phone: text(handoff.phone) || initialDetails?.phone || "",
+        email: verifiedEmail
+          ? (initialDetails?.email ?? "")
+          : text(handoff.email) || initialDetails?.email || "",
+        notes: text(handoff.notes),
+      });
+
+      const preferredDate = isValidPreferredDate(handoff.preferredDate)
+        ? handoff.preferredDate!
+        : null;
+      if (preferredDate) setDate(preferredDate);
+
+      const handoffService = services.find(
+        (item) => item.key === handoff.service,
+      )?.key;
+      const resolvedService = initialService ?? handoffService;
+      if (!initialService && handoffService) {
+        setService(handoffService);
+        setProcedure(null);
+        setStep(1);
+        router.replace({
+          pathname: PUBLIC_PATHS.booking,
+          query: { service: handoffService },
+        });
+      }
+      if (
+        preferredDate &&
+        resolvedService &&
+        initialOptionKey &&
+        specialistId
+      ) {
+        void loadSlots(
+          preferredDate,
+          resolvedService,
+          initialOptionKey,
+          specialistId,
+        );
+      }
+    });
+  }, [
+    initialDetails,
+    initialOptionKey,
+    initialService,
+    loadAvailableDates,
+    loadSlots,
+    router,
+    services,
+    verifiedEmail,
+    specialistId,
+  ]);
+
+  function pickService(key: string) {
+    const nextService = services.find((item) => item.key === key);
+    setService(key);
+    setProcedure(null);
+    setSpecialist(null);
+    setSpecialists([]);
+    setSlot(null);
+    setSlots([]);
+    setDatesLoading(true);
+    setDatesDegraded(false);
+    setAvailableDates(undefined);
+    setStep(1);
+    router.replace({ pathname: PUBLIC_PATHS.booking, query: { service: key } });
+    if (nextService?.options.length === 1)
+      pickOption(key, nextService.options[0]);
+  }
+
+  function pickOption(
+    serviceKey: string,
+    option: BookingServiceOption["options"][number],
+  ) {
+    setService(serviceKey);
+    setProcedure({ ...option, description: "" });
+    setSpecialist(null);
+    setSpecialists([]);
+    setSlot(null);
+    setSlots([]);
+    setStep(2);
+    router.replace({
+      pathname: PUBLIC_PATHS.booking,
+      query: { service: serviceKey, option: option.key },
+    });
+    void loadSpecialists(serviceKey, option.key);
+  }
+
+  function pickSpecialist(next: Specialist) {
+    if (!service || !procedure) return;
+    specialistsSelectionKey.current = `${service}:${procedure.key}:${next.id}`;
+    setSpecialist(next);
+    setDate(null);
+    setSlot(null);
+    setSlots([]);
+    setStep(3);
+    router.replace({
+      pathname: PUBLIC_PATHS.booking,
+      query: { service, option: procedure.key, specialist: next.id },
+    });
+  }
+
+  function pickDate(value: string) {
+    setDate(value);
+    setSlot(null);
+    if (service && procedure && specialist)
+      void loadSlots(value, service, procedure.key, specialist.id);
+  }
+
+  function pickSlot(s: Slot) {
+    setSlot(s);
+    setError(null);
+    setStep(4);
+  }
+
+  async function submit() {
+    if (!service || !slot || !specialist) return;
+    setSubmitting(true);
+    setError(null);
+    setShowFallback(false);
+    try {
+      const res = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          service,
+          start: slot.start,
+          locale,
+          fullName: form.fullName,
+          phone: form.phone,
+          email: form.email,
+          notes: form.notes,
+          consentGdpr: consent,
+          procedureConsent: procedureAcknowledged,
+          procedureConsentVersion: procedureConsent.version,
+          specialistId: specialist.id,
+          ...(consultationRequired && consultationConfig
+            ? {
+                consultation: {
+                  contentVersion: consultationConfig.contentVersion,
+                  dateOfBirth: consultation.dateOfBirth,
+                  answers: consultation.answers,
+                  healthConsent: consultation.healthConsent,
+                  accuracyAcknowledged: consultation.accuracyAcknowledged,
+                },
+              }
+            : {}),
+          ...(procedure ? { option: procedure.key } : {}),
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setProcedure(
+          data.option
+            ? {
+                key: data.option.key,
+                title: data.option.title,
+                price: data.option.price ?? "",
+                durationMin: data.option.durationMin,
+                durationLabel: procedure?.durationLabel ?? null,
+                group: procedure?.group ?? null,
+                offerRequiresAccount: procedure?.offerRequiresAccount ?? false,
+                description: procedure?.description ?? "",
+              }
+            : null,
+        );
+        setConfirmation({
+          id: data.id,
+          start: data.start,
+          manageUrl: data.manageUrl,
+        });
+        return;
+      }
+      if (res.status === 409) {
+        if (data?.error === "offer_not_eligible") {
+          const regular = services
+            .find((item) => item.key === "endospheres")
+            ?.options.find((item) => item.key === "75");
+          if (regular) {
+            setService("endospheres");
+            setProcedure({ ...regular, description: "" });
+            router.replace({
+              pathname: PUBLIC_PATHS.booking,
+              query: { service: "endospheres", option: regular.key },
+            });
+          }
+          setError(t("errors.offerNotEligible"));
+        } else {
+          setError(t("errors.slotTaken"));
+          setStep(3);
+          if (date && service && procedure)
+            void loadSlots(date, service, procedure.key, specialist.id);
+        }
+        return;
+      }
+      if (res.status === 401 && data?.error === "offer_account_required") {
+        setError(t("errors.offerAccountRequired"));
+        return;
+      }
+      if (data?.degraded) {
+        setShowFallback(true);
+        setError(t("errors.unavailable"));
+        return;
+      }
+      if (
+        typeof data?.error === "string" &&
+        data.error.startsWith("consultation_")
+      ) {
+        const key =
+          data.error === "consultation_stale"
+            ? "errors.consultationStale"
+            : data.error === "consultation_unavailable" ||
+                data.error === "consultation_form_unavailable"
+              ? "errors.consultationUnavailable"
+              : data.error === "consultation_invalid"
+                ? "errors.consultationInvalid"
+                : "errors.consultationRequired";
+        setError(t(key));
+        if (data.error.includes("unavailable")) setShowFallback(true);
+        return;
+      }
+      setError(t("errors.generic"));
+    } catch {
+      setShowFallback(true);
+      setError(t("errors.unavailable"));
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  function reset() {
+    setConfirmation(null);
+    setStep(1);
+    setService(null);
+    setProcedure(null);
+    setSpecialist(null);
+    setSpecialists([]);
+    setDate(null);
+    setSlot(null);
+    setForm({ fullName: "", phone: "", email: "", notes: "" });
+    setConsent(false);
+    setProcedureAcknowledged(false);
+    setConsultation({
+      dateOfBirth: savedConsultation?.dateOfBirth ?? "",
+      answers: savedConsultation?.answers ?? {},
+      healthConsent: false,
+      accuracyAcknowledged: false,
+    });
+    setError(null);
+    setShowFallback(false);
+    router.replace(PUBLIC_PATHS.booking);
+  }
+
+  if (confirmation) {
+    const label =
+      services.find((item) => item.key === service)?.name ??
+      (initialContext?.service.key === service
+        ? initialContext.service.name
+        : "");
+    return (
+      <div className="mt-[clamp(28px,4vw,44px)] rounded-(--radius) border border-line-card bg-card p-[clamp(24px,4vw,44px)] text-center">
+        <CheckCircle size={48} weight="thin" className="mx-auto text-accent" />
+        <h2 className="mt-4 font-display text-[clamp(26px,3.4vw,40px)] leading-[1.1] font-medium text-ink">
+          {t("confirmed.title")}
+        </h2>
+        <p className="mx-auto mt-3 max-w-110 font-sans text-[14px] leading-[1.7] font-light text-body">
+          {t("confirmed.body")}
+        </p>
+        <dl className="mx-auto mt-6 max-w-90 space-y-2.5 text-left font-sans text-[14px] text-ink">
+          <SummaryRow label={t("summary.service")} value={label} />
+          {procedure ? (
+            <SummaryRow
+              label={t("summary.procedure")}
+              value={procedure.title}
+            />
+          ) : null}
+          {specialist ? (
+            <SummaryRow
+              label={t("summary.specialist")}
+              value={specialist.name}
+            />
+          ) : null}
+          <SummaryRow
+            label={t("summary.time")}
+            value={dateTimeFmt.format(new Date(confirmation.start))}
+          />
+          <div className="flex justify-between gap-4">
+            <dt className="text-muted">{t("summary.reference")}</dt>
+            <dd className="text-right font-mono text-meta tracking-[.06em] uppercase">
+              {confirmation.id.slice(-8)}
+            </dd>
+          </div>
+        </dl>
+        <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
+          <ButtonAction variant="outline" onClick={reset}>
+            {t("confirmed.again")}
+          </ButtonAction>
+          {confirmation.manageUrl ? (
+            <a
+              href={confirmation.manageUrl}
+              className="min-h-11 rounded border border-line-btn px-4 py-3 font-sans text-label text-body hover:bg-btn-fill"
+            >
+              {t("confirmed.manage")}
+            </a>
+          ) : null}
+        </div>
+      </div>
+    );
+  }
+
+  const stepLabels = [
+    t("steps.service"),
+    t("steps.specialist"),
+    t("steps.time"),
+    t("steps.you"),
+  ];
+  const selectedService =
+    services.find((item) => item.key === service) ??
+    (initialContext?.service.key === service
+      ? initialContext.service
+      : undefined);
+  const offerAccountGate =
+    Boolean(
+      selectedService?.offerRequiresAccount || procedure?.offerRequiresAccount,
+    ) && !clientSignedIn;
+  const noAvailableDates =
+    !datesLoading && !datesDegraded && availableDates?.length === 0;
+
+  return (
+    <div>
+      {selectedService ? (
+        <SelectedContext
+          service={selectedService}
+          procedure={procedure}
+          locale={locale}
+          t={t}
+        />
+      ) : null}
+      <ol className="flex flex-wrap items-center gap-2 font-sans text-meta tracking-[.06em] uppercase">
+        {stepLabels.map((label, i) => {
+          const n = (i + 1) as Step;
+          const done = n < step;
+          const active = n === step;
+          return (
+            <li key={label} className="flex items-center gap-2">
+              <button
+                type="button"
+                disabled={n >= step}
+                onClick={() => setStep(n)}
+                className={cn(
+                  "flex min-h-9 items-center gap-2 rounded-[4px] px-2.5",
+                  active
+                    ? "text-ink"
+                    : done
+                      ? "text-accent hover:underline"
+                      : "text-muted",
+                )}
+              >
+                <span
+                  className={cn(
+                    "grid h-6 w-6 place-items-center rounded-full border text-meta",
+                    active
+                      ? "border-accent bg-accent text-page"
+                      : done
+                        ? "border-accent text-accent"
+                        : "border-line-btn text-muted",
+                  )}
+                >
+                  {n}
+                </span>
+                {label}
+              </button>
+              {i < stepLabels.length - 1 && (
+                <span className="text-line-btn">.</span>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+
+      {error && (
+        <p
+          role="alert"
+          className="mt-4 rounded-[4px] border border-line-btn bg-btn-fill px-3.5 py-2.5 font-sans text-[14px] text-ink"
+        >
+          {error}
+        </p>
+      )}
+
+      {offerAccountGate ? (
+        <div className="mt-5 rounded-(--radius) border border-line-card bg-alt p-[clamp(18px,3vw,28px)]">
+          <h2 className="font-display text-[26px] font-medium text-ink">
+            {t("offerAccount.title")}
+          </h2>
+          <p className="mt-2 max-w-[56ch] font-sans text-[14px] leading-[1.7] text-body">
+            {t("offerAccount.body")}
+          </p>
+          <div className="mt-4.5 flex flex-wrap gap-2.5">
+            <a
+              href={offerLoginHref}
+              className="inline-flex min-h-11 items-center rounded-[4px] bg-accent px-5 font-sans text-meta font-medium tracking-[.13em] text-page uppercase"
+            >
+              {t("offerAccount.signIn")}
+            </a>
+            <a
+              href={offerRegisterHref}
+              className="inline-flex min-h-11 items-center rounded-[4px] border border-line-btn px-5 font-sans text-meta font-medium tracking-[.13em] text-ink uppercase"
+            >
+              {t("offerAccount.create")}
+            </a>
+          </div>
+        </div>
+      ) : null}
+
+      {step === 1 && (
+        <div className="mt-[clamp(20px,3vw,32px)]">
+          {selectedService && selectedService.options.length > 1 ? (
+            <fieldset className="grid gap-3">
+              <legend className="mb-3 font-display text-[26px] font-medium text-ink">
+                {selectedService.name}
+              </legend>
+              {selectedService.options.map((option) => (
+                <button
+                  key={option.key}
+                  type="button"
+                  onClick={() => pickOption(selectedService.key, option)}
+                  className="flex min-h-16 items-center justify-between gap-4 rounded-(--radius) border border-line-card bg-card p-4 text-left hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  <span>
+                    <span className="block font-sans text-[14px] font-medium text-ink">
+                      {option.title}
+                    </span>
+                    {option.group ? (
+                      <span className="mt-1 block font-sans text-meta text-muted">
+                        {option.group}
+                      </span>
+                    ) : null}
+                  </span>
+                  <span className="shrink-0 text-right font-sans text-[13px] text-body">
+                    {option.durationLabel ? (
+                      <span className="block">{option.durationLabel}</span>
+                    ) : null}
+                    {option.price ? (
+                      <span className="block font-medium text-ink">
+                        {option.price}
+                      </span>
+                    ) : null}
+                  </span>
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => {
+                  setService(null);
+                  setProcedure(null);
+                  router.replace(PUBLIC_PATHS.booking);
+                }}
+                className="mt-2 w-fit font-sans text-[13px] text-accent underline underline-offset-4"
+              >
+                {t("steps.service")}
+              </button>
+            </fieldset>
+          ) : (
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3.5">
+              {services.map((s) => (
+                <button
+                  key={s.key}
+                  type="button"
+                  onClick={() => pickService(s.key)}
+                  className="group flex min-h-11 flex-col overflow-hidden rounded-(--radius) border border-line-card bg-card text-left transition-all hover:-translate-y-0.75 hover:border-line-card-hover hover:shadow-card"
+                >
+                  {s.image && (
+                    <span className="relative block h-32 w-full overflow-hidden">
+                      <Image
+                        src={s.image}
+                        alt={s.imageAlt}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                        sizes="200px"
+                        style={{
+                          objectPosition: `${s.imageFocalX}% ${s.imageFocalY}%`,
+                        }}
+                      />
+                    </span>
+                  )}
+                  <span className="flex min-h-17.5 flex-1 items-center justify-between gap-3 px-4 py-3.5 font-sans text-[14px] leading-[1.35] font-medium text-ink">
+                    {s.name}
+                    <ArrowRight
+                      size={15}
+                      weight="thin"
+                      className="text-accent"
+                    />
+                  </span>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {step === 2 && procedure && !offerAccountGate ? (
+        <div className="mt-[clamp(20px,3vw,32px)]">
+          <h2 className="font-display text-[26px] font-medium text-ink">
+            {t("pickSpecialist")}
+          </h2>
+          {specialistsLoading ? (
+            <p className="mt-3 font-sans text-[14px] text-muted" role="status">
+              {t("loadingSpecialists")}
+            </p>
+          ) : specialistsDegraded || specialists.length === 0 ? (
+            <div className="mt-4" role="status">
+              <p className="font-sans text-[14px] text-muted">
+                {t("noSpecialists")}
+              </p>
+              <FallbackBlock t={t} fallback={fallback} />
+            </div>
+          ) : (
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {specialists.map((item) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  onClick={() => pickSpecialist(item)}
+                  className="min-h-14 rounded-(--radius) border border-line-card bg-card px-4 py-3 text-left font-sans text-[14px] font-medium text-ink hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  {item.name}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      ) : null}
+
+      {step === 3 && specialist && !offerAccountGate && (
+        <div className="mt-[clamp(20px,3vw,32px)] flex flex-col gap-7 md:flex-row md:gap-8">
+          <div>
+            <p className="mb-3 font-sans text-label font-medium tracking-[.04em] text-muted uppercase">
+              {t("pickDate")}
+            </p>
+            <BookingCalendar
+              locale={locale}
+              value={date}
+              onSelect={pickDate}
+              availableDates={
+                datesLoading || datesDegraded ? [] : availableDates
+              }
+              loading={datesLoading}
+            />
+          </div>
+
+          <div className="flex-1">
+            <p className="mb-3 font-sans text-label font-medium tracking-[.04em] text-muted uppercase">
+              {t("pickTime")}
+            </p>
+            {datesLoading ? (
+              <p className="font-sans text-[14px] text-muted" role="status">
+                {t("loadingDates")}
+              </p>
+            ) : datesDegraded ? (
+              <FallbackBlock t={t} fallback={fallback} />
+            ) : noAvailableDates ? (
+              <div role="status">
+                <p className="font-sans text-[14px] text-muted">
+                  {t("noDates")}
+                </p>
+                <FallbackBlock t={t} fallback={fallback} />
+              </div>
+            ) : !date ? (
+              <p className="font-sans text-[14px] text-muted">
+                {t("pickDateFirst")}
+              </p>
+            ) : slotsLoading ? (
+              <p className="font-sans text-[14px] text-muted">{t("loading")}</p>
+            ) : slots.length > 0 ? (
+              <TimePicker
+                inline
+                value={slot?.start ?? ""}
+                ariaLabel={t("pickTime")}
+                options={slots.map((item) => ({
+                  value: item.start,
+                  label: item.label,
+                }))}
+                onValueChange={(value) => {
+                  const selectedSlot = slots.find(
+                    (item) => item.start === value,
+                  );
+                  if (selectedSlot) pickSlot(selectedSlot);
+                }}
+              />
+            ) : slotsDegraded ? (
+              <FallbackBlock t={t} fallback={fallback} />
+            ) : (
+              <p className="font-sans text-[14px] text-muted">{t("noTimes")}</p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {step === 4 && slot && specialist && (
+        <form
+          className="mt-[clamp(20px,3vw,32px)] max-w-130"
+          onSubmit={(e) => {
+            e.preventDefault();
+            void submit();
+          }}
+        >
+          <p className="mb-5 font-sans text-[14px] text-body">
+            {t("summary.time")}:{" "}
+            <span className="font-medium text-ink">
+              {dateTimeFmt.format(new Date(slot.start))}
+            </span>
+          </p>
+
+          <p className="mb-5 font-sans text-[14px] text-body">
+            {t("summary.specialist")}:{" "}
+            <span className="font-medium text-ink">{specialist.name}</span>
+          </p>
+
+          {consultationRequired && !consultationAvailable ? (
+            <div
+              className="mb-5 rounded-[6px] border border-line-btn bg-btn-fill px-4 py-3 font-sans text-[14px] text-body"
+              role="alert"
+            >
+              <p>{t("errors.consultationUnavailable")}</p>
+            </div>
+          ) : null}
+
+          <div className="grid gap-3.5">
+            {clientSignedIn ? (
+              <div className="rounded-[6px] border border-line-card bg-alt px-4 py-3 font-sans text-[14px] leading-[1.7] text-body">
+                <p className="font-medium text-ink">{t("savedProfile")}</p>
+                <p>{form.fullName}</p>
+                <p>{form.phone}</p>
+                <p>{form.email}</p>
+                <a
+                  href={profileHref}
+                  className="mt-1 inline-block text-accent underline underline-offset-4"
+                >
+                  {t("editProfile")}
+                </a>
+              </div>
+            ) : (
+              <>
+                <Field label={t("fields.name")} required>
+                  <input
+                    type="text"
+                    required
+                    autoComplete="name"
+                    value={form.fullName}
+                    onChange={(e) =>
+                      setForm({ ...form, fullName: e.target.value })
+                    }
+                    className={inputCls}
+                  />
+                </Field>
+                <Field label={t("fields.phone")} required>
+                  <input
+                    type="tel"
+                    required
+                    autoComplete="tel"
+                    placeholder="+358 40 123 4567"
+                    value={form.phone}
+                    onChange={(e) =>
+                      setForm({ ...form, phone: e.target.value })
+                    }
+                    className={inputCls}
+                  />
+                </Field>
+                <Field label={t("fields.email")} required>
+                  <input
+                    type="email"
+                    required
+                    autoComplete="email"
+                    readOnly={verifiedEmail}
+                    value={form.email}
+                    onChange={(e) =>
+                      setForm({ ...form, email: e.target.value })
+                    }
+                    className={inputCls}
+                  />
+                </Field>
+              </>
+            )}
+            <Field label={t("fields.notes")}>
+              <textarea
+                rows={3}
+                value={form.notes}
+                onChange={(e) => setForm({ ...form, notes: e.target.value })}
+                className={cn(inputCls, "resize-y")}
+              />
+            </Field>
+          </div>
+
+          {consultationRequired &&
+          consultationConfig &&
+          consultationAvailable ? (
+            <ConsultationFields
+              config={consultationConfig}
+              value={consultation}
+              locale={locale}
+              onChange={setConsultation}
+              t={t}
+            />
+          ) : null}
+
+          <aside className="mt-4.5 rounded-[6px] border border-line-card bg-alt px-4 py-3 font-sans text-[13px] leading-[1.65] text-body">
+            <p>{cancellationPolicy.text}</p>
+            <a
+              href={cancellationPolicy.href}
+              className="mt-1.5 inline-block font-medium text-accent underline decoration-accent/45 underline-offset-4"
+            >
+              {cancellationPolicy.linkLabel}
+            </a>
+          </aside>
+
+          <label className="mt-4.5 flex items-start gap-2.5 font-sans text-[14px] leading-[1.6] text-body">
+            <input
+              type="checkbox"
+              checked={consent}
+              onChange={(e) => setConsent(e.target.checked)}
+              className="mt-0.75 h-4.5 w-4.5 accent-accent"
+            />
+            <span>
+              {t.rich("fields.consent", {
+                link: (chunks) => (
+                  <Link
+                    href={PUBLIC_PATHS.privacy}
+                    target="_blank"
+                    className="underline underline-offset-4 hover:text-accent"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </span>
+          </label>
+
+          <label className="mt-3 flex items-start gap-2.5 font-sans text-[14px] leading-[1.6] text-body">
+            <input
+              type="checkbox"
+              required
+              checked={procedureAcknowledged}
+              onChange={(e) => setProcedureAcknowledged(e.target.checked)}
+              className="mt-0.75 h-4.5 w-4.5 accent-accent"
+            />
+            <span>
+              {procedureConsent.wording || t("fields.procedureConsent")}
+            </span>
+          </label>
+
+          <div className="mt-6">
+            <ButtonAction
+              type="submit"
+              iconRight={ArrowRight}
+              disabled={
+                submitting ||
+                !consent ||
+                !procedureAcknowledged ||
+                !procedureConsent.version ||
+                !consultationAvailable ||
+                (consultationRequired &&
+                  (!consultationConfig ||
+                    !consultation.dateOfBirth ||
+                    !consultation.healthConsent ||
+                    !consultation.accuracyAcknowledged))
+              }
+              className="disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {submitting ? t("submitting") : t("submit")}
+            </ButtonAction>
+          </div>
+
+          {showFallback && <FallbackBlock t={t} fallback={fallback} />}
+        </form>
+      )}
+    </div>
+  );
+}
+
+function ConsultationFields({
+  config,
+  value,
+  locale,
+  onChange,
+  t,
+}: {
+  config: BookingConsultationConfig;
+  value: ConsultationState;
+  locale: string;
+  onChange: (next: ConsultationState) => void;
+  t: ReturnType<typeof useTranslations>;
+}) {
+  const setAnswer = (key: string, answer: ConsultationAnswer) =>
+    onChange({ ...value, answers: { ...value.answers, [key]: answer } });
+  return (
+    <fieldset className="mt-5 grid gap-4 rounded-[8px] border border-line-card bg-alt p-4 sm:p-5">
+      <legend className="px-2 font-display text-[22px] font-medium text-ink">
+        {t("consultation.heading")}
+      </legend>
+      <p className="font-sans text-[13px] leading-[1.7] text-body">
+        {config.requiredInformation}
+      </p>
+      <div className="font-sans text-[13px] text-body">
+        <span className="mb-1.5 block tracking-[.04em] text-muted uppercase">
+          {t("consultation.dateOfBirth")} <span className="text-accent">*</span>
+        </span>
+        <DatePicker
+          id="booking-consultation-date-of-birth"
+          locale={locale}
+          value={value.dateOfBirth}
+          onValueChange={(dateOfBirth) => onChange({ ...value, dateOfBirth })}
+          ariaLabel={t("consultation.dateOfBirth")}
+          placeholder={t("consultation.chooseDateOfBirth")}
+          autoComplete="bday"
+          max={clinicTodayYmd()}
+          disableClosedDays={false}
+          navigation="dateOfBirth"
+          required
+        />
+      </div>
+      {config.questions.map((question) => {
+        const answer = value.answers[question.key];
+        if (question.type === "LONG_TEXT" || question.type === "SHORT_TEXT")
+          return (
+            <label
+              key={question.key}
+              className="block font-sans text-[13px] text-body"
+            >
+              <span>
+                {question.prompt}
+                {question.required ? (
+                  <span className="text-accent"> *</span>
+                ) : null}
+              </span>
+              {question.helpText ? (
+                <span className="mt-1 block text-muted">
+                  {question.helpText}
+                </span>
+              ) : null}
+              {question.type === "LONG_TEXT" ? (
+                <textarea
+                  className={cn(inputCls, "mt-1.5 min-h-28 resize-y")}
+                  value={typeof answer === "string" ? answer : ""}
+                  required={question.required}
+                  onChange={(event) =>
+                    setAnswer(question.key, event.target.value)
+                  }
+                />
+              ) : (
+                <input
+                  className={cn(inputCls, "mt-1.5")}
+                  value={typeof answer === "string" ? answer : ""}
+                  required={question.required}
+                  onChange={(event) =>
+                    setAnswer(question.key, event.target.value)
+                  }
+                />
+              )}
+            </label>
+          );
+        if (question.type === "ACKNOWLEDGMENT")
+          return (
+            <label
+              key={question.key}
+              className="flex gap-2.5 font-sans text-[13px] leading-[1.65] text-body"
+            >
+              <input
+                type="checkbox"
+                className="mt-0.75 h-4.5 w-4.5 accent-accent"
+                checked={answer === true}
+                required={question.required}
+                onChange={(event) =>
+                  setAnswer(question.key, event.target.checked)
+                }
+              />
+              <span>{question.prompt}</span>
+            </label>
+          );
+        const choices =
+          question.type === "YES_NO"
+            ? [
+                { key: "yes", label: t("consultation.yes") },
+                { key: "no", label: t("consultation.no") },
+              ]
+            : question.choices;
+        const selected = Array.isArray(answer) ? answer : [];
+        return (
+          <fieldset
+            key={question.key}
+            className="grid gap-2 font-sans text-[13px] text-body"
+          >
+            <legend>
+              {question.prompt}
+              {question.required ? (
+                <span className="text-accent"> *</span>
+              ) : null}
+            </legend>
+            {question.helpText ? (
+              <p className="text-muted">{question.helpText}</p>
+            ) : null}
+            {choices.map((choice) => (
+              <label key={choice.key} className="flex gap-2.5">
+                <input
+                  type={question.type === "MULTI_CHOICE" ? "checkbox" : "radio"}
+                  name={`booking_consultation_${question.key}`}
+                  value={choice.key}
+                  className="accent-accent"
+                  checked={
+                    question.type === "MULTI_CHOICE"
+                      ? selected.includes(choice.key)
+                      : answer === choice.key
+                  }
+                  required={
+                    question.required && question.type !== "MULTI_CHOICE"
+                  }
+                  onChange={(event) => {
+                    if (question.type !== "MULTI_CHOICE") {
+                      setAnswer(question.key, choice.key);
+                      return;
+                    }
+                    setAnswer(
+                      question.key,
+                      event.target.checked
+                        ? [...selected, choice.key]
+                        : selected.filter((item) => item !== choice.key),
+                    );
+                  }}
+                />
+                {choice.label}
+              </label>
+            ))}
+          </fieldset>
+        );
+      })}
+      <label className="flex gap-2.5 font-sans text-[13px] leading-[1.65] text-body">
+        <input
+          type="checkbox"
+          className="mt-0.75 h-4.5 w-4.5 accent-accent"
+          checked={value.healthConsent}
+          required
+          onChange={(event) =>
+            onChange({ ...value, healthConsent: event.target.checked })
+          }
+        />
+        <span>{config.healthConsent}</span>
+      </label>
+      <label className="flex gap-2.5 font-sans text-[13px] leading-[1.65] text-body">
+        <input
+          type="checkbox"
+          className="mt-0.75 h-4.5 w-4.5 accent-accent"
+          checked={value.accuracyAcknowledged}
+          required
+          onChange={(event) =>
+            onChange({ ...value, accuracyAcknowledged: event.target.checked })
+          }
+        />
+        <span>{config.accuracyAcknowledgment}</span>
+      </label>
+    </fieldset>
+  );
+}
+
+const inputCls =
+  "w-full rounded-[4px] border border-line-btn bg-page px-3.5 py-2.75 font-sans text-copy text-ink outline-none focus:border-accent";
+
+function SummaryRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex justify-between gap-4 border-b border-line-hair pb-2.5">
+      <dt className="text-muted">{label}</dt>
+      <dd className="text-right font-medium">{value}</dd>
+    </div>
+  );
+}
+
+function SelectedContext({
+  service,
+  procedure,
+  locale,
+  t,
+}: {
+  service: BookingServiceOption;
+  procedure: BookingProcedureContext | null;
+  locale: string;
+  t: ReturnType<typeof useTranslations>;
+}) {
+  const priceFrom =
+    service.priceFrom === null
+      ? null
+      : new Intl.NumberFormat(locale, {
+          style: "currency",
+          currency: "EUR",
+          maximumFractionDigits: 2,
+        }).format(service.priceFrom);
+
+  return (
+    <article className="mb-[clamp(22px,3vw,32px)] grid overflow-hidden rounded-(--radius) border border-line-card bg-page sm:grid-cols-[150px_1fr]">
+      {service.image ? (
+        <div className="relative min-h-37.5 sm:min-h-full">
+          <Image
+            src={service.image}
+            alt={service.imageAlt}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, 150px"
+            style={{
+              objectPosition: `${service.imageFocalX}% ${service.imageFocalY}%`,
+            }}
+          />
+        </div>
+      ) : null}
+      <div className="p-[clamp(18px,2.5vw,26px)]">
+        <p className="font-sans text-meta font-medium tracking-[.16em] text-accent uppercase">
+          {procedure ? t("context.procedure") : t("context.service")}
+        </p>
+        {procedure ? (
+          <p className="mt-1.75 font-sans text-meta text-muted">
+            {service.name}
+          </p>
+        ) : null}
+        <h3 className="mt-1.25 font-display text-[clamp(24px,3vw,32px)] leading-[1.08] font-medium text-ink">
+          {procedure?.title ?? service.name}
+        </h3>
+        <p className="mt-2.5 font-sans text-compact leading-[1.65] font-normal text-body">
+          {procedure?.description ?? service.shortDescription}
+        </p>
+        <div className="mt-3.5 flex flex-wrap gap-x-4.5 gap-y-1.5 font-sans text-meta text-muted">
+          <span>
+            {procedure?.durationLabel ??
+              t("context.duration", {
+                minutes: procedure?.durationMin ?? service.durationMin,
+              })}
+          </span>
+          {procedure?.price ? <span>{procedure.price}</span> : null}
+          {!procedure && priceFrom ? (
+            <span>
+              {service.priceMode === "FIXED"
+                ? priceFrom
+                : t("context.priceFrom", { price: priceFrom })}
+            </span>
+          ) : null}
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function Field({
+  label,
+  required,
+  children,
+}: {
+  label: string;
+  required?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <label className="block">
+      <span className="mb-1.5 block font-sans text-label tracking-[.04em] text-muted uppercase">
+        {label}
+        {required && <span className="text-accent"> *</span>}
+      </span>
+      {children}
+    </label>
+  );
+}
+
+function FallbackBlock({
+  t,
+  fallback,
+}: {
+  t: ReturnType<typeof useTranslations>;
+  fallback: Fallback;
+}) {
+  return (
+    <div className="mt-4 rounded-(--radius) border border-line-card bg-card p-4.5">
+      <p className="font-sans text-[14px] leading-[1.7] text-body">
+        {t("fallback")}
+      </p>
+      <div className="mt-3 flex flex-wrap gap-2.5">
+        <a
+          href={fallback.phoneHref}
+          className="inline-flex min-h-11 items-center gap-2 rounded-[4px] bg-accent px-4.5 font-sans text-meta tracking-[.14em] text-page uppercase"
+        >
+          <Phone size={16} weight="thin" /> {fallback.phone}
+        </a>
+        <a
+          href={fallback.emailHref}
+          className="inline-flex min-h-11 items-center gap-2 rounded-[4px] border border-line-btn px-4.5 font-sans text-meta tracking-[.14em] text-ink uppercase"
+        >
+          <EnvelopeSimple size={16} weight="thin" /> {fallback.email}
+        </a>
+      </div>
+    </div>
+  );
+}

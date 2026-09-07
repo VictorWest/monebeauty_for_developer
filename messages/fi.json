@@ -1,0 +1,944 @@
+{
+  "Nav": {
+    "about": "Tietoa meistä",
+    "instrumental": "Instrumentaalinen kosmetologia",
+    "endospheres": "Endospheres-terapia",
+    "laser": "Laserkarvanpoisto",
+    "rf": "Mikroneulan RF-lifting",
+    "trichology": "Trikologia",
+    "arosha": "Arosha",
+    "services": "Palvelut",
+    "face": "Kasvohoidot",
+    "body": "Vartalohoidot",
+    "serviceTricho": "Trikologia",
+    "serviceLaser": "Laserkarvanpoisto",
+    "serviceRf": "Mikroneulan RF",
+    "eyebrows": "Kulmat & ripset",
+    "packages": "Paketit",
+    "giftCards": "Lahjakortit",
+    "catalog": "Katalogi",
+    "bookTime": "Varaa aika",
+    "injectable": "Esteettiset injektiohoidot",
+    "consultation": "Lääkärin konsultaatio"
+  },
+  "Header": {
+    "openMenu": "Avaa valikko",
+    "closeMenu": "Sulje valikko",
+    "language": "Kieli",
+    "account": "Oma tili"
+  },
+  "Footer": {
+    "navHeading": "Navigointi",
+    "contactsHeading": "Yhteystiedot",
+    "openingHours": "Aukioloajat",
+    "hours": "Ma–Su: Sopimuksen mukaan",
+    "rights": "Kaikki oikeudet pidätetään.",
+    "privacy": "Tietosuojaseloste",
+    "terms": "Käyttöehdot",
+    "cookies": "Evästekäytäntö"
+  },
+  "Common": {
+    "readMore": "Katso lisää",
+    "seeMore": "Katso lisää",
+    "seeLess": "Katso vähemmän",
+    "allServices": "Katso lisää palveluita",
+    "backToCatalog": "Takaisin katalogiin",
+    "bookTime": "Varaa aika",
+    "book": "Varaa",
+    "bookThis": "Varaa tämä hoito",
+    "chooseServiceEyebrow": "Varaa verkossa",
+    "chooseServiceHeading": "Valitse varattava palvelu"
+  },
+  "Chat": {
+    "title": "Tarvitsetko apua?",
+    "subtitle": "Olemme täällä sinua varten.",
+    "open": "Avaa chat",
+    "close": "Sulje chat",
+    "welcome": "Kysy hoidoista, tuotteista, ajanvarauksesta tai klinikan tiedoista. Vastaan vain Mone Beauty Clinicin hyväksytystä sisällöstä.",
+    "placeholder": "Kirjoita kysymys...",
+    "send": "Lähetä viesti",
+    "thinking": "Hetkinen...",
+    "error": "Chat ei ole tilapäisesti käytettävissä. Yritä uudelleen tai ota yhteyttä klinikkaan.",
+    "assistantUnavailable": "Avustaja ei ole tilapäisesti käytettävissä. Voit yrittää uudelleen, varata ajan, ottaa yhteyttä klinikkaan tai pyytää henkilökuntaa ottamaan yhteyttä.",
+    "retry": "Yritä uudelleen",
+    "bookOnline": "Varaa aika",
+    "contactClinic": "Ota yhteyttä",
+    "humanFollowUp": "Pyydä yhteydenottoa",
+    "sources": "Lähteet",
+    "consent": "Hyväksyn, että tämä chat voidaan tallentaa, jotta Mone Beauty Clinic voi vastata ja parantaa palvelua, <link>tietosuojaselosteen</link> mukaisesti.",
+    "book": "Varaa tämä palvelu",
+    "handoff": "Pyydä ihmistä ottamaan yhteyttä",
+    "sendHandoff": "Lähetä pyyntö",
+    "handoffSent": "Pyyntösi on lähetetty klinikalle.",
+    "humanConnected": "Klinikan työntekijä voi nyt vastata tähän keskusteluun. Uudet viestit lähetetään myös antamaasi yhteyskanavaan.",
+    "humanPlaceholder": "Kirjoita viesti klinikalle...",
+    "operatorFallback": "Mone Beauty Clinic",
+    "handoffError": "Pyyntöä ei voitu lähettää. Soita tai lähetä sähköpostia klinikalle.",
+    "handoffValidation": "Anna nimesi, viesti ja vähintään yksi kelvollinen sähköpostiosoite tai puhelinnumero ja hyväksy suostumus.",
+    "cancel": "Peruuta",
+    "fields": {
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "phone": "Puhelin",
+      "message": "Viesti klinikalle"
+    }
+  },
+  "CookieConsent": {
+    "title": "Evästeasetukset",
+    "body": "Käytämme välttämätöntä tallennusta sivuston toimintaan. Analytiikka latautuu vain, jos hyväksyt sen.",
+    "accept": "Hyväksy analytiikka",
+    "decline": "Kieltäydy"
+  },
+  "Home": {
+    "metaTitle": "Instrumentaalinen kosmetologia ja kauneudenhoito Helsingissä",
+    "metaDescription": "Mone Beauty Clinic — esteettisen lääketieteen klinikka Helsingissä: endospheres-terapia, laser, RF-lifting, trikologia, kasvo- ja vartalohoidot sekä AROSHA-tuotteet.",
+    "servicesEyebrow": "Palvelut",
+    "servicesHeading": "Palvelumme",
+    "featured": {
+      "endospheres": {
+        "title": "Endospheres therapy",
+        "description": "Innovatiivinen toimenpide, jossa käytetään ainutlaatuista radiofrekvenssiin ja tyhjiötekniikkaan perustuvaa laitetta. Tämä hoito auttaa parantamaan ihoa, vähentämään selluliittia, lisäämään ihon kiinteyttä ja sävyä sekä edistämään mikroverenkiertoa."
+      },
+      "arosha": {
+        "title": "Arosha Boost",
+        "description": "AROSHA on kehittänyt intensiivisiä tuotteita ja ohjelmia, jotka vastaavat jokaisen asiakkaan tarpeisiin. Klinikan tiimi auttaa valitsemaan sopivan protokollan."
+      },
+      "facial": {
+        "title": "Kasvojen hoitomenetelmät",
+        "description": "Salongissamme käytämme tehokkaimpia laite- ja kosmeettisia menetelmiä kasvoille korostaaksemme luonnollista kauneuttasi ja antaaksemme ihollesi terveen, hehkuvan ulkonäön."
+      }
+    },
+    "aroshaEyebrow": "Arosha",
+    "aroshaHeading": "AROSHA",
+    "aroshaIntro": "AROSHA is the European leader in the worldwide number of body products sold in the area. The AROSHA brand is characterized by traditionally high Italian quality, ease of use and solves the most complex problems, with results that are visible after a short period of use.",
+    "heroEyebrow": "Esteettisen lääketieteen klinikka · Helsinki",
+    "heroBookCta": "Varaa aika",
+    "heroServicesCta": "Palvelut",
+    "heroTrust": {
+      "byAppointment": {
+        "title": "Ajanvarauksella",
+        "desc": "Varaa sinulle sopiva aika — ma–su sopimuksen mukaan."
+      },
+      "location": {
+        "title": "Helsinki",
+        "desc": "Solvikinkatu 5, 00990 Helsinki."
+      },
+      "instrumental": {
+        "title": "Laitekosmetologia",
+        "desc": "Endosferahoito, laser, RF-kohotus ja trikologia."
+      },
+      "products": {
+        "title": "AROSHA & DIXIDOX",
+        "desc": "Ammattilaisten vartalo- ja hiustenhoitotuotteet."
+      }
+    }
+  },
+  "HomeEditorial": {
+    "hero": {
+      "eyebrow": "Esteettisen lääketieteen klinikka · Helsinki",
+      "heading": "Uuden sukupolven esteettistä lääketiedettä",
+      "lead": "Kokonaisvaltainen lähestymistapa kauneuteen, ihon hyvinvointiin sekä kasvojen, vartalon ja hiusten luonnolliseen harmoniaan.",
+      "book": "Varaa aika",
+      "services": "Tutustu palveluihin"
+    },
+    "facts": {
+      "location": {
+        "title": "Klinikka Helsingissä",
+        "body": "Solvikinkatu 5, 00990 Helsinki"
+      },
+      "hours": {
+        "title": "Sopimuksen mukaan",
+        "body": "Ma–su ajanvarauksella"
+      },
+      "approach": {
+        "title": "Yksilöllinen palvelu",
+        "body": "Huolenpitoa jokaisen käynnin tarpeisiin"
+      }
+    },
+    "standard": {
+      "eyebrow": "Hoidon standardi",
+      "heading": "Huolella suunniteltu klinikkakokemus",
+      "items": [
+        {
+          "title": "Valitse",
+          "body": "Tutustu hyväksyttyihin hoitotietoihin ja valitse käyntiisi sopiva palvelu."
+        },
+        {
+          "title": "Varaa",
+          "body": "Valitse palvelu ja katso klinikan vapaat ajat."
+        },
+        {
+          "title": "Saavu",
+          "body": "Saat vahvistuksen ja tapaat klinikan tiimin sovittuna aikana."
+        }
+      ]
+    },
+    "services": {
+      "eyebrow": "Kliiniset palvelut",
+      "heading": "Hoitoa kasvoille, vartalolle ja hiuksille",
+      "featured": "Esittelyssä",
+      "stubs": {
+        "injectable": "Esteettiset injektiohoidot",
+        "consultation": "Lääkärin konsultaatio"
+      }
+    },
+    "technology": {
+      "eyebrow": "Kliininen teknologia",
+      "heading": "Teknologia kokeneissa käsissä"
+    },
+    "products": {
+      "eyebrow": "Klinikan valikoima",
+      "heading": "Ammattimaista hoitoa myös kotiin",
+      "lead": "Tutustu AROSHA-vartalonhoitoon ja DIXIDOX De Luxe -trikologiatuotteisiin.",
+      "all": "Koko tuotevalikoima"
+    },
+    "booking": {
+      "eyebrow": "Varaa verkossa",
+      "heading": "Aloita yhdellä valinnalla",
+      "lead": "Valitse palvelu ja jatka suoraan klinikan vapaisiin aikoihin.",
+      "placeholder": "Valitse palvelu",
+      "cta": "Jatka varaukseen"
+    },
+    "contact": {
+      "eyebrow": "Klinikan standardi",
+      "heading": "Rauhallinen ja yksilöllinen klinikka Helsingissä",
+      "lead": "Mone Beauty Clinic yhdistää esteettisen lääketieteen, edistyneet teknologiat ja huolellisen palvelun. Käynnit ajanvarauksella."
+    }
+  },
+  "HomeReference": {
+    "nav": {
+      "treatments": "Hoidot",
+      "technologies": "Teknologiat",
+      "products": "Tuotteet",
+      "standard": "Hoidon standardi",
+      "consultation": "Konsultaatio",
+      "menu": "Valikko"
+    },
+    "common": {
+      "bookOnline": "Varaa aika",
+      "book": "Varaa",
+      "readMore": "Lue lisää"
+    },
+    "hero": {
+      "metaLeft": "Luvanvarainen lääkäriklinikka · Helsinki",
+      "metaRight": "Kasvot · Vartalo · Hiukset",
+      "title": "Uuden sukupolven esteettistä lääketiedettä.",
+      "lead": "Kokonaisvaltainen lähestymistapa kauneuteen, ihon terveyteen sekä kasvojen, vartalon ja hiusten luonnolliseen harmoniaan. Mone on luvanvarainen lääkäriklinikka, joka tarjoaa turvallisia, näyttöön perustuvia hoitoja ja yksilöllisiä hoitosuunnitelmia.",
+      "imageAlt": "Kliinikko tekemässä hoitoa Mone Beauty Clinicillä",
+      "explore": "Tutustu hoitoihin",
+      "tag": "Solvikinkatu 5, Helsinki"
+    },
+    "standard": {
+      "marker": "01 · Hoidon standardi",
+      "title": "Hoitomme standardi",
+      "lead": "Jokainen hoito suunnitellaan ja toteutetaan lääketieteellisten standardien mukaisesti selkeää kliinistä hoitopolkua noudattaen ensikonsultaatiosta ylläpitoon.",
+      "items": {
+        "consultation": {
+          "title": "Konsultaatio",
+          "body": "Jäsennelty lääketieteellinen konsultaatio, jossa käydään läpi tausta, huolenaiheet ja odotukset."
+        },
+        "diagnosis": {
+          "title": "Diagnoosi",
+          "body": "Instrumentaalinen ihon ja hiuspohjan analyysi tarkan lähtötilanteen määrittämiseksi."
+        },
+        "plan": {
+          "title": "Hoitosuunnitelma",
+          "body": "Kirjallinen suunnitelma, jossa määritellään toimenpiteet, niiden järjestys ja odotettu aikataulu."
+        },
+        "care": {
+          "title": "Hoito",
+          "body": "Ammatillinen kotihoito ja sovitut seurantakäynnit tulosten ylläpitämiseksi."
+        }
+      },
+      "credentials": {
+        "licensed": "Luvanvarainen klinikka",
+        "eu": "EU-standardit",
+        "evidence": "Näyttöön perustuva",
+        "personalized": "Yksilölliset ohjelmat",
+        "gdpr": "GDPR-luottamuksellisuus"
+      }
+    },
+    "areas": {
+      "marker": "Matka parhaaseen versioon itsestäsi",
+      "title": "Hoitoalueemme",
+      "lead": "Yksilölliset ratkaisut kasvoille, vartalolle ja hiuksille. Hoitoa, joka kantaa pitkälle.",
+      "items": {
+        "face": {
+          "title": "Kasvot",
+          "body": "Terve iho, säilynyt nuorekkuus ja luonnollinen kauneus."
+        },
+        "body": {
+          "title": "Vartalo",
+          "body": "Parempi ihon laatu, vartalon muotoilu ja kokonaisvaltainen vartalonhoito."
+        },
+        "hair": {
+          "title": "Hiukset",
+          "body": "Terve hiuspohja, vahvemmat hiukset ja tehokas hiusten elinvoiman palauttaminen."
+        },
+        "men": {
+          "title": "Hoidot miehille",
+          "body": "Yksilölliset ratkaisut miesten ihon, vartalon ja hiusten hoitoon heidän tarpeidensa mukaan."
+        }
+      },
+      "benefits": {
+        "personalized": "Yksilöllinen lähestymistapa",
+        "natural": "Luonnolliset tulokset",
+        "longTerm": "Pitkäjänteinen hoito"
+      }
+    },
+    "treatments": {
+      "marker": "02 · Hoidot",
+      "title": "Kliiniset palvelut",
+      "lead": "Kymmenen hoitokategoriaa, joista jokainen suunnitellaan diagnoosin pohjalta. Valitse hoito ajanvarausta varten tai lue koko hoitoprotokolla."
+    },
+    "services": {
+      "facial": {
+        "name": "Kasvohoidot",
+        "description": "Diagnostiikkaan perustuvat kasvohoidot ihon terveydelle ja suojakerroksen korjaamiseen."
+      },
+      "body": {
+        "name": "Vartalohoidot",
+        "description": "Kohdennetut vartalo-ohjelmat muotoiluun, kiinteyteen ja verenkiertoon."
+      },
+      "endospheres": {
+        "name": "Endospheres-terapia",
+        "description": "Kompressiivinen mikrovärähtely lymfakierron ja ihon kiinteyden tukemiseksi."
+      },
+      "laser": {
+        "name": "Laserkarvanpoisto",
+        "description": "Lääketieteellinen diodilaser pysyvään karvankasvun vähentämiseen."
+      },
+      "rf": {
+        "name": "Mikroneula-RF-kohotus",
+        "description": "Radiotaajuusmikroneulaus kollageenin uudismuodostuksen tukemiseksi."
+      },
+      "trichology": {
+        "name": "Trikologinen hoito",
+        "description": "Hiuspohjan ja hiusten diagnostiikka kliinisillä hoitoprotokollilla."
+      },
+      "brows": {
+        "name": "Kulma- ja ripsihoidot",
+        "description": "Kulmien ja ripsien tarkka muotoilu ja värjäys."
+      },
+      "packages": {
+        "name": "Hoitopaketit",
+        "description": "Usealle käynnille suunnitellut yhdistelmähoitokokonaisuudet."
+      }
+    },
+    "technology": {
+      "marker": "03 · Teknologiat",
+      "title": "Kliiniset teknologiat",
+      "lead": "Hoitojemme taustalla olevat laitteet. Jokainen on lääketieteellisen tason järjestelmä, jota koulutetut ammattilaiset käyttävät dokumentoitujen tulosten saavuttamiseksi.",
+      "items": {
+        "endospheres": {
+          "name": "Endospheres Therapy",
+          "spec": "Ei-invasiivinen · 45 min",
+          "body": "Pyörivien pallojen matriisin tuottama kompressiivinen mikrovärähtely tukee nestekiertoa ja ihon kiinteyttä."
+        },
+        "laser": {
+          "name": "Laserkarvanpoisto",
+          "spec": "Ei-invasiivinen · 30 min",
+          "body": "Lääketieteellinen diodilaser kohdistuu karvatuppiin kaikilla hoidettavilla vartaloalueilla."
+        },
+        "rf": {
+          "name": "Mikroneula-RF-kohotus",
+          "spec": "Mini-invasiivinen · 60 min",
+          "body": "Eristetyt mikroneulat johtavat radiotaajuusenergiaa dermikseen kollageenin muodostuksen stimuloimiseksi."
+        },
+        "trichology": {
+          "name": "Trikologia",
+          "spec": "Diagnostinen · 45 min",
+          "body": "Instrumentaalinen hiuspohja-analyysi ohjaa kohdennettuja hiusten ja hiuspohjan hoitoprotokollia."
+        }
+      }
+    },
+    "products": {
+      "marker": "04 · Tuotteet",
+      "title": "Ammattilaistuotteet",
+      "lead": "Ammattilaiskoostumukset osana hoitosuunnitelmaasi. Kaksi kliinistä tuotelinjaa jatkaa tulosten tukemista käyntien välillä.",
+      "tabs": {
+        "AROSHA_BODY": "AROSHA",
+        "DIXIDOX_TRICHO": "DIXIDOX de Luxe"
+      },
+      "note": "Annostellaan osana hoitosuunnitelmaasi.",
+      "add": "Lisää ostoskoriin",
+      "all": "Katso koko valikoima — 31 tuotetta"
+    },
+    "booking": {
+      "marker": "05 · Konsultaatio",
+      "title": "Varaa konsultaatio",
+      "lead": "Aloita konsultaatiolla. Käymme läpi taustasi ja huolenaiheesi, tutkimme alueen ja laadimme kirjallisen hoitosuunnitelman.",
+      "intro": "Käynnit sovitaan erikseen. Valitse hoito ja toivottu päivä, niin vahvistamme ajan sähköpostitse.",
+      "gdpr": "Tietojasi käsitellään luottamuksellisesti GDPR:n mukaisesti ja vain ajan järjestämiseen. Lue <link>tietosuojaseloste</link>.",
+      "notesPlaceholder": "Kerro kaikki, mitä meidän tulisi tietää ennen konsultaatiota.",
+      "requested": "Toivottu hoito",
+      "whatsapp": "WhatsApp — viesti klinikalle",
+      "fields": {
+        "name": "Koko nimi",
+        "phone": "Puhelin",
+        "email": "Sähköposti",
+        "treatment": "Hoito",
+        "date": "Toivottu päivä",
+        "notes": "Lisätiedot"
+      },
+      "select": "Valitse hoito",
+      "submit": "Pyydä aikaa"
+    },
+    "footer": {
+      "about": "Luvanvarainen esteettisen lääketieteen, ihon, vartalon ja hiusten klinikka Helsingissä.",
+      "clinic": "Klinikka",
+      "hours": "Aukiolo",
+      "byAgreement": "Sopimuksen mukaan",
+      "booking247": "Ajanvaraus 24/7",
+      "explore": "Tutustu",
+      "legal": "Lakiasiat",
+      "privacy": "Tietosuojaseloste",
+      "terms": "Käyttöehdot",
+      "cookies": "Evästekäytäntö"
+    }
+  },
+  "Catalog": {
+    "categoryGiftCards": "Lahjakortit",
+    "categoryTreatments": "Ennakkoon maksettavat hoidot",
+    "categoryOther": "Muut tuotteet",
+    "metaTitle": "Katalogi",
+    "metaDescription": "Ammattilaisten AROSHA- ja DIXIDOX De Luxe -tuotteet Mone Beauty Clinicillä, Helsingissä.",
+    "title": "Katalogi",
+    "intro": "Ammattilaisten AROSHA-vartalotuotteet ja DIXIDOX De Luxe -trikologiasarja.",
+    "intoBasket": "Lisää ostoskoriin",
+    "categoryBody": "AROSHA vartalo",
+    "categoryTricho": "DIXIDOX trikologia"
+  },
+  "Product": {
+    "description": "Kuvaus",
+    "seeAlso": "Katso myös",
+    "backToCatalog": "Takaisin katalogiin",
+    "intoBasket": "Lisää ostoskoriin"
+  },
+  "Booking": {
+    "metaTitle": "Varaa aika",
+    "eyebrow": "Ajanvaraus",
+    "heading": "Varaa aika",
+    "intro": "Valitse hoito, valitse aika ja vahvista — se vie alle minuutin.",
+    "steps": {
+      "service": "Hoito",
+      "specialist": "Asiantuntija",
+      "time": "Aika",
+      "you": "Tiedot"
+    },
+    "services": {
+      "facial": "Kasvohoidot",
+      "body": "Vartalohoidot",
+      "endospheres": "Endospheres-terapia",
+      "laser": "Laserkarvanpoisto",
+      "rf": "Mikroneula-RF",
+      "trichology": "Trikologia",
+      "brows": "Kulmat ja ripset",
+      "packages": "Hoitopaketit"
+    },
+    "context": {
+      "service": "Valittu palvelu",
+      "procedure": "Valittu hoito",
+      "duration": "{minutes} min",
+      "priceFrom": "Alkaen {price}"
+    },
+    "offerAccount": {
+      "title": "Kirjaudu käyttääksesi tarjouksen",
+      "body": "Tutustumishinta on tarkoitettu uusille Endospheres-asiakkaille, joilla on Mone Beauty Clinicin asiakastili.",
+      "signIn": "Kirjaudu",
+      "create": "Luo tili"
+    },
+    "pickSpecialist": "Valitse asiantuntija",
+    "loadingSpecialists": "Ladataan asiantuntijoita…",
+    "noSpecialists": "Tälle toimenpiteelle ei ole juuri nyt verkossa varattavaa asiantuntijaa.",
+    "pickDate": "Valitse päivä",
+    "pickTime": "Valitse aika",
+    "pickDateFirst": "Valitse päivä nähdäksesi vapaat ajat.",
+    "loadingDates": "Ladataan vapaita päiviä…",
+    "noDates": "Seuraavien 60 päivän aikana ei ole tällä hetkellä vapaita verkkoajanvarausaikoja.",
+    "loading": "Ladataan vapaita aikoja…",
+    "noTimes": "Tälle päivälle ei ole vapaita aikoja — valitse toinen päivä.",
+    "fields": {
+      "name": "Koko nimi",
+      "phone": "Puhelin",
+      "email": "Sähköposti",
+      "notes": "Lisätiedot (valinnainen)",
+      "consent": "Hyväksyn, että Mone Beauty Clinic tallentaa tietoni tämän ajanvarauksen hoitamiseksi <link>tietosuojaselosteen</link> mukaisesti.",
+      "procedureConsent": "Vahvistan toimenpidekohtaiset ajanvaraustiedot."
+    },
+    "submit": "Vahvista varaus",
+    "submitting": "Varataan…",
+    "summary": {
+      "service": "Hoito",
+      "procedure": "Toimenpide",
+      "specialist": "Asiantuntija",
+      "time": "Aika",
+      "reference": "Viite"
+    },
+    "savedProfile": "Tallennetut profiilitiedot",
+    "editProfile": "Muokkaa profiilia",
+    "consultation": {
+      "required": "Täytä tai vahvista esitietolomake ennen kirjautuneena varaamista.",
+      "complete": "Avaa oma profiili",
+      "heading": "Esitiedot",
+      "dateOfBirth": "Syntymäaika",
+      "chooseDateOfBirth": "Valitse syntymäaika",
+      "yes": "Kyllä",
+      "no": "Ei"
+    },
+    "confirmed": {
+      "title": "Aikasi on varattu",
+      "body": "Ajanvarauksesi on vahvistettu. Lähetimme tiedot sähköpostiisi, mukaan lukien linkin ajan siirtämiseen tai peruuttamiseen.",
+      "again": "Varaa uusi aika",
+      "manage": "Hallinnoi tätä ajanvarausta"
+    },
+    "errors": {
+      "slotTaken": "Valitettavasti aika ehdittiin juuri varata. Valitse toinen aika.",
+      "unavailable": "Verkkovaraus on tilapäisesti pois käytöstä. Soita tai lähetä sähköpostia, niin järjestämme käyntisi.",
+      "generic": "Tarkista lomake ja yritä uudelleen.",
+      "consultationRequired": "Täytä kaikki pakolliset esitiedot ja molemmat vahvistukset.",
+      "consultationInvalid": "Tarkista syntymäaika ja esitietojen vastaukset.",
+      "consultationStale": "Esitietolomake muuttui sen ollessa avoinna. Päivitä sivu ja täytä nykyinen lomake.",
+      "consultationUnavailable": "Esitietolomake ei ole tilapäisesti käytettävissä. Varaa aika soittamalla tai sähköpostitse.",
+      "offerAccountRequired": "Luo asiakastili tai kirjaudu ennen tarjouksen varaamista.",
+      "offerNotEligible": "Tutustumistarjous on käytettävissä vain ennen ensimmäistä peruuttamatonta Endospheres-ajanvarausta. Valitse tavallinen 75 minuutin hoito; valitsemasi aika säilyy."
+    },
+    "fallback": "Varaatko mieluummin suoraan? Ota yhteyttä, niin järjestämme käyntisi."
+  },
+  "Basket": {
+    "metaTitle": "Ostoskori",
+    "heading": "Ostoskorisi",
+    "empty": "Ostoskorisi on tyhjä.",
+    "browse": "Selaa katalogia",
+    "summary": "Tilauksen yhteenveto",
+    "items": "Tuotteet",
+    "subtotal": "Välisumma",
+    "checkout": "Kassalle",
+    "increase": "Lisää määrää",
+    "decrease": "Vähennä määrää",
+    "remove": "Poista"
+  },
+  "Cart": {
+    "added": "Lisätty",
+    "addedToBasket": "{name} lisättiin ostoskoriin.",
+    "viewBasket": "Näytä ostoskori",
+    "dismiss": "Sulje ilmoitus",
+    "openBasket": "Avaa ostoskori, {count} tuotetta"
+  },
+  "Checkout": {
+    "fulfillment": {
+      "heading": "Toimitustapa",
+      "pickup": "Maksuton nouto klinikalta",
+      "shipping": "Toimitus Suomeen"
+    },
+    "metaTitle": "Kassa",
+    "eyebrow": "Kassa",
+    "heading": "Vahvista tilaus",
+    "intro": "Jätä yhteystietosi, niin otamme yhteyttä saatavuuden ja noudon vahvistamiseksi.",
+    "summary": "Tilauksen yhteenveto",
+    "address": {
+      "heading": "Toimitusosoite",
+      "default": "Oletus",
+      "new": "Käytä uutta osoitetta",
+      "recipient": "Vastaanottaja",
+      "line1": "Katuosoite",
+      "line2": "Osoiterivi 2 (valinnainen)",
+      "postalCode": "Postinumero",
+      "city": "Kaupunki",
+      "save": "Tallenna osoite tililleni",
+      "stripeConfirm": "Voit vahvistaa tai korjata osoitteen vielä turvallisessa Stripe-kassassa. Siellä tehdyt muutokset koskevat vain tätä tilausta."
+    },
+    "fields": {
+      "name": "Koko nimi",
+      "phone": "Puhelin",
+      "email": "Sähköposti",
+      "notes": "Lisätiedot (valinnainen)",
+      "consent": "Hyväksyn, että Mone Beauty Clinic tallentaa tietoni tämän tilauksen käsittelemiseksi <link>tietosuojaselosteen</link> mukaisesti."
+    },
+    "submit": "Lähetä tilaus",
+    "submitting": "Lähetetään...",
+    "cancelled": "Maksu peruttiin. Ostoskorisi on edelleen tallessa, jos haluat yrittää uudelleen.",
+    "cancelError": "Maksuistuntoa ei voitu perua turvallisesti. Yritä uudelleen tai ota yhteyttä klinikkaan.",
+    "errors": {
+      "product_unavailable": "Yksi tai useampi tuote ei ole enää saatavilla verkossa.",
+      "currency_unavailable": "Tätä ostoskoria ei voida veloittaa euroina.",
+      "fulfillment_required": "Valitse nouto klinikalta tai toimitus Suomeen.",
+      "address_invalid": "Valitse tai kirjoita voimassa oleva toimitusosoite Suomessa.",
+      "payment_unavailable": "Turvallinen maksu ei ole juuri nyt käytettävissä. Yritä pian uudelleen.",
+      "invalid_json": "Tilausta ei voitu lukea. Yritä uudelleen.",
+      "name_required": "Kirjoita koko nimesi.",
+      "phone_required": "Kirjoita puhelinnumerosi.",
+      "phone_invalid": "Kirjoita kansainvälinen puhelinnumero, joka alkaa +-merkillä.",
+      "email_required": "Kirjoita voimassa oleva sähköpostiosoite.",
+      "recipient_required": "Kirjoita vastaanottajan nimi.",
+      "line1_required": "Kirjoita toimitusosoite.",
+      "postal_code_invalid": "Kirjoita voimassa oleva viisimerkkinumeroinen suomalainen postinumero.",
+      "city_required": "Kirjoita toimituskaupunki.",
+      "consent_required": "Hyväksy tietosuostumus ennen lähettämistä.",
+      "empty_cart": "Ostoskorisi on tyhjä.",
+      "unavailable": "Kassa on tilapäisesti pois käytöstä. Soita tai lähetä sähköpostia.",
+      "generic": "Tarkista lomake ja yritä uudelleen."
+    }
+  },
+  "Order": {
+    "paymentStatus": "Maksu",
+    "voucher": "Lahjakortti- tai hoitokoodi",
+    "paymentStates": {
+      "UNPAID": "Maksamatta",
+      "PROCESSING": "Käsitellään",
+      "PAID": "Maksettu",
+      "PARTIALLY_REFUNDED": "Osittain hyvitetty",
+      "REFUNDED": "Hyvitetty",
+      "FAILED": "Maksu epäonnistui",
+      "CANCELLED": "Maksu peruttu",
+      "EXPIRED": "Maksuaika päättyi"
+    },
+    "metaTitle": "Tilaus vastaanotettu",
+    "heading": "Tilaus vastaanotettu",
+    "intro": "Kiitos. Olemme vastaanottaneet tilauspyyntösi ja otamme yhteyttä vahvistaaksemme tiedot.",
+    "reference": "Viite",
+    "total": "Yhteensä",
+    "status": "Tila",
+    "cancellationReason": "Peruutuksen syy",
+    "states": {
+      "READY_FOR_PICKUP": "Valmis noudettavaksi",
+      "SHIPPED": "Tilaus lähetetty",
+      "PENDING": "Pyyntö vastaanotettu",
+      "CONFIRMED": "Tilaus vahvistettu",
+      "PAID": "Tilaus vahvistettu",
+      "FULFILLED": "Tilaus toimitettu",
+      "CANCELLED": "Tilaus peruttu"
+    },
+    "stateDescriptions": {
+      "READY_FOR_PICKUP": "Tilauksesi on valmis noudettavaksi klinikalta.",
+      "SHIPPED": "Tilauksesi on lähetetty.",
+      "PENDING": "Klinikka tarkistaa tilauspyyntöäsi.",
+      "CONFIRMED": "Klinikka on vahvistanut tilauksesi.",
+      "PAID": "Klinikka on vahvistanut tilauksesi.",
+      "FULFILLED": "Tämä tilaus on toimitettu.",
+      "CANCELLED": "Tämä tilaus on peruttu."
+    },
+    "backToCatalog": "Takaisin katalogiin"
+  },
+  "Staff": {
+    "metaTitle": "Henkilökunnan aikataulu",
+    "eyebrow": "Henkilökunta",
+    "heading": "Aikataulu",
+    "intro": "Hallinnoi vapaita aikoja, suljettuja aikoja ja päivän varauksia. Kirjautuminen ja roolirajaus lisätään seuraavassa vaiheessa.",
+    "controls": "Hallinta",
+    "date": "Päivä",
+    "workingHours": "Työajat",
+    "startHour": "Alku",
+    "endHour": "Loppu",
+    "stepMin": "Väli",
+    "daysAhead": "Päivät",
+    "apply": "Käytä jaksolle",
+    "schedule": "Päivän aikataulu",
+    "refresh": "Päivitä",
+    "save": "Tallenna päivä",
+    "saving": "Tallennetaan...",
+    "saved": "Aikataulu tallennettu.",
+    "applied": "Työajat otettu käyttöön.",
+    "loading": "Ladataan aikataulua...",
+    "noSlots": "Tälle päivälle ei ole aikoja.",
+    "days": {
+      "0": "Su",
+      "1": "Ma",
+      "2": "Ti",
+      "3": "Ke",
+      "4": "To",
+      "5": "Pe",
+      "6": "La"
+    },
+    "slotStatus": {
+      "open": "Avoin",
+      "closed": "Suljettu",
+      "booked": "Varattu"
+    },
+    "errors": {
+      "load": "Aikataulua ei voitu ladata.",
+      "save": "Päivää ei voitu tallentaa.",
+      "apply": "Työaikoja ei voitu ottaa käyttöön."
+    }
+  },
+  "Legal": {
+    "privacyTitle": "Tietosuojaseloste",
+    "termsTitle": "Käyttöehdot",
+    "cookiesTitle": "Evästekäytäntö",
+    "lastUpdated": "Päivitetty viimeksi",
+    "privacyBody": [
+      "Verkkokaupan maksut käsittelee Stripe. Mone Beauty Clinic tallentaa tilauksen, maksun tilan, toimitustavan ja tarvittaessa toimitusosoitteen, mutta ei koskaan täydellisiä korttitietoja.",
+      "Mone Beauty Clinic käsittelee henkilötietoja ajanvarausten, tuotetilausten, asiakastuen, CRM-seurannan ja lakisääteisen hallinnon toteuttamiseksi. Tietoja voivat olla nimi, puhelin, sähköposti, varaus- ja tilaustiedot, suostumukset sekä viestit, jotka päätät lähettää.",
+      "Terveyteen liittyvät muistiinpanot, vasta-aiheet ja hoitokommentit käsitellään erityisinä henkilötietoina. Pääsy tietoihin on roolirajattu ja arkaluonteisten tietojen käyttö auditoidaan admin-järjestelmässä.",
+      "Tietoja käsitellään ajanvarauksen tai tilauksen toteuttamiseksi, lakisääteisten velvoitteiden, suostumuksen sekä klinikan turvallisen toiminnan oikeutetun edun perusteella. Markkinointiviestejä lähetetään vain suostumuksella.",
+      "Voit pyytää tietojesi tarkastusta, vientiä, korjausta tai poistamista ottamalla yhteyttä osoitteeseen info@monebeauty.fi. Osa kirjanpito- tai ajanvaraustiedoista voidaan säilyttää lain edellyttämällä tavalla.",
+      "Klinikka käyttää EU-painotteista hostingia ja rajoittaa kolmansien osapuolten käsittelyä. Analytiikkaevästeet latautuvat vain evästesuostumuksen jälkeen."
+    ],
+    "termsBody": [
+      "Sivusto tarjoaa tietoa, ajanvarauksen, tuotetilauspyyntöjä ja yhteydenottokanavia Mone Beauty Clinicille. Sisältö on informatiivista eikä korvaa henkilökohtaista konsultaatiota pätevän ammattilaisen kanssa.",
+      "Ajanvaraukset riippuvat klinikan vahvistuksesta ja saatavuudesta. Tällä sivulla julkaistut peruutus- ja ajanmuutosehdot koskevat kaikkia ajanvarauksia.",
+      "Verkkokaupan ostokset maksetaan turvallisesti Stripen kautta. Fyysiset tuotteet noudetaan klinikalta tai toimitetaan Suomeen, ja digitaaliset koodit lähetetään sähköpostitse vahvistetun maksun jälkeen. Ajanvaraukset maksetaan klinikalla eikä niitä veloiteta Stripen kautta.",
+      "Sivustoa ei saa väärinkäyttää, luvattomaan pääsyyn ei saa pyrkiä eikä vääriä tietoja saa lähettää. Admin- ja henkilökunnan alueet on rajattu valtuutetuille käyttäjille.",
+      "Klinikka voi päivittää näitä ehtoja palveluiden, lainsäädännön tai verkkosivuston ominaisuuksien muuttuessa."
+    ],
+    "cookiesBody": [
+      "Välttämättömiä evästeitä ja paikallista tallennusta käytetään perustoimintoihin, kuten ostoskorin tilaan, kielikohtaiseen navigointiin, istuntoturvaan ja evästevalintoihin.",
+      "Analytiikkaevästeet ovat vapaaehtoisia. Google Analytics latautuu vain, jos hyväksyt analytiikkaevästeet evästebannerissa.",
+      "Voit kieltäytyä analytiikkaevästeistä ja jatkaa sivuston käyttöä. Valinnan voi nollata tyhjentämällä tämän sivuston selaintallennuksen.",
+      "Chat-keskustelut tallennetaan vain, kun annat GDPR-suostumuksen chat-widgetissä."
+    ]
+  },
+  "Admin": {
+    "appName": "Mone Beauty -hallinta",
+    "menu": "Avaa navigointi",
+    "close": "Sulje navigointi",
+    "expandSidebar": "Laajenna navigointi",
+    "collapseSidebar": "Pienennä navigointi",
+    "logout": "Kirjaudu ulos",
+    "locale": "Käyttöliittymän kieli",
+    "nav": {
+      "dashboard": "Yhteenveto",
+      "clients": "Asiakkaat",
+      "staff": "Henkilöstötilit",
+      "settings": "Omat asetukset",
+      "audit": "Tapahtumaloki",
+      "integrations": "Integraatiolokit",
+      "calendar": "Kalenteri",
+      "appointments": "Ajanvaraukset",
+      "orders": "Tilaukset",
+      "services": "Kliiniset palvelut",
+      "technologies": "Teknologiat",
+      "content": "Sisältösivut",
+      "products": "Ammattilaistuotteet",
+      "pricing": "Hinnasto",
+      "blog": "Artikkelit",
+      "chat": "Keskustelut"
+    },
+    "login": {
+      "eyebrow": "Henkilöstö ja hallinta",
+      "title": "Kirjaudu työportaaliin",
+      "email": "Sähköposti",
+      "password": "Salasana",
+      "showPassword": "Näytä salasana",
+      "hidePassword": "Piilota salasana",
+      "submit": "Kirjaudu",
+      "invalid": "Sähköposti tai salasana on virheellinen."
+    },
+    "media": {
+      "changeImage": "Vaihda kuva",
+      "removeImage": "Poista kuva",
+      "uploadProgress": "Ladataan {percent} %",
+      "processing": "Kuvaa käsitellään…",
+      "requiredImage": "Kuva on pakollinen.",
+      "success": "Kuva ladattu.",
+      "typeError": "Käytä JPG-, PNG-, WebP-, AVIF- tai GIF-kuvia.",
+      "sizeError": "Kuvan koko saa olla enintään 25 Mt.",
+      "uploadError": "Lataus epäonnistui. Yritä uudelleen."
+    },
+    "dashboard": {
+      "title": "Toiminnan yhteenveto",
+      "subtitle": "Julkaisujen, asiakkaiden, varausten, kaupan ja tuen tilanne.",
+      "recent": "Viimeaikainen liiketoiminta",
+      "emptyActivity": "Ei viimeaikaista liiketoimintaa.",
+      "quick": "Luo nopeasti",
+      "needsAction": "{count} odottaa vahvistusta",
+      "activity": {
+        "categories": {
+          "appointment": "Ajanvaraus",
+          "order": "Tilaus",
+          "chat": "Keskustelu",
+          "treatment": "Hoito"
+        },
+        "actions": {
+          "appointmentBooked": "Uusi hoitovaraus",
+          "appointmentConfirmed": "Ajanvaraus vahvistettu",
+          "appointmentRescheduled": "Ajanvaraus siirretty",
+          "appointmentCompleted": "Hoito suoritettu",
+          "appointmentCancelled": "Ajanvaraus peruttu",
+          "orderPlaced": "Uusi tilaus",
+          "orderConfirmed": "Tilaus vahvistettu",
+          "orderFulfilled": "Tilaus toimitettu",
+          "orderCancelled": "Tilaus peruttu",
+          "chatHandoffRequested": "Asiakas pyysi henkilökohtaista apua",
+          "chatResolved": "Keskustelu ratkaistu",
+          "chatReopened": "Keskustelu avattu uudelleen",
+          "chatArchived": "Keskustelu arkistoitu",
+          "treatmentCreated": "Hoito luotu",
+          "treatmentUpdated": "Hoitoa päivitetty",
+          "treatmentArchived": "Hoito arkistoitu",
+          "treatmentDeleted": "Hoito poistettu"
+        },
+        "statuses": {
+          "BOOKED": "Varattu",
+          "CONFIRMED": "Vahvistettu",
+          "RESCHEDULED": "Siirretty",
+          "COMPLETED": "Suoritettu",
+          "CANCELLED": "Peruttu",
+          "PENDING": "Odottaa",
+          "PAID": "Maksettu",
+          "FULFILLED": "Toimitettu",
+          "OPEN": "Avoin",
+          "RESOLVED": "Ratkaistu"
+        }
+      }
+    },
+    "common": {
+      "new": "Uusi",
+      "save": "Tallenna",
+      "saving": "Tallennetaan…",
+      "delete": "Poista",
+      "archive": "Arkistoi",
+      "restore": "Palauta",
+      "edit": "Muokkaa",
+      "search": "Hae",
+      "empty": "Tietueita ei löytynyt.",
+      "actions": "Toiminnot",
+      "status": "Tila",
+      "draft": "Luonnos",
+      "published": "Julkaistu",
+      "archived": "Arkistoitu",
+      "global": "Yleiset asetukset",
+      "locales": "Kielikohtainen sisältö",
+      "slug": "Tunniste",
+      "publicPath": "Julkinen polku",
+      "order": "Järjestys",
+      "images": "Kuva",
+      "price": "Hinta",
+      "category": "Kategoria",
+      "title": "Otsikko",
+      "body": "Sisältö",
+      "summary": "Tiivistelmä",
+      "seoTitle": "SEO-otsikko",
+      "seoDescription": "SEO-kuvaus",
+      "seoIndexable": "Salli hakukoneiden indeksoida tämä kieliversio",
+      "imageAlt": "Kuvan vaihtoehtoinen teksti",
+      "label": "Nimike",
+      "unit": "Yksikkö",
+      "preview": "Esikatselu",
+      "back": "Takaisin",
+      "confirmDelete": "Poista pysyvästi vain, jos historialliset tiedot eivät viittaa tietueeseen.",
+      "required": "Täytä pakolliset kentät.",
+      "updated": "Muutokset tallennettu.",
+      "notProvided": "Ei annettu"
+    },
+    "modules": {
+      "clients": "Asiakkaat",
+      "staff": "Henkilöstötilit",
+      "settings": "Omat asetukset",
+      "audit": "Tapahtumaloki",
+      "integrations": "Integraatiolokit",
+      "calendar": "Kalenteri",
+      "appointments": "Ajanvaraukset",
+      "orders": "Tilaukset",
+      "services": "Kliiniset palvelut",
+      "technologies": "Kliiniset teknologiat",
+      "content": "Sisältösivut",
+      "products": "Ammattilaistuotteet",
+      "pricing": "Hinnasto",
+      "blog": "Artikkelit",
+      "chat": "Keskustelut"
+    }
+  },
+  "AdminOperations": {
+    "payment": "Maksu",
+    "fulfillment": "Toimitus",
+    "ready": "Merkitse valmiiksi noutoon",
+    "ship": "Merkitse lähetetyksi",
+    "refund": "Hyvitä Stripen kautta",
+    "refundAmount": "Hyvityssumma (EUR)",
+    "refundReason": "Hyvityksen syy",
+    "voucherCode": "Lahjakortti- tai hoitokoodi",
+    "redemptionAmount": "Käytettävä summa (lahjakortti)",
+    "redeem": "Käytä koodi",
+    "cancellationRequests": "Peruutuspyynnöt",
+    "pendingCancellationRequest": "Peruutuspyyntö odottaa käsittelyä",
+    "approveRequest": "Hyväksy pyyntö",
+    "rejectRequest": "Hylkää pyyntö",
+    "decisionReasonOptional": "Päätöksen lisätieto (valinnainen)",
+    "decisionReasonRequired": "Hylkäyksen syy",
+    "requestStatusLabels": {
+      "PENDING": "Odottaa",
+      "APPROVED": "Hyväksytty",
+      "REJECTED": "Hylätty"
+    },
+    "paymentStatusLabels": {
+      "UNPAID": "Maksamatta",
+      "PROCESSING": "Käsitellään",
+      "PAID": "Maksettu",
+      "PARTIALLY_REFUNDED": "Osittain hyvitetty",
+      "REFUNDED": "Hyvitetty",
+      "FAILED": "Epäonnistui",
+      "CANCELLED": "Peruttu",
+      "EXPIRED": "Vanhentui"
+    },
+    "orders": "Tilaukset",
+    "appointments": "Ajanvaraukset",
+    "orderDescription": "Tarkista tilauspyynnöt, vahvista saatavuus ja hoida asiakasviestintä.",
+    "appointmentDescription": "Tarkista tulevat ajat, vahvista varaukset ja hallitse muutoksia.",
+    "search": "Hae tietueita",
+    "all": "Kaikki tilat",
+    "active": "Aktiiviset",
+    "from": "Alkaen",
+    "until": "Asti",
+    "filtering": "Suodatetaan…",
+    "automatic": "Suodattimet päivittyvät automaattisesti.",
+    "empty": "Vastaavia tietueita ei löytynyt.",
+    "reference": "Viite",
+    "customer": "Asiakas",
+    "items": "Tuotteet",
+    "total": "Yhteensä",
+    "submitted": "Lähetetty",
+    "status": "Tila",
+    "contact": "Yhteystiedot",
+    "notes": "Asiakkaan lisätiedot",
+    "locale": "Asiakkaan kieli",
+    "service": "Palvelu",
+    "time": "Aika",
+    "history": "Muutoshistoria",
+    "communications": "Viestihistoria",
+    "noCommunications": "Viestejä ei ole tallennettu.",
+    "confirm": "Vahvista",
+    "fulfill": "Merkitse toimitetuksi",
+    "complete": "Merkitse valmiiksi",
+    "cancel": "Peru",
+    "reason": "Asiakkaalle näytettävä peruutussyy",
+    "reschedule": "Siirrä aikaa",
+    "chooseTime": "Valitse vapaa aika",
+    "chooseDate": "Valitse päivä",
+    "showTimes": "Näytä vapaat ajat",
+    "retry": "Yritä epäonnistunutta lähetystä uudelleen",
+    "attempts": "yritystä",
+    "accepted": "Hyväksytty",
+    "failed": "Epäonnistui",
+    "skipped": "Ohitettu",
+    "back": "Takaisin",
+    "custom": "Lähetä mukautettu viesti",
+    "email": "Sähköposti",
+    "sms": "SMS",
+    "to": "Vastaanottaja",
+    "subject": "Aihe",
+    "message": "Viesti",
+    "send": "Lähetä viesti",
+    "segments": "Merkit / koodaus / osat",
+    "transactional": "Käytä tätä vain tähän tietueeseen suoraan liittyvään viestintään.",
+    "statusLabels": {
+      "READY_FOR_PICKUP": "Valmis noutoon",
+      "SHIPPED": "Lähetetty",
+      "PENDING": "Odottaa",
+      "AWAITING_PAYMENT": "Odottaa maksua",
+      "PENDING_REQUEST": "Peruutusta pyydetty",
+      "PAID": "Maksettu (vanha)",
+      "FULFILLED": "Toimitettu",
+      "BOOKED": "Odottaa vahvistusta",
+      "CONFIRMED": "Vahvistettu",
+      "COMPLETED": "Valmis",
+      "CANCELLED": "Peruttu",
+      "RESCHEDULED": "Odottaa vahvistusta"
+    }
+  },
+  "NotFound": {
+    "title": "Sivua ei löytynyt",
+    "description": "Etsimääsi sivua ei ole olemassa.",
+    "home": "Takaisin etusivulle"
+  }
+}

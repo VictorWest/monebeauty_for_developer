@@ -1,0 +1,716 @@
+{
+  "lunch": {
+    "labelEn": "Lunch break",
+    "labelRu": "Обеденный перерыв",
+    "dragLabelEn": "Lunch break",
+    "dragLabelRu": "Обед"
+  },
+  "personal": {
+    "labelEn": "Personal time",
+    "labelRu": "Личное время",
+    "dragLabelEn": "Personal time",
+    "dragLabelRu": "Личное время"
+  },
+  "errand": {
+    "labelEn": "Work errand",
+    "labelRu": "Рабочее поручение",
+    "dragLabelEn": "Work errand",
+    "dragLabelRu": "Поручение"
+  },
+  "sick": {
+    "labelEn": "Sick leave",
+    "labelRu": "Больничный",
+    "dragLabelEn": "Sick leave",
+    "dragLabelRu": "Больничный"
+  },
+  "vacation": {
+    "labelEn": "Vacation",
+    "labelRu": "Отпуск",
+    "dragLabelEn": "Vacation",
+    "dragLabelRu": "Отпуск"
+  },
+  "timma-4f6eb0417cff8f70": {
+    "labelEn": "Brow Lift lamination and tinting",
+    "labelRu": "Ламинирование и окрашивание бровей Brow Lift",
+    "dragLabelEn": "Brow Lift",
+    "dragLabelRu": "Ламинация"
+  },
+  "timma-b7255865bd75ea9b": {
+    "labelEn": "Lash lift and tinting",
+    "labelRu": "Лифтинг и окрашивание ресниц",
+    "dragLabelEn": "Lash lift",
+    "dragLabelRu": "Лифтинг ресниц"
+  },
+  "timma-8971a5f4da620cc2": {
+    "labelEn": "Eyebrow tinting and shaping",
+    "labelRu": "Окрашивание и коррекция бровей",
+    "dragLabelEn": "Brow tint",
+    "dragLabelRu": "Брови"
+  },
+  "timma-58a937d6602dcf04": {
+    "labelEn": "Facial cleansing",
+    "labelRu": "Чистка лица",
+    "dragLabelEn": "Facial cleanse",
+    "dragLabelRu": "Чистка лица"
+  },
+  "timma-c4f6e015c72dc675": {
+    "labelEn": "Individual treatment with Shor professional Israeli cosmetics",
+    "labelRu": "Индивидуальный уход с израильской профессиональной косметикой Shor",
+    "dragLabelEn": "Shor treatment",
+    "dragLabelRu": "Уход Shor"
+  },
+  "timma-9509dd375e769cf1": {
+    "labelEn": "Fractional mesotherapy",
+    "labelRu": "Фракционная мезотерапия",
+    "dragLabelEn": "Fractional mes",
+    "dragLabelRu": "Фракц. мезо"
+  },
+  "timma-9c4b68ae4cbd6fdb": {
+    "labelEn": "Facial peel",
+    "labelRu": "Пилинг лица",
+    "dragLabelEn": "Facial peel",
+    "dragLabelRu": "Пилинг лица"
+  },
+  "timma-2cb6ed40117a4315": {
+    "labelEn": "Facial microcurrent treatment",
+    "labelRu": "Микротоки для лица",
+    "dragLabelEn": "Microcurrent",
+    "dragLabelRu": "Микротоки"
+  },
+  "timma-9b04d110ea61b18e": {
+    "labelEn": "Endospheres facial massage",
+    "labelRu": "Массаж лица Endospheres",
+    "dragLabelEn": "Endo face",
+    "dragLabelRu": "Эндо лицо"
+  },
+  "timma-5c5c4273adff3a84": {
+    "labelEn": "Papilloma removal",
+    "labelRu": "Удаление папиллом",
+    "dragLabelEn": "Papilloma",
+    "dragLabelRu": "Папилломы"
+  },
+  "timma-fd8e40d3d0680cec": {
+    "labelEn": "PRX facial peel",
+    "labelRu": "PRX-пилинг для лица",
+    "dragLabelEn": "PRX peel",
+    "dragLabelRu": "PRX-пилинг"
+  },
+  "timma-710757d026a98326": {
+    "labelEn": "PRX Plus",
+    "labelRu": "PRX Plus",
+    "dragLabelEn": "PRX Plus",
+    "dragLabelRu": "PRX Plus"
+  },
+  "timma-f1a208cc6f9bf9f7": {
+    "labelEn": "Cosmetologist consultation",
+    "labelRu": "Консультация косметолога",
+    "dragLabelEn": "Consultation",
+    "dragLabelRu": "Консультация"
+  },
+  "timma-41ff2b22ad0e7769": {
+    "labelEn": "Package: Endospheres therapy 45 min + AROSHA wrap + pressotherapy",
+    "labelRu": "Пакет: Endospheres 45 мин + обёртывание AROSHA + прессотерапия",
+    "dragLabelEn": "Endo package",
+    "dragLabelRu": "Эндо пакет"
+  },
+  "timma-61abbe147988de48": {
+    "labelEn": "Package: full-body Endospheres therapy 75 min + AROSHA wrap",
+    "labelRu": "Пакет: Endospheres для всего тела 75 мин + обёртывание AROSHA",
+    "dragLabelEn": "Endo 75 pack",
+    "dragLabelRu": "Эндо 75 пакет"
+  },
+  "timma-b7f3786bf855d470": {
+    "labelEn": "Package: full-body Endospheres therapy 60 min + Endospheres facial + AROSHA wrap",
+    "labelRu": "Пакет: Endospheres для всего тела 60 мин + уход для лица Endospheres + обёртывание AROSHA",
+    "dragLabelEn": "Endo combo",
+    "dragLabelRu": "Эндо комбо"
+  },
+  "timma-59e32d9c2f87a99a": {
+    "labelEn": "Endospheres therapy 45 min",
+    "labelRu": "Терапия Endospheres 45 мин",
+    "dragLabelEn": "Endo 45 min",
+    "dragLabelRu": "Эндо 45 мин"
+  },
+  "timma-96797d8a76bb825a": {
+    "labelEn": "AROSHA body wrap + pressotherapy",
+    "labelRu": "Обёртывание AROSHA + прессотерапия",
+    "dragLabelEn": "AROSHA wrap",
+    "dragLabelRu": "AROSHA обёрт."
+  },
+  "timma-e6ec2da63a3d7319": {
+    "labelEn": "Endospheres Therapy",
+    "labelRu": "Терапия Endospheres",
+    "dragLabelEn": "Endospheres",
+    "dragLabelRu": "Endospheres"
+  },
+  "timma-f1168b893b6d96e7": {
+    "labelEn": "Endospheres therapy 60 min",
+    "labelRu": "Терапия Endospheres 60 мин",
+    "dragLabelEn": "Endo 60 min",
+    "dragLabelRu": "Эндо 60 мин"
+  },
+  "timma-3fd1b78696d27c17": {
+    "labelEn": "Endospheres therapy 75 min",
+    "labelRu": "Терапия Endospheres 75 мин",
+    "dragLabelEn": "Endo 75 min",
+    "dragLabelRu": "Эндо 75 мин"
+  },
+  "timma-fbc92ab57f9e2b8a": {
+    "labelEn": "Permanent makeup: Gradient Brows",
+    "labelRu": "Перманентный макияж: брови Gradient Brows",
+    "dragLabelEn": "PMU brows",
+    "dragLabelRu": "ПМ брови"
+  },
+  "timma-6edaf5e27c8b2fb2": {
+    "labelEn": "Permanent makeup: natural upper eyeliner / lash enhancement",
+    "labelRu": "Перманентный макияж: естественная верхняя стрелка / межресничка",
+    "dragLabelEn": "PMU lash line",
+    "dragLabelRu": "ПМ межресничка"
+  },
+  "timma-c79318eac59276b7": {
+    "labelEn": "Permanent makeup: eyeliner",
+    "labelRu": "Перманентный макияж: стрелка",
+    "dragLabelEn": "PMU eyeliner",
+    "dragLabelRu": "ПМ стрелка"
+  },
+  "timma-e29a8cffb944891c": {
+    "labelEn": "Permanent makeup: shaded eyeliner with Eyeshadow technique",
+    "labelRu": "Перманентный макияж: стрелка с растушёвкой в технике Eyeshadow",
+    "dragLabelEn": "PMU eyeshadow",
+    "dragLabelRu": "ПМ растушёвка"
+  },
+  "timma-24f96057b033c55e": {
+    "labelEn": "Permanent makeup: watercolor lips",
+    "labelRu": "Перманентный макияж: акварельные губы",
+    "dragLabelEn": "PMU lips",
+    "dragLabelRu": "ПМ губы"
+  },
+  "timma-9588a60006c74085": {
+    "labelEn": "Permanent makeup touch-up: brows",
+    "labelRu": "Коррекция перманентного макияжа бровей",
+    "dragLabelEn": "PMU brow touch",
+    "dragLabelRu": "ПМ корр.бровей"
+  },
+  "timma-af443ae1bd71c7a9": {
+    "labelEn": "Permanent makeup touch-up: eyeliner",
+    "labelRu": "Коррекция перманентного макияжа стрелок",
+    "dragLabelEn": "PMU eye touch",
+    "dragLabelRu": "ПМ корр. глаз"
+  },
+  "timma-42e4e3baf9a084d4": {
+    "labelEn": "Permanent makeup touch-up: lips",
+    "labelRu": "Коррекция перманентного макияжа губ",
+    "dragLabelEn": "PMU lip touch",
+    "dragLabelRu": "ПМ корр. губ"
+  },
+  "timma-9470736ab7ce6a4c": {
+    "labelEn": "Permanent makeup consultation",
+    "labelRu": "Консультация по перманентному макияжу",
+    "dragLabelEn": "PMU consult",
+    "dragLabelRu": "ПМ консультац."
+  },
+  "timma-3c5ccdd9517a2079": {
+    "labelEn": "Full-body Endospheres Therapy massage 60 min",
+    "labelRu": "Массаж Endospheres для всего тела 60 мин",
+    "dragLabelEn": "Endo body 60",
+    "dragLabelRu": "Эндо тело 60"
+  },
+  "timma-b9e0131ed1de8ba7": {
+    "labelEn": "Endospheres Therapy cellulite massage 45 min",
+    "labelRu": "Антицеллюлитный массаж Endospheres 45 мин",
+    "dragLabelEn": "Endo cell 45",
+    "dragLabelRu": "Эндо целл. 45"
+  },
+  "timma-f86ea52cf77be0a4": {
+    "labelEn": "Endospheres Therapy massage 30 min",
+    "labelRu": "Массаж Endospheres 30 мин",
+    "dragLabelEn": "Endo 30 min",
+    "dragLabelRu": "Эндо 30 мин"
+  },
+  "timma-4111692dee256bdd": {
+    "labelEn": "Pressotherapy",
+    "labelRu": "Прессотерапия",
+    "dragLabelEn": "Pressotherapy",
+    "dragLabelRu": "Прессотерапия"
+  },
+  "timma-66f60c10f7d1f09a": {
+    "labelEn": "AROSHA body wrap",
+    "labelRu": "Обёртывание AROSHA",
+    "dragLabelEn": "AROSHA wrap",
+    "dragLabelRu": "AROSHA обёрт."
+  },
+  "timma-53b2386d4ddd23b8": {
+    "labelEn": "Endospheres Therapy massage for men 30 min",
+    "labelRu": "Массаж Endospheres для мужчин 30 мин",
+    "dragLabelEn": "Men Endo 30",
+    "dragLabelRu": "Муж. Эндо 30"
+  },
+  "timma-48afeb4d1e40b0b6": {
+    "labelEn": "Full-body Endospheres Therapy massage 75 min",
+    "labelRu": "Массаж Endospheres для всего тела 75 мин",
+    "dragLabelEn": "Endo body 75",
+    "dragLabelRu": "Эндо тело 75"
+  },
+  "timma-c6d1709e065937a1": {
+    "labelEn": "Upper lip",
+    "labelRu": "Верхняя губа",
+    "dragLabelEn": "Upper lip",
+    "dragLabelRu": "Верхняя губа"
+  },
+  "timma-bb3d958fdd7fb45b": {
+    "labelEn": "Chin",
+    "labelRu": "Подбородок",
+    "dragLabelEn": "Chin",
+    "dragLabelRu": "Подбородок"
+  },
+  "timma-e3a1e8845c135cbe": {
+    "labelEn": "Upper lip + chin",
+    "labelRu": "Верхняя губа + подбородок",
+    "dragLabelEn": "Lip + chin",
+    "dragLabelRu": "Губа + подбор."
+  },
+  "timma-56d8ef6c57fd267a": {
+    "labelEn": "Sideburns",
+    "labelRu": "Бакенбарды",
+    "dragLabelEn": "Sideburns",
+    "dragLabelRu": "Бакенбарды"
+  },
+  "timma-16c0ee553ea67585": {
+    "labelEn": "Cheeks",
+    "labelRu": "Щёки",
+    "dragLabelEn": "Cheeks",
+    "dragLabelRu": "Щёки"
+  },
+  "timma-a26e3dbd6be4ba34": {
+    "labelEn": "Full face",
+    "labelRu": "Всё лицо",
+    "dragLabelEn": "Full face",
+    "dragLabelRu": "Всё лицо"
+  },
+  "timma-f2b4b58c829f118a": {
+    "labelEn": "Forehead",
+    "labelRu": "Лоб",
+    "dragLabelEn": "Forehead",
+    "dragLabelRu": "Лоб"
+  },
+  "timma-1f59f106d2d28134": {
+    "labelEn": "Upper arms",
+    "labelRu": "Верхняя часть рук",
+    "dragLabelEn": "Upper arms",
+    "dragLabelRu": "Руки сверху"
+  },
+  "timma-078d4ae715de9a4e": {
+    "labelEn": "Front of neck",
+    "labelRu": "Передняя часть шеи",
+    "dragLabelEn": "Front neck",
+    "dragLabelRu": "Шея спереди"
+  },
+  "timma-2fe5ffb30406795e": {
+    "labelEn": "Back of neck",
+    "labelRu": "Задняя часть шеи",
+    "dragLabelEn": "Back neck",
+    "dragLabelRu": "Шея сзади"
+  },
+  "timma-2674a0a11ae857a8": {
+    "labelEn": "Chest",
+    "labelRu": "Грудь",
+    "dragLabelEn": "Chest",
+    "dragLabelRu": "Грудь"
+  },
+  "timma-2b553fbcded36545": {
+    "labelEn": "Chest (men)",
+    "labelRu": "Грудь (мужчины)",
+    "dragLabelEn": "Men chest",
+    "dragLabelRu": "Муж. грудь"
+  },
+  "timma-ea57608c3bf22155": {
+    "labelEn": "Calves",
+    "labelRu": "Икры",
+    "dragLabelEn": "Calves",
+    "dragLabelRu": "Икры"
+  },
+  "timma-9a06bcde4815f0d0": {
+    "labelEn": "Back",
+    "labelRu": "Спина",
+    "dragLabelEn": "Back",
+    "dragLabelRu": "Спина"
+  },
+  "timma-30e06518497caf9c": {
+    "labelEn": "Back (men)",
+    "labelRu": "Спина (мужчины)",
+    "dragLabelEn": "Men back",
+    "dragLabelRu": "Муж. спина"
+  },
+  "timma-43c1a068816b86eb": {
+    "labelEn": "Underarms",
+    "labelRu": "Подмышки",
+    "dragLabelEn": "Underarms",
+    "dragLabelRu": "Подмышки"
+  },
+  "timma-22e63111874fe495": {
+    "labelEn": "Bikini line",
+    "labelRu": "Линия бикини",
+    "dragLabelEn": "Bikini line",
+    "dragLabelRu": "Линия бикини"
+  },
+  "timma-3744e8978cc35ab7": {
+    "labelEn": "Deep bikini",
+    "labelRu": "Глубокое бикини",
+    "dragLabelEn": "Deep bikini",
+    "dragLabelRu": "Глуб. бикини"
+  },
+  "timma-05268eadc9578e65": {
+    "labelEn": "Areola",
+    "labelRu": "Ареола",
+    "dragLabelEn": "Areola",
+    "dragLabelRu": "Ареола"
+  },
+  "timma-43473d9c933881c3": {
+    "labelEn": "Brazilian bikini",
+    "labelRu": "Бразильское бикини",
+    "dragLabelEn": "Brazilian",
+    "dragLabelRu": "Браз. бикини"
+  },
+  "timma-b21e087c9bca0439": {
+    "labelEn": "Front of neck (men)",
+    "labelRu": "Передняя часть шеи (мужчины)",
+    "dragLabelEn": "Men front neck",
+    "dragLabelRu": "Муж. шея пер."
+  },
+  "timma-b11be2e625c23092": {
+    "labelEn": "Back of neck (men)",
+    "labelRu": "Задняя часть шеи (мужчины)",
+    "dragLabelEn": "Men back neck",
+    "dragLabelRu": "Муж. шея зад."
+  },
+  "timma-ec2c5bf3bc2a2e77": {
+    "labelEn": "Full legs",
+    "labelRu": "Ноги полностью",
+    "dragLabelEn": "Full legs",
+    "dragLabelRu": "Ноги полностью"
+  },
+  "timma-928838a3b88b2201": {
+    "labelEn": "Thighs",
+    "labelRu": "Бёдра",
+    "dragLabelEn": "Thighs",
+    "dragLabelRu": "Бёдра"
+  },
+  "timma-abd065a2e82c0789": {
+    "labelEn": "Lower legs + knees",
+    "labelRu": "Голени + колени",
+    "dragLabelEn": "Legs + knees",
+    "dragLabelRu": "Голени+колени"
+  },
+  "timma-6916292927b223a0": {
+    "labelEn": "Underarms + bikini line",
+    "labelRu": "Подмышки + линия бикини",
+    "dragLabelEn": "Underarm+bik",
+    "dragLabelRu": "Подмыш.+бикини"
+  },
+  "timma-5684f24945eb600c": {
+    "labelEn": "Underarms + Brazilian bikini",
+    "labelRu": "Подмышки + бразильское бикини",
+    "dragLabelEn": "Underarm+Bra",
+    "dragLabelRu": "Подм.+бразил."
+  },
+  "timma-eda61db33149cb48": {
+    "labelEn": "Brazilian bikini + full legs",
+    "labelRu": "Бразильское бикини + ноги полностью",
+    "dragLabelEn": "Brazil+legs",
+    "dragLabelRu": "Бразил.+ноги"
+  },
+  "timma-da308dde0608d205": {
+    "labelEn": "Underarms + Brazilian bikini + full legs",
+    "labelRu": "Подмышки + бразильское бикини + ноги полностью",
+    "dragLabelEn": "UA+Brazil+legs",
+    "dragLabelRu": "Подм+браз+ноги"
+  },
+  "timma-1e2c549bb2071f5a": {
+    "labelEn": "Full body",
+    "labelRu": "Всё тело",
+    "dragLabelEn": "Full body",
+    "dragLabelRu": "Всё тело"
+  },
+  "timma-39f2bb028eac459e": {
+    "labelEn": "Lower arms",
+    "labelRu": "Нижняя часть рук",
+    "dragLabelEn": "Lower arms",
+    "dragLabelRu": "Руки снизу"
+  },
+  "timma-2fe54db1159448f6": {
+    "labelEn": "Full arms",
+    "labelRu": "Руки полностью",
+    "dragLabelEn": "Full arms",
+    "dragLabelRu": "Руки полностью"
+  },
+  "timma-4d199e803b8a2f4e": {
+    "labelEn": "Abdomen",
+    "labelRu": "Живот",
+    "dragLabelEn": "Abdomen",
+    "dragLabelRu": "Живот"
+  },
+  "timma-aafe9b8352ff27b9": {
+    "labelEn": "Abdominal line",
+    "labelRu": "Линия живота",
+    "dragLabelEn": "Abdomen line",
+    "dragLabelRu": "Линия живота"
+  },
+  "timma-fc94b5ba5627fc25": {
+    "labelEn": "Buttocks",
+    "labelRu": "Ягодицы",
+    "dragLabelEn": "Buttocks",
+    "dragLabelRu": "Ягодицы"
+  },
+  "timma-1c4f77109f2d1235": {
+    "labelEn": "Abdomen (men)",
+    "labelRu": "Живот (мужчины)",
+    "dragLabelEn": "Men abdomen",
+    "dragLabelRu": "Муж. живот"
+  },
+  "timma-a7bfd1e14d2abc25": {
+    "labelEn": "Computerized scalp and hair analysis",
+    "labelRu": "Компьютерная диагностика кожи головы и волос",
+    "dragLabelEn": "Hair analysis",
+    "dragLabelRu": "Диагн. волос"
+  },
+  "timma-4e88cfef85997642": {
+    "labelEn": "Scalp mesotherapy",
+    "labelRu": "Мезотерапия кожи головы",
+    "dragLabelEn": "Scalp meso",
+    "dragLabelRu": "Мезо головы"
+  },
+  "timma-c6c428ceedbd36f9": {
+    "labelEn": "Scalp peeling",
+    "labelRu": "Пилинг кожи головы",
+    "dragLabelEn": "Scalp peel",
+    "dragLabelRu": "Пилинг головы"
+  },
+  "timma-5e49c2054dded113": {
+    "labelEn": "LED light therapy for the scalp",
+    "labelRu": "LED-терапия для кожи головы",
+    "dragLabelEn": "Scalp LED",
+    "dragLabelRu": "LED для головы"
+  },
+  "timma-e187c34ae1f644be": {
+    "labelEn": "Hair filler treatment",
+    "labelRu": "Филлер-терапия для волос",
+    "dragLabelEn": "Hair filler",
+    "dragLabelRu": "Филлер волос"
+  },
+  "timma-4d359f493e7a6547": {
+    "labelEn": "BioRePeel peeling treatment",
+    "labelRu": "Пилинг BioRePeel",
+    "dragLabelEn": "BioRePeel",
+    "dragLabelRu": "BioRePeel"
+  },
+  "timma-bf2a052010994d54": {
+    "labelEn": "Endospheres Therapy massage 75 min, 12 sessions",
+    "labelRu": "Массаж Endospheres 75 мин, 12 сеансов",
+    "dragLabelEn": "Endo75 ×12",
+    "dragLabelRu": "Эндо75 ×12"
+  },
+  "timma-87b20764f767022e": {
+    "labelEn": "Endospheres Therapy massage 75 min, 6 sessions",
+    "labelRu": "Массаж Endospheres 75 мин, 6 сеансов",
+    "dragLabelEn": "Endo75 ×6",
+    "dragLabelRu": "Эндо75 ×6"
+  },
+  "timma-e0f64e01f37262ef": {
+    "labelEn": "Endospheres Therapy massage 60 min, 12 sessions",
+    "labelRu": "Массаж Endospheres 60 мин, 12 сеансов",
+    "dragLabelEn": "Endo60 ×12",
+    "dragLabelRu": "Эндо60 ×12"
+  },
+  "timma-94317a04831f9120": {
+    "labelEn": "Endospheres Therapy massage 60 min, 6 sessions",
+    "labelRu": "Массаж Endospheres 60 мин, 6 сеансов",
+    "dragLabelEn": "Endo60 ×6",
+    "dragLabelRu": "Эндо60 ×6"
+  },
+  "timma-00a77d1b3969d3dd": {
+    "labelEn": "Endospheres Therapy massage 45 min, 12 sessions",
+    "labelRu": "Массаж Endospheres 45 мин, 12 сеансов",
+    "dragLabelEn": "Endo45 ×12",
+    "dragLabelRu": "Эндо45 ×12"
+  },
+  "timma-a38f59e314bc3ac5": {
+    "labelEn": "Endospheres Therapy massage 45 min, 6 sessions",
+    "labelRu": "Массаж Endospheres 45 мин, 6 сеансов",
+    "dragLabelEn": "Endo45 ×6",
+    "dragLabelRu": "Эндо45 ×6"
+  },
+  "timma-b882f082f46fed4c": {
+    "labelEn": "Endospheres Therapy massage 30 min, 6 sessions",
+    "labelRu": "Массаж Endospheres 30 мин, 6 сеансов",
+    "dragLabelEn": "Endo30 ×6",
+    "dragLabelRu": "Эндо30 ×6"
+  },
+  "timma-108667889a8db1af": {
+    "labelEn": "Endospheres Therapy massage 30 min, 12 sessions",
+    "labelRu": "Массаж Endospheres 30 мин, 12 сеансов",
+    "dragLabelEn": "Endo30 ×12",
+    "dragLabelRu": "Эндо30 ×12"
+  },
+  "timma-3b81d7eb9932d4c7": {
+    "labelEn": "Endospheres Therapy facial, 6 sessions",
+    "labelRu": "Endospheres для лица, 6 сеансов",
+    "dragLabelEn": "Endo face ×6",
+    "dragLabelRu": "Эндо лицо ×6"
+  },
+  "timma-8844624bcec23e9c": {
+    "labelEn": "Fractional mesotherapy, 5 sessions",
+    "labelRu": "Фракционная мезотерапия, 5 сеансов",
+    "dragLabelEn": "Frac meso ×5",
+    "dragLabelRu": "Фракц.мезо ×5"
+  },
+  "timma-fd148cdefb8224d3": {
+    "labelEn": "Body lipolytic treatment (one area)",
+    "labelRu": "Липолитик для тела (одна зона)",
+    "dragLabelEn": "Body lipolytic",
+    "dragLabelRu": "Липолитик тела"
+  },
+  "timma-f3ebc6dc7c4acf05": {
+    "labelEn": "Facial lipolysis: double-chin and lower-face contouring",
+    "labelRu": "Липолиз лица: коррекция второго подбородка и нижней трети лица",
+    "dragLabelEn": "Face lipolysis",
+    "dragLabelRu": "Липолиз лица"
+  },
+  "timma-287b30b96c720b1e": {
+    "labelEn": "Dermal filler treatment",
+    "labelRu": "Контурная пластика филлерами",
+    "dragLabelEn": "Filler",
+    "dragLabelRu": "Филлер"
+  },
+  "timma-6bc1a8b56f6e199f": {
+    "labelEn": "Biorevitalization",
+    "labelRu": "Биоревитализация",
+    "dragLabelEn": "Biorevital",
+    "dragLabelRu": "Биоревитал."
+  },
+  "timma-5c1528cf7aac64e7": {
+    "labelEn": "Facial contouring",
+    "labelRu": "Контурирование лица",
+    "dragLabelEn": "Face contour",
+    "dragLabelRu": "Контур лица"
+  },
+  "timma-fcc3c64817a5c194": {
+    "labelEn": "Thread lift",
+    "labelRu": "Нитевой лифтинг",
+    "dragLabelEn": "Thread lift",
+    "dragLabelRu": "Нити"
+  },
+  "timma-de72e390cb1d006f": {
+    "labelEn": "RRS biorevitalization — “5 youth points”",
+    "labelRu": "RRS-биоревитализация — «5 точек молодости»",
+    "dragLabelEn": "RRS 5 points",
+    "dragLabelRu": "RRS 5 точек"
+  },
+  "timma-ae537e8af7acf9f4": {
+    "labelEn": "Lip contouring with hyaluronic-acid filler — 1 ml",
+    "labelRu": "Контурирование губ филлером гиалуроновой кислоты — 1 мл",
+    "dragLabelEn": "Lip filler 1ml",
+    "dragLabelRu": "Губы 1 мл"
+  },
+  "timma-bdb444995d7063f9": {
+    "labelEn": "Thread lift",
+    "labelRu": "Нитевой лифтинг",
+    "dragLabelEn": "Thread lift",
+    "dragLabelRu": "Нити"
+  },
+  "timma-ca7f9b79fbd1617d": {
+    "labelEn": "Mesoten Aqualight (“Dolphin Skin”)",
+    "labelRu": "Mesoten Aqualight («Dolphin Skin»)",
+    "dragLabelEn": "Aqualight",
+    "dragLabelRu": "Aqualight"
+  },
+  "timma-4c51025262b562cd": {
+    "labelEn": "Full face",
+    "labelRu": "Всё лицо",
+    "dragLabelEn": "Full face",
+    "dragLabelRu": "Всё лицо"
+  },
+  "timma-b00d10d2430affdd": {
+    "labelEn": "Forehead",
+    "labelRu": "Лоб",
+    "dragLabelEn": "Forehead",
+    "dragLabelRu": "Лоб"
+  },
+  "timma-94e677d9e197a06b": {
+    "labelEn": "Eye area",
+    "labelRu": "Область вокруг глаз",
+    "dragLabelEn": "Eye area",
+    "dragLabelRu": "Вокруг глаз"
+  },
+  "timma-95571d0cada794f6": {
+    "labelEn": "Cheeks",
+    "labelRu": "Щёки",
+    "dragLabelEn": "Cheeks",
+    "dragLabelRu": "Щёки"
+  },
+  "timma-1865660ca5f8814b": {
+    "labelEn": "Face + neck",
+    "labelRu": "Лицо + шея",
+    "dragLabelEn": "Face + neck",
+    "dragLabelRu": "Лицо + шея"
+  },
+  "timma-a4b91ae157333060": {
+    "labelEn": "Chin and facial oval",
+    "labelRu": "Подбородок и овал лица",
+    "dragLabelEn": "Chin + oval",
+    "dragLabelRu": "Подбор.+овал"
+  },
+  "timma-d8d1cd102fc57796": {
+    "labelEn": "Neck",
+    "labelRu": "Шея",
+    "dragLabelEn": "Neck",
+    "dragLabelRu": "Шея"
+  },
+  "timma-d46b381161acb568": {
+    "labelEn": "Décolletage",
+    "labelRu": "Декольте",
+    "dragLabelEn": "Décolletage",
+    "dragLabelRu": "Декольте"
+  },
+  "timma-a57094b8064e9744": {
+    "labelEn": "Abdomen",
+    "labelRu": "Живот",
+    "dragLabelEn": "Abdomen",
+    "dragLabelRu": "Живот"
+  },
+  "timma-6c9c1597ed7a2292": {
+    "labelEn": "Thighs",
+    "labelRu": "Бёдра",
+    "dragLabelEn": "Thighs",
+    "dragLabelRu": "Бёдра"
+  },
+  "timma-291dc61806dc8318": {
+    "labelEn": "Knees",
+    "labelRu": "Колени",
+    "dragLabelEn": "Knees",
+    "dragLabelRu": "Колени"
+  },
+  "timma-d1857aa332234e34": {
+    "labelEn": "Buttocks",
+    "labelRu": "Ягодицы",
+    "dragLabelEn": "Buttocks",
+    "dragLabelRu": "Ягодицы"
+  },
+  "timma-365080812ce775df": {
+    "labelEn": "Arms (inner arms, shoulders)",
+    "labelRu": "Руки (внутренняя поверхность, плечи)",
+    "dragLabelEn": "Inner arms",
+    "dragLabelRu": "Внутр. рук"
+  },
+  "timma-931b388251e062e1": {
+    "labelEn": "Face + neck + décolletage",
+    "labelRu": "Лицо + шея + декольте",
+    "dragLabelEn": "Face+neck+dec",
+    "dragLabelRu": "Лицо+шея+дек"
+  },
+  "timma-e6d0ce32e52a20c5": {
+    "labelEn": "Abdomen + thighs + buttocks",
+    "labelRu": "Живот + бёдра + ягодицы",
+    "dragLabelEn": "Abs+thighs+but",
+    "dragLabelRu": "Жив+бед+ягод"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "version": "2026-08-07-v2",
+  "authorityOrder": ["clinic-document", "mone-localized-copy", "manufacturer"],
+  "note": "The public-health references (NHS, AAD, FDA) were cited only by the templated treatment enrichment removed on 2026-08-07. No published copy quotes them any more, so they are no longer listed as sources.",
+  "sources": {
+    "mone-live-copy": {
+      "authority": "mone-localized-copy",
+      "title": "Mone Beauty localized treatment pages",
+      "urlPattern": "https://monebeauty.fi/{locale}/services/{service}/",
+      "captured": "2026-08-01",
+      "localArchive": "scraped_content/ (git-ignored)",
+      "archiveManifests": [
+        "scraped_content/page-manifest.json",
+        "scraped_content/url-manifest.json",
+        "scraped_content/media-reference-manifest.json"
+      ]
+    },
+    "endospheres-clinic-pdfs": {
+      "authority": "clinic-document",
+      "title": "Mone Beauty Clinic Endospheres content and developer specification",
+      "files": [
+        "Endospheres_Therapy_Website_Content_Mone_Beauty_Clinic.pdf",
+        "Endospheres_Website_Spec_for_Developer.pdf"
+      ],
+      "approved": "2026-07-30"
+    },
+    "mone-authored-appointments": {
+      "authority": "clinic-document",
+      "title": "Mone Beauty authored consultation and injectable appointment framing",
+      "file": "content/authored-pages.ts"
+    }
+  },
+  "policy": {
+    "translations": "Localized prose may organize the recorded facts without cross-locale runtime fallback.",
+    "prohibited": [
+      "unsupported medicine",
+      "unsupported dosage",
+      "unsupported credential",
+      "guaranteed outcome",
+      "invented price"
+    ]
+  }
+}

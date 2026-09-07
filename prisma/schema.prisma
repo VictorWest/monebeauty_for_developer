@@ -1,0 +1,1380 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                                String                     @id @default(cuid())
+  email                             String                     @unique
+  passwordHash                      String?
+  role                              Role                       @default(CLIENT)
+  status                            AccountStatus              @default(ACTIVE)
+  mustChangePassword                Boolean                    @default(false)
+  emailVerifiedAt                   DateTime?
+  passwordChangedAt                 DateTime?
+  name                              String?
+  locale                            Locale?
+  createdAt                         DateTime                   @default(now())
+  client                            Client?
+  sessions                          Session[]
+  staff                             StaffUser?
+  accountTokens                     AccountToken[]
+  auditLogs                         AuditLog[]                 @relation("AuditActor")
+  reviewedChangeRequests            AppointmentChangeRequest[] @relation("ChangeRequestReviewer")
+  reviewedOrderCancellationRequests OrderCancellationRequest[] @relation("OrderCancellationRequestReviewer")
+}
+
+model AccountToken {
+  id            String              @id @default(cuid())
+  tokenHash     String              @unique
+  userId        String?
+  email         String
+  purpose       AccountTokenPurpose
+  appointmentId String?
+  expiresAt     DateTime
+  consumedAt    DateTime?
+  createdAt     DateTime            @default(now())
+  user          User?               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  appointment   Appointment?        @relation(fields: [appointmentId], references: [id], onDelete: Cascade)
+
+  @@index([userId, purpose, expiresAt])
+  @@index([appointmentId])
+}
+
+model Session {
+  id         String   @id @default(cuid())
+  tokenHash  String   @unique
+  userId     String
+  expiresAt  DateTime
+  lastSeenAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Service {
+  id                    String                          @id @default(cuid())
+  slug                  String                          @unique
+  publicPath            String?
+  category              ServiceCategory
+  durationMin           Int                             @default(60)
+  bookable              Boolean                         @default(true)
+  priceFrom             Decimal?
+  priceMode             ServicePriceMode                @default(FROM)
+  bookingFamily         String?
+  bookingPickerVisible  Boolean                         @default(true)
+  offerRequiresAccount  Boolean                         @default(false)
+  images                String[]                        @default([])
+  imageFocalX           Int                             @default(50)
+  imageFocalY           Int                             @default(50)
+  order                 Int                             @default(0)
+  published             Boolean                         @default(true)
+  heroImageAlt          String?
+  createdAt             DateTime                        @default(now())
+  updatedAt             DateTime                        @updatedAt
+  archivedAt            DateTime?
+  primaryPractitionerId String?
+  requiresDevice        Boolean                         @default(false)
+  appointments          Appointment[]
+  options               ServiceOption[]
+  bookingOptions        ServiceOption[]                 @relation("ServiceOptionBookingService")
+  pricing               PricingItem[]
+  contents              TreatmentContent[]
+  procedureMedia        ProcedureMedia[]
+  capabilities          PractitionerServiceCapability[]
+  primaryPractitioner   Practitioner?                   @relation("PrimaryPractitioner", fields: [primaryPractitionerId], references: [id], onDelete: SetNull)
+  rooms                 Room[]                          @relation("RoomToService")
+  devices               Device[]                        @relation("DeviceToService")
+  technologies          Technology[]                    @relation("TechnologyBookingService")
+  voucherProducts       Product[]                       @relation("ProductVoucherService")
+
+  @@index([archivedAt, order])
+  @@index([bookingFamily, bookable, archivedAt])
+  @@index([primaryPractitionerId])
+}
+
+model ProcedureMedia {
+  id            String   @id @default(cuid())
+  serviceId     String
+  key           String
+  image         String
+  identities    Json
+  sourceUrl     String
+  sourceLicense String   @default("CLINIC_ARCHIVE")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  service       Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@unique([serviceId, key])
+  @@index([serviceId])
+}
+
+model TreatmentContent {
+  id                String            @id @default(cuid())
+  serviceId         String
+  locale            Locale
+  h1                String
+  shortDesc         String
+  whatItIs          String
+  suitableFor       String[]
+  benefits          String[]
+  processSteps      String[]
+  safety            String
+  preCare           String
+  postCare          String
+  contraindications String[]
+  sessions          String
+  results           String
+  faq               Json
+  seoTitle          String
+  seoDescription    String
+  ogImage           String?
+  imageAlt          String?
+  seoIndexable      Boolean           @default(true)
+  status            PublicationStatus @default(PUBLISHED)
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  service           Service           @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@unique([serviceId, locale])
+  @@index([locale, status])
+}
+
+model ServiceOption {
+  id                   String                                   @id @default(cuid())
+  serviceId            String
+  bookingServiceId     String?
+  key                  String
+  displayOrder         Int                                      @default(0)
+  bookingDurationMin   Int?
+  image                String?
+  imageFocalX          Int                                      @default(50)
+  imageFocalY          Int                                      @default(50)
+  type                 ServiceOptionType                        @default(APPOINTMENT)
+  bookable             Boolean                                  @default(true)
+  offerRequiresAccount Boolean                                  @default(false)
+  published            Boolean                                  @default(true)
+  legacyProcedureIndex Int?
+  createdAt            DateTime                                 @default(now())
+  updatedAt            DateTime                                 @updatedAt
+  archivedAt           DateTime?
+  service              Service                                  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  bookingService       Service?                                 @relation("ServiceOptionBookingService", fields: [bookingServiceId], references: [id], onDelete: SetNull)
+  contents             ServiceOptionContent[]
+  appointments         Appointment[]
+  qualifications       PractitionerServiceOptionQualification[]
+
+  @@unique([serviceId, key])
+  @@unique([serviceId, legacyProcedureIndex])
+  @@index([serviceId, archivedAt, displayOrder])
+  @@index([bookingServiceId])
+}
+
+model ServiceOptionContent {
+  id              String            @id @default(cuid())
+  optionId        String
+  locale          Locale
+  group           String?
+  name            String
+  summary         String            @default("")
+  description     String            @default("")
+  imageAlt        String?
+  durationLabel   String?
+  priceLabel      String?
+  sourceUrl       String?
+  sourceScrapedAt DateTime?
+  status          PublicationStatus @default(PUBLISHED)
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  option          ServiceOption     @relation(fields: [optionId], references: [id], onDelete: Cascade)
+
+  @@unique([optionId, locale])
+  @@index([locale, status])
+}
+
+model Technology {
+  id               String              @id @default(cuid())
+  slug             String              @unique
+  publicPath       String
+  images           String[]
+  imageFocalX      Int                 @default(50)
+  imageFocalY      Int                 @default(50)
+  order            Int                 @default(0)
+  relatedServiceId String?
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+  archivedAt       DateTime?
+  relatedService   Service?            @relation("TechnologyBookingService", fields: [relatedServiceId], references: [id], onDelete: SetNull)
+  contents         TechnologyContent[]
+
+  @@index([archivedAt, order])
+}
+
+model TechnologyContent {
+  id             String            @id @default(cuid())
+  technologyId   String
+  locale         Locale
+  name           String
+  specification  String?
+  summary        String
+  body           String
+  imageAlt       String?
+  seoTitle       String?
+  seoDescription String?
+  seoIndexable   Boolean           @default(true)
+  status         PublicationStatus @default(DRAFT)
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  technology     Technology        @relation(fields: [technologyId], references: [id], onDelete: Cascade)
+
+  @@unique([technologyId, locale])
+  @@index([locale, status])
+}
+
+model ContentPage {
+  id             String            @id @default(cuid())
+  slug           String
+  locale         Locale
+  title          String
+  hero           String?
+  heroFocalX     Int               @default(50)
+  heroFocalY     Int               @default(50)
+  imageAlt       String?
+  body           String
+  seoTitle       String?
+  seoDescription String?
+  seoIndexable   Boolean           @default(true)
+  status         PublicationStatus @default(PUBLISHED)
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+
+  @@unique([slug, locale])
+  @@index([slug])
+  @@index([locale, status])
+}
+
+model SiteMediaSlot {
+  key        String                 @id
+  image      String?
+  focalX     Int                    @default(50)
+  focalY     Int                    @default(50)
+  decorative Boolean                @default(false)
+  createdAt  DateTime               @default(now())
+  updatedAt  DateTime               @updatedAt
+  contents   SiteMediaSlotContent[]
+}
+
+model SiteMediaSlotContent {
+  slotKey String
+  locale  Locale
+  alt     String        @default("")
+  slot    SiteMediaSlot @relation(fields: [slotKey], references: [key], onDelete: Cascade)
+
+  @@id([slotKey, locale])
+  @@index([locale])
+}
+
+model Product {
+  id                  String           @id @default(cuid())
+  slug                String           @unique
+  category            ProductCategory
+  kind                ProductKind      @default(PHYSICAL)
+  serviceId           String?
+  voucherValidityDays Int?
+  size                String?
+  price               Decimal
+  currency            String           @default("EUR")
+  order               Int              @default(0)
+  published           Boolean          @default(true)
+  images              String[]
+  imageFocalX         Int              @default(50)
+  imageFocalY         Int              @default(50)
+  createdAt           DateTime         @default(now())
+  updatedAt           DateTime         @updatedAt
+  archivedAt          DateTime?
+  cartItems           CartItem[]
+  orderItems          OrderItem[]
+  contents            ProductContent[]
+  voucherService      Service?         @relation("ProductVoucherService", fields: [serviceId], references: [id], onDelete: SetNull)
+
+  @@index([archivedAt, order])
+  @@index([kind, published, archivedAt])
+  @@index([serviceId])
+}
+
+model ProductContent {
+  id               String            @id @default(cuid())
+  productId        String
+  locale           Locale
+  name             String
+  description      String
+  shortDescription String?
+  imageAlt         String?
+  seoTitle         String?
+  seoDescription   String?
+  seoIndexable     Boolean           @default(true)
+  status           PublicationStatus @default(PUBLISHED)
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  product          Product           @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, locale])
+  @@index([locale, status])
+}
+
+model Cart {
+  id        String     @id @default(cuid())
+  sessionId String?
+  clientId  String?
+  createdAt DateTime   @default(now())
+  client    Client?    @relation(fields: [clientId], references: [id])
+  items     CartItem[]
+}
+
+model CartItem {
+  id        String  @id @default(cuid())
+  cartId    String
+  productId String
+  qty       Int     @default(1)
+  cart      Cart    @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  product   Product @relation(fields: [productId], references: [id])
+}
+
+model Order {
+  id                   String                     @id @default(cuid())
+  clientId             String?
+  savedAddressId       String?
+  locale               Locale                     @default(fi)
+  status               OrderStatus                @default(PENDING)
+  source               OrderSource                @default(LEGACY_REQUEST)
+  paymentStatus        PaymentStatus              @default(UNPAID)
+  fulfillmentMethod    FulfillmentMethod?
+  subtotal             Decimal
+  total                Decimal
+  shippingAmount       Decimal                    @default(0)
+  shippingAddress      Json?
+  currency             String                     @default("EUR")
+  email                String
+  phone                String?
+  normalizedEmail      String?
+  normalizedPhone      String?
+  notes                String?
+  consentGdpr          Boolean                    @default(false)
+  createdAt            DateTime                   @default(now())
+  updatedAt            DateTime                   @default(now()) @updatedAt
+  confirmedAt          DateTime?
+  fulfilledAt          DateTime?
+  readyAt              DateTime?
+  shippedAt            DateTime?
+  cancelledAt          DateTime?
+  cancellationReason   String?
+  client               Client?                    @relation(fields: [clientId], references: [id])
+  savedAddress         SavedAddress?              @relation(fields: [savedAddressId], references: [id], onDelete: SetNull)
+  items                OrderItem[]
+  messages             OutboundMessage[]
+  payments             PaymentAttempt[]
+  refunds              Refund[]
+  externalApiAttempts  ExternalApiAttempt[]
+  cancellationRequests OrderCancellationRequest[]
+
+  @@index([source, paymentStatus, createdAt])
+  @@index([status, createdAt])
+  @@index([savedAddressId])
+  @@index([normalizedEmail])
+  @@index([normalizedPhone])
+}
+
+model OrderCancellationRequest {
+  id             String                         @id @default(cuid())
+  orderId        String
+  clientId       String
+  reason         String
+  status         OrderCancellationRequestStatus @default(PENDING)
+  reviewedById   String?
+  decisionReason String?
+  reviewedAt     DateTime?
+  createdAt      DateTime                       @default(now())
+  updatedAt      DateTime                       @updatedAt
+  order          Order                          @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  client         Client                         @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  reviewedBy     User?                          @relation("OrderCancellationRequestReviewer", fields: [reviewedById], references: [id], onDelete: SetNull)
+
+  @@index([orderId, status])
+  @@index([clientId, createdAt])
+  @@index([status, createdAt])
+}
+
+model OrderItem {
+  id                  String             @id @default(cuid())
+  orderId             String
+  productId           String
+  name                String
+  unitPrice           Decimal
+  kind                ProductKind        @default(PHYSICAL)
+  voucherValidityDays Int?
+  qty                 Int                @default(1)
+  order               Order              @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product             Product            @relation(fields: [productId], references: [id])
+  vouchers            Voucher[]
+  refundAllocations   RefundAllocation[]
+}
+
+model PaymentAttempt {
+  id                      String        @id @default(cuid())
+  orderId                 String
+  provider                String        @default("stripe")
+  status                  PaymentStatus @default(UNPAID)
+  idempotencyKey          String        @unique
+  stripeCheckoutSessionId String?       @unique
+  stripePaymentIntentId   String?       @unique
+  checkoutCancelTokenHash String?       @unique
+  amount                  Decimal
+  amountRefunded          Decimal       @default(0)
+  currency                String        @default("EUR")
+  expiresAt               DateTime?
+  paidAt                  DateTime?
+  failedAt                DateTime?
+  cancelRequestedAt       DateTime?
+  createdAt               DateTime      @default(now())
+  updatedAt               DateTime      @updatedAt
+  order                   Order         @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  refunds                 Refund[]
+
+  @@index([orderId, createdAt])
+  @@index([status, createdAt])
+}
+
+model StripeWebhookEvent {
+  id          String            @id
+  type        String
+  objectId    String?
+  status      StripeEventStatus @default(PROCESSING)
+  error       String?
+  createdAt   DateTime          @default(now())
+  processedAt DateTime?
+
+  @@index([status, createdAt])
+  @@index([type, objectId])
+}
+
+model Refund {
+  id               String             @id @default(cuid())
+  orderId          String
+  paymentAttemptId String
+  stripeRefundId   String?            @unique
+  idempotencyKey   String             @unique
+  status           RefundStatus       @default(PENDING)
+  amount           Decimal
+  currency         String             @default("EUR")
+  reason           String
+  actor            String
+  failureReason    String?
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  completedAt      DateTime?
+  order            Order              @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  paymentAttempt   PaymentAttempt     @relation(fields: [paymentAttemptId], references: [id], onDelete: Cascade)
+  allocations      RefundAllocation[]
+
+  @@index([orderId, createdAt])
+  @@index([paymentAttemptId, status])
+}
+
+model RefundAllocation {
+  id          String     @id @default(cuid())
+  refundId    String
+  orderItemId String?
+  amount      Decimal
+  shipping    Boolean    @default(false)
+  refund      Refund     @relation(fields: [refundId], references: [id], onDelete: Cascade)
+  orderItem   OrderItem? @relation(fields: [orderItemId], references: [id], onDelete: SetNull)
+
+  @@index([refundId])
+  @@index([orderItemId])
+}
+
+model Voucher {
+  id             String              @id @default(cuid())
+  orderItemId    String
+  code           String              @unique
+  kind           VoucherKind
+  status         VoucherStatus       @default(ACTIVE)
+  initialValue   Decimal
+  remainingValue Decimal
+  currency       String              @default("EUR")
+  expiresAt      DateTime
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  redeemedAt     DateTime?
+  orderItem      OrderItem           @relation(fields: [orderItemId], references: [id], onDelete: Cascade)
+  redemptions    VoucherRedemption[]
+
+  @@index([status, expiresAt])
+  @@index([orderItemId])
+}
+
+model VoucherRedemption {
+  id        String   @id @default(cuid())
+  voucherId String
+  amount    Decimal
+  actor     String
+  note      String?
+  createdAt DateTime @default(now())
+  voucher   Voucher  @relation(fields: [voucherId], references: [id], onDelete: Cascade)
+
+  @@index([voucherId, createdAt])
+}
+
+model Practitioner {
+  id                   String                                   @id @default(cuid())
+  name                 String
+  publicName           String?
+  role                 String
+  active               Boolean                                  @default(true)
+  displayOrder         Int                                      @default(0)
+  calendarColor        String                                   @default("#B89B72")
+  configVersion        Int                                      @default(1)
+  workingHours         Json?
+  daysOff              DateTime[]
+  appointments         Appointment[]
+  availabilities       Availability[]
+  staff                StaffUser?
+  capabilities         PractitionerServiceCapability[]
+  optionQualifications PractitionerServiceOptionQualification[]
+  primaryServices      Service[]                                @relation("PrimaryPractitioner")
+  calendarBlocks       CalendarBlockParticipant[]
+}
+
+model PractitionerServiceOptionQualification {
+  id              String        @id @default(cuid())
+  practitionerId  String
+  serviceOptionId String
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  practitioner    Practitioner  @relation(fields: [practitionerId], references: [id], onDelete: Cascade)
+  serviceOption   ServiceOption @relation(fields: [serviceOptionId], references: [id], onDelete: Cascade)
+
+  @@unique([practitionerId, serviceOptionId])
+  @@index([serviceOptionId, practitionerId])
+}
+
+model Room {
+  id             String                          @id @default(cuid())
+  name           String                          @unique
+  active         Boolean                         @default(true)
+  displayOrder   Int                             @default(0)
+  poolKey        String?
+  unitNumber     Int?
+  appointments   Appointment[]
+  services       Service[]                       @relation("RoomToService")
+  capabilities   PractitionerServiceCapability[]
+  calendarBlocks CalendarBlock[]
+
+  @@unique([poolKey, unitNumber])
+  @@index([poolKey, active])
+}
+
+model Device {
+  id              String                                @id @default(cuid())
+  name            String                                @unique
+  active          Boolean                               @default(true)
+  displayOrder    Int                                   @default(0)
+  poolKey         String?
+  unitNumber      Int?
+  appointments    Appointment[]
+  services        Service[]                             @relation("DeviceToService")
+  capabilityLinks PractitionerServiceCapabilityDevice[]
+  calendarBlocks  CalendarBlock[]
+
+  @@unique([poolKey, unitNumber])
+  @@index([poolKey, active])
+}
+
+model PractitionerServiceCapability {
+  id             String                                @id @default(cuid())
+  practitionerId String
+  serviceId      String
+  roomId         String
+  createdAt      DateTime                              @default(now())
+  updatedAt      DateTime                              @updatedAt
+  practitioner   Practitioner                          @relation(fields: [practitionerId], references: [id], onDelete: Cascade)
+  service        Service                               @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  room           Room                                  @relation(fields: [roomId], references: [id], onDelete: Restrict)
+  devices        PractitionerServiceCapabilityDevice[]
+
+  @@unique([practitionerId, serviceId, roomId])
+  @@index([serviceId, practitionerId])
+  @@index([roomId])
+}
+
+model PractitionerServiceCapabilityDevice {
+  capabilityId String
+  deviceId     String
+  capability   PractitionerServiceCapability @relation(fields: [capabilityId], references: [id], onDelete: Cascade)
+  device       Device                        @relation(fields: [deviceId], references: [id], onDelete: Restrict)
+
+  @@id([capabilityId, deviceId])
+  @@index([deviceId])
+}
+
+model CalendarBlockTemplate {
+  id                 String              @id @default(cuid())
+  key                String              @unique
+  labelFi            String
+  labelEn            String
+  labelRu            String
+  defaultDurationMin Int                 @default(60)
+  color              String              @default("#B89B72")
+  active             Boolean             @default(true)
+  displayOrder       Int                 @default(0)
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  items              CalendarBlockItem[]
+
+  @@index([active, displayOrder])
+}
+
+model CalendarBlockSeries {
+  id        String          @id @default(cuid())
+  weekdays  Int[]
+  endDate   DateTime
+  createdBy String
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+  blocks    CalendarBlock[]
+}
+
+model CalendarBlock {
+  id           String                     @id @default(cuid())
+  seriesId     String?
+  roomId       String?
+  deviceId     String?
+  start        DateTime
+  end          DateTime
+  notes        String?
+  status       CalendarBlockStatus        @default(ACTIVE)
+  version      Int                        @default(1)
+  createdBy    String
+  createdAt    DateTime                   @default(now())
+  updatedAt    DateTime                   @updatedAt
+  cancelledAt  DateTime?
+  cancelledBy  String?
+  series       CalendarBlockSeries?       @relation(fields: [seriesId], references: [id], onDelete: SetNull)
+  room         Room?                      @relation(fields: [roomId], references: [id], onDelete: SetNull)
+  device       Device?                    @relation(fields: [deviceId], references: [id], onDelete: SetNull)
+  items        CalendarBlockItem[]
+  participants CalendarBlockParticipant[]
+
+  @@index([start, end, status])
+  @@index([seriesId, start])
+  @@index([roomId, start, end])
+  @@index([deviceId, start, end])
+}
+
+model CalendarBlockItem {
+  id           String                 @id @default(cuid())
+  blockId      String
+  templateId   String?
+  displayOrder Int
+  durationMin  Int
+  labelFi      String
+  labelEn      String
+  labelRu      String
+  block        CalendarBlock          @relation(fields: [blockId], references: [id], onDelete: Cascade)
+  template     CalendarBlockTemplate? @relation(fields: [templateId], references: [id], onDelete: SetNull)
+
+  @@unique([blockId, displayOrder])
+  @@index([templateId])
+}
+
+model CalendarBlockParticipant {
+  id             String        @id @default(cuid())
+  blockId        String
+  practitionerId String
+  block          CalendarBlock @relation(fields: [blockId], references: [id], onDelete: Cascade)
+  practitioner   Practitioner  @relation(fields: [practitionerId], references: [id], onDelete: Restrict)
+
+  @@unique([blockId, practitionerId])
+  @@index([practitionerId])
+}
+
+model StaffUser {
+  id             String        @id @default(cuid())
+  userId         String        @unique
+  practitionerId String?       @unique
+  workingHours   Json?
+  daysOff        DateTime[]
+  practitioner   Practitioner? @relation(fields: [practitionerId], references: [id])
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Availability {
+  id             String       @id @default(cuid())
+  practitionerId String
+  date           DateTime
+  slots          Json
+  practitioner   Practitioner @relation(fields: [practitionerId], references: [id], onDelete: Cascade)
+
+  @@unique([practitionerId, date])
+}
+
+model Appointment {
+  id                     String                     @id @default(cuid())
+  clientId               String
+  contactName            String
+  contactEmail           String
+  contactPhone           String
+  normalizedContactEmail String?
+  normalizedContactPhone String?
+  practitionerId         String
+  serviceId              String
+  roomId                 String?
+  deviceId               String?
+  locale                 Locale                     @default(fi)
+  start                  DateTime
+  end                    DateTime
+  bufferMinutes          Int                        @default(15)
+  reservedUntil          DateTime?
+  bufferEnforced         Boolean                    @default(true)
+  status                 AppointmentStatus          @default(BOOKED)
+  channel                String?
+  notes                  String?
+  procedureIndex         Int?
+  procedureTitle         String?
+  procedurePrice         String?
+  serviceOptionId        String?
+  bookingDurationMin     Int?
+  history                Json?
+  createdAt              DateTime                   @default(now())
+  updatedAt              DateTime                   @default(now()) @updatedAt
+  version                Int                        @default(1)
+  confirmedAt            DateTime?
+  completedAt            DateTime?
+  cancelledAt            DateTime?
+  cancellationReason     String?
+  client                 Client                     @relation(fields: [clientId], references: [id])
+  practitioner           Practitioner               @relation(fields: [practitionerId], references: [id])
+  service                Service                    @relation(fields: [serviceId], references: [id])
+  serviceOption          ServiceOption?             @relation(fields: [serviceOptionId], references: [id], onDelete: SetNull)
+  room                   Room?                      @relation(fields: [roomId], references: [id], onDelete: SetNull)
+  device                 Device?                    @relation(fields: [deviceId], references: [id], onDelete: SetNull)
+  events                 AppointmentEvent[]
+  messages               OutboundMessage[]
+  accountTokens          AccountToken[]
+  changeRequests         AppointmentChangeRequest[]
+  externalApiAttempts    ExternalApiAttempt[]
+  consents               Consent[]
+
+  @@index([practitionerId, start, reservedUntil])
+  @@index([roomId, start, reservedUntil])
+  @@index([deviceId, start, reservedUntil])
+  @@index([serviceOptionId])
+  @@index([normalizedContactEmail])
+  @@index([normalizedContactPhone])
+}
+
+model AppointmentChangeRequest {
+  id             String                         @id @default(cuid())
+  appointmentId  String
+  clientId       String
+  type           AppointmentChangeType
+  status         AppointmentChangeRequestStatus @default(PENDING)
+  requestedStart DateTime?
+  reason         String?
+  decisionReason String?
+  reviewedById   String?
+  reviewedAt     DateTime?
+  createdAt      DateTime                       @default(now())
+  updatedAt      DateTime                       @updatedAt
+  appointment    Appointment                    @relation(fields: [appointmentId], references: [id], onDelete: Cascade)
+  client         Client                         @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  reviewedBy     User?                          @relation("ChangeRequestReviewer", fields: [reviewedById], references: [id], onDelete: SetNull)
+
+  @@index([appointmentId, status])
+  @@index([clientId, createdAt])
+  @@index([status, createdAt])
+}
+
+model AppointmentEvent {
+  id             String               @id @default(cuid())
+  appointmentId  String
+  kind           AppointmentEventKind
+  actor          String
+  previousStatus AppointmentStatus?
+  nextStatus     AppointmentStatus?
+  previousStart  DateTime?
+  previousEnd    DateTime?
+  nextStart      DateTime?
+  nextEnd        DateTime?
+  reason         String?
+  changes        Json?
+  at             DateTime             @default(now())
+  appointment    Appointment          @relation(fields: [appointmentId], references: [id], onDelete: Cascade)
+
+  @@index([appointmentId, at])
+}
+
+model OutboundMessage {
+  id                  String               @id @default(cuid())
+  orderId             String?
+  appointmentId       String?
+  chatSessionId       String?
+  kind                OutboundMessageKind
+  channel             CommunicationChannel
+  locale              Locale
+  recipient           String
+  subject             String?
+  body                String
+  html                String?
+  actor               String
+  dedupeKey           String?              @unique
+  createdAt           DateTime             @default(now())
+  order               Order?               @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  appointment         Appointment?         @relation(fields: [appointmentId], references: [id], onDelete: Cascade)
+  chatSession         ChatSession?         @relation(fields: [chatSessionId], references: [id], onDelete: Cascade)
+  attempts            DeliveryAttempt[]
+  externalApiAttempts ExternalApiAttempt[]
+
+  @@index([orderId, createdAt])
+  @@index([appointmentId, createdAt])
+  @@index([chatSessionId, createdAt])
+}
+
+model DeliveryAttempt {
+  id                   String              @id @default(cuid())
+  messageId            String
+  status               DeliveryStatus
+  provider             String?
+  providerMessageId    String?
+  errorDetail          String?
+  externalApiAttemptId String?             @unique
+  attemptedAt          DateTime            @default(now())
+  message              OutboundMessage     @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  externalApiAttempt   ExternalApiAttempt? @relation(fields: [externalApiAttemptId], references: [id], onDelete: SetNull)
+
+  @@index([messageId, attemptedAt])
+}
+
+model Client {
+  id                        String                     @id @default(cuid())
+  userId                    String?                    @unique
+  fullName                  String
+  firstName                 String?
+  lastName                  String?
+  phone                     String
+  email                     String
+  notes                     String?
+  contraindications         String?
+  consentGdpr               Boolean                    @default(false)
+  consentMarketing          Boolean                    @default(false)
+  createdAt                 DateTime                   @default(now())
+  updatedAt                 DateTime                   @updatedAt
+  archivedAt                DateTime?
+  stripeCustomerId          String?                    @unique
+  appointments              Appointment[]
+  changeRequests            AppointmentChangeRequest[]
+  orderCancellationRequests OrderCancellationRequest[]
+  carts                     Cart[]
+  chatSessions              ChatSession[]
+  user                      User?                      @relation(fields: [userId], references: [id])
+  orders                    Order[]
+  savedAddresses            SavedAddress[]
+  consultationProfile       ConsultationProfile?
+  consents                  Consent[]
+
+  @@index([phone])
+  @@index([email])
+  @@index([archivedAt])
+}
+
+model ConsultationForm {
+  id                         String                 @id @default("current")
+  requiredVersion            Int                    @default(1)
+  contentVersion             Int                    @default(1)
+  healthConsentVersion       Int                    @default(1)
+  healthConsentWording       Json
+  accuracyVersion            Int                    @default(1)
+  accuracyWording            Json
+  requiredInformationVersion Int                    @default(1)
+  requiredInformationWording Json
+  procedureConsentVersion    Int                    @default(1)
+  procedureConsentWording    Json
+  updatedAt                  DateTime               @updatedAt
+  questions                  ConsultationQuestion[]
+  profiles                   ConsultationProfile[]
+}
+
+model ConsultationQuestion {
+  id                   String                        @id @default(cuid())
+  formId               String                        @default("current")
+  key                  String                        @unique
+  type                 ConsultationQuestionType
+  required             Boolean                       @default(false)
+  active               Boolean                       @default(true)
+  displayOrder         Int                           @default(0)
+  version              Int                           @default(1)
+  requiredSinceVersion Int?
+  archivedAt           DateTime?
+  createdAt            DateTime                      @default(now())
+  updatedAt            DateTime                      @updatedAt
+  form                 ConsultationForm              @relation(fields: [formId], references: [id], onDelete: Restrict)
+  contents             ConsultationQuestionContent[]
+  choices              ConsultationChoice[]
+
+  @@index([formId, active, archivedAt, displayOrder])
+}
+
+model ConsultationQuestionContent {
+  id         String               @id @default(cuid())
+  questionId String
+  locale     Locale
+  prompt     String
+  helpText   String?
+  question   ConsultationQuestion @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([questionId, locale])
+}
+
+model ConsultationChoice {
+  id           String                      @id @default(cuid())
+  questionId   String
+  key          String
+  displayOrder Int                         @default(0)
+  active       Boolean                     @default(true)
+  question     ConsultationQuestion        @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  contents     ConsultationChoiceContent[]
+
+  @@unique([questionId, key])
+  @@index([questionId, active, displayOrder])
+}
+
+model ConsultationChoiceContent {
+  id       String             @id @default(cuid())
+  choiceId String
+  locale   Locale
+  label    String
+  choice   ConsultationChoice @relation(fields: [choiceId], references: [id], onDelete: Cascade)
+
+  @@unique([choiceId, locale])
+}
+
+model ConsultationProfile {
+  id                   String           @id @default(cuid())
+  clientId             String           @unique
+  formId               String           @default("current")
+  completedVersion     Int
+  dateOfBirthEncrypted String
+  answersEncrypted     String
+  locale               Locale
+  createdAt            DateTime         @default(now())
+  updatedAt            DateTime         @updatedAt
+  client               Client           @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  form                 ConsultationForm @relation(fields: [formId], references: [id], onDelete: Restrict)
+
+  @@index([formId, completedVersion])
+}
+
+model SavedAddress {
+  id            String    @id @default(cuid())
+  clientId      String
+  label         String
+  recipientName String
+  phone         String
+  line1         String
+  line2         String?
+  postalCode    String
+  city          String
+  country       String    @default("FI")
+  isDefault     Boolean   @default(false)
+  lastUsedAt    DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  client        Client    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  orders        Order[]
+
+  @@index([clientId, updatedAt])
+}
+
+model ExternalApiAttempt {
+  id                String           @id @default(cuid())
+  provider          String
+  operation         String
+  outcome           String
+  httpStatus        Int?
+  providerRequestId String?
+  providerMessageId String?
+  correlationId     String?
+  retryNumber       Int              @default(0)
+  durationMs        Int?
+  requestMetadata   Json?
+  responseMetadata  Json?
+  errorClass        String?
+  errorCode         String?
+  errorMessage      String?
+  appointmentId     String?
+  orderId           String?
+  messageId         String?
+  attemptedAt       DateTime         @default(now())
+  expiresAt         DateTime
+  appointment       Appointment?     @relation(fields: [appointmentId], references: [id], onDelete: Cascade)
+  order             Order?           @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  message           OutboundMessage? @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  deliveryAttempt   DeliveryAttempt?
+
+  @@index([provider, attemptedAt])
+  @@index([outcome, attemptedAt])
+  @@index([appointmentId, attemptedAt])
+  @@index([orderId, attemptedAt])
+  @@index([expiresAt])
+}
+
+model Article {
+  id          String           @id @default(cuid())
+  slug        String           @unique
+  published   Boolean          @default(false)
+  publishedAt DateTime?
+  coverAlt    String?
+  coverImage  String?
+  coverFocalX Int              @default(50)
+  coverFocalY Int              @default(50)
+  order       Int              @default(0)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  archivedAt  DateTime?
+  contents    ArticleContent[]
+
+  @@index([archivedAt, order])
+}
+
+model ArticleContent {
+  id             String            @id @default(cuid())
+  articleId      String
+  locale         Locale
+  title          String
+  excerpt        String?
+  body           String
+  imageAlt       String?
+  seoTitle       String?
+  seoDescription String?
+  seoIndexable   Boolean           @default(true)
+  status         PublicationStatus @default(DRAFT)
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  article        Article           @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@unique([articleId, locale])
+  @@index([locale, status])
+}
+
+model PricingItem {
+  id         String           @id @default(cuid())
+  serviceId  String?
+  category   ServiceCategory?
+  label      String
+  price      Decimal
+  unit       String?
+  order      Int              @default(0)
+  archivedAt DateTime?
+  createdAt  DateTime         @default(now())
+  updatedAt  DateTime         @updatedAt
+  service    Service?         @relation(fields: [serviceId], references: [id])
+  contents   PricingContent[]
+
+  @@index([archivedAt, order])
+}
+
+model PricingContent {
+  id            String            @id @default(cuid())
+  pricingItemId String
+  locale        Locale
+  label         String
+  unit          String?
+  status        PublicationStatus @default(DRAFT)
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  pricingItem   PricingItem       @relation(fields: [pricingItemId], references: [id], onDelete: Cascade)
+
+  @@unique([pricingItemId, locale])
+  @@index([locale, status])
+}
+
+model ChatSession {
+  id               String            @id @default(cuid())
+  locale           Locale
+  messages         Json
+  handoffRequested Boolean           @default(false)
+  clientId         String?
+  createdAt        DateTime          @default(now())
+  contactName      String?
+  contactEmail     String?
+  contactPhone     String?
+  status           ChatHandoffStatus @default(OPEN)
+  updatedAt        DateTime          @default(now()) @updatedAt
+  archivedAt       DateTime?
+  anonymizedAt     DateTime?
+  publicTokenHash  String?
+  client           Client?           @relation(fields: [clientId], references: [id])
+  outboundMessages OutboundMessage[]
+
+  @@index([handoffRequested, status])
+  @@index([updatedAt])
+}
+
+model Consent {
+  id              String       @id @default(cuid())
+  clientId        String?
+  appointmentId   String?
+  type            String
+  granted         Boolean
+  locale          Locale?
+  textVersion     Int?
+  wordingSnapshot String?
+  linkageRedacted Boolean      @default(false)
+  at              DateTime     @default(now())
+  client          Client?      @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  appointment     Appointment? @relation(fields: [appointmentId], references: [id], onDelete: SetNull)
+
+  @@index([clientId, at])
+  @@index([appointmentId, type])
+}
+
+model AuditLog {
+  id          String       @id @default(cuid())
+  actor       String
+  actorUserId String?
+  actorRole   Role?
+  action      String
+  outcome     AuditOutcome @default(SUCCESS)
+  entity      String
+  entityId    String?
+  ipAddress   String?
+  userAgent   String?
+  metadata    Json?
+  at          DateTime     @default(now())
+  actorUser   User?        @relation("AuditActor", fields: [actorUserId], references: [id], onDelete: SetNull)
+
+  @@index([actorUserId, at])
+  @@index([action, at])
+  @@index([entity, entityId, at])
+}
+
+enum Role {
+  ADMIN
+  STAFF
+  CLIENT
+}
+
+enum ConsultationQuestionType {
+  SHORT_TEXT
+  LONG_TEXT
+  YES_NO
+  SINGLE_CHOICE
+  MULTI_CHOICE
+  ACKNOWLEDGMENT
+}
+
+enum AccountStatus {
+  PENDING_VERIFICATION
+  ACTIVE
+  DISABLED
+}
+
+enum AccountTokenPurpose {
+  VERIFY_EMAIL
+  RESET_PASSWORD
+  CLAIM_APPOINTMENT
+}
+
+enum AppointmentChangeType {
+  CANCEL
+  RESCHEDULE
+}
+
+enum AppointmentChangeRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  WITHDRAWN
+}
+
+enum OrderCancellationRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum AuditOutcome {
+  SUCCESS
+  FAILURE
+  DENIED
+}
+
+enum Locale {
+  en
+  fi
+  ru
+}
+
+enum ServiceCategory {
+  FACE
+  BODY
+  HAIR
+  INJECTABLE
+  DEVICE
+  LASER
+  CONSULTATION
+}
+
+enum ServicePriceMode {
+  FROM
+  FIXED
+}
+
+enum ServiceOptionType {
+  APPOINTMENT
+  COURSE
+  INFORMATIONAL_PACKAGE
+}
+
+enum ProductCategory {
+  AROSHA_BODY
+  DIXIDOX_TRICHO
+  GIFT_CARD
+  TREATMENT
+  OTHER
+}
+
+enum ProductKind {
+  PHYSICAL
+  GIFT_CARD
+  TREATMENT_VOUCHER
+}
+
+enum AppointmentStatus {
+  BOOKED
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+  RESCHEDULED
+}
+
+enum CalendarBlockStatus {
+  ACTIVE
+  CANCELLED
+}
+
+enum AppointmentEventKind {
+  CREATED
+  DETAILS_UPDATED
+  CONFIRMED
+  RESCHEDULED
+  COMPLETED
+  CANCELLED
+  CALENDAR_UPDATED
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  READY_FOR_PICKUP
+  SHIPPED
+  FULFILLED
+  CANCELLED
+}
+
+enum OrderSource {
+  LEGACY_REQUEST
+  WEBSITE_STRIPE
+}
+
+enum PaymentStatus {
+  UNPAID
+  PROCESSING
+  PAID
+  PARTIALLY_REFUNDED
+  REFUNDED
+  FAILED
+  CANCELLED
+  EXPIRED
+}
+
+enum FulfillmentMethod {
+  PICKUP
+  SHIPPING
+  DIGITAL
+}
+
+enum StripeEventStatus {
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum RefundStatus {
+  PENDING
+  SUCCEEDED
+  FAILED
+  CANCELLED
+}
+
+enum VoucherKind {
+  GIFT_BALANCE
+  TREATMENT_SINGLE_USE
+}
+
+enum VoucherStatus {
+  ACTIVE
+  PARTIALLY_REDEEMED
+  REDEEMED
+  REFUND_PENDING
+  VOID
+  EXPIRED
+}
+
+enum CommunicationChannel {
+  EMAIL
+  SMS
+}
+
+enum OutboundMessageKind {
+  ORDER_RECEIPT
+  ORDER_CONFIRMATION
+  ORDER_CANCELLATION
+  ORDER_PAYMENT_FAILED
+  ORDER_READY_FOR_PICKUP
+  ORDER_SHIPPED
+  ORDER_FULFILLED
+  ORDER_REFUND
+  ORDER_REFUND_FAILED
+  ORDER_CANCELLATION_REQUESTED
+  ORDER_CANCELLATION_REQUEST_DECIDED
+  APPOINTMENT_RECEIPT
+  APPOINTMENT_CONFIRMATION
+  APPOINTMENT_RESCHEDULED
+  APPOINTMENT_CANCELLATION
+  APPOINTMENT_REMINDER_24H
+  APPOINTMENT_REMINDER_2H
+  CUSTOM
+}
+
+enum DeliveryStatus {
+  ACCEPTED
+  FAILED
+  SKIPPED
+}
+
+enum ChatHandoffStatus {
+  OPEN
+  RESOLVED
+}
+
+enum PublicationStatus {
+  DRAFT
+  PUBLISHED
+}

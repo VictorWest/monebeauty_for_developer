@@ -1,0 +1,524 @@
+{
+  "version": 1,
+  "sourceCommit": "953a40e",
+  "purpose": "Migration-only registry of historical source-owned treatment summaries that differ from the current generated summary.",
+  "summaries": {
+    "facial": {
+      "treatment-01": {
+        "fi": "Kosmetologin konsultaatio on yksilöllinen tapaaminen, jossa asiantuntija suorittaa yksityiskohtaisen ihon arvioinnin, määrittää sen tyypin, tunnistaa ongelmat ja valitsee optimaalisen hoidon ja toimenpiteet. Konsultaatio auttaa laatimaan henkilökohtaisen suunnitelman terveellisen, hyvin hoidetun ja kauniin ihon saavuttamiseksi. **Menettelyn edut:**"
+      },
+      "treatment-02": {
+        "fi": "Endospheres-hoito kasvoille on moderni kosmetologinen menetelmä, jossa käytetään erityistä laitetta, jossa on värähtelevät sfäärirullat. Tämä teknologia on saavuttanut laajaa suosiota esteettisessä lääketieteessä sen ikääntymistä ehkäisevien ja terapeuttisten vaikutusten vuoksi. **Endospheres-hoidon keskeiset kohdat kasvoille:** **Toimintaperiaate:** - Laite tuottaa mikrovärähtelyjä ja kompressiopainetta kasvojen kudoksiin. Tämä parantaa mikroverenkiertoa, lymfakiertoa ja lisää ihon kimmoisuutta. - Hoidon tuloksena stimuloidaan kollageenin ja elastaanin tuotantoa, mikä tekee…"
+      },
+      "treatment-03": {
+        "fi": "Kasvojen puhdistus on toimenpide, joka syväpuhdistaa ihoa epäpuhtauksista, ylimääräisestä talista ja kuolleista ihosoluista. Se auttaa ehkäisemään tulehduksia, pienentämään ihohuokosia ja parantamaan ihon yleistä kuntoa. Ihotyypin ja tarpeiden mukaan valitaan yksi seuraavista menetelmistä. - **Mekaaninen puhdistus:** suoritetaan käsin steriilejä välineitä käyttäen, poistaa tehokkaasti mustapäitä ja syviä epäpuhtauksia. - **Laitepuhdistus:** suoritetaan ultraääni- tai imutekniikoilla, puhdistaa ihoa hellävaraisesti ja tarkasti. - **Yhdistetty puhdistus:**…"
+      },
+      "treatment-04": {
+        "fi": "Henkilökohtainen hoito ammattimaisilla israelilaisilla Shor-kosmetiikalla on toimenpide, joka räätälöidään ihotyyppisi ja sen nykyisten tarpeiden mukaan. Shor-kosmetiikka yhdistää aktiivisia ainesosia ja moderneja teknologioita, mikä mahdollistaa tehokkaan hoidon eri tarpeisiin — syväpuhdistuksesta intensiiviseen kohotukseen. **Hoito vaihtoehdot:** - **Clean, Relax and Go** — kokonaisvaltainen puhdistus ja kosteutus, rauhoittaa ihoärsytystä ja palauttaa ihon mukavuuden ja raikkauden. Sopii kaikille ihotyypeille ja ihanteellinen ihon terveyden ja…",
+        "en": "Individual care with professional Israeli Shor cosmetics is a procedure tailored to your skin type and current needs. Shor cosmetics combine active ingredients and modern technologies, effectively addressing a variety of tasks — from deep cleansing to intensive lifting."
+      },
+      "treatment-06": {
+        "fi": "Exopeel on nykyaikainen kemiallinen kuorinta, joka on suunniteltu syväpuhdistamaan ja uudistamaan ihoa. Se sisältää yhdistelmän happoja ja aktiivisia aineosia, jotka vaikuttavat tehokkaasti dermiksessä, stimuloivat uudistumista ja kollageenin tuotantoa, parantaen ihon rakennetta ja sävyä. **Menettelyn edut:**"
+      },
+      "treatment-07": {
+        "fi": "PRX-T33 on innovatiivinen uuden sukupolven kuorinta, joka yhdistää trikloorietikkahapon (TCA), vetyperoksidin ja koihappo. Sen ainutlaatuinen koostumus vaikuttaa ihon syvempiin kerroksiin vaurioittamatta pinnan kudoksia. Tämä tarjoaa biorevitalisaatiovaikutuksen ilman injektioita ja ilman palautumisaikaa. **Menettelyn edut:** - Ei toipumisaikaa: ei kuorintaa tai punoitusta, voidaan tehdä vuoden ympäri. - Biorevitalisaatiovaikutus: iho muuttuu kiinteäksi, raikkaaksi ja säteileväksi ilman injektioita. - Monipuolinen vaikutus: vähentää pigmentaatiota, aknen…"
+      },
+      "treatment-08": {
+        "fi": "**Italialainen ihon nuorennusmenetelmä ilman injektioita** Mikroneulaus eli fraktionaalinen mesoterapia on innovatiivinen ja tehokas hoitomenetelmä, joka perustuu italialaiseen ihon nuorennustekniikkaan. Siinä käytetään Dermapen-laitetta sekä yksilöllisesti valittuja mesokoktaileja, jotka aktivoivat ihon omat uudistumisprosessit ja parantavat sen rakennetta ja ulkonäköä ilman aggressiivisia toimenpiteitä.",
+        "en": "Italian method of skin rejuvenation and renewal without injections Microneedling fractional mesotherapy, also known as microneedling, is an innovative and highly effective procedure based on the Italian method of skin rejuvenation. It is performed using the Dermapen device together with specially selected meso-cocktails. The method activates the skin’s own resources, improves its texture and appearance, without aggressive intervention.",
+        "ru": "Итальянская методика омоложения и обновления кожи без инъекций Микроигольчатая фракционная мезотерапия, или микрондлинг, — это инновационная и высокоэффективная процедура, основанная на итальянской методике омоложения кожи с применением аппарата Dermapen и специально подобранных мезо-коктейлей. Метод позволяет активировать внутренние ресурсы кожи, улучшить её текстуру и внешний вид без агрессивного вмешательства."
+      },
+      "treatment-09": {
+        "fi": "**Leuan ja kasvojen muotoilu ilman leikkausta** Kasvojen lipolyysi on injektiomenetelmä, joka on suunniteltu vähentämään paikallisia rasvakertymiä ja muotoilemaan kasvojen piirteitä. Hoito on erityisen tehokas kaksoisleuan, poskien ja leukalinjan alueilla. **Miten hoito toimii:** Lipolyyttiset valmisteet sisältävät natriumdeoksikolaattia, fosfatidyylikoliinia ja muita aktiivisia ainesosia, jotka käynnistävät lipolyysin eli rasvasolujen hajoamisen. Injektion jälkeen rasvakudos alkaa hajota ja poistuu kehosta luonnollisesti lymfajärjestelmän kautta.",
+        "en": "Non-surgical contouring and reduction of localized fat deposits Facial lipolytic treatment is an injectable method aimed at reducing localized fat deposits and contouring the facial shape. It is especially effective in the area of the double chin, cheeks, and along the facial contour.",
+        "ru": "**Безоперационное моделирование овала и борьба с жировыми отложениями** Процедура липолитиков для лица — это инъекционный метод коррекции, направленный на уменьшение локальных жировых отложений и моделирование контуров лица. Особенно эффективна в области второго подбородка, щёк, а также в зоне овала лица."
+      },
+      "treatment-10": {
+        "fi": "Huulten täyttö on injektiotoimenpide, jossa käytetään hyaluronihappopohjaisia täyteaineita huulten volyymin lisäämiseksi, ääriviivojen korostamiseksi ja kosteutetun, huolitellun ulkonäön saavuttamiseksi. Toimenpide mahdollistaa epäsymmetrian korjaamisen, huulten luonnollisen muodon korostamisen ja kasvojen harmonian säilyttämisen. **Toimenpiteen edut:** - **Luonnollinen lopputulos:** huulten muoto ja volyymi suunnitellaan yksilöllisesti kasvojen anatomia huomioiden."
+      },
+      "treatment-11": {
+        "fi": "Kasvojen muotoilu on injektiopohjainen hoitomenetelmä, jossa käytetään hyaluronihappopohjaisia täyteaineita kasvojen ääriviivojen muokkaamiseen ja korostamiseen. Toimenpide auttaa palauttamaan menetettyä volyymia, parantamaan kasvojen mittasuhteita ja tuomaan esiin kasvojen anatomisia piirteitä. **Mahdolliset hoitoalueet:** - poskipäät - leuka - kasvojen ovaali",
+        "ru": "Контурная пластика лица — это инъекционная методика коррекции и моделирования контуров лица с помощью филлеров на основе гиалуроновой кислоты. Процедура позволяет восстановить утраченный объём, улучшить пропорции лица и подчеркнуть его анатомические особенности. Возможные зоны коррекции:"
+      },
+      "treatment-12": {
+        "fi": "Lankakohotus on vähän invasiivinen ihon kiinteytys- ja kohotustoimenpide, jossa käytetään biohajoavia lankoja, mukaan lukien **PDO-langat ja Aptos-langat**. Hoito on suunniteltu parantamaan kasvojen ääriviivoja, vahvistamaan pehmytkudoksia ja stimuloimaan kehon omaa kollageenin tuotantoa. Aptos-langat erottuvat korkealla kestävyydellään ja voimakkaalla kohottavalla vaikutuksellaan, minkä ansiosta ne soveltuvat erityisen hyvin ikääntymismuutosten ja kasvojen ovaalin korjaamiseen.",
+        "ru": "Нитевой лифтинг — это малоинвазивная процедура подтяжки кожи с использованием рассасывающихся нитей, включая **PDO-нити и Аптос-нити**. Методика направлена на улучшение контуров лица, укрепление мягких тканей и стимуляцию выработки собственного коллагена. Аптос-нити отличаются высокой прочностью и выраженным лифтинг-эффектом, что делает их особенно эффективными для коррекции возрастных изменений и овала лица."
+      },
+      "treatment-13": {
+        "fi": "Intensiivinen hehku, tasaisempi ihonsävy ja raikas katse **Pink Glow** on innovatiivinen injektoitava biorevitalisaatiovalmiste, joka on suunniteltu ihon syväkosteutukseen, laadun parantamiseen ja luonnollisen hehkun palauttamiseen. Valmisteen koostumus yhdistää hyaluronihapon, vitamiinit, aminohapot ja antioksidantit, jotka vaikuttavat ihoon kokonaisvaltaisesti parantaen sen rakennetta ja sävyä.",
+        "en": "Intensive radiance, even skin tone and a refreshed look **Pink Glow** is an innovative injectable biorevitalization treatment designed to deeply hydrate the skin, improve its overall quality, and restore natural radiance. The formula combines hyaluronic acid, vitamins, amino acids, and antioxidants that work synergistically to enhance skin texture and tone."
+      },
+      "treatment-14": {
+        "fi": "Skin builder: kosteutus, juonteiden korjaus ja ihon laadun parantaminen **RRS® HA Long Lasting** on steriili dermalinen implantti (Class III), joka perustuu BDDE-silloitettuun resorboituvaan hyaluronihappoon **21 mg / 3 mL**, stabiloituna aminohappoja sisältävällä antioksidanttisella puskurilla. Valmiste on kehitetty fotovanhenemisen, dermiksen atrofian ja heikentyneen ihonlaadun hoitoon tilanteissa, joissa tarvitaan ihon tiheyden lisäämistä ja näkyvää ihopoimujen tasoittumista.",
+        "en": "Skin builder: hydration, crease correction and improvement of skin quality **RRS® HA Long Lasting** is a sterile dermal implant (Class III) based on **BDDE-crosslinked, resorbable hyaluronic acid (21 mg / 3 mL)**, stabilized with an amino acid antioxidant buffer. The product is designed to address signs of photoaging, dermal atrophy, and decreased skin quality, in cases where increased skin density…",
+        "ru": "**Skin builder: увлажнение + коррекция заломов и улучшение качества кожи** **RRS® HA Long Lasting** — стерильный дермальный имплант (Class III) на основе **BDDE-сшитой резорбируемой гиалуроновой кислоты 21 mg / 3 mL**, стабилизированной **аминокислотным антиоксидантным буфером**. Препарат создан для работы с проявлениями фотостарения, дермальной атрофии и снижением качества кожи, когда важно получить **более плотную кожу и видимое разглаживание складок**."
+      },
+      "treatment-15": {
+        "fi": "GOURI on maailman ensimmäinen nestemäinen PCL (polylaktidihappo) -täyteaine, joka jakautuu tasaisesti kudoksissa ja käynnistää luonnollisen kollageenin tuotannon koko kasvojen alueella. Tämä ei ole pelkästään biorevitalisaatio — vaan vallankumouksellinen ikääntymistä ehkäisevä hoito, joka palauttaa iholle sen tiheyden, kimmoisuuden ja tukirakenteen ilman kasvonpiirteiden muuttumista tai keinotekoista ulkonäköä.",
+        "en": "Next-generation injectable rejuvenation GOURI is the world’s first liquid polycaprolactone (PCL) filler that spreads evenly in the tissues and stimulates the natural production of collagen throughout the entire face. This is not just biorevitalization — it is a revolutionary anti-aging technique that restores skin density, firmness, and its internal support framework, without altering facial features or creating an “overfilled” look.",
+        "ru": "**Инъекционное омоложение нового поколения** GOURI — первый в мире жидкий полимолочная кислота (PCL)-филлер, который равномерно распределяется в тканях и запускает естественную выработку коллагена по всему лицу. Это не просто биоревитализация — это революционная антивозрастная методика, возвращающая коже плотность, упругость и внутренний каркас, без изменения черт лица и \"перекачанных\" эффектов."
+      },
+      "treatment-16": {
+        "fi": "**Kirurgiton kohotus ilman aggressiivisia toimenpiteitä** Miracle Facelift on uuden sukupolven injektiomenetelmä, joka yhdistää biorevitalisaation ja bioarmeerauksen ominaisuudet. Hoito perustuu polynukleotideihin, peptideihin ja hyaluronihappoon, jotka vaikuttavat syvälle ihoon, palauttaen sen rakenteen, kiinteyden ja selkeät kasvonpiirteet — ilman luonnollisuuden menetystä tai keinotekoista ulkonäköä.",
+        "en": "Lifting effect without surgery or aggressive interventions Miracle Facelift is an innovative next-generation injectable procedure that combines the properties of biorevitalization and bio-reinforcement. The formula, based on polynucleotides, peptides, and hyaluronic acid, deeply restores the skin structure, giving the face defined contours, firmness, and a natural “lifting” effect without altering facial features.",
+        "ru": "**Лифтинг-эффект без хирургии и агрессивных вмешательств** Miracle Facelift - это инновационная инъекционная процедура нового поколения, сочетающая свойства биоревитализации и биоармирования. Препарат на основе полинуклеотидов, пептидов и гиалуроновой кислоты глубоко восстанавливает структуру кожи, придавая лицу чёткие контуры, упругость и эффект \"подтяжки\" без утраты естественных черт."
+      },
+      "treatment-17": {
+        "fi": "**Syväkosteutus, hehku ja ikääntymistä ehkäisevä hoito yhdessä toimenpiteessä** Aquashine Revofil on erittäin tehokas injektoitava seerumikoktaili, joka on kehitetty ihon aktiiviseen kosteuttamiseen, uudistamiseen ja nuorentamiseen. Sen koostumus sisältää hyaluronihappoa, biomimeettisiä peptidejä, vitamiineja, aminohappoja ja koentsyymejä – täydellinen yhdistelmä ihosolujen toiminnan käynnistämiseksi ja heleän, tasaisen ihon saavuttamiseksi.",
+        "en": "Deep hydration, radiance, and anti-aging care in one procedure Aquashine Revofil is a highly effective injectable cocktail designed for active hydration, restoration, and skin rejuvenation. Its formula includes hyaluronic acid, biomimetic peptides, vitamins, amino acids, and coenzymes — everything necessary to restart cellular processes and achieve smooth, radiant skin.",
+        "ru": "**Глубокое увлажнение, сияние и антивозрастной уход в одной процедуре** Aquashine Revofil — это высокоэффективный инъекционный коктейль, разработанный для активного увлажнения, восстановления и омоложения кожи. В его состав входят гиалуроновая кислота, биомиметические пептиды, витамины, аминокислоты и коэнзимы — всё необходимое для перезапуска клеточных процессов и сияющей, гладкой кожи."
+      },
+      "treatment-18": {
+        "fi": "**Innovatiivinen ikääntymistä ehkäisevä hoito biomimeettisten peptidien avulla** GemVous on uuden sukupolven tehokas biorevitalisaatiohoito, joka perustuu stabiloituun hyaluronihappoon ja aktiivisten ainesosien kompleksiin. Se on suunniteltu syvävaikutteiseen ihon uudistamiseen ja nuorentamiseen. Bioteknologisesti kehitetty koostumus ei ainoastaan kosteuta ihoa, vaan myös palauttaa sen rakenteen sisältä käsin.",
+        "en": "Innovative anti-aging therapy based on biomimetic peptides GemVous is a highly effective new-generation biorevitalizant, created with stabilized hyaluronic acid and a complex of active ingredients aimed at deep skin restoration and rejuvenation. The product is developed using advanced biotechnology, providing not only hydration but also a pronounced restructuring effect from within.",
+        "ru": "**Инновационная антивозрастная терапия на основе биомиметических пептидов** GemVous — это высокоэффективный биоревитализант нового поколения, созданный на основе стабилизированной гиалуроновой кислоты и комплекса активных компонентов, направленных на глубокое восстановление и омоложение кожи. Препарат разработан с применением биотехнологий, обеспечивающих не только увлажнение, но и выраженное восстановление структуры кожи изнутри."
+      },
+      "treatment-19": {
+        "fi": "**Innovatiivinen biostimulaatio ja kasvojen kiinteytys ilman kirurgiaa** INFINI on moderni injektoitava biostimulaatiovalmiste, joka on suunniteltu parantamaan ihon rakennetta, kiinteyttä ja elastisuutta. Polynukleotideihin perustuva koostumus aktivoi ihon omat uusiutumisprosessit ja tarjoaa luonnollisen lifting-vaikutuksen ilman kasvonpiirteiden muuttumista.",
+        "en": "**Advanced biostimulation and lifting without surgery** INFINI is a next-generation injectable biostimulator designed to restore skin density, elasticity, and overall quality. Its polynucleotide-based formula activates natural regenerative processes, providing a visible yet natural lifting effect without altering facial features.",
+        "ru": "**Инновационная биостимуляция и лифтинг без хирургии** INFINI — это современный инъекционный препарат для глубокой биостимуляции кожи, направленный на восстановление плотности, упругости и качества кожи. Формула на основе полинуклеотидов активирует естественные процессы регенерации и омоложения, обеспечивая выраженный, но естественный лифтинг-эффект без изменения черт лица."
+      },
+      "treatment-20": {
+        "fi": "**Ihon biostimulaatio ja luonnollinen lifting-vaikutus** KARISMA on uuden sukupolven innovatiivinen injektoitava biostimulaatiovalmiste, joka on suunniteltu ihon syvälliseen uudistamiseen ja tukirakenteen vahvistamiseen. Ainutlaatuinen koostumus stimuloi kehon omaa kollageenin tuotantoa, parantaen ihon laatua ja tarjoten luonnollisen anti-age- ja lifting-vaikutuksen ilman aggressiivisia toimenpiteitä.",
+        "en": "**Skin biostimulation with a natural lifting effect** KARISMA is an innovative injectable treatment designed to restore skin structure and stimulate natural collagen production. The formula strengthens the dermal framework, improving skin quality and providing a visible anti-aging effect without aggressive interventions.",
+        "ru": "**Биостимуляция и восстановление кожи с эффектом естественного лифтинга** KARISMA — это инновационный инъекционный препарат нового поколения, направленный на глубокое восстановление кожи и укрепление её каркаса. Уникальная формула стимулирует синтез собственного коллагена, улучшая качество кожи и обеспечивая выраженный anti-age эффект без агрессивного вмешательства."
+      },
+      "treatment-21": {
+        "fi": "**Nopea ja tarkka poisto ilman kirurgista toimenpidettä** Papilloomien poisto **PlasmaPen-laitteella** on nykyaikainen ei-invasiivinen menetelmä ihon hyvänlaatuisten kasvainten hoitoon plasman energian avulla. Toimenpide mahdollistaa papillooman tarkan käsittelyn minimoiden ympäröivien kudosten vaurioitumisen ja säilyttäen ihon eheyden. **Miten PlasmaPen toimii:** Laite tuottaa hallitun plasmakaaren, joka vaikuttaa suoraan kasvaimen pintaan aiheuttaen sen koagulaation ja asteittaisen irtoamisen. Ihoon ei synny suoraa kosketusta, mikä vähentää verenvuodon…",
+        "en": "**Fast and precise removal without surgical intervention** Papilloma removal using the **PlasmaPen device** is a modern non-invasive method for treating benign skin lesions with plasma energy. The procedure allows for precise targeting of the papilloma while minimizing impact on surrounding tissues and preserving skin integrity.",
+        "ru": "**Быстрое и точечное удаление без хирургического вмешательства** Удаление папиллом с помощью аппарата **PlasmaPen** — это современный неинвазивный метод коррекции кожных новообразований с использованием плазменной энергии. Процедура позволяет **точечно воздействовать на папиллому**, минимально затрагивая окружающие ткани и сохраняя целостность кожи."
+      },
+      "treatment-22": {
+        "fi": "Kasvojen mikrovirta-hoito on laitepohjainen toimenpide, jossa heikot pulssivirrat vaikuttavat ihoon ja lihaksiin. Se parantaa mikroverenkiertoa, stimuloi kollageenin ja elastaanin tuotantoa, vahvistaa kudoksia ja palauttaa ihon raikkaan ja kiinteän ulkonäön. **Menettelyn edut:** - Kivuttomuus: hoito on mukava eikä vaadi toipumisaikaa. - Ihon uudistuminen: tasoittaa hienoja ryppyjä, parantaa ihon sävyä ja elastisuutta. - Kohottava vaikutus: kiinteyttää kasvojen ääriviivoja ja vahvistaa lihaksia. -…",
+        "en": "Facial microcurrents is an equipment-based procedure that uses weak pulsed electrical currents on the skin and muscles. It improves microcirculation, stimulates collagen and elastin production, strengthens tissues, and restores a fresh and toned appearance. **Advantages of the procedure:**",
+        "ru": "Микротоки для лица — это аппаратная процедура, основанная на воздействии слабых импульсных токов на кожу и мышцы. Она улучшает микроциркуляцию, стимулирует выработку коллагена и эластина, укрепляет ткани и возвращает коже свежий и подтянутый вид. **Преимущества процедуры:**"
+      }
+    },
+    "body": {
+      "treatment-01": {
+        "fi": "Hoito yhdelle alueelle Aika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, pakarat, selkä",
+        "en": "Procedure for one area Duration: 30 minutes Area of choice: legs, abdomen, buttocks, back",
+        "ru": "**Процедура на одну зону** Время: 30 минут Зона на выбор: ноги, живот, ягодицы, спина"
+      },
+      "treatment-02": {
+        "fi": "Hoito yhdelle alueelle Aika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, kädet, selkä",
+        "en": "Procedure for one area Duration: 30 minutes Area of choice: legs, abdomen, hands, back",
+        "ru": "**Процедура на одну зону** Время: 30 минут Зона на выбор: ноги, живот, руки, спина"
+      },
+      "treatment-03": {
+        "fi": "Selluliittihoito-ohjelma Aika: 45 minuuttia Alueet: jalat, pakarat, vatsa",
+        "en": "Anti-cellulite program Duration: 45 minutes Areas: legs, buttocks, abdomen",
+        "ru": "**Антицеллюлитная программа** Время: 45 минут Зоны: ноги, ягодицы, живот"
+      },
+      "treatment-04": {
+        "fi": "**Endospheres hoito koko vartalolle (60 minuuttia, express):** Hoito suoritetaan täydellisen protokollan mukaisesti, mutta pieniin alueisiin ja yksityiskohtiin käytetään vähemmän aikaa. Päähuomio keskittyy verenkierron parantamiseen, lymfakierron aktivointiin ja ihon yleiseen kiinteyttämiseen. Aika: 60 minuuttia Protokolla: jalat, pakarat, vatsa, selkä",
+        "en": "Endosphere therapy for the whole body (express) The procedure follows the full protocol, but less time is spent on smaller areas and details. The main focus is on improving blood circulation, lymphatic drainage, and overall skin toning.",
+        "ru": "Эндосферотерапия на все тело ( экспресс) Процедура проводится по полному регламенту, однако уделяется меньше времени обработке мелких зон и деталей. Основное внимание направлено на улучшение кровообращения, лимфодренаж и общее тонизирование кожи. Время: 60 минут Протокол: ноги, ягодицы, живот, спина"
+      },
+      "treatment-05": {
+        "fi": "**Täysi protokolla (hoito koko vartalolle)** Aika: 75 minuuttia Alueet: jalat, pakarat, vatsa, selkä Kuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen…",
+        "en": "Full Protocol (Full-body Procedure) Duration: 75 minutes Areas: legs, buttocks, abdomen, hands, back Description: This procedure includes the complete protocol, targeting all major areas of the body. Unlike the express procedure, more attention is given to each area, allowing for deeper impact and visible results. The thorough treatment of each zone promotes improved blood circulation, relief of muscle tension, and…",
+        "ru": "**Полный протокол (Процедура на все тело)** Время: 75 минут Зоны: ноги, ягодицы, живот, спина **Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе…"
+      },
+      "treatment-07": {
+        "fi": "Laiteavusteinen lymfaterapia, joka vaikuttaa hellävaraisesti ja tehokkaasti koko kehoon. Hoidon aikana erityinen puku luo rytmistä painetta ja rentoutumista, mikä aktivoi imunestekiertoa ja verenkiertoa. **Hoidon vaikutukset:** - Vähentää turvotusta ja jalkojen raskautta - Aktivoi lymfa- ja verenkiertoa",
+        "en": "A hardware-based lymphatic drainage massage that gently and effectively works on the entire body. During the treatment, a special suit applies rhythmic compression and decompression, stimulating lymphatic flow and blood circulation. **Benefits of the treatment:**",
+        "ru": "Аппаратный лимфодренажный массаж, который мягко и эффективно воздействует на все тело. Во время процедуры с помощью специального костюма происходит ритмичное сжатие и расслабление тканей, что активирует лимфоток и кровообращение. **Эффекты процедуры:** - Уменьшение отёков и тяжести в ногах"
+      }
+    },
+    "trichology": {
+      "treatment-02": {
+        "fi": "LED-valohoito päänahalle on ei-invasiivinen hoito, joka perustuu tietyn aallonpituuden valon vaikutukseen. Hoito stimuloi hiustuppeja, parantaa päänahan mikroverenkiertoa ja edistää päänahan yleistä hyvinvointia. Valohoito auttaa vähentämään tulehdusta, normalisoimaan talirauhasten toimintaa ja aktivoimaan hiusten kasvua. **Hoidon hyödyt:** • Stimuloi hiusten kasvua • Parantaa päänahan verenkiertoa • Vähentää hiustenlähtöä • Lievittää tulehdusta ja ärsytystä • Kivuton ja turvallinen hoito"
+      },
+      "treatment-05": {
+        "fi": "Hiusten filler-hoito on tehokas hoitomenetelmä päänahan ja hiusten intensiiviseen palauttamiseen. Hoidon tavoitteena on vahvistaa hiustuppeja, parantaa hiusten rakennetta ja stimuloida hiusten kasvua. Aktiiviset ainesosat täydentävät ravintoaineiden puutosta ja parantavat hiusten laatua sisältäpäin. **Hoidon hyödyt:** • Hiusten intensiivinen palautuminen • Hiustuppien vahvistuminen • Hiusten tiheyden lisääntyminen • Päänahan kunnon paraneminen • Nopea ja näkyvä tulos"
+      }
+    },
+    "laser": {
+      "treatment-01": {
+        "en": "Laser hair removal of the upper lip is a safe and effective procedure to remove unwanted hair from the delicate facial area. The laser targets the hair root, destroying it and slowing hair growth. **Benefits of the procedure:**",
+        "ru": "Лазерная эпиляция верхней губы — безопасная и эффективная процедура удаления нежелательных волос с деликатной зоны лица. Лазер воздействует на корень волоса, разрушая его и замедляя рост. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная болезненность"
+      },
+      "treatment-02": {
+        "en": "Laser hair removal of the chin removes unwanted facial hair, improves aesthetic appearance, and prevents ingrown hairs. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Quick results",
+        "ru": "Эпиляция подбородка лазером позволяет убрать лишние волосы на лице, улучшить эстетический вид и предотвратить врастание волос. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Быстрый результат **Какие результаты вы получите:**"
+      },
+      "treatment-03": {
+        "fi": "Laserkarvanpoisto ylähuulen ja leuan alueelta on erinomainen ratkaisu, jos haluat pysyvästi eroon kasvojen ei-toivotuista karvoista. Yhdistetty hoitoalue takaa tasaisen ja sileän ihon ilman parranajoa, vahauksia tai ärsytystä. **Edut:** - Pysyvää karvojen vähenemistä herkällä kasvojen alueella",
+        "en": "Combining the upper lip and chin allows for comprehensive facial hair removal, ensuring smooth and well-groomed skin. **Benefits of the procedure:** - Comprehensive hair removal from the central face - Minimal trauma - Long-lasting effect",
+        "ru": "Совмещение зон верхней губы и подбородка позволяет удалить волосы с лица комплексно, обеспечивая гладкость и ухоженный вид. **Преимущества процедуры:** - Комплексное удаление волос с центральной части лица - Минимальная травматичность - Долговременный эффект - Ровная и ухоженная кожа"
+      },
+      "treatment-04": {
+        "fi": "Laserkarvanpoisto poskiparran alueelta on ihanteellinen niille, jotka haluavat pysyvän sileän ihon ja eroon jatkuvasta parranajosta tai vahauksesta. Menetelmä kohdistuu karvatuppiin tarkasti ja turvallisesti. **Edut:** - Pysyvä karvojen väheneminen poskiparran alueella - Ei ihon ärsytystä tai haavaumia",
+        "en": "Laser hair removal of the sideburns helps shape the facial contour by removing unwanted hair from the sides of the face. **Benefits of the procedure:** - Precise facial hair removal - Long-lasting effect - Minimal trauma",
+        "ru": "Лазерная эпиляция бакенбардов позволяет убрать нежелательные волосы с боковых частей лица, сделать контур лица более аккуратным. **Преимущества процедуры:** - Точная работа с лицевой зоной - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи"
+      },
+      "treatment-05": {
+        "fi": "Laserkarvanpoisto poskien alueelta takaa pysyvän ratkaisun ei-toivotuille kasvojen karvoille. Hoito parantaa ihon ulkonäköä ja tekee siitä tasaisen ja sileän. **Edut:** - Pysyvä karvojen väheneminen poskien alueella - Ei punoitusta, sisäänkasvaneita karvoja tai ärsytystä - Antaa iholle kirkkaan ja raikkaan ilmeen",
+        "en": "Laser hair removal of the cheeks removes unwanted hair, evens skin tone, and gives a polished facial appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Quick and visible results - Suitable for all skin types",
+        "ru": "Процедура позволяет убрать нежелательные волосы на щеках, выровнять тон кожи и сделать лицо ухоженным. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Быстрый и заметный эффект - Подходит для всех типов кожи **Какие результаты вы получите:**"
+      },
+      "treatment-06": {
+        "fi": "Laserkarvanpoisto otsan alueelta on tehokas tapa poistaa ei-toivotut karvat ja saavuttaa tasainen, sileä iho. Menetelmä sopii sekä naisille että miehille, jotka haluavat pysyvän ja huolitellun ilmeen ilman toistuvaa karvanpoistoa. **Edut:** - Pysyvä karvojen väheneminen otsan alueella",
+        "en": "Laser hair removal of the forehead removes unwanted hair, giving the skin a smooth and tidy appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Quick results",
+        "ru": "Процедура позволяет удалить волосы с лба, сделать кожу гладкой и ухоженной, а контур лица аккуратным. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Быстрый результат **Какие результаты вы получите:**"
+      },
+      "treatment-07": {
+        "fi": "Laserkarvanpoisto koko kasvojen alueelta tarjoaa kokonaisvaltaisen ratkaisun ei-toivotuille karvoille. Hoito tekee ihosta tasaisen, sileän ja raikkaan ilman parranajoa, vahausta tai sokerointia. **Edut:** - Pysyvä karvojen väheneminen kaikilla kasvojen alueilla - Ei ärsytystä, haavaumia tai sisäänkasvaneita karvoja",
+        "en": "Laser hair removal of the full face removes hair from all areas, including the forehead, cheeks, chin, and upper lip, giving smooth and well-groomed skin. **Benefits of the procedure:** - Comprehensive facial hair removal - Long-lasting results",
+        "ru": "Лазерная эпиляция всего лица позволяет удалить волосы на всех участках лица, включая лоб, щеки, подбородок и верхнюю губу, обеспечивая ровный и ухоженный вид кожи. **Преимущества процедуры:** - Комплексное удаление волос с лица - Долговременный результат"
+      },
+      "treatment-08": {
+        "fi": "Laserkarvanpoisto kaulan etupuolelta auttaa poistamaan häiritsevät karvat ja tekee ihosta sileän ja siistin. Hoito sopii erityisesti niille, jotka kärsivät tummista varjoista, parranajon aiheuttamista iho-ongelmista tai toistuvasta karvanpoistosta. **Edut:** - Pysyvä karvojen väheneminen kaulan etupuolella - Ei parranajon aiheuttamaa ärsytystä tai punoitusta",
+        "en": "Laser hair removal of the front neck removes unwanted hair, making the area smooth and well-groomed. **Benefits of the procedure:** - Effective hair removal - Minimal trauma - Suitable for all skin types - Long-lasting results",
+        "ru": "Лазерная эпиляция передней части шеи удаляет нежелательные волосы, делая кожу ровной и ухоженной. **Преимущества процедуры:** - Эффективное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Долговременный эффект **Какие результаты вы получите:**"
+      },
+      "treatment-09": {
+        "fi": "Laserkarvanpoisto kaulan etupuolelta auttaa poistamaan häiritsevät karvat ja tekee ihosta sileän ja siistin. Hoito sopii erityisesti niille, jotka kärsivät tummista varjoista, parranajon aiheuttamista iho-ongelmista tai toistuvasta karvanpoistosta. **Edut:** - Pysyvä karvojen väheneminen kaulan etupuolella - Ei parranajon aiheuttamaa ärsytystä tai punoitusta",
+        "en": "Laser hair removal of the front neck removes unwanted hair, making the area smooth and well-groomed. **Benefits of the procedure:** - Effective hair removal - Minimal trauma - Suitable for all skin types - Long-lasting results",
+        "ru": "Лазерная эпиляция передней части шеи удаляет нежелательные волосы, делая кожу ровной и ухоженной. **Преимущества процедуры:** - Эффективное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Долговременный эффект **Какие результаты вы получите:**"
+      },
+      "treatment-10": {
+        "fi": "Laserkarvanpoisto kaulan takaosasta on tehokas ratkaisu ylimääräisten karvojen poistoon niska-alueelta. Menetelmä sopii erityisesti niille, joilla karvat kasvavat tiheästi hiusrajan alapuolella tai aiheuttavat epäsiistin ulkonäön. **Edut:** - Pysyvä karvojen väheneminen niskan alueella - Siisti ja huoliteltu hiusraja",
+        "en": "Laser hair removal of the back of the neck removes hair, creating a neat and hygienic appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Quick and safe procedure",
+        "ru": "Процедура удаляет волосы с задней части шеи, обеспечивая аккуратный вид и гигиеничность. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Быстрый результат **Какие результаты вы получите:** - Гладкая задняя часть шеи"
+      },
+      "treatment-11": {
+        "fi": "Laserkarvanpoisto kaulan takaosasta on tehokas ratkaisu ylimääräisten karvojen poistoon niska-alueelta. Menetelmä sopii erityisesti niille, joilla karvat kasvavat tiheästi hiusrajan alapuolella tai aiheuttavat epäsiistin ulkonäön. **Edut:** - Pysyvä karvojen väheneminen niskan alueella - Siisti ja huoliteltu hiusraja",
+        "en": "Laser hair removal of the back of the neck removes hair, creating a neat and hygienic appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Quick and safe procedure",
+        "ru": "Процедура удаляет волосы с задней части шеи, обеспечивая аккуратный вид и гигиеничность. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Быстрый результат **Какие результаты вы получите:** - Гладкая задняя часть шеи"
+      },
+      "treatment-12": {
+        "fi": "Laserkarvanpoisto olkapäiden alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin. Tämä hoito on erityisen suosittu miehillä, mutta sopii myös naisille. **Edut:** - Karvojen pysyvä väheneminen olkapäillä - Iho näyttää siistiltä ja tasaiselta",
+        "en": "Laser hair removal of the shoulders removes unwanted hair, leaving the skin smooth and well-groomed. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Smooth and even skin",
+        "ru": "Лазерная эпиляция плеч позволяет удалить нежелательные волосы, делая зону ровной, аккуратной и ухоженной. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Быстрый и безопасный результат **Какие результаты вы получите:**"
+      },
+      "treatment-13": {
+        "fi": "Laserkarvanpoisto rinnan alueelta tarjoaa pysyvän ratkaisun ylimääräisten karvojen poistamiseen. Hoito sopii erityisesti naisille, joilla esiintyy häiritseviä karvoja rintakehällä, mutta myös miehille, jotka haluavat sileän ja siistin rinnan. **Edut:** - Karvojen pysyvä väheneminen rinnan alueella - Iho näyttää huolitellulta ja siistiltä",
+        "en": "Laser hair removal of the chest removes unwanted hair, leaving the area smooth and tidy. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for both men and women - Smooth and even skin",
+        "ru": "Лазерная эпиляция груди удаляет нежелательные волосы, делая зону аккуратной и ухоженной. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для мужчин и женщин - Ровная и гладкая кожа **Какие результаты вы получите:**"
+      },
+      "treatment-14": {
+        "fi": "Laserkarvanpoisto miehen rintakehältä on suosittu hoito, joka poistaa tehokkaasti ja pitkäaikaisesti ei-toivotut karvat. Tämä menetelmä tekee ihosta sileän ja helpottaa henkilökohtaista hygieniaa. **Edut:** - Pysyvä karvojen väheneminen rintakehällä - Iho näyttää siistiltä ja hyvin hoidetulta",
+        "en": "Specialized procedure for men to remove chest hair for a neat and well-groomed appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Safe and comfortable procedure",
+        "ru": "Специальная процедура для мужчин, удаляющая волосы на груди, создавая аккуратный и ухоженный вид. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Быстрый и безопасный результат **Какие результаты вы получите:**"
+      },
+      "treatment-15": {
+        "fi": "Laserkarvanpoisto selästä tarjoaa ratkaisun ylimääräisten karvojen poistoon koko selän alueelta. Hoito sopii sekä naisille että miehille, joilla karvankasvu selässä aiheuttaa epämukavuutta tai esteettisiä haittoja. **Edut:** - Karvojen pysyvä väheneminen selässä - Sileä ja pehmeä iho ilman ärsytystä",
+        "en": "Laser hair removal of the back removes hair from both upper and lower back, giving a neat and tidy appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for both men and women",
+        "ru": "Лазерная эпиляция спины удаляет волосы с верхней и нижней части спины, обеспечивая аккуратный вид и гигиеничность. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для мужчин и женщин - Ровная и гладкая кожа"
+      },
+      "treatment-16": {
+        "fi": "Laserkarvanpoisto miehen selästä on erityisesti miehille suunnattu tehokas hoito, joka poistaa ei-toivotut karvat laajalta alueelta ja parantaa ihon ulkonäköä. **Edut:** - Tehokas ja pysyvä karvojen vähennys laajalla alueella - Ei sisäänkasvaneita karvoja eikä ihoärsytystä - Helpottaa ihonhoitoa ja parantaa ulkonäköä",
+        "en": "Specialized procedure for men to remove hair from the back, ensuring a neat and well-groomed appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Safe and comfortable procedure",
+        "ru": "Процедура специально для мужчин, удаляющая волосы с всей спины, создавая аккуратный и эстетичный вид. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Безболезненно и безопасно **Какие результаты вы получите:**"
+      },
+      "treatment-17": {
+        "fi": "Laserkarvanpoisto käsivarsien yläosasta on tehokas hoito, joka poistaa ei-toivotut karvat olkavarsista. Hoito tekee ihosta sileän ja siistin ilman jatkuvaa ajelua tai vahauksen tarvetta. **Edut:** - Karvojen pysyvä väheneminen käsivarsien yläosassa - Sileä ja pehmeä iho ilman ärsytystä",
+        "en": "Laser hair removal for the upper arms (shoulders to elbows) ensures smooth and well-groomed skin. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Smooth and even skin",
+        "ru": "Лазерная эпиляция верхней части рук удаляет волосы с плеч до локтей, обеспечивая гладкость и ухоженный вид. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Гладкая и ухоженная кожа"
+      },
+      "treatment-18": {
+        "fi": "Laserkarvanpoisto käsivarsien alaosasta kohdistuu kyynärvarsiin ja poistaa tehokkaasti ei-toivotut karvat. Menetelmä antaa sileän ja siistin ihon pitkäksi aikaa. **Edut:** - Tehokas ja pysyvä karvojen vähennys kyynärvarsista - Ei ihoärsytystä, punoitusta tai sisäänkasvaneita karvoja - Sopii sekä naisille että miehille",
+        "en": "Laser hair removal for lower arms (elbows to wrists) provides a neat and tidy appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Quick and effective",
+        "ru": "Удаление волос с нижней части рук (от локтя до кистей) для аккуратного и ухоженного результата. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Быстрый и безопасный результат"
+      },
+      "treatment-19": {
+        "fi": "Laserkarvanpoisto koko käsivarsien alueelta poistaa karvat sekä ylä- että alaosasta. Tämä kattava hoito takaa tasaisen ja pitkäaikaisen sileän lopputuloksen. **Edut:** - Pysyvä karvojen väheneminen koko käsivarsien alueella - Ei enää tarvetta ajella tai vahata - Ei ihoärsytystä eikä sisäänkasvaneita karvoja",
+        "en": "Comprehensive procedure removing hair from the entire arms, from shoulders to wrists. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Complete treatment in one session",
+        "ru": "Комплексная процедура удаления волос с рук полностью — от плеч до кистей. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Одновременная обработка всех зон рук **Какие результаты вы получите:**"
+      },
+      "treatment-20": {
+        "fi": "Laserkarvanpoisto kainaloista on yksi suosituimmista alueista, sillä se tekee arjesta huomattavasti helpompaa ja mukavampaa. Ei enää päivittäistä ajelua tai ärsyyntynyttä ihoa. **Edut:** - Pysyvä karvojen väheneminen kainaloissa - Ei sisäänkasvaneita karvoja tai ihoärsytystä - Raikas ja siisti tunne joka päivä",
+        "en": "Laser hair removal of the underarms removes hair, preventing irritation and ingrown hairs, leaving the area smooth. **Benefits of the procedure:** - Long-lasting hair removal - Reduced irritation and ingrown hairs - Minimal trauma - Quick and safe procedure",
+        "ru": "Лазерная эпиляция подмышек удаляет нежелательные волосы, предотвращает раздражение и врастание волос, делая кожу гладкой. **Преимущества процедуры:** - Долговременное удаление волос - Уменьшение раздражения и врастания волос - Минимальная травматичность - Быстрый и безопасный результат **Какие результаты вы получите:**"
+      },
+      "treatment-21": {
+        "fi": "Laserkarvanpoisto nännipihoilta on hellävarainen ja tarkka hoito, joka poistaa ei-toivotut karvat herkästä rinnan alueesta. **Edut:** - Tehokas ja hellävarainen karvojen poisto intiimiltä alueelta - Ei ihoärsytystä eikä sisäänkasvaneita karvoja - Luonnollinen ja huoliteltu ulkonäkö - Sopii sekä naisille että miehille",
+        "en": "Laser hair removal of the areolas removes unwanted hair around the nipples, leaving the area smooth, neat, and well-groomed. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for sensitive skin",
+        "ru": "Лазерная эпиляция ареол позволяет аккуратно удалить волосы вокруг сосков, делая кожу ровной и ухоженной. **Преимущества процедуры:** - Деликатное и безопасное удаление волос - Долговременный эффект - Минимальная травматичность - Подходит для всех типов кожи **Какие результаты вы получите:**"
+      },
+      "treatment-22": {
+        "fi": "Laserkarvanpoisto vatsan alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin. **Edut:** - Karvojen pysyvä väheneminen vatsan alueella - Ei ajelun tai vahauksen tarvetta - Ei ihoärsytystä tai sisäänkasvaneita karvoja - Sopii kaikille ihotyypeille",
+        "en": "Laser hair removal for the abdomen removes unwanted hair, leaving the area smooth and tidy. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Smooth and even skin",
+        "ru": "Лазерная эпиляция живота удаляет нежелательные волосы с передней части живота, обеспечивая аккуратный и ухоженный вид. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Гладкая и ухоженная кожа"
+      },
+      "treatment-23": {
+        "fi": "Laserkarvanpoisto vatsan alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin. **Edut:** - Karvojen pysyvä väheneminen vatsan alueella - Ei ajelun tai vahauksen tarvetta - Ei ihoärsytystä tai sisäänkasvaneita karvoja - Sopii kaikille ihotyypeille",
+        "en": "Laser hair removal for the abdomen removes unwanted hair, leaving the area smooth and tidy. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Smooth and even skin",
+        "ru": "Лазерная эпиляция живота удаляет нежелательные волосы с передней части живота, обеспечивая аккуратный и ухоженный вид. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Гладкая и ухоженная кожа"
+      },
+      "treatment-24": {
+        "fi": "Laserkarvanpoisto vatsalinjasta kohdistuu erityisesti karvoihin navasta alaspäin kulkevalla alueella. Hoito on suosittu sekä naisilla että miehillä. **Edut:** - Tehokas ja pysyvä karvojen väheneminen vatsalinjassa - Ei tarvetta jatkuvalle ajelulle tai vahaukselle - Ei ihoärsytystä eikä sisäänkasvaneita karvoja",
+        "en": "Laser hair removal along the abdomen line (from navel to bikini line) provides a neat and aesthetic appearance. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types",
+        "ru": "Удаление волос по линии живота (от пупка до линии бикини) для аккуратного и эстетичного результата. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Гладкая и ухоженная кожа"
+      },
+      "treatment-25": {
+        "fi": "Laserkarvanpoisto bikinirajasta tekee ihosta sileän ja huolitellun ilman päivittäistä ajelua. Hoito kohdistuu karvoihin alusvaatteiden reunan ulkopuolelta. **Edut:** - Pysyvä karvojen väheneminen bikinirajassa - Ei sisäänkasvaneita karvoja tai ihoärsytystä - Huoliteltu ja siisti ulkonäkö ympäri vuoden",
+        "en": "Laser hair removal of the bikini line removes unwanted hair along the panty line, leaving the area smooth and tidy. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types",
+        "ru": "Лазерная эпиляция линии бикини удаляет волосы с зоны по контуру трусиков, обеспечивая аккуратный и ухоженный вид. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Гладкая и ухоженная кожа"
+      },
+      "treatment-26": {
+        "fi": "Laserkarvanpoisto syvältä bikinialueelta antaa vielä huolitellumman ja siistimmän lopputuloksen. Karvat poistetaan laajemmalta alueelta alusvaatteiden reunan sisäpuolelta. **Edut:** - Laajempi ja tarkempi karvanpoisto kuin perinteisessä bikinirajassa - Ei ihoärsytystä eikä sisäänkasvaneita karvoja - Huoliteltu ja sileä lopputulos",
+        "en": "Laser hair removal of the deep bikini area removes hair from a wider intimate zone, ensuring maximum neatness and comfort. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for sensitive skin",
+        "ru": "Удаление волос с более широкой зоны бикини, включая интимные участки, с максимальной аккуратностью и комфортом. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для чувствительной кожи - Гладкая и ухоженная зона **Какие результаты вы получите:**"
+      },
+      "treatment-27": {
+        "fi": "Brasilialainen bikinihoito poistaa karvat lähes kokonaan bikinialueelta, jättäen halutessa vain pienen muodon. Tämä hoito sopii erinomaisesti niille, jotka haluavat täydellisen sileän lopputuloksen. **Edut:** - Maksimaalinen sileys bikinialueella - Ei ihoärsytystä eikä sisäänkasvaneita karvoja - Hygieeninen ja esteettinen lopputulos",
+        "en": "Laser hair removal of the Brazilian bikini removes all hair from the intimate zone for a fully smooth result. **Benefits of the procedure:** - Complete hair removal - Minimal trauma - Suitable for all skin types",
+        "ru": "Удаление всех волос с интимной зоны, включая межьягодичную складку, для максимально гладкой и ухоженной кожи. **Преимущества процедуры:** - Полное удаление волос - Деликатная и безопасная процедура - Минимальная травматичность - Подходит для всех типов кожи"
+      },
+      "treatment-28": {
+        "fi": "Laserkarvanpoisto pakaroista tekee ihosta sileän ja huolitellun ilman jatkuvaa karvanpoistoa. Hoito sopii sekä naisille että miehille. **Edut:** - Pysyvä karvojen väheneminen pakaroiden alueella - Ei ihoärsytystä tai sisäänkasvaneita karvoja - Pehmeä ja sileä iho - Helppo ja mukava hoito",
+        "en": "Laser hair removal of the buttocks removes unwanted hair, leaving the skin smooth and well-groomed. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Smooth and even skin",
+        "ru": "Лазерная эпиляция ягодиц удаляет нежелательные волосы, обеспечивая гладкость и ухоженный вид кожи. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Гладкая и ровная поверхность кожи **Какие результаты вы получите:**"
+      },
+      "treatment-29": {
+        "fi": "Laserkarvanpoisto reisien alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta tasaisen ja sileän. **Edut:** - Karvojen pysyvä väheneminen reisien alueella - Ei sisäänkasvaneita karvoja tai ihoärsytystä - Huoliteltu ja sileä iho - Sopii kaikille ihotyypeille",
+        "en": "Laser hair removal of the thighs removes unwanted hair, leaving the upper legs smooth and tidy. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Smooth and even skin",
+        "ru": "Удаление волос с бедер, обеспечивая гладкую и ухоженную поверхность. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Быстрый и безопасный результат - Подходит для всех типов кожи **Какие результаты вы получите:** - Гладкие бедра"
+      },
+      "treatment-30": {
+        "fi": "Laserkarvanpoisto säärien ja polvien alueelta tarjoaa kokonaisvaltaisen ratkaisun ei-toivotuille karvoille alaraajoissa. Hoito tekee ihosta sileän ja tasaisen. **Edut:** - Karvojen pysyvä väheneminen säärissä ja polvissa - Ei ihoärsytystä tai sisäänkasvaneita karvoja - Sileä ja pehmeä iho",
+        "en": "Laser hair removal of calves and knees removes hair for smooth and well-groomed lower legs. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Smooth and even skin",
+        "ru": "Удаление волос с голеней и коленей, обеспечивая аккуратный и ровный результат. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Гладкая и ухоженная кожа **Какие результаты вы получите:**"
+      },
+      "treatment-31": {
+        "fi": "Laserkarvanpoisto jaloista kokonaan kattaa sekä reidet että sääret ja polvet, tarjoten kattavan ja pitkäkestoisen sileän lopputuloksen. **Edut:** - Karvojen pysyvä väheneminen koko jalkojen alueella - Ei ihoärsytystä eikä sisäänkasvaneita karvoja - Tasainen ja sileä lopputulos",
+        "en": "Laser hair removal of the full legs removes hair from thighs to calves, leaving smooth and well-groomed skin. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types",
+        "ru": "Удаление волос с ног от бедер до голеней для ровного и гладкого результата. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Гладкая и ухоженная кожа **Какие результаты вы получите:**"
+      },
+      "treatment-32": {
+        "fi": "Laserkarvanpoisto kainaloista ja bikinirajasta tarjoaa tehokkaan ja kattavan ratkaisun ei-toivotuille karvoille ylävartalon intiimeillä alueilla. **Edut:** - Pysyvä karvojen väheneminen kainaloissa ja bikinirajassa - Ei ihoärsytystä tai sisäänkasvaneita karvoja - Sileä ja huoliteltu iho - Lisää mukavuutta arjessa ja urheilussa",
+        "en": "A combined procedure to remove hair from underarms and the bikini line, providing smoothness and well-groomed skin. **Benefits of the procedure:** - Long-lasting hair removal - Minimal trauma - Suitable for all skin types - Simultaneous treatment of two areas",
+        "ru": "Комплексная процедура для удаления волос с подмышек и линии бикини, обеспечивающая гладкость и ухоженный вид. **Преимущества процедуры:** - Долговременное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Одновременный уход за двумя зонами"
+      },
+      "treatment-33": {
+        "fi": "Laserkarvanpoisto kainaloista ja brasilialaisesta bikinistä antaa täydellisen sileän lopputuloksen ylävartalon intiimeillä alueilla. **Edut:** - Karvojen pysyvä väheneminen laajoilla alueilla - Ei ihoärsytystä eikä sisäänkasvaneita karvoja - Huoliteltu ja esteettinen lopputulos - Sopii naisille ja miehille",
+        "en": "Laser hair removal for underarms and the Brazilian bikini area ensures complete smoothness and comfort. **Benefits of the procedure:** - Long-lasting results - Minimal trauma - Suitable for sensitive skin - Simultaneous treatment of two zones",
+        "ru": "Удаление волос с подмышек и интимной зоны для полной гладкости и комфорта. **Преимущества процедуры:** - Долговременный эффект - Минимальная травматичность - Подходит для чувствительной кожи - Комплексная обработка зон **Какие результаты вы получите:** - Гладкая кожа подмышек и бразильской зоны"
+      },
+      "treatment-34": {
+        "fi": "Tämä kattava hoito poistaa karvat brasilialaisen bikinialueen lisäksi kokonaan jaloista, tarjoten maksimaalisen sileän ja huolitellun lopputuloksen. **Edut:** - Pysyvä karvojen väheneminen laajalla alueella - Ei ihoärsytystä tai sisäänkasvaneita karvoja - Huoliteltu ja esteettinen ulkonäkö - Sopii kaikille ihotyypeille",
+        "en": "Comprehensive hair removal for women, covering the Brazilian bikini area and full legs for a flawless result. **Benefits of the procedure:** - Complete hair removal - Minimal trauma - Suitable for all skin types - Multiple zones treated simultaneously",
+        "ru": "Комплексная эпиляция для женщин, включающая интимную зону и ноги полностью, обеспечивая безупречный результат. **Преимущества процедуры:** - Полное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Одновременная обработка нескольких зон **Какие результаты вы получите:**"
+      },
+      "treatment-35": {
+        "fi": "Yksi kattavimmista hoidoista, joka poistaa ei-toivotut karvat kainaloista, brasilialaisesta bikinistä ja jaloista kokonaan. Tarjoaa pitkään kestävän sileän ja huolitellun lopputuloksen. **Edut:** - Pysyvä karvojen väheneminen kaikilla hoidetulla alueella - Ei ihoärsytystä eikä sisäänkasvaneita karvoja - Huoliteltu, sileä ja esteettinen lopputulos",
+        "en": "Maximum coverage procedure removing hair from underarms, Brazilian bikini area, and full legs for complete smoothness. **Benefits of the procedure:** - Complete hair removal across multiple areas - Minimal trauma - Suitable for all skin types",
+        "ru": "Максимальный комплекс для удаления волос с подмышек, бразильской зоны и ног, обеспечивая полный уход и долговременный эффект. **Преимущества процедуры:** - Полное удаление волос с нескольких зон - Минимальная травматичность - Подходит для всех типов кожи"
+      },
+      "treatment-36": {
+        "fi": "Kokonaisvaltainen laserkarvanpoisto koko keholle tarjoaa maksimaalisen sileän lopputuloksen ja huolitellun ulkonäön. Tämä hoito poistaa karvat tehokkaasti kaikilta alueilta. **Edut:** - Pysyvä karvojen väheneminen koko kehossa - Ei ihoärsytystä tai sisäänkasvaneita karvoja - Tasainen ja sileä lopputulos",
+        "en": "Complete hair removal for the entire body, including face, arms, legs, underarms, bikini, chest, and back. **Benefits of the procedure:** - Comprehensive hair removal - Minimal trauma - Suitable for all skin types - Maximum effect in one course",
+        "ru": "Полный уход за всем телом с удалением волос с лица, рук, ног, подмышек, зоны бикини, груди и спины. **Преимущества процедуры:** - Комплексное удаление волос - Минимальная травматичность - Подходит для всех типов кожи - Максимальный эффект за один курс"
+      }
+    },
+    "rf": {
+      "treatment-02": {
+        "en": "Microneedle RF lifting for the forehead is a modern rejuvenation procedure designed to smooth out expression and age-related wrinkles, strengthen the skin, and restore its density. During the procedure, microneedles penetrate the skin to a controlled depth while radiofrequency energy heats the tissues from within, stimulating active collagen and elastin production. As a result, the forehead skin becomes smoother, firmer…"
+      },
+      "treatment-05": {
+        "fi": "Mikroneulan RF-nosto leualle ja kasvojen ääriviivoille auttaa tarkentamaan kasvonmuotoja ja palauttamaan selkeät linjat. Hoidossa yhdistyy mikroneulojen mikrovauriot ja syvä kudosten lämmitys radiofrekvenssillä, mikä aktivoi ihon uusiutumisprosessit, lisää tiheyttä ja vähentää löystymistä. **Hoidon edut:** - Leuan ja kasvojen ääriviivojen kohotus"
+      },
+      "treatment-06": {
+        "fi": "Mikroneulan RF-nosto kaulalle on tehokas nuorentamismenetelmä, joka vähentää löystymistä, ryppyjä ja ihon sävyn heikkenemistä. Radiofrekvenssi yhdistettynä mikroneuloihin stimuloi kollageenin ja elastaanin tuotantoa, parantaa mikroverenkiertoa ja palauttaa kudosten tiheyden. **Hoidon edut:** - Kaulan kohotus ja ryppyjen vähentäminen"
+      },
+      "treatment-07": {
+        "fi": "Mikroneulan RF-nosto dekolteelle palauttaa ihon kimmoisuuden, vähentää ryppyjä ja ehkäisee valovaurioiden merkkejä. Radiofrekvenssi yhdessä mikroneulojen kanssa tekee ihosta kiinteämmän, sileämmän ja nuorekkaamman. **Hoidon edut:** - Dekolteen ryppyjen ja poimujen silotus - Ihon kiinteyden ja kimmoisuuden lisääminen",
+        "en": "Microneedle RF lifting for the décolleté area restores skin elasticity, reduces wrinkles, and addresses signs of photoaging. The combination of radiofrequency energy and microneedle action makes the skin firmer, smoother, and rejuvenated. **Procedure benefits:** - Smoothing wrinkles and folds in the décolleté",
+        "ru": "Микроигольчатый RF-лифтинг для зоны декольте — это методика, которая позволяет восстановить упругость кожи, устранить морщины и признаки фотостарения. Благодаря сочетанию радиочастотной энергии и микроигольчатого воздействия кожа становится более плотной, гладкой и молодой. **Преимущества процедуры:** - Разглаживание морщин и складок в зоне декольте"
+      },
+      "treatment-08": {
+        "fi": "Mikroneulan RF-nosto vatsalle auttaa vähentämään löystymistä, ihon sävyn heikkenemistä ja raskaus- tai painonmuutosarpia. Radiofrekvenssipurkaukset lämmittävät syvät ihokerrokset, ja mikroneulat stimuloivat solujen uusiutumista sekä kollageenin ja elastaanin tuotantoa. **Hoidon edut:** - Vatsan ihon kiinteytys ja kohotus",
+        "en": "Microneedle RF lifting for the abdomen helps to combat sagging, loss of tone, and stretch marks. Radiofrequency pulses heat deep skin layers, while microneedles stimulate cell renewal and activate collagen and elastin production. **Procedure benefits:**",
+        "ru": "Микроигольчатый RF-лифтинг для живота помогает справиться с дряблостью кожи, снижением её тонуса и растяжками. Радиочастотные импульсы прогревают глубокие слои кожи, а микроиглы стимулируют обновление клеток, активируя синтез коллагена и эластина. **Преимущества процедуры:** - Подтяжка и укрепление кожи живота"
+      },
+      "treatment-09": {
+        "fi": "Mikroneulan RF-nosto reisille on suunniteltu kiinteyttämään ihoa, parantamaan sen rakennetta ja vähentämään löystymistä. Radiofrekvenssi yhdistettynä mikroneuloihin stimuloi kollageenin ja elastaanin tuotantoa, tehden ihosta tiheämmän ja kohotetun. **Hoidon edut:** - Reiden ihon kohotus ja kiinteytys - Ihon rakenteen ja sävyn parantaminen"
+      },
+      "treatment-10": {
+        "fi": "Mikroneulan RF-nosto polville auttaa vahvistamaan ihoa, lisäämään kimmoisuutta ja vähentämään löystymistä. Hoito stimuloi kollageenin ja elastaanin tuotantoa, parantaa mikroverenkiertoa ja kohentaa ihon rakennetta. **Hoidon edut:** - Polvien ihon kohotus ja kiinteytys - Löystymisen ja ryppyjen vähentäminen",
+        "en": "Microneedle RF lifting for the knees helps strengthen the skin, increase elasticity, and reduce sagging. The procedure stimulates collagen and elastin production, improves microcirculation, and enhances skin texture. **Procedure benefits:** - Lifting and firming of knee skin",
+        "ru": "Микроигольчатый RF-лифтинг для ягодиц — это эффективная методика для подтяжки и укрепления кожи, повышения её плотности и упругости. Радиочастотные импульсы и микроигольчатое воздействие стимулируют выработку коллагена и эластина, делая кожу более гладкой и подтянутой. **Преимущества процедуры:**"
+      },
+      "treatment-11": {
+        "fi": "Mikroneulan RF-nosto pakaroille on tehokas hoito ihon kiinteyttämiseen ja kohottamiseen, sen tiheyden lisäämiseen ja löystymisen vähentämiseen. Radiofrekvenssipurkaukset yhdessä mikroneulojen kanssa stimuloivat kollageenia ja elastaania, tehden ihosta sileämmän ja kohotetun. **Hoidon edut:** - Pakaroiden ihon kohotus ja kiinteytys"
+      },
+      "treatment-12": {
+        "fi": "Mikroneulan RF-nosto käsille on suunniteltu kiinteyttämään ja vahvistamaan käsien ihoa. Radiofrekvenssi yhdessä mikroneulojen kanssa stimuloi kollageenin ja elastaanin tuotantoa, lisäten ihon tiheyttä ja kiinteyttä. **Hoidon edut:** - Käsien ihon kohotus ja kiinteytys - Löystymisen ja hienojen juonteiden vähentäminen"
+      },
+      "treatment-13": {
+        "en": "Microneedling RF lifting for the face and neck is an effective minimally invasive rejuvenation treatment designed to work comprehensively on two key areas. The combination of microneedling and radiofrequency energy heats the deeper layers of the skin, stimulating the production of collagen and elastin. The treatment improves skin density, firmness, and elasticity, delivering a fresher, more youthful appearance without surgical…"
+      },
+      "treatment-15": {
+        "fi": "Mikroneulan RF-nosto vatsalle, reisille ja pakaroille on kokonaisvaltainen hoito ihon kiinteyttämiseen ja kohottamiseen, kimmoisuuden palauttamiseen, rakenteen parantamiseen ja löystymisen vähentämiseen. Radiofrekvenssi yhdessä mikroneulojen kanssa stimuloi kollageenia ja elastaania, tarjoten näkyvän kohotus- ja nuorentumisvaikutuksen. **Hoidon edut:**"
+      }
+    },
+    "brows": {
+      "treatment-01": {
+        "fi": "Ripsien laminointi VELVET-tuotteilla Toimenpiteen kesto: 60–90 minuuttia **Toimenpiteen kuvaus:** VELVET-ripsien laminointi on premium-hoito, joka antaa ripsillesi luonnollisen kaaren, volyymin ja intensiivisen värin samalla vahvistaen ja palauttaen niiden rakenteen. Käyttämällä korkealaatuisia VELVET-tuotteita, ripset saavat syvää ravintoa ja suojaa, mikä tekee niistä vahvempia ja kestävämpiä ulkoisia vaikutuksia vastaan.",
+        "en": "**Duration of the procedure:** 60-90 minutes **Procedure description:** VELVET lash lamination is a premium treatment that gives your lashes a natural curl, volume, and rich color while strengthening and restoring their structure. Using high-quality VELVET products, your lashes receive deep nourishment and protection, making them stronger and more resistant to external factors.",
+        "ru": "Ламинирование ресниц с использованием средств VELVET **Продолжительность процедуры**: 60-90 минут **Описание процедуры**: Ламинирование ресниц VELVET – это премиальная уходовая процедура, которая придает вашим ресницам естественный изгиб, объем и насыщенный цвет, при этом укрепляя и восстанавливая их структуру. С использованием высококачественных средств VELVET, ваши ресницы получают глубокое питание и защиту, что делает их более крепкими и устойчивыми к внешним воздействиям."
+      },
+      "treatment-02": {
+        "fi": "**Toimenpiteen kuvaus:** VELVET-kulmakarvojen laminointi on innovatiivinen toimenpide, joka luo täydelliset kulmakarvat, antaen niille halutun muodon, volyymin ja huolitellun ulkonäön. Laminoinnissa käytettävät VELVET-tuotteet ravitsevat ja palauttavat kulmakarvojen karvat, tehden niistä paksummat ja helpommin muotoiltavat. **Mitä hoito antaa:**",
+        "en": "**Procedure description:** VELVET brow lamination is an innovative procedure that helps create perfectly shaped brows, adding volume and a well-groomed look. The VELVET products used during the lamination process provide nourishment and restoration to brow hairs, making them thicker and easier to manage.",
+        "ru": "**Описание процедуры**: Ламинирование бровей VELVET – это инновационная процедура, которая позволяет создать идеальные брови, придавая им желаемую форму, объем и ухоженный вид. Средства VELVET, используемые в процессе ламинирования, обеспечивают питание и восстановление волосков бровей, делая их более плотными и послушными."
+      }
+    },
+    "packages": {
+      "reset-course": {
+        "fi": "Paketti sisältää: • **Kehon diagnostiikka** (rasva, lihakset, nesteet) • **Yksilöllinen ruokasuunnitelma** ravitsemusterapeutilta • **12 Endospheres-hoitoa** • **6 lymfaprässihoitoa (pressoterapia)** • **Henkilökohtainen treeni + valmentajan tuki** • **Asiantuntijoiden jatkuva ohjaus koko ohjelman ajan**",
+        "en": "The package includes: • **Body diagnostics** (composition analysis: fat, muscle, fluids) • **Personalized nutrition plan** from a nutritionist • **12 Endospheres sessions** • **6 pressotherapy sessions** • **One personal training session + trainer support** • **Ongoing expert guidance throughout the entire program**",
+        "ru": "**Пакет “Перезагрузка” включает:** • **Диагностику тела** (анализ состава: жир, мышцы, отёки) • **Индивидуальный план питания** от нутрициолога • **12 сеансов эндосферы** • **6 сеансов прессотерапии** • **Персональную тренировку** + сопровождение тренера • **Поддержку специалистов на протяжении всего курса**"
+      },
+      "endospheres-30-6": {
+        "fi": "Hoitopaketit suositellun hoitokurssin perusteella. Suositeltu kurssi – 12 käyntiä. Voit valita edullisen paketin: - **6 hoitokerran paketti, 30 minuuttia per hoito** Hoito tehdään valitulle alueelle: jalat, vatsa, pakarat tai selkä. **Hinta:** 350 euroa",
+        "en": "Treatment Packages Manufacturer recommendation: 12-treatment course, minimum twice per week (or every other day). 30 min — 6 treatments 6 treatments of 30 minutes each — €350.",
+        "ru": "**Пакеты процедур по рекомендациям курса** Рекомендованный курс – 12 посещений. Вы можете выбрать пакет по выгодной цене: 1. **Пакет из 6 процедур по 30 минут** Процедура проводится на любую выбранную зону: ноги, живот, ягодицы или спина. **Цена: 350 евро**"
+      },
+      "endospheres-30-12": {
+        "fi": "Endospheres Therapy hoitopaketit - **12 hoitokerran paketti, 30 minuuttia per hoito** Hoito tehdään valitulle alueelle: jalat, vatsa, pakarat tai selkä. **Hinta:** 650 euroa",
+        "en": "Treatment Packages Manufacturer recommendation: 12-treatment course, minimum twice per week (or every other day). 30 min — 12 treatments 12 treatments of 30 minutes each — €650.",
+        "ru": "1. **Пакет из 12 процедур по 30 минут** Процедура проводится на любую выбранную зону: ноги, живот, ягодицы или спина. **Цена: 650 евро**"
+      },
+      "endospheres-45-6": {
+        "fi": "45 minuutin hoitopaketit 6 kerta - Hoito sisältää käsittelyn alueille: jalat, pakarat ja vatsa. **Hinta:** 450 euroa",
+        "en": "Treatment Packages Manufacturer recommendation: 12-treatment course, minimum twice per week (or every other day). 45 min — 6 treatments 6 treatments of 45 minutes each — €450.",
+        "ru": "- **Пакет из 6 процедур по 45 минут** Процедура включает работу с зонами: ноги, ягодицы и живот. **Цена: 450 евро**"
+      },
+      "endospheres-45-12": {
+        "fi": "**12 hoitokerran paketti, 45 minuuttia per hoito** - Hoito sisältää käsittelyn alueille: jalat, pakarat ja vatsa. **Hinta:** 850 euroa",
+        "en": "Treatment Packages Manufacturer recommendation: 12-treatment course, minimum twice per week (or every other day). 45 min — 12 treatments 12 treatments of 45 minutes each — €850.",
+        "ru": "- **Пакет из 12 процедур по 45 минут** Процедура включает работу с зонами: ноги, ягодицы и живот. **Цена: 850 евро**"
+      },
+      "endospheres-60-6": {
+        "fi": "hoitokerran paketti, 60 minuuttia Parhaiden tulosten saavuttamiseksi suositellaan 6 hoitokerran täyttä kurssia. **Koko kehon hoitopaketit (Express)** - **6 hoitokerran paketti, 60 minuuttia per hoito** Hoito sisältää käsittelyn alueille: jalat, pakarat, vatsa ja selkä. **Hinta:** 570 euroa",
+        "en": "Treatment Packages Manufacturer recommendation: 12-treatment course, minimum twice per week (or every other day). 60 min — 6 treatments 6 treatments of 60 minutes each — €570.",
+        "ru": "- **Пакет из 6 процедур по 60 минут** Процедура включает работу с зонами: ноги, ягодицы и живот. **Цена: 570 евро**"
+      },
+      "endospheres-60-12": {
+        "fi": "hoitokerran paketti, 60 minuuttia **Koko kehon hoitopaketit** - **12 hoitokerran paketti, 60 minuuttia per hoito** Hoito sisältää käsittelyn alueille: jalat, pakarat, vatsa ja selkä. **Hinta:** 960 euroa",
+        "en": "Treatment Packages Manufacturer recommendation: 12-treatment course, minimum twice per week (or every other day). 60 min — 12 treatments 12 treatments of 60 minutes each — €1050.",
+        "ru": "- **Пакет из 12 процедур по 60 минут** Процедура включает работу с зонами: ноги, ягодицы и живот. **Цена: 1050 евро**"
+      },
+      "endospheres-75-6": {
+        "fi": "75 minuutin hoitopaketit Parhaiden tulosten saavuttamiseksi suositellaan 6 hoitokerran täyttä kurssia. **Koko kehon hoitopaketit (Täysi protokolla)** - **6 hoitokerran paketti, 75 minuuttia per hoito** Koko kehon täysi protokolla: jalat, pakarat, vatsa, selkä. **Hinta:** 650 euroa",
+        "en": "Treatment Packages Manufacturer recommendation: 12-treatment course, minimum twice per week (or every other day). 75 min — 6 treatments 6 treatments of 75 minutes each — €650.",
+        "ru": "Пакет процедур по 75 минут Для достижения оптимальных результатов рекомендуется пройти полный курс из 12 процедур. **Пакеты процедур на все тело (Полный протокол)** 1. **Пакет из 6 процедур по 75 минут** Полный протокол на все тело: ноги, ягодицы, живот, спина. **Цена: 650 евро**"
+      },
+      "endospheres-75-12": {
+        "fi": "75 minuutin hoitopaketit **Koko kehon hoitopaketit (Täysi protokolla)** - **12 hoitokerran paketti, 75 minuuttia per hoito** Koko kehon täysi protokolla: jalat, pakarat, vatsa, selkä. **Hinta:** 1250 euroa",
+        "en": "Treatment Packages Manufacturer recommendation: 12-treatment course, minimum twice per week (or every other day). 75 min — 12 treatments 12 treatments of 75 minutes each — €1250.",
+        "ru": "Пакет процедур по 75 минут **Пакеты процедур на все тело (Полный протокол)** 1. **Пакет из 12 процедур по 75 минут** Полный протокол на все тело: ноги, ягодицы, живот, спина. **Цена: 1250 евро**"
+      },
+      "arosha-wrap-6": {
+        "fi": "Tarjoamme AROSHA-vartalokäärehoitopaketin, joka sisältää 6 hoitokertaa ja auttaa sinua saavuttamaan täydellisen vartalon sekä parantamaan ihon kuntoa. **Pakettivaihtoehdot:** - **6 hoitokerran paketti** — 350 euroa Jokaisen hoidon kesto: 60 minuuttia **Kuvaus:** Voit valita joko samat hoidot jokaiselle kerralle tai yhdistellä niitä tarpeidesi ja tavoitteidesi mukaan. Voit keskittyä ratkaisemaan tietyn ongelman, kuten selluliitin tai paikalliset rasvakertymät, tai valita kokonaisvaltaisen lähestymistavan ihon kunnon…",
+        "en": "We offer AROSHA body wrap packages designed for 6 or 12 sessions, helping you achieve the perfect figure and improve skin condition. **Package options:** - Package of 6 sessions — €350 - Package of 12 sessions — €650 Duration of each session: 60 minutes",
+        "ru": "Пакет обертываний от AROSHA Предлагаем пакет процедур обертываний от AROSHA, рассчитанный на 6 или 12 сеансов, которые позволят вам достичь идеальной фигуры и улучшить состояние кожи. **Варианты пакетов:** 1. **Пакет на 6 процедур** — 370 евро"
+      },
+      "arosha-wrap-12": {
+        "fi": "AROSHA-vartalokäärehoitopaketti Tarjoamme AROSHA-vartalokäärehoitopaketin, joka sisältää 12 hoitokertaa ja auttaa sinua saavuttamaan täydellisen vartalon sekä parantamaan ihon kuntoa. **Pakettivaihtoehdot:** - **12 hoitokerran paketti** — 650 euroa Jokaisen hoidon kesto: 60 minuuttia **Kuvaus:** Voit valita joko samat hoidot jokaiselle kerralle tai yhdistellä niitä tarpeidesi ja tavoitteidesi mukaan. Voit keskittyä ratkaisemaan tietyn ongelman, kuten selluliitin tai paikalliset rasvakertymät, tai valita kokonaisvaltaisen lähestymistavan ihon…",
+        "en": "We offer AROSHA body wrap packages designed for 6 or 12 sessions, helping you achieve the perfect figure and improve skin condition. **Package options:** - Package of 6 sessions — €350 - Package of 12 sessions — €650 Duration of each session: 60 minutes",
+        "ru": "Пакет обертываний от AROSHA Предлагаем пакет процедур обертываний от AROSHA, рассчитанный на 6 или 12 сеансов, которые позволят вам достичь идеальной фигуры и улучшить состояние кожи. **Варианты пакетов:** 1. **Пакет на 12 процедур** — 720 евро"
+      },
+      "fractional-mesotherapy-5": {
+        "fi": "Kokonaisvaltainen ihon uudistaminen italialaisella menetelmällä Viiden kerran mikroneulauskurssi (fraktionaalinen mesoterapia) yksilöllisesti valituilla seerumeilla on vaiheittainen ihon uudistamis-, vahvistamis- ja nuorennusprosessi sisältäpäin. Dermapen-laite stimuloi aktiivista regeneroitumista ja tehokkaat cocktailit ravitsevat ihoa välttämättömillä aineilla. **Kurssiin sisältyy:** - 5 mikroneulaushoitoa ihon yksilölliset tarpeet huomioiden",
+        "en": "Comprehensive skin renewal with the Italian method A five-session course of microneedling (fractional mesotherapy) with individually selected serums provides step-by-step skin restoration, firming, and rejuvenation from within. The Dermapen device stimulates active regeneration, while powerful cocktails infuse the skin with essential nutrients.",
+        "ru": "Комплексное обновление кожи по итальянской методике Пятисеансовый курс микроигольчатой фракционной мезотерапии (микронидлинга) с применением индивидуально подобранных сывороток — это пошаговое восстановление, уплотнение и омоложение кожи изнутри. Аппарат Dermapen стимулирует активную регенерацию, а мощные коктейли насыщают кожу необходимыми компонентами."
+      },
+      "endospheres-face-care-6": {
+        "fi": "Endospheres-hoito kasvoille 60 minuutin 6 kerta hoitopaketti Endospheres-hoito kasvoille on moderni kosmetologinen menetelmä, jossa käytetään erityistä laitetta, jossa on värähtelevät sfäärirullat. Tämä teknologia on saavuttanut laajaa suosiota esteettisessä lääketieteessä sen ikääntymistä ehkäisevien ja terapeuttisten vaikutusten vuoksi.",
+        "ru": "**Пакет процедур для лица: \"Эндосфера и уход\"** **Идеальный дуэт для максимального эффекта лифтинга и комплексного ухода за кожей.** **Что входит в одну процедуру:** - **Эндосферотерапия лица** — подтяжка, улучшение тонуса кожи и борьба с отеками. - **Уход за лицом** — очищение, индивидуально подобранная маска, массаж и финальный уход с активными компонентами."
+      },
+      "laser-upper-lip-chin-5": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle ylähuuli + leuka. Sisältää **5 hoitokertaa**. Paketin hinta on 10 **% edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the u**pper lip + chin**. Includes **5 sessions**. The package price is 10**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны **верхней губы + подбородок**. Включает **5 сеансов**. Стоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-upper-lip-chin-10": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle ylähuuli + leuka. Sisältää 10 **hoitokertaa**. Paketin hinta on 20 **% edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the u**pper lip + chin**. Includes 10 **sessions**. The package price is 20**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны **верхней губы + подбородок**. Включает 10 **сеансов**. Стоимость пакета на 20**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-underarms-bikini-line-5": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + bikinilinja. Sisältää **5 hoitokertaa**. Paketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the underarms + bikini line. Includes 5 **sessions**. The package price is 10**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны **подмышки + линия бикини**. Включает **5 сеансов**. Стоимость пакета на 10**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-underarms-bikini-line-10": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + bikinilinja. Sisältää 10 **hoitokertaa**. Paketin hinta on 2**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the underarms + bikini line. Includes 10 **sessions**. The package price is 20**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны **подмышки + линия бикини**. Включает 10 **сеансов**. Стоимость пакета на 20**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-underarms-brazilian-5": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini. Sisältää 5 **hoitokertaa**. Paketin hinta on 1**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the underarms + brazilian bikini. Includes 5 **sessions**. The package price is 10**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны **подмышки + бразильское бикини**. Включает **5 сеансов**. Стоимость пакета на 10**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-underarms-brazilian-10": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini. Sisältää 10 **hoitokertaa**. Paketin hinta on 2**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the underarms + brazilian bikini. Includes 10 **sessions**. The package price is 20**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны **подмышки + бразильское бикини**. Включает 10 **сеансов**. Стоимость пакета на 20**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-brazilian-full-legs-5": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle brasilialainen bikini + jalat kokonaan. Sisältää 5 **hoitokertaa**. Paketin hinta on 1**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the brazilian bikini + full legs. Includes 5 **sessions**. The package price is 10**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны бразильское бикини + ноги целиком. Включает **5 сеансов**. Стоимость пакета на 10**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-brazilian-full-legs-10": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle brasilialainen bikini + jalat kokonaan. Sisältää 10 **hoitokertaa**. Paketin hinta on 2**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the brazilian bikini + full legs. Includes 10 **sessions**. The package price is 20**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны бразильское бикини + ноги целиком. Включает 10 **сеансов**. Стоимость пакета на 20**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-underarms-brazilian-full-legs-5": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini + jalat kokonaan. Sisältää 5 **hoitokertaa**. Paketin hinta on 1**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the underarms + brazilian bikini + full legs. Includes 5 **sessions**. The package price is 10**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны подмышки + бразильское бикини + ноги целиком. Включает **5 сеансов**. Стоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-underarms-brazilian-full-legs-10": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini + jalat kokonaan. Sisältää 10 **hoitokertaa**. Paketin hinta on 2**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the underarms + brazilian bikini + full legs. Includes 10 **sessions**. The package price is 20**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны подмышки + бразильское бикини + ноги целиком. Включает 10 **сеансов**. Стоимость пакета на 2**0% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-full-body-5": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle koko keho. Sisältää 5 **hoitokertaa**. Paketin hinta on 1**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the full body. Includes 5 **sessions**. The package price is 10**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны **все тело**. Включает **5 сеансов**. Стоимость пакета на 10**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      },
+      "laser-full-body-10": {
+        "fi": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle koko keho. Sisältää 10 **hoitokertaa**. Paketin hinta on 2**0 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen. Paketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+        "en": "Comprehensive laser hair removal package for the full body. Includes 10 **sessions**. The package price is 20**% more выгоднее** than purchasing each session separately. The package is valid for **12 months from the date of purchase**.",
+        "ru": "Комплексный пакет лазерной эпиляции зоны **все тело**. Включает 10 **сеансов**. Стоимость пакета на 20**% выгоднее**, чем оплата каждого сеанса отдельно. Срок действия пакета — **12 месяцев** с момента покупки."
+      }
+    },
+    "endospheres": {
+      "endospheres-intro-75": {
+        "fi": "**Täysi protokolla (hoito koko vartalolle)** Aika: 75 minuuttia Alueet: jalat, pakarat, vatsa, selkä Kuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen…",
+        "en": "What is Endospheres Therapy®? Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function. Unlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are…",
+        "ru": "**Полный протокол (Процедура на все тело)** Время: 75 минут Зоны: ноги, ягодицы, живот, спина **Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе…"
+      },
+      "endospheres-30": {
+        "fi": "Hoito yhdelle alueelle Aika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, pakarat, selkä",
+        "en": "What is Endospheres Therapy®? Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function. Unlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are…",
+        "ru": "**Процедура на одну зону** Время: 30 минут Зона на выбор: ноги, живот, ягодицы, спина"
+      },
+      "endospheres-45": {
+        "fi": "Selluliittihoito-ohjelma Aika: 45 minuuttia Alueet: jalat, pakarat, vatsa",
+        "en": "What is Endospheres Therapy®? Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function. Unlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are…",
+        "ru": "**Антицеллюлитная программа** Время: 45 минут Зоны: ноги, ягодицы, живот"
+      },
+      "endospheres-60": {
+        "fi": "**Endospheres hoito koko vartalolle (60 minuuttia, express):** Hoito suoritetaan täydellisen protokollan mukaisesti, mutta pieniin alueisiin ja yksityiskohtiin käytetään vähemmän aikaa. Päähuomio keskittyy verenkierron parantamiseen, lymfakierron aktivointiin ja ihon yleiseen kiinteyttämiseen. Aika: 60 minuuttia Protokolla: jalat, pakarat, vatsa, selkä",
+        "en": "What is Endospheres Therapy®? Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function. Unlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are…",
+        "ru": "Эндосферотерапия на все тело ( экспресс) Процедура проводится по полному регламенту, однако уделяется меньше времени обработке мелких зон и деталей. Основное внимание направлено на улучшение кровообращения, лимфодренаж и общее тонизирование кожи. Время: 60 минут Протокол: ноги, ягодицы, живот, спина"
+      },
+      "endospheres-75": {
+        "fi": "**Täysi protokolla (hoito koko vartalolle)** Aika: 75 minuuttia Alueet: jalat, pakarat, vatsa, selkä Kuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen…",
+        "en": "What is Endospheres Therapy®? Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function. Unlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are…",
+        "ru": "**Полный протокол (Процедура на все тело)** Время: 75 минут Зоны: ноги, ягодицы, живот, спина **Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе…"
+      }
+    }
+  }
+}
