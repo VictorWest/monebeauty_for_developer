@@ -89,7 +89,7 @@ The CMS/admin is custom-built on Prisma. Payload CMS is intentionally not used.
 
 Prerequisites:
 
-- Node.js 20.x
+- Node.js 24.x
 - npm
 - PostgreSQL 15+ recommended
 
