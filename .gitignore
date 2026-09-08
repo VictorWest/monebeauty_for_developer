@@ -60,3 +60,6 @@ next-env.d.ts
 # project reference material (not part of the app build)
 /design_handoff_mone_beauty_clinic
 /scraped_content
+
+# personal portfolio/CV material (not part of the client's project)
+/portfolio-assets
