@@ -273,7 +273,8 @@ export async function POST(req: NextRequest) {
             start: startDate,
             end: reservedUntil,
             practitionerIds: [matchingSlot.practitionerId],
-            roomId: matchingSlot.roomId,
+            // Rooms never gate online booking availability — only specialist
+            // and (where required) device conflicts are checked here.
             deviceId: matchingSlot.deviceId,
           });
           if (clash) throw new Error("slot_taken");

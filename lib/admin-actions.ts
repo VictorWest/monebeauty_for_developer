@@ -1761,7 +1761,7 @@ export async function updateAppointmentAction(formData: FormData) {
       let slot: (typeof candidates)[number] | null = null;
       for (const candidate of candidates) {
         const reservedUntil = new Date(
-          new Date(candidate.end).getTime() + 15 * 60_000,
+          new Date(candidate.end).getTime() + 10 * 60_000,
         );
         const reservationConflict = await lockAndFindReservationConflict(tx, {
           start: new Date(candidate.start),
@@ -1782,8 +1782,8 @@ export async function updateAppointmentAction(formData: FormData) {
         data: {
           start: new Date(slot.start),
           end: new Date(slot.end),
-          bufferMinutes: 15,
-          reservedUntil: new Date(new Date(slot.end).getTime() + 15 * 60_000),
+          bufferMinutes: 10,
+          reservedUntil: new Date(new Date(slot.end).getTime() + 10 * 60_000),
           bufferEnforced: true,
           practitionerId: slot.practitionerId,
           roomId: slot.roomId,

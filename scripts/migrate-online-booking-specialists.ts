@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 const apply = process.argv.includes("--apply");
-const BUFFER_MS = 15 * 60_000;
+const BUFFER_MS = 10 * 60_000;
 const roster = [
   {
     internalName: "Ilona Bagaturija",
@@ -168,7 +168,7 @@ async function main() {
       await tx.appointment.update({
         where: { id: appointment.id },
         data: {
-          bufferMinutes: 15,
+          bufferMinutes: 10,
           reservedUntil: new Date(appointment.end.getTime() + BUFFER_MS),
           bufferEnforced: true,
         },

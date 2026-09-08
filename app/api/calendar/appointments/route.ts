@@ -275,7 +275,7 @@ export async function POST(req: NextRequest) {
   )
     return bad("invalid_duration");
   const end = new Date(start.getTime() + requestedDuration * 60_000);
-  const reservedEnd = new Date(end.getTime() + 15 * 60_000);
+  const reservedEnd = new Date(end.getTime() + 10 * 60_000);
   const dateStr = clinicDateFromInstant(start);
   const date = new Date(`${dateStr}T00:00:00.000Z`);
   const [availability, selectedPractitioner] = await Promise.all([
@@ -408,7 +408,7 @@ export async function POST(req: NextRequest) {
           locale,
           start,
           end,
-          bufferMinutes: 15,
+          bufferMinutes: 10,
           reservedUntil,
           bufferEnforced: true,
           status: "CONFIRMED",

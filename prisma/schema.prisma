@@ -739,7 +739,7 @@ model Appointment {
   locale                 Locale                     @default(fi)
   start                  DateTime
   end                    DateTime
-  bufferMinutes          Int                        @default(15)
+  bufferMinutes          Int                        @default(10)
   reservedUntil          DateTime?
   bufferEnforced         Boolean                    @default(true)
   status                 AppointmentStatus          @default(BOOKED)

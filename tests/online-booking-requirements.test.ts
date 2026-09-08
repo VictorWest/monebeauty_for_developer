@@ -79,15 +79,15 @@ test("schema separates option qualification, resource capability, buffer, and co
   assert.match(schema, /serviceOptionId\s+String/);
   assert.match(schema, /publicName\s+String\?/);
   assert.match(schema, /reservedUntil\s+DateTime\?/);
-  assert.match(schema, /bufferMinutes\s+Int\s+@default\(15\)/);
+  assert.match(schema, /bufferMinutes\s+Int\s+@default\(10\)/);
   assert.match(schema, /model ConsultationProfile/);
   assert.match(schema, /dateOfBirthEncrypted\s+String/);
   assert.match(schema, /answersEncrypted\s+String/);
   assert.match(schema, /enum ConsultationQuestionType/);
 });
 
-test("new scheduling paths reserve the visible end plus fifteen minutes", () => {
-  assert.match(booking, /APPOINTMENT_BUFFER_MINUTES = 15/);
+test("new scheduling paths reserve the visible end plus ten minutes", () => {
+  assert.match(booking, /APPOINTMENT_BUFFER_MINUTES = 10/);
   assert.match(booking, /duration \+ APPOINTMENT_BUFFER_MINUTES/);
   assert.match(booking, /appointment\.reservedUntil \?\? appointment\.end/);
   assert.match(bookingRoute, /reservedUntil:/);

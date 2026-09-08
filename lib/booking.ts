@@ -19,7 +19,7 @@ import { qualifiedSpecialists } from "@/lib/booking-specialists";
 export { BUSINESS_HOURS };
 
 const DEFAULT_DURATION_MIN = 60;
-export const APPOINTMENT_BUFFER_MINUTES = 15;
+export const APPOINTMENT_BUFFER_MINUTES = 10;
 type SchedulingClient = Prisma.TransactionClient | typeof prisma;
 
 export interface SlotDto {
@@ -352,24 +352,11 @@ async function collectSlotCandidates(
           );
         if (employeeBusy) continue;
 
+        // Rooms are allocated internally at the clinic depending on the day and
+        // never gate online availability — `room` below is recorded on the
+        // appointment purely for internal/admin visibility, not checked for
+        // conflicts here.
         const room = capability.room;
-        const roomFree =
-          booked.every(
-            (appointment) =>
-              appointment.roomId !== room.id ||
-              !overlaps(
-                start,
-                reservedUntil,
-                appointment.start,
-                appointment.reservedUntil ?? appointment.end,
-              ),
-          ) &&
-          blocked.every(
-            (block) =>
-              block.roomId !== room.id ||
-              !overlaps(start, reservedUntil, block.start, block.end),
-          );
-        if (!roomFree) continue;
         const freeDevices = record.svc.requiresDevice
           ? capability.devices
               .map((link) => link.device)

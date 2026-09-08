@@ -175,7 +175,7 @@ export async function PATCH(
         ? appointment.end.getTime() - appointment.start.getTime()
         : service.durationMin * 60_000;
   const end = new Date(start.getTime() + duration);
-  const reservedUntil = new Date(end.getTime() + 15 * 60_000);
+  const reservedUntil = new Date(end.getTime() + 10 * 60_000);
   const practitionerId = String(
     payload.practitionerId ?? appointment.practitionerId,
   );
@@ -353,7 +353,7 @@ export async function PATCH(
         where: { id, version: expectedVersion },
         data: {
           ...next,
-          bufferMinutes: 15,
+          bufferMinutes: 10,
           reservedUntil,
           bufferEnforced: true,
           clientId,

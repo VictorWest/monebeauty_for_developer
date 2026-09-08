@@ -10,7 +10,7 @@ import {
 import { clinicDateFromInstant } from "@/lib/clinic-time";
 
 type SchedulingClient = Prisma.TransactionClient | typeof prisma;
-const APPOINTMENT_BUFFER_MS = 15 * 60_000;
+const APPOINTMENT_BUFFER_MS = 10 * 60_000;
 
 export type CalendarAssignment = {
   practitionerId: string;
