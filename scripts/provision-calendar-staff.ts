@@ -293,7 +293,7 @@ async function main() {
         syntheticRetired: Boolean(synthetic),
       };
     },
-    { timeout: 120_000 },
+    { timeout: 300_000 },
   );
 
   console.log(JSON.stringify(result, null, 2));
