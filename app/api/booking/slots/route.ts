@@ -24,7 +24,10 @@ export async function GET(req: NextRequest) {
       serviceKey: service,
       locale,
       optionKey: option,
-      specialistId: specialist,
+      // "any" means the client will let the clinic assign a specialist; the
+      // underlying lookup already returns the union across every qualified
+      // specialist when no specific one is given.
+      specialistId: specialist === "any" ? undefined : specialist,
     });
     return NextResponse.json(
       {

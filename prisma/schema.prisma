@@ -67,6 +67,7 @@ model Service {
   bookable              Boolean                         @default(true)
   priceFrom             Decimal?
   priceMode             ServicePriceMode                @default(FROM)
+  targetGender          ServiceGender                   @default(BOTH)
   bookingFamily         String?
   bookingPickerVisible  Boolean                         @default(true)
   offerRequiresAccount  Boolean                         @default(false)
@@ -1234,6 +1235,12 @@ enum ServiceCategory {
 enum ServicePriceMode {
   FROM
   FIXED
+}
+
+enum ServiceGender {
+  WOMEN
+  MEN
+  BOTH
 }
 
 enum ServiceOptionType {

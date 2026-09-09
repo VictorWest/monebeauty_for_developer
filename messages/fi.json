@@ -426,6 +426,11 @@
       "time": "Aika",
       "you": "Tiedot"
     },
+    "genderStep": {
+      "title": "Kenelle varaus on tarkoitettu?",
+      "women": "Naiset",
+      "men": "Miehet"
+    },
     "services": {
       "facial": "Kasvohoidot",
       "body": "Vartalohoidot",
@@ -449,6 +454,7 @@
       "create": "Luo tili"
     },
     "pickSpecialist": "Valitse asiantuntija",
+    "anySpecialist": "Kuka tahansa asiantuntija",
     "loadingSpecialists": "Ladataan asiantuntijoita…",
     "noSpecialists": "Tälle toimenpiteelle ei ole juuri nyt verkossa varattavaa asiantuntijaa.",
     "pickDate": "Valitse päivä",

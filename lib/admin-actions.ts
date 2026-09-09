@@ -8,6 +8,7 @@ import type {
   ProductKind,
   PublicationStatus,
   ServiceCategory,
+  ServiceGender,
 } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import {
@@ -68,6 +69,7 @@ const serviceCategories: ServiceCategory[] = [
   "LASER",
   "CONSULTATION",
 ];
+const serviceGenders: ServiceGender[] = ["WOMEN", "MEN", "BOTH"];
 const productCategories: ProductCategory[] = [
   "AROSHA_BODY",
   "DIXIDOX_TRICHO",
@@ -260,6 +262,10 @@ export async function saveServiceAction(formData: FormData) {
   const publicPath = value(formData, "publicPath");
   const category = value(formData, "category") as ServiceCategory;
   const priceMode = value(formData, "priceMode");
+  const targetGenderRaw = value(formData, "targetGender") as ServiceGender;
+  const targetGender = serviceGenders.includes(targetGenderRaw)
+    ? targetGenderRaw
+    : "BOTH";
   const returnTo = safeReturnPath(formData);
   if (
     !validSlug(slug) ||
@@ -281,6 +287,7 @@ export async function saveServiceAction(formData: FormData) {
     slug,
     publicPath,
     category,
+    targetGender,
     durationMin: Math.max(5, Math.round(numeric(formData, "durationMin", 60))),
     bookable: formData.get("bookable") === "on",
     priceFrom: value(formData, "priceFrom")

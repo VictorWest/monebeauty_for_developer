@@ -451,6 +451,89 @@ export async function openPublicSlotCandidates(
   ).filter((slot) => slot.start === args.start);
 }
 
+/**
+ * Resolves the "Any Specialist" choice to one concrete, currently-eligible
+ * practitioner for the exact requested slot, per the clinic's assignment
+ * rules:
+ *   1. Compact scheduling — prefer a specialist who already has at least
+ *      one appointment that clinic day, rather than opening an isolated
+ *      appointment for someone otherwise idle that day.
+ *   2. Workload balancing — among the preferred pool, pick whoever has the
+ *      lightest upcoming (next 14 days) load, so bookings don't keep
+ *      stacking onto the same specialist.
+ * Returns null if nobody is actually eligible for that exact slot anymore
+ * (e.g. it was taken between the client loading times and picking one).
+ */
+export async function resolveAnySpecialist(
+  args: {
+    dateStr: string;
+    serviceKey: string;
+    locale?: Locale;
+    start: string;
+    optionKey?: string;
+  },
+  client: SchedulingClient = prisma,
+): Promise<SlotDto | null> {
+  const db = client as typeof prisma;
+  const candidates = await openPublicSlotCandidates(args, client);
+  const eligibleByPractitioner = new Map<string, SlotDto>();
+  for (const candidate of candidates) {
+    if (!eligibleByPractitioner.has(candidate.practitionerId)) {
+      eligibleByPractitioner.set(candidate.practitionerId, candidate);
+    }
+  }
+  const eligible = Array.from(eligibleByPractitioner.values());
+  if (!eligible.length) return null;
+  if (eligible.length === 1) return eligible[0];
+
+  const practitionerIds = eligible.map((item) => item.practitionerId);
+  const dayBounds = clinicDateBounds(args.dateStr);
+  const now = new Date();
+  const workloadHorizon = new Date(now.getTime() + 14 * 86_400_000);
+  const [dayCounts, upcomingCounts] = await Promise.all([
+    dayBounds
+      ? db.appointment.groupBy({
+          by: ["practitionerId"],
+          where: {
+            practitionerId: { in: practitionerIds },
+            status: { not: "CANCELLED" },
+            start: { gte: dayBounds.start, lt: dayBounds.end },
+          },
+          _count: { _all: true },
+        })
+      : [],
+    db.appointment.groupBy({
+      by: ["practitionerId"],
+      where: {
+        practitionerId: { in: practitionerIds },
+        status: { not: "CANCELLED" },
+        start: { gte: now, lt: workloadHorizon },
+      },
+      _count: { _all: true },
+    }),
+  ]);
+  const busyToday = new Map(
+    dayCounts.map((row) => [row.practitionerId, row._count._all]),
+  );
+  const upcomingLoad = new Map(
+    upcomingCounts.map((row) => [row.practitionerId, row._count._all]),
+  );
+
+  // Priority 1: compact scheduling.
+  const withAppointmentsToday = eligible.filter(
+    (item) => (busyToday.get(item.practitionerId) ?? 0) > 0,
+  );
+  const pool = withAppointmentsToday.length ? withAppointmentsToday : eligible;
+
+  // Priority 2: workload balancing within the preferred pool.
+  return pool.reduce((lightest, candidate) =>
+    (upcomingLoad.get(candidate.practitionerId) ?? 0) <
+    (upcomingLoad.get(lightest.practitionerId) ?? 0)
+      ? candidate
+      : lightest,
+  );
+}
+
 export async function openPublicDates({
   fromDate,
   toDate,

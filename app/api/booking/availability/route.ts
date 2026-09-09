@@ -39,7 +39,8 @@ export async function GET(req: NextRequest) {
           serviceKey: service,
           locale,
           optionKey: option,
-          specialistId: specialist,
+          // "any" -> union of availability across every qualified specialist.
+          specialistId: specialist === "any" ? undefined : specialist,
         }),
       },
       { headers: { "Cache-Control": "private, no-store, max-age=0" } },

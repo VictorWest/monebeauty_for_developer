@@ -1,6 +1,6 @@
 import "server-only";
 
-import type { ServiceOptionType } from "@prisma/client";
+import type { ServiceGender, ServiceOptionType } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { excerpt } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
@@ -29,6 +29,7 @@ export type BookingServiceOption = {
   durationMin: number;
   priceFrom: number | null;
   priceMode: "FROM" | "FIXED";
+  targetGender: ServiceGender;
   offerRequiresAccount: boolean;
   publicPath: string;
   options: BookingOptionSummary[];
@@ -94,6 +95,7 @@ export async function getBookingServiceOptions(
         priceFrom:
           service.priceFrom === null ? null : Number(service.priceFrom),
         priceMode: service.priceMode,
+        targetGender: service.targetGender,
         offerRequiresAccount: service.offerRequiresAccount,
         publicPath: service.publicPath || PUBLIC_PATHS.services,
         options,
@@ -176,6 +178,7 @@ export async function getBookingContext(
       durationMin: service.durationMin,
       priceFrom: service.priceFrom === null ? null : Number(service.priceFrom),
       priceMode: service.priceMode,
+      targetGender: service.targetGender,
       offerRequiresAccount: service.offerRequiresAccount,
       publicPath: service.publicPath || PUBLIC_PATHS.services,
       options,

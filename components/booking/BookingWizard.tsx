@@ -110,6 +110,10 @@ export function BookingWizard({
 
   const [step, setStep] = useState<Step>(initialOption ? 2 : 1);
   const [service, setService] = useState<string | null>(initialService ?? null);
+  // Mandatory first choice, before treatment selection. Skipped when arriving
+  // via a link that already preselects a service/procedure, since intent is
+  // already established at that point.
+  const [gender, setGender] = useState<"WOMEN" | "MEN" | null>(null);
   const [procedure, setProcedure] = useState<BookingProcedureContext | null>(
     initialOption,
   );
@@ -142,6 +146,7 @@ export function BookingWizard({
     accuracyAcknowledged: false,
   }));
   const [submitting, setSubmitting] = useState(false);
+  const [resolvingSpecialist, setResolvingSpecialist] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showFallback, setShowFallback] = useState(false);
   const [confirmation, setConfirmation] = useState<{
@@ -181,8 +186,12 @@ export function BookingWizard({
         if (!response.ok || !Array.isArray(payload.specialists))
           throw new Error("specialists_unavailable");
         const available = payload.specialists as Specialist[];
-        setSpecialists(available);
-        const preferred = available.find((item) => item.id === preferredId);
+        const withAny =
+          available.length >= 2
+            ? [{ id: "any", name: t("anySpecialist") }, ...available]
+            : available;
+        setSpecialists(withAny);
+        const preferred = withAny.find((item) => item.id === preferredId);
         if (preferred || available.length === 1) {
           const selected = preferred ?? available[0];
           specialistsSelectionKey.current = `${svc}:${option}:${selected.id}`;
@@ -204,7 +213,7 @@ export function BookingWizard({
         setSpecialistsLoading(false);
       }
     },
-    [locale, router],
+    [locale, router, t],
   );
 
   const loadSlots = useCallback(
@@ -493,9 +502,44 @@ export function BookingWizard({
       void loadSlots(value, service, procedure.key, specialist.id);
   }
 
-  function pickSlot(s: Slot) {
+  async function pickSlot(s: Slot) {
     setSlot(s);
     setError(null);
+    if (specialist?.id === "any") {
+      if (!service || !procedure) return;
+      setResolvingSpecialist(true);
+      try {
+        const response = await fetch("/api/booking/resolve-specialist", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            service,
+            option: procedure.key,
+            start: s.start,
+            locale,
+          }),
+        });
+        const payload = await response.json();
+        if (!response.ok || !payload.specialist) {
+          setError(
+            response.status === 409
+              ? t("errors.slotTaken")
+              : t("errors.unavailable"),
+          );
+          setSlot(null);
+          return;
+        }
+        // Swap the "Any specialist" placeholder for who was actually
+        // assigned, so the confirm step shows their real name.
+        setSpecialist(payload.specialist as Specialist);
+      } catch {
+        setError(t("errors.unavailable"));
+        setSlot(null);
+        return;
+      } finally {
+        setResolvingSpecialist(false);
+      }
+    }
     setStep(4);
   }
 
@@ -694,6 +738,38 @@ export function BookingWizard({
     );
   }
 
+  if (!gender && !initialService) {
+    return (
+      <div>
+        <h2 className="font-display text-[26px] font-medium text-ink">
+          {t("genderStep.title")}
+        </h2>
+        <div className="mt-4.5 grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3.5">
+          <button
+            type="button"
+            onClick={() => setGender("WOMEN")}
+            className="min-h-14 rounded-(--radius) border border-line-card bg-card px-4 py-3 text-left font-sans text-[14px] font-medium text-ink hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            {t("genderStep.women")}
+          </button>
+          <button
+            type="button"
+            onClick={() => setGender("MEN")}
+            className="min-h-14 rounded-(--radius) border border-line-card bg-card px-4 py-3 text-left font-sans text-[14px] font-medium text-ink hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            {t("genderStep.men")}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  const visibleServices = gender
+    ? services.filter(
+        (item) => item.targetGender === "BOTH" || item.targetGender === gender,
+      )
+    : services;
+
   const stepLabels = [
     t("steps.service"),
     t("steps.specialist"),
@@ -848,7 +924,7 @@ export function BookingWizard({
             </fieldset>
           ) : (
             <div className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3.5">
-              {services.map((s) => (
+              {visibleServices.map((s) => (
                 <button
                   key={s.key}
                   type="button"
@@ -955,7 +1031,7 @@ export function BookingWizard({
               <p className="font-sans text-[14px] text-muted">
                 {t("pickDateFirst")}
               </p>
-            ) : slotsLoading ? (
+            ) : slotsLoading || resolvingSpecialist ? (
               <p className="font-sans text-[14px] text-muted">{t("loading")}</p>
             ) : slots.length > 0 ? (
               <TimePicker
@@ -970,7 +1046,7 @@ export function BookingWizard({
                   const selectedSlot = slots.find(
                     (item) => item.start === value,
                   );
-                  if (selectedSlot) pickSlot(selectedSlot);
+                  if (selectedSlot) void pickSlot(selectedSlot);
                 }}
               />
             ) : slotsDegraded ? (

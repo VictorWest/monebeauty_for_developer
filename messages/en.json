@@ -440,6 +440,11 @@
       "time": "Time",
       "you": "You"
     },
+    "genderStep": {
+      "title": "Who is this booking for?",
+      "women": "Women",
+      "men": "Men"
+    },
     "services": {
       "facial": "Facial treatments",
       "body": "Body treatments",
@@ -463,6 +468,7 @@
       "create": "Create account"
     },
     "pickSpecialist": "Choose a specialist",
+    "anySpecialist": "Any specialist",
     "loadingSpecialists": "Loading specialists…",
     "noSpecialists": "No specialist is currently available online for this procedure.",
     "pickDate": "Choose a date",

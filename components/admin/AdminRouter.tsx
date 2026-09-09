@@ -1070,6 +1070,17 @@ function ServiceEditor({ row, copy }: { row: ServiceRow | null; copy: Copy }) {
               className={inputCls}
             />
           </Field>
+          <Field label="Target audience">
+            <ThemedSelect
+              name="targetGender"
+              defaultValue={row?.targetGender ?? "BOTH"}
+              options={[
+                { value: "BOTH", label: "Women & men" },
+                { value: "WOMEN", label: "Women only" },
+                { value: "MEN", label: "Men only" },
+              ]}
+            />
+          </Field>
           <div
             className={`${alignedFieldGrid} grid-cols-[minmax(0,1fr)_120px] gap-x-2.5`}
           >
