@@ -156,7 +156,7 @@ function isBareSectionKeyword(block: string) {
 }
 
 /**
- * Blocks whose only job is to introduce what follows them —
+ * Blocks whose only job is to introduce what follows them:
  * "Benefits of the treatment:", "What results can you expect?", "Kurssi:".
  */
 function isSectionLabel(block: string) {
@@ -176,7 +176,7 @@ function isPriceBlock(block: string) {
 
 /**
  * A card summary must be long enough to fill the card without becoming the
- * whole description. Whole blocks are kept or dropped — copy is never cut
+ * whole description. Whole blocks are kept or dropped: copy is never cut
  * mid-sentence and no punctuation is synthesized.
  */
 const SUMMARY_MAX_WORDS = 60;
@@ -186,7 +186,7 @@ const SUMMARY_MAX_WORDS = 60;
  * description turns into a new section.
  *
  * Taking only the first block used to strip the lines the clinic cares most
- * about — "Procedure for one area" kept its heading but lost the "Duration: 30
+ * about: "Procedure for one area" kept its heading but lost the "Duration: 30
  * minutes / Area of choice: legs, abdomen, buttocks, back" that followed it,
  * which left the treatment cards looking almost empty.
  *
@@ -224,7 +224,7 @@ export function extractMarkdownSummary(value: string) {
   const blocks = summaryBlocks(value);
   // Structural headings above the opening prose ("# Endosphere therapy") are
   // the page's own title and are skipped, exactly as before. A label is skipped
-  // only when it introduces prose — the prose is then the real summary. A label
+  // only when it introduces prose: the prose is then the real summary. A label
   // introducing a list is kept, because the list is what it announces.
   const start = blocks.findIndex((block, index) => {
     if (block.heading || !markdownWordCount(block.text)) return false;

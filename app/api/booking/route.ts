@@ -30,7 +30,7 @@ function bad(error: string) {
   return NextResponse.json({ error }, { status: 400 });
 }
 
-/** POST /api/booking — create an appointment (lean flow). */
+/** POST /api/booking: create an appointment (lean flow). */
 export async function POST(req: NextRequest) {
   let payload: Record<string, unknown>;
   try {
@@ -273,7 +273,7 @@ export async function POST(req: NextRequest) {
             start: startDate,
             end: reservedUntil,
             practitionerIds: [matchingSlot.practitionerId],
-            // Rooms never gate online booking availability — only specialist
+            // Rooms never gate online booking availability: only specialist
             // and (where required) device conflicts are checked here.
             deviceId: matchingSlot.deviceId,
           });
@@ -497,7 +497,7 @@ export async function POST(req: NextRequest) {
         error.code === "P2034")
     )
       return NextResponse.json({ error: "slot_taken" }, { status: 409 });
-    // DB unavailable — signal the wizard to show its call/email fallback.
+    // DB unavailable: signal the wizard to show its call/email fallback.
     return NextResponse.json(
       { error: "unavailable", degraded: true },
       { status: 503 },

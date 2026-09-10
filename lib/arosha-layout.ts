@@ -63,8 +63,8 @@ function textOf(block: string) {
  * Its source is a body-wrap article, a spec table the scraper flattened into
  * alternating label and value paragraphs, seven treatment programs written as
  * `#### NAME` / description / `#### PRICE`, and a signup section. The old site's
- * cart and form controls survive the scrape as bare text blocks — "Into a
- * basket" after every price, and the submit label before the closing image —
+ * cart and form controls survive the scrape as bare text blocks: "Into a
+ * basket" after every price, and the submit label before the closing image:
  * and are reported in `dropped` rather than rendered.
  */
 export function parseAroshaMarkdown(markdown: string): AroshaLayout {

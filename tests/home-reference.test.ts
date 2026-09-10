@@ -100,7 +100,7 @@ test("treatment-area photos keep their reference focal points", () => {
 test("the card photos are cut off square, with no fade into the body", () => {
   // The client rejected the gradient that used to soften the photo into the card body.
   assert.doesNotMatch(styles, /\.hr-area-image:after/);
-  // The men's banner keeps its horizontal dissolve — that one is in the reference.
+  // The men's banner keeps its horizontal dissolve: that one is in the reference.
   assert.match(
     styles,
     /\.hr-area-men-image:after \{[^}]*linear-gradient\(\s*to right/,
@@ -168,7 +168,7 @@ test("the treatment-area composition uses the reference width and botanical deta
 
 test("the men's photo sits below the card copy without positioning it", () => {
   // `next/image` fill needs a positioned wrapper, and a positioned element paints above a
-  // static sibling whatever the DOM order — that hid the badge behind the photo.
+  // static sibling whatever the DOM order: that hid the badge behind the photo.
   assert.match(
     styles,
     /\.home-reference \.hr-area-men \{[^}]*isolation: isolate/,

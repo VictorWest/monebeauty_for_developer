@@ -29,7 +29,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Home" });
-  const title = `${BRAND.name} — ${t("metaTitle")}`;
+  const title = `${BRAND.name}: ${t("metaTitle")}`;
   const base = await managedLocalizedMetadata({
     locale: locale as Locale,
     path: PUBLIC_PATHS.home,

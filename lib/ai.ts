@@ -7,7 +7,7 @@ import { chatProviderConfig } from "@/lib/chat-reliability";
 import { runExternalApiAttempt } from "@/lib/external-api";
 
 // Gemini exposes a Chat Completions-compatible endpoint, so the official
-// OpenAI SDK talks to it directly — just a different baseURL and API key.
+// OpenAI SDK talks to it directly: just a different baseURL and API key.
 // https://ai.google.dev/gemini-api/docs/openai
 const GEMINI_OPENAI_BASE_URL =
   "https://generativelanguage.googleapis.com/v1beta/openai/";

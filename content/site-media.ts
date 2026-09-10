@@ -80,8 +80,8 @@ export const SITE_MEDIA_DEFINITIONS: SiteMediaDefinition[] = [
   /**
    * Endospheres before-and-after pairs, requested by the clinic.
    *
-   * No such photograph exists anywhere in the archive — the old site never
-   * published one — so these have no fallback. `BeforeAfterGallery` hides a
+   * No such photograph exists anywhere in the archive: the old site never
+   * published one: so these have no fallback. `BeforeAfterGallery` hides a
    * pair until both of its images are set, and hides itself entirely until at
    * least one complete pair exists, so the page never shows an empty frame
    * while the clinic is still gathering the photos.
@@ -90,9 +90,9 @@ export const SITE_MEDIA_DEFINITIONS: SiteMediaDefinition[] = [
     (["before", "after"] as const).map((phase) => ({
       key: `endospheres.beforeafter.${pair}.${phase}`,
       label: {
-        fi: `Endospheres ennen/jälkeen ${pair} — ${phase === "before" ? "ennen" : "jälkeen"}`,
-        en: `Endospheres before/after ${pair} — ${phase}`,
-        ru: `Endospheres до/после ${pair} — ${phase === "before" ? "до" : "после"}`,
+        fi: `Endospheres ennen/jälkeen ${pair}: ${phase === "before" ? "ennen" : "jälkeen"}`,
+        en: `Endospheres before/after ${pair}: ${phase}`,
+        ru: `Endospheres до/после ${pair}: ${phase === "before" ? "до" : "после"}`,
       },
       fallback: null,
       required: false,

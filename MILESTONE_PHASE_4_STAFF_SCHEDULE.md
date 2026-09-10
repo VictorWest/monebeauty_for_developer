@@ -39,9 +39,9 @@ Status: implemented, automated verification passed. Manual browser smoke remains
 
 ## Deferred Work
 
-- [x] Auth and role gating — completed in Phase 5.
-- [x] Staff users seeing only their own practitioner schedule — completed in Phase 5.
-- [ ] New-booking notifications — Phase 6.
+- [x] Auth and role gating: completed in Phase 5.
+- [x] Staff users seeing only their own practitioner schedule: completed in Phase 5.
+- [ ] New-booking notifications: Phase 6.
 - [ ] Rich weekly calendar visualization.
 - [ ] Break/day-off presets beyond manually closing slots.
 

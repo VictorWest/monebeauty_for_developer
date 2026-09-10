@@ -237,21 +237,21 @@ export const PACKAGES_OPTION_SEED: readonly PackageSeed[] = [
     bookingServiceSlug: "facial",
     labels: {
       en: label(
-        "Microneedling Treatment Package — 5 Sessions",
+        "Microneedling Treatment Package: 5 Sessions",
         "Fractional Mesotherapy",
         60,
         "500 €",
         "en",
       ),
       fi: label(
-        "Mikroneulaus-hoitopaketti — 5 kertaa",
+        "Mikroneulaus-hoitopaketti: 5 kertaa",
         "Fraktionaalinen mesoterapia",
         60,
         "500 €",
         "fi",
       ),
       ru: label(
-        "Пакет процедур Микронидлинг — 5 сеансов",
+        "Пакет процедур Микронидлинг: 5 сеансов",
         "Фракционная мезотерапия",
         60,
         "500 €",

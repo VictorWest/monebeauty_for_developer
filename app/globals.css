@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* =====================================================================
-   Mone Beauty — design tokens (from design_handoff/01-design-system.md)
+   Mone Beauty: design tokens (from design_handoff/01-design-system.md)
    Reproduce these values exactly. Do not hand-repeat hex codes elsewhere.
    ===================================================================== */
 
@@ -197,7 +197,7 @@ body:has(.home-reference) > footer {
   letter-spacing: 0.01em;
 }
 
-/* Stretched link — put this on a card's primary link and the whole card becomes clickable.
+/* Stretched link: put this on a card's primary link and the whole card becomes clickable.
    The card wrapper must be `position: relative`; every other control inside it escapes the
    overlay with `position: relative; z-index: 2`.
 
@@ -1057,7 +1057,7 @@ body:has(.home-reference) > footer {
 .home-reference .hr-creds svg {
   color: var(--accent);
 }
-/* Treatment areas — three category cards over a wide men's card paired with a decorative
+/* Treatment areas: three category cards over a wide men's card paired with a decorative
    benefits disc. The proportions are measured from the client's supplied reference. */
 .home-reference .hr-areas-head {
   max-width: 820px;
@@ -1104,7 +1104,7 @@ body:has(.home-reference) > footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* Cards sit a shade darker than the page they stand on, with no border — only a soft lift. */
+/* Cards sit a shade darker than the page they stand on, with no border: only a soft lift. */
 .home-reference .hr-areas article,
 .home-reference .hr-area-men {
   position: relative;
@@ -1114,7 +1114,7 @@ body:has(.home-reference) > footer {
   border-radius: var(--radius);
   background: var(--color-alt);
   box-shadow: var(--shadow-card-soft);
-  /* Keeps the shared scroll-reveal transition working and layers hover on top — same
+  /* Keeps the shared scroll-reveal transition working and layers hover on top: same
      reasoning as the treatment cards below. */
   transition:
     opacity 0.34s ease,
@@ -1230,7 +1230,7 @@ body:has(.home-reference) > footer {
      unpositioned or the stretched card link would size against it instead of the card, and
      only half the banner would be clickable.
 
-     DOM order is not enough to keep the copy on top — `next/image` `fill` needs a positioned
+     DOM order is not enough to keep the copy on top: `next/image` `fill` needs a positioned
      wrapper, and a positioned element paints above a static sibling whatever the order, so the
      photo hid the badge. `isolation` contains the negative layer to this card, where it lands
      above the card background but below the in-flow body. */
@@ -1278,7 +1278,7 @@ body:has(.home-reference) > footer {
   position: relative;
   display: grid;
   /* Sizing the track to the widest label keeps the hairlines equal length while centring the
-     whole block in the disc — stretched rows left the glyphs stranded against its left edge. */
+     whole block in the disc: stretched rows left the glyphs stranded against its left edge. */
   grid-template-columns: max-content;
   align-content: center;
   justify-content: center;
@@ -1289,7 +1289,7 @@ body:has(.home-reference) > footer {
   padding: clamp(14px, 1.6vw, 18px);
   isolation: isolate;
 }
-/* Purely decorative disc behind the three value props — the reference's beige circle. */
+/* Purely decorative disc behind the three value props: the reference's beige circle. */
 .hr-area-benefits:before {
   position: absolute;
   z-index: 1;
@@ -1374,8 +1374,8 @@ body:has(.home-reference) > footer {
   border-radius: var(--radius);
   background: var(--color-card);
   box-shadow: var(--shadow-card-soft);
-  /* Keeps the shared scroll-reveal transition (opacity/transform) working — this rule would
-     otherwise replace it — and adds the hover treatment on top. */
+  /* Keeps the shared scroll-reveal transition (opacity/transform) working: this rule would
+     otherwise replace it: and adds the hover treatment on top. */
   transition:
     opacity 0.34s ease,
     transform 0.34s ease,
@@ -1424,7 +1424,7 @@ body:has(.home-reference) > footer {
   aspect-ratio: 2/1;
   align-items: flex-end;
 }
-/* No lift on the full-width banner — only the smaller treatment cards react to hover. */
+/* No lift on the full-width banner: only the smaller treatment cards react to hover. */
 .home-reference .hr-services .featured:hover {
   translate: none;
   border-color: var(--color-line-card);
@@ -1453,8 +1453,8 @@ body:has(.home-reference) > footer {
   position: relative;
   z-index: 2;
   flex: none;
-  /* Fills the banner rather than hugging its content, so the stretched card link — which sizes
-     against this panel, the nearest positioned ancestor — covers the whole banner. Content still
+  /* Fills the banner rather than hugging its content, so the stretched card link: which sizes
+     against this panel, the nearest positioned ancestor: covers the whole banner. Content still
      sits at the bottom, so nothing moves. */
   align-self: stretch;
   display: flex;
@@ -1508,7 +1508,7 @@ body:has(.home-reference) > footer {
     display: grid;
     grid-template-columns: minmax(0, 32ch) 1fr auto;
     align-items: end;
-    /* Panel is taller than its rows now that it stretches — keep them at the bottom. */
+    /* Panel is taller than its rows now that it stretches: keep them at the bottom. */
     align-content: end;
     column-gap: 24px;
   }

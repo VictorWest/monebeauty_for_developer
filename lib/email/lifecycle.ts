@@ -114,7 +114,7 @@ const COPY = {
       confirmation: ["Запись подтверждена", "Ваша запись подтверждена."],
       details: [
         "Детали вашей записи",
-        "Ниже — детали вашего предстоящего визита.",
+        "Ниже: детали вашего предстоящего визита.",
       ],
       rescheduled: [
         "Новое время подтверждено",
@@ -153,7 +153,7 @@ const BOOKING_COPY = {
     email: "Email",
     manageTitle: "Need to cancel or reschedule?",
     manageText:
-      "Reschedule or cancel your appointment yourself using the secure link below — no account needed.",
+      "Reschedule or cancel your appointment yourself using the secure link below: no account needed.",
     manage: "Cancel or reschedule",
     google: "Google Calendar",
     apple: "Apple Calendar",
@@ -172,7 +172,7 @@ const BOOKING_COPY = {
     email: "Sähköposti",
     manageTitle: "Haluatko peruuttaa tai siirtää aikaasi?",
     manageText:
-      "Voit siirtää tai peruuttaa aikasi itse alla olevasta turvallisesta linkistä — tiliä ei tarvita.",
+      "Voit siirtää tai peruuttaa aikasi itse alla olevasta turvallisesta linkistä: tiliä ei tarvita.",
     manage: "Peruuta tai siirrä",
     google: "Google-kalenteri",
     apple: "Apple-kalenteri",
@@ -191,7 +191,7 @@ const BOOKING_COPY = {
     email: "Email",
     manageTitle: "Нужно отменить или перенести запись?",
     manageText:
-      "Вы можете перенести или отменить визит сами по защищённой ссылке ниже — аккаунт не нужен.",
+      "Вы можете перенести или отменить визит сами по защищённой ссылке ниже: аккаунт не нужен.",
     manage: "Отменить или перенести",
     google: "Google Календарь",
     apple: "Apple Календарь",
@@ -270,7 +270,7 @@ export function renderOrderLifecycleEmail(
     ...details.map(({ label, value }) => `${label}: ${value}`),
     "",
     ...items.map(
-      (item) => `${item.quantity} × ${item.name} — ${item.lineTotal}`,
+      (item) => `${item.quantity} × ${item.name}: ${item.lineTotal}`,
     ),
     `${copy.labels.orderTotal}: ${total}`,
     ...(kind === "confirmation" ? ["", copy.notice] : []),

@@ -14,7 +14,10 @@ import {
   clinicTimeFromInstant,
   parseClinicDateTime,
 } from "@/lib/clinic-time";
-import { qualifiedSpecialists } from "@/lib/booking-specialists";
+import {
+  qualifiedSpecialists,
+  type PublicSpecialist,
+} from "@/lib/booking-specialists";
 
 export { BUSINESS_HOURS };
 
@@ -353,7 +356,7 @@ async function collectSlotCandidates(
         if (employeeBusy) continue;
 
         // Rooms are allocated internally at the clinic depending on the day and
-        // never gate online availability — `room` below is recorded on the
+        // never gate online availability: `room` below is recorded on the
         // appointment purely for internal/admin visibility, not checked for
         // conflicts here.
         const room = capability.room;
@@ -452,13 +455,44 @@ export async function openPublicSlotCandidates(
 }
 
 /**
+ * Qualified specialists who are additionally on the schedule for the given
+ * clinic date, per the booking flow's Treatment -> Date -> Specialist order:
+ * "the system should display specialists who perform that specific treatment
+ * and are actually working on the selected date."
+ */
+export async function qualifiedSpecialistsForDate(
+  args: {
+    dateStr: string;
+    serviceKey: string;
+    optionKey: string;
+    locale?: Locale;
+  },
+  client: SchedulingClient = prisma,
+): Promise<PublicSpecialist[]> {
+  const [qualified, candidates] = await Promise.all([
+    qualifiedSpecialists(args, client),
+    collectSlotCandidates(
+      {
+        dates: [args.dateStr],
+        serviceKey: args.serviceKey,
+        optionKey: args.optionKey,
+        locale: args.locale,
+      },
+      client,
+    ),
+  ]);
+  const workingToday = new Set(candidates.map((slot) => slot.practitionerId));
+  return qualified.filter((specialist) => workingToday.has(specialist.id));
+}
+
+/**
  * Resolves the "Any Specialist" choice to one concrete, currently-eligible
  * practitioner for the exact requested slot, per the clinic's assignment
  * rules:
- *   1. Compact scheduling — prefer a specialist who already has at least
+ *   1. Compact scheduling: prefer a specialist who already has at least
  *      one appointment that clinic day, rather than opening an isolated
  *      appointment for someone otherwise idle that day.
- *   2. Workload balancing — among the preferred pool, pick whoever has the
+ *   2. Workload balancing: among the preferred pool, pick whoever has the
  *      lightest upcoming (next 14 days) load, so bookings don't keep
  *      stacking onto the same specialist.
  * Returns null if nobody is actually eligible for that exact slot anymore

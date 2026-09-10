@@ -43,6 +43,10 @@ const SERVICES: {
     priceFrom: 99,
     bookingFamily: "endospheres",
     offerRequiresAccount: true,
+    // Legacy per-duration shell: its real content now lives as an option
+    // under the "endospheres" parent (see lib/endospheres-booking-options.ts).
+    // Must stay hidden like the parent, or it shows as a dead-end picker card.
+    bookingPickerVisible: false,
   },
   {
     slug: "endospheres-30",
@@ -51,6 +55,7 @@ const SERVICES: {
     durationMin: 30,
     priceFrom: 65,
     bookingFamily: "endospheres",
+    bookingPickerVisible: false,
   },
   {
     slug: "endospheres-45",
@@ -59,6 +64,7 @@ const SERVICES: {
     durationMin: 45,
     priceFrom: 85,
     bookingFamily: "endospheres",
+    bookingPickerVisible: false,
   },
   {
     slug: "endospheres-60",
@@ -67,6 +73,7 @@ const SERVICES: {
     durationMin: 60,
     priceFrom: 105,
     bookingFamily: "endospheres",
+    bookingPickerVisible: false,
   },
   {
     slug: "endospheres-75",
@@ -75,6 +82,7 @@ const SERVICES: {
     durationMin: 75,
     priceFrom: 125,
     bookingFamily: "endospheres",
+    bookingPickerVisible: false,
   },
   { slug: "laser", category: "LASER", bookable: true },
   { slug: "rf", category: "DEVICE", bookable: true },

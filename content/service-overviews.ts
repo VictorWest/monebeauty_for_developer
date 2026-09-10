@@ -113,7 +113,7 @@ The consultation is a standalone visit and does not oblige you to book a treatme
     fi: `Lääketieteellinen konsultaatio on 30 minuutin henkilökohtainen vastaanotto Helsingin klinikalla. Kerrot, mitä haluaisit muuttaa, asiantuntija arvioi kyseisen alueen paikan päällä ja keskustelette mahdollisista jatkoaskelista.
 
 Konsultaatio on itsenäinen käynti eikä velvoita varaamaan hoitoa. Jos päätät jatkaa, asiantuntija kertoo ehdotetun aikataulun ja kustannukset ennen kuin mistään sovitaan.`,
-    ru: `Медицинская консультация — это индивидуальный 30-минутный приём в клинике в Хельсинки. Вы рассказываете, что хотели бы изменить, специалист очно оценивает соответствующую область, и вы вместе обсуждаете возможные дальнейшие шаги.
+    ru: `Медицинская консультация: это индивидуальный 30-минутный приём в клинике в Хельсинки. Вы рассказываете, что хотели бы изменить, специалист очно оценивает соответствующую область, и вы вместе обсуждаете возможные дальнейшие шаги.
 
 Консультация является самостоятельным визитом и не обязывает записываться на процедуру. Если вы решите продолжить, специалист заранее объяснит предполагаемые сроки и стоимость.`,
   },

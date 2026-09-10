@@ -91,7 +91,7 @@
   },
   "Home": {
     "metaTitle": "Instrumentaalinen kosmetologia ja kauneudenhoito Helsingissä",
-    "metaDescription": "Mone Beauty Clinic — esteettisen lääketieteen klinikka Helsingissä: endospheres-terapia, laser, RF-lifting, trikologia, kasvo- ja vartalohoidot sekä AROSHA-tuotteet.",
+    "metaDescription": "Mone Beauty Clinic: esteettisen lääketieteen klinikka Helsingissä: endospheres-terapia, laser, RF-lifting, trikologia, kasvo- ja vartalohoidot sekä AROSHA-tuotteet.",
     "servicesEyebrow": "Palvelut",
     "servicesHeading": "Palvelumme",
     "featured": {
@@ -117,7 +117,7 @@
     "heroTrust": {
       "byAppointment": {
         "title": "Ajanvarauksella",
-        "desc": "Varaa sinulle sopiva aika — ma–su sopimuksen mukaan."
+        "desc": "Varaa sinulle sopiva aika: ma–su sopimuksen mukaan."
       },
       "location": {
         "title": "Helsinki",
@@ -362,7 +362,7 @@
       },
       "note": "Annostellaan osana hoitosuunnitelmaasi.",
       "add": "Lisää ostoskoriin",
-      "all": "Katso koko valikoima — 31 tuotetta"
+      "all": "Katso koko valikoima: 31 tuotetta"
     },
     "booking": {
       "marker": "05 · Konsultaatio",
@@ -372,7 +372,7 @@
       "gdpr": "Tietojasi käsitellään luottamuksellisesti GDPR:n mukaisesti ja vain ajan järjestämiseen. Lue <link>tietosuojaseloste</link>.",
       "notesPlaceholder": "Kerro kaikki, mitä meidän tulisi tietää ennen konsultaatiota.",
       "requested": "Toivottu hoito",
-      "whatsapp": "WhatsApp — viesti klinikalle",
+      "whatsapp": "WhatsApp: viesti klinikalle",
       "fields": {
         "name": "Koko nimi",
         "phone": "Puhelin",
@@ -419,9 +419,10 @@
     "metaTitle": "Varaa aika",
     "eyebrow": "Ajanvaraus",
     "heading": "Varaa aika",
-    "intro": "Valitse hoito, valitse aika ja vahvista — se vie alle minuutin.",
+    "intro": "Valitse hoito, valitse aika ja vahvista: se vie alle minuutin.",
     "steps": {
       "service": "Hoito",
+      "date": "Päivä",
       "specialist": "Asiantuntija",
       "time": "Aika",
       "you": "Tiedot"
@@ -463,7 +464,7 @@
     "loadingDates": "Ladataan vapaita päiviä…",
     "noDates": "Seuraavien 60 päivän aikana ei ole tällä hetkellä vapaita verkkoajanvarausaikoja.",
     "loading": "Ladataan vapaita aikoja…",
-    "noTimes": "Tälle päivälle ei ole vapaita aikoja — valitse toinen päivä.",
+    "noTimes": "Tälle päivälle ei ole vapaita aikoja: valitse toinen päivä.",
     "fields": {
       "name": "Koko nimi",
       "phone": "Puhelin",

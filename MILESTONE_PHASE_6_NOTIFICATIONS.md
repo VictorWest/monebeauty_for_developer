@@ -1,4 +1,4 @@
-# Phase 6 — Notifications + reminders
+# Phase 6: Notifications + reminders
 
 Status: implemented at provider-integration scope.
 

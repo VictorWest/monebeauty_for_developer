@@ -42,7 +42,7 @@ test("a stretch link never gets its own position or z-index", () => {
       assert.doesNotMatch(
         value,
         /(^|\s)(relative|absolute|fixed|sticky|z-\[)/,
-        `${name}: a card-stretch link must not be positioned — got "${value}"`,
+        `${name}: a card-stretch link must not be positioned: got "${value}"`,
       );
     }
   }
@@ -57,7 +57,7 @@ test("homepage cards are positioned and their read-more link stretches", () => {
   assert.match(home, /className="hr-more card-stretch"/);
   assert.match(home, /"hr-btn ghost small card-stretch"/);
   // Five grids: technologies and products contribute one each, treatments two because its
-  // link picks a different style for the featured banner, and the treatment areas two —
+  // link picks a different style for the featured banner, and the treatment areas two:
   // one for the mapped Face/Body/Hair cards and one for the wide men's card.
   assert.equal(home.match(/card-stretch/g)?.length, 6);
 

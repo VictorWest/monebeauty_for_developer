@@ -21,28 +21,46 @@ const specialistsRoute = readFileSync(
 );
 const specialistLib = readFileSync("lib/booking-specialists.ts", "utf8");
 
-test("the public wizard is Procedure -> Specialist -> Time -> You", () => {
-  assert.match(wizard, /type Step = 1 \| 2 \| 3 \| 4;/);
+test("the public wizard is Procedure -> Date -> Specialist -> Time -> You", () => {
+  assert.match(wizard, /type Step = 1 \| 2 \| 3 \| 4 \| 5;/);
   assert.match(
     wizard,
-    /t\("steps\.service"\),\s*t\("steps\.specialist"\),\s*t\("steps\.time"\),\s*t\("steps\.you"\)/,
+    /t\("steps\.service"\),\s*t\("steps\.date"\),\s*t\("steps\.specialist"\),\s*t\("steps\.time"\),\s*t\("steps\.you"\)/,
   );
   assert.match(wizard, /api\/booking\/specialists/);
   assert.match(wizard, /useState<Step>\(initialOption \? 2 : 1\)/);
   assert.match(wizard, /function pickService[\s\S]*?setStep\(1\)/);
   assert.match(wizard, /function pickOption[\s\S]*?setStep\(2\)/);
-  assert.match(wizard, /function pickSpecialist[\s\S]*?setStep\(3\)/);
-  assert.match(wizard, /function pickSlot[\s\S]*?setStep\(4\)/);
+  assert.match(wizard, /function pickDate[\s\S]*?setStep\(3\)/);
+  assert.match(wizard, /function pickSpecialist[\s\S]*?setStep\(4\)/);
+  assert.match(wizard, /function pickSlot[\s\S]*?setStep\(5\)/);
 });
 
-test("deep links resolve specialists before loading retained-date availability", () => {
+test("the specialist step is filtered to who is actually working on the selected date", () => {
   assert.match(
     wizard,
-    /function pickOption[\s\S]*?loadSpecialists\(serviceKey, option\.key\)/,
+    /function pickOption[\s\S]*?loadAvailableDates\(serviceKey, option\.key, "any"\)/,
   );
   assert.match(
     wizard,
-    /preferredDate &&[\s\S]*?resolvedService &&[\s\S]*?initialOptionKey &&[\s\S]*?specialistId/,
+    /function pickDate[\s\S]*?loadSpecialistsForDate\(\s*service,\s*procedure\.key,\s*value,\s*specialistId \?\? initialSpecialistId,?\s*\)/,
+  );
+  assert.match(
+    specialistsRoute,
+    /qualifiedSpecialistsForDate/,
+  );
+  assert.match(specialistsRoute, /searchParams\.get\("date"\)/);
+  assert.match(bookingLib, /export async function qualifiedSpecialistsForDate/);
+  assert.match(
+    bookingLib,
+    /qualifiedSpecialistsForDate[\s\S]*?collectSlotCandidates/,
+  );
+});
+
+test("deep links resolve union-of-specialists date availability up front", () => {
+  assert.match(
+    wizard,
+    /if \(!initialService \|\| !initialOptionKey\) return;[\s\S]*?loadAvailableDates\(initialService, initialOptionKey, "any"\)/,
   );
   assert.match(wizard, /slotsDegraded[\s\S]*?<FallbackBlock/);
 });
@@ -54,19 +72,15 @@ test("deep-linked specialist initialization is stable across refreshed props", (
   assert.match(wizard, /if \(selected\.id !== preferredId\)/);
   assert.match(
     wizard,
-    /if \(specialistsSelectionKey\.current === selectionKey\) return/,
+    /if \(datesSelectionKey\.current === selectionKey\) return/,
   );
   assert.match(
     wizard,
-    /specialistsSelectionKey\.current = `\$\{svc\}:\$\{option\}:\$\{selected\.id\}`/,
+    /datesSelectionKey\.current = `\$\{svc\}:\$\{option\}`/,
   );
   assert.match(
     wizard,
-    /\[\s*initialOptionKey,\s*initialService,\s*initialSpecialistId,\s*loadSpecialists\s*\]/,
-  );
-  assert.match(
-    wizard,
-    /\[loadAvailableDates, procedureKey, service, specialistId\]/,
+    /\[\s*initialOptionKey,\s*initialService,\s*loadAvailableDates\s*\]/,
   );
   assert.doesNotMatch(
     wizard,
@@ -94,7 +108,7 @@ test("public booking APIs require and revalidate forged specialist values", () =
   assert.match(bookingRoute, /payload\.specialistId/);
   assert.match(slotsRoute, /searchParams\.get\("specialist"\)/);
   assert.match(bookingRoute, /practitionerId: matchingSlot\.practitionerId/);
-  assert.match(specialistsRoute, /qualifiedSpecialists/);
+  assert.match(specialistsRoute, /qualifiedSpecialistsForDate/);
   assert.match(
     specialistLib,
     /PractitionerServiceOptionQualification|qualifications/,

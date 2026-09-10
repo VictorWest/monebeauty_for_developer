@@ -34,7 +34,7 @@ function committedScrapeDate() {
 }
 
 /**
- * When the archive was captured — not when the generator happens to run.
+ * When the archive was captured: not when the generator happens to run.
  *
  * Defaulting to today made the registry stale the day after it was written, so
  * `--check` failed on every later day even with nothing changed. `--refresh`
@@ -403,9 +403,9 @@ function approvedPackageTreatment(
   //
   // English used to have its description replaced with a sentence synthesised
   // from the PDF, while Finnish and Russian kept theirs. That dropped what the
-  // old English page actually said about each package — "The procedure can be
+  // old English page actually said about each package: "The procedure can be
   // performed on any selected area: legs, abdomen, buttocks, or back",
-  // "Packages based on course recommendations" — and left English covering only
+  // "Packages based on course recommendations": and left English covering only
   // 89% of its own page against 99% for the other two.
   return {
     ...treatment,
@@ -465,7 +465,7 @@ function normalizeRegistryMarkdown(
 
 /**
  * Records where each treatment's copy came from. The description is left
- * exactly as the source published it — nothing is appended, summarised or
+ * exactly as the source published it: nothing is appended, summarised or
  * paraphrased.
  */
 function attributeRegistry(

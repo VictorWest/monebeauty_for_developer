@@ -144,7 +144,7 @@ export function TechnologyEditorial({
                       // The items are short, so a single column left the panel
                       // half empty; flex has to give way for CSS columns, and
                       // the measure cap would strand both columns on the left.
-                      // Paragraphs keep their cap — Finnish renders its list as
+                      // Paragraphs keep their cap: Finnish renders its list as
                       // prose, which would otherwise run the full panel width.
                       className={cn(
                         "[&_ul]:!block [&_ul]:!max-w-none [&_ul]:gap-x-16 [&_ul]:sm:columns-2 [&_ul_li]:mb-2.5 [&_ul_li]:break-inside-avoid",

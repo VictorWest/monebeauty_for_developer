@@ -61,8 +61,8 @@ export function isRetiredGeneratedTreatmentCopy(
 
 /**
  * The English Endospheres package description this project used to synthesise
- * from the clinic PDF — "## Treatment Packages" followed by "### 30 min — 6
- * treatments" — while Finnish and Russian kept the old site's own copy. English
+ * from the clinic PDF: "## Treatment Packages" followed by "### 30 min: 6
+ * treatments": while Finnish and Russian kept the old site's own copy. English
  * covered only 89% of its own packages page as a result.
  *
  * Both markers are required so the manufacturer's recommendation, which is still
@@ -71,7 +71,7 @@ export function isRetiredGeneratedTreatmentCopy(
 function isSynthesisedPackageDescription(value: string) {
   return (
     value.trimStart().startsWith("## Treatment Packages") &&
-    /^### \d+ min — \d+ treatments$/mu.test(value)
+    /^### \d+ min: \d+ treatments$/mu.test(value)
   );
 }
 

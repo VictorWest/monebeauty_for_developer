@@ -239,7 +239,7 @@ test("summaries and full descriptions are extractive, localized, and source attr
         );
         assert.doesNotMatch(treatment.summary, /…\s*$/u, context);
         // Where the source published only an opening block, the summary is the
-        // whole description — nothing was generated to pad it out.
+        // whole description: nothing was generated to pad it out.
         assert.ok(
           treatment.summary.length <= treatment.description.length,
           `${context} summary is longer than its description`,

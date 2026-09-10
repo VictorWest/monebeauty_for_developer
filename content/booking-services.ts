@@ -3,7 +3,7 @@ import { getPageContent } from "@/content/pages";
 import { ENDOSPHERES_SERVICES } from "@/content/endospheres";
 
 /**
- * Bookable-services registry — the single source of truth for what can be booked.
+ * Bookable-services registry: the single source of truth for what can be booked.
  * Derived from the existing real service/content pages (SCOPE.md keeps the real service
  * set). `category` mirrors the Prisma `ServiceCategory` enum. SCOPE's aesthetic-medicine
  * additions that have no scraped copy yet are `bookable: false` ([CLINIC TO PROVIDE]).
@@ -132,7 +132,7 @@ export function bookingKeyForContentSlug(
   )?.key;
 }
 
-/** Human title for a service key — prefers the real content-page title. */
+/** Human title for a service key: prefers the real content-page title. */
 export function bookingServiceTitle(
   key: string,
   locale: Locale,

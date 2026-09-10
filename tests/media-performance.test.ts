@@ -10,7 +10,7 @@ const FOUR_HOURS = 14400;
 
 test("public media is cached instead of re-downloaded every visit", () => {
   // Next serves `public/` with `max-age=0`, so the hero video was fetched in full on every
-  // page view — 6.1MB across the world, ahead of every image on the page.
+  // page view: 6.1MB across the world, ahead of every image on the page.
   const rule =
     config.match(/source: "\/media\/:path\*"[\s\S]*?\],\s*\}/)?.[0] ?? "";
 
@@ -35,7 +35,7 @@ test("optimized images are not revalidated several times a day", () => {
 
 test("the managed hero has a local bootstrap and shares its poster source", () => {
   // The LCP image used to be a remote Unsplash URL, which the default next/image loader
-  // fetches on the server before it can respond — a cross-internet hop in front of the
+  // fetches on the server before it can respond: a cross-internet hop in front of the
   // largest element above the fold.
   assert.doesNotMatch(home, /images\.unsplash\.com/);
   assert.match(siteMedia, /key: "home\.hero-poster"/);

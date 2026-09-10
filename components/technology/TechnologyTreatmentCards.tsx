@@ -28,7 +28,7 @@ const copy = {
 /**
  * The bookable treatments for a technology page.
  *
- * These used to render as one radio fieldset — 36 rows for laser — showing a
+ * These used to render as one radio fieldset: 36 rows for laser: showing a
  * name, a duration and a price. Every option already carries a localized
  * summary and its own photo; both were loaded and then dropped. Cards publish
  * them so the list can be read rather than scrolled past.

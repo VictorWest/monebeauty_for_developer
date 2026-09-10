@@ -43,10 +43,10 @@ Status: implemented, automated verification passed. Manual browser/API smoke rem
 
 ## Deferred Work
 
-- [ ] Staff schedule UI for editing availability (`/staff`) — Phase 4.
-- [ ] Email/SMS confirmations and reminders — Phase 6.
-- [ ] Authenticated account booking history — Phase 5.
-- [ ] Admin appointment management — Phase 5.
+- [ ] Staff schedule UI for editing availability (`/staff`): Phase 4.
+- [ ] Email/SMS confirmations and reminders: Phase 6.
+- [ ] Authenticated account booking history: Phase 5.
+- [ ] Admin appointment management: Phase 5.
 
 ## Resume Notes
 

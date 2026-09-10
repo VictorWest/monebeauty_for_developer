@@ -1,4 +1,4 @@
-# Requirements — Mone Beauty
+# Requirements: Mone Beauty
 
 ## Independent admin and client sessions (owner-approved 2026-08-27)
 
@@ -65,6 +65,28 @@ must stop rollout when future appointments have sub-15-minute gaps.
 require `specialist`; booking creation requires `specialistId` and procedure-consent version. Every
 availability response is `private, no-store`. The locked serializable transaction revalidates
 activity, qualification, capability, schedule, blocks, resources, buffer, and consent version.
+
+## Booking flow, buffer, and "Any Specialist" (owner-approved 2026-09-08)
+
+The "Booking System Requirements & Clarifications" document supersedes this section's flow order
+and buffer value above. Booking is **Procedure -> Date -> Specialist -> Time -> You/Confirm**: the
+client picks a date before a specialist, and `GET /api/booking/specialists` requires `date` so only
+practitioners who both qualify for the option and are actually on the schedule that day are
+returned. Deep links preserve exact service/option and begin at Date, not Specialist.
+
+The internal buffer is **10 minutes**, not 15, with no per-treatment exceptions
+(`APPOINTMENT_BUFFER_MINUTES` in `lib/booking.ts`); existing future bookings were migrated to match.
+Shared equipment (Endospheres, Laser, Microneedle RF) is capacity-limited to the clinic's one
+physical unit each. Treatment rooms never gate online availability (app logic and the database
+exclusion constraint were both dropped).
+
+An "Any Specialist" no-preference choice is offered whenever 2+ specialists qualify for the
+selected date; picking it defers assignment to `POST /api/booking/resolve-specialist` at
+time-of-slot selection, applying compact scheduling (prefer someone already working that day) then
+workload balancing (prefer the lightest 14-day load) among specialists still eligible for that
+exact slot. The client sees the assigned name before confirming: the "no preference nowhere" rule
+above now applies only to booking creation itself, since a concrete practitioner is always attached
+to the appointment.
 
 Guests retain contact inputs, GDPR consent, claims, and optional later registration. Authenticated
 clients use server-owned verified contact data and require a current consultation profile.
@@ -562,7 +584,7 @@ aesthetic-medicine clinic. On conflict, resolve:
 
 | Source                                                                       | Authoritative for                                                                                 | Strictness        |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------- |
-| [`SCOPE.md`](./SCOPE.md)                                                     | **Brand, positioning, IA/structure, product features** (booking, CRM, admin, chatbot, shop, GDPR) | Binding — wins    |
+| [`SCOPE.md`](./SCOPE.md)                                                     | **Brand, positioning, IA/structure, product features** (booking, CRM, admin, chatbot, shop, GDPR) | Binding: wins    |
 | [`design_handoff_mone_beauty_clinic/`](./design_handoff_mone_beauty_clinic/) | **Visual design system** (tokens, type, spacing, radii, shadows, components) + page structure     | Strictly followed |
 | [`scraped_content/`](./scraped_content/)                                     | **Existing-page copy, images, video, real NAP/media** (3 locales)                                 | Reused as content |
 
@@ -573,7 +595,7 @@ structure), **`SCOPE.md` wins**. The user's explicit technical direction (Prisma
 ### Content-sourcing rule (binding)
 
 - **Brand, positioning, and IA/structure come from `SCOPE.md`.** Existing-page **copy,
-  images, and video come from `scraped_content/`** — reuse real media; **no gradient
+  images, and video come from `scraped_content/`**: reuse real media; **no gradient
   placeholders where real media exists.**
 - **No invented medical claims.** Never fabricate procedure/medical text. The two SCOPE
   category pages absent from `scraped_content` retain hand-authored appointment framing in
@@ -582,16 +604,16 @@ structure), **`SCOPE.md` wins**. The user's explicit technical direction (Prisma
   medicine, dosage, indication, outcome, price, or credential/regulatory claim may be added.
 - Content is baked into committed registries by `scripts/gen-content.mjs`
   (`content/generated/*.json`); media by `scripts/copy-media.mjs` (`public/media/**`).
-  `scraped_content/` stays git-ignored — re-run both scripts to refresh.
+  `scraped_content/` stays git-ignored: re-run both scripts to refresh.
 
 ### Locked decisions
 
-- **Brand: Mone Beauty Clinic** — real `public/logo.svg` + `app/favicon.ico`.
-- **E-commerce is IN scope** — AROSHA/DIXIDOX catalog (`/verkkokauppa`,
+- **Brand: Mone Beauty Clinic**: real `public/logo.svg` + `app/favicon.ico`.
+- **E-commerce is IN scope**: AROSHA/DIXIDOX catalog (`/verkkokauppa`,
   `/verkkokauppa/[slug]`, `/ostoskori`);
   Prisma-backed hosted Stripe Checkout captures website purchases and webhooks reconcile
   payment/refund state without affecting clinic-paid appointments.
-- **Custom admin on Prisma — no Payload CMS.**
+- **Custom admin on Prisma: no Payload CMS.**
 - **Stack is locked** (§2).
 
 ---
@@ -600,7 +622,7 @@ structure), **`SCOPE.md` wins**. The user's explicit technical direction (Prisma
 
 - **Name:** **Mone Beauty Clinic** (per `SCOPE.md`; renamed from the old "Club"). Kept in a
   single config constant (`content/site.ts`); the header/footer render the real `logo.svg`.
-- **Positioning:** an aesthetic-medicine clinic in Helsinki — "Next-Generation Aesthetic
+- **Positioning:** an aesthetic-medicine clinic in Helsinki: "Next-Generation Aesthetic
   Medicine; a comprehensive approach to beauty, skin health, and the natural harmony of face,
   body, and hair." Real services (endospheres, laser, RF lifting, trichology, facial & body
   care) plus AROSHA products; SCOPE's additional medical category pages retain authored
@@ -617,13 +639,13 @@ structure), **`SCOPE.md` wins**. The user's explicit technical direction (Prisma
 
 ## 2. Tech stack & global constraints (LOCKED)
 
-- **Framework:** Next.js (App Router) + **TypeScript** — SSR/SSG for SEO-critical pages.
+- **Framework:** Next.js (App Router) + **TypeScript**: SSR/SSG for SEO-critical pages.
 - **Styling:** **Tailwind CSS**, theme generated from `01-design-system.md` tokens (CSS
   variables for switchable `accent` + `--radius`).
-- **Fonts:** `next/font` — Cormorant Garamond (400/500/600 + italic), Jost (300/400/500/600).
+- **Fonts:** `next/font`: Cormorant Garamond (400/500/600 + italic), Jost (300/400/500/600).
 - **Icons:** `@phosphor-icons/react`, **thin** weight throughout.
 - **ORM/DB:** **Prisma + PostgreSQL** (EU-hosted for GDPR).
-- **Auth:** role-based — `admin`, `staff`, `client` (Auth.js/NextAuth or custom on Prisma).
+- **Auth:** role-based: `admin`, `staff`, `client` (Auth.js/NextAuth or custom on Prisma).
 - **i18n:** `next-intl`, locales **ru / fi / en**, locale-prefixed routes + `hreflang`.
 - **AI:** **Anthropic Claude API** (latest model) for the chatbot.
 - **Email/SMS:** transactional email (Resend/Postmark) + SMS (Twilio or FI gateway).
@@ -637,14 +659,14 @@ structure), **`SCOPE.md` wins**. The user's explicit technical direction (Prisma
 - Language switcher in the header (`EN ▾` style dropdown).
 - All public pages localized with locale-prefixed routes and `hreflang` alternates.
 - Locale detection + persisted choice.
-- Content authored **per-locale** in the admin — **do not auto-translate** medical or legal
+- Content authored **per-locale** in the admin: **do not auto-translate** medical or legal
   copy; each language is clinic-approved. `scraped_content/{fi,en,ru}/` provides starting copy.
 
 ## 4. Site map / pages (Finnish segments, locale-prefixed en/fi/ru)
 
 **Content pages** (real copy from `scraped_content`, rendered via `react-markdown`):
 
-- `/` Home — real hero video + serif brand heading, 3 featured services, AROSHA product grid
+- `/` Home: real hero video + serif brand heading, 3 featured services, AROSHA product grid
 - `/klinikka` About Us (incl. real Club Rules / cancellation / return copy)
 - `/laitehoidot/{endospheres,laserkarvanpoisto,mikroneula-rf}`
 - `/trikologia`, `/arosha`
@@ -679,7 +701,7 @@ adornments 16–18 px, and status/empty-state icons 24–28 px. Icon-only contro
 accessible name, visible keyboard focus, a minimum 44 px target, and a hover/focus tooltip when
 their purpose is otherwise hidden. Text glyphs must not substitute for available control icons.
 
-Reproduce `01-design-system.md` **exactly**, expressed as design tokens — never hand-repeat
+Reproduce `01-design-system.md` **exactly**, expressed as design tokens: never hand-repeat
 hex values across components.
 
 - **Colors:** page `#FBF8F3`, alt `#F5EFE4`, card `#FCFAF6`, dark CTA `#2A2520`, footer
@@ -689,7 +711,7 @@ hex values across components.
 - **Spacing/layout:** max width 1280px (Technologies 1100px); section padding clamps;
   responsive breakpoint **900px** (desktop nav → hamburger + slide-down).
 - **Radii:** `--radius` 16px (Soft) default / 4px (Minimal) option; buttons 4px.
-- **Shadows:** warm brown-tinted only (`rgba(58,42,28,…)`) — never neutral grey/black.
+- **Shadows:** warm brown-tinted only (`rgba(58,42,28,…)`): never neutral grey/black.
 - **Motion:** documented transitions/hover lifts; honor `prefers-reduced-motion`.
 - **Components (reuse, do not re-style ad hoc):** Button (primary/outline/primaryOnDark/
   textLink), Eyebrow, SectionHeading, Card (treatment), FeatureItem, ImageSlot
@@ -712,7 +734,7 @@ Each: `content/generated/pages.json` (from `scripts/gen-content.mjs`) keyed by s
 **SEO per page:** `title` + `metaDescription` (excerpt) + `hreflang`. Product pages also emit
 `MedicalProcedure`/`Service` JSON-LD; the homepage emits `MedicalClinic` JSON-LD (Helsinki NAP).
 
-## 7. E-commerce — AROSHA shop
+## 7. E-commerce: AROSHA shop
 
 - **Catalog** of the **31 products** captured in `scraped_content/*/catalog/` with real
   images from `scraped_content/assets/`.
@@ -759,7 +781,7 @@ from client notes. Confirmation, staff/CRM views, confirmation/reminder messages
 notifications show the procedure snapshot when present and otherwise fall back to the parent
 service.
 
-> **First iteration (lean) — implemented at reduced scope.** A friction-free, one-click
+> **First iteration (lean): implemented at reduced scope.** A friction-free, one-click
 > booking: a 3-step wizard **Service → Time → You** where tapping a service selects it and
 > advances; service cards and pages deep-link `/booking?service=<key>` to preselect. Steps:
 > pick date/time (open slots only, single shared default practitioner) → client details
@@ -788,7 +810,7 @@ notifications are implemented. Fully responsive.
 ## 9. CRM / client database
 
 Client profile: full name, phone, email; appointment history (treatments, dates, status);
-free-text notes; **contraindications / medical comments — flagged,
+free-text notes; **contraindications / medical comments: flagged,
 high-visibility, treated as special-category data**; cancellation/reschedule history.
 Quick search by name / phone / email. Admin can create/edit clients and add notes.
 
@@ -852,7 +874,7 @@ in CMS content (retrieval) so it never fabricates medical claims. Log transcript
 
 Dedicated page per treatment; per-page SEO title + meta description; image `alt` everywhere;
 correct heading order (single `h1`, ordered `h2/h3`); fast loading; blog for content
-marketing; **local SEO — Helsinki** (`LocalBusiness`/`MedicalClinic` JSON-LD with NAP +
+marketing; **local SEO: Helsinki** (`LocalBusiness`/`MedicalClinic` JSON-LD with NAP +
 hours + geo); GA4 + Search Console; XML sitemap + robots.txt.
 
 ## 13. GDPR / security

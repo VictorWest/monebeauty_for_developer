@@ -42,7 +42,7 @@ const BOOKING_ANCHOR = {
  * The lowest-priced treatment, so the hero quotes a real entry price.
  *
  * Options are ordered by the clinic's display order, not by price, and laser
- * runs from €25 to €1000 — taking the first would have quoted an arbitrary one.
+ * runs from €25 to €1000: taking the first would have quoted an arbitrary one.
  */
 function cheapest<T extends { priceLabel: string | null }>(options: T[]) {
   let best: T | undefined;

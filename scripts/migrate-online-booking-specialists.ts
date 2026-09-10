@@ -174,7 +174,7 @@ async function main() {
         },
       });
     }
-  });
+  }, { timeout: 300_000 });
 }
 
 main()

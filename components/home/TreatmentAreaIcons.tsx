@@ -1,8 +1,8 @@
 /**
  * Line art for the three treatment areas on the homepage.
  *
- * Phosphor has no equivalent for any of these — its closest matches read as a face-scanner,
- * a stick figure and a salon hairdryer — so they are drawn here to match the client's
+ * Phosphor has no equivalent for any of these: its closest matches read as a face-scanner,
+ * a stick figure and a salon hairdryer: so they are drawn here to match the client's
  * reference mockup. Weight and cap/join style deliberately mirror the `weight="thin"`
  * Phosphor icons used elsewhere on the page so the set reads as one family.
  */

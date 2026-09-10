@@ -46,8 +46,8 @@ function SourceCopy({
 /**
  * The Arosha body-wrap page.
  *
- * It used to render through `ContentPage` — an `<h1>` and one column of raw
- * markdown — which ignored its hero image, left the spec table as alternating
+ * It used to render through `ContentPage`: an `<h1>` and one column of raw
+ * markdown: which ignored its hero image, left the spec table as alternating
  * loose paragraphs, and printed the old site's cart and form controls as body
  * text. Its content does not follow the technology grammar, so it gets its own
  * layout in the same design language.

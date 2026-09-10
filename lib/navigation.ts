@@ -21,8 +21,8 @@ export type NavItem = {
  * message namespace, which already carried the full menu in all three locales,
  * and every target resolves through `lib/public-routes`.
  *
- * "Instrumental cosmetology" has no page of its own — there is no
- * `/laitehoidot` index route — so it opens a submenu and nothing else.
+ * "Instrumental cosmetology" has no page of its own: there is no
+ * `/laitehoidot` index route: so it opens a submenu and nothing else.
  */
 export function mainNavigation(t: (key: string) => string): NavItem[] {
   return [

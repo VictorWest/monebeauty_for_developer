@@ -16,7 +16,7 @@ import type { Locale } from "../i18n/routing";
  * That suite asserted every procedure card carried *generated* copy: unique
  * paraphrases of 70–120 words, each stamped with an idempotency marker. The
  * clinic rejected exactly that ("the texts content are not from the previous
- * website"), so the contract is inverted here — a card must carry the source's
+ * website"), so the contract is inverted here: a card must carry the source's
  * own words, unchanged.
  */
 const pages = pagesData as Record<string, Record<Locale, { body: string }>>;

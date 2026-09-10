@@ -58,7 +58,8 @@ type ConsultationState = {
   accuracyAcknowledged: boolean;
 };
 
-type Step = 1 | 2 | 3 | 4;
+/** Treatment -> Date -> Specialist -> Time -> You/Confirm. */
+type Step = 1 | 2 | 3 | 4 | 5;
 
 function addDays(value: string, days: number) {
   const date = new Date(`${value}T00:00:00.000Z`);
@@ -156,7 +157,7 @@ export function BookingWizard({
   } | null>(null);
   const slotsRequest = useRef<AbortController | null>(null);
   const datesRequest = useRef<AbortController | null>(null);
-  const specialistsSelectionKey = useRef<string | null>(null);
+  const datesSelectionKey = useRef<string | null>(null);
   const procedureKey = procedure?.key;
   const specialistId = specialist?.id;
   const consultationRequired = !clientSignedIn || !consultationCurrent;
@@ -169,52 +170,6 @@ export function BookingWizard({
     minute: "2-digit",
     timeZone: "Europe/Helsinki",
   });
-
-  const loadSpecialists = useCallback(
-    async (svc: string, option: string, preferredId?: string) => {
-      specialistsSelectionKey.current = `${svc}:${option}:${preferredId ?? ""}`;
-      setSpecialistsLoading(true);
-      setSpecialistsDegraded(false);
-      setSpecialists([]);
-      setSpecialist(null);
-      try {
-        const response = await fetch(
-          `/api/booking/specialists?service=${encodeURIComponent(svc)}&option=${encodeURIComponent(option)}&locale=${encodeURIComponent(locale)}`,
-          { cache: "no-store" },
-        );
-        const payload = await response.json();
-        if (!response.ok || !Array.isArray(payload.specialists))
-          throw new Error("specialists_unavailable");
-        const available = payload.specialists as Specialist[];
-        const withAny =
-          available.length >= 2
-            ? [{ id: "any", name: t("anySpecialist") }, ...available]
-            : available;
-        setSpecialists(withAny);
-        const preferred = withAny.find((item) => item.id === preferredId);
-        if (preferred || available.length === 1) {
-          const selected = preferred ?? available[0];
-          specialistsSelectionKey.current = `${svc}:${option}:${selected.id}`;
-          setSpecialist(selected);
-          setStep(3);
-          if (selected.id !== preferredId) {
-            router.replace({
-              pathname: PUBLIC_PATHS.booking,
-              query: { service: svc, option, specialist: selected.id },
-            });
-          }
-        } else {
-          setStep(2);
-        }
-      } catch {
-        setSpecialistsDegraded(true);
-        setStep(2);
-      } finally {
-        setSpecialistsLoading(false);
-      }
-    },
-    [locale, router, t],
-  );
 
   const loadSlots = useCallback(
     async (
@@ -249,7 +204,7 @@ export function BookingWizard({
             current &&
             !nextSlots.some((candidate) => candidate.start === current.start)
           ) {
-            setStep(3);
+            setStep(4);
             setError(t("errors.slotTaken"));
             return null;
           }
@@ -276,6 +231,7 @@ export function BookingWizard({
       specialistId: string,
       background = false,
     ) => {
+      datesSelectionKey.current = `${svc}:${option}`;
       datesRequest.current?.abort();
       const controller = new AbortController();
       datesRequest.current = controller;
@@ -323,6 +279,51 @@ export function BookingWizard({
     [locale],
   );
 
+  const loadSpecialistsForDate = useCallback(
+    async (svc: string, option: string, dateStr: string, preferredId?: string) => {
+      setSpecialistsLoading(true);
+      setSpecialistsDegraded(false);
+      setSpecialists([]);
+      setSpecialist(null);
+      try {
+        const response = await fetch(
+          `/api/booking/specialists?service=${encodeURIComponent(svc)}&option=${encodeURIComponent(option)}&date=${encodeURIComponent(dateStr)}&locale=${encodeURIComponent(locale)}`,
+          { cache: "no-store" },
+        );
+        const payload = await response.json();
+        if (!response.ok || !Array.isArray(payload.specialists))
+          throw new Error("specialists_unavailable");
+        const available = payload.specialists as Specialist[];
+        const withAny =
+          available.length >= 2
+            ? [{ id: "any", name: t("anySpecialist") }, ...available]
+            : available;
+        setSpecialists(withAny);
+        const preferred = withAny.find((item) => item.id === preferredId);
+        if (preferred || available.length === 1) {
+          const selected = preferred ?? available[0];
+          setSpecialist(selected);
+          setStep(4);
+          if (selected.id !== preferredId) {
+            router.replace({
+              pathname: PUBLIC_PATHS.booking,
+              query: { service: svc, option, specialist: selected.id },
+            });
+          }
+          void loadSlots(dateStr, svc, option, selected.id);
+        } else {
+          setStep(3);
+        }
+      } catch {
+        setSpecialistsDegraded(true);
+        setStep(3);
+      } finally {
+        setSpecialistsLoading(false);
+      }
+    },
+    [locale, router, t, loadSlots],
+  );
+
   useEffect(
     () => () => {
       slotsRequest.current?.abort();
@@ -331,13 +332,15 @@ export function BookingWizard({
     [],
   );
 
+  // Keep the currently viewed time slot fresh while the client sits on the
+  // Time or You/Confirm step, so a slot taken by someone else is caught
+  // before submission.
   useEffect(() => {
     if (!service || !procedureKey || !specialistId || !date || confirmation)
       return;
     const refresh = () => {
       if (document.hidden) return;
       void loadSlots(date, service, procedureKey, specialistId, true);
-      void loadAvailableDates(service, procedureKey, specialistId, true);
     };
     const onFocus = () => refresh();
     window.addEventListener("focus", onFocus);
@@ -346,38 +349,19 @@ export function BookingWizard({
       window.removeEventListener("focus", onFocus);
       window.clearInterval(timer);
     };
-  }, [
-    confirmation,
-    date,
-    loadAvailableDates,
-    loadSlots,
-    procedureKey,
-    service,
-    specialistId,
-  ]);
+  }, [confirmation, date, loadSlots, procedureKey, service, specialistId]);
 
+  // Deep links preserve exact service/option; resolve union-of-specialists
+  // date availability up front so the client lands on the Date step.
   useEffect(() => {
     if (!initialService || !initialOptionKey) return;
-    const selectionKey = `${initialService}:${initialOptionKey}:${initialSpecialistId ?? ""}`;
-    if (specialistsSelectionKey.current === selectionKey) return;
+    const selectionKey = `${initialService}:${initialOptionKey}`;
+    if (datesSelectionKey.current === selectionKey) return;
     const timer = window.setTimeout(() => {
-      void loadSpecialists(
-        initialService,
-        initialOptionKey,
-        initialSpecialistId,
-      );
+      void loadAvailableDates(initialService, initialOptionKey, "any");
     }, 0);
     return () => window.clearTimeout(timer);
-  }, [initialOptionKey, initialService, initialSpecialistId, loadSpecialists]);
-
-  useEffect(() => {
-    if (!service || !procedureKey || !specialistId) return;
-    const timer = window.setTimeout(
-      () => void loadAvailableDates(service, procedureKey, specialistId),
-      0,
-    );
-    return () => window.clearTimeout(timer);
-  }, [loadAvailableDates, procedureKey, service, specialistId]);
+  }, [initialOptionKey, initialService, loadAvailableDates]);
 
   useEffect(() => {
     let raw: string | null = null;
@@ -410,7 +394,6 @@ export function BookingWizard({
       const handoffService = services.find(
         (item) => item.key === handoff.service,
       )?.key;
-      const resolvedService = initialService ?? handoffService;
       if (!initialService && handoffService) {
         setService(handoffService);
         setProcedure(null);
@@ -420,31 +403,11 @@ export function BookingWizard({
           query: { service: handoffService },
         });
       }
-      if (
-        preferredDate &&
-        resolvedService &&
-        initialOptionKey &&
-        specialistId
-      ) {
-        void loadSlots(
-          preferredDate,
-          resolvedService,
-          initialOptionKey,
-          specialistId,
-        );
-      }
+      // Setting `date` above (when valid) carries the wizard through the
+      // Date -> Specialist -> Time chain via the normal reactive path; no
+      // separate slot fetch is needed here.
     });
-  }, [
-    initialDetails,
-    initialOptionKey,
-    initialService,
-    loadAvailableDates,
-    loadSlots,
-    router,
-    services,
-    verifiedEmail,
-    specialistId,
-  ]);
+  }, [initialDetails, initialService, router, services, verifiedEmail]);
 
   function pickService(key: string) {
     const nextService = services.find((item) => item.key === key);
@@ -471,6 +434,7 @@ export function BookingWizard({
     setProcedure({ ...option, description: "" });
     setSpecialist(null);
     setSpecialists([]);
+    setDate(null);
     setSlot(null);
     setSlots([]);
     setStep(2);
@@ -478,28 +442,34 @@ export function BookingWizard({
       pathname: PUBLIC_PATHS.booking,
       query: { service: serviceKey, option: option.key },
     });
-    void loadSpecialists(serviceKey, option.key);
-  }
-
-  function pickSpecialist(next: Specialist) {
-    if (!service || !procedure) return;
-    specialistsSelectionKey.current = `${service}:${procedure.key}:${next.id}`;
-    setSpecialist(next);
-    setDate(null);
-    setSlot(null);
-    setSlots([]);
-    setStep(3);
-    router.replace({
-      pathname: PUBLIC_PATHS.booking,
-      query: { service, option: procedure.key, specialist: next.id },
-    });
+    void loadAvailableDates(serviceKey, option.key, "any");
   }
 
   function pickDate(value: string) {
     setDate(value);
     setSlot(null);
-    if (service && procedure && specialist)
-      void loadSlots(value, service, procedure.key, specialist.id);
+    setSlots([]);
+    setStep(3);
+    if (service && procedure)
+      void loadSpecialistsForDate(
+        service,
+        procedure.key,
+        value,
+        specialistId ?? initialSpecialistId,
+      );
+  }
+
+  function pickSpecialist(next: Specialist) {
+    if (!service || !procedure || !date) return;
+    setSpecialist(next);
+    setSlot(null);
+    setSlots([]);
+    setStep(4);
+    router.replace({
+      pathname: PUBLIC_PATHS.booking,
+      query: { service, option: procedure.key, specialist: next.id },
+    });
+    void loadSlots(date, service, procedure.key, next.id);
   }
 
   async function pickSlot(s: Slot) {
@@ -540,7 +510,7 @@ export function BookingWizard({
         setResolvingSpecialist(false);
       }
     }
-    setStep(4);
+    setStep(5);
   }
 
   async function submit() {
@@ -617,7 +587,7 @@ export function BookingWizard({
           setError(t("errors.offerNotEligible"));
         } else {
           setError(t("errors.slotTaken"));
-          setStep(3);
+          setStep(4);
           if (date && service && procedure)
             void loadSlots(date, service, procedure.key, specialist.id);
         }
@@ -772,6 +742,7 @@ export function BookingWizard({
 
   const stepLabels = [
     t("steps.service"),
+    t("steps.date"),
     t("steps.specialist"),
     t("steps.time"),
     t("steps.you"),
@@ -962,6 +933,36 @@ export function BookingWizard({
 
       {step === 2 && procedure && !offerAccountGate ? (
         <div className="mt-[clamp(20px,3vw,32px)]">
+          <p className="mb-3 font-sans text-label font-medium tracking-[.04em] text-muted uppercase">
+            {t("pickDate")}
+          </p>
+          {datesLoading ? (
+            <p className="font-sans text-[14px] text-muted" role="status">
+              {t("loadingDates")}
+            </p>
+          ) : datesDegraded ? (
+            <FallbackBlock t={t} fallback={fallback} />
+          ) : noAvailableDates ? (
+            <div role="status">
+              <p className="font-sans text-[14px] text-muted">
+                {t("noDates")}
+              </p>
+              <FallbackBlock t={t} fallback={fallback} />
+            </div>
+          ) : (
+            <BookingCalendar
+              locale={locale}
+              value={date}
+              onSelect={pickDate}
+              availableDates={availableDates}
+              loading={datesLoading}
+            />
+          )}
+        </div>
+      ) : null}
+
+      {step === 3 && procedure && !offerAccountGate ? (
+        <div className="mt-[clamp(20px,3vw,32px)]">
           <h2 className="font-display text-[26px] font-medium text-ink">
             {t("pickSpecialist")}
           </h2>
@@ -993,72 +994,38 @@ export function BookingWizard({
         </div>
       ) : null}
 
-      {step === 3 && specialist && !offerAccountGate && (
-        <div className="mt-[clamp(20px,3vw,32px)] flex flex-col gap-7 md:flex-row md:gap-8">
-          <div>
-            <p className="mb-3 font-sans text-label font-medium tracking-[.04em] text-muted uppercase">
-              {t("pickDate")}
-            </p>
-            <BookingCalendar
-              locale={locale}
-              value={date}
-              onSelect={pickDate}
-              availableDates={
-                datesLoading || datesDegraded ? [] : availableDates
-              }
-              loading={datesLoading}
+      {step === 4 && specialist && !offerAccountGate && (
+        <div className="mt-[clamp(20px,3vw,32px)]">
+          <p className="mb-3 font-sans text-label font-medium tracking-[.04em] text-muted uppercase">
+            {t("pickTime")}
+          </p>
+          {slotsLoading || resolvingSpecialist ? (
+            <p className="font-sans text-[14px] text-muted">{t("loading")}</p>
+          ) : slots.length > 0 ? (
+            <TimePicker
+              inline
+              value={slot?.start ?? ""}
+              ariaLabel={t("pickTime")}
+              options={slots.map((item) => ({
+                value: item.start,
+                label: item.label,
+              }))}
+              onValueChange={(value) => {
+                const selectedSlot = slots.find(
+                  (item) => item.start === value,
+                );
+                if (selectedSlot) void pickSlot(selectedSlot);
+              }}
             />
-          </div>
-
-          <div className="flex-1">
-            <p className="mb-3 font-sans text-label font-medium tracking-[.04em] text-muted uppercase">
-              {t("pickTime")}
-            </p>
-            {datesLoading ? (
-              <p className="font-sans text-[14px] text-muted" role="status">
-                {t("loadingDates")}
-              </p>
-            ) : datesDegraded ? (
-              <FallbackBlock t={t} fallback={fallback} />
-            ) : noAvailableDates ? (
-              <div role="status">
-                <p className="font-sans text-[14px] text-muted">
-                  {t("noDates")}
-                </p>
-                <FallbackBlock t={t} fallback={fallback} />
-              </div>
-            ) : !date ? (
-              <p className="font-sans text-[14px] text-muted">
-                {t("pickDateFirst")}
-              </p>
-            ) : slotsLoading || resolvingSpecialist ? (
-              <p className="font-sans text-[14px] text-muted">{t("loading")}</p>
-            ) : slots.length > 0 ? (
-              <TimePicker
-                inline
-                value={slot?.start ?? ""}
-                ariaLabel={t("pickTime")}
-                options={slots.map((item) => ({
-                  value: item.start,
-                  label: item.label,
-                }))}
-                onValueChange={(value) => {
-                  const selectedSlot = slots.find(
-                    (item) => item.start === value,
-                  );
-                  if (selectedSlot) void pickSlot(selectedSlot);
-                }}
-              />
-            ) : slotsDegraded ? (
-              <FallbackBlock t={t} fallback={fallback} />
-            ) : (
-              <p className="font-sans text-[14px] text-muted">{t("noTimes")}</p>
-            )}
-          </div>
+          ) : slotsDegraded ? (
+            <FallbackBlock t={t} fallback={fallback} />
+          ) : (
+            <p className="font-sans text-[14px] text-muted">{t("noTimes")}</p>
+          )}
         </div>
       )}
 
-      {step === 4 && slot && specialist && (
+      {step === 5 && slot && specialist && (
         <form
           className="mt-[clamp(20px,3vw,32px)] max-w-130"
           onSubmit={(e) => {

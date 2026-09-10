@@ -351,7 +351,7 @@ export default async function ManageAppointmentPage({
             />
           ) : (
             <p className="mt-5 font-sans text-sm text-muted">
-              {t.pastTitle} — {t.pastBody}
+              {t.pastTitle}: {t.pastBody}
             </p>
           )}
         </article>

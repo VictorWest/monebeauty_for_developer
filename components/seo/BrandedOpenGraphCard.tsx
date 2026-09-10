@@ -43,7 +43,7 @@ export function BrandedOpenGraphCard() {
             color: "#6B6056",
           }}
         >
-          Beauty, skin health, face, body and hair — with a personalized
+          Beauty, skin health, face, body and hair: with a personalized
           approach.
         </div>
       </div>

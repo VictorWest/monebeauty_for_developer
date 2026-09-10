@@ -130,7 +130,7 @@ export function Markdown({
           ),
           img: ({ src, alt }) =>
             typeof src === "string" ? (
-              // Markdown images have unknown intrinsic size — plain img with lazy load.
+              // Markdown images have unknown intrinsic size: plain img with lazy load.
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={src}

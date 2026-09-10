@@ -5,7 +5,7 @@ import {
 } from "@/lib/public-routes";
 
 /**
- * Brand + global site constants — Mone Beauty Clinic (per SCOPE.md; aesthetic medicine).
+ * Brand + global site constants: Mone Beauty Clinic (per SCOPE.md; aesthetic medicine).
  * Real NAP, nav, and hours from scraped_content. Logo/favicon are the real assets.
  */
 

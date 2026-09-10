@@ -1,4 +1,4 @@
-# Implementation Plan — Mone Beauty
+# Implementation Plan: Mone Beauty
 
 ## Independent admin and client sessions (owner-approved 2026-08-27)
 
@@ -62,6 +62,21 @@
   typecheck, tests, build, migration preflight, and PostgreSQL concurrency smoke testing.
 - Activate only after configuring `SENSITIVE_DATA_ENCRYPTION_KEY`, clearing preflight, migrating and
   reviewing preserved qualifications, and obtaining clinic/legal approval of localized wording.
+
+## Booking flow, buffer, and "Any Specialist" (owner-approved 2026-09-08)
+
+- Reorder the public wizard to **Procedure -> Date -> Specialist -> Time -> You/Confirm** per the
+  "Booking System Requirements & Clarifications" document: `GET /api/booking/specialists` now
+  requires `date` and returns only practitioners qualified for the option who also have an open
+  slot that day (`qualifiedSpecialistsForDate` in `lib/booking.ts`). Deep links begin at Date.
+- Drop the internal buffer from 15 to 10 minutes everywhere, with no per-treatment exceptions, and
+  migrate existing future bookings to match.
+- Cap shared equipment (Endospheres, Laser, Microneedle RF) at the clinic's one physical unit each;
+  stop treatment rooms from gating online availability at both the app and database level.
+- Add an "Any Specialist" no-preference choice (offered whenever 2+ specialists qualify for the
+  selected date) resolved to one concrete practitioner via `POST /api/booking/resolve-specialist`
+  at time-of-slot-pick: compact scheduling first, workload balancing second: shown to the client
+  before confirmation.
 
 ## Endospheres booking handoff (owner-approved 2026-08-13)
 
@@ -449,7 +464,7 @@ persisted total quantity.
 > reconciliation, vouchers, pickup/shipping, refunds, and notifications are implemented;
 > live Stripe Dashboard configuration remains a deployment task.
 
-## Phase 10 — service treatment cards, detail pages, and normalized options ✅ implemented
+## Phase 10: service treatment cards, detail pages, and normalized options ✅ implemented
 
 - Render `/palvelut/*` as one hero image, short approved overview, responsive text-only
   treatment/course cards with individual stable detail links, then benefits, results, safety,
@@ -478,7 +493,7 @@ persisted total quantity.
   one `h1`, overview/card/detail order, full source descriptions, 390 px first, WCAG AA, reduced motion, lint, typecheck,
   tests, migration dry-run/idempotency, and production build.
 
-## Phase 9 — localized admin and database-owned content (in progress)
+## Phase 9: localized admin and database-owned content (in progress)
 
 - Split locale routes into public and admin groups so the admin has its own HTML/application
   shell and never inherits public chrome, cart, chatbot, consent, or analytics.
@@ -582,7 +597,7 @@ Consent / AuditLog  actor, action, entity, at   # GDPR + medical-field audit
 
 ---
 
-## Phase 0 — Scaffold
+## Phase 0: Scaffold
 
 Init Next.js (App Router) + TS + Tailwind + ESLint/Prettier. Add `next/font` (Cormorant +
 Jost), `@phosphor-icons/react`, Prisma + Postgres (`DATABASE_URL`), `next-intl`. Translate
@@ -590,27 +605,27 @@ Jost), `@phosphor-icons/react`, Prisma + Postgres (`DATABASE_URL`), `next-intl`.
 reset (box-sizing, `::selection` `#E7D9C4`, link color inherit) + `prefers-reduced-motion`
 guard. **Verify:** `npm run dev` boots; theme tokens resolve; Prisma connects.
 
-## Phase 1 — MVP ⭐ (ship target)
+## Phase 1: MVP ⭐ (ship target)
 
 **Goal:** tri-lingual, responsive marketing site, pixel-matched to the prototype.
 
-- **UI primitives** (`components/ui`) + `/styleguide` page — Button variants, Eyebrow,
+- **UI primitives** (`components/ui`) + `/styleguide` page: Button variants, Eyebrow,
   SectionHeading, Card, FeatureItem, ImageSlot (`next/image`), LanguageSwitcher.
-- **Layout shell + i18n** — Header (sticky, blurred, logo + nav + Book Online + switcher),
+- **Layout shell + i18n**: Header (sticky, blurred, logo + nav + Book Online + switcher),
   MobileMenu (<900px hamburger), Footer (4-col + legal bar), ChatWidget FAB shell;
   `next-intl` locale routing (ru/fi/en); nav per `02-information-architecture.md`.
-- **Homepage** — recreate `03-homepage-spec.md` exactly (Hero + 5 advantages, TreatmentsGrid,
+- **Homepage**: recreate `03-homepage-spec.md` exactly (Hero + 5 advantages, TreatmentsGrid,
   AboutBlock, TechWall, dark CTABand, FeaturesStrip); verify vs `assets/mone-*.png` at
   390/768/1280.
-- **Service template + 9 treatments + `/services` index** — one template, 13 blocks (`04`),
+- **Service template + 9 treatments + `/services` index**: one template, 13 blocks (`04`),
   JSON-LD + hreflang; seed content from `scraped_content` per the §6 map, with any gaps governed
   by the current sourced clinical-copy policy above.
-- **Remaining marketing** — About, Pricing, Contact (form + map + hours + consent), Blog +
+- **Remaining marketing**: About, Pricing, Contact (form + map + hours + consent), Blog +
   `/blog/[slug]`, legal pages.
-- **Baseline SEO** — per-page title/meta/alt, ordered headings, real NAP.
+- **Baseline SEO**: per-page title/meta/alt, ordered headings, real NAP.
 - **Verify:** Lighthouse on marketing pages; visual diff vs PNGs; all three locales render.
 
-## Phase 2 — E-commerce (AROSHA shop) ✅ implemented
+## Phase 2: E-commerce (AROSHA shop) ✅ implemented
 
 Canonical Finnish shop routes are used: `/verkkokauppa`, `/verkkokauppa/[slug]`,
 `/ostoskori`, `/kassa`, `/tilaus/[id]`. The 31 products + images come from
@@ -624,7 +639,7 @@ mobile layout at 390px.
 
 ## Lean Booking (one-click) ✅ implemented at reduced scope
 
-**Goal:** the SCOPE.md priority — open the site, **select a service in one click, book fast**.
+**Goal:** the SCOPE.md priority: open the site, **select a service in one click, book fast**.
 Ships ahead of the full Phase 3, reusing that data model at reduced scope.
 
 - **Bookable-services registry** (`content/booking-services.ts`) derived from the existing
@@ -647,7 +662,7 @@ Ships ahead of the full Phase 3, reusing that data model at reduced scope.
   implemented in Phase 6. **Verify:** e2e a booking persists; double-book rejected; 390px
   first.
 
-## Phase 3 — Booking (client wizard) ✅ implemented
+## Phase 3: Booking (client wizard) ✅ implemented
 
 Booking data model (Practitioner, Availability, Appointment, Client). Public wizard:
 treatment → date/time (open slots only) → details (create/match client) → confirm + consent
@@ -678,7 +693,7 @@ cancel, and reschedule.
   context cards, one-time/expired form handoff, server validation, migration, legacy
   appointments, formatting, lint, types, tests, and production build.
 
-## Phase 4 — Staff schedule (`/staff`) ✅ implemented
+## Phase 4: Staff schedule (`/staff`) ✅ implemented
 
 Internal staff schedule area: themed date selector, daily schedule view, working-hours
 range editor, open/closed slot controls, and booked appointment details. Staff edits persist
@@ -689,7 +704,7 @@ Staff/admin auth and role gating are implemented in Phase 5; staff new-booking
 alerts are implemented in Phase 6.
 **Verify:** staff edits availability → reflected in client wizard.
 
-## Phase 5 — CRM + custom admin + auth ✅ implemented
+## Phase 5: CRM + custom admin + auth ✅ implemented
 
 Custom Prisma-backed auth uses `User.passwordHash` plus durable `Session` rows and an
 HTTP-only session cookie. Admin/staff roles are enforced: `/admin` is shared by both roles after
@@ -703,7 +718,7 @@ temporary passwords, reset passwords, revoke sessions or access, reactivate acco
 audit history, and delete credentials without deleting clinical/calendar history. **Verify:** role gating enforced;
 medical-field access audited; admin edits appear on site after migration + content sync.
 
-## Phase 6 — Notifications + reminders ✅ implemented
+## Phase 6: Notifications + reminders ✅ implemented
 
 Email (Resend/Postmark) + SMS (Twilio/FI gateway). Booking confirmations (email + SMS,
 SMS preferred) + reminders at 24h and 2h via a scheduled job; staff new-booking alerts;
@@ -718,7 +733,7 @@ use idempotency keys; Sinch Conversation API uses production OAuth. Outbound mes
 and every provider attempt are stored for channel-specific retry without duplicating accepted
 sends. Customer reschedule/cancellation and scheduled reminders share this history.
 
-## Phase 7 — AI chatbot ✅ implemented
+## Phase 7: AI chatbot ✅ implemented
 
 Claude API integration with locale-matched RU/FI/EN responses, system prompt grounded in
 approved CMS/generated content, product content, booking registry, and clinic contact facts.
@@ -727,7 +742,7 @@ booking deep-links for detected services, and human handoff. `/admin/chat` provi
 handoff queue and transcript detail with resolve/reopen actions. **Verify:** answers from
 content only; handoff creates an admin queue item.
 
-## Phase 8 — SEO + GDPR finalize ✅ implemented
+## Phase 8: SEO + GDPR finalize ✅ implemented
 
 `next-sitemap` XML sitemap + robots.txt; GA4 + Search Console; `LocalBusiness`/`MedicalClinic`
 JSON-LD with Helsinki NAP + hours. Cookie-consent banner; data access/erase/export; EU
@@ -750,12 +765,12 @@ and clinic standard/contact. Use server-rendered sections with small tab and pic
 islands. Preserve real localized content/media, cart, booking, JSON-LD, shell, and a11y.
 Verify at 390, 768, 900, and 1280 pixels.
 
-- Match the prototype precisely (exact tokens; reference the PNGs) — this is hi-fi.
-- **Mobile-first** — verify at 390px first.
-- **No invented medical content** — seed from scraped copy and the recorded source hierarchy.
+- Match the prototype precisely (exact tokens; reference the PNGs): this is hi-fi.
+- **Mobile-first**: verify at 390px first.
+- **No invented medical content**: seed from scraped copy and the recorded source hierarchy.
   Where no scraped source exists, appointment framing and conservative sourced assessment/safety
   copy may be authored; unsupported procedures, medicines, dosages, indications, outcomes,
   prices, credentials, and guarantees remain prohibited.
 - EU/GDPR for personal + medical data; strict access control.
-- Performance — keep marketing pages SSG/SSR and lean; lazy-load images.
+- Performance: keep marketing pages SSG/SSR and lean; lazy-load images.
 - Use real NAP from `scraped_content`; keep brand name in one config constant.

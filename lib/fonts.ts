@@ -1,6 +1,6 @@
 import { Cormorant_Garamond, Inter, Jost } from "next/font/google";
 
-// Display / serif — wordmark, all headlines, technology names.
+// Display / serif: wordmark, all headlines, technology names.
 export const cormorant = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600"],
@@ -9,7 +9,7 @@ export const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-// Body / UI sans — nav, eyebrows, body copy, buttons, labels, footer.
+// Body / UI sans: nav, eyebrows, body copy, buttons, labels, footer.
 // NOTE: Jost has no Cyrillic subset; Russian copy falls back to system sans
 // until a Cyrillic-capable companion face is chosen (tracked for RU polish).
 export const jost = Jost({
@@ -19,7 +19,7 @@ export const jost = Jost({
   display: "swap",
 });
 
-// Admin / operational UI — neutral, highly legible, and consistent in FI/EN/RU.
+// Admin / operational UI: neutral, highly legible, and consistent in FI/EN/RU.
 export const inter = Inter({
   subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
   weight: ["400", "500", "600", "700"],

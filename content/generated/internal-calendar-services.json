@@ -1601,9 +1601,9 @@
   },
   {
     "key": "timma-de72e390cb1d006f",
-    "labelFi": "RRS-biorevitalisaatio — “5 nuoruuspistettä”",
-    "labelEn": "RRS biorevitalization — “5 youth points”",
-    "labelRu": "RRS-биоревитализация — «5 точек молодости»",
+    "labelFi": "RRS-biorevitalisaatio: “5 nuoruuspistettä”",
+    "labelEn": "RRS biorevitalization: “5 youth points”",
+    "labelRu": "RRS-биоревитализация: «5 точек молодости»",
     "dragLabel": "RRS-biorev",
     "dragLabels": {
       "fi": "RRS-biorev",
@@ -1617,9 +1617,9 @@
   },
   {
     "key": "timma-ae537e8af7acf9f4",
-    "labelFi": "Huulten muotoilu hyaluronihappotäyteaineella — 1 ml",
-    "labelEn": "Lip contouring with hyaluronic-acid filler — 1 ml",
-    "labelRu": "Контурирование губ филлером гиалуроновой кислоты — 1 мл",
+    "labelFi": "Huulten muotoilu hyaluronihappotäyteaineella: 1 ml",
+    "labelEn": "Lip contouring with hyaluronic-acid filler: 1 ml",
+    "labelRu": "Контурирование губ филлером гиалуроновой кислоты: 1 мл",
     "dragLabel": "Huulten mu",
     "dragLabels": {
       "fi": "Huulten mu",

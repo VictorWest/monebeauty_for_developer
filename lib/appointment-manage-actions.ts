@@ -38,7 +38,7 @@ function manageHref(
 
 /**
  * Loads an appointment from a signed manage link. Returns null when the token is invalid,
- * the appointment is gone, already cancelled, or in the past — the page renders those
+ * the appointment is gone, already cancelled, or in the past: the page renders those
  * read-only, so there is nothing for the caller to act on.
  */
 async function openAppointmentForToken(token: string) {
@@ -55,7 +55,7 @@ async function openAppointmentForToken(token: string) {
   return appointment;
 }
 
-/** Cancels an appointment straight away from an emailed manage link — no account required. */
+/** Cancels an appointment straight away from an emailed manage link: no account required. */
 export async function cancelAppointmentByTokenAction(formData: FormData) {
   const locale = localeFrom(formData);
   const token = text(formData, "token");

@@ -81,7 +81,7 @@ const productOrder = {
 /**
  * The three care areas the clinic is organised around (SCOPE.md: "face, body, and hair"),
  * each pointing at the service page that already covers it. Deliberately a separate,
- * hand-curated list rather than a slice of `services` — this is the category-level entry
+ * hand-curated list rather than a slice of `services`: this is the category-level entry
  * point, not the bookable-service list rendered below it in `#treatments`.
  */
 const TREATMENT_AREAS = [
@@ -848,7 +848,7 @@ function Section({
 }: {
   id: string;
   alt?: boolean;
-  /** Per-section head modifier — only the treatment areas use one so far. */
+  /** Per-section head modifier: only the treatment areas use one so far. */
   headClassName?: string;
   marker: string;
   title: string;

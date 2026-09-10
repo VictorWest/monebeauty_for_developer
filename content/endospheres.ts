@@ -24,9 +24,9 @@ export const ENDOSPHERES_SERVICES = [
     price: 99,
     offer: true,
     labels: {
-      en: "Introductory Endospheres Therapy® — 75 min Full Body Protocol",
-      fi: "Endospheres Therapy® -tutustumishoito — 75 min koko vartalon protokolla",
-      ru: "Знакомство с Endospheres Therapy® — протокол для всего тела, 75 мин",
+      en: "Introductory Endospheres Therapy®: 75 min Full Body Protocol",
+      fi: "Endospheres Therapy® -tutustumishoito: 75 min koko vartalon protokolla",
+      ru: "Знакомство с Endospheres Therapy®: протокол для всего тела, 75 мин",
     },
   },
   {
@@ -35,7 +35,7 @@ export const ENDOSPHERES_SERVICES = [
     price: 65,
     offer: false,
     labels: {
-      en: "Endospheres Therapy® — 30 min",
+      en: "Endospheres Therapy®: 30 min",
       fi: "Endospheres-terapia 30 min",
       ru: "Терапия Endospheres 30 мин",
     },
@@ -46,7 +46,7 @@ export const ENDOSPHERES_SERVICES = [
     price: 85,
     offer: false,
     labels: {
-      en: "Endospheres Therapy® — 45 min",
+      en: "Endospheres Therapy®: 45 min",
       fi: "Endospheres-terapia 45 min",
       ru: "Терапия Endospheres 45 мин",
     },
@@ -57,7 +57,7 @@ export const ENDOSPHERES_SERVICES = [
     price: 105,
     offer: false,
     labels: {
-      en: "Endospheres Therapy® — 60 min",
+      en: "Endospheres Therapy®: 60 min",
       fi: "Endospheres-terapia 60 min",
       ru: "Терапия Endospheres 60 мин",
     },
@@ -68,7 +68,7 @@ export const ENDOSPHERES_SERVICES = [
     price: 125,
     offer: false,
     labels: {
-      en: "Endospheres Therapy® — 75 min Full Body Protocol",
+      en: "Endospheres Therapy®: 75 min Full Body Protocol",
       fi: "Endospheres-terapia koko vartalolle 75 min",
       ru: "Endospheres для всего тела 75 мин",
     },
@@ -189,7 +189,7 @@ const ENDOSPHERES_LOCALIZED = {
       {
         title: "Miten se toimii?",
         paragraphs: [
-          "Pyörivät silikonipallot tuottavat rytmisiä kompressiivisia mikrovärähtelyjä, jotka stimuloivat imunestekiertoa, laskimoverenkiertoa, mikroverenkiertoa, kudosten hapensaantia ja soluaineenvaihduntaa, vähentävät nesteen kertymistä ja tukevat uusiutumista — ilman kudosvaurioita tai toipumisaikaa.",
+          "Pyörivät silikonipallot tuottavat rytmisiä kompressiivisia mikrovärähtelyjä, jotka stimuloivat imunestekiertoa, laskimoverenkiertoa, mikroverenkiertoa, kudosten hapensaantia ja soluaineenvaihduntaa, vähentävät nesteen kertymistä ja tukevat uusiutumista: ilman kudosvaurioita tai toipumisaikaa.",
         ],
       },
       {
@@ -225,10 +225,10 @@ const ENDOSPHERES_LOCALIZED = {
       {
         title: "Что такое Endospheres Therapy®?",
         paragraphs: [
-          "Endospheres Therapy® — это инновационная итальянская технология на основе Compressive Microvibration®, разработанная для улучшения лимфодренажа, стимуляции кровообращения, уменьшения задержки жидкости и восстановления здорового функционирования тканей.",
+          "Endospheres Therapy®: это инновационная итальянская технология на основе Compressive Microvibration®, разработанная для улучшения лимфодренажа, стимуляции кровообращения, уменьшения задержки жидкости и восстановления здорового функционирования тканей.",
           "В отличие от традиционных техник массажа и процедур, воздействующих только на поверхность кожи, Endospheres Therapy® работает с естественными физиологическими процессами организма. Улучшение контуров тела и более здоровый вид кожи являются результатом восстановления правильного кровообращения, лимфотока и тканевого обмена веществ.",
           "Сегодня Endospheres Therapy® широко применяется в эстетической медицине, спортивной реабилитации и оздоровительных программах по всему миру.",
-          "Основная цель процедуры — не только улучшить внешний вид, но и поддержать естественную способность организма восстанавливаться, регенерировать и поддерживать здоровое функционирование тканей.",
+          "Основная цель процедуры: не только улучшить внешний вид, но и поддержать естественную способность организма восстанавливаться, регенерировать и поддерживать здоровое функционирование тканей.",
           "Многие клиенты отмечают видимые эстетические улучшения, а также лёгкость в ногах, уменьшение отёчности, улучшение кровообращения и общее ощущение хорошего самочувствия уже после первого сеанса.",
         ],
       },
@@ -241,7 +241,7 @@ const ENDOSPHERES_LOCALIZED = {
       {
         title: "Как это работает?",
         paragraphs: [
-          "Вращающиеся силиконовые сферы создают ритмичные компрессионные микровибрации, которые стимулируют лимфодренаж, венозное кровообращение, микроциркуляцию, насыщение тканей кислородом и клеточный метаболизм, уменьшают задержку жидкости и поддерживают регенерацию — без травмирования тканей и периода восстановления.",
+          "Вращающиеся силиконовые сферы создают ритмичные компрессионные микровибрации, которые стимулируют лимфодренаж, венозное кровообращение, микроциркуляцию, насыщение тканей кислородом и клеточный метаболизм, уменьшают задержку жидкости и поддерживают регенерацию: без травмирования тканей и периода восстановления.",
         ],
       },
       {
@@ -277,7 +277,7 @@ const ENDOSPHERES_LOCALIZED = {
  * duration it describes, plus the manufacturer's course recommendation.
  *
  * These cards used to publish nothing but a name, a duration and a price, so
- * the Endospheres page showed a column of empty boxes — the same emptiness the
+ * the Endospheres page showed a column of empty boxes: the same emptiness the
  * clinic pointed out on the body page. The wording is the clinic's own.
  */
 export const ENDOSPHERES_DURATION_SUMMARIES: Record<
@@ -359,8 +359,8 @@ export const ENDOSPHERES_EDITORIAL_IMAGES = [
  * Translation status, for the clinic's review queue.
  *
  * The Finnish and Russian copy above is published. It is a faithful
- * translation of the approved English PDF — no clinical claim was added,
- * removed or reworded — but the clinic has not yet countersigned the medical
+ * translation of the approved English PDF: no clinical claim was added,
+ * removed or reworded: but the clinic has not yet countersigned the medical
  * wording in those languages.
  */
 export const ENDOSPHERES_TRANSLATION_STATUS = {

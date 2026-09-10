@@ -600,14 +600,14 @@
     "dragLabelRu": "Нити"
   },
   "timma-de72e390cb1d006f": {
-    "labelEn": "RRS biorevitalization — “5 youth points”",
-    "labelRu": "RRS-биоревитализация — «5 точек молодости»",
+    "labelEn": "RRS biorevitalization: “5 youth points”",
+    "labelRu": "RRS-биоревитализация: «5 точек молодости»",
     "dragLabelEn": "RRS 5 points",
     "dragLabelRu": "RRS 5 точек"
   },
   "timma-ae537e8af7acf9f4": {
-    "labelEn": "Lip contouring with hyaluronic-acid filler — 1 ml",
-    "labelRu": "Контурирование губ филлером гиалуроновой кислоты — 1 мл",
+    "labelEn": "Lip contouring with hyaluronic-acid filler: 1 ml",
+    "labelRu": "Контурирование губ филлером гиалуроновой кислоты: 1 мл",
     "dragLabelEn": "Lip filler 1ml",
     "dragLabelRu": "Губы 1 мл"
   },

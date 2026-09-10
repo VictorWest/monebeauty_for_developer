@@ -49,6 +49,15 @@ without changing identity or relations, and inferred option qualifications are b
 later admin review. Deployment must stop when a dry-run preflight finds future reservations less
 than 15 minutes apart.
 
+Booking flow and buffer (owner-approved 2026-09-08): the "Booking System Requirements &
+Clarifications" document supersedes the flow order and buffer above. The public flow is now
+**Procedure -> Date -> Specialist -> Time -> You/Confirm**: a date is chosen before a specialist,
+and the specialist list is filtered to whoever both qualifies and is actually on the schedule that
+day. Deep links now start at Date, not Specialist. The buffer is 10 minutes, not 15, with no
+per-treatment exceptions. An "Any Specialist" no-preference choice is offered whenever 2+
+specialists qualify for the selected date, resolved to one concrete practitioner (compact
+scheduling, then workload balancing) before the client confirms: see `REQUIREMENTS.md`.
+
 Guest booking remains available with the existing contact, GDPR-consent, and claim-link behavior.
 Authenticated clients use server-owned verified contact details and must have a current encrypted
 consultation profile before booking. Registration collects separate first/last name, date of birth,
@@ -430,7 +439,7 @@ Cheap stock photography
 Overloaded layouts
 ⸻
 Homepage
-The homepage should be long-form, logically structured, and optimized for smooth scrolling. Section 1 — Hero Must include:
+The homepage should be long-form, logically structured, and optimized for smooth scrolling. Section 1: Hero Must include:
 Mone Beauty Clinic logo
 Main navigation
 Online Booking button
@@ -441,13 +450,13 @@ Hero Text Aesthetic Medicine Clinic Next-Generation Aesthetic Medicine A compreh
 Buttons:
 Book Online
 Our Services
-⸻ Section 2 — Key Advantages Highlight:
+⸻ Section 2: Key Advantages Highlight:
 Medical approach
 Innovative technologies
 Personalized treatment programs
 Licensed medical clinic
 Safe and evidence-based procedures
-⸻ Section 3 — Our Services Each service should lead to its own dedicated page.
+⸻ Section 3: Our Services Each service should lead to its own dedicated page.
 аппаратная косметология → Aesthetic Device Treatments
 Laser Hair Removal
 Endospheres Therapy
@@ -457,14 +466,14 @@ Body Treatments
 Injectable Aesthetic Medicine
 Trichology
 Medical Consultation
-⸻ Section 4 — About the Clinic Heading Beauty Backed by Science. Harmony Designed for You. Text Mone Beauty Clinic combines aesthetic medicine, advanced technologies, and a comprehensive approach to beauty, skin health, facial rejuvenation, body care, and hair restoration. Emphasize:
+⸻ Section 4: About the Clinic Heading Beauty Backed by Science. Harmony Designed for You. Text Mone Beauty Clinic combines aesthetic medicine, advanced technologies, and a comprehensive approach to beauty, skin health, facial rejuvenation, body care, and hair restoration. Emphasize:
 A medical clinic, not a beauty salon
 Evidence-based medical approach
 Licensed facility
 Safe procedures
 Advanced technologies
 Personalized treatment plans
-⸻ Section 5 — Technologies & Treatments Include:
+⸻ Section 5: Technologies & Treatments Include:
 Endospheres Therapy
 Laser technologies
 RF technologies
@@ -473,7 +482,7 @@ Injectable procedures
 Trichology
 Facial treatments
 Body treatments
-Section 6 — Online Booking Dedicated CTA section: Book your consultation and receive personalized recommendations from our specialists. Button: Book Online ⸻ Section 7 — Footer Include:
+Section 6: Online Booking Dedicated CTA section: Book your consultation and receive personalized recommendations from our specialists. Button: Book Online ⸻ Section 7: Footer Include:
 Logo
 Navigation
 Contact information

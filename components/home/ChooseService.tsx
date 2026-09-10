@@ -14,7 +14,7 @@ import { PUBLIC_PATHS } from "@/lib/public-routes";
 
 /**
  * Single home services section: the browse list AND the one-click booking entry.
- * Uses the design-handoff treatment card (03-homepage-spec §2) — real photos where we have
+ * Uses the design-handoff treatment card (03-homepage-spec §2): real photos where we have
  * them, the beige ImageSlot placeholder otherwise, so every card is uniform.
  */
 export async function ChooseService() {

@@ -156,7 +156,7 @@ const SERVICES: Array<{
     durationMin: 45,
     bookable: true,
     order: 90,
-    // Pexels stock — the service itself is still [CLINIC TO PROVIDE]; the photo only
+    // Pexels stock: the service itself is still [CLINIC TO PROVIDE]; the photo only
     // illustrates the forthcoming card. https://www.pexels.com/photo/cosmetic-procedure-dermal-filler-injection-34775441/
     images: ["/media/stock/dermal-filler-pexels-34775441.jpg"],
   },
@@ -168,7 +168,7 @@ const SERVICES: Array<{
     durationMin: 30,
     bookable: true,
     order: 100,
-    // Clinic-supplied photograph (Mone-branded uniform), not stock — see public/media/clinic.
+    // Clinic-supplied photograph (Mone-branded uniform), not stock: see public/media/clinic.
     images: ["/media/clinic/medical-consultation-black-logo.png"],
   },
 ];

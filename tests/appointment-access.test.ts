@@ -48,7 +48,7 @@ test("an expired manage token is rejected", () => {
 test("calendar and order tokens cannot be replayed as manage tokens", () => {
   process.env.APPOINTMENT_CALENDAR_SECRET = "manage-link-test-secret";
   process.env.ORDER_ACCESS_SECRET = "manage-link-test-secret";
-  // Same secret material, different scope — the domain separator must still reject them.
+  // Same secret material, different scope: the domain separator must still reject them.
   assert.equal(
     validAppointmentManageToken(ID, appointmentCalendarToken(ID)),
     false,

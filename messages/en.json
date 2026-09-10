@@ -91,7 +91,7 @@
   },
   "Home": {
     "metaTitle": "Instrumental cosmetology & beauty care in Helsinki",
-    "metaDescription": "Mone Beauty Clinic — an aesthetic-medicine clinic in Helsinki: endospheres therapy, laser, RF lifting, trichology, facial & body care, and AROSHA products.",
+    "metaDescription": "Mone Beauty Clinic: an aesthetic-medicine clinic in Helsinki: endospheres therapy, laser, RF lifting, trichology, facial & body care, and AROSHA products.",
     "servicesEyebrow": "Services",
     "servicesHeading": "Our services",
     "featured": {
@@ -117,7 +117,7 @@
     "heroTrust": {
       "byAppointment": {
         "title": "By appointment",
-        "desc": "Book a time that suits you — Mon–Sun by agreement."
+        "desc": "Book a time that suits you: Mon–Sun by agreement."
       },
       "location": {
         "title": "Helsinki",
@@ -376,7 +376,7 @@
       },
       "add": "Add to cart",
       "note": "Dispensed as part of your treatment plan.",
-      "all": "View full formulary — 31 products"
+      "all": "View full formulary: 31 products"
     },
     "booking": {
       "marker": "05 · Consultation",
@@ -384,7 +384,7 @@
       "lead": "Begin with a consultation. We review your history and concerns, examine the area, and prepare a written treatment plan.",
       "intro": "Appointments are arranged by agreement. Choose a treatment and a preferred date, and we will confirm your time by email.",
       "requested": "Requested treatment",
-      "whatsapp": "WhatsApp — message the clinic",
+      "whatsapp": "WhatsApp: message the clinic",
       "gdpr": "Your information is processed confidentially in accordance with GDPR and used only to arrange your appointment. See our <link>Privacy Policy</link>.",
       "fields": {
         "name": "Full name",
@@ -433,9 +433,10 @@
     "metaTitle": "Book an appointment",
     "eyebrow": "Booking",
     "heading": "Book an appointment",
-    "intro": "Choose a treatment, pick a time, and confirm — it takes under a minute.",
+    "intro": "Choose a treatment, pick a time, and confirm: it takes under a minute.",
     "steps": {
       "service": "Service",
+      "date": "Date",
       "specialist": "Specialist",
       "time": "Time",
       "you": "You"
@@ -477,7 +478,7 @@
     "loadingDates": "Loading available dates…",
     "noDates": "No online appointments are currently available in the next 60 days.",
     "loading": "Loading available times…",
-    "noTimes": "No open times on this day — please pick another date.",
+    "noTimes": "No open times on this day: please pick another date.",
     "fields": {
       "name": "Full name",
       "phone": "Phone",

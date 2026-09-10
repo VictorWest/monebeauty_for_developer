@@ -51,7 +51,7 @@ urheilusta palautumisessa ja kuntoutuksessa.
 Pyörivät silikonipallot tuottavat rytmisiä kompressiivisia mikrovärähtelyjä, jotka
 stimuloivat imunestekiertoa, laskimoverenkiertoa, mikroverenkiertoa, kudosten
 hapensaantia ja soluaineenvaihduntaa, vähentävät nesteen kertymistä ja tukevat
-uusiutumista — ilman kudosvaurioita tai toipumisaikaa.
+uusiutumista: ilman kudosvaurioita tai toipumisaikaa.
 
 ## Miksi jokainen hoito aloitetaan imunestejärjestelmästä?
 
@@ -81,7 +81,7 @@ muihin hoitoihin pätevän asiantuntijan suosituksesta.
 
 ## Tutustumistarjous uusille asiakkaille
 
-Original Endospheres Therapy® — 75 minuutin koko vartalon protokolla.
+Original Endospheres Therapy®: 75 minuutin koko vartalon protokolla.
 
 Täydellinen alkuperäinen hoitoprotokolla • Koko vartalon imunesteaktivointi •
 Syväkudosstimulaatio • Kokonaisvaltainen vartalohoito
@@ -93,10 +93,10 @@ Kelpoisuus vahvistetaan ajanvarauksen yhteydessä.
 
 ## Yksittäiset hoidot
 
-- 75 min koko vartalon protokolla — 125 €
-- 60 min — 105 €
-- 45 min — 85 €
-- 30 min — 65 €
+- 75 min koko vartalon protokolla: 125 €
+- 60 min: 105 €
+- 45 min: 85 €
+- 30 min: 65 €
 
 ## Hoitopaketit
 
@@ -112,9 +112,9 @@ joka toinen päivä).
 
 ## Minkä hoidon keston valitsen?
 
-- **30 min** — Yksi kohdealue (vatsa, pakarat, reidet, selkä).
-- **45 min** — Jalat, pakarat ja vatsa.
-- **60 min** — Jalat, pakarat, vatsa ja muut painopistealueet.
-- **75 min koko vartalon protokolla** — Täydellinen alkuperäinen protokolla,
+- **30 min**: Yksi kohdealue (vatsa, pakarat, reidet, selkä).
+- **45 min**: Jalat, pakarat ja vatsa.
+- **60 min**: Jalat, pakarat, vatsa ja muut painopistealueet.
+- **75 min koko vartalon protokolla**: Täydellinen alkuperäinen protokolla,
   johon sisältyvät imunesteaktivointi, selkä, jalat, pakarat ja vatsa. Suositellaan
   parhaiden pitkäaikaisten kliinisten ja esteettisten tulosten saavuttamiseksi.

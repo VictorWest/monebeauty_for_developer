@@ -142,7 +142,7 @@ export const EMAIL_COPY: Record<Locale, Copy> = {
         preheader: "Ajanvarauksesi on vahvistettu.",
         heading: "Ajanvaraus vahvistettu",
         intro:
-          "Kiitos. Aikasi on varattu — odotamme sinua Mone Beauty Clinicille.",
+          "Kiitos. Aikasi on varattu: odotamme sinua Mone Beauty Clinicille.",
       },
       reminder_24h: {
         subject: "muistutus huomisesta ajasta",
@@ -189,7 +189,7 @@ export const EMAIL_COPY: Record<Locale, Copy> = {
         preheader: "Your appointment is confirmed.",
         heading: "Your appointment is confirmed",
         intro:
-          "Thank you. Your appointment is booked — we look forward to seeing you at Mone Beauty Clinic.",
+          "Thank you. Your appointment is booked: we look forward to seeing you at Mone Beauty Clinic.",
       },
       reminder_24h: {
         subject: "appointment reminder for tomorrow",
@@ -238,7 +238,7 @@ export const EMAIL_COPY: Record<Locale, Copy> = {
         preheader: "Ваша запись подтверждена.",
         heading: "Ваша запись подтверждена",
         intro:
-          "Спасибо. Ваша запись оформлена — ждём вас в Mone Beauty Clinic.",
+          "Спасибо. Ваша запись оформлена: ждём вас в Mone Beauty Clinic.",
       },
       reminder_24h: {
         subject: "напоминание о завтрашнем визите",
@@ -475,7 +475,7 @@ export function renderCustomerOrderEmail(
   ].join("");
   const itemLines = items.map(
     (item) =>
-      `${item.quantity} × ${item.name} — ${item.unitPrice} — ${item.lineTotal}`,
+      `${item.quantity} × ${item.name}: ${item.unitPrice}: ${item.lineTotal}`,
   );
   const text = [
     ...(order.client?.fullName ? [copy.greeting(order.client.fullName)] : []),
@@ -595,7 +595,7 @@ export function renderStaffOrderEmail(order: OrderEmailData): EmailMessage {
     "",
     ...items.map(
       (item) =>
-        `${item.quantity} × ${item.name} — ${item.unitPrice} — ${item.lineTotal}`,
+        `${item.quantity} × ${item.name}: ${item.unitPrice}: ${item.lineTotal}`,
     ),
     `${copy.labels.total}: ${total}`,
     "",

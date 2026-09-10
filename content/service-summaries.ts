@@ -5,8 +5,8 @@ import type { Locale } from "../i18n/routing";
  *
  * The service pages in `content/generated/*` are price lists: excerpting them
  * yields a mid-sentence dump of procedure names, durations and "Into a basket"
- * buttons. These summaries restate what each page actually offers — treatment
- * names, areas and formats taken verbatim from the scraped copy — so the
+ * buttons. These summaries restate what each page actually offers: treatment
+ * names, areas and formats taken verbatim from the scraped copy: so the
  * homepage cards, `/palvelut` and meta descriptions read as sentences. No
  * medical claims beyond what the clinic already publishes.
  */
@@ -24,15 +24,15 @@ export const SERVICE_SUMMARIES: Record<string, Record<Locale, string>> = {
   endospheres: {
     en: "Compressive microvibration therapy on the ENDOSPHERES® AK Sensor device from Italy, delivered as a four-stage full-body protocol.",
     fi: "Kompressiivinen mikrovärähtelyhoito italialaisella ENDOSPHERES® AK Sensor -laitteella, neljän vaiheen protokollana koko vartalolle.",
-    ru: "Компрессионная микровибрационная терапия на итальянском аппарате ENDOSPHERES® AK SENSOR — протокол из четырёх этапов для всего тела.",
+    ru: "Компрессионная микровибрационная терапия на итальянском аппарате ENDOSPHERES® AK SENSOR: протокол из четырёх этапов для всего тела.",
   },
   laser: {
-    en: "Laser hair removal for face and body — from upper lip and underarms to bikini line, full legs and full-body sessions.",
+    en: "Laser hair removal for face and body: from upper lip and underarms to bikini line, full legs and full-body sessions.",
     fi: "Laserkarvanpoisto kasvoille ja vartalolle: ylähuulesta ja kainaloista bikinilinjaan, jalkoihin ja koko kehoon.",
     ru: "Лазерная эпиляция лица и тела: от верхней губы и подмышек до линии бикини, ног целиком и всего тела.",
   },
   rf: {
-    en: "Microneedle RF lifting for the full face or single zones — forehead, eye area, neck, décolleté, abdomen, thighs and buttocks.",
+    en: "Microneedle RF lifting for the full face or single zones: forehead, eye area, neck, décolleté, abdomen, thighs and buttocks.",
     fi: "Mikroneulan RF-nosto koko kasvoille tai yksittäisille alueille: otsa, silmänympärysalue, kaula, dekoltee, vatsa, reidet ja pakarat.",
     ru: "Микроигольчатый RF-лифтинг всего лица или отдельных зон: лоб, вокруг глаз, шея, декольте, живот, бёдра и ягодицы.",
   },

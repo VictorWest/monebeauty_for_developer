@@ -35,7 +35,7 @@ export type TechnologyLayout = {
   /**
    * Every chapter after the last stage. Laser's Russian copy sets "На лице:" and
    * "На теле:" as headings where English uses bold text, so the device section
-   * is three chapters there and one elsewhere — keeping only the first dropped
+   * is three chapters there and one elsewhere: keeping only the first dropped
    * two sections of published copy.
    */
   sensorChapters: TechnologyChapter[];
@@ -125,7 +125,7 @@ function imageSource(block: string) {
  * Splits the intro into its key-points panel and the prose beside the heading.
  *
  * Every one of these pages opens with a claim, one or more "this helps to:"
- * lead-ins each followed by a bullet list, and some free paragraphs — but not
+ * lead-ins each followed by a bullet list, and some free paragraphs: but not
  * in a fixed order or count. A group is a lead-in plus the list items directly
  * after it; when a page writes its list as prose instead of bullets (Finnish
  * Endospheres) the lead-in still pairs with the block that follows.
@@ -309,7 +309,7 @@ export function parseTechnologyMarkdown(markdown: string): TechnologyLayout {
  * Flattens inline Markdown for places that render as plain text.
  *
  * The hero lead is a real source paragraph, and microneedle RF's opening
- * paragraph emphasises phrases mid-sentence — printed verbatim into a `<p>`
+ * paragraph emphasises phrases mid-sentence: printed verbatim into a `<p>`
  * those asterisks show up on screen.
  */
 export function plainText(markdown: string) {
@@ -328,7 +328,7 @@ export function plainText(markdown: string) {
  * The visible text of a heading block.
  *
  * Headings are rendered as plain strings rather than through Markdown, so any
- * escape the source carries has to be resolved here — the published Russian
+ * escape the source carries has to be resolved here: the published Russian
  * laser copy writes "### 1\. Консультация", which otherwise shows its
  * backslash on screen.
  */

@@ -4,7 +4,7 @@ import type { Locale } from "../i18n/routing";
 import type { PageContent } from "./pages";
 
 /**
- * Hand-authored page copy — the counterpart to `content/generated/pages.json`.
+ * Hand-authored page copy: the counterpart to `content/generated/pages.json`.
  *
  * `scripts/gen-content.mjs` rebuilds `generated/pages.json` wholesale from its own `PAGES`
  * list, so anything written by hand in there disappears on the next regeneration. These two
@@ -12,10 +12,10 @@ import type { PageContent } from "./pages";
  * instead and is merged in by `content/pages.ts` and `scripts/sync-cms-from-generated.ts`.
  *
  * Content rule for these pages (see the content-sourcing rule in CLAUDE.md / REQUIREMENTS.md):
- * the copy below describes process and logistics only — what an appointment is, how long it
- * takes, where it happens and what happens during it. Every clinical specific — the procedures
+ * the copy below describes process and logistics only: what an appointment is, how long it
+ * takes, where it happens and what happens during it. Every clinical specific: the procedures
  * offered, what they are suitable for, indications, contraindications, medicines, outcomes and
- * prices — is left as `[CLINIC TO PROVIDE]` for the clinic to fill in and review. Do not
+ * prices: is left as `[CLINIC TO PROVIDE]` for the clinic to fill in and review. Do not
  * replace those markers with drafted text.
  */
 export const AUTHORED_PAGES: Record<
@@ -49,7 +49,7 @@ It is a standalone appointment. You are under no obligation to book a treatment 
 
 ## When a consultation is required first
 
-Some treatments can only be planned after an in-person assessment — injectable aesthetic
+Some treatments can only be planned after an in-person assessment: injectable aesthetic
 medicine among them. If that applies to what you are interested in, the consultation is the
 first step.
 
@@ -94,7 +94,7 @@ Konsultaatio on itsenäinen käynti. Sinun ei tarvitse varata hoitoa sen jälkee
 
 ## Milloin konsultaatio vaaditaan ensin
 
-Osa hoidoista voidaan suunnitella vasta henkilökohtaisen arvion jälkeen — esteettiset
+Osa hoidoista voidaan suunnitella vasta henkilökohtaisen arvion jälkeen: esteettiset
 injektiohoidot niiden joukossa. Jos tämä koskee sinua kiinnostavaa hoitoa, konsultaatio on
 ensimmäinen askel.
 
@@ -118,7 +118,7 @@ mukaisesti, ja ne näkyvät vain hoitoosi osallistuvalle henkilökunnalle.`,
       hero: null,
       body: `## Что такое консультация
 
-Консультация — это индивидуальный приём у специалиста Mone Beauty Clinic. Вы рассказываете,
+Консультация: это индивидуальный приём у специалиста Mone Beauty Clinic. Вы рассказываете,
 что хотели бы изменить, специалист оценивает ситуацию очно, и вместе вы намечаете дальнейшие
 шаги.
 
@@ -139,7 +139,7 @@ mukaisesti, ja ne näkyvät vain hoitoosi osallistuvalle henkilökunnalle.`,
 
 ## Когда консультация нужна в первую очередь
 
-Часть процедур можно спланировать только после очной оценки — в том числе инъекционную
+Часть процедур можно спланировать только после очной оценки: в том числе инъекционную
 эстетическую медицину. Если это касается интересующей вас процедуры, консультация будет
 первым шагом.
 
@@ -265,7 +265,7 @@ Hinnat: [CLINIC TO PROVIDE]`,
     ru: {
       title: "Инъекционная эстетическая медицина в Хельсинки",
       hero: null,
-      body: `## Сначала — оценка
+      body: `## Сначала: оценка
 
 Инъекционные процедуры планируются индивидуально. Первый приём начинается с очной оценки:
 специалист изучает вашу историю, осматривает интересующую зону и объясняет, что возможно, а
@@ -279,7 +279,7 @@ Hinnat: [CLINIC TO PROVIDE]`,
 2. **План.** Если процедура уместна, вы вместе согласуете план, стоимость и сроки.
 3. **Согласие.** Вам объясняют, что включает процедура и чего ожидать после неё, и вы даёте
    письменное согласие до её проведения.
-4. **Процедура.** Проводится в клинике — в тот же визит или на отдельном приёме, в
+4. **Процедура.** Проводится в клинике: в тот же визит или на отдельном приёме, в
    зависимости от плана.
 5. **Наблюдение.** Вам объясняют, как связаться с нами после процедуры и когда прийти снова.
 

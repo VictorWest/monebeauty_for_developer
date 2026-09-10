@@ -202,9 +202,9 @@ Biorevital
 Kasvojen m
 	Lankakohotus	
 Lankakohot
-	RRS-biorevitalisaatio — “5 nuoruuspistettä”	
+	RRS-biorevitalisaatio: “5 nuoruuspistettä”	
 RRS-biorev
-	Huulten muotoilu hyaluronihappotäyteaineella — 1 ml	
+	Huulten muotoilu hyaluronihappotäyteaineella: 1 ml	
 Huulten mu
 	Lankakohotus	
 Lankakohot
