@@ -122,3 +122,34 @@ test("the group response includes every created procedure with its own manage li
   assert.match(group, /error\.message === "slot_taken"/);
   assert.match(group, /error\.message === "procedure_consent_stale"/);
 });
+
+test("a 'Book now' deep link into one procedure of a multi-procedure service lands on the options step with it pre-selected in the cart", () => {
+  // Initial render (before the URL-resync effect runs): step 1 and a
+  // pre-populated cart, not the old "always step 2" behavior — but only
+  // when the deep-linked service actually opts in to the cart; a normal
+  // single-procedure service still skips straight to Date as before.
+  assert.match(
+    bookingWizard,
+    /const initialCart =\s*\n\s*initialOption && initialMultiProcedure \? \[initialOption\] : \[\];/,
+  );
+  assert.match(
+    bookingWizard,
+    /useState<Step>\(\s*\n\s*initialOption && !initialMultiProcedure \? 2 : 1,/,
+  );
+  assert.match(
+    bookingWizard,
+    /useState<BookingProcedureContext \| null>\(\s*\n\s*initialCart\.length \? null : initialOption,/,
+  );
+  assert.match(
+    bookingWizard,
+    /useState<BookingServiceOption\["options"\]>\(initialCart\);/,
+  );
+  // Same rule on later resyncs of the URL-source-of-truth effect (e.g. the
+  // client lands here fresh via the browser rather than a client-side nav):
+  // a first-run, dateless, single `option` for an opted-in service stops at
+  // the cart instead of calling loadAvailableDates and jumping to step 2.
+  assert.match(
+    bookingWizard,
+    /if \(isFirstRun && !group && option && !urlDate && svc\.multiProcedureBooking\) \{\s*\n\s*setCart\(\[option\]\);\s*\n\s*setProcedure\(null\);\s*\n\s*setDate\(null\);\s*\n\s*setSpecialist\(null\);\s*\n\s*setSpecialists\(\[\]\);\s*\n\s*setStep\(1\);\s*\n\s*return;\s*\n\s*\}/,
+  );
+});

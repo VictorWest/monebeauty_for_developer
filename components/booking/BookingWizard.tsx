@@ -126,21 +126,34 @@ export function BookingWizard({
   const searchParams = useSearchParams();
   const initialService = initialContext?.service.key;
   const initialOption = initialContext?.procedure ?? null;
+  const initialMultiProcedure = Boolean(
+    initialContext?.service.multiProcedureBooking,
+  );
+  // A "Book now" deep link into a single procedure of a multi-procedure
+  // service (e.g. one Laser zone) lands on the options step with that
+  // procedure pre-selected into the cart, not straight on Date, so the
+  // client can still add more procedures from the same service before
+  // moving on.
+  const initialCart =
+    initialOption && initialMultiProcedure ? [initialOption] : [];
 
-  const [step, setStep] = useState<Step>(initialOption ? 2 : 1);
+  const [step, setStep] = useState<Step>(
+    initialOption && !initialMultiProcedure ? 2 : 1,
+  );
   const [service, setService] = useState<string | null>(initialService ?? null);
   // Mandatory first choice, before treatment selection. Skipped when arriving
   // via a link that already preselects a service/procedure, since intent is
   // already established at that point.
   const [gender, setGender] = useState<"WOMEN" | "MEN" | null>(null);
   const [procedure, setProcedure] = useState<BookingProcedureContext | null>(
-    initialOption,
+    initialCart.length ? null : initialOption,
   );
   // A multi-procedure cart (several options from one service, one visit) —
   // only ever populated for services with multiProcedureBooking on. A cart
   // of exactly one item behaves identically to picking that one `procedure`
   // directly; only cart.length > 1 actually takes the group booking path.
-  const [cart, setCart] = useState<BookingServiceOption["options"]>([]);
+  const [cart, setCart] =
+    useState<BookingServiceOption["options"]>(initialCart);
   const [confirmedGroup, setConfirmedGroup] = useState<Array<{
     title: string;
     price: string | null;
@@ -483,6 +496,24 @@ export function BookingWizard({
       }
 
       const optionKeys = group ? group.map((item) => item.key) : [option!.key];
+
+      // A fresh deep link ("Book now" on a treatment page) into a single
+      // procedure of a multi-procedure service stops at the options step
+      // with that procedure pre-selected into the cart, instead of jumping
+      // straight to Date, so the client can add more procedures first. Once
+      // they've moved past this step (any urlDate present, or this is just
+      // an echo of our own push), the normal single-option handling below
+      // applies as usual.
+      if (isFirstRun && !group && option && !urlDate && svc.multiProcedureBooking) {
+        setCart([option]);
+        setProcedure(null);
+        setDate(null);
+        setSpecialist(null);
+        setSpecialists([]);
+        setStep(1);
+        return;
+      }
+
       setCart(group ?? []);
       setProcedure(group ? null : { ...option!, description: "" });
 

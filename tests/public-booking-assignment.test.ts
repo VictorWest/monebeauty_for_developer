@@ -28,7 +28,10 @@ test("the public wizard is Procedure -> Date -> Specialist -> Time -> You", () =
     /t\("steps\.service"\),\s*t\("steps\.date"\),\s*t\("steps\.specialist"\),\s*t\("steps\.time"\),\s*t\("steps\.you"\)/,
   );
   assert.match(wizard, /api\/booking\/specialists/);
-  assert.match(wizard, /useState<Step>\(initialOption \? 2 : 1\)/);
+  assert.match(
+    wizard,
+    /useState<Step>\(\s*initialOption && !initialMultiProcedure \? 2 : 1,?\s*\)/,
+  );
   assert.match(wizard, /function pickService[\s\S]*?setStep\(1\)/);
   assert.match(wizard, /function pickOption[\s\S]*?setStep\(2\)/);
   assert.match(wizard, /function pickDate[\s\S]*?setStep\(3\)/);
