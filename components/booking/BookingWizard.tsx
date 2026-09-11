@@ -129,21 +129,30 @@ export function BookingWizard({
   const initialMultiProcedure = Boolean(
     initialContext?.service.multiProcedureBooking,
   );
-  // A "Book now" deep link into a single procedure of a multi-procedure
-  // service (e.g. one Laser zone) lands on the options step with that
-  // procedure pre-selected into the cart, not straight on Date, so the
-  // client can still add more procedures from the same service before
-  // moving on.
+  // Whether the deep-linked service actually has anything else to choose —
+  // a service with only one bookable option has nothing to pick between, so
+  // a deep link into it still goes straight through to Date as before.
+  const initialHasOptions = (initialContext?.service.options.length ?? 0) > 1;
+  // A "Book now" deep link into one specific procedure of a service that
+  // has other options lands on the options step with that procedure already
+  // selected/highlighted, not straight on Date — into the cart for a
+  // multi-procedure service (so more can be added), or just pre-highlighted
+  // for an ordinary single-select service (so it can still be swapped for a
+  // different option before moving on).
   const initialCart =
-    initialOption && initialMultiProcedure ? [initialOption] : [];
+    initialOption && initialMultiProcedure && initialHasOptions
+      ? [initialOption]
+      : [];
 
   const [step, setStep] = useState<Step>(
-    initialOption && !initialMultiProcedure ? 2 : 1,
+    initialOption && !initialHasOptions ? 2 : 1,
   );
   const [service, setService] = useState<string | null>(initialService ?? null);
-  // Mandatory first choice, before treatment selection. Skipped when arriving
-  // via a link that already preselects a service/procedure, since intent is
-  // already established at that point.
+  // Mandatory first choice, before treatment selection — always asked here,
+  // even when arriving via a "Book now" link that already preselects a
+  // service/procedure, so every entry into booking (from any category page,
+  // not only the main booking page) goes through it. The preselected
+  // service/procedure/cart is unaffected and simply waits behind this step.
   const [gender, setGender] = useState<"WOMEN" | "MEN" | null>(null);
   const [procedure, setProcedure] = useState<BookingProcedureContext | null>(
     initialCart.length ? null : initialOption,
@@ -497,16 +506,31 @@ export function BookingWizard({
 
       const optionKeys = group ? group.map((item) => item.key) : [option!.key];
 
-      // A fresh deep link ("Book now" on a treatment page) into a single
-      // procedure of a multi-procedure service stops at the options step
-      // with that procedure pre-selected into the cart, instead of jumping
-      // straight to Date, so the client can add more procedures first. Once
-      // they've moved past this step (any urlDate present, or this is just
-      // an echo of our own push), the normal single-option handling below
-      // applies as usual.
-      if (isFirstRun && !group && option && !urlDate && svc.multiProcedureBooking) {
-        setCart([option]);
-        setProcedure(null);
+      // A fresh deep link ("Book now" on a treatment page) into one specific
+      // procedure of a service that has other options stops at the options
+      // step with that procedure already selected/highlighted, instead of
+      // jumping straight to Date — into the cart when the service is
+      // multi-procedure (so more can be added), otherwise just
+      // pre-highlighted in the ordinary single-select list (so it can still
+      // be swapped before moving on). A service with only one bookable
+      // option has nothing to choose between, so it still goes straight
+      // through as before. Once the client has moved past this step (any
+      // urlDate present, or this is just an echo of our own push), the
+      // normal handling below applies as usual.
+      if (
+        isFirstRun &&
+        !group &&
+        option &&
+        !urlDate &&
+        svc.options.length > 1
+      ) {
+        if (svc.multiProcedureBooking) {
+          setCart([option]);
+          setProcedure(null);
+        } else {
+          setCart([]);
+          setProcedure({ ...option, description: "" });
+        }
         setDate(null);
         setSpecialist(null);
         setSpecialists([]);
@@ -979,7 +1003,13 @@ export function BookingWizard({
     );
   }
 
-  if (!gender && !initialService) {
+  if (!gender) {
+    // Shown first on every entry into booking — including a "Book now" deep
+    // link from inside a specific service/category page — not only when the
+    // client starts from the general booking page. The preselected service
+    // (and, for a multi-procedure service, the cart) is already resolved in
+    // state above and simply renders on the step right after this one.
+    //
     // Admin-managed photos (content/site-media.ts: "booking.gender.women"/
     // "men") — no fallback exists yet, so each choice renders as a plain
     // sized card until the clinic uploads one, then upgrades to a full
@@ -1209,35 +1239,49 @@ export function BookingWizard({
                       </button>
                     );
                   })
-                : selectedService.options.map((option) => (
-                    <button
-                      key={option.key}
-                      type="button"
-                      onClick={() => pickOption(selectedService.key, option)}
-                      className="flex min-h-16 items-center justify-between gap-4 rounded-(--radius) border border-line-card bg-card p-4 text-left hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-                    >
-                      <span>
-                        <span className="block font-sans text-[14px] font-medium text-ink">
-                          {option.title}
+                : selectedService.options.map((option) => {
+                    // Highlights the option a "Book now" deep link already
+                    // pointed at, so the client can see what's pre-chosen
+                    // while still being free to click a different one.
+                    const preselected = procedure?.key === option.key;
+                    return (
+                      <button
+                        key={option.key}
+                        type="button"
+                        onClick={() => pickOption(selectedService.key, option)}
+                        aria-pressed={preselected}
+                        className={cn(
+                          "flex min-h-16 items-center justify-between gap-4 rounded-(--radius) border p-4 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+                          preselected
+                            ? "border-accent bg-alt"
+                            : "border-line-card bg-card hover:border-line-card-hover",
+                        )}
+                      >
+                        <span>
+                          <span className="block font-sans text-[14px] font-medium text-ink">
+                            {option.title}
+                          </span>
+                          {option.group ? (
+                            <span className="mt-1 block font-sans text-meta text-muted">
+                              {option.group}
+                            </span>
+                          ) : null}
                         </span>
-                        {option.group ? (
-                          <span className="mt-1 block font-sans text-meta text-muted">
-                            {option.group}
-                          </span>
-                        ) : null}
-                      </span>
-                      <span className="shrink-0 text-right font-sans text-[13px] text-body">
-                        {option.durationLabel ? (
-                          <span className="block">{option.durationLabel}</span>
-                        ) : null}
-                        {option.price ? (
-                          <span className="block font-medium text-ink">
-                            {option.price}
-                          </span>
-                        ) : null}
-                      </span>
-                    </button>
-                  ))}
+                        <span className="shrink-0 text-right font-sans text-[13px] text-body">
+                          {option.durationLabel ? (
+                            <span className="block">
+                              {option.durationLabel}
+                            </span>
+                          ) : null}
+                          {option.price ? (
+                            <span className="block font-medium text-ink">
+                              {option.price}
+                            </span>
+                          ) : null}
+                        </span>
+                      </button>
+                    );
+                  })}
               <button
                 type="button"
                 onClick={() => {

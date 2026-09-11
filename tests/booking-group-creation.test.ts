@@ -123,18 +123,22 @@ test("the group response includes every created procedure with its own manage li
   assert.match(group, /error\.message === "procedure_consent_stale"/);
 });
 
-test("a 'Book now' deep link into one procedure of a multi-procedure service lands on the options step with it pre-selected in the cart", () => {
-  // Initial render (before the URL-resync effect runs): step 1 and a
-  // pre-populated cart, not the old "always step 2" behavior — but only
-  // when the deep-linked service actually opts in to the cart; a normal
-  // single-procedure service still skips straight to Date as before.
+test("a 'Book now' deep link into one procedure of a multi-option service lands on the options step with it pre-selected, not straight on Date", () => {
+  // Initial render (before the URL-resync effect runs): step 1 whenever the
+  // deep-linked service has more than one option to choose between — not
+  // the old "always step 2" behavior. A service with only one bookable
+  // option has nothing to choose, so it still skips straight to Date.
   assert.match(
     bookingWizard,
-    /const initialCart =\s*\n\s*initialOption && initialMultiProcedure \? \[initialOption\] : \[\];/,
+    /const initialHasOptions = \(initialContext\?\.service\.options\.length \?\? 0\) > 1;/,
   );
   assert.match(
     bookingWizard,
-    /useState<Step>\(\s*\n\s*initialOption && !initialMultiProcedure \? 2 : 1,/,
+    /const initialCart =\s*\n\s*initialOption && initialMultiProcedure && initialHasOptions\s*\n\s*\? \[initialOption\]\s*\n\s*: \[\];/,
+  );
+  assert.match(
+    bookingWizard,
+    /useState<Step>\(\s*\n\s*initialOption && !initialHasOptions \? 2 : 1,/,
   );
   assert.match(
     bookingWizard,
@@ -146,10 +150,18 @@ test("a 'Book now' deep link into one procedure of a multi-procedure service lan
   );
   // Same rule on later resyncs of the URL-source-of-truth effect (e.g. the
   // client lands here fresh via the browser rather than a client-side nav):
-  // a first-run, dateless, single `option` for an opted-in service stops at
-  // the cart instead of calling loadAvailableDates and jumping to step 2.
+  // a first-run, dateless, single `option` for a multi-option service stops
+  // at the options step — into the cart only when the service also opts
+  // into multi-procedure booking, otherwise just pre-selected/highlighted in
+  // the ordinary single-select list.
   assert.match(
     bookingWizard,
-    /if \(isFirstRun && !group && option && !urlDate && svc\.multiProcedureBooking\) \{\s*\n\s*setCart\(\[option\]\);\s*\n\s*setProcedure\(null\);\s*\n\s*setDate\(null\);\s*\n\s*setSpecialist\(null\);\s*\n\s*setSpecialists\(\[\]\);\s*\n\s*setStep\(1\);\s*\n\s*return;\s*\n\s*\}/,
+    /if \(\s*\n\s*isFirstRun &&\s*\n\s*!group &&\s*\n\s*option &&\s*\n\s*!urlDate &&\s*\n\s*svc\.options\.length > 1\s*\n\s*\) \{\s*\n\s*if \(svc\.multiProcedureBooking\) \{\s*\n\s*setCart\(\[option\]\);\s*\n\s*setProcedure\(null\);\s*\n\s*\} else \{\s*\n\s*setCart\(\[\]\);\s*\n\s*setProcedure\(\{ \.\.\.option, description: "" \}\);\s*\n\s*\}/,
+  );
+  // The pre-selected option is visibly highlighted in the ordinary
+  // single-select list too, not just in the multi-procedure cart toggle.
+  assert.match(
+    bookingWizard,
+    /const preselected = procedure\?\.key === option\.key;/,
   );
 });

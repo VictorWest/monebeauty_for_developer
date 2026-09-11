@@ -302,9 +302,42 @@ type AppointmentSummaryData = {
   end: Date;
   status: string;
   procedureTitle: string | null;
+  bookingGroupId: string | null;
+  bookingGroupIndex: number | null;
   service: { slug: string; contents: Array<{ h1: string }> };
   practitioner: { name: string; publicName: string | null };
 };
+
+/**
+ * A multi-procedure visit (see the multi-procedure booking feature) creates
+ * one Appointment row per procedure sharing a bookingGroupId — group them
+ * back into one visit here so the account and "Manage My Booking" list show
+ * every selected procedure together instead of as unrelated single-line
+ * bookings. An ordinary booking is simply a group of one.
+ */
+function groupAppointments<
+  T extends {
+    id: string;
+    bookingGroupId: string | null;
+    bookingGroupIndex: number | null;
+  },
+>(list: T[]): T[][] {
+  const groups = new Map<string, T[]>();
+  const order: string[] = [];
+  for (const appointment of list) {
+    const key = appointment.bookingGroupId ?? appointment.id;
+    if (!groups.has(key)) {
+      groups.set(key, []);
+      order.push(key);
+    }
+    groups.get(key)!.push(appointment);
+  }
+  return order.map((key) =>
+    groups
+      .get(key)!
+      .sort((a, b) => (a.bookingGroupIndex ?? 0) - (b.bookingGroupIndex ?? 0)),
+  );
+}
 type OrderSummaryData = {
   id: string;
   createdAt: Date;
@@ -445,8 +478,13 @@ export default async function AccountPage({
   const previous = client.appointments.filter(
     (a) => a.start < now || a.status === "CANCELLED",
   );
-  const allAppointments = [...upcoming, ...previous];
-  const shownAppointments = allAppointments.slice(
+  // Grouped so a 3-procedure visit counts and paginates as one booking, not
+  // three — group legs always share the same start window, so filtering
+  // upcoming/previous per-row first never splits a group across both lists.
+  const upcomingGroups = groupAppointments(upcoming);
+  const previousGroups = groupAppointments(previous);
+  const allGroups = [...upcomingGroups, ...previousGroups];
+  const shownGroups = allGroups.slice(
     (page - 1) * PAGE_SIZE,
     page * PAGE_SIZE,
   );
@@ -583,15 +621,15 @@ export default async function AccountPage({
                   <Stat
                     icon={CalendarCheck}
                     label={t.countAppointments}
-                    value={String(upcoming.length)}
+                    value={String(upcomingGroups.length)}
                   />
                 </div>
                 <div className="grid gap-4 xl:grid-cols-2">
                   <section className={panel}>
                     <h2 className={heading}>{t.next}</h2>
-                    {upcoming[0] ? (
+                    {upcomingGroups[0] ? (
                       <AppointmentSummary
-                        appointment={upcoming[0]}
+                        group={upcomingGroups[0]}
                         locale={locale}
                         dateTime={dateTime}
                         t={t}
@@ -630,17 +668,13 @@ export default async function AccountPage({
                   </a>
                 </aside>
                 <div className="mt-4 grid gap-4">
-                  {shownAppointments.length ? (
-                    shownAppointments.map((appointment) => {
-                      const pending =
-                        appointment.changeRequests[0]?.status === "PENDING";
-                      const allow =
-                        appointment.start > now &&
-                        appointment.status !== "CANCELLED";
+                  {shownGroups.length ? (
+                    shownGroups.map((group) => {
+                      const primary = group[0];
                       return (
-                        <article key={appointment.id} className={panel}>
+                        <article key={primary.id} className={panel}>
                           <AppointmentSummary
-                            appointment={appointment}
+                            group={group}
                             locale={locale}
                             dateTime={dateTime}
                             t={t}
@@ -654,18 +688,44 @@ export default async function AccountPage({
                             </p>
                             <p>{t.paidAtClinic}</p>
                           </div>
-                          {pending ? (
-                            <p className="mt-4 rounded bg-btn-fill px-3 py-2 font-sans text-sm">
-                              {t.pending}
-                            </p>
-                          ) : allow ? (
-                            <ChangeRequestForm
-                              appointmentId={appointment.id}
-                              serviceSlug={appointment.service.slug}
-                              optionKey={appointment.serviceOption?.key}
-                              locale={locale}
-                            />
-                          ) : null}
+                          {group.map((appointment, index) => {
+                            const pending =
+                              appointment.changeRequests[0]?.status ===
+                              "PENDING";
+                            const allow =
+                              appointment.start > now &&
+                              appointment.status !== "CANCELLED";
+                            return (
+                              <div
+                                key={appointment.id}
+                                className={
+                                  group.length > 1 && index > 0
+                                    ? "mt-5 border-t border-line-hair pt-4"
+                                    : undefined
+                                }
+                              >
+                                {group.length > 1 ? (
+                                  <p className="mb-1 font-sans text-xs font-medium tracking-[.06em] text-muted uppercase">
+                                    {appointment.procedureTitle ??
+                                      appointment.service.contents[0]?.h1 ??
+                                      appointment.service.slug}
+                                  </p>
+                                ) : null}
+                                {pending ? (
+                                  <p className="mt-4 rounded bg-btn-fill px-3 py-2 font-sans text-sm">
+                                    {t.pending}
+                                  </p>
+                                ) : allow ? (
+                                  <ChangeRequestForm
+                                    appointmentId={appointment.id}
+                                    serviceSlug={appointment.service.slug}
+                                    optionKey={appointment.serviceOption?.key}
+                                    locale={locale}
+                                  />
+                                ) : null}
+                              </div>
+                            );
+                          })}
                         </article>
                       );
                     })
@@ -677,7 +737,7 @@ export default async function AccountPage({
                   locale={locale}
                   view={view}
                   page={page}
-                  count={allAppointments.length}
+                  count={allGroups.length}
                   t={t}
                 />
               </section>
@@ -1179,55 +1239,82 @@ function Empty({ text }: { text: string }) {
   return <p className="mt-3 font-sans text-sm leading-6 text-muted">{text}</p>;
 }
 function AppointmentSummary({
-  appointment,
+  group,
   locale,
   dateTime,
   t,
 }: {
-  appointment: AppointmentSummaryData;
+  group: AppointmentSummaryData[];
   locale: Locale;
   dateTime: Intl.DateTimeFormat;
   t: DashboardCopy;
 }) {
-  const title =
-    appointment.procedureTitle ??
-    appointment.service.contents[0]?.h1 ??
-    appointment.service.slug;
+  const primary = group[0];
+  const last = group[group.length - 1];
+  const grouped = group.length > 1;
+  const procedureTitle = (item: AppointmentSummaryData) =>
+    item.procedureTitle ?? item.service.contents[0]?.h1 ?? item.service.slug;
+  const title = grouped
+    ? group.map(procedureTitle).join(" + ")
+    : procedureTitle(primary);
+  const totalMinutes = group.reduce(
+    (sum, item) =>
+      sum + Math.round((item.end.getTime() - item.start.getTime()) / 60000),
+    0,
+  );
+  const sameStatus = group.every((item) => item.status === primary.status);
+  const timeFmt = (date: Date) =>
+    new Intl.DateTimeFormat(locale, {
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZone: "Europe/Helsinki",
+    }).format(date);
   return (
     <div>
       <div className="grid items-start gap-3 sm:grid-cols-[minmax(0,1fr)_auto]">
         <h3 className="min-w-0 font-display text-[27px] leading-tight font-medium break-words text-ink">
           {title}
         </h3>
-        <span className={statusBadge}>
-          {STATUS_LABELS[locale][appointment.status] ?? appointment.status}
-        </span>
+        {sameStatus ? (
+          <span className={statusBadge}>
+            {STATUS_LABELS[locale][primary.status] ?? primary.status}
+          </span>
+        ) : null}
       </div>
       <p className="mt-2 font-sans text-sm text-body">
-        {dateTime.format(appointment.start)}–
-        {new Intl.DateTimeFormat(locale, {
-          hour: "2-digit",
-          minute: "2-digit",
-          timeZone: "Europe/Helsinki",
-        }).format(appointment.end)}
+        {dateTime.format(primary.start)}–{timeFmt(last.end)}
       </p>
       <div className="mt-3 grid gap-x-5 gap-y-1 font-sans text-xs leading-5 text-muted sm:grid-cols-2 xl:grid-cols-3">
         <span>
           {t.practitioner}:{" "}
-          {appointment.practitioner.publicName ??
-            appointment.practitioner.name.split(/\s+/)[0]}
+          {primary.practitioner.publicName ??
+            primary.practitioner.name.split(/\s+/)[0]}
         </span>
         <span>
-          {t.duration}:{" "}
-          {Math.round(
-            (appointment.end.getTime() - appointment.start.getTime()) / 60000,
-          )}{" "}
-          {t.minutes}
+          {t.duration}: {totalMinutes} {t.minutes}
         </span>
         <span>
-          {t.reference}: {appointment.id.slice(-8).toUpperCase()}
+          {t.reference}: {primary.id.slice(-8).toUpperCase()}
         </span>
       </div>
+      {grouped ? (
+        <ul className="mt-3 grid gap-1.5 border-t border-line-hair pt-3 font-sans text-xs leading-5 text-body">
+          {group.map((item) => (
+            <li
+              key={item.id}
+              className="flex flex-wrap items-baseline justify-between gap-x-3"
+            >
+              <span>{procedureTitle(item)}</span>
+              <span className="text-muted">
+                {timeFmt(item.start)}–{timeFmt(item.end)}
+                {sameStatus
+                  ? ""
+                  : ` · ${STATUS_LABELS[locale][item.status] ?? item.status}`}
+              </span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
     </div>
   );
 }
