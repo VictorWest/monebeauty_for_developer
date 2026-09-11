@@ -71,6 +71,11 @@ model Service {
   bookingFamily         String?
   bookingPickerVisible  Boolean                         @default(true)
   offerRequiresAccount  Boolean                         @default(false)
+  // Lets the public wizard offer a "+" multi-select cart for this service's
+  // options (e.g. several laser zones in one visit). Off by default: a
+  // service with several mutually-exclusive tiers (Endospheres' single vs.
+  // 6-pack vs. 12-pack options) must never be combinable this way.
+  multiProcedureBooking Boolean                         @default(false)
   images                String[]                        @default([])
   imageFocalX           Int                             @default(50)
   imageFocalY           Int                             @default(50)
@@ -751,6 +756,14 @@ model Appointment {
   procedurePrice         String?
   serviceOptionId        String?
   bookingDurationMin     Int?
+  // Null for an ordinary single-procedure booking. When a client books
+  // several procedures in one visit (same specialist, back-to-back), every
+  // leg shares one bookingGroupId; Index is its 0-based position in the
+  // sequence and Count is the total, denormalized so any single row can be
+  // rendered ("2 of 3") without joining back to its siblings.
+  bookingGroupId         String?
+  bookingGroupIndex      Int?
+  bookingGroupCount      Int?
   history                Json?
   createdAt              DateTime                   @default(now())
   updatedAt              DateTime                   @default(now()) @updatedAt
@@ -778,6 +791,7 @@ model Appointment {
   @@index([serviceOptionId])
   @@index([normalizedContactEmail])
   @@index([normalizedContactPhone])
+  @@index([bookingGroupId])
 }
 
 model AppointmentChangeRequest {

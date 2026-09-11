@@ -2,6 +2,7 @@ import { prisma } from "@/lib/db";
 import { BRAND, CONTACT } from "@/content/site";
 import type { Locale } from "@/i18n/routing";
 import {
+  appointmentManageUrl,
   renderAppointmentLifecycleEmail,
   renderCustomerAppointmentEmail,
   renderCustomerOrderEmail,
@@ -703,6 +704,82 @@ export async function notifyAppointmentReceipt(
       message: { text: staffAppointmentSms(localized, staffService) },
       actor: "system",
       dedupeKey: `appointment:${appointment.id}:receipt:staff:sms`,
+    }),
+  ]);
+}
+
+/**
+ * One combined receipt for a multi-procedure visit (several appointments
+ * sharing one bookingGroupId, ordered by bookingGroupIndex) — a client who
+ * books Arms + Legs + Neck gets one email, not three. The message is
+ * recorded against the first/primary appointment (OutboundMessage keys on a
+ * single appointmentId); each procedure keeps its own manage link so a
+ * client can still cancel/reschedule one independently of the rest.
+ */
+export async function notifyAppointmentGroupReceipt(
+  appointments: AppointmentNotification[],
+  locale: Locale = "fi",
+) {
+  const primary = appointments[0];
+  const [service, staffService] = await Promise.all([
+    appointmentServiceTitle(primary.service.slug, locale),
+    appointmentServiceTitle(primary.service.slug, "fi"),
+  ]);
+  const groupProcedures = appointments.map((appointment) => ({
+    title: appointment.procedureTitle ?? service,
+    price: appointment.procedurePrice ?? null,
+    durationMin: Math.round(
+      (appointment.end.getTime() - appointment.start.getTime()) / 60_000,
+    ),
+    manageUrl:
+      appointment.manageUrl ?? appointmentManageUrl(appointment.id, locale),
+  }));
+  const localized = {
+    ...localizedAppointment(primary, service, staffService),
+    groupProcedures,
+  };
+  const staffLocalized = {
+    ...localized,
+    // The staff SMS shows one procedure title; join them so the whole visit
+    // is legible in that short text without a separate SMS format.
+    procedureTitle: groupProcedures.map((procedure) => procedure.title).join(" + "),
+  };
+  const customer = renderCustomerAppointmentEmail(
+    localized,
+    locale,
+    "confirmation",
+  );
+  const staff = renderStaffAppointmentEmail(staffLocalized);
+  return Promise.all([
+    persistDelivery({
+      parent: { appointmentId: primary.id },
+      kind: "APPOINTMENT_RECEIPT",
+      channel: "EMAIL",
+      locale,
+      recipient: localized.client.email,
+      message: customer,
+      actor: "system",
+      dedupeKey: `appointment:${primary.id}:receipt:customer:email`,
+    }),
+    persistDelivery({
+      parent: { appointmentId: primary.id },
+      kind: "APPOINTMENT_RECEIPT",
+      channel: "EMAIL",
+      locale: "fi",
+      recipient: staffEmails(),
+      message: staff,
+      actor: "system",
+      dedupeKey: `appointment:${primary.id}:receipt:staff:email`,
+    }),
+    persistDelivery({
+      parent: { appointmentId: primary.id },
+      kind: "APPOINTMENT_RECEIPT",
+      channel: "SMS",
+      locale: "fi",
+      recipient: staffPhones(),
+      message: { text: staffAppointmentSms(staffLocalized, staffService) },
+      actor: "system",
+      dedupeKey: `appointment:${primary.id}:receipt:staff:sms`,
     }),
   ]);
 }

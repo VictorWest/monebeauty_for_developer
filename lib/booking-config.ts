@@ -12,3 +12,10 @@ export const BUSINESS_HOURS = {
   /** How many days ahead clients can book. */
   daysAhead: 60,
 };
+
+/**
+ * Multi-procedure bookings (same specialist, back-to-back): a hard cap so
+ * the combined-slot search stays cheap and the cart UI stays legible. Shared
+ * by the server scheduling engine and the wizard's cart toggle.
+ */
+export const MAX_GROUP_PROCEDURES = 6;

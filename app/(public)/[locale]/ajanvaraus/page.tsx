@@ -27,7 +27,7 @@ import {
   CANCELLATION_POLICY_ANCHOR,
   cancellationPolicyText,
 } from "@/content/cancellation-policy";
-import { focalPosition, getSiteMedia } from "@/lib/site-media";
+import { focalPosition, getSiteMedia, getSiteMediaMap } from "@/lib/site-media";
 import {
   decryptSavedConsultation,
   loadConsultationForm,
@@ -78,6 +78,7 @@ export default async function BookingPage({
     bookingContext,
     accountClient,
     bookingMedia,
+    genderMedia,
     consultationForm,
   ] = await Promise.all([
     getBookingServiceOptions(appLocale),
@@ -94,6 +95,7 @@ export default async function BookingPage({
         })
       : null,
     getSiteMedia("booking.hero", appLocale),
+    getSiteMediaMap(["booking.gender.women", "booking.gender.men"], appLocale),
     loadConsultationForm(),
   ]);
   const consultationConfig = consultationForm
@@ -193,6 +195,10 @@ export default async function BookingPage({
             <BookingWizard
               services={services}
               initialContext={bookingContext ?? undefined}
+              genderImages={{
+                women: genderMedia["booking.gender.women"],
+                men: genderMedia["booking.gender.men"],
+              }}
               initialSpecialistId={specialist}
               initialDetails={accountClient ?? undefined}
               verifiedEmail={Boolean(accountClient && user?.emailVerifiedAt)}

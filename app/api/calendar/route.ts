@@ -222,6 +222,9 @@ export async function GET(req: NextRequest) {
       editable: ["BOOKED", "CONFIRMED", "RESCHEDULED"].includes(
         appointment.status,
       ),
+      bookingGroupId: appointment.bookingGroupId,
+      bookingGroupIndex: appointment.bookingGroupIndex,
+      bookingGroupCount: appointment.bookingGroupCount,
     })),
     templates: templates.map((template) => {
       const catalogEntry = INTERNAL_CALENDAR_SERVICE_BY_KEY.get(template.key);

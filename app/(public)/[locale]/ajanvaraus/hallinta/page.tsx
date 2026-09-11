@@ -13,6 +13,7 @@ import {
 } from "@/components/booking/ManageAppointment";
 import {
   appointmentIdFromManageToken,
+  appointmentManageToken,
   validAppointmentManageToken,
 } from "@/lib/appointment-access";
 import { localizedPath } from "@/lib/seo";
@@ -43,6 +44,8 @@ const COPY = {
     status: "Status",
     paidAtClinic: "Appointments are paid at the clinic.",
     clinic: "Clinic",
+    visitAlsoIncludes: "This visit also includes",
+    manageLink: "Manage",
     invalidTitle: "This link is no longer valid",
     invalidBody:
       "The link may have expired, or the appointment may already have been changed. Please call the clinic and we will help you.",
@@ -90,6 +93,8 @@ const COPY = {
     status: "Tila",
     paidAtClinic: "Ajanvaraukset maksetaan klinikalla.",
     clinic: "Klinikka",
+    visitAlsoIncludes: "Tämä käynti sisältää myös",
+    manageLink: "Hallinnoi",
     invalidTitle: "Linkki ei ole enää voimassa",
     invalidBody:
       "Linkki on voinut vanhentua tai ajanvaraus on jo muuttunut. Soita klinikalle, niin autamme sinua.",
@@ -135,6 +140,8 @@ const COPY = {
     status: "Статус",
     paidAtClinic: "Процедуры оплачиваются в клинике.",
     clinic: "Клиника",
+    visitAlsoIncludes: "Этот визит также включает",
+    manageLink: "Управление",
     invalidTitle: "Ссылка больше не действительна",
     invalidBody:
       "Срок действия ссылки мог истечь, либо запись уже изменена. Позвоните в клинику, и мы поможем.",
@@ -221,6 +228,27 @@ export default async function ManageAppointmentPage({
           },
         })
       : null;
+
+  // Read-only: a multi-procedure visit's other legs, each with their own
+  // independent manage link (this page never acts on more than the one
+  // appointment the token names — see the multi-procedure booking plan).
+  const siblingProcedures = appointment?.bookingGroupId
+    ? (
+        await prisma.appointment.findMany({
+          where: {
+            bookingGroupId: appointment.bookingGroupId,
+            id: { not: appointment.id },
+            status: { not: "CANCELLED" },
+          },
+          orderBy: { bookingGroupIndex: "asc" },
+          select: { id: true, procedureTitle: true, start: true },
+        })
+      ).map((sibling) => ({
+        title: sibling.procedureTitle ?? "",
+        start: sibling.start,
+        manageHref: `${localizedPath(PUBLIC_PATHS.manageAppointment, locale)}?token=${encodeURIComponent(appointmentManageToken(sibling.id))}`,
+      }))
+    : [];
 
   if (!appointment)
     return (
@@ -322,6 +350,23 @@ export default async function ManageAppointmentPage({
               </div>
             ))}
           </dl>
+
+          {siblingProcedures.length > 0 ? (
+            <div className="mt-5 grid gap-2 border-t border-line-hair pt-4 font-sans text-sm text-body">
+              <p className="font-medium text-ink">{t.visitAlsoIncludes}</p>
+              {siblingProcedures.map((sibling) => (
+                <p key={sibling.manageHref} className="flex flex-wrap items-baseline gap-x-2">
+                  <span>{sibling.title}</span>
+                  <a
+                    href={sibling.manageHref}
+                    className="font-medium text-accent underline decoration-accent/45 underline-offset-4"
+                  >
+                    {t.manageLink}
+                  </a>
+                </p>
+              ))}
+            </div>
+          ) : null}
 
           <div className="mt-5 grid gap-2 border-t border-line-hair pt-4 font-sans text-sm text-body">
             <p>

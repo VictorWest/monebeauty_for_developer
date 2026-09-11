@@ -104,6 +104,25 @@ export const SITE_MEDIA_DEFINITIONS: SiteMediaDefinition[] = [
       aspect: "3:2" as const,
     })),
   ),
+  /**
+   * The booking wizard's mandatory Women/Men category step. No such
+   * photography exists yet in the archive, so both start with no fallback —
+   * the step already works (and looks intentional) as a text-only choice
+   * until the clinic supplies real, on-brand photos to upload here.
+   */
+  ...(["women", "men"] as const).map((who) => ({
+    key: `booking.gender.${who}`,
+    label: {
+      fi: `Ajanvaraus: ${who === "women" ? "Naiset" : "Miehet"}-valinta`,
+      en: `Booking: ${who === "women" ? "Women's" : "Men's"} choice`,
+      ru: `Запись: выбор «${who === "women" ? "Женщины" : "Мужчины"}»`,
+    },
+    fallback: null,
+    required: false,
+    decorative: true,
+    alt: { fi: "", en: "", ru: "" },
+    aspect: "3:2" as const,
+  })),
   {
     key: "site.default-social",
     label: {

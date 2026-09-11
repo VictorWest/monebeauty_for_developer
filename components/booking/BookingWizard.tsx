@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import {
@@ -11,6 +12,7 @@ import {
 } from "@phosphor-icons/react";
 import { ButtonAction } from "@/components/ui/Button";
 import { BookingCalendar } from "@/components/booking/BookingCalendar";
+import { BookingCartBar } from "@/components/booking/BookingCartBar";
 import { TimePicker } from "@/components/ui/TimePicker";
 import { cn } from "@/lib/cn";
 import { Link, useRouter } from "@/i18n/navigation";
@@ -25,7 +27,7 @@ import type {
   BookingServiceOption,
 } from "@/lib/booking-context";
 import { PUBLIC_PATHS } from "@/lib/public-routes";
-import { BUSINESS_HOURS } from "@/lib/booking-config";
+import { BUSINESS_HOURS, MAX_GROUP_PROCEDURES } from "@/lib/booking-config";
 import { clinicTodayYmd } from "@/lib/clinic-date";
 import { DatePicker } from "@/components/ui/CalendarPicker";
 import type {
@@ -33,6 +35,7 @@ import type {
   ConsultationAnswer,
   SavedConsultationAnswers,
 } from "@/lib/consultation-types";
+import type { PublicManagedImage } from "@/lib/site-media";
 
 type Slot = {
   start: string;
@@ -67,6 +70,19 @@ function addDays(value: string, days: number) {
   return date.toISOString().slice(0, 10);
 }
 
+/** `option=key` for a single procedure, `options=a,b,c` for a multi-procedure cart. */
+function optionQueryPart(optionKeys: string[]) {
+  return optionKeys.length > 1
+    ? `options=${encodeURIComponent(optionKeys.join(","))}`
+    : `option=${encodeURIComponent(optionKeys[0] ?? "")}`;
+}
+
+function optionUrlQuery(optionKeys: string[]) {
+  return optionKeys.length > 1
+    ? { options: optionKeys.join(",") }
+    : { option: optionKeys[0] ?? "" };
+}
+
 export function BookingWizard({
   services,
   initialContext,
@@ -84,6 +100,7 @@ export function BookingWizard({
   offerLoginHref,
   offerRegisterHref,
   cancellationPolicy,
+  genderImages,
 }: {
   services: BookingServiceOption[];
   initialContext?: BookingContext;
@@ -101,13 +118,14 @@ export function BookingWizard({
   offerLoginHref: string;
   offerRegisterHref: string;
   cancellationPolicy: CancellationPolicyNotice;
+  genderImages: { women: PublicManagedImage; men: PublicManagedImage };
 }) {
   const t = useTranslations("Booking");
   const locale = useLocale();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const initialService = initialContext?.service.key;
   const initialOption = initialContext?.procedure ?? null;
-  const initialOptionKey = initialOption?.key;
 
   const [step, setStep] = useState<Step>(initialOption ? 2 : 1);
   const [service, setService] = useState<string | null>(initialService ?? null);
@@ -118,6 +136,16 @@ export function BookingWizard({
   const [procedure, setProcedure] = useState<BookingProcedureContext | null>(
     initialOption,
   );
+  // A multi-procedure cart (several options from one service, one visit) —
+  // only ever populated for services with multiProcedureBooking on. A cart
+  // of exactly one item behaves identically to picking that one `procedure`
+  // directly; only cart.length > 1 actually takes the group booking path.
+  const [cart, setCart] = useState<BookingServiceOption["options"]>([]);
+  const [confirmedGroup, setConfirmedGroup] = useState<Array<{
+    title: string;
+    price: string | null;
+    durationMin: number;
+  }> | null>(null);
   const [date, setDate] = useState<string | null>(null);
   const [slot, setSlot] = useState<Slot | null>(null);
   const [specialists, setSpecialists] = useState<Specialist[]>([]);
@@ -157,10 +185,20 @@ export function BookingWizard({
   } | null>(null);
   const slotsRequest = useRef<AbortController | null>(null);
   const datesRequest = useRef<AbortController | null>(null);
-  const datesSelectionKey = useRef<string | null>(null);
+  const didSyncOnce = useRef(false);
   const procedureKey = procedure?.key;
   const specialistId = specialist?.id;
   const consultationRequired = !clientSignedIn || !consultationCurrent;
+  const groupOptions = cart.length > 1 ? cart : null;
+  const activeOptionKeys = groupOptions
+    ? groupOptions.map((option) => option.key)
+    : procedureKey
+      ? [procedureKey]
+      : [];
+  const activeOptionKey = activeOptionKeys.join(",");
+  const groupTotalDuration = groupOptions
+    ? groupOptions.reduce((sum, option) => sum + option.durationMin, 0)
+    : null;
 
   const dateTimeFmt = new Intl.DateTimeFormat(locale, {
     weekday: "long",
@@ -175,7 +213,7 @@ export function BookingWizard({
     async (
       d: string,
       svc: string,
-      option: string,
+      optionKeys: string[],
       specialistId: string,
       background = false,
     ) => {
@@ -189,7 +227,7 @@ export function BookingWizard({
       }
       try {
         const res = await fetch(
-          `/api/booking/slots?date=${encodeURIComponent(d)}&service=${encodeURIComponent(svc)}&option=${encodeURIComponent(option)}&specialist=${encodeURIComponent(specialistId)}&locale=${encodeURIComponent(locale)}`,
+          `/api/booking/slots?date=${encodeURIComponent(d)}&service=${encodeURIComponent(svc)}&${optionQueryPart(optionKeys)}&specialist=${encodeURIComponent(specialistId)}&locale=${encodeURIComponent(locale)}`,
           { cache: "no-store", signal: controller.signal },
         );
         if (!res.ok) throw new Error("slots_unavailable");
@@ -227,11 +265,10 @@ export function BookingWizard({
   const loadAvailableDates = useCallback(
     async (
       svc: string,
-      option: string,
+      optionKeys: string[],
       specialistId: string,
       background = false,
     ) => {
-      datesSelectionKey.current = `${svc}:${option}`;
       datesRequest.current?.abort();
       const controller = new AbortController();
       datesRequest.current = controller;
@@ -244,7 +281,7 @@ export function BookingWizard({
       const to = addDays(from, BUSINESS_HOURS.daysAhead);
       try {
         const response = await fetch(
-          `/api/booking/availability?from=${from}&to=${to}&service=${encodeURIComponent(svc)}&option=${encodeURIComponent(option)}&specialist=${encodeURIComponent(specialistId)}&locale=${encodeURIComponent(locale)}`,
+          `/api/booking/availability?from=${from}&to=${to}&service=${encodeURIComponent(svc)}&${optionQueryPart(optionKeys)}&specialist=${encodeURIComponent(specialistId)}&locale=${encodeURIComponent(locale)}`,
           { cache: "no-store", signal: controller.signal },
         );
         const payload = await response.json();
@@ -280,14 +317,19 @@ export function BookingWizard({
   );
 
   const loadSpecialistsForDate = useCallback(
-    async (svc: string, option: string, dateStr: string, preferredId?: string) => {
+    async (
+      svc: string,
+      optionKeys: string[],
+      dateStr: string,
+      preferredId?: string,
+    ) => {
       setSpecialistsLoading(true);
       setSpecialistsDegraded(false);
       setSpecialists([]);
       setSpecialist(null);
       try {
         const response = await fetch(
-          `/api/booking/specialists?service=${encodeURIComponent(svc)}&option=${encodeURIComponent(option)}&date=${encodeURIComponent(dateStr)}&locale=${encodeURIComponent(locale)}`,
+          `/api/booking/specialists?service=${encodeURIComponent(svc)}&${optionQueryPart(optionKeys)}&date=${encodeURIComponent(dateStr)}&locale=${encodeURIComponent(locale)}`,
           { cache: "no-store" },
         );
         const payload = await response.json();
@@ -305,12 +347,19 @@ export function BookingWizard({
           setSpecialist(selected);
           setStep(4);
           if (selected.id !== preferredId) {
+            // Fills in the specialist the date pick already resolved to —
+            // same history entry as the date pick, not a new back-stop.
             router.replace({
               pathname: PUBLIC_PATHS.booking,
-              query: { service: svc, option, specialist: selected.id },
+              query: {
+                service: svc,
+                ...optionUrlQuery(optionKeys),
+                date: dateStr,
+                specialist: selected.id,
+              },
             });
           }
-          void loadSlots(dateStr, svc, option, selected.id);
+          void loadSlots(dateStr, svc, optionKeys, selected.id);
         } else {
           setStep(3);
         }
@@ -336,11 +385,11 @@ export function BookingWizard({
   // Time or You/Confirm step, so a slot taken by someone else is caught
   // before submission.
   useEffect(() => {
-    if (!service || !procedureKey || !specialistId || !date || confirmation)
+    if (!service || !activeOptionKeys.length || !specialistId || !date || confirmation)
       return;
     const refresh = () => {
       if (document.hidden) return;
-      void loadSlots(date, service, procedureKey, specialistId, true);
+      void loadSlots(date, service, activeOptionKeys, specialistId, true);
     };
     const onFocus = () => refresh();
     window.addEventListener("focus", onFocus);
@@ -349,19 +398,117 @@ export function BookingWizard({
       window.removeEventListener("focus", onFocus);
       window.clearInterval(timer);
     };
-  }, [confirmation, date, loadSlots, procedureKey, service, specialistId]);
+    // activeOptionKey (joined string) stands in for activeOptionKeys so this
+    // doesn't re-run on every render from a new array reference.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [confirmation, date, loadSlots, activeOptionKey, service, specialistId]);
 
-  // Deep links preserve exact service/option; resolve union-of-specialists
-  // date availability up front so the client lands on the Date step.
+  // The URL (service/option/date/specialist) is the single source of truth
+  // for how far into the wizard the client is — this both resolves a fresh
+  // deep link on first mount and, critically, resyncs the on-screen step
+  // when the browser's Back/Forward buttons change the URL without going
+  // through any of the pick* functions below. Those functions push a new
+  // history entry and set state together, so when they run this effect sees
+  // matching state and does nothing.
   useEffect(() => {
-    if (!initialService || !initialOptionKey) return;
-    const selectionKey = `${initialService}:${initialOptionKey}`;
-    if (datesSelectionKey.current === selectionKey) return;
+    const urlService = searchParams.get("service");
+    const urlOption = searchParams.get("option");
+    const urlOptionsParam = searchParams.get("options");
+    const urlOptions = urlOptionsParam?.split(",").filter(Boolean);
+    const urlDate = searchParams.get("date");
+    const urlSpecialist = searchParams.get("specialist");
+    const urlOptionKey =
+      urlOptions && urlOptions.length > 1 ? urlOptions.join(",") : urlOption;
+
+    // First run only: state was seeded from server-rendered initialContext,
+    // which can already equal the URL without any client fetch having
+    // happened yet (e.g. a deep link straight to a procedure) — so the
+    // match check below must not short-circuit that case. On every later
+    // run, a match means our own push/replace just fired this effect as an
+    // echo, and there is genuinely nothing left to do.
+    const isFirstRun = !didSyncOnce.current;
+    didSyncOnce.current = true;
+    if (
+      !isFirstRun &&
+      urlService === service &&
+      urlOptionKey === (activeOptionKey || null) &&
+      urlDate === date &&
+      urlSpecialist === (specialistId ?? null)
+    ) {
+      return;
+    }
+
     const timer = window.setTimeout(() => {
-      void loadAvailableDates(initialService, initialOptionKey, "any");
+      if (!urlService) {
+        setService(null);
+        setProcedure(null);
+        setCart([]);
+        setDate(null);
+        setSlot(null);
+        setSlots([]);
+        setSpecialist(null);
+        setSpecialists([]);
+        setStep(1);
+        return;
+      }
+
+      const svc = services.find((item) => item.key === urlService);
+      if (!svc) return;
+
+      // A multi-procedure cart in the URL takes precedence over a single
+      // `option` — the two are never both meaningfully present at once.
+      const group =
+        urlOptions && urlOptions.length > 1
+          ? svc.options.filter((item) => urlOptions.includes(item.key))
+          : null;
+      if (group && group.length !== urlOptions!.length) return;
+      const option =
+        !group && urlOption
+          ? svc.options.find((item) => item.key === urlOption)
+          : undefined;
+      if (!group && urlOption && !option) return;
+
+      setService(urlService);
+      setSlot(null);
+      setSlots([]);
+
+      if (!group && !option) {
+        setProcedure(null);
+        setCart([]);
+        setDate(null);
+        setSpecialist(null);
+        setSpecialists([]);
+        setStep(1);
+        return;
+      }
+
+      const optionKeys = group ? group.map((item) => item.key) : [option!.key];
+      setCart(group ?? []);
+      setProcedure(group ? null : { ...option!, description: "" });
+
+      if (!urlDate) {
+        setDate(null);
+        setSpecialist(null);
+        setSpecialists([]);
+        setStep(2);
+        void loadAvailableDates(urlService, optionKeys, "any");
+        return;
+      }
+
+      setDate(urlDate);
+      setStep(urlSpecialist ? 4 : 3);
+      void loadSpecialistsForDate(
+        urlService,
+        optionKeys,
+        urlDate,
+        urlSpecialist ?? undefined,
+      );
     }, 0);
     return () => window.clearTimeout(timer);
-  }, [initialOptionKey, initialService, loadAvailableDates]);
+    // Only the URL drives this effect — our own pick* calls already update
+    // state directly, and re-running on every state change would fight them.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   useEffect(() => {
     let raw: string | null = null;
@@ -397,6 +544,7 @@ export function BookingWizard({
       if (!initialService && handoffService) {
         setService(handoffService);
         setProcedure(null);
+        setCart([]);
         setStep(1);
         router.replace({
           pathname: PUBLIC_PATHS.booking,
@@ -413,6 +561,7 @@ export function BookingWizard({
     const nextService = services.find((item) => item.key === key);
     setService(key);
     setProcedure(null);
+    setCart([]);
     setSpecialist(null);
     setSpecialists([]);
     setSlot(null);
@@ -421,9 +570,14 @@ export function BookingWizard({
     setDatesDegraded(false);
     setAvailableDates(undefined);
     setStep(1);
-    router.replace({ pathname: PUBLIC_PATHS.booking, query: { service: key } });
-    if (nextService?.options.length === 1)
+    // A single-option service falls straight through to pickOption below,
+    // which pushes its own history entry — pushing here too would leave an
+    // invisible back-stop the client never actually saw.
+    if (nextService?.options.length === 1) {
       pickOption(key, nextService.options[0]);
+      return;
+    }
+    router.push({ pathname: PUBLIC_PATHS.booking, query: { service: key } });
   }
 
   function pickOption(
@@ -432,51 +586,97 @@ export function BookingWizard({
   ) {
     setService(serviceKey);
     setProcedure({ ...option, description: "" });
+    setCart([]);
     setSpecialist(null);
     setSpecialists([]);
     setDate(null);
     setSlot(null);
     setSlots([]);
     setStep(2);
-    router.replace({
+    router.push({
       pathname: PUBLIC_PATHS.booking,
       query: { service: serviceKey, option: option.key },
     });
-    void loadAvailableDates(serviceKey, option.key, "any");
+    void loadAvailableDates(serviceKey, [option.key], "any");
+  }
+
+  function toggleCartOption(option: BookingServiceOption["options"][number]) {
+    setCart((current) =>
+      current.some((item) => item.key === option.key)
+        ? current.filter((item) => item.key !== option.key)
+        : current.length >= MAX_GROUP_PROCEDURES
+          ? current
+          : [...current, option],
+    );
+  }
+
+  function pickCart(serviceKey: string) {
+    if (!cart.length) return;
+    // A cart of one behaves exactly like picking that one procedure
+    // directly — only two or more actually takes the group booking path.
+    if (cart.length === 1) {
+      const only = cart[0];
+      setCart([]);
+      pickOption(serviceKey, only);
+      return;
+    }
+    setService(serviceKey);
+    setProcedure(null);
+    setSpecialist(null);
+    setSpecialists([]);
+    setDate(null);
+    setSlot(null);
+    setSlots([]);
+    setStep(2);
+    const keys = cart.map((option) => option.key);
+    router.push({
+      pathname: PUBLIC_PATHS.booking,
+      query: { service: serviceKey, ...optionUrlQuery(keys) },
+    });
+    void loadAvailableDates(serviceKey, keys, "any");
   }
 
   function pickDate(value: string) {
+    if (!service || !activeOptionKeys.length) return;
     setDate(value);
     setSlot(null);
     setSlots([]);
     setStep(3);
-    if (service && procedure)
-      void loadSpecialistsForDate(
-        service,
-        procedure.key,
-        value,
-        specialistId ?? initialSpecialistId,
-      );
+    router.push({
+      pathname: PUBLIC_PATHS.booking,
+      query: { service, ...optionUrlQuery(activeOptionKeys), date: value },
+    });
+    void loadSpecialistsForDate(
+      service,
+      activeOptionKeys,
+      value,
+      specialistId ?? initialSpecialistId,
+    );
   }
 
   function pickSpecialist(next: Specialist) {
-    if (!service || !procedure || !date) return;
+    if (!service || !activeOptionKeys.length || !date) return;
     setSpecialist(next);
     setSlot(null);
     setSlots([]);
     setStep(4);
-    router.replace({
+    router.push({
       pathname: PUBLIC_PATHS.booking,
-      query: { service, option: procedure.key, specialist: next.id },
+      query: {
+        service,
+        ...optionUrlQuery(activeOptionKeys),
+        date,
+        specialist: next.id,
+      },
     });
-    void loadSlots(date, service, procedure.key, next.id);
+    void loadSlots(date, service, activeOptionKeys, next.id);
   }
 
   async function pickSlot(s: Slot) {
     setSlot(s);
     setError(null);
     if (specialist?.id === "any") {
-      if (!service || !procedure) return;
+      if (!service || !activeOptionKeys.length) return;
       setResolvingSpecialist(true);
       try {
         const response = await fetch("/api/booking/resolve-specialist", {
@@ -484,7 +684,9 @@ export function BookingWizard({
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             service,
-            option: procedure.key,
+            ...(groupOptions
+              ? { options: activeOptionKeys }
+              : { option: activeOptionKeys[0] }),
             start: s.start,
             locale,
           }),
@@ -514,7 +716,7 @@ export function BookingWizard({
   }
 
   async function submit() {
-    if (!service || !slot || !specialist) return;
+    if (!service || !slot || !specialist || !activeOptionKeys.length) return;
     setSubmitting(true);
     setError(null);
     setShowFallback(false);
@@ -545,25 +747,41 @@ export function BookingWizard({
                 },
               }
             : {}),
-          ...(procedure ? { option: procedure.key } : {}),
+          ...(groupOptions
+            ? { options: activeOptionKeys }
+            : { option: activeOptionKeys[0] }),
         }),
       });
       const data = await res.json();
       if (res.ok) {
-        setProcedure(
-          data.option
-            ? {
-                key: data.option.key,
-                title: data.option.title,
-                price: data.option.price ?? "",
-                durationMin: data.option.durationMin,
-                durationLabel: procedure?.durationLabel ?? null,
-                group: procedure?.group ?? null,
-                offerRequiresAccount: procedure?.offerRequiresAccount ?? false,
-                description: procedure?.description ?? "",
-              }
-            : null,
-        );
+        if (Array.isArray(data.procedures) && data.procedures.length > 1) {
+          setConfirmedGroup(
+            data.procedures.map(
+              (item: { title: string; price: string | null; durationMin: number }) => ({
+                title: item.title,
+                price: item.price,
+                durationMin: item.durationMin,
+              }),
+            ),
+          );
+          setProcedure(null);
+        } else {
+          setConfirmedGroup(null);
+          setProcedure(
+            data.option
+              ? {
+                  key: data.option.key,
+                  title: data.option.title,
+                  price: data.option.price ?? "",
+                  durationMin: data.option.durationMin,
+                  durationLabel: procedure?.durationLabel ?? null,
+                  group: procedure?.group ?? null,
+                  offerRequiresAccount: procedure?.offerRequiresAccount ?? false,
+                  description: procedure?.description ?? "",
+                }
+              : null,
+          );
+        }
         setConfirmation({
           id: data.id,
           start: data.start,
@@ -579,6 +797,7 @@ export function BookingWizard({
           if (regular) {
             setService("endospheres");
             setProcedure({ ...regular, description: "" });
+            setCart([]);
             router.replace({
               pathname: PUBLIC_PATHS.booking,
               query: { service: "endospheres", option: regular.key },
@@ -588,8 +807,8 @@ export function BookingWizard({
         } else {
           setError(t("errors.slotTaken"));
           setStep(4);
-          if (date && service && procedure)
-            void loadSlots(date, service, procedure.key, specialist.id);
+          if (date && service && activeOptionKeys.length)
+            void loadSlots(date, service, activeOptionKeys, specialist.id);
         }
         return;
       }
@@ -630,9 +849,11 @@ export function BookingWizard({
 
   function reset() {
     setConfirmation(null);
+    setConfirmedGroup(null);
     setStep(1);
     setService(null);
     setProcedure(null);
+    setCart([]);
     setSpecialist(null);
     setSpecialists([]);
     setDate(null);
@@ -668,7 +889,26 @@ export function BookingWizard({
         </p>
         <dl className="mx-auto mt-6 max-w-90 space-y-2.5 text-left font-sans text-[14px] text-ink">
           <SummaryRow label={t("summary.service")} value={label} />
-          {procedure ? (
+          {confirmedGroup ? (
+            <>
+              {confirmedGroup.map((item, index) => (
+                <SummaryRow
+                  key={`${item.title}-${index}`}
+                  label={`${t("summary.procedure")} ${index + 1}/${confirmedGroup.length}`}
+                  value={item.price ? `${item.title} · ${item.price}` : item.title}
+                />
+              ))}
+              <SummaryRow
+                label={t("summary.totalDuration")}
+                value={t("context.duration", {
+                  minutes: confirmedGroup.reduce(
+                    (sum, item) => sum + item.durationMin,
+                    0,
+                  ),
+                })}
+              />
+            </>
+          ) : procedure ? (
             <SummaryRow
               label={t("summary.procedure")}
               value={procedure.title}
@@ -709,26 +949,55 @@ export function BookingWizard({
   }
 
   if (!gender && !initialService) {
+    // Admin-managed photos (content/site-media.ts: "booking.gender.women"/
+    // "men") — no fallback exists yet, so each choice renders as a plain
+    // sized card until the clinic uploads one, then upgrades to a full
+    // photo automatically. Never a bare, unstyled empty area either way.
+    const choices: Array<{
+      key: "WOMEN" | "MEN";
+      label: string;
+      image: PublicManagedImage;
+    }> = [
+      { key: "WOMEN", label: t("genderStep.women"), image: genderImages.women },
+      { key: "MEN", label: t("genderStep.men"), image: genderImages.men },
+    ];
     return (
       <div>
         <h2 className="font-display text-[26px] font-medium text-ink">
           {t("genderStep.title")}
         </h2>
         <div className="mt-4.5 grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3.5">
-          <button
-            type="button"
-            onClick={() => setGender("WOMEN")}
-            className="min-h-14 rounded-(--radius) border border-line-card bg-card px-4 py-3 text-left font-sans text-[14px] font-medium text-ink hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-          >
-            {t("genderStep.women")}
-          </button>
-          <button
-            type="button"
-            onClick={() => setGender("MEN")}
-            className="min-h-14 rounded-(--radius) border border-line-card bg-card px-4 py-3 text-left font-sans text-[14px] font-medium text-ink hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-          >
-            {t("genderStep.men")}
-          </button>
+          {choices.map((choice) => (
+            <button
+              key={choice.key}
+              type="button"
+              onClick={() => setGender(choice.key)}
+              className="group relative flex min-h-[220px] flex-col justify-end overflow-hidden rounded-(--radius) border border-line-card bg-card text-left transition-all hover:-translate-y-0.75 hover:border-line-card-hover hover:shadow-card focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              {choice.image.image ? (
+                <Image
+                  src={choice.image.image}
+                  alt={choice.image.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                  sizes="(max-width: 640px) 100vw, 300px"
+                  style={{
+                    objectPosition: `${choice.image.focalX}% ${choice.image.focalY}%`,
+                  }}
+                />
+              ) : null}
+              <span
+                className={cn(
+                  "relative z-10 px-4 py-3.5 font-sans text-[15px] font-medium",
+                  choice.image.image
+                    ? "bg-gradient-to-t from-ink/70 via-ink/10 to-transparent pt-12 text-page"
+                    : "text-ink",
+                )}
+              >
+                {choice.label}
+              </span>
+            </button>
+          ))}
         </div>
       </div>
     );
@@ -754,7 +1023,9 @@ export function BookingWizard({
       : undefined);
   const offerAccountGate =
     Boolean(
-      selectedService?.offerRequiresAccount || procedure?.offerRequiresAccount,
+      selectedService?.offerRequiresAccount ||
+        procedure?.offerRequiresAccount ||
+        groupOptions?.some((option) => option.offerRequiresAccount),
     ) && !clientSignedIn;
   const noAvailableDates =
     !datesLoading && !datesDegraded && availableDates?.length === 0;
@@ -765,6 +1036,8 @@ export function BookingWizard({
         <SelectedContext
           service={selectedService}
           procedure={procedure}
+          groupOptions={groupOptions}
+          groupTotalDuration={groupTotalDuration}
           locale={locale}
           t={t}
         />
@@ -848,50 +1121,115 @@ export function BookingWizard({
       {step === 1 && (
         <div className="mt-[clamp(20px,3vw,32px)]">
           {selectedService && selectedService.options.length > 1 ? (
-            <fieldset className="grid gap-3">
+            <fieldset className="grid gap-3 pb-20">
               <legend className="mb-3 font-display text-[26px] font-medium text-ink">
                 {selectedService.name}
               </legend>
-              {selectedService.options.map((option) => (
-                <button
-                  key={option.key}
-                  type="button"
-                  onClick={() => pickOption(selectedService.key, option)}
-                  className="flex min-h-16 items-center justify-between gap-4 rounded-(--radius) border border-line-card bg-card p-4 text-left hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-                >
-                  <span>
-                    <span className="block font-sans text-[14px] font-medium text-ink">
-                      {option.title}
-                    </span>
-                    {option.group ? (
-                      <span className="mt-1 block font-sans text-meta text-muted">
-                        {option.group}
+              {selectedService.multiProcedureBooking
+                ? selectedService.options.map((option) => {
+                    const selected = cart.some(
+                      (item) => item.key === option.key,
+                    );
+                    return (
+                      <button
+                        key={option.key}
+                        type="button"
+                        onClick={() => toggleCartOption(option)}
+                        aria-pressed={selected}
+                        className={cn(
+                          "flex min-h-16 items-center gap-4 rounded-(--radius) border p-4 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+                          selected
+                            ? "border-accent bg-alt"
+                            : "border-line-card bg-card hover:border-line-card-hover",
+                        )}
+                      >
+                        <span
+                          className={cn(
+                            "grid h-7 w-7 shrink-0 place-items-center rounded-full border text-[15px] font-medium",
+                            selected
+                              ? "border-accent bg-accent text-page"
+                              : "border-line-btn text-muted",
+                          )}
+                        >
+                          {selected ? "✓" : "+"}
+                        </span>
+                        <span className="flex-1">
+                          <span className="block font-sans text-[14px] font-medium text-ink">
+                            {option.title}
+                          </span>
+                          {option.group ? (
+                            <span className="mt-1 block font-sans text-meta text-muted">
+                              {option.group}
+                            </span>
+                          ) : null}
+                        </span>
+                        <span className="shrink-0 text-right font-sans text-[13px] text-body">
+                          {option.durationLabel ? (
+                            <span className="block">
+                              {option.durationLabel}
+                            </span>
+                          ) : null}
+                          {option.price ? (
+                            <span className="block font-medium text-ink">
+                              {option.price}
+                            </span>
+                          ) : null}
+                        </span>
+                      </button>
+                    );
+                  })
+                : selectedService.options.map((option) => (
+                    <button
+                      key={option.key}
+                      type="button"
+                      onClick={() => pickOption(selectedService.key, option)}
+                      className="flex min-h-16 items-center justify-between gap-4 rounded-(--radius) border border-line-card bg-card p-4 text-left hover:border-line-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    >
+                      <span>
+                        <span className="block font-sans text-[14px] font-medium text-ink">
+                          {option.title}
+                        </span>
+                        {option.group ? (
+                          <span className="mt-1 block font-sans text-meta text-muted">
+                            {option.group}
+                          </span>
+                        ) : null}
                       </span>
-                    ) : null}
-                  </span>
-                  <span className="shrink-0 text-right font-sans text-[13px] text-body">
-                    {option.durationLabel ? (
-                      <span className="block">{option.durationLabel}</span>
-                    ) : null}
-                    {option.price ? (
-                      <span className="block font-medium text-ink">
-                        {option.price}
+                      <span className="shrink-0 text-right font-sans text-[13px] text-body">
+                        {option.durationLabel ? (
+                          <span className="block">{option.durationLabel}</span>
+                        ) : null}
+                        {option.price ? (
+                          <span className="block font-medium text-ink">
+                            {option.price}
+                          </span>
+                        ) : null}
                       </span>
-                    ) : null}
-                  </span>
-                </button>
-              ))}
+                    </button>
+                  ))}
               <button
                 type="button"
                 onClick={() => {
                   setService(null);
                   setProcedure(null);
+                  setCart([]);
                   router.replace(PUBLIC_PATHS.booking);
                 }}
                 className="mt-2 w-fit font-sans text-[13px] text-accent underline underline-offset-4"
               >
                 {t("steps.service")}
               </button>
+              {selectedService.multiProcedureBooking && cart.length > 0 ? (
+                <BookingCartBar
+                  count={cart.length}
+                  totalDurationMin={cart.reduce(
+                    (sum, option) => sum + option.durationMin,
+                    0,
+                  )}
+                  onBook={() => pickCart(selectedService.key)}
+                  t={t}
+                />
+              ) : null}
             </fieldset>
           ) : (
             <div className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3.5">
@@ -931,7 +1269,7 @@ export function BookingWizard({
         </div>
       )}
 
-      {step === 2 && procedure && !offerAccountGate ? (
+      {step === 2 && activeOptionKeys.length > 0 && !offerAccountGate ? (
         <div className="mt-[clamp(20px,3vw,32px)]">
           <p className="mb-3 font-sans text-label font-medium tracking-[.04em] text-muted uppercase">
             {t("pickDate")}
@@ -961,7 +1299,7 @@ export function BookingWizard({
         </div>
       ) : null}
 
-      {step === 3 && procedure && !offerAccountGate ? (
+      {step === 3 && activeOptionKeys.length > 0 && !offerAccountGate ? (
         <div className="mt-[clamp(20px,3vw,32px)]">
           <h2 className="font-display text-[26px] font-medium text-ink">
             {t("pickSpecialist")}
@@ -1404,11 +1742,15 @@ function SummaryRow({ label, value }: { label: string; value: string }) {
 function SelectedContext({
   service,
   procedure,
+  groupOptions,
+  groupTotalDuration,
   locale,
   t,
 }: {
   service: BookingServiceOption;
   procedure: BookingProcedureContext | null;
+  groupOptions: BookingServiceOption["options"] | null;
+  groupTotalDuration: number | null;
   locale: string;
   t: ReturnType<typeof useTranslations>;
 }) {
@@ -1439,28 +1781,36 @@ function SelectedContext({
       ) : null}
       <div className="p-[clamp(18px,2.5vw,26px)]">
         <p className="font-sans text-meta font-medium tracking-[.16em] text-accent uppercase">
-          {procedure ? t("context.procedure") : t("context.service")}
+          {groupOptions
+            ? t("context.procedure")
+            : procedure
+              ? t("context.procedure")
+              : t("context.service")}
         </p>
-        {procedure ? (
+        {groupOptions || procedure ? (
           <p className="mt-1.75 font-sans text-meta text-muted">
             {service.name}
           </p>
         ) : null}
         <h3 className="mt-1.25 font-display text-[clamp(24px,3vw,32px)] leading-[1.08] font-medium text-ink">
-          {procedure?.title ?? service.name}
+          {groupOptions
+            ? groupOptions.map((option) => option.title).join(" + ")
+            : (procedure?.title ?? service.name)}
         </h3>
         <p className="mt-2.5 font-sans text-compact leading-[1.65] font-normal text-body">
           {procedure?.description ?? service.shortDescription}
         </p>
         <div className="mt-3.5 flex flex-wrap gap-x-4.5 gap-y-1.5 font-sans text-meta text-muted">
           <span>
-            {procedure?.durationLabel ??
-              t("context.duration", {
-                minutes: procedure?.durationMin ?? service.durationMin,
-              })}
+            {groupOptions && groupTotalDuration !== null
+              ? t("context.duration", { minutes: groupTotalDuration })
+              : (procedure?.durationLabel ??
+                t("context.duration", {
+                  minutes: procedure?.durationMin ?? service.durationMin,
+                }))}
           </span>
-          {procedure?.price ? <span>{procedure.price}</span> : null}
-          {!procedure && priceFrom ? (
+          {!groupOptions && procedure?.price ? <span>{procedure.price}</span> : null}
+          {!groupOptions && !procedure && priceFrom ? (
             <span>
               {service.priceMode === "FIXED"
                 ? priceFrom

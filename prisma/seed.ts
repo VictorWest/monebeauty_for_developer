@@ -24,6 +24,8 @@ const SERVICES: {
   bookingFamily?: string;
   bookingPickerVisible?: boolean;
   offerRequiresAccount?: boolean;
+  published?: boolean;
+  multiProcedureBooking?: boolean;
 }[] = [
   { slug: "facial", category: "FACE", bookable: true },
   { slug: "body", category: "BODY", bookable: true },
@@ -45,8 +47,12 @@ const SERVICES: {
     offerRequiresAccount: true,
     // Legacy per-duration shell: its real content now lives as an option
     // under the "endospheres" parent (see lib/endospheres-booking-options.ts).
-    // Must stay hidden like the parent, or it shows as a dead-end picker card.
+    // Must stay hidden like the parent (dead-end picker card otherwise) and
+    // unpublished (it has no real page, but a published row still feeds the
+    // chatbot's knowledge base and, sitting at the lowest `order`, wins
+    // scoring ties against genuinely relevant content).
     bookingPickerVisible: false,
+    published: false,
   },
   {
     slug: "endospheres-30",
@@ -56,6 +62,7 @@ const SERVICES: {
     priceFrom: 65,
     bookingFamily: "endospheres",
     bookingPickerVisible: false,
+    published: false,
   },
   {
     slug: "endospheres-45",
@@ -65,6 +72,7 @@ const SERVICES: {
     priceFrom: 85,
     bookingFamily: "endospheres",
     bookingPickerVisible: false,
+    published: false,
   },
   {
     slug: "endospheres-60",
@@ -74,6 +82,7 @@ const SERVICES: {
     priceFrom: 105,
     bookingFamily: "endospheres",
     bookingPickerVisible: false,
+    published: false,
   },
   {
     slug: "endospheres-75",
@@ -83,8 +92,16 @@ const SERVICES: {
     priceFrom: 125,
     bookingFamily: "endospheres",
     bookingPickerVisible: false,
+    published: false,
   },
-  { slug: "laser", category: "LASER", bookable: true },
+  {
+    slug: "laser",
+    category: "LASER",
+    bookable: true,
+    // The client's own example for combined bookings (arms + legs + neck in
+    // one visit) — the first, and so far only, service enabled for it.
+    multiProcedureBooking: true,
+  },
   { slug: "rf", category: "DEVICE", bookable: true },
   { slug: "trichology", category: "HAIR", bookable: true },
   { slug: "brows", category: "FACE", bookable: true },
@@ -215,13 +232,14 @@ async function main() {
       where: { slug: s.slug },
       update: {
         category: s.category,
-        published: s.bookable,
+        published: s.published ?? s.bookable,
         durationMin: s.durationMin,
         priceFrom: s.priceFrom,
         priceMode: s.priceFrom === undefined ? "FROM" : "FIXED",
         bookingFamily: s.bookingFamily,
         bookingPickerVisible: s.bookingPickerVisible ?? true,
         offerRequiresAccount: s.offerRequiresAccount ?? false,
+        multiProcedureBooking: s.multiProcedureBooking ?? false,
         primaryPractitionerId: null,
         requiresDevice: Boolean(deviceIds),
         rooms: s.bookable
@@ -234,13 +252,14 @@ async function main() {
       create: {
         slug: s.slug,
         category: s.category,
-        published: s.bookable,
+        published: s.published ?? s.bookable,
         durationMin: s.durationMin,
         priceFrom: s.priceFrom,
         priceMode: s.priceFrom === undefined ? "FROM" : "FIXED",
         bookingFamily: s.bookingFamily,
         bookingPickerVisible: s.bookingPickerVisible ?? true,
         offerRequiresAccount: s.offerRequiresAccount ?? false,
+        multiProcedureBooking: s.multiProcedureBooking ?? false,
         primaryPractitionerId: null,
         requiresDevice: Boolean(deviceIds),
         rooms: s.bookable

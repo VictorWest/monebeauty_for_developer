@@ -470,6 +470,10 @@
     },
     "pickSpecialist": "Choose a specialist",
     "anySpecialist": "Any specialist",
+    "cart": {
+      "count": "{count, plural, one {# service selected} other {# services selected}}",
+      "book": "Book selected services ({count})"
+    },
     "loadingSpecialists": "Loading specialists…",
     "noSpecialists": "No specialist is currently available online for this procedure.",
     "pickDate": "Choose a date",
@@ -492,6 +496,7 @@
     "summary": {
       "service": "Treatment",
       "procedure": "Procedure",
+      "totalDuration": "Total duration",
       "specialist": "Specialist",
       "time": "Time",
       "reference": "Reference"

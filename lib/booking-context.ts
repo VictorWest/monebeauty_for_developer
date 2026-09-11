@@ -32,6 +32,10 @@ export type BookingServiceOption = {
   targetGender: ServiceGender;
   offerRequiresAccount: boolean;
   publicPath: string;
+  // Lets the wizard offer a "+" multi-select cart across this service's
+  // options (several procedures, one specialist, one visit) instead of
+  // picking exactly one.
+  multiProcedureBooking: boolean;
   options: BookingOptionSummary[];
 };
 
@@ -98,6 +102,7 @@ export async function getBookingServiceOptions(
         targetGender: service.targetGender,
         offerRequiresAccount: service.offerRequiresAccount,
         publicPath: service.publicPath || PUBLIC_PATHS.services,
+        multiProcedureBooking: service.multiProcedureBooking,
         options,
       },
     ];
@@ -181,6 +186,7 @@ export async function getBookingContext(
       targetGender: service.targetGender,
       offerRequiresAccount: service.offerRequiresAccount,
       publicPath: service.publicPath || PUBLIC_PATHS.services,
+      multiProcedureBooking: service.multiProcedureBooking,
       options,
     },
     procedure: option,

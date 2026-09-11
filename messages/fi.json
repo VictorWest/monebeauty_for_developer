@@ -456,6 +456,10 @@
     },
     "pickSpecialist": "Valitse asiantuntija",
     "anySpecialist": "Kuka tahansa asiantuntija",
+    "cart": {
+      "count": "{count, plural, one {# palvelu valittu} other {# palvelua valittu}}",
+      "book": "Varaa valitut palvelut ({count})"
+    },
     "loadingSpecialists": "Ladataan asiantuntijoita…",
     "noSpecialists": "Tälle toimenpiteelle ei ole juuri nyt verkossa varattavaa asiantuntijaa.",
     "pickDate": "Valitse päivä",
@@ -478,6 +482,7 @@
     "summary": {
       "service": "Hoito",
       "procedure": "Toimenpide",
+      "totalDuration": "Kokonaiskesto",
       "specialist": "Asiantuntija",
       "time": "Aika",
       "reference": "Viite"

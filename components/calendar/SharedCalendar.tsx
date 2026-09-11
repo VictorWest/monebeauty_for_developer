@@ -113,6 +113,11 @@ type Appointment = {
   }>;
   requiresDevice: boolean;
   editable: boolean;
+  /** Set only when this appointment is one leg of a multi-procedure visit
+   * (several appointments booked together, one specialist, back-to-back). */
+  bookingGroupId: string | null;
+  bookingGroupIndex: number | null;
+  bookingGroupCount: number | null;
 };
 type Slot = { start: string; end: string; status: string };
 type Payload = {
@@ -2358,6 +2363,11 @@ function AppointmentCard({
           isDragging && "z-50 opacity-60",
           appointment.resourceWarning.length > 0 &&
             "border-line-btn-hover ring-2 ring-line-btn-hover ring-inset",
+          // One leg of a multi-procedure visit — same specialist,
+          // back-to-back appointments — reads as one visit via a shared
+          // left accent, distinct from the ordinary border on every side.
+          (appointment.bookingGroupCount ?? 0) > 1 &&
+            "border-l-[3px] border-l-accent",
         )}
         style={{
           top,
@@ -2386,6 +2396,9 @@ function AppointmentCard({
           </strong>
           <span className="block truncate text-[11px]">
             {appointment.procedure}
+            {(appointment.bookingGroupCount ?? 0) > 1
+              ? ` (${(appointment.bookingGroupIndex ?? 0) + 1}/${appointment.bookingGroupCount})`
+              : ""}
           </span>
           {appointment.channelLabel ? (
             <span className="block truncate text-[9px] font-semibold tracking-[.06em] uppercase">

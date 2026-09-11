@@ -46,6 +46,16 @@ export type AppointmentEmailData = {
   procedureIndex?: number | null;
   procedureTitle?: string | null;
   procedurePrice?: string | null;
+  /** Set only for a multi-procedure visit (several appointments sharing one
+   * bookingGroupId): every procedure in the visit, in sequence order, each
+   * keeping its own manage link so a client can still cancel/reschedule one
+   * procedure independently of the rest. */
+  groupProcedures?: Array<{
+    title: string;
+    price: string | null;
+    durationMin: number;
+    manageUrl: string;
+  }>;
 };
 
 export type OrderEmailData = {
@@ -119,6 +129,7 @@ type Copy = {
   labels: {
     service: string;
     procedure: string;
+    totalDuration: string;
     time: string;
     reference: string;
     item: string;
@@ -168,6 +179,7 @@ export const EMAIL_COPY: Record<Locale, Copy> = {
     labels: {
       service: "Palvelu",
       procedure: "Toimenpide",
+      totalDuration: "Kokonaiskesto",
       time: "Aika",
       reference: "Viite",
       item: "Tuote",
@@ -217,6 +229,7 @@ export const EMAIL_COPY: Record<Locale, Copy> = {
     labels: {
       service: "Service",
       procedure: "Procedure",
+      totalDuration: "Total duration",
       time: "Time",
       reference: "Reference",
       item: "Item",
@@ -265,6 +278,7 @@ export const EMAIL_COPY: Record<Locale, Copy> = {
     labels: {
       service: "Услуга",
       procedure: "Процедура",
+      totalDuration: "Общая продолжительность",
       time: "Время",
       reference: "Номер",
       item: "Товар",
@@ -349,11 +363,28 @@ export function renderCustomerAppointmentEmail(
   const copy = EMAIL_COPY[locale];
   const messageCopy = copy.appointment[kind];
   const reference = emailReference(appointment.id);
+  const group =
+    appointment.groupProcedures && appointment.groupProcedures.length > 1
+      ? appointment.groupProcedures
+      : null;
   const details = [
     { label: copy.labels.service, value: serviceName(appointment, locale) },
-    ...(appointment.procedureTitle
-      ? [{ label: copy.labels.procedure, value: procedureName(appointment) }]
-      : []),
+    ...(group
+      ? [
+          ...group.map((procedure, index) => ({
+            label: `${copy.labels.procedure} ${index + 1}/${group.length}`,
+            value: procedure.price
+              ? `${procedure.title} · ${procedure.price}`
+              : procedure.title,
+          })),
+          {
+            label: copy.labels.totalDuration,
+            value: `${group.reduce((sum, procedure) => sum + procedure.durationMin, 0)} min`,
+          },
+        ]
+      : appointment.procedureTitle
+        ? [{ label: copy.labels.procedure, value: procedureName(appointment) }]
+        : []),
     {
       label: copy.labels.time,
       value: formatEmailDateTime(appointment.start, locale),
@@ -374,6 +405,17 @@ export function renderCustomerAppointmentEmail(
             : []),
           [copy.bookAnother, bookingUrl] as const,
         ]
+      : []),
+    // Each procedure keeps its own independent manage/cancel link — the
+    // primary CTA above only points at this (the first) appointment.
+    ...(group
+      ? group.map(
+          (procedure, index) =>
+            [
+              `${copy.labels.procedure} ${index + 1}/${group.length}: ${procedure.title}`,
+              procedure.manageUrl,
+            ] as const,
+        )
       : []),
   ];
   const secondaryLinksHtml = secondaryLinks
@@ -522,6 +564,10 @@ export function renderStaffAppointmentEmail(
   const locale: Locale = "fi";
   const copy = EMAIL_COPY.fi;
   const reference = emailReference(appointment.id);
+  const group =
+    appointment.groupProcedures && appointment.groupProcedures.length > 1
+      ? appointment.groupProcedures
+      : null;
   const details = [
     { label: STAFF_COPY.customer, value: appointment.client.fullName },
     { label: STAFF_COPY.phone, value: appointment.client.phone },
@@ -533,9 +579,22 @@ export function renderStaffAppointmentEmail(
         bookingServiceTitle(appointment.service.slug, locale) ??
         appointment.service.slug,
     },
-    ...(appointment.procedureTitle
-      ? [{ label: copy.labels.procedure, value: procedureName(appointment) }]
-      : []),
+    ...(group
+      ? [
+          ...group.map((procedure, index) => ({
+            label: `${copy.labels.procedure} ${index + 1}/${group.length}`,
+            value: procedure.price
+              ? `${procedure.title} · ${procedure.price}`
+              : procedure.title,
+          })),
+          {
+            label: copy.labels.totalDuration,
+            value: `${group.reduce((sum, procedure) => sum + procedure.durationMin, 0)} min`,
+          },
+        ]
+      : appointment.procedureTitle
+        ? [{ label: copy.labels.procedure, value: procedureName(appointment) }]
+        : []),
     {
       label: copy.labels.time,
       value: formatEmailDateTime(appointment.start, locale),

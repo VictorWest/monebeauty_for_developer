@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { openPublicDates } from "@/lib/booking";
+import { openPublicDates, openPublicGroupDates } from "@/lib/booking";
 import { routing, type Locale } from "@/i18n/routing";
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
@@ -10,6 +10,8 @@ export async function GET(req: NextRequest) {
   const to = searchParams.get("to") ?? "";
   const service = searchParams.get("service") ?? "";
   const option = searchParams.get("option") ?? undefined;
+  // Multi-procedure cart: comma-separated option keys, additive to `option`.
+  const optionKeys = searchParams.get("options")?.split(",").filter(Boolean);
   const specialist = searchParams.get("specialist") ?? "";
   const localeParam = searchParams.get("locale");
   const locale = routing.locales.includes(localeParam as Locale)
@@ -21,7 +23,7 @@ export async function GET(req: NextRequest) {
     !DATE_RE.test(from) ||
     !DATE_RE.test(to) ||
     !service ||
-    !option ||
+    (!option && !optionKeys?.length) ||
     !specialist ||
     Number.isNaN(start.getTime()) ||
     Number.isNaN(end.getTime()) ||
@@ -30,18 +32,29 @@ export async function GET(req: NextRequest) {
   ) {
     return NextResponse.json({ error: "invalid_range" }, { status: 400 });
   }
+  // "any" -> union of availability across every qualified specialist.
+  const specialistId = specialist === "any" ? undefined : specialist;
   try {
     return NextResponse.json(
       {
-        dates: await openPublicDates({
-          fromDate: from,
-          toDate: to,
-          serviceKey: service,
-          locale,
-          optionKey: option,
-          // "any" -> union of availability across every qualified specialist.
-          specialistId: specialist === "any" ? undefined : specialist,
-        }),
+        dates:
+          optionKeys && optionKeys.length > 1
+            ? await openPublicGroupDates({
+                fromDate: from,
+                toDate: to,
+                serviceKey: service,
+                locale,
+                optionKeys,
+                specialistId,
+              })
+            : await openPublicDates({
+                fromDate: from,
+                toDate: to,
+                serviceKey: service,
+                locale,
+                optionKey: option ?? optionKeys?.[0],
+                specialistId,
+              }),
       },
       { headers: { "Cache-Control": "private, no-store, max-age=0" } },
     );
