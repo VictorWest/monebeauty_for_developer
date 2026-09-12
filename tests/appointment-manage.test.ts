@@ -76,6 +76,30 @@ test("the manage page stays out of search results and offers both actions", () =
   assert.match(page, /CANCELLATION_POLICY_ANCHOR/);
 });
 
+test("the manage link shows every procedure of a multi-procedure visit, one after another, with one combined total duration", () => {
+  // Every leg sharing the token's bookingGroupId is read, not just the one
+  // the token names — the old sibling-links block that hid the rest behind
+  // a separate list is gone.
+  assert.match(
+    page,
+    /const visitProcedures = appointment\?\.bookingGroupId\s*\n\s*\? await prisma\.appointment\.findMany\(/,
+  );
+  assert.doesNotMatch(page, /siblingProcedures/);
+  assert.doesNotMatch(page, /visitAlsoIncludes/);
+  // Every procedure gets its own row (not just the first), and the single
+  // "Duration" row is replaced by a total across the whole visit.
+  assert.match(page, /const isGroup = visitProcedures\.length > 1;/);
+  assert.match(
+    page,
+    /const totalDurationMin = visitProcedures\.reduce\(\s*\n\s*\(sum, item\) => sum \+ durationOf\(item\),/,
+  );
+  assert.match(page, /isGroup\s*\n\s*\? visitProcedures\.map\(/);
+  assert.match(
+    page,
+    /isGroup \? t\.totalDuration : t\.duration,\s*\n\s*`\$\{isGroup \? totalDurationMin : durationOf\(appointment\)\} \$\{t\.minutes\}`,/,
+  );
+});
+
 test("booking returns the manage link so the wizard does not wait on email", () => {
   assert.match(
     bookingRoute,

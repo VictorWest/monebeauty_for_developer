@@ -13,7 +13,6 @@ import {
 } from "@/components/booking/ManageAppointment";
 import {
   appointmentIdFromManageToken,
-  appointmentManageToken,
   validAppointmentManageToken,
 } from "@/lib/appointment-access";
 import { localizedPath } from "@/lib/seo";
@@ -44,8 +43,7 @@ const COPY = {
     status: "Status",
     paidAtClinic: "Appointments are paid at the clinic.",
     clinic: "Clinic",
-    visitAlsoIncludes: "This visit also includes",
-    manageLink: "Manage",
+    totalDuration: "Total duration",
     invalidTitle: "This link is no longer valid",
     invalidBody:
       "The link may have expired, or the appointment may already have been changed. Please call the clinic and we will help you.",
@@ -93,8 +91,7 @@ const COPY = {
     status: "Tila",
     paidAtClinic: "Ajanvaraukset maksetaan klinikalla.",
     clinic: "Klinikka",
-    visitAlsoIncludes: "Tämä käynti sisältää myös",
-    manageLink: "Hallinnoi",
+    totalDuration: "Kokonaiskesto",
     invalidTitle: "Linkki ei ole enää voimassa",
     invalidBody:
       "Linkki on voinut vanhentua tai ajanvaraus on jo muuttunut. Soita klinikalle, niin autamme sinua.",
@@ -140,8 +137,7 @@ const COPY = {
     status: "Статус",
     paidAtClinic: "Процедуры оплачиваются в клинике.",
     clinic: "Клиника",
-    visitAlsoIncludes: "Этот визит также включает",
-    manageLink: "Управление",
+    totalDuration: "Общая продолжительность",
     invalidTitle: "Ссылка больше не действительна",
     invalidBody:
       "Срок действия ссылки мог истечь, либо запись уже изменена. Позвоните в клинику, и мы поможем.",
@@ -229,26 +225,29 @@ export default async function ManageAppointmentPage({
         })
       : null;
 
-  // Read-only: a multi-procedure visit's other legs, each with their own
-  // independent manage link (this page never acts on more than the one
-  // appointment the token names — see the multi-procedure booking plan).
-  const siblingProcedures = appointment?.bookingGroupId
-    ? (
-        await prisma.appointment.findMany({
-          where: {
-            bookingGroupId: appointment.bookingGroupId,
-            id: { not: appointment.id },
-            status: { not: "CANCELLED" },
+  // A multi-procedure visit shares one bookingGroupId across its legs — read
+  // every leg (read-only; this page still only ever reschedules/cancels the
+  // one appointment the token names, see the multi-procedure booking plan)
+  // so the whole visit displays as one list with one total duration,
+  // instead of showing only the single procedure the token happens to name.
+  const visitProcedures = appointment?.bookingGroupId
+    ? await prisma.appointment.findMany({
+        where: {
+          bookingGroupId: appointment.bookingGroupId,
+          status: { not: "CANCELLED" },
+        },
+        orderBy: { bookingGroupIndex: "asc" },
+        select: { procedureTitle: true, start: true, end: true },
+      })
+    : appointment
+      ? [
+          {
+            procedureTitle: appointment.procedureTitle,
+            start: appointment.start,
+            end: appointment.end,
           },
-          orderBy: { bookingGroupIndex: "asc" },
-          select: { id: true, procedureTitle: true, start: true },
-        })
-      ).map((sibling) => ({
-        title: sibling.procedureTitle ?? "",
-        start: sibling.start,
-        manageHref: `${localizedPath(PUBLIC_PATHS.manageAppointment, locale)}?token=${encodeURIComponent(appointmentManageToken(sibling.id))}`,
-      }))
-    : [];
+        ]
+      : [];
 
   if (!appointment)
     return (
@@ -293,11 +292,34 @@ export default async function ManageAppointmentPage({
             ? { tone: "warning" as const, text: t.errorInvalid }
             : null;
 
+  const durationOf = (item: { start: Date; end: Date }) =>
+    Math.round((item.end.getTime() - item.start.getTime()) / 60000);
+  const isGroup = visitProcedures.length > 1;
+  const totalDurationMin = visitProcedures.reduce(
+    (sum, item) => sum + durationOf(item),
+    0,
+  );
+
   const details: Array<[string, string]> = [
     [t.service, title],
-    ...(appointment.procedureTitle
-      ? ([[t.procedure, appointment.procedureTitle]] as Array<[string, string]>)
-      : []),
+    // A single procedure keeps its original one-row shape; a multi-procedure
+    // visit lists every selected procedure with its own duration, one after
+    // the other, so none of them go missing the way only the token's own
+    // appointment used to show.
+    ...(isGroup
+      ? visitProcedures.map(
+          (item, index): [string, string] => [
+            `${t.procedure} ${index + 1}/${visitProcedures.length}`,
+            item.procedureTitle
+              ? `${item.procedureTitle} · ${durationOf(item)} ${t.minutes}`
+              : `${durationOf(item)} ${t.minutes}`,
+          ],
+        )
+      : appointment.procedureTitle
+        ? ([[t.procedure, appointment.procedureTitle]] as Array<
+            [string, string]
+          >)
+        : []),
     [t.time, dateTime.format(appointment.start)],
     [
       t.specialist,
@@ -305,8 +327,8 @@ export default async function ManageAppointmentPage({
         appointment.practitioner.name.split(/\s+/)[0],
     ],
     [
-      t.duration,
-      `${Math.round((appointment.end.getTime() - appointment.start.getTime()) / 60000)} ${t.minutes}`,
+      isGroup ? t.totalDuration : t.duration,
+      `${isGroup ? totalDurationMin : durationOf(appointment)} ${t.minutes}`,
     ],
     [t.reference, appointment.id.slice(-8).toUpperCase()],
   ];
@@ -350,23 +372,6 @@ export default async function ManageAppointmentPage({
               </div>
             ))}
           </dl>
-
-          {siblingProcedures.length > 0 ? (
-            <div className="mt-5 grid gap-2 border-t border-line-hair pt-4 font-sans text-sm text-body">
-              <p className="font-medium text-ink">{t.visitAlsoIncludes}</p>
-              {siblingProcedures.map((sibling) => (
-                <p key={sibling.manageHref} className="flex flex-wrap items-baseline gap-x-2">
-                  <span>{sibling.title}</span>
-                  <a
-                    href={sibling.manageHref}
-                    className="font-medium text-accent underline decoration-accent/45 underline-offset-4"
-                  >
-                    {t.manageLink}
-                  </a>
-                </p>
-              ))}
-            </div>
-          ) : null}
 
           <div className="mt-5 grid gap-2 border-t border-line-hair pt-4 font-sans text-sm text-body">
             <p>
