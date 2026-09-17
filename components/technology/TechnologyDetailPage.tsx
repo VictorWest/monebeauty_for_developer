@@ -237,6 +237,8 @@ export async function TechnologyDetailPage({
       {isEditorial ? (
         <TechnologyEditorial
           body={technology.content.body}
+          slug={technology.slug}
+          locale={locale}
           serviceKey={technology.relatedService?.slug}
           closingCtaLabel={bookable ? endospheresHeroCta[locale] : undefined}
         />

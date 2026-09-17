@@ -1,8 +1,21 @@
 import Image from "next/image";
-import { CalendarBlank } from "@phosphor-icons/react/ssr";
+import {
+  CalendarBlank,
+  Drop,
+  Eye,
+  Infinity as InfinityIcon,
+  Palette,
+  Smiley,
+  Snowflake,
+  Sparkle,
+  Timer,
+} from "@phosphor-icons/react/ssr";
 import { Markdown } from "@/components/Markdown";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { IndicationsContraindicationsTabs } from "@/components/technology/IndicationsContraindicationsTabs";
+import { ProcedureSlider } from "@/components/technology/ProcedureSlider";
+import type { Locale } from "@/i18n/routing";
 import { PUBLIC_PATHS } from "@/lib/public-routes";
 import {
   parseTechnologyMarkdown,
@@ -10,6 +23,21 @@ import {
   type TechnologyChapter,
 } from "@/lib/technology-layout";
 import { cn } from "@/lib/cn";
+
+/**
+ * Icon per benefit card, by position: all three locales list the same eight
+ * benefits in the same order, so indexing avoids matching on translated text.
+ */
+const BENEFIT_ICONS = [
+  Sparkle,
+  Smiley,
+  Palette,
+  Snowflake,
+  InfinityIcon,
+  Eye,
+  Timer,
+  Drop,
+];
 
 /**
  * This page is long-form reading, and `--text-copy` is a flat 16px that never
@@ -84,15 +112,22 @@ function ChapterHeading({
 
 export function TechnologyEditorial({
   body,
+  slug,
+  locale,
   serviceKey,
   closingCtaLabel,
   anchorId = "technology-about",
 }: {
   body: string;
+  slug: string;
+  locale: Locale;
   serviceKey?: string;
   closingCtaLabel?: string;
   anchorId?: string;
 }) {
+  // The laser page carries its own card/tabs/slider treatment (see the client
+  // brief); every other editorial page keeps the original stacked layout.
+  const isLaser = slug === "laser";
   const layout = parseTechnologyMarkdown(body);
   const [introHeading] = layout.intro;
   const [overviewHeading, ...overviewBody] = layout.overview;
@@ -202,23 +237,47 @@ export function TechnologyEditorial({
       {layout.benefits.length ? (
         <section className="py-[clamp(52px,8vw,104px)]">
           <Container>
-            <div className="mx-auto max-w-280 border-t border-line-hair">
-              {layout.benefits.map((chapter) => (
-                <article
-                  key={chapter.heading}
-                  className="grid gap-3 border-b border-line-hair py-[clamp(28px,4vw,46px)] lg:grid-cols-[minmax(240px,.78fr)_minmax(0,1.22fr)] lg:gap-14"
-                >
-                  <div className="lg:pr-4">
-                    <span
-                      aria-hidden
-                      className="mb-4 block h-px w-8 bg-accent"
-                    />
-                    <ChapterHeading chapter={chapter} className="text-balance" />
-                  </div>
-                  <SourceCopy blocks={chapter.body} className="min-w-0" />
-                </article>
-              ))}
-            </div>
+            {isLaser ? (
+              <div className="mx-auto grid max-w-280 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                {layout.benefits.map((chapter, index) => {
+                  const Icon = BENEFIT_ICONS[index % BENEFIT_ICONS.length];
+                  return (
+                    <article
+                      key={chapter.heading}
+                      className="rounded-(--radius) border border-line-card bg-card p-[clamp(22px,3vw,30px)] shadow-(--shadow-card-soft)"
+                    >
+                      <Icon size={30} weight="thin" className="text-accent" />
+                      <ChapterHeading
+                        chapter={chapter}
+                        className="mt-4 text-[clamp(19px,1.7vw,22px)]"
+                      />
+                      <SourceCopy
+                        blocks={chapter.body}
+                        className="mt-3 [&_p]:text-[15px]"
+                      />
+                    </article>
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="mx-auto max-w-280 border-t border-line-hair">
+                {layout.benefits.map((chapter) => (
+                  <article
+                    key={chapter.heading}
+                    className="grid gap-3 border-b border-line-hair py-[clamp(28px,4vw,46px)] lg:grid-cols-[minmax(240px,.78fr)_minmax(0,1.22fr)] lg:gap-14"
+                  >
+                    <div className="lg:pr-4">
+                      <span
+                        aria-hidden
+                        className="mb-4 block h-px w-8 bg-accent"
+                      />
+                      <ChapterHeading chapter={chapter} className="text-balance" />
+                    </div>
+                    <SourceCopy blocks={chapter.body} className="min-w-0" />
+                  </article>
+                ))}
+              </div>
+            )}
           </Container>
         </section>
       ) : null}
@@ -242,26 +301,34 @@ export function TechnologyEditorial({
       {layout.safety.length ? (
         <section className="py-[clamp(52px,8vw,96px)]">
           <Container>
-            <div className="mx-auto grid max-w-280 gap-5 md:grid-cols-2">
-              {layout.safety.map((chapter, index) => (
-                <section
-                  key={chapter.heading}
-                  className={cn(
-                    "rounded-(--radius) border bg-card p-[clamp(24px,4vw,40px)] shadow-(--shadow-card-soft)",
-                    index === 0
-                      ? "border-line-card"
-                      : "border-line-card-hover bg-alt",
-                  )}
-                >
-                  <h2 className="font-display text-[clamp(26px,3vw,36px)] leading-[1.1] font-medium text-ink">
-                    {sourceHeadingText(chapter.heading)}
-                  </h2>
-                  <div className="mt-5">
-                    <SourceCopy blocks={chapter.body} />
-                  </div>
-                </section>
-              ))}
-            </div>
+            {isLaser && layout.safety.length === 2 ? (
+              <IndicationsContraindicationsTabs
+                indications={layout.safety[0]}
+                contraindications={layout.safety[1]}
+                locale={locale}
+              />
+            ) : (
+              <div className="mx-auto grid max-w-280 gap-5 md:grid-cols-2">
+                {layout.safety.map((chapter, index) => (
+                  <section
+                    key={chapter.heading}
+                    className={cn(
+                      "rounded-(--radius) border bg-card p-[clamp(24px,4vw,40px)] shadow-(--shadow-card-soft)",
+                      index === 0
+                        ? "border-line-card"
+                        : "border-line-card-hover bg-alt",
+                    )}
+                  >
+                    <h2 className="font-display text-[clamp(26px,3vw,36px)] leading-[1.1] font-medium text-ink">
+                      {sourceHeadingText(chapter.heading)}
+                    </h2>
+                    <div className="mt-5">
+                      <SourceCopy blocks={chapter.body} />
+                    </div>
+                  </section>
+                ))}
+              </div>
+            )}
           </Container>
         </section>
       ) : null}
@@ -269,43 +336,53 @@ export function TechnologyEditorial({
       {layout.stages.length ? (
         <section className="border-y border-line-hair bg-alt py-[clamp(52px,8vw,104px)]">
           <Container>
-            <div className="mx-auto max-w-280">
-              {layout.stages.map((chapter, index) => (
-                <article
-                  key={chapter.heading}
-                  // Equal columns: with uneven tracks, alternating the image's
-                  // order handed it the wide column and squeezed its own copy.
-                  className="grid items-center gap-6 border-b border-line-hair py-[clamp(26px,4vw,44px)] first:pt-0 last:border-b-0 last:pb-0 md:grid-cols-2 md:gap-12"
-                >
-                  {layout.processImages[index] ? (
-                    <SourceImage
-                      src={layout.processImages[index]}
-                      className={cn(
-                        "aspect-[16/10]",
-                        index % 2 === 1 && "md:order-2",
-                      )}
-                      sizes="(min-width:1280px) 610px, (min-width:768px) 46vw, 90vw"
-                    />
-                  ) : null}
-                  <div className="min-w-0">
-                    <ChapterHeading chapter={chapter} />
-                    <div className="mt-3">
-                      {/* The measure cap would stop the copy short of the photo
-                          it sits beside; here the column is the measure. */}
-                      <SourceCopy
-                        blocks={chapter.body}
-                        className="[&_p]:max-w-none"
+            {isLaser ? (
+              <ProcedureSlider
+                stages={layout.stages}
+                images={layout.processImages}
+                bookingHref={bookingHref}
+                bookingLabel={closingCtaLabel}
+                locale={locale}
+              />
+            ) : (
+              <div className="mx-auto max-w-280">
+                {layout.stages.map((chapter, index) => (
+                  <article
+                    key={chapter.heading}
+                    // Equal columns: with uneven tracks, alternating the image's
+                    // order handed it the wide column and squeezed its own copy.
+                    className="grid items-center gap-6 border-b border-line-hair py-[clamp(26px,4vw,44px)] first:pt-0 last:border-b-0 last:pb-0 md:grid-cols-2 md:gap-12"
+                  >
+                    {layout.processImages[index] ? (
+                      <SourceImage
+                        src={layout.processImages[index]}
+                        className={cn(
+                          "aspect-[16/10]",
+                          index % 2 === 1 && "md:order-2",
+                        )}
+                        sizes="(min-width:1280px) 610px, (min-width:768px) 46vw, 90vw"
                       />
+                    ) : null}
+                    <div className="min-w-0">
+                      <ChapterHeading chapter={chapter} />
+                      <div className="mt-3">
+                        {/* The measure cap would stop the copy short of the photo
+                            it sits beside; here the column is the measure. */}
+                        <SourceCopy
+                          blocks={chapter.body}
+                          className="[&_p]:max-w-none"
+                        />
+                      </div>
                     </div>
-                  </div>
-                </article>
-              ))}
-            </div>
+                  </article>
+                ))}
+              </div>
+            )}
           </Container>
         </section>
       ) : null}
 
-      {layout.sensor ? (
+      {!isLaser && layout.sensor ? (
         <section className="py-[clamp(52px,8vw,104px)]">
           <Container>
             <div className="mx-auto grid max-w-280 items-start gap-8 md:grid-cols-[minmax(0,1.15fr)_minmax(280px,.85fr)] md:gap-14">
