@@ -26,6 +26,11 @@ const endospheresHeroCta = {
   ru: "Записаться",
 } as const;
 
+/** English-only: no translated copy was supplied for this heading. */
+const laserTreatmentCardsTitle: Partial<Record<Locale, string>> = {
+  en: "Why Choose Our Laser Hair Removal?",
+};
+
 /**
  * Pages whose body follows the legacy technology grammar and so can be laid out
  * as an editorial article rather than dumped as one column of markdown.
@@ -68,6 +73,7 @@ export async function TechnologyDetailPage({
   const technology = await getPublishedTechnologyByPath(path, locale);
   if (!technology) notFound();
   const isEndospheres = technology.slug === "endospheres";
+  const isLaser = technology.slug === "laser";
   const isEditorial = EDITORIAL_SLUGS.has(technology.slug);
   const layout = isEditorial
     ? parseTechnologyMarkdown(technology.content.body)
@@ -222,6 +228,8 @@ export async function TechnologyDetailPage({
           serviceKey={technology.relatedService.slug}
           treatments={treatments}
           locale={locale}
+          title={isLaser ? laserTreatmentCardsTitle[locale] : undefined}
+          centerTitle={isLaser}
         />
       ) : null}
       {showBookingCta && technology.relatedService ? (

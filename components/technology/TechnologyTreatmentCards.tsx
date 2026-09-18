@@ -38,14 +38,20 @@ export function TechnologyTreatmentCards({
   treatments,
   locale,
   anchorId = "technology-treatments",
+  title,
+  centerTitle = false,
 }: {
   serviceKey: string;
   treatments: TechnologyTreatment[];
   locale: Locale;
   anchorId?: string;
+  /** Overrides the section heading (e.g. the laser page's own title). */
+  title?: string;
+  centerTitle?: boolean;
 }) {
   if (!treatments.length) return null;
   const t = copy[locale];
+  const heading = title ?? t.title;
   // Every laser option shares one group label, so it titles the section rather
   // than splitting it. Real body-area grouping needs labels from the clinic.
   const groupLabel = treatments[0].group;
@@ -63,15 +69,23 @@ export function TechnologyTreatmentCards({
       <Container>
         <div className="mx-auto max-w-280">
           {groupLabel ? (
-            <p className="font-sans text-meta font-medium tracking-[.15em] text-accent uppercase">
+            <p
+              className={cn(
+                "font-sans text-meta font-medium tracking-[.15em] text-accent uppercase",
+                centerTitle && "text-center",
+              )}
+            >
               {groupLabel}
             </p>
           ) : null}
           <h2
             id="technology-treatments-heading"
-            className="mt-3 font-display text-[clamp(34px,4.8vw,54px)] leading-[1.04] font-medium text-ink"
+            className={cn(
+              "mt-3 font-display text-[clamp(34px,4.8vw,54px)] leading-[1.04] font-medium text-ink",
+              centerTitle && "text-center",
+            )}
           >
-            {t.title}
+            {heading}
           </h2>
 
           <div className="mt-8 grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">

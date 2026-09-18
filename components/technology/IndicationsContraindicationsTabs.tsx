@@ -19,6 +19,11 @@ const PILL_LABEL: Partial<Record<Locale, { indications: string; contraindication
   },
 };
 
+/** English-only, like the pill wording above: no translated copy was supplied. */
+const SECTION_TITLE: Partial<Record<Locale, string>> = {
+  en: "Who Is This For?",
+};
+
 function listItems(chapter: TechnologyChapter) {
   return chapter.body.map((block) => plainText(block.replace(/^[-*+]\s+/u, "")));
 }
@@ -38,9 +43,15 @@ export function IndicationsContraindicationsTabs({
     contraindications: sourceHeadingText(contraindications.heading),
   };
   const active = tab === "indications" ? indications : contraindications;
+  const sectionTitle = SECTION_TITLE[locale];
 
   return (
     <div className="mx-auto max-w-280">
+      {sectionTitle ? (
+        <h2 className="mb-6 text-center font-display text-[clamp(28px,3.4vw,40px)] leading-[1.1] font-medium text-ink">
+          {sectionTitle}
+        </h2>
+      ) : null}
       <div
         role="tablist"
         className="inline-flex w-full flex-col gap-1 rounded-full border border-line-hair bg-alt p-1 sm:flex-row sm:gap-0"
