@@ -1,0 +1,937 @@
+{
+  "capturedAt": "2026-09-21T17:11:24.044Z",
+  "service": {
+    "slug": "facial",
+    "images": [
+      "/media/home/facial.jpg"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "treatment-01",
+        "displayOrder": 0,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Cosmetologist consultation",
+            "summary": "Cosmetologist consultation is an individual meeting in which the specialist conducts a detailed skin assessment, determines its type, identifies problems, and selects the optimal care and procedures. The consultation helps to create a personalized plan to achieve healthy, well-groomed, and beautiful skin.",
+            "description": "Cosmetologist consultation is an individual meeting in which the specialist conducts a detailed skin assessment, determines its type, identifies problems, and selects the optimal care and procedures. The consultation helps to create a personalized plan to achieve healthy, well-groomed, and beautiful skin.\n\n**Advantages of the procedure:**\n\n- Immediate understanding of your skin condition: identification of problems and characteristics.\n- Personalized approach: selection of procedures and home care according to your skin type.\n- Prevention and support: helps prevent signs of aging and maintain skin health.\n- Expert diagnosis: recommendations are based on a professional evaluation of your skin.\n\n**What results you will get:**\n\n- Clear understanding of your skin condition.\n- Individual recommendations for care and procedures.\n- Selection of home products to maintain results.\n- Comprehensive solution to skin problems.\n\n**Course:**\n\nThe consultation is conducted once, and can be repeated if necessary to adjust the program.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "35 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Kosmetologin konsultaatio",
+            "summary": "Kosmetologin konsultaatio on yksilöllinen tapaaminen, jossa asiantuntija suorittaa yksityiskohtaisen ihon arvioinnin, määrittää sen tyypin, tunnistaa ongelmat ja valitsee optimaalisen hoidon ja toimenpiteet. Konsultaatio auttaa laatimaan henkilökohtaisen suunnitelman terveellisen, hyvin hoidetun ja kauniin ihon saavuttamiseksi.",
+            "description": "Kosmetologin konsultaatio on yksilöllinen tapaaminen, jossa asiantuntija suorittaa yksityiskohtaisen ihon arvioinnin, määrittää sen tyypin, tunnistaa ongelmat ja valitsee optimaalisen hoidon ja toimenpiteet. Konsultaatio auttaa laatimaan henkilökohtaisen suunnitelman terveellisen, hyvin hoidetun ja kauniin ihon saavuttamiseksi.\n\n**Menettelyn edut:**\n\n- Välitön ymmärrys ihosi tilasta: ongelmien ja ominaisuuksien tunnistaminen.\n- Henkilökohtainen lähestymistapa: hoitojen ja kotihoidon valinta ihotyyppisi mukaan.\n- Ennaltaehkäisy ja tuki: auttaa ehkäisemään ikääntymisen merkkejä ja ylläpitämään ihon terveyttä.\n- Asiantuntijan diagnoosi: suositukset perustuvat ammattimaiseen ihon arviointiin.\n\n**Mitkä tulokset saat:**\n\n- Selkeä käsitys ihosi tilasta.\n- Yksilölliset suositukset hoitoihin ja toimenpiteisiin.\n- Kotituotteiden valinta tulosten ylläpitämiseksi.\n- Kattava ratkaisu ihon ongelmiin.\n\n**Kurssi:**\n\nKonsultaatio suoritetaan kerran, ja se voidaan tarvittaessa toistaa ohjelman säätämiseksi.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "35 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Консультация косметолога",
+            "summary": "Консультация косметолога — это индивидуальная встреча, на которой специалист проводит детальный осмотр кожи, определяет её тип, выявляет проблемы и подбирает оптимальный уход и процедуры. Консультация помогает составить персональный план для достижения здоровой, ухоженной и красивой кожи.",
+            "description": "Консультация косметолога — это индивидуальная встреча, на которой специалист проводит детальный осмотр кожи, определяет её тип, выявляет проблемы и подбирает оптимальный уход и процедуры. Консультация помогает составить персональный план для достижения здоровой, ухоженной и красивой кожи.\n\n**Преимущества процедуры:**\n\n- Персональный подход: учитываются все особенности кожи и образа жизни.\n- Экспертная диагностика: выявляются причины несовершенств и подбирается правильный уход.\n- Эффективность: грамотно составленный план позволяет быстрее достичь желаемого результата.\n- Профилактика: консультация помогает предупредить возрастные изменения и сохранить здоровье кожи.\n\n**Какие результаты вы получите?**\n\n- Чёткое понимание состояния вашей кожи.\n- Индивидуальные рекомендации по уходу и процедурам.\n- Подбор домашних средств для поддержания результата.\n- Комплексное решение проблем кожи.\n\n**Курс:**\n\nКонсультация проводится один раз, при необходимости повторно для корректировки программы.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "35 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-02",
+        "displayOrder": 1,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Endosphere Therapy for the Face",
+            "summary": "Endosphere therapy for the face is a modern cosmetic procedure that uses a special device with rollers made of spheres vibrating at high frequency. This technology has gained wide popularity in aesthetic medicine due to its anti-aging and therapeutic effects.",
+            "description": "Endosphere therapy for the face is a modern cosmetic procedure that uses a special device with rollers made of spheres vibrating at high frequency. This technology has gained wide popularity in aesthetic medicine due to its anti-aging and therapeutic effects.\n\n**Key aspects of endosphere therapy for the face:**\n\n**Mechanism of action:**\n\n- The device creates micro-vibrations and compression effects on the facial tissues. This improves microcirculation, lymphatic drainage, and skin tone.\n- As a result, collagen and elastin production is stimulated, which enhances skin elasticity and reduces wrinkles.\n\n**Indications for the procedure:**\n\n- Age-related skin changes (wrinkles, loss of firmness).\n- Facial puffiness, especially around the eyes.\n- Uneven skin tone.\n- Loss of skin tone and sagging.\n\n**Benefits:**\n\n- Low invasiveness and no recovery period.\n- Improved overall skin condition after the first sessions.\n- Comprehensive effect: not only an improved appearance but also solutions for lymphatic and circulatory system issues.\n\n**Course of procedures:**\n\n- A course of 6–12 sessions is recommended, with intervals of 3–7 days between them, depending on the skin condition and the patient's goals.\n\n**Results:**\n\n- Skin tightening and wrinkle reduction.\n- Reduced puffiness and improved facial contours.\n- Decreased pigmentation and improved skin tone.\n\nEndosphere therapy for the face is considered a safe and effective procedure suitable for all skin types. It can be used as a standalone treatment or combined with other cosmetic techniques.\n\n**Endosphere therapy with skincare and alginate mask:**\n\n- Duration: 1 hour.\n- What's included: Massage with the Endosphere device, followed by skincare and application of an alginate mask.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "110 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Endospheres-hoito kasvoille",
+            "summary": "Endospheres-hoito kasvoille on moderni kosmetologinen menetelmä, jossa käytetään erityistä laitetta, jossa on värähtelevät sfäärirullat. Tämä teknologia on saavuttanut laajaa suosiota esteettisessä lääketieteessä sen ikääntymistä ehkäisevien ja terapeuttisten vaikutusten vuoksi.",
+            "description": "Endospheres-hoito kasvoille on moderni kosmetologinen menetelmä, jossa käytetään erityistä laitetta, jossa on värähtelevät sfäärirullat. Tämä teknologia on saavuttanut laajaa suosiota esteettisessä lääketieteessä sen ikääntymistä ehkäisevien ja terapeuttisten vaikutusten vuoksi.\n\n**Endospheres-hoidon keskeiset kohdat kasvoille:**\n\n**Toimintaperiaate:**\n\n- Laite tuottaa mikrovärähtelyjä ja kompressiopainetta kasvojen kudoksiin. Tämä parantaa mikroverenkiertoa, lymfakiertoa ja lisää ihon kimmoisuutta.\n- Hoidon tuloksena stimuloidaan kollageenin ja elastaanin tuotantoa, mikä tekee ihosta kiinteämmän ja vähentää ryppyjä.\n\n**Hoitoa suositellaan, kun:**\n\n- Iho on menettänyt kimmoisuutensa tai siinä on ryppyjä.\n- Kasvoissa on turvotusta, erityisesti silmien alueella.\n- Ihonväri on epätasainen.\n- Iho on veltostunut tai menettänyt hehkunsa.\n\n**Edut:**\n\n- Hoito on vähäinvaasinen eikä vaadi toipumisaikaa.\n- Iho näyttää terveemmältä jo ensimmäisten hoitokertojen jälkeen.\n- Kokonaisvaltainen vaikutus: ei ainoastaan paranna ihon ulkonäköä, vaan myös edistää lymfakiertoa ja verenkiertoa.\n\n**Hoitokurssi:**\n\n- Suositellaan 6–12 hoitokerran sarjaa, jossa hoitojen väli on 3–7 päivää riippuen ihon kunnosta ja tavoitteista.\n\n**Tulokset:**\n\n- Iho kiinteytyy ja rypyt vähenevät.\n- Kasvojen turvotus vähenee ja ääriviivat paranevat.\n- Pigmentaation väheneminen ja ihon värin paraneminen.\n\nEndospheres-hoito kasvoille on turvallinen ja tehokas menetelmä, joka sopii erilaisille ihotyypeille. Se voidaan tehdä yksittäisenä hoitona tai yhdistää muihin kosmetologisiin hoitoihin.\n\n**Hoitojen kuvaukset:**\n\n**Endospheres-hoito kasvoille, johon sisältyy hoito ja alginaattinaamio:**\n\n- Kesto: 1 tunti.\n- Sisältö: Hieronta Endospheres-laitteella, hoitotuotteet ja alginaattinaamio.\n- Hinta: 110 euroa.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "110 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Эндосферотерапия для лица",
+            "summary": "Эндосферотерапия для лица — это современная косметологическая процедура, основанная на использовании специального аппарата с роликами, выполненными из сфер, которые вибрируют с высокой частотой. Эта технология получила широкое распространение в эстетической медицине благодаря своим анти-возрастным и терапевтическим эффектам.",
+            "description": "Эндосферотерапия для лица — это современная косметологическая процедура, основанная на использовании специального аппарата с роликами, выполненными из сфер, которые вибрируют с высокой частотой. Эта технология получила широкое распространение в эстетической медицине благодаря своим анти-возрастным и терапевтическим эффектам.\n\n**Основные аспекты эндосферотерапии для лица:**\n\n**Принцип действия**:\n\n- Аппарат создает микровибрации и компрессионное воздействие на ткани лица. Это способствует улучшению микроциркуляции, лимфодренажа и повышению тонуса кожи.\n- В результате процедуры происходит стимуляция выработки коллагена и эластина, что способствует упругости кожи и уменьшению морщин.\n\n**Показания к процедуре**:\n\n- Возрастные изменения кожи (морщины, потеря упругости).\n- Отечность лица, особенно в области глаз.\n- Неравномерный цвет кожи.\n- Потеря тонуса и увядание кожи.\n\n**Преимущества**:\n\n- Низкая инвазивность и отсутствие реабилитационного периода.\n- Улучшение общего состояния кожи уже после первых сеансов.\n- Комплексный эффект: не только улучшение внешнего вида, но и решение проблем с лимфатической системой и кровообращением.\n\n**Курс процедур**:\n\n- Рекомендуется проходить курс из 6-12 сеансов с интервалом 3-7 дней между ними, в зависимости от состояния кожи и целей пациента.\n\n**Результаты**:\n\n- Подтяжка кожи и уменьшение морщин.\n- Уменьшение отеков и улучшение контуров лица.\n- Снижение проявлений пигментации и улучшение цвета лица.\n\nЭндосферотерапия для лица считается безопасной и эффективной процедурой, которая подходит для людей с различными типами кожи и может использоваться как самостоятельная терапия или в комплексе с другими косметологическими методиками.\n\n**Эндосферотерапия с уходом и альгинатной маской**:\n\n- **Продолжительность**: 1 час.\n- **Что входит**: Массаж с использованием аппарата эндосфера, последующий уход и нанесение альгинатной маски.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "110 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-03",
+        "displayOrder": 2,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Facial cleansing",
+            "summary": "Facial cleansing is a procedure for deep cleaning the skin from impurities, excess sebum, and dead skin cells. It helps prevent inflammations, reduce pore size, and improve the overall condition of the skin. Depending on the skin type and needs, one of the following methods is chosen.",
+            "description": "Facial cleansing is a procedure for deep cleaning the skin from impurities, excess sebum, and dead skin cells. It helps prevent inflammations, reduce pore size, and improve the overall condition of the skin. Depending on the skin type and needs, one of the following methods is chosen.\n\n- **Mechanical cleansing:** performed manually using sterile instruments, effectively removes comedones and deep impurities.\n- **Apparatus cleansing:** performed using ultrasound or vacuum technologies, gently and carefully cleanses the skin.\n- **Combined cleansing:** combines mechanical and apparatus methods, providing the maximum result.\n\n**Advantages of the procedure:**\n\n- Effective cleaning: removes impurities and excess sebum.\n- Inflammation prevention: reduces the risk of acne formation.\n- Improved appearance: the skin becomes fresher and smoother.\n- Suitable for all skin types: the method is selected individually.\n\n**What results you will get:**\n\n- Clean and fresh skin.\n- Pore reduction and smoother texture.\n- Reduced inflammation and prevention of breakouts.\n- Healthy and well-groomed facial appearance.\n\n**Course:**\n\nIt is recommended to undergo the procedure every 1–2 months depending on the condition of the skin.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "85 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Kasvojen puhdistus",
+            "summary": "Kasvojen puhdistus on toimenpide, joka syväpuhdistaa ihoa epäpuhtauksista, ylimääräisestä talista ja kuolleista ihosoluista. Se auttaa ehkäisemään tulehduksia, pienentämään ihohuokosia ja parantamaan ihon yleistä kuntoa. Ihotyypin ja tarpeiden mukaan valitaan yksi seuraavista menetelmistä.",
+            "description": "Kasvojen puhdistus on toimenpide, joka syväpuhdistaa ihoa epäpuhtauksista, ylimääräisestä talista ja kuolleista ihosoluista. Se auttaa ehkäisemään tulehduksia, pienentämään ihohuokosia ja parantamaan ihon yleistä kuntoa. Ihotyypin ja tarpeiden mukaan valitaan yksi seuraavista menetelmistä.\n\n- **Mekaaninen puhdistus:** suoritetaan käsin steriilejä välineitä käyttäen, poistaa tehokkaasti mustapäitä ja syviä epäpuhtauksia.\n- **Laitepuhdistus:** suoritetaan ultraääni- tai imutekniikoilla, puhdistaa ihoa hellävaraisesti ja tarkasti.\n- **Yhdistetty puhdistus:** yhdistää mekaanisen ja laitepuhdistuksen, saavuttaen maksimaalisen tuloksen.\n\n**Menettelyn edut:**\n\n- Tehokas puhdistus: poistaa epäpuhtaudet ja ylimääräisen talin.\n- Tulehdusten ehkäisy: vähentää aknen muodostumisen riskiä.\n- Parantunut ulkonäkö: iho näyttää raikkaammalta ja tasaisemmalta.\n- Sopii kaikille ihotyypeille: menetelmä valitaan yksilöllisesti.\n\n**Mitkä tulokset saat:**\n\n- Puhtaan ja raikkaan ihon.\n- Ihohuokosten supistuminen ja tasaisempi tekstuuri.\n- Tulehdusten väheneminen ja uusien näppyjen ehkäisy.\n- Terve ja hyvin hoidetun näköinen iho.\n\n**Kurssi:**\n\nSuositellaan toistamaan 1–2 kuukauden välein ihon kunnosta riippuen.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "85 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Чистка лица",
+            "summary": "Чистка лица — это процедура глубокого очищения кожи от загрязнений, излишков себума и ороговевших клеток. Она помогает предотвратить воспаления, сузить поры и улучшить общее состояние кожи. В зависимости от особенностей и потребностей кожи подбирается один из вариантов чистки.",
+            "description": "Чистка лица — это процедура глубокого очищения кожи от загрязнений, излишков себума и ороговевших клеток. Она помогает предотвратить воспаления, сузить поры и улучшить общее состояние кожи. В зависимости от особенностей и потребностей кожи подбирается один из вариантов чистки.\n\n- **Механическая чистка:** проводится вручную с помощью стерильных инструментов, позволяет эффективно удалить комедоны и глубокие загрязнения.\n- **Аппаратная чистка:** выполняется с использованием ультразвука или вакуумных технологий, мягко и бережно очищает кожу.\n- **Комбинированная чистка:** сочетает механический и аппаратный методы, что обеспечивает максимальный результат.\n\n**Преимущества процедуры:**\n\n- Эффективное очищение: удаляются загрязнения и избыток себума.\n- Профилактика воспалений: уменьшается риск образования акне.\n- Улучшение внешнего вида: кожа становится более свежей и ровной.\n- Подходит для всех типов кожи: метод подбирается индивидуально.\n\n**Какие результаты вы получите?**\n\n- Чистую и свежую кожу.\n- Сужение пор и выравнивание текстуры.\n- Снижение воспалений и профилактику высыпаний.\n- Здоровый и ухоженный вид лица.\n\n**Курс:**\n\nРекомендуется проводить процедуру раз в 1–2 месяца в зависимости от состояния кожи.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "85 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-04",
+        "displayOrder": 3,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Individual care with professional Israeli Shor cosmetics",
+            "summary": "Individual care with professional Israeli Shor cosmetics  is a procedure tailored to your skin type and current needs. Shor cosmetics combine active ingredients and modern technologies, effectively addressing a variety of tasks — from deep cleansing to intensive lifting.",
+            "description": "Individual care with professional Israeli Shor cosmetics  is a procedure tailored to your skin type and current needs. Shor cosmetics combine active ingredients and modern technologies, effectively addressing a variety of tasks — from deep cleansing to intensive lifting.\n\n**Procedure options:**\n\n- **Clean, Relax and Go** — comprehensive cleansing and hydration, soothing irritation, restoring comfort and freshness. Suitable for all skin types and ideal for maintaining healthy, radiant skin.\n- **Boost and Go** — restores skin tone and radiance, energizes the skin, and improves its appearance. Recommended for dull and tired skin.\n- **Lift and Go** — intensive lifting care aimed at increasing firmness, smoothing wrinkles, and strengthening the facial contour. Suitable for mature skin.\n\n**Advantages of the procedure:**\n\n- Personalized approach: care is selected according to specific skin needs and issues.\n- Comprehensive effect: cleansing, nutrition, restoration, and rejuvenation in one procedure.\n- Safety and comfort: Shor cosmetics are hypoallergenic and suitable for all skin types.\n- Immediate result: noticeable improvements after the first session.\n\n**What results you will get:**\n\n- Clean, fresh, and radiant skin.\n- Improved tone and elasticity.\n- Reduced irritation and blemishes.\n- Lifting effect and overall rejuvenation.\n\n**Course:**\n\nA course of 4–6 procedures with a 1–2 week interval is recommended for lasting results.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "110 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Henkilökohtainen hoito ammattimaisilla israelilaisilla Shor-kosmetiikalla",
+            "summary": "Henkilökohtainen hoito ammattimaisilla israelilaisilla Shor-kosmetiikalla on toimenpide, joka räätälöidään ihotyyppisi ja sen nykyisten tarpeiden mukaan. Shor-kosmetiikka yhdistää aktiivisia ainesosia ja moderneja teknologioita, mikä mahdollistaa tehokkaan hoidon eri tarpeisiin — syväpuhdistuksesta intensiiviseen kohotukseen.",
+            "description": "Henkilökohtainen hoito ammattimaisilla israelilaisilla Shor-kosmetiikalla on toimenpide, joka räätälöidään ihotyyppisi ja sen nykyisten tarpeiden mukaan. Shor-kosmetiikka yhdistää aktiivisia ainesosia ja moderneja teknologioita, mikä mahdollistaa tehokkaan hoidon eri tarpeisiin — syväpuhdistuksesta intensiiviseen kohotukseen.\n\n**Hoito vaihtoehdot:**\n\n- **Clean, Relax and Go** — kokonaisvaltainen puhdistus ja kosteutus, rauhoittaa ihoärsytystä ja palauttaa ihon mukavuuden ja raikkauden. Sopii kaikille ihotyypeille ja ihanteellinen ihon terveyden ja säihkeen ylläpitämiseen.\n- **Boost and Go** — palauttaa ihon sävyn ja hehkun, energisoi ihoa ja parantaa sen ulkonäköä. Suositellaan samealle ja väsyneelle iholle.\n- **Lift and Go** — intensiivinen kohottava hoito, joka lisää kiinteyttä, tasoittaa ryppyjä ja vahvistaa kasvojen muotoa. Sopii ikääntyvälle iholle.\n\n**Menettelyn edut:**\n\n- Henkilökohtainen lähestymistapa: hoito valitaan ihon erityistarpeiden ja ongelmien mukaan.\n- Kattava vaikutus: puhdistus, ravitseminen, palauttaminen ja ihon uudistaminen yhdessä hoidossa.\n- Turvallisuus ja mukavuus: Shor-kosmetiikka on hypoallergeenista ja sopii kaikille ihotyypeille.\n- Välitön tulos: näkyviä muutoksia ensimmäisen hoidon jälkeen.\n\n**Mitkä tulokset saat:**\n\n- Puhdas, raikas ja säteilevä iho.\n- Parantunut ihon sävy ja kimmoisuus.\n- Vähemmän ärsytystä ja epäpuhtauksia.\n- Kohottava vaikutus ja yleinen ihon uudistuminen.\n\n**Kurssi:**\n\nSuositellaan 4–6 hoidon kurssia 1–2 viikon välein kestävän tuloksen saavuttamiseksi.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "110 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Индивидуальный уход на профессиональной израильской косметике Shor",
+            "summary": "Индивидуальный уход на профессиональной израильской косметике Shor — это процедура, которая подбирается по типу кожи и её текущим потребностям. Косметика Shor сочетает активные компоненты и современные технологии, позволяя эффективно решать разные задачи: от глубокого очищения до интенсивного лифтинга.",
+            "description": "Индивидуальный уход на профессиональной израильской косметике Shor — это процедура, которая подбирается по типу кожи и её текущим потребностям. Косметика Shor сочетает активные компоненты и современные технологии, позволяя эффективно решать разные задачи: от глубокого очищения до интенсивного лифтинга.\n\n**Варианты процедуры:**\n\n- **Clean, Relax and Go** — комплексное очищение и увлажнение кожи, снятие раздражений, восстановление комфорта и свежести. Подходит для всех типов кожи и идеально для поддержания здоровья и сияния.\n- **Boost and Go** — процедура для восстановления тонуса и сияния, заряжает кожу энергией и улучшает её внешний вид. Рекомендована для тусклой и уставшей кожи.\n- **Lift and Go** — интенсивный лифтинг-уход, направленный на повышение упругости, разглаживание морщин и укрепление овала лица. Подходит для возрастной кожи.\n\n**Преимущества процедуры:**\n\n- Индивидуальный подход: уход подбирается под конкретные задачи и особенности кожи.\n- Комплексное воздействие: очищение, питание, восстановление и омоложение в одной процедуре.\n- Безопасность и комфорт: косметика Shor гипоаллергенна и подходит для разных типов кожи.\n- Мгновенный результат: заметные изменения видны уже после первого сеанса.\n\n**Какие результаты вы получите?**\n\n- Чистую, свежую и сияющую кожу.\n- Улучшение тонуса и эластичности.\n- Снижение раздражений и высыпаний.\n- Лифтинг-эффект и общее омоложение.\n\n**Курс:**\n\nРекомендуется пройти курс из 4–6 процедур с интервалом 1–2 недели для стойкого результата.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "110 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-05",
+        "displayOrder": 4,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "BioRePeel",
+            "name": "Peeling",
+            "summary": "BioRePeel is a unique two-phase peel that gently exfoliates the skin's surface layer while stimulating regeneration processes and collagen production. Its formula includes trichloroacetic acid (TCA), amino acids, vitamins, and other active ingredients that work together to provide healthy, firm, and radiant skin.",
+            "description": "BioRePeel is a unique two-phase peel that gently exfoliates the skin's surface layer while stimulating regeneration processes and collagen production. Its formula includes trichloroacetic acid (TCA), amino acids, vitamins, and other active ingredients that work together to provide healthy, firm, and radiant skin.\n\n**Procedure benefits:**\n\n- Immediate effect: After just one session, your skin will appear smoother and more radiant.\n- Minimal invasiveness: The procedure is painless and does not require a lengthy recovery period.\n- Comprehensive action: The peel brightens dark spots, evens out skin texture, reduces pore size, and stimulates rejuvenation.\n- Suitable for all ages: This procedure is effective for both younger clients and those looking to slow down the aging process.\n\n**Expected results:**\n\n- Improved skin texture and tone.\n- Lightening of dark spots and a more even complexion.\n- Pore size reduction and minimization of fine lines.\n- Overall rejuvenation and a healthier appearance.\n\n**Course:**\n\nFor optimal results, a course of 4–6 treatments is recommended, with sessions spaced 1–2 weeks apart.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "BioRePeel",
+            "name": "Kuorinta",
+            "summary": "BioRePeel on ainutlaatuinen kaksivaiheinen kuorinta, joka kuorii hellävaraisesti ihon pintakerroksen, stimuloiden samalla ihon uudistumista ja kollageenin tuotantoa. Sen koostumus sisältää trikloorietikkahappoa (TCA), aminohappoja, vitamiineja ja muita aktiivisia aineosia, jotka toimivat yhdessä tarjoten terveemmän, kiinteämmän ja hehkuvamman ihon.",
+            "description": "BioRePeel on ainutlaatuinen kaksivaiheinen kuorinta, joka kuorii hellävaraisesti ihon pintakerroksen, stimuloiden samalla ihon uudistumista ja kollageenin tuotantoa. Sen koostumus sisältää trikloorietikkahappoa (TCA), aminohappoja, vitamiineja ja muita aktiivisia aineosia, jotka toimivat yhdessä tarjoten terveemmän, kiinteämmän ja hehkuvamman ihon.\n\n**Hoidon edut:**\n\n- Välitön vaikutus: Jo ensimmäisen hoitokerran jälkeen ihosi on sileämpi ja kirkkaampi.\n- Minimimäärä traumaattisuutta: Hoito on kivuton eikä vaadi pitkää palautumisaikaa.\n- Kokonaisvaltainen vaikutus: Kuorinta vaalentaa pigmenttiläiskiä, tasoittaa ihon tekstuuria, pienentää ihohuokosia ja stimuloi ihon nuorentumista.\n- Sopii kaikenikäisille: Hoito on tehokas sekä nuorille että ikääntyvää ihoa hoitaville asiakkaille.\n\n**Mitä tuloksia voit odottaa?**\n\n- Parantunut ihon rakenne ja sävy.\n- Pigmenttiläiskien vaalentuminen ja tasaisempi ihonväri.\n- Ihohuokosten supistuminen ja hienojen juonteiden väheneminen.\n- Yleinen ihon nuorentuminen ja terve ulkonäkö.\n\n**Kurssi:**\n\nParhaiden tulosten saavuttamiseksi suositellaan 4-6 hoitokerran sarjaa 1-2 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "BioRePeel",
+            "name": "Пилинг",
+            "summary": "BioRePeel — это уникальный двухфазный пилинг, который мягко отшелушивает верхний слой кожи, стимулируя процессы регенерации и выработку коллагена. В его состав входят трихлоруксусная кислота (TCA), аминокислоты, витамины и другие активные компоненты, которые работают комплексно, обеспечивая вам здоровую, упругую и сияющую кожу.",
+            "description": "BioRePeel — это уникальный двухфазный пилинг, который мягко отшелушивает верхний слой кожи, стимулируя процессы регенерации и выработку коллагена. В его состав входят трихлоруксусная кислота (TCA), аминокислоты, витамины и другие активные компоненты, которые работают комплексно, обеспечивая вам здоровую, упругую и сияющую кожу.\n\n#### **Преимущества процедуры:**\n\n- Мгновенный эффект: Уже после первого сеанса ваша кожа станет более гладкой и сияющей.\n- Минимальная травматичность: Процедура проходит без болезненных ощущений и длительного периода реабилитации.\n- Комплексное воздействие: Пилинг осветляет пигментные пятна, выравнивает текстуру кожи, уменьшает поры и стимулирует омоложение.\n- Подходит для любого возраста: Процедура эффективна как для молодых клиентов, так и для тех, кто желает замедлить возрастные изменения кожи.\n\n#### **Какие результаты вы получите?**\n\n- Улучшение текстуры и тонуса кожи.\n- Осветление пигментных пятен и выравнивание тона.\n- Сужение пор и уменьшение мелких морщин.\n- Общее омоложение и здоровый внешний вид кожи.\n\n#### **Курс:**\n\nДля достижения наилучших результатов рекомендуется пройти курс из 4-6 процедур с интервалом 1-2 недели.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "120 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-06",
+        "displayOrder": 5,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Exopeel",
+            "name": "Peeling",
+            "summary": "Exopeel is a modern chemical peel designed for deep skin renewal. It contains a combination of acids and active components that effectively work in the dermis, stimulating regeneration and collagen production, improving skin texture and tone.",
+            "description": "Exopeel is a modern chemical peel designed for deep skin renewal. It contains a combination of acids and active components that effectively work in the dermis, stimulating regeneration and collagen production, improving skin texture and tone.\n\n**Advantages of the procedure:**\n\n- Immediate result: skin becomes noticeably smoother and firmer after the first session.\n- Deep rejuvenation: reduces wrinkles, tightens the skin, and restores its density.\n- Imperfection correction: reduces pigmentation, post-acne marks, and minor scars.\n- Suitable for all ages: effective for both early signs of aging and more pronounced age-related changes.\n\n**What results you will get:**\n\n- Reduction of wrinkles and improved skin elasticity.\n- Lightening of pigmentation and even skin tone.\n- Reduction of scars and post-acne marks.\n- Visible lifting effect and overall rejuvenation.\n\n**Course:**\n\nFor lasting results, a course of 3–4 procedures with a 3–4 week interval is recommended.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Exopeel",
+            "name": "Kuorinta",
+            "summary": "Exopeel on nykyaikainen kemiallinen kuorinta, joka on suunniteltu syväpuhdistamaan ja uudistamaan ihoa. Se sisältää yhdistelmän happoja ja aktiivisia aineosia, jotka vaikuttavat tehokkaasti dermiksessä, stimuloivat uudistumista ja kollageenin tuotantoa, parantaen ihon rakennetta ja sävyä.",
+            "description": "Exopeel on nykyaikainen kemiallinen kuorinta, joka on suunniteltu syväpuhdistamaan ja uudistamaan ihoa. Se sisältää yhdistelmän happoja ja aktiivisia aineosia, jotka vaikuttavat tehokkaasti dermiksessä, stimuloivat uudistumista ja kollageenin tuotantoa, parantaen ihon rakennetta ja sävyä.\n\n**Menettelyn edut:**\n\n- Välitön tulos: iho muuttuu huomattavasti sileämmäksi ja kiinteämmäksi ensimmäisen hoidon jälkeen.\n- Syvä uudistuminen: vähentää ryppyjä, kiinteyttää ihoa ja palauttaa sen tiheyden.\n- Epäpuhtauksien korjaus: vähentää pigmentaatiota, aknen jälkiä ja pieniä arpia.\n- Sopii kaikille ikäryhmille: tehokas sekä ensimmäisiin ikääntymisen merkkeihin että voimakkaampiin ikääntymisen muutoksiin.\n\n**Mitkä tulokset saat:**\n\n- Ryppyjen väheneminen ja ihon elastisuuden paraneminen.\n- Pigmentaation vaaleneminen ja ihon sävyn tasoituminen.\n- Arpien ja aknen jälkien väheneminen.\n- Näkyvä kohottava vaikutus ja yleinen ihon uudistuminen.\n\n**Kurssi:**\n\nKestävän tuloksen saavuttamiseksi suositellaan 3–4 hoidon kurssia 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Exopeel",
+            "name": "Пилинг",
+            "summary": "Exopeel — это современный химический пилинг, направленный на глубокое обновление кожи. В его состав входят комбинации кислот и активных компонентов, которые эффективно работают в дерме, стимулируя регенерацию и выработку коллагена, улучшая текстуру и тонус кожи.",
+            "description": "Exopeel — это современный химический пилинг, направленный на глубокое обновление кожи. В его состав входят комбинации кислот и активных компонентов, которые эффективно работают в дерме, стимулируя регенерацию и выработку коллагена, улучшая текстуру и тонус кожи.\n\n**Преимущества процедуры:**\n\n- Мгновенный результат: кожа становится заметно более гладкой и упругой уже после первой процедуры.\n- Глубокое омоложение: сокращает морщины, подтягивает кожу и восстанавливает её плотность.\n- Коррекция несовершенств: уменьшает пигментацию, следы постакне и мелкие рубцы.\n- Подходит для любого возраста: эффективно решает как первые признаки старения, так и выраженные возрастные изменения.\n\n**Какие результаты вы получите?**\n\n- Уменьшение морщин и улучшение эластичности кожи.\n- Осветление пигментации и выравнивание тона.\n- Сокращение рубцов и следов постакне.\n- Заметный лифтинг-эффект и общее омоложение.\n\n**Курс:**\n\nДля стойкого результата рекомендуется курс из 3–4 процедур с интервалом 3–4 недели.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "120 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-07",
+        "displayOrder": 6,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "PRX-T33",
+            "name": "Peeling",
+            "summary": "PRX-T33 is an innovative next-generation peel combining trichloroacetic acid (TCA), hydrogen peroxide, and kojic acid. Its unique formula allows it to act on the deeper layers of the skin without damaging the surface. This provides a biorevitalization effect without injections and without recovery time.",
+            "description": "PRX-T33 is an innovative next-generation peel combining trichloroacetic acid (TCA), hydrogen peroxide, and kojic acid. Its unique formula allows it to act on the deeper layers of the skin without damaging the surface. This provides a biorevitalization effect without injections and without recovery time.\n\n**Advantages of the procedure:**\n\n- No downtime: no peeling or redness, can be done any time of the year.\n- Biorevitalization effect: skin becomes firm, fresh, and radiant without injections.\n- Comprehensive action: reduces pigmentation, post-acne marks, wrinkles, and improves skin texture.\n- Painless: procedure is comfortable and suitable for all skin types.\n\n**What results you will get:**\n\n- Firm and lifted skin.\n- Even skin tone and texture.\n- Reduction of wrinkles and post-acne marks.\n- Healthy and natural skin glow.\n\n**Course:**\n\nA course of 4–5 procedures with a 1-week interval is recommended.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "PRX-T33",
+            "name": "Kuorinta",
+            "summary": "PRX-T33 on innovatiivinen uuden sukupolven kuorinta, joka yhdistää trikloorietikkahapon (TCA), vetyperoksidin ja koihappo. Sen ainutlaatuinen koostumus vaikuttaa ihon syvempiin kerroksiin vaurioittamatta pinnan kudoksia. Tämä tarjoaa biorevitalisaatiovaikutuksen ilman injektioita ja ilman palautumisaikaa.",
+            "description": "PRX-T33 on innovatiivinen uuden sukupolven kuorinta, joka yhdistää trikloorietikkahapon (TCA), vetyperoksidin ja koihappo. Sen ainutlaatuinen koostumus vaikuttaa ihon syvempiin kerroksiin vaurioittamatta pinnan kudoksia. Tämä tarjoaa biorevitalisaatiovaikutuksen ilman injektioita ja ilman palautumisaikaa.\n\n**Menettelyn edut:**\n\n- Ei toipumisaikaa: ei kuorintaa tai punoitusta, voidaan tehdä vuoden ympäri.\n- Biorevitalisaatiovaikutus: iho muuttuu kiinteäksi, raikkaaksi ja säteileväksi ilman injektioita.\n- Monipuolinen vaikutus: vähentää pigmentaatiota, aknen jälkiä, ryppyjä ja parantaa ihon rakennetta.\n- Kivuttomuus: hoito on mukava ja sopii kaikille ihotyypeille.\n\n**Mitkä tulokset saat:**\n\n- Kiinteä ja kohotettu iho.\n- Ihon sävyn ja tekstuurin tasoituminen.\n- Ryppyjen ja aknen jälkien väheneminen.\n- Terve ja luonnollinen ihon hehku.\n\n**Kurssi:**\n\nSuositellaan 4–5 hoidon kurssia 1 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "PRX-T33",
+            "name": "Пилинг",
+            "summary": "PRX-T33 — это инновационный пилинг нового поколения, который сочетает трихлоруксусную кислоту (TCA), перекись водорода и койевую кислоту. Уникальная формула позволяет активно воздействовать на глубокие слои кожи, не повреждая её поверхность. В результате вы получаете эффект биоревитализации без инъекций и периода восстановления.",
+            "description": "PRX-T33 — это инновационный пилинг нового поколения, который сочетает трихлоруксусную кислоту (TCA), перекись водорода и койевую кислоту. Уникальная формула позволяет активно воздействовать на глубокие слои кожи, не повреждая её поверхность. В результате вы получаете эффект биоревитализации без инъекций и периода восстановления.\n\n**Преимущества процедуры:**\n\n- Без реабилитации: отсутствует шелушение и покраснение, можно проводить в любое время года.\n- Эффект биоревитализации: упругая, свежая и сияющая кожа без уколов.\n- Комплексное воздействие: уменьшает пигментацию, следы постакне, морщины и улучшает текстуру кожи.\n- Безболезненность: процедура проходит комфортно и подходит для всех типов кожи.\n\n**Какие результаты вы получите?**\n\n- Подтянутую, упругую кожу.\n- Выравнивание тона и текстуры.\n- Уменьшение морщин и следов постакне.\n- Здоровый и естественный блеск кожи.\n\n**Курс:**\n\nРекомендуется пройти курс из 4–5 процедур с интервалом 1 неделю.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "120 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-08",
+        "displayOrder": 7,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Fractional Mesotherapy",
+            "summary": "Italian method of skin rejuvenation and renewal without injections\n\nMicroneedling fractional mesotherapy, also known as microneedling, is an innovative and highly effective procedure based on the Italian method of skin rejuvenation. It is performed using the Dermapen device together with specially selected meso-cocktails. The method activates the skin’s own resources, improves its texture and appearance, without aggressive intervention.\n\n**How the procedure works:**\nDuring the session, the Dermapen device is used — a pen-shaped tool with a tip of ultra-fine sterile needles that create micro-punctures at a depth of 0.4 to 4 mm. These micro-injuries trigger controlled skin micro-trauma, which stimulates natural regeneration processes without damaging the skin.\nAt the same time, individually selected serums or meso-cocktails enriched with active ingredients — vitamins, amino acids, peptides, and hyaluronic acid — are delivered into the skin.",
+            "description": "Italian method of skin rejuvenation and renewal without injections\n\nMicroneedling fractional mesotherapy, also known as microneedling, is an innovative and highly effective procedure based on the Italian method of skin rejuvenation. It is performed using the Dermapen device together with specially selected meso-cocktails. The method activates the skin’s own resources, improves its texture and appearance, without aggressive intervention.\n\n**How the procedure works:**\nDuring the session, the Dermapen device is used — a pen-shaped tool with a tip of ultra-fine sterile needles that create micro-punctures at a depth of 0.4 to 4 mm. These micro-injuries trigger controlled skin micro-trauma, which stimulates natural regeneration processes without damaging the skin.\nAt the same time, individually selected serums or meso-cocktails enriched with active ingredients — vitamins, amino acids, peptides, and hyaluronic acid — are delivered into the skin.\n\n**Effects of the procedure:**\n\n- Stimulation of collagen and elastin production\n\n- Skin becomes firmer, tighter, smoother; microcirculation and metabolism are improved\n\n- Rejuvenation and restoration, with a particularly visible effect in the eye area — the skin looks fresher and more radiant\n\n- Even tone and texture: reduction of pores, pigmentation, acne scars, and fine lines\n\n- Deep nourishment and strengthening: meso-cocktails supply active ingredients, boost immune defense and cellular metabolism\n\n**Indications:**\n\n- Dull, tired complexion\n\n- Loss of skin firmness\n\n- Fine wrinkles and dehydration\n\n- Post-acne, scars, enlarged pores\n\n- Skin recovery after sun exposure or stress\n\n**Course:**\n\n5–10 procedures with 7–14 day intervals. The first visible results appear after 1–2 sessions, while full skin regeneration is observed after 5–6 treatments.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Fraktionaalinen mesoterapia",
+            "summary": "**Italialainen ihon nuorennusmenetelmä ilman injektioita**\n\nMikroneulaus eli fraktionaalinen mesoterapia on innovatiivinen ja tehokas hoitomenetelmä, joka perustuu italialaiseen ihon nuorennustekniikkaan. Siinä käytetään Dermapen-laitetta sekä yksilöllisesti valittuja mesokoktaileja, jotka aktivoivat ihon omat uudistumisprosessit ja parantavat sen rakennetta ja ulkonäköä ilman aggressiivisia toimenpiteitä.\n\n**Miten hoito etenee:**\nHoidossa käytetään Dermapen-laitetta, joka muistuttaa kynää ja jonka kärjessä on steriilejä, erittäin ohuita neuloja. Neulat tekevät ihoon mikroskooppisia pistoja 0,4–4 mm syvyyteen, mikä aiheuttaa hallitun mikrotrauman ja käynnistää luonnollisen ihon uudistumisen ilman varsinaista vauriota.",
+            "description": "**Italialainen ihon nuorennusmenetelmä ilman injektioita**\n\nMikroneulaus eli fraktionaalinen mesoterapia on innovatiivinen ja tehokas hoitomenetelmä, joka perustuu italialaiseen ihon nuorennustekniikkaan. Siinä käytetään Dermapen-laitetta sekä yksilöllisesti valittuja mesokoktaileja, jotka aktivoivat ihon omat uudistumisprosessit ja parantavat sen rakennetta ja ulkonäköä ilman aggressiivisia toimenpiteitä.\n\n**Miten hoito etenee:**\nHoidossa käytetään Dermapen-laitetta, joka muistuttaa kynää ja jonka kärjessä on steriilejä, erittäin ohuita neuloja. Neulat tekevät ihoon mikroskooppisia pistoja 0,4–4 mm syvyyteen, mikä aiheuttaa hallitun mikrotrauman ja käynnistää luonnollisen ihon uudistumisen ilman varsinaista vauriota.\n\nSamalla ihoon viedään aktiivisia aineita sisältäviä seerumeita tai mesokoktaileja, kuten vitamiineja, aminohappoja, peptidejä ja hyaluronihappoa.\n\n**Hoidon vaikutukset:**\n\n- Kollageenin ja elastiinin tuotannon stimulointi\n\nIhosta tulee kiinteämpi, sileämpi ja elinvoimaisempi. Mikroverenkierto ja aineenvaihdunta paranevat.\n\n- Ihon nuorennus ja palautuminen\n\nEtenkin silmänympärysalueella iho kirkastuu ja saa levänneen ilmeen.\n\n- Tasainen ihon sävy ja rakenne\n\nHuokoset, pigmenttiläiskät, aknearpien jäljet ja hienot juonteet vähenevät.\n\n- Syvä ravitseminen ja ihon vahvistaminen\n\nMesokoktailit vahvistavat ihon immuniteettia ja solujen aineenvaihduntaa.\n\n**Hoidon aiheet:**\n\n- Väsynyt, samea iho\n- Kiinteyden menetys\n- Hienot juonteet ja kosteuden puute\n- Aknearvet, laajentuneet huokoset\n- Auringon tai stressin rasittama iho\n\n**Kurssi:**\n\n5–10 hoitokertaa 7–14 päivän välein. Ensimmäiset näkyvät tulokset havaitaan jo 1–2 hoidon jälkeen, ja solujen täydellinen uudistuminen tapahtuu noin 5–6 kerran jälkeen.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Фракционная мезотерапия",
+            "summary": "Итальянская методика омоложения и обновления кожи без инъекций\n\nМикроигольчатая фракционная мезотерапия, или микрондлинг, — это инновационная и высокоэффективная процедура, основанная на итальянской методике омоложения кожи с применением аппарата Dermapen и специально подобранных мезо-коктейлей. Метод позволяет активировать внутренние ресурсы кожи, улучшить её текстуру и внешний вид без агрессивного вмешательства.",
+            "description": "Итальянская методика омоложения и обновления кожи без инъекций\n\nМикроигольчатая фракционная мезотерапия, или микрондлинг, — это инновационная и высокоэффективная процедура, основанная на итальянской методике омоложения кожи с применением аппарата Dermapen и специально подобранных мезо-коктейлей. Метод позволяет активировать внутренние ресурсы кожи, улучшить её текстуру и внешний вид без агрессивного вмешательства.\n\n**Как проходит процедура:**\n\nВо время сеанса используется аппарат Dermapen — устройство в виде ручки с насадкой из тончайших стерильных игл, создающих микроуколы глубиной от 0,4 до 4 мм. Эти микроуколы вызывают контролируемую микро-травматизацию кожи и запускают естественные процессы регенерации, не повреждая её.\n\nОдновременно под кожу вводятся индивидуально подобранные сыворотки или мезо-коктейли, насыщенные активными веществами: витаминами, аминокислотами, пептидами и гиалуроновой кислотой.\n\n**Эффект от процедуры:**\n\n- Стимуляция выработки коллагена и эластина\n- Кожа становится более упругой, подтянутой и гладкой, улучшается микроциркуляция и обмен веществ.\n- Омоложение и восстановление\n- Особенно заметный эффект в области вокруг глаз — кожа становится более свежей и сияющей.\n- Ровный тон и текстура кожи\n- Уменьшается выраженность пор, пигментации, следов от акне и мелких морщин.\n- Глубокое питание и укрепление кожи\n- Мезококтейли насыщают кожу активными веществами, улучшают иммунную защиту и клеточный метаболизм.\n\n**Показания:**\n\n- Тусклый, уставший цвет лица\n- Потеря упругости кожи\n- Мелкие морщины и обезвоженность\n- Постакне, рубцы, расширенные поры\n- Подготовка и восстановление кожи после активного солнца или стрессов\n\n**Курс:**\n\n5–10 процедур с интервалом 7–14 дней. Первый заметный результат проявляется уже после 1–2 сеансов, а полная регенерация кожи наблюдается через 5–6 процедур.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "120 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-09",
+        "displayOrder": 8,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Facial lipolytics",
+            "summary": "Non-surgical contouring and reduction of localized fat deposits\n\nFacial lipolytic treatment is an injectable method aimed at reducing localized fat deposits and contouring the facial shape. It is especially effective in the area of the double chin, cheeks, and along the facial contour.\n\n**How the procedure works:**\nLipolytics are specialized formulations based on sodium deoxycholate, phosphatidylcholine, and other active components that trigger the process of lipolysis — the breakdown of fat cells. After the injection, the fat tissue gradually breaks down and is naturally eliminated from the body through the lymphatic system.",
+            "description": "Non-surgical contouring and reduction of localized fat deposits\n\nFacial lipolytic treatment is an injectable method aimed at reducing localized fat deposits and contouring the facial shape. It is especially effective in the area of the double chin, cheeks, and along the facial contour.\n\n**How the procedure works:**\nLipolytics are specialized formulations based on sodium deoxycholate, phosphatidylcholine, and other active components that trigger the process of lipolysis — the breakdown of fat cells. After the injection, the fat tissue gradually breaks down and is naturally eliminated from the body through the lymphatic system.\n\n**What the procedure provides:**\n\n- Reduction of volume in problem areas (double chin, jowls, etc.)\n- Pronounced lifting and tightening effect\n- Improvement of facial contours and overall shape\n- Reduction of puffiness\n- Increased skin tone and improved skin quality\n\n**How the procedure is performed:**\nThe procedure takes 15–20 minutes and is performed using fine needles and certified, latest-generation formulations. Mild swelling or redness may occur for 1–2 days, which is a normal reaction.\n\n**Course:**\n\nTo achieve lasting results, 2–5 procedures may be required with intervals of 7–10 days. The exact course is determined individually by the specialist during an in-person consultation.",
+            "imageAlt": null,
+            "durationLabel": "15 - 20 min",
+            "priceLabel": "80 € / 15 - 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Kasvojen lipolyysihoito",
+            "summary": "**Leuan ja kasvojen muotoilu ilman leikkausta**\n\nKasvojen lipolyysi on injektiomenetelmä, joka on suunniteltu vähentämään paikallisia rasvakertymiä ja muotoilemaan kasvojen piirteitä. Hoito on erityisen tehokas kaksoisleuan, poskien ja leukalinjan alueilla.\n\n**Miten hoito toimii:**\nLipolyyttiset valmisteet sisältävät natriumdeoksikolaattia, fosfatidyylikoliinia ja muita aktiivisia ainesosia, jotka käynnistävät lipolyysin eli rasvasolujen hajoamisen. Injektion jälkeen rasvakudos alkaa hajota ja poistuu kehosta luonnollisesti lymfajärjestelmän kautta.",
+            "description": "**Leuan ja kasvojen muotoilu ilman leikkausta**\n\nKasvojen lipolyysi on injektiomenetelmä, joka on suunniteltu vähentämään paikallisia rasvakertymiä ja muotoilemaan kasvojen piirteitä. Hoito on erityisen tehokas kaksoisleuan, poskien ja leukalinjan alueilla.\n\n**Miten hoito toimii:**\nLipolyyttiset valmisteet sisältävät natriumdeoksikolaattia, fosfatidyylikoliinia ja muita aktiivisia ainesosia, jotka käynnistävät lipolyysin eli rasvasolujen hajoamisen. Injektion jälkeen rasvakudos alkaa hajota ja poistuu kehosta luonnollisesti lymfajärjestelmän kautta.\n\n**Mitä hoito antaa:**\n\n- Rasvan väheneminen ongelma-alueilla (kaksoisleuka, posket jne.)\n- Selkeä kohottava ja kiinteyttävä vaikutus\n- Kasvojen ja leukalinjan muotojen parantuminen\n- Turvotuksen väheneminen\n- Iho kiinteytyy ja sen laatu paranee\n\n**Miten hoito etenee:**\nHoitokerta kestää noin 15–20 minuuttia ja tehdään ohuilla neuloilla sekä viimeisimmän sukupolven sertifioiduilla valmisteilla. Kevyttä turvotusta tai punoitusta saattaa esiintyä 1–2 päivän ajan, mikä on normaali reaktio.\n\n**Kurssi:**\n\nKestävän tuloksen saavuttamiseksi suositellaan 2–5 hoitokertaa noin 7–10 päivän välein. Tarkka hoitosuunnitelma laaditaan yksilöllisesti asiantuntijan tekemän konsultoinnin perusteella.",
+            "imageAlt": null,
+            "durationLabel": "15-20 min",
+            "priceLabel": "80 € / 15-20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Липолитики для лица",
+            "summary": "**Безоперационное моделирование овала и борьба с жировыми отложениями**\n\nПроцедура липолитиков для лица — это инъекционный метод коррекции, направленный на уменьшение локальных жировых отложений и моделирование контуров лица. Особенно эффективна в области второго подбородка, щёк, а также в зоне овала лица.",
+            "description": "**Безоперационное моделирование овала и борьба с жировыми отложениями**\n\nПроцедура липолитиков для лица — это инъекционный метод коррекции, направленный на уменьшение локальных жировых отложений и моделирование контуров лица. Особенно эффективна в области второго подбородка, щёк, а также в зоне овала лица.\n\n#### **Как действует процедура:**\n\nЛиполитики — это специальные препараты на основе дезоксихолата натрия, фосфатидилхолина и других активных компонентов, которые запускают процесс липолиза — расщепления жировых клеток. После инъекции жировая ткань постепенно разрушается и естественным образом выводится из организма через лимфатическую систему.\n\n#### **Что даёт процедура:**\n\n- Сокращение объёма в проблемных зонах (второй подбородок, брыли и пр.)\n\n- Выраженный эффект лифтинга и подтяжки кожи\n\n- Улучшение контуров лица и овала\n\n- Уменьшение отечности\n\n- Повышение тонуса кожи и улучшение её качества\n\n#### **Как проходит процедура:**\n\nПроцедура занимает 15–20 минут и проводится с использованием тонких игл и сертифицированных препаратов последнего поколения. Возможна небольшая отёчность или покраснение в течение 1-2 дней, что является нормальной реакцией.\n\n#### **Курс:**\n\nДля достижения стойкого результата может потребоваться от 2 до 5 процедур с интервалом в 7-10 дней. Точный курс подбирается индивидуально специалистом на очной консультации.",
+            "imageAlt": null,
+            "durationLabel": "15-20 мин",
+            "priceLabel": "80 € / 15-20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-10",
+        "displayOrder": 9,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Lip Augmentation",
+            "summary": "Lip augmentation is an injectable treatment using hyaluronic acid–based dermal fillers to enhance lip volume, define the lip contour, and achieve a hydrated, well-groomed appearance. The procedure allows correction of asymmetry, enhancement of the natural lip shape, and preservation of overall facial harmony.",
+            "description": "Lip augmentation is an injectable treatment using hyaluronic acid–based dermal fillers to enhance lip volume, define the lip contour, and achieve a hydrated, well-groomed appearance. The procedure allows correction of asymmetry, enhancement of the natural lip shape, and preservation of overall facial harmony.\n\n**Benefits of the procedure:**\n\n- **Natural-looking results:** lip shape and volume are tailored individually based on facial anatomy.\n\n- **Deep hydration:** hyaluronic acid improves the quality and condition of the lip skin.\n\n- **Minimal downtime:** mild swelling may occur and usually resolves within a few days.\n\n- **Reversibility:** if needed, the filler can be adjusted or dissolved.\n\n**What results can you expect?**\n\n- Fuller and more expressive lips.\n\n- A clear and well-defined lip contour.\n\n- A hydrated and fresh appearance.\n\n- Preservation of natural facial proportions.\n\n**Course:**\n\nThe procedure is performed as a single session. Maintenance treatments are carried out according to individual needs, typically every 6–12 months.\n\n**Price:** from **€220 to €480 per 1 ml** (depending on the product and volume used)",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "220 - 480 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Huulten täyttö",
+            "summary": "Huulten täyttö on injektiotoimenpide, jossa käytetään hyaluronihappopohjaisia täyteaineita huulten volyymin lisäämiseksi, ääriviivojen korostamiseksi ja kosteutetun, huolitellun ulkonäön saavuttamiseksi. Toimenpide mahdollistaa epäsymmetrian korjaamisen, huulten luonnollisen muodon korostamisen ja kasvojen harmonian säilyttämisen.",
+            "description": "Huulten täyttö on injektiotoimenpide, jossa käytetään hyaluronihappopohjaisia täyteaineita huulten volyymin lisäämiseksi, ääriviivojen korostamiseksi ja kosteutetun, huolitellun ulkonäön saavuttamiseksi. Toimenpide mahdollistaa epäsymmetrian korjaamisen, huulten luonnollisen muodon korostamisen ja kasvojen harmonian säilyttämisen.\n\n**Toimenpiteen edut:**\n\n- **Luonnollinen lopputulos:** huulten muoto ja volyymi suunnitellaan yksilöllisesti kasvojen anatomia huomioiden.\n\n- **Syvä kosteutus:** hyaluronihappo parantaa huulten ihon laatua.\n\n- **Lyhyt toipumisaika:** lievä turvotus on mahdollista ja häviää yleensä muutamassa päivässä.\n\n- **Palautettavuus:** tarvittaessa täyteaine voidaan korjata tai poistaa.\n\n**Mitä tuloksia saat?**\n\n- Täyteläisemmät ja ilmeikkäämmät huulet.\n\n- Selkeä ja siisti huulten rajaus.\n\n- Kosteutettu ja raikas ulkonäkö.\n\n- Luonnolliset ja tasapainoiset kasvojen mittasuhteet.\n\n**Kurssi:**\n\nToimenpide tehdään kertaluonteisesti. Ylläpitohoito yksilöllisen tarpeen mukaan, keskimäärin 6–12 kuukauden välein.\n\n**Hinta:** alkaen **275€ / 1 ml** (täyteaineesta ja määrästä riippuen)",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "275 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Увеличение губ",
+            "summary": "Увеличение губ — это инъекционная процедура с использованием филлеров на основе гиалуроновой кислоты, направленная на придание губам объёма, чёткого контура и увлажнённого, ухоженного вида. Процедура позволяет скорректировать асимметрию, подчеркнуть естественную форму губ и сохранить гармонию лица.",
+            "description": "Увеличение губ — это инъекционная процедура с использованием филлеров на основе гиалуроновой кислоты, направленная на придание губам объёма, чёткого контура и увлажнённого, ухоженного вида. Процедура позволяет скорректировать асимметрию, подчеркнуть естественную форму губ и сохранить гармонию лица.\n\n### Преимущества процедуры:\n\n- **Естественный результат:** форма и объём подбираются индивидуально с учётом анатомии лица.\n\n- **Глубокое увлажнение:** гиалуроновая кислота улучшает качество кожи губ.\n\n- **Минимальный период восстановления:** возможны незначительные отёки, которые проходят в течение нескольких дней.\n\n- **Обратимость:** при необходимости препарат может быть скорректирован или удалён.\n\n### Какие результаты вы получите?\n\n- Более объёмные и выразительные губы.\n\n- Чёткий и аккуратный контур.\n\n- Увлажнённый и свежий внешний вид.\n\n- Сохранение естественных пропорций лица.\n\n### Курс:\n\nПроцедура выполняется однократно. Повторная коррекция — по индивидуальным показаниям, в среднем через 6–12 месяцев.\n\n**Цена:** от **275 € за 1 мл** (в зависимости от препарата и объёма)",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "275 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-11",
+        "displayOrder": 10,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Facial Contouring with Dermal Fillers",
+            "summary": "Facial contouring is an injectable aesthetic procedure using hyaluronic acid–based dermal fillers to shape and enhance the contours of the face. The treatment helps restore lost volume, improve facial proportions, and highlight natural anatomical features.",
+            "description": "Facial contouring is an injectable aesthetic procedure using hyaluronic acid–based dermal fillers to shape and enhance the contours of the face. The treatment helps restore lost volume, improve facial proportions, and highlight natural anatomical features.\n\n**Possible treatment areas:**\n\n- cheekbones\n\n- chin\n\n- facial contour / jawline\n\n- nasolabial folds\n\n- marionette lines\n\n- jaw angles\n\n- temporal area\n\n**Benefits of the procedure:**\n\n- **Individual approach:** treatment areas and filler volume are tailored to the patient’s facial features.\n\n- **Immediate results:** visible improvement right after the procedure.\n\n- **Non-surgical method:** an alternative to surgical interventions.\n\n- **Natural rejuvenation:** subtle enhancement without affecting facial expressions.\n\n**What results can you expect?**\n\n- More defined and harmonious facial contours.\n\n- Restoration of volume in key areas.\n\n- Softening of folds and wrinkles.\n\n- A fresher and more rested appearance.\n\n**Course:**\n\nThe procedure is performed as a single session. The results typically last **9–18 months**, depending on the treated area and the product used.\n\n**Price:** from **€250 per 1 ml of filler**, total cost depends on the treated areas and volume used",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "250 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Kasvojen muotoilu täyteaineilla",
+            "summary": "Kasvojen muotoilu on injektiopohjainen hoitomenetelmä, jossa käytetään hyaluronihappopohjaisia täyteaineita kasvojen ääriviivojen muokkaamiseen ja korostamiseen. Toimenpide auttaa palauttamaan menetettyä volyymia, parantamaan kasvojen mittasuhteita ja tuomaan esiin kasvojen anatomisia piirteitä.",
+            "description": "Kasvojen muotoilu on injektiopohjainen hoitomenetelmä, jossa käytetään hyaluronihappopohjaisia täyteaineita kasvojen ääriviivojen muokkaamiseen ja korostamiseen. Toimenpide auttaa palauttamaan menetettyä volyymia, parantamaan kasvojen mittasuhteita ja tuomaan esiin kasvojen anatomisia piirteitä.\n\n**Mahdolliset hoitoalueet:**\n\n- poskipäät\n\n- leuka\n\n- kasvojen ovaali\n\n- nasolabiaalijuonteet\n\n- suupielten alapuoliset juonteet (marionettijuonteet)\n\n- alaleuan kulmat\n\n- ohimoalue\n\n**Toimenpiteen edut:**\n\n- **Yksilöllinen lähestymistapa:** hoitoalueet ja täyteaineen määrä valitaan kasvojen ominaisuuksien mukaan.\n\n- **Välitön vaikutus:** tulokset ovat nähtävissä heti hoidon jälkeen.\n\n- **Ei-kirurginen menetelmä:** vaihtoehto kirurgisille toimenpiteille.\n\n- **Luonnollinen nuorennus:** pehmeä korjaus ilman ilmeiden muuttumista.\n\n**Mitä tuloksia saat?**\n\n- Selkeämmät ja harmonisemmat kasvonpiirteet.\n\n- Volyymin palautuminen tarvittaville alueille.\n\n- Juonteiden ja ryppyjen pehmeneminen.\n\n- Raikkaampi ja levänneempi ulkonäkö.\n\n**Kurssi:**\n\nToimenpide tehdään kertaluonteisesti. Vaikutuksen kesto on noin 9–18 kuukautta hoitoalueesta ja käytetystä täyteaineesta riippuen.\n\n**Hinta:** alkaen **275 € / 1 ml täyteainetta**, kokonaishinta määräytyy hoitoalueiden ja käytetyn määrän mukaan",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "275 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Контурная пластика лица",
+            "summary": "Контурная пластика лица — это инъекционная методика коррекции и моделирования контуров лица с помощью филлеров на основе гиалуроновой кислоты. Процедура позволяет восстановить утраченный объём, улучшить пропорции лица и подчеркнуть его анатомические особенности.",
+            "description": "Контурная пластика лица — это инъекционная методика коррекции и моделирования контуров лица с помощью филлеров на основе гиалуроновой кислоты. Процедура позволяет восстановить утраченный объём, улучшить пропорции лица и подчеркнуть его анатомические особенности.\n\n### Возможные зоны коррекции:\n\n- скулы\n\n- подбородок\n\n- овал лица\n\n- носогубные складки\n\n- марионеточные линии\n\n- углы нижней челюсти\n\n- височная область\n\n### Преимущества процедуры:\n\n- **Индивидуальный подход:** подбор зон и объёма филлера под особенности лица.\n\n- **Мгновенный эффект:** результат заметен сразу после процедуры.\n\n- **Безоперационная методика:** альтернатива хирургическим вмешательствам.\n\n- **Естественное омоложение:** мягкая коррекция без изменения мимики.\n\n### Какие результаты вы получите?\n\n- Более чёткие и гармоничные контуры лица.\n\n- Восстановление объёма в нужных зонах.\n\n- Смягчение складок и морщин.\n\n- Более свежий и отдохнувший внешний вид.\n\n### Курс:\n\nПроцедура проводится однократно. Длительность эффекта — от 9 до 18 месяцев, в зависимости от зоны и используемого препарата.\n\n**Цена:** от 275 **€ за 1 мл филлера**, курс зависит от зон и объёмов введения",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "275 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-12",
+        "displayOrder": 11,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Thread Lifting",
+            "summary": "Thread lifting is a minimally invasive skin tightening and lifting procedure using absorbable threads, including **PDO threads and Aptos threads**. The treatment is designed to improve facial contours, strengthen soft tissues, and stimulate the body’s natural collagen production.\n\nAptos threads are known for their high strength and pronounced lifting effect, making them particularly effective for correcting age-related changes and enhancing the facial contour.",
+            "description": "Thread lifting is a minimally invasive skin tightening and lifting procedure using absorbable threads, including **PDO threads and Aptos threads**. The treatment is designed to improve facial contours, strengthen soft tissues, and stimulate the body’s natural collagen production.\n\nAptos threads are known for their high strength and pronounced lifting effect, making them particularly effective for correcting age-related changes and enhancing the facial contour.\n\n**Benefits of the procedure:**\n\n- **Pronounced lifting effect:** visible tissue tightening without surgery.\n\n- **Collagen stimulation:** gradual improvement in skin quality over time.\n\n- **Minimal trauma:** short recovery period.\n\n- **Long-lasting results:** effects can last up to 1.5–2 years.\n\n**What results can you expect?**\n\n- A firmer and more defined facial contour.\n\n- Improved skin density and elasticity.\n\n- Natural lifting effect without an “over-tightened” look.\n\n- Rejuvenation of the face and neck.\n\n**Course:**\n\nThe procedure is performed as a single session. The number and type of threads are selected individually during consultation.\n\n**Price:** from **€90**, depending on the number of threads, type (PDO or Aptos), and treatment area",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "90 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Lankakohotus",
+            "summary": "Lankakohotus on vähän invasiivinen ihon kiinteytys- ja kohotustoimenpide, jossa käytetään biohajoavia lankoja, mukaan lukien **PDO-langat ja Aptos-langat**. Hoito on suunniteltu parantamaan kasvojen ääriviivoja, vahvistamaan pehmytkudoksia ja stimuloimaan kehon omaa kollageenin tuotantoa.\n\nAptos-langat erottuvat korkealla kestävyydellään ja voimakkaalla kohottavalla vaikutuksellaan, minkä ansiosta ne soveltuvat erityisen hyvin ikääntymismuutosten ja kasvojen ovaalin korjaamiseen.",
+            "description": "Lankakohotus on vähän invasiivinen ihon kiinteytys- ja kohotustoimenpide, jossa käytetään biohajoavia lankoja, mukaan lukien **PDO-langat ja Aptos-langat**. Hoito on suunniteltu parantamaan kasvojen ääriviivoja, vahvistamaan pehmytkudoksia ja stimuloimaan kehon omaa kollageenin tuotantoa.\n\nAptos-langat erottuvat korkealla kestävyydellään ja voimakkaalla kohottavalla vaikutuksellaan, minkä ansiosta ne soveltuvat erityisen hyvin ikääntymismuutosten ja kasvojen ovaalin korjaamiseen.\n\n**Toimenpiteen edut:**\n\n- **Selkeä kohottava vaikutus:** näkyvä kudosten kohotus ilman leikkausta.\n\n- **Kollageenin stimulointi:** ihon laadun parantuminen ajan myötä.\n\n- **Vähäinen kudostrauma:** lyhyt toipumisaika.\n\n- **Pitkäkestoinen tulos:** vaikutus säilyy jopa 1,5–2 vuotta.\n\n**Mitä tuloksia saat?**\n\n- Kiinteämpi ja selkeämpi kasvojen ovaali.\n\n- Ihon tiheyden ja kimmoisuuden parantuminen.\n\n- Luonnollinen kohotus ilman “ylikiristettyä” vaikutelmaa.\n\n- Kasvojen ja kaulan nuorekkaampi ilme.\n\n**Kurssi:**\n\nToimenpide suoritetaan kertaluonteisesti. Lankojen määrä ja tyyppi valitaan yksilöllisesti konsultaatiossa.\n\n**Hinta:** alkaen **120 €**, riippuen lankojen määrästä, tyypistä (PDO tai Aptos) ja hoitoalueesta",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "120 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Нитевой лифтинг",
+            "summary": "Нитевой лифтинг — это малоинвазивная процедура подтяжки кожи с использованием рассасывающихся нитей, включая **PDO-нити и Аптос-нити**. Методика направлена на улучшение контуров лица, укрепление мягких тканей и стимуляцию выработки собственного коллагена.\n\nАптос-нити отличаются высокой прочностью и выраженным лифтинг-эффектом, что делает их особенно эффективными для коррекции возрастных изменений и овала лица.",
+            "description": "Нитевой лифтинг — это малоинвазивная процедура подтяжки кожи с использованием рассасывающихся нитей, включая **PDO-нити и Аптос-нити**. Методика направлена на улучшение контуров лица, укрепление мягких тканей и стимуляцию выработки собственного коллагена.\n\nАптос-нити отличаются высокой прочностью и выраженным лифтинг-эффектом, что делает их особенно эффективными для коррекции возрастных изменений и овала лица.\n\n### Преимущества процедуры:\n\n- **Выраженный лифтинг-эффект:** заметная подтяжка тканей без операции.\n\n- **Стимуляция коллагена:** улучшение качества кожи со временем.\n\n- **Минимальная травматичность:** короткий восстановительный период.\n\n- **Длительный результат:** эффект сохраняется до 1,5–2 лет.\n\n### Какие результаты вы получите?\n\n- Подтянутый и более чёткий овал лица.\n\n- Улучшение плотности и упругости кожи.\n\n- Естественный лифтинг без эффекта «перетянутости».\n\n- Омоложение лица и шеи.\n\n### Курс:\n\nПроцедура проводится однократно. Количество и тип нитей подбираются индивидуально после консультации.\n\n**Цена:** от 120 **€** в зависимости от количества нитей, типа (PDO или Аптос) и зоны коррекции.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "120 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-13",
+        "displayOrder": 12,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Pink Glow",
+            "name": "Biorevitalization",
+            "summary": "**Pink Glow** is an innovative injectable biorevitalization treatment designed to deeply hydrate the skin, improve its overall quality, and restore natural radiance. The formula combines hyaluronic acid, vitamins, amino acids, and antioxidants that work synergistically to enhance skin texture and tone.\n\n**How Pink Glow works:**\nThe product is injected into the superficial and mid-dermal layers of the skin, where it activates cellular metabolism, improves microcirculation, and hydrates tissues with moisture and essential nutrients. Thanks to its brightening and antioxidant properties, Pink Glow effectively combats dull skin tone, signs of fatigue, and early age-related changes. The skin becomes smoother, firmer, and visibly fresher.",
+            "description": "### Intensive radiance, even skin tone and a refreshed look\n\n**Pink Glow** is an innovative injectable biorevitalization treatment designed to deeply hydrate the skin, improve its overall quality, and restore natural radiance. The formula combines hyaluronic acid, vitamins, amino acids, and antioxidants that work synergistically to enhance skin texture and tone.\n\n**How Pink Glow works:**\nThe product is injected into the superficial and mid-dermal layers of the skin, where it activates cellular metabolism, improves microcirculation, and hydrates tissues with moisture and essential nutrients. Thanks to its brightening and antioxidant properties, Pink Glow effectively combats dull skin tone, signs of fatigue, and early age-related changes. The skin becomes smoother, firmer, and visibly fresher.\n\n**Key feature:**\nPink Glow is ideal for the **delicate eye area** — it helps reduce the appearance of dark circles, dryness, and fine lines, improves skin quality, and gives the eyes a well-rested, refreshed appearance without weighing down the tissues.\n\n**Results after the procedure:**\n\n- Deep and long-lasting skin hydration\n- Visible radiance and a “fresh skin” effect\n- Brighter, more even skin tone\n- Reduction of fatigue and stress signs\n- Smoother fine lines\n- Improved condition of the eye area\n- Firmer, smoother, well-cared-for skin after the first treatment\n\n**Who is it for:**\nSuitable for all skin types. Recommended for dull skin, dehydration, uneven skin tone, early signs of aging, and for patients wishing to improve the **eye area**. Recommended age — **25+**.\n\n**Course:**\n\n3 treatments at intervals of 2–3 weeks. The maintenance effect lasts up to **6 months**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "165 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Pink Glow",
+            "name": "Biorevitalisaatio",
+            "summary": "**Pink Glow** on innovatiivinen injektoitava biorevitalisaatiovalmiste, joka on suunniteltu ihon syväkosteutukseen, laadun parantamiseen ja luonnollisen hehkun palauttamiseen. Valmisteen koostumus yhdistää hyaluronihapon, vitamiinit, aminohapot ja antioksidantit, jotka vaikuttavat ihoon kokonaisvaltaisesti parantaen sen rakennetta ja sävyä.\n\n**Miten Pink Glow vaikuttaa:**\nValmiste injektoidaan ihon pinnallisiin ja keskisyviin kerroksiin, missä se aktivoi solujen aineenvaihduntaa, parantaa mikroverenkiertoa ja kyllästää kudokset kosteudella ja ravintoaineilla. Kirkastavan ja antioksidatiivisen vaikutuksensa ansiosta Pink Glow auttaa tehokkaasti torjumaan sameaa ihon sävyä, väsymyksen merkkejä ja ensimmäisiä ikääntymismuutoksia. Ihosta tulee sileämpi, kiinteämpi ja visuaalisesti raikkaampi.",
+            "description": "### Intensiivinen hehku, tasaisempi ihonsävy ja raikas katse\n\n**Pink Glow** on innovatiivinen injektoitava biorevitalisaatiovalmiste, joka on suunniteltu ihon syväkosteutukseen, laadun parantamiseen ja luonnollisen hehkun palauttamiseen. Valmisteen koostumus yhdistää hyaluronihapon, vitamiinit, aminohapot ja antioksidantit, jotka vaikuttavat ihoon kokonaisvaltaisesti parantaen sen rakennetta ja sävyä.\n\n**Miten Pink Glow vaikuttaa:**\nValmiste injektoidaan ihon pinnallisiin ja keskisyviin kerroksiin, missä se aktivoi solujen aineenvaihduntaa, parantaa mikroverenkiertoa ja kyllästää kudokset kosteudella ja ravintoaineilla. Kirkastavan ja antioksidatiivisen vaikutuksensa ansiosta Pink Glow auttaa tehokkaasti torjumaan sameaa ihon sävyä, väsymyksen merkkejä ja ensimmäisiä ikääntymismuutoksia. Ihosta tulee sileämpi, kiinteämpi ja visuaalisesti raikkaampi.\n\n**Valmisteen erityispiirre:**\nPink Glow soveltuu erinomaisesti **herkälle silmänympärysalueelle** — se vähentää tummien silmänalusten, kuivuuden ja hienojen juonteiden näkyvyyttä, parantaa ihon laatua ja antaa katseelle levänneen ja raikkaan ilmeen ilman kudosten raskautta.\n\n**Tulokset hoidon jälkeen:**\n\n- Syvä ja pitkäkestoinen ihon kosteutus\n- Selkeä hehku ja “raikkaan ihon” vaikutus\n- Ihonsävyn kirkastuminen ja tasoittuminen\n- Väsymyksen ja stressin merkkien väheneminen\n- Hienojen juonteiden silottuminen\n- Silmänympärysihon kunnon paraneminen\n- Kiinteämpi, hoidettu ja sileä iho jo ensimmäisen hoidon jälkeen\n\n**Kenelle:**\nSopii kaikille ihotyypeille. Suositellaan samealle iholle, kosteusköyhälle iholle, epätasaiselle ihonsävylle, ensimmäisiin ikääntymismuutoksiin sekä potilaille, jotka haluavat parantaa **silmänympärysihon** kuntoa. Suositeltu ikä — **25+**.\n\n**Kurssi:**\n\n3 hoitoa 2–3 viikon välein. Ylläpitävä vaikutus kestää jopa **6 kuukautta**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "165 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Pink Glow",
+            "name": "Биоревитализация",
+            "summary": "**Pink Glow** — это инновационный инъекционный препарат для биоревитализации, направленный на глубокое увлажнение кожи, улучшение её качества и восстановление естественного сияния. Формула препарата сочетает гиалуроновую кислоту, витамины, аминокислоты и антиоксиданты, которые комплексно воздействуют на кожу, улучшая её текстуру и тон.\n\n**Как работает Pink Glow:**\nПрепарат вводится в поверхностные и средние слои кожи, активируя клеточный обмен, улучшая микроциркуляцию и насыщая ткани влагой и питательными веществами. За счёт осветляющего и антиоксидантного действия Pink Glow эффективно борется с тусклым цветом лица, следами усталости и первыми возрастными изменениями. Кожа становится более гладкой, плотной и визуально свежей.",
+            "description": "**Pink Glow** — это инновационный инъекционный препарат для биоревитализации, направленный на глубокое увлажнение кожи, улучшение её качества и восстановление естественного сияния. Формула препарата сочетает гиалуроновую кислоту, витамины, аминокислоты и антиоксиданты, которые комплексно воздействуют на кожу, улучшая её текстуру и тон.\n\n**Как работает Pink Glow:**\nПрепарат вводится в поверхностные и средние слои кожи, активируя клеточный обмен, улучшая микроциркуляцию и насыщая ткани влагой и питательными веществами. За счёт осветляющего и антиоксидантного действия Pink Glow эффективно борется с тусклым цветом лица, следами усталости и первыми возрастными изменениями. Кожа становится более гладкой, плотной и визуально свежей.\n\n**Особенность препарата:**\nPink Glow идеально подходит для **деликатной зоны вокруг глаз** — он уменьшает проявления тёмных кругов, сухости и мелких морщин, улучшает качество кожи и придаёт взгляду отдохнувший, свежий вид без утяжеления тканей.\n\n**Результат после процедуры:**\n\n- Глубокое и пролонгированное увлажнение кожи\n- Выраженное сияние и «эффект свежего лица»\n- Осветление и выравнивание тона кожи\n- Уменьшение признаков усталости и стресса\n- Сглаживание мелких морщин\n- Улучшение состояния кожи вокруг глаз\n- Более плотная, ухоженная и гладкая кожа уже после первой процедуры\n\n**Для кого:**\nПодходит для любого типа кожи. Рекомендуется при тусклом цвете лица, обезвоженности, неровном тоне, первых возрастных изменениях, а также для пациентов, которые хотят улучшить состояние кожи **вокруг глаз**. Рекомендованный возраст — **25+**.\n\n**Курс:**\n3 процедуры с интервалом 2–3 недели. Поддерживающий эффект сохраняется до **6 месяцев**.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "165 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-14",
+        "displayOrder": 13,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "RRS® HA Long Lasting",
+            "name": "Biorevitalization",
+            "summary": "**RRS® HA Long Lasting** is a sterile dermal implant (Class III) based on **BDDE-crosslinked, resorbable hyaluronic acid (21 mg / 3 mL)**, stabilized with an amino acid antioxidant buffer. The product is designed to address signs of photoaging, dermal atrophy, and decreased skin quality, in cases where increased skin density and visible smoothing of folds are required.\n\n**How RRS® HA Long Lasting works:**\nThanks to stabilized crosslinked hyaluronic acid, the product provides a pronounced hydrating reservoir and structural skin support. The gradual release technology helps maintain long-lasting results. As a result, key skin parameters such as hydration, turgor, and elasticity improve, while the appearance of wrinkles and skin folds is visibly reduced.",
+            "description": "### Skin builder: hydration, crease correction and improvement of skin quality\n\n**RRS® HA Long Lasting** is a sterile dermal implant (Class III) based on **BDDE-crosslinked, resorbable hyaluronic acid (21 mg / 3 mL)**, stabilized with an amino acid antioxidant buffer. The product is designed to address signs of photoaging, dermal atrophy, and decreased skin quality, in cases where increased skin density and visible smoothing of folds are required.\n\n**How RRS® HA Long Lasting works:**\nThanks to stabilized crosslinked hyaluronic acid, the product provides a pronounced hydrating reservoir and structural skin support. The gradual release technology helps maintain long-lasting results. As a result, key skin parameters such as hydration, turgor, and elasticity improve, while the appearance of wrinkles and skin folds is visibly reduced.\n\n**Key feature:**\nRRS® HA Long Lasting is used for smoothing creases and folds and for “skin building” in areas where structural support and improved tissue quality are needed. Injection protocols commonly include the nasolabial folds, the area around the nasal ala and nostril angle, the cheek area (for volume and skin quality support), marionette lines, and the jawline.\n\n**Results after the procedure:**\n\n- More hydrated and denser skin with improved turgor\n- Smoothing of creases, including nasolabial folds\n- Softening of wrinkles and signs of photoaging\n- More even skin texture and a firmer, well-defined facial appearance\n\n**Who is it for:**\nFor patients with signs of photoaging (loss of firmness, wrinkles and folds, deterioration of skin quality) as well as dermal atrophy, when more than a “vitamin” effect is needed and a more structural approach is required.\n\n**Course:** \n\nIn many cases, noticeable improvement is observed after a single procedure. Further treatment strategy (repeat or maintenance sessions) is determined individually by the physician, depending on skin condition and crease severity.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "290 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "RRS® HA Long Lasting",
+            "name": "Biorevitalisaatio",
+            "summary": "**RRS® HA Long Lasting** on steriili dermalinen implantti (Class III), joka perustuu BDDE-silloitettuun resorboituvaan hyaluronihappoon **21 mg / 3 mL**, stabiloituna aminohappoja sisältävällä antioksidanttisella puskurilla. Valmiste on kehitetty fotovanhenemisen, dermiksen atrofian ja heikentyneen ihonlaadun hoitoon tilanteissa, joissa tarvitaan ihon tiheyden lisäämistä ja näkyvää ihopoimujen tasoittumista.\n\n**Miten RRS® HA Long Lasting vaikuttaa:**\nStabiloitu silloitettu hyaluronihappo muodostaa ihoon tehokkaan kosteutta sitovan varaston ja tarjoaa rakenteellista tukea. Aktiivisten komponenttien asteittainen vapautuminen mahdollistaa pitkäkestoisen vaikutuksen. Hoidon seurauksena ihon kosteustasapaino, kimmoisuus ja elastisuus paranevat, ja ryppyjen sekä ihopoimujen näkyvyys vähenee.",
+            "description": "### Skin builder: kosteutus, juonteiden korjaus ja ihon laadun parantaminen\n\n**RRS® HA Long Lasting** on steriili dermalinen implantti (Class III), joka perustuu BDDE-silloitettuun resorboituvaan hyaluronihappoon **21 mg / 3 mL**, stabiloituna aminohappoja sisältävällä antioksidanttisella puskurilla. Valmiste on kehitetty fotovanhenemisen, dermiksen atrofian ja heikentyneen ihonlaadun hoitoon tilanteissa, joissa tarvitaan ihon tiheyden lisäämistä ja näkyvää ihopoimujen tasoittumista.\n\n**Miten RRS® HA Long Lasting vaikuttaa:**\nStabiloitu silloitettu hyaluronihappo muodostaa ihoon tehokkaan kosteutta sitovan varaston ja tarjoaa rakenteellista tukea. Aktiivisten komponenttien asteittainen vapautuminen mahdollistaa pitkäkestoisen vaikutuksen. Hoidon seurauksena ihon kosteustasapaino, kimmoisuus ja elastisuus paranevat, ja ryppyjen sekä ihopoimujen näkyvyys vähenee.\n\n**Keskeinen ominaisuus:**\nRRS® HA Long Lasting -valmistetta käytetään ihopoimujen ja juonteiden tasoittamiseen sekä ihon “rakentamiseen” alueilla, joissa tarvitaan kudosten rakenteellista tukea. Injektiokaavioissa korostuvat erityisesti nasolabiaaliset poimut, nenän siiven ja sieraimen kulman alue, poskipäät (ihon laadun ja volyymin tukeminen), marionettijuonteet sekä alaleuan linja.\n\n**Tulokset hoidon jälkeen:**\n\n- Kosteutetumpi ja tiiviimpi iho, parempi ihon kimmoisuus\n- Ihopoimujen, mukaan lukien nasolabiaalisten poimujen, tasoittuminen\n- Ryppyjen ja fotovanhenemisen merkkien pehmeneminen\n- Tasaisempi ihon rakenne ja huoliteltu, ryhdikäs ilme\n\n**Kenelle:**\nPotilaille, joilla on fotovanhenemisen merkkejä (ihon kimmoisuuden heikkeneminen, rypyt ja poimut, ihon laadun muutokset) sekä dermiksen atrofiaa, kun pelkkä biorevitalisaatio ei ole riittävä ja tarvitaan rakenteellisempaa korjausta.\n\n**Kurssi:**\n\nMonissa tapauksissa selkeä parannus on havaittavissa jo yhden hoitokerran jälkeen. Jatko- ja ylläpitohoito suunnitellaan yksilöllisesti lääkärin toimesta ihon kunnon ja poimujen voimakkuuden mukaan.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "290 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "RRS® HA Long Lasting",
+            "name": "Биоревитализация",
+            "summary": "**Skin builder: увлажнение + коррекция заломов и улучшение качества кожи**\n\n**RRS® HA Long Lasting** — стерильный дермальный имплант (Class III) на основе **BDDE-сшитой резорбируемой гиалуроновой кислоты 21 mg / 3 mL**, стабилизированной **аминокислотным антиоксидантным буфером**. Препарат создан для работы с проявлениями фотостарения, дермальной атрофии и снижением качества кожи, когда важно получить **более плотную кожу и видимое разглаживание складок**.",
+            "description": "**Skin builder: увлажнение + коррекция заломов и улучшение качества кожи**\n\n**RRS® HA Long Lasting** — стерильный дермальный имплант (Class III) на основе **BDDE-сшитой резорбируемой гиалуроновой кислоты 21 mg / 3 mL**, стабилизированной **аминокислотным антиоксидантным буфером**. Препарат создан для работы с проявлениями фотостарения, дермальной атрофии и снижением качества кожи, когда важно получить **более плотную кожу и видимое разглаживание складок**.\n\n**Как работает RRS® HA Long Lasting:**\nЗа счёт стабилизированной сшитой гиалуроновой кислоты препарат обеспечивает выраженный гидрорезерв и поддержку кожи, а технология постепенного высвобождения компонентов помогает сохранить эффект во времени. В результате улучшаются параметры кожи (увлажнённость, тургор, эластичность), а также визуально уменьшается выраженность морщин и складок.\n\n**Ключевая особенность (то, зачем его выбирают):**\nRRS® HA Long Lasting применяют для **разглаживания заломов и складок** и для «строительства» кожи в зонах, где нужна поддержка структуры: в схемах введения отдельно отмечаются **носогубная борозда, область у крыла носа/угла ноздри, зона скул (работа с объёмом/качеством), линии марионеток и линия нижней челюсти**.\n\n**Результат после процедуры:**\n\n- Более увлажнённая, плотная кожа с улучшенным тургором\n- Разглаживание заломов (в том числе носогубных складок)\n- Смягчение морщин и признаков фотостарения\n- Более ровная текстура кожи и «собранный» вид лица\n\n**Для кого:**\nПациентам с признаками **фотостарения** и его проявлениями (снижение упругости, морщины/складки, изменения качества кожи), а также при **дермальной атрофии**, когда требуется не только “витаминный” эффект, а более структурная коррекция.\n\n**Курс:**\nЧасто выраженное улучшение отмечается **уже после одной процедуры**; дальнейшая тактика (повтор/поддержка) подбирается врачом по состоянию кожи и выраженности заломов.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "290 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-15",
+        "displayOrder": 14,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "GOURI",
+            "name": "Biorevitalization",
+            "summary": "Next-generation injectable rejuvenation\n\nGOURI is the world’s first liquid polycaprolactone (PCL) filler that spreads evenly in the tissues and stimulates the natural production of collagen throughout the entire face. This is not just biorevitalization — it is a revolutionary anti-aging technique that restores skin density, firmness, and its internal support framework, without altering facial features or creating an “overfilled” look.",
+            "description": "Next-generation injectable rejuvenation\n\nGOURI is the world’s first liquid polycaprolactone (PCL) filler that spreads evenly in the tissues and stimulates the natural production of collagen throughout the entire face. This is not just biorevitalization — it is a revolutionary anti-aging technique that restores skin density, firmness, and its internal support framework, without altering facial features or creating an “overfilled” look.\n\n**How GOURI works:**\nUnlike traditional fillers, GOURI does not simply fill specific areas, but stimulates the skin from within, encouraging it to restore its own lost structure. The product is fully biocompatible and biodegradable, requires no cannulas, and is easily administered with a fine needle.\n\n**Effects of the procedure:**\n\n- Renewal and strengthening of the collagen framework\n\n- Lifted, “structured” face without losing natural expression\n\n- Increased skin density and elasticity\n\n- Smoothing of fine and medium wrinkles\n\n- Hydration and overall improvement of skin quality\n\n**Who is it for:**\nThe procedure is ideal for women and men aged 30+, experiencing skin laxity, reduced tone, visible lines, and less defined facial contours.\n\n**Course:**\n\nIt is recommended to undergo 2–3 sessions at 4-week intervals, followed by maintenance sessions once every 6 months.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "450 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "GOURI",
+            "name": "Biorevitalisaatio",
+            "summary": "GOURI on maailman ensimmäinen nestemäinen PCL (polylaktidihappo) -täyteaine, joka jakautuu tasaisesti kudoksissa ja käynnistää luonnollisen kollageenin tuotannon koko kasvojen alueella. Tämä ei ole pelkästään biorevitalisaatio — vaan vallankumouksellinen ikääntymistä ehkäisevä hoito, joka palauttaa iholle sen tiheyden, kimmoisuuden ja tukirakenteen ilman kasvonpiirteiden muuttumista tai keinotekoista ulkonäköä.\n\n**Miten GOURI toimii:**\nToisin kuin perinteiset täyteaineet, GOURI ei täytä ihoa pistemäisesti, vaan stimuloi ihoa sisältäpäin aktivoimaan sen oman rakenteen uudelleenmuodostumisen. Valmiste on täysin bioyhteensopiva ja biohajoava, eikä sen käyttämiseen tarvita kanyylia. Injektio tehdään ohuella neulalla ja toimenpide on lähes kivuton.",
+            "description": "GOURI on maailman ensimmäinen nestemäinen PCL (polylaktidihappo) -täyteaine, joka jakautuu tasaisesti kudoksissa ja käynnistää luonnollisen kollageenin tuotannon koko kasvojen alueella. Tämä ei ole pelkästään biorevitalisaatio — vaan vallankumouksellinen ikääntymistä ehkäisevä hoito, joka palauttaa iholle sen tiheyden, kimmoisuuden ja tukirakenteen ilman kasvonpiirteiden muuttumista tai keinotekoista ulkonäköä.\n\n**Miten GOURI toimii:**\nToisin kuin perinteiset täyteaineet, GOURI ei täytä ihoa pistemäisesti, vaan stimuloi ihoa sisältäpäin aktivoimaan sen oman rakenteen uudelleenmuodostumisen. Valmiste on täysin bioyhteensopiva ja biohajoava, eikä sen käyttämiseen tarvita kanyylia. Injektio tehdään ohuella neulalla ja toimenpide on lähes kivuton.\n\n**Hoidon vaikutukset:**\n\n- Kollageenirakenteen uudistuminen ja vahvistuminen\n- Luonnollinen kasvojen kohotus ilman ilmeiden muuttumista\n- Iho muuttuu kiinteämmäksi ja kimmoisammaksi\n- Pienten ja keskisyvien juonteiden tasoittuminen\n- Syväkosteutus ja ihon yleisen laadun parantuminen\n\n**Kenelle hoito sopii:**\nErinomainen valinta naisille ja miehille 30 ikävuodesta alkaen, joilla esiintyy ihon veltostumista, sävyn heikkenemistä, selkeitä ilmejuonteita tai kasvojen muotojen pehmenemistä.\n\n**Kurssi:**\n\n2–3 hoitokertaa 4 viikon välein. Tämän jälkeen ylläpitohoito noin 6 kuukauden välein.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "450 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "GOURI",
+            "name": "Биоревитализация",
+            "summary": "**Инъекционное омоложение нового поколения**\n\nGOURI — первый в мире жидкий полимолочная кислота (PCL)-филлер, который равномерно распределяется в тканях и запускает естественную выработку коллагена по всему лицу. Это не просто биоревитализация — это революционная антивозрастная методика, возвращающая коже плотность, упругость и внутренний каркас, без изменения черт лица и \"перекачанных\" эффектов.",
+            "description": "**Инъекционное омоложение нового поколения**\n\nGOURI — первый в мире жидкий полимолочная кислота (PCL)-филлер, который равномерно распределяется в тканях и запускает естественную выработку коллагена по всему лицу. Это не просто биоревитализация — это революционная антивозрастная методика, возвращающая коже плотность, упругость и внутренний каркас, без изменения черт лица и \"перекачанных\" эффектов.\n\n#### **Как действует GOURI:**\n\nВ отличие от традиционных препаратов, GOURI не точечно заполняет, а стимулирует кожу изнутри, заставляя её самостоятельно восстанавливать утраченную структуру. Препарат полностью биосовместим и биоразлагаем, не требует канюль и легко вводится тонкой иглой.\n\n#### **Эффект от процедуры:**\n\n- Обновление и укрепление коллагенового каркаса\n\n- Подтянутое, «собранное» лицо без потери естественности\n\n- Повышение плотности и эластичности кожи\n\n- Сглаживание мелких и средних морщин\n\n- Увлажнение и улучшение качества кожи\n\n#### **Кому подойдёт:**\n\nПроцедура идеально подходит для женщин и мужчин 30+, у которых появилась дряблость, снижение тонуса, выраженные линии и контуры лица стали менее чёткими.\n\n#### **Курс:**\n\nРекомендуется 2–3 процедуры с интервалом в 4 недели, затем поддерживающие процедуры 1 раз в 6 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "450 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-16",
+        "displayOrder": 15,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Miracle Facelift",
+            "name": "Biorevitalization",
+            "summary": "Lifting effect without surgery or aggressive interventions\n\nMiracle Facelift is an innovative next-generation injectable procedure that combines the properties of biorevitalization and bio-reinforcement. The formula, based on polynucleotides, peptides, and hyaluronic acid, deeply restores the skin structure, giving the face defined contours, firmness, and a natural “lifting” effect without altering facial features.\n\n**How Miracle Facelift works:**\nThe unique composition of the product acts on several levels simultaneously:",
+            "description": "Lifting effect without surgery or aggressive interventions\n\nMiracle Facelift is an innovative next-generation injectable procedure that combines the properties of biorevitalization and bio-reinforcement. The formula, based on polynucleotides, peptides, and hyaluronic acid, deeply restores the skin structure, giving the face defined contours, firmness, and a natural “lifting” effect without altering facial features.\n\n**How Miracle Facelift works:**\nThe unique composition of the product acts on several levels simultaneously:\n\n- Polynucleotides activate cellular regeneration and stimulate collagen synthesis\n\n- Hyaluronic acid provides deep hydration\n\n- Peptides strengthen and restore the dermal framework of the skin\n\nThe procedure promotes natural rejuvenation, skin densification, and improved microcirculation, helping to eliminate dull complexion, fine wrinkles, and reduced tone.\n\n**Effects of the procedure:**\n\n- Visible lifting effect and restoration of defined facial contours\n\n- Increased skin density and improved texture\n\n- Elimination of signs of fatigue and dehydration\n\n- Reduction of wrinkles and improvement of skin tone\n\n- Support of anti-aging processes from within\n\n**Course:**\n\n2–3 procedures with 3–4 week intervals. The effect develops gradually and lasts up to 6 months.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "220 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Miracle Facelift",
+            "name": "Biorevitalisaatio",
+            "summary": "**Kirurgiton kohotus ilman aggressiivisia toimenpiteitä**\n\nMiracle Facelift on uuden sukupolven injektiomenetelmä, joka yhdistää biorevitalisaation ja bioarmeerauksen ominaisuudet. Hoito perustuu polynukleotideihin, peptideihin ja hyaluronihappoon, jotka vaikuttavat syvälle ihoon, palauttaen sen rakenteen, kiinteyden ja selkeät kasvonpiirteet — ilman luonnollisuuden menetystä tai keinotekoista ulkonäköä.",
+            "description": "**Kirurgiton kohotus ilman aggressiivisia toimenpiteitä**\n\nMiracle Facelift on uuden sukupolven injektiomenetelmä, joka yhdistää biorevitalisaation ja bioarmeerauksen ominaisuudet. Hoito perustuu polynukleotideihin, peptideihin ja hyaluronihappoon, jotka vaikuttavat syvälle ihoon, palauttaen sen rakenteen, kiinteyden ja selkeät kasvonpiirteet — ilman luonnollisuuden menetystä tai keinotekoista ulkonäköä.\n\n**Miten Miracle Facelift toimii:**\nValmisteen ainutlaatuinen koostumus vaikuttaa useilla tasoilla:\n\n- Polynukleotidit aktivoivat solujen uudistumisen ja kollageenin tuotannon\n- Hyaluronihappo kosteuttaa syvältä ja parantaa ihon joustavuutta\n- Peptidit vahvistavat ja uudistavat ihon tukirakenteita\n\nHoidon tuloksena iho nuorentuu luonnollisesti, sen tiheys kasvaa ja mikroverenkierto paranee. Samea ihonsävy, pienet juonteet ja väsymyksen merkit vähenevät näkyvästi.\n\n**Hoidon vaikutukset:**\n\n- Selkeä kasvojen kohotus ja kasvonmuotojen palautuminen\n- Parantunut ihon tiheys ja tasaisempi rakenne\n- Väsyneen ja kuivan ihon virkistyminen\n- Juonteiden ja epätasaisen sävyn väheneminen\n- Ikääntymismuutosten ehkäisy solutasolla\n\n**Kurssi:**\n\n2–3 hoitokertaa 3–4 viikon välein. Vaikutus voimistuu ajan myötä ja kestää jopa 6 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "220 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Miracle Facelift",
+            "name": "Биоревитализация",
+            "summary": "**Лифтинг-эффект без хирургии и агрессивных вмешательств**\n\nMiracle Facelift - это инновационная инъекционная процедура нового поколения, сочетающая свойства биоревитализации и биоармирования. Препарат на основе полинуклеотидов, пептидов и гиалуроновой кислоты глубоко восстанавливает структуру кожи, придавая лицу чёткие контуры, упругость и эффект \"подтяжки\" без утраты естественных черт.",
+            "description": "**Лифтинг-эффект без хирургии и агрессивных вмешательств**\n\nMiracle Facelift - это инновационная инъекционная процедура нового поколения, сочетающая свойства биоревитализации и биоармирования. Препарат на основе полинуклеотидов, пептидов и гиалуроновой кислоты глубоко восстанавливает структуру кожи, придавая лицу чёткие контуры, упругость и эффект \"подтяжки\" без утраты естественных черт.\n\n#### **Как работает Miracle Facelift:**\n\nУникальный состав препарата воздействует одновременно на нескольких уровнях:\n\n- Полинуклеотиды активируют клеточную регенерацию и стимулируют синтез коллагена\n\n- Гиалуроновая кислота обеспечивает глубокое увлажнение\n\n- Пептиды укрепляют и восстанавливают дермальный каркас кожи\n\nПроцедура способствует естественному омоложению, уплотнению кожи и улучшению микроциркуляции, устраняя тусклый цвет лица, мелкие морщины и снижение тонуса.\n\n#### **Эффект от процедуры:**\n\n- Выраженный лифтинг-эффект и восстановление чёткого овала лица\n\n- Повышение плотности кожи и улучшение текстуры\n\n- Устранение признаков усталости и обезвоженности\n\n- Уменьшение морщин и улучшение цвета лица\n\n- Поддержка антивозрастных процессов изнутри\n\n#### **Курс:**\n\n2–3 процедуры с интервалом в 3 - 4 недели. Эффект нарастает постепенно и сохраняется до 6 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "220 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-17",
+        "displayOrder": 16,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Revofil Aquashine",
+            "name": "Biorevitalization",
+            "summary": "Deep hydration, radiance, and anti-aging care in one procedure\n\nAquashine Revofil is a highly effective injectable cocktail designed for active hydration, restoration, and skin rejuvenation. Its formula includes hyaluronic acid, biomimetic peptides, vitamins, amino acids, and coenzymes — everything necessary to restart cellular processes and achieve smooth, radiant skin.\n\n**How Revofil Aquashine works:**\nThe product penetrates into the deep layers of the skin, activating cell metabolism, stimulating collagen and elastin production, evening out skin tone, and improving microrelief. Thanks to the peptide complex, the treatment provides not only hydration but also a lifting effect with tissue strengthening.",
+            "description": "Deep hydration, radiance, and anti-aging care in one procedure\n\nAquashine Revofil is a highly effective injectable cocktail designed for active hydration, restoration, and skin rejuvenation. Its formula includes hyaluronic acid, biomimetic peptides, vitamins, amino acids, and coenzymes — everything necessary to restart cellular processes and achieve smooth, radiant skin.\n\n**How Revofil Aquashine works:**\nThe product penetrates into the deep layers of the skin, activating cell metabolism, stimulating collagen and elastin production, evening out skin tone, and improving microrelief. Thanks to the peptide complex, the treatment provides not only hydration but also a lifting effect with tissue strengthening.\n\n**Results after the procedure:**\n\n- Deep and long-lasting skin hydration\n\n- Elimination of dullness, gray tone, and signs of fatigue\n\n- Visible lifting effect\n\n- Smoothing of fine wrinkles\n\n- Even skin tone and improved density\n\n- “Radiant face” effect already after the first session\n\n**Who it is for:**\nSuitable for all skin types, especially in cases of dehydration, loss of firmness, stress, environmental damage, and age-related changes (25+).\n\n**Course:**\n\n3 procedures with 2–3 week intervals. The supportive effect lasts up to 6 months.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "260 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Revofil Aquashine",
+            "name": "Biorevitalisaatio",
+            "summary": "**Syväkosteutus, hehku ja ikääntymistä ehkäisevä hoito yhdessä toimenpiteessä**\n\nAquashine Revofil on erittäin tehokas injektoitava seerumikoktaili, joka on kehitetty ihon aktiiviseen kosteuttamiseen, uudistamiseen ja nuorentamiseen. Sen koostumus sisältää hyaluronihappoa, biomimeettisiä peptidejä, vitamiineja, aminohappoja ja koentsyymejä – täydellinen yhdistelmä ihosolujen toiminnan käynnistämiseksi ja heleän, tasaisen ihon saavuttamiseksi.\n\n**Miten Revofil Aquashine toimii:**\nValmiste imeytyy syviin ihokerroksiin, aktivoi solujen aineenvaihduntaa, stimuloi kollageenin ja elastiinin tuotantoa sekä tasoittaa ihonsävyä ja rakennetta. Pienimolekyyliset peptidit takaavat kosteuttavan vaikutuksen lisäksi myös ihon kiinteytyksen ja kevyen liftaavan vaikutuksen.",
+            "description": "**Syväkosteutus, hehku ja ikääntymistä ehkäisevä hoito yhdessä toimenpiteessä**\n\nAquashine Revofil on erittäin tehokas injektoitava seerumikoktaili, joka on kehitetty ihon aktiiviseen kosteuttamiseen, uudistamiseen ja nuorentamiseen. Sen koostumus sisältää hyaluronihappoa, biomimeettisiä peptidejä, vitamiineja, aminohappoja ja koentsyymejä – täydellinen yhdistelmä ihosolujen toiminnan käynnistämiseksi ja heleän, tasaisen ihon saavuttamiseksi.\n\n**Miten Revofil Aquashine toimii:**\nValmiste imeytyy syviin ihokerroksiin, aktivoi solujen aineenvaihduntaa, stimuloi kollageenin ja elastiinin tuotantoa sekä tasoittaa ihonsävyä ja rakennetta. Pienimolekyyliset peptidit takaavat kosteuttavan vaikutuksen lisäksi myös ihon kiinteytyksen ja kevyen liftaavan vaikutuksen.\n\n**Tulokset hoidon jälkeen:**\n\n- Pitkäkestoinen ja syväkosteutus\n- Samean ihon ja väsymyksen merkkien väheneminen\n- Näkyvä kiinteytys ja liftaava vaikutus\n- Hienojen juonteiden tasoittuminen\n- Ihon sävyn ja rakenteen parantuminen\n- \"Glow effect\" – heleä, raikas iho jo ensimmäisen hoidon jälkeen\n\n**Kenelle hoito sopii:**\nSopii kaikille ihotyypeille, erityisesti silloin kun esiintyy kosteusköyhyyttä, kimmoisuuden heikkenemistä, stressin tai ympäristötekijöiden aiheuttamia muutoksia tai varhaisia ikääntymismuutoksia (25+).\n\n**Kurssi:**\n\n3 hoitokertaa 2–3 viikon välein. Ylläpitävä vaikutus kestää jopa 6 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "260 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Revofil Aquashine",
+            "name": "Биоревитализация",
+            "summary": "**Глубокое увлажнение, сияние и антивозрастной уход в одной процедуре**\n\nAquashine Revofil — это высокоэффективный инъекционный коктейль, разработанный для активного увлажнения, восстановления и омоложения кожи. В его состав входят гиалуроновая кислота, биомиметические пептиды, витамины, аминокислоты и коэнзимы — всё необходимое для перезапуска клеточных процессов и сияющей, гладкой кожи.",
+            "description": "**Глубокое увлажнение, сияние и антивозрастной уход в одной процедуре**\n\nAquashine Revofil — это высокоэффективный инъекционный коктейль, разработанный для активного увлажнения, восстановления и омоложения кожи. В его состав входят гиалуроновая кислота, биомиметические пептиды, витамины, аминокислоты и коэнзимы — всё необходимое для перезапуска клеточных процессов и сияющей, гладкой кожи.\n\n#### **Как работает Revofil Aquashine:**\n\nПрепарат проникает в глубокие слои кожи, активируя метаболизм клеток, стимулируя выработку коллагена и эластина, выравнивая тон и улучшая микрорельеф. Благодаря пептидному комплексу происходит не только увлажнение, но и **лифтинг-эффект** с укреплением тканей.\n\n#### **Результат после процедуры:**\n\n- Глубокое и пролонгированное увлажнение кожи\n\n- Устранение тусклости, серого тона и признаков усталости\n\n- Выраженный лифтинг-эффект\n\n- Сглаживание мелких морщин\n\n- Выравнивание тона кожи и улучшение её плотности\n\n- Эффект «сияющего лица» уже после первой процедуры\n\n#### **Для кого:**\n\nПодходит для любого типа кожи, особенно при признаках обезвоженности, снижении упругости, стрессах, плохой экологии и возрастных изменениях 25+.\n\n#### **Курс:**\n\n3 процедуры с интервалом 2–3 недели. Поддерживающий эффект — до 6 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "260 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-18",
+        "displayOrder": 17,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "GemVous",
+            "name": "Biorevitalization",
+            "summary": "Innovative anti-aging therapy based on biomimetic peptides\n\nGemVous is a highly effective new-generation biorevitalizant, created with stabilized hyaluronic acid and a complex of active ingredients aimed at deep skin restoration and rejuvenation. The product is developed using advanced biotechnology, providing not only hydration but also a pronounced restructuring effect from within.\n\n**Composition and features:**\nThe basis of GemVous is stabilized hyaluronic acid enriched with biomimetic peptides, nucleotides, amino acids, vitamins, and coenzymes. This complex provides multi-layered action:",
+            "description": "Innovative anti-aging therapy based on biomimetic peptides\n\nGemVous is a highly effective new-generation biorevitalizant, created with stabilized hyaluronic acid and a complex of active ingredients aimed at deep skin restoration and rejuvenation. The product is developed using advanced biotechnology, providing not only hydration but also a pronounced restructuring effect from within.\n\n**Composition and features:**\nThe basis of GemVous is stabilized hyaluronic acid enriched with biomimetic peptides, nucleotides, amino acids, vitamins, and coenzymes. This complex provides multi-layered action:\n\n- Activates natural collagen and elastin synthesis\n\n- Improves cellular metabolism\n\n- Increases skin density and elasticity\n\n- Strengthens vascular walls and enhances skin’s protective properties\n\n**Advantages compared to classical biorevitalizants:**\nGemVous works deeply and comprehensively, without creating excess volume or causing swelling. Thanks to its gentle and physiological formula, it is suitable for all skin types, including thin, sensitive, and mature skin. It provides a natural lifting effect without overcorrection or facial deformation.\n\n**Indications for the procedure:**\n\n- Reduced skin tone and elasticity\n\n- Fine and medium wrinkles\n\n- Skin laxity and dehydration\n\n- Stressed skin and dull complexion\n\n- Preparation for more intensive cosmetic procedures\n\n**Expected results:**\n\n- Deep skin hydration\n\n- Increased firmness and elasticity\n\n- Improved complexion and skin texture\n\n- Reduction of wrinkles and restored facial contour\n\n- Overall rejuvenation and “reset” effect for the skin\n\n**Course:**\n\n2–3 procedures with 3–4 week intervals. The effect lasts up to 6–8 months.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "250 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "GemVous",
+            "name": "Biorevitalisaatio",
+            "summary": "**Innovatiivinen ikääntymistä ehkäisevä hoito biomimeettisten peptidien avulla**\n\nGemVous on uuden sukupolven tehokas biorevitalisaatiohoito, joka perustuu stabiloituun hyaluronihappoon ja aktiivisten ainesosien kompleksiin. Se on suunniteltu syvävaikutteiseen ihon uudistamiseen ja nuorentamiseen. Bioteknologisesti kehitetty koostumus ei ainoastaan kosteuta ihoa, vaan myös palauttaa sen rakenteen sisältä käsin.\n\n**Valmisteen koostumus ja erityispiirteet:**\nGemVousin ytimessä on stabiloitu hyaluronihappo, jota on täydennetty biomimeettisillä peptideillä, nukleotideilla, aminohapoilla, vitamiineilla ja koentsyymeillä. Tämä yhdistelmä mahdollistaa monitasoisen vaikutuksen:",
+            "description": "**Innovatiivinen ikääntymistä ehkäisevä hoito biomimeettisten peptidien avulla**\n\nGemVous on uuden sukupolven tehokas biorevitalisaatiohoito, joka perustuu stabiloituun hyaluronihappoon ja aktiivisten ainesosien kompleksiin. Se on suunniteltu syvävaikutteiseen ihon uudistamiseen ja nuorentamiseen. Bioteknologisesti kehitetty koostumus ei ainoastaan kosteuta ihoa, vaan myös palauttaa sen rakenteen sisältä käsin.\n\n**Valmisteen koostumus ja erityispiirteet:**\nGemVousin ytimessä on stabiloitu hyaluronihappo, jota on täydennetty biomimeettisillä peptideillä, nukleotideilla, aminohapoilla, vitamiineilla ja koentsyymeillä. Tämä yhdistelmä mahdollistaa monitasoisen vaikutuksen:\n\n- Aktivoi ihon oman kollageenin ja elastiinin tuotannon\n- Tehostaa solujen aineenvaihduntaa\n- Parantaa ihon tiheyttä ja kimmoisuutta\n- Vahvistaa verisuonia ja lisää ihon luonnollista suojaa\n\n**Edut verrattuna perinteisiin biorevitalisaatiohoitoihin:**\nGemVous vaikuttaa syvällisesti ja kokonaisvaltaisesti ilman turhaa volyymia tai turvotusta. Sen hellävarainen ja fysiologinen koostumus sopii kaikille ihotyypeille, myös herkälle ja ikääntyvälle iholle. Tuloksena on luonnollinen liftaava vaikutus ilman ylitäyttöä tai kasvonpiirteiden vääristymistä.\n\n**Hoidon aiheet:**\n\n- Ihon kimmoisuuden ja sävyn heikkeneminen\n- Hienot ja keskisyvät juonteet\n- Kuivuus ja veltostunut iho\n- Stressin heikentämä iho ja samea ihonsävy\n- Valmistelu ennen intensiivisempiä esteettisiä hoitoja\n\n**Odotettavissa olevat tulokset:**\n\n- Syväkosteutus\n- Lisääntynyt ihon tiheys ja kimmoisuus\n- Terve ja tasainen ihonsävy\n- Juonteiden tasoittuminen ja kasvonpiirteiden selkeytyminen\n- Kokonaisvaltainen ihon nuorentuminen ja \"uudelleenkäynnistys\"\n\n**Kurssi:**\n\n2–3 hoitokertaa 3–4 viikon välein. Vaikutus kestää noin 6–8 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "250 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "GemVous",
+            "name": "Биоревитализация",
+            "summary": "**Инновационная антивозрастная терапия на основе биомиметических пептидов**\n\nGemVous — это высокоэффективный биоревитализант нового поколения, созданный на основе стабилизированной гиалуроновой кислоты и комплекса активных компонентов, направленных на глубокое восстановление и омоложение кожи. Препарат разработан с применением биотехнологий, обеспечивающих не только увлажнение, но и выраженное восстановление структуры кожи изнутри.\n\nСостав и особенности препарата:\nОснову GemVous составляет стабилизированная гиалуроновая кислота, обогащённая биомиметическими пептидами, нуклеотидами, аминокислотами, витаминами и коэнзимами. Такой комплекс обеспечивает многослойное действие:",
+            "description": "**Инновационная антивозрастная терапия на основе биомиметических пептидов**\n\nGemVous — это высокоэффективный биоревитализант нового поколения, созданный на основе стабилизированной гиалуроновой кислоты и комплекса активных компонентов, направленных на глубокое восстановление и омоложение кожи. Препарат разработан с применением биотехнологий, обеспечивающих не только увлажнение, но и выраженное восстановление структуры кожи изнутри.\n\nСостав и особенности препарата:\nОснову GemVous составляет стабилизированная гиалуроновая кислота, обогащённая биомиметическими пептидами, нуклеотидами, аминокислотами, витаминами и коэнзимами. Такой комплекс обеспечивает многослойное действие:\n\n- Активирует синтез собственного коллагена и эластина\n- Улучшает клеточный метаболизм\n- Повышает плотность и эластичность кожи\n- Укрепляет сосудистую стенку и повышает защитные свойства кожи\n\n**Преимущества по сравнению с классическими биоревитализантами:**\nGemVous работает глубоко и комплексно, не создавая лишнего объема и не вызывая отечности. Благодаря мягкой и физиологичной формуле, препарат подходит для любого типа кожи, включая тонкую, чувствительную и возрастную. Он обеспечивает естественный лифтинг-эффект без гиперкоррекции и деформации черт лица.\n\n**Показания к процедуре:**\n\n- Снижение тонуса и упругости кожи\n- Мелкие и средние морщины\n- Дряблость и обезвоженность\n- Стрессовая кожа и ухудшение цвета лица\n- Подготовка к более активным косметологическим методикам\n\n**Ожидаемый эффект:**\n\n- Увлажнение кожи на глубоком уровне\n- Повышение плотности и упругости\n- Улучшение цвета лица и текстуры кожи\n- Сглаживание морщин и восстановление чёткого контура\n- Общий эффект омоложения и «перезапуска» кожи\n\n**Курс:**\n\n2–3 процедуры с интервалом 3–4 недели. Продолжительность эффекта — до 6–8 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "250 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-19",
+        "displayOrder": 18,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "INFINI",
+            "name": "Biorevitalization",
+            "summary": "**Advanced biostimulation and lifting without surgery**\n\nINFINI is a next-generation injectable biostimulator designed to restore skin density, elasticity, and overall quality. Its polynucleotide-based formula activates natural regenerative processes, providing a visible yet natural lifting effect without altering facial features.",
+            "description": "**Advanced biostimulation and lifting without surgery**\n\nINFINI is a next-generation injectable biostimulator designed to restore skin density, elasticity, and overall quality. Its polynucleotide-based formula activates natural regenerative processes, providing a visible yet natural lifting effect without altering facial features.\n\n**How INFINI works:**\n\n- Polynucleotides stimulate collagen and elastin production\n\n- Cellular regeneration is activated\n\n- Microcirculation and tissue oxygenation are improved\n\nThe procedure enhances skin structure, firmness, and radiance.\n\n**Effects of the procedure:**\n\n- Visible lifting and improved facial contours\n\n- Increased skin density and elasticity\n\n- Improved skin texture and tone\n\n- Reduction of fine lines and wrinkles\n\n- Overall rejuvenation and healthy glow\n\n**Course:**\n\n2–3 treatments with 3–4 week intervals. Results develop gradually and last up to 6 months.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "185 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "INFINI",
+            "name": "Biorevitalisaatio",
+            "summary": "**Innovatiivinen biostimulaatio ja kasvojen kiinteytys ilman kirurgiaa**\n\nINFINI on moderni injektoitava biostimulaatiovalmiste, joka on suunniteltu parantamaan ihon rakennetta, kiinteyttä ja elastisuutta. Polynukleotideihin perustuva koostumus aktivoi ihon omat uusiutumisprosessit ja tarjoaa luonnollisen lifting-vaikutuksen ilman kasvonpiirteiden muuttumista.",
+            "description": "**Innovatiivinen biostimulaatio ja kasvojen kiinteytys ilman kirurgiaa**\n\nINFINI on moderni injektoitava biostimulaatiovalmiste, joka on suunniteltu parantamaan ihon rakennetta, kiinteyttä ja elastisuutta. Polynukleotideihin perustuva koostumus aktivoi ihon omat uusiutumisprosessit ja tarjoaa luonnollisen lifting-vaikutuksen ilman kasvonpiirteiden muuttumista.\n\n**Miten INFINI toimii:**\n\n- Polynukleotidit stimuloivat kollageenin ja elastiinin tuotantoa\n\n- Solujen uusiutuminen aktivoituu\n\n- Ihon mikroverenkierto ja hapensaanti paranevat\n\nHoitotulos on tiiviimpi, kimmoisampi ja elinvoimaisempi iho.\n\n**Hoidon vaikutukset:**\n\n- Näkyvä ihon kiinteytyminen ja kohotus\n\n- Parantunut ihon rakenne ja elastisuus\n\n- Tasaisempi ihon sävy ja hehku\n\n- Pienten juonteiden ja ryppyjen väheneminen\n\n- Luonnollinen anti-age-vaikutus\n\n**Kurssi:**\n\n2–3 hoitokertaa 3–4 viikon välein. Tulokset kehittyvät asteittain ja kestävät jopa 6 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "185 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "INFINI",
+            "name": "Биоревитализация",
+            "summary": "**Инновационная биостимуляция и лифтинг без хирургии**\n\nINFINI — это современный инъекционный препарат для глубокой биостимуляции кожи, направленный на восстановление плотности, упругости и качества кожи. Формула на основе полинуклеотидов активирует естественные процессы регенерации и омоложения, обеспечивая выраженный, но естественный лифтинг-эффект без изменения черт лица.",
+            "description": "**Инновационная биостимуляция и лифтинг без хирургии**\n\nINFINI — это современный инъекционный препарат для глубокой биостимуляции кожи, направленный на восстановление плотности, упругости и качества кожи. Формула на основе полинуклеотидов активирует естественные процессы регенерации и омоложения, обеспечивая выраженный, но естественный лифтинг-эффект без изменения черт лица.\n\n**Как работает INFINI:**\nПрепарат воздействует на кожу на клеточном уровне:\n\n- Полинуклеотиды стимулируют выработку коллагена и эластина\n\n- Активируется обновление клеток и восстановление дермального матрикса\n\n- Улучшается микроциркуляция и оксигенация тканей\n\nПроцедура улучшает структуру кожи, повышает её плотность и эластичность, устраняет тусклость и признаки возрастных изменений.\n\n**Эффекты процедуры:**\n\n- Лифтинг и улучшение контуров лица\n\n- Повышение плотности и упругости кожи\n\n- Улучшение текстуры и цвета кожи\n\n- Снижение выраженности мелких морщин\n\n- Общее омоложение и здоровое сияние кожи\n\n**Курс:**\n\n2–3 процедуры с интервалом 3–4 недели. Эффект нарастает постепенно и сохраняется до 6 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "185 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-20",
+        "displayOrder": 19,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "KARISMA",
+            "name": "Biorevitalization",
+            "summary": "**Skin biostimulation with a natural lifting effect**\n\nKARISMA is an innovative injectable treatment designed to restore skin structure and stimulate natural collagen production. The formula strengthens the dermal framework, improving skin quality and providing a visible anti-aging effect without aggressive interventions.",
+            "description": "**Skin biostimulation with a natural lifting effect**\n\nKARISMA is an innovative injectable treatment designed to restore skin structure and stimulate natural collagen production. The formula strengthens the dermal framework, improving skin quality and providing a visible anti-aging effect without aggressive interventions.\n\n**How KARISMA works:**\n\n- Stimulates natural collagen synthesis\n\n- Strengthens the dermal support structure\n\n- Improves skin firmness and elasticity\n\nThe treatment is ideal for both prevention and correction of age-related skin changes.\n\n**Effects of the procedure:**\n\n- Improved skin tone and firmness\n\n- Subtle lifting effect\n\n- Smoothing of fine lines\n\n- Enhanced skin texture\n\n- Healthy, rejuvenated appearance\n\n**Course:**\n\n2–3 treatments with 3–4 week intervals. Results last up to 6 months.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "275 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "KARISMA",
+            "name": "Biorevitalisaatio",
+            "summary": "**Ihon biostimulaatio ja luonnollinen lifting-vaikutus**\n\nKARISMA on uuden sukupolven innovatiivinen injektoitava biostimulaatiovalmiste, joka on suunniteltu ihon syvälliseen uudistamiseen ja tukirakenteen vahvistamiseen. Ainutlaatuinen koostumus stimuloi kehon omaa kollageenin tuotantoa, parantaen ihon laatua ja tarjoten luonnollisen anti-age- ja lifting-vaikutuksen ilman aggressiivisia toimenpiteitä.",
+            "description": "**Ihon biostimulaatio ja luonnollinen lifting-vaikutus**\n\nKARISMA on uuden sukupolven innovatiivinen injektoitava biostimulaatiovalmiste, joka on suunniteltu ihon syvälliseen uudistamiseen ja tukirakenteen vahvistamiseen. Ainutlaatuinen koostumus stimuloi kehon omaa kollageenin tuotantoa, parantaen ihon laatua ja tarjoten luonnollisen anti-age- ja lifting-vaikutuksen ilman aggressiivisia toimenpiteitä.\n\n**Miten KARISMA toimii:**\n\n- Aktivoi luonnollista kollageenisynteesiä\n\n- Vahvistaa ihon dermistä tukirakennetta\n\n- Lisää ihon tiheyttä ja elastisuutta\n\nHoito palauttaa ihon kimmoisuuden, tasaisuuden ja raikkaan ulkonäön.\n\n**Hoidon vaikutukset:**\n\n- Parantunut ihon kiinteys ja sävy\n\n- Luonnollinen lifting-vaikutus\n\n- Pienten ryppyjen silottuminen\n\n- Ihon rakenteen ja tekstuurin paraneminen\n\n- Hyvinvoiva ja nuorekkaampi ilme\n\n**Kurssi:**\n\n2–3 hoitokertaa 3–4 viikon välein. Tulokset kehittyvät asteittain ja kestävät jopa 6 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "275 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "KARISMA",
+            "name": "Биоревитализация",
+            "summary": "**Биостимуляция и восстановление кожи с эффектом естественного лифтинга**\n\nKARISMA — это инновационный инъекционный препарат нового поколения, направленный на глубокое восстановление кожи и укрепление её каркаса. Уникальная формула стимулирует синтез собственного коллагена, улучшая качество кожи и обеспечивая выраженный anti-age эффект без агрессивного вмешательства.",
+            "description": "**Биостимуляция и восстановление кожи с эффектом естественного лифтинга**\n\nKARISMA — это инновационный инъекционный препарат нового поколения, направленный на глубокое восстановление кожи и укрепление её каркаса. Уникальная формула стимулирует синтез собственного коллагена, улучшая качество кожи и обеспечивая выраженный anti-age эффект без агрессивного вмешательства.\n\n**Как работает KARISMA:**\n\n- Активные компоненты запускают выработку коллагена\n\n- Укрепляется дермальный матрикс\n\n- Повышается плотность и эластичность кожи\n\nПроцедура подходит для профилактики и коррекции возрастных изменений, возвращая коже упругость и свежесть.\n\n**Эффекты процедуры:**\n\n- Улучшение тонуса и плотности кожи\n\n- Лёгкий лифтинг-эффект\n\n- Сглаживание мелких морщин\n\n- Выравнивание текстуры кожи\n\n- Здоровый и ухоженный внешний вид\n\n**Курс:**\n\n2–3 процедуры с интервалом 3–4 недели. Эффект сохраняется до 6 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "275 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-21",
+        "displayOrder": 20,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Papilloma Removal",
+            "summary": "**Fast and precise removal without surgical intervention**\n\nPapilloma removal using the **PlasmaPen device** is a modern non-invasive method for treating benign skin lesions with plasma energy. The procedure allows for precise targeting of the papilloma while minimizing impact on surrounding tissues and preserving skin integrity.\n\n**How PlasmaPen works:**\nThe device generates a controlled plasma arc that acts on the surface of the lesion, causing coagulation and gradual detachment of the papilloma. There is no direct contact with the skin, which reduces the risk of bleeding and infection. The treatment is strictly localized to the papilloma area, ensuring high procedural accuracy.",
+            "description": "**Fast and precise removal without surgical intervention**\n\nPapilloma removal using the **PlasmaPen device** is a modern non-invasive method for treating benign skin lesions with plasma energy. The procedure allows for precise targeting of the papilloma while minimizing impact on surrounding tissues and preserving skin integrity.\n\n**How PlasmaPen works:**\nThe device generates a controlled plasma arc that acts on the surface of the lesion, causing coagulation and gradual detachment of the papilloma. There is no direct contact with the skin, which reduces the risk of bleeding and infection. The treatment is strictly localized to the papilloma area, ensuring high procedural accuracy.\n\n**Results after the procedure:**\n\n- Removal of papillomas in a single session\n- Minimal trauma to surrounding tissues\n- No bleeding\n- Rapid healing\n- Minimal risk of scarring\n- Clean and aesthetically pleasing result\n\n**Advantages of the method:**\n\n- No surgery or sutures required\n- The procedure takes minimal time\n- Suitable for removal of single and multiple papillomas\n- Allows treatment of hard-to-reach areas\n- Short recovery period\n\n**Who is it for:**\nThe procedure is indicated for patients with benign skin lesions (papillomas) that cause cosmetic discomfort or are subject to frequent trauma. A mandatory examination by a specialist is performed prior to the procedure to rule out contraindications.\n\n**Recovery:**\nAfter the procedure, a dry crust forms at the treatment site and falls off naturally within 7–10 days. During this period, patients are advised to avoid mechanical irritation and UV exposure and to follow the specialist’s recommendations.\n\n**Number of procedures:**\nIn most cases, **one procedure is sufficient**. For multiple lesions or larger papillomas, staged treatment may be recommended.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "55 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Papilloomien poisto",
+            "summary": "**Nopea ja tarkka poisto ilman kirurgista toimenpidettä**\n\nPapilloomien poisto **PlasmaPen-laitteella** on nykyaikainen ei-invasiivinen menetelmä ihon hyvänlaatuisten kasvainten hoitoon plasman energian avulla. Toimenpide mahdollistaa papillooman tarkan käsittelyn minimoiden ympäröivien kudosten vaurioitumisen ja säilyttäen ihon eheyden.\n\n**Miten PlasmaPen toimii:**\nLaite tuottaa hallitun plasmakaaren, joka vaikuttaa suoraan kasvaimen pintaan aiheuttaen sen koagulaation ja asteittaisen irtoamisen. Ihoon ei synny suoraa kosketusta, mikä vähentää verenvuodon ja infektion riskiä. Vaikutus kohdistuu tarkasti vain papillooman alueelle, mikä takaa korkean toimenpidetarkkuuden.",
+            "description": "**Nopea ja tarkka poisto ilman kirurgista toimenpidettä**\n\nPapilloomien poisto **PlasmaPen-laitteella** on nykyaikainen ei-invasiivinen menetelmä ihon hyvänlaatuisten kasvainten hoitoon plasman energian avulla. Toimenpide mahdollistaa papillooman tarkan käsittelyn minimoiden ympäröivien kudosten vaurioitumisen ja säilyttäen ihon eheyden.\n\n**Miten PlasmaPen toimii:**\nLaite tuottaa hallitun plasmakaaren, joka vaikuttaa suoraan kasvaimen pintaan aiheuttaen sen koagulaation ja asteittaisen irtoamisen. Ihoon ei synny suoraa kosketusta, mikä vähentää verenvuodon ja infektion riskiä. Vaikutus kohdistuu tarkasti vain papillooman alueelle, mikä takaa korkean toimenpidetarkkuuden.\n\n**Tulokset toimenpiteen jälkeen:**\n\n- Papilloomien poisto yhdellä hoitokerralla\n- Ympäröivien kudosten minimaalinen vaurio\n- Ei verenvuotoa\n- Nopea paraneminen\n- Vähäinen arpimuodostuksen riski\n- Siisti ja esteettinen lopputulos\n\n**Menetelmän edut:**\n\n- Ei kirurgista toimenpidettä eikä ompeleita\n- Toimenpide kestää vain lyhyen ajan\n- Soveltuu yksittäisten ja useiden papilloomien poistoon\n- Mahdollistaa vaikeapääsyisten alueiden käsittelyn\n- Lyhyt toipumisaika\n\n**Kenelle:**\nToimenpide soveltuu potilaille, joilla on hyvänlaatuisia ihokasvaimia (papilloomia) ja joilla ne aiheuttavat kosmeettista haittaa tai toistuvaa ärsytystä. Ennen toimenpidettä tehdään aina asiantuntijan suorittama arvio mahdollisten vasta-aiheiden poissulkemiseksi.\n\n**Toipuminen:**\nToimenpiteen jälkeen käsitellylle alueelle muodostuu kuiva rupi, joka irtoaa itsestään 7–10 päivän kuluessa. Tänä aikana suositellaan välttämään mekaanista rasitusta ja UV-säteilyä sekä noudattamaan asiantuntijan antamia ohjeita.\n\n**Hoitokertojen määrä:**\nUseimmissa tapauksissa yksi hoitokerta riittää. Useiden tai suurikokoisten papilloomien kohdalla hoito voidaan toteuttaa vaiheittain.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "55 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Удаление папиллом",
+            "summary": "**Быстрое и точечное удаление без хирургического вмешательства**\n\nУдаление папиллом с помощью аппарата **PlasmaPen** — это современный неинвазивный метод коррекции кожных новообразований с использованием плазменной энергии. Процедура позволяет **точечно воздействовать на папиллому**, минимально затрагивая окружающие ткани и сохраняя целостность кожи.\n\n**Как работает PlasmaPen:**\nАппарат создаёт контролируемую плазменную дугу, которая воздействует на поверхность новообразования, вызывая его коагуляцию и постепенное отторжение. Контакт с кожей отсутствует, что снижает риск кровоточивости и инфицирования. Воздействие происходит строго в зоне папилломы, обеспечивая высокую точность процедуры.",
+            "description": "**Быстрое и точечное удаление без хирургического вмешательства**\n\nУдаление папиллом с помощью аппарата **PlasmaPen** — это современный неинвазивный метод коррекции кожных новообразований с использованием плазменной энергии. Процедура позволяет **точечно воздействовать на папиллому**, минимально затрагивая окружающие ткани и сохраняя целостность кожи.\n\n**Как работает PlasmaPen:**\nАппарат создаёт контролируемую плазменную дугу, которая воздействует на поверхность новообразования, вызывая его коагуляцию и постепенное отторжение. Контакт с кожей отсутствует, что снижает риск кровоточивости и инфицирования. Воздействие происходит строго в зоне папилломы, обеспечивая высокую точность процедуры.\n\n**Результат после процедуры:**\n\n- Удаление папиллом за одну процедуру\n- Минимальная травматизация окружающих тканей\n- Отсутствие кровотечения\n- Быстрое заживление\n- Минимальный риск рубцевания\n- Аккуратный эстетический результат\n\n**Преимущества метода:**\n\n- Без хирургического вмешательства и швов\n- Процедура занимает минимальное время\n- Подходит для удаления единичных и множественных папиллом\n- Возможность обработки труднодоступных зон\n- Короткий период реабилитации\n\n**Для кого:**\nПроцедура показана пациентам с доброкачественными кожными новообразованиями (папилломы), при наличии косметического дискомфорта или частой травматизации. Перед процедурой проводится обязательный осмотр специалиста для исключения противопоказаний.\n\n**Реабилитация:**\nПосле процедуры на месте воздействия формируется сухая корочка, которая самостоятельно отпадает в течение 7–10 дней. В этот период рекомендуется избегать механического воздействия, ультрафиолетового излучения и соблюдать рекомендации специалиста.\n\n**Количество процедур:**\nВ большинстве случаев достаточно **1 процедуры**. При множественных образованиях или крупных папилломах возможна поэтапная коррекция.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "55 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-22",
+        "displayOrder": 21,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Facial microcurrents",
+            "summary": "Facial microcurrents is an equipment-based procedure that uses weak pulsed electrical currents on the skin and muscles. It improves microcirculation, stimulates collagen and elastin production, strengthens tissues, and restores a fresh and toned appearance.",
+            "description": "Facial microcurrents is an equipment-based procedure that uses weak pulsed electrical currents on the skin and muscles. It improves microcirculation, stimulates collagen and elastin production, strengthens tissues, and restores a fresh and toned appearance.\n\n**Advantages of the procedure:**\n\n- Painless: the procedure is comfortable and requires no recovery time.\n- Rejuvenation: smooths fine wrinkles, improves skin tone and elasticity.\n- Lifting effect: tightens facial contours and strengthens muscles.\n- Comprehensive action: enhances lymphatic drainage and microcirculation.\n\n**What results you will get:**\n\n- Firmer and lifted skin.\n- Improved facial contour.\n- Healthy color and skin radiance.\n- Reduced puffiness and fine wrinkles.\n\n**Course:**\n\nA course of 6–10 procedures is recommended, with 1–2 sessions per week.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "65 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Mikrovirta-hoito",
+            "summary": "Kasvojen mikrovirta-hoito on laitepohjainen toimenpide, jossa heikot pulssivirrat vaikuttavat ihoon ja lihaksiin. Se parantaa mikroverenkiertoa, stimuloi kollageenin ja elastaanin tuotantoa, vahvistaa kudoksia ja palauttaa ihon raikkaan ja kiinteän ulkonäön.",
+            "description": "Kasvojen mikrovirta-hoito on laitepohjainen toimenpide, jossa heikot pulssivirrat vaikuttavat ihoon ja lihaksiin. Se parantaa mikroverenkiertoa, stimuloi kollageenin ja elastaanin tuotantoa, vahvistaa kudoksia ja palauttaa ihon raikkaan ja kiinteän ulkonäön.\n\n**Menettelyn edut:**\n\n- Kivuttomuus: hoito on mukava eikä vaadi toipumisaikaa.\n- Ihon uudistuminen: tasoittaa hienoja ryppyjä, parantaa ihon sävyä ja elastisuutta.\n- Kohottava vaikutus: kiinteyttää kasvojen ääriviivoja ja vahvistaa lihaksia.\n- Monipuolinen vaikutus: parantaa lymfakiertoa ja mikroverenkiertoa.\n\n**Mitkä tulokset saat:**\n\n- Kiinteämpi ja kohotettu iho.\n- Parantunut kasvojen muoto.\n- Terve ihon väri ja hehku.\n- Turvotuksen ja pienten ryppyjen väheneminen.\n\n**Kurssi:**\n\nSuositellaan 6–10 hoidon kurssia, 1–2 kertaa viikossa.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "65 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Микротоки",
+            "summary": "Микротоки для лица — это аппаратная процедура, основанная на воздействии слабых импульсных токов на кожу и мышцы. Она улучшает микроциркуляцию, стимулирует выработку коллагена и эластина, укрепляет ткани и возвращает коже свежий и подтянутый вид.",
+            "description": "Микротоки для лица — это аппаратная процедура, основанная на воздействии слабых импульсных токов на кожу и мышцы. Она улучшает микроциркуляцию, стимулирует выработку коллагена и эластина, укрепляет ткани и возвращает коже свежий и подтянутый вид.\n\n**Преимущества процедуры:**\n\n- Безболезненность: процедура проходит комфортно и не требует восстановления.\n- Омоложение: разглаживает мелкие морщины, улучшает тонус и эластичность кожи.\n- Лифтинг-эффект: подтягивает контуры лица и укрепляет мышцы.\n- Комплексное воздействие: улучшает лимфодренаж и микроциркуляцию.\n\n**Какие результаты вы получите?**\n\n- Более упругую и подтянутую кожу.\n- Улучшение овала лица.\n- Здоровый цвет и сияние кожи.\n- Снижение отечности и мелких морщин.\n\n**Курс:**\n\nРекомендуется пройти курс из 6–10 процедур с интервалом 1–2 раза в неделю.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "65 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}
