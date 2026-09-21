@@ -1,0 +1,1525 @@
+{
+  "capturedAt": "2026-09-21T20:27:46.354Z",
+  "service": {
+    "slug": "laser",
+    "images": [
+      "/media/clinic/laser/laser-upper-arm-hair-removal.jpeg"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "treatment-01",
+        "displayOrder": 0,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Upper Lip",
+            "summary": "Safe, precise upper lip laser hair removal destroys hair roots to ensure long-lasting smoothness.",
+            "description": "Laser hair removal of the upper lip is a safe and effective procedure to remove unwanted hair from the delicate facial area. The laser targets the hair root, destroying it and slowing hair growth.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal discomfort\n\n- Smooth and even skin\n\n- Quick procedure\n\n**Results you will get:**\n\n- Hair-free upper lip\n\n- Smooth and well-groomed skin\n\n- Increased confidence\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "25 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Ylähuuli",
+            "summary": "Laserkarvanpoisto ylähuulen alueelta on nopea ja tehokas tapa päästä eroon ei-toivotuista karvoista kasvojen herkällä alueella. Menetelmä perustuu lasersäteen tarkkaan vaikutukseen karvatuppeen, mikä estää uuden karvan kasvun. Hoito sopii sekä naisille että miehille ja takaa pitkäkestoisen tuloksen ilman ärsytystä tai sisäänkasvaneita karvoja.",
+            "description": "Laserkarvanpoisto ylähuulen alueelta on nopea ja tehokas tapa päästä eroon ei-toivotuista karvoista kasvojen herkällä alueella. Menetelmä perustuu lasersäteen tarkkaan vaikutukseen karvatuppeen, mikä estää uuden karvan kasvun. Hoito sopii sekä naisille että miehille ja takaa pitkäkestoisen tuloksen ilman ärsytystä tai sisäänkasvaneita karvoja.\n\n**Edut:**\n\n- Pysyvän sileä iho ilman parranajoa tai vahauksia\n\n- Ei sisäänkasvaneita karvoja\n\n- Säästää aikaa ja vaivannäköä arjessa\n\n- Hell ävarainen ja tarkka käsittely pienellä alueella\n\n**Tulokset hoidon jälkeen:**\n\n- Silkinpehmeä iho ylähuulen alueella\n\n- Karvojen väheneminen jo ensimmäisten hoitokertojen jälkeen\n\n- Pysyvä karvanpoisto hoitosarjan jälkeen\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein. Tulokset säilyvät pitkäaikaisesti.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "25 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Верхняя губа",
+            "summary": "Лазерная эпиляция верхней губы — безопасная и эффективная процедура удаления нежелательных волос с деликатной зоны лица. Лазер воздействует на корень волоса, разрушая его и замедляя рост.",
+            "description": "Лазерная эпиляция верхней губы — безопасная и эффективная процедура удаления нежелательных волос с деликатной зоны лица. Лазер воздействует на корень волоса, разрушая его и замедляя рост.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная болезненность\n\n- Ровная и гладкая кожа\n\n- Быстрая процедура\n\n**Какие результаты вы получите:**\n\n- Отсутствие волос после курса процедур\n\n- Гладкая и ухоженная кожа\n\n- Уверенность в себе\n\n**Курс:**\n\nДля достижения стойкого эффекта рекомендуется 5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "25 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-02",
+        "displayOrder": 1,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Chin",
+            "summary": "Laser hair removal of the chin removes unwanted facial hair, improves aesthetic appearance, and prevents ingrown hairs.",
+            "description": "Laser hair removal of the chin removes unwanted facial hair, improves aesthetic appearance, and prevents ingrown hairs.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Quick results\n\n**Results you will get:**\n\n- Smooth chin area\n\n- Reduction of stubble and irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "25 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Leuka",
+            "summary": "Laserkarvanpoisto leuan alueelta on tehokas ratkaisu ei-toivottujen karvojen poistoon kasvojen herkältä alueelta. Toimenpide perustuu lasersäteen tarkkaan vaikutukseen karvatuppeen, mikä estää uusien karvojen kasvun. Sopii erinomaisesti naisille, joilla on hormonaalisista syistä johtuvaa karvankasvua, sekä miehille, jotka haluavat pysyvää sileyttä.",
+            "description": "Laserkarvanpoisto leuan alueelta on tehokas ratkaisu ei-toivottujen karvojen poistoon kasvojen herkältä alueelta. Toimenpide perustuu lasersäteen tarkkaan vaikutukseen karvatuppeen, mikä estää uusien karvojen kasvun. Sopii erinomaisesti naisille, joilla on hormonaalisista syistä johtuvaa karvankasvua, sekä miehille, jotka haluavat pysyvää sileyttä.\n\n**Edut:**\n\n- Pitkäaikainen karvojen väheneminen ja pysyvä tulos hoitosarjan jälkeen\n\n- Ei ärsytystä, haavaumia tai sisäänkasvaneita karvoja\n\n- Nopeampi ja vähemmän kivulias kuin vahaukset tai epilointi\n\n- Sileä iho ilman päivittäistä parranajoa\n\n**Tulokset hoidon jälkeen:**\n\n- Huomattava karvojen väheneminen jo ensimmäisistä kerroista\n\n- Pehmeä ja tasainen iho leuan alueella\n\n- Pitkäaikainen sileys ilman varjoja ja tummia pisteitä\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein. Tulokset säilyvät pitkäaikaisesti.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "25 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Подбородок",
+            "summary": "Эпиляция подбородка лазером позволяет убрать лишние волосы на лице, улучшить эстетический вид и предотвратить врастание волос.",
+            "description": "Эпиляция подбородка лазером позволяет убрать лишние волосы на лице, улучшить эстетический вид и предотвратить врастание волос.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Быстрый результат\n\n**Какие результаты вы получите:**\n\n- Гладкая зона подбородка\n\n- Устранение щетины и раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "25 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-03",
+        "displayOrder": 2,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Upper Lip + Chin",
+            "summary": "Combining the upper lip and chin allows for comprehensive facial hair removal, ensuring smooth and well-groomed skin.",
+            "description": "Combining the upper lip and chin allows for comprehensive facial hair removal, ensuring smooth and well-groomed skin.\n\n**Benefits of the procedure:**\n\n- Comprehensive hair removal from the central face\n\n- Minimal trauma\n\n- Long-lasting effect\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth skin on the upper lip and chin\n\n- No irritation or stubble\n\n- Long-lasting results\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Ylähuuli + Leuka",
+            "summary": "Laserkarvanpoisto ylähuulen ja leuan alueelta on erinomainen ratkaisu, jos haluat pysyvästi eroon kasvojen ei-toivotuista karvoista. Yhdistetty hoitoalue takaa tasaisen ja sileän ihon ilman parranajoa, vahauksia tai ärsytystä.",
+            "description": "Laserkarvanpoisto ylähuulen ja leuan alueelta on erinomainen ratkaisu, jos haluat pysyvästi eroon kasvojen ei-toivotuista karvoista. Yhdistetty hoitoalue takaa tasaisen ja sileän ihon ilman parranajoa, vahauksia tai ärsytystä.\n\n**Edut:**\n\n- Pysyvää karvojen vähenemistä herkällä kasvojen alueella\n\n- Ei sisäänkasvaneita karvoja tai tummia pisteitä iholla\n\n- Sopii sekä naisille että miehille\n\n- Sileä iho ilman päivittäistä huoltoa\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja pehmeä iho ilman varjostumia\n\n- Tasainen ja siisti ulkonäkö\n\n- Pitkäaikainen tulos hoitosarjan jälkeen\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Верхняя губа + Подбородок",
+            "summary": "Совмещение зон верхней губы и подбородка позволяет удалить волосы с лица комплексно, обеспечивая гладкость и ухоженный вид.",
+            "description": "Совмещение зон верхней губы и подбородка позволяет удалить волосы с лица комплексно, обеспечивая гладкость и ухоженный вид.\n\n**Преимущества процедуры:**\n\n- Комплексное удаление волос с центральной части лица\n\n- Минимальная травматичность\n\n- Долговременный эффект\n\n- Ровная и ухоженная кожа\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа в области верхней губы и подбородка\n\n- Отсутствие раздражения и щетины\n\n- Уверенность в себе\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "45 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-04",
+        "displayOrder": 3,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Sideburns",
+            "summary": "Laser hair removal of the sideburns helps shape the facial contour by removing unwanted hair from the sides of the face.",
+            "description": "Laser hair removal of the sideburns helps shape the facial contour by removing unwanted hair from the sides of the face.\n\n**Benefits of the procedure:**\n\n- Precise facial hair removal\n\n- Long-lasting effect\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n**Results you will get:**\n\n- Defined facial contour\n\n- Smooth skin\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Poskiparta",
+            "summary": "Laserkarvanpoisto poskiparran alueelta on ihanteellinen niille, jotka haluavat pysyvän sileän ihon ja eroon jatkuvasta parranajosta tai vahauksesta. Menetelmä kohdistuu karvatuppiin tarkasti ja turvallisesti.",
+            "description": "Laserkarvanpoisto poskiparran alueelta on ihanteellinen niille, jotka haluavat pysyvän sileän ihon ja eroon jatkuvasta parranajosta tai vahauksesta. Menetelmä kohdistuu karvatuppiin tarkasti ja turvallisesti.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen poskiparran alueella\n\n- Ei ihon ärsytystä tai haavaumia\n\n- Pehmeä ja siisti iho ilman ylimääräistä vaivaa\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Karvojen selkeä väheneminen jo ensimmäisten kertojen jälkeen\n\n- Sileä iho ilman tummia pisteitä\n\n- Kestävä ja luonnollinen lopputulos\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Бакенбарды",
+            "summary": "Лазерная эпиляция бакенбардов позволяет убрать нежелательные волосы с боковых частей лица, сделать контур лица более аккуратным.",
+            "description": "Лазерная эпиляция бакенбардов позволяет убрать нежелательные волосы с боковых частей лица, сделать контур лица более аккуратным.\n\n**Преимущества процедуры:**\n\n- Точная работа с лицевой зоной\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n**Какие результаты вы получите:**\n\n- Четкий контур лица\n\n- Гладкая кожа\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "45 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-05",
+        "displayOrder": 4,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Cheeks",
+            "summary": "Laser hair removal of the cheeks removes unwanted hair, evens skin tone, and gives a polished facial appearance.",
+            "description": "Laser hair removal of the cheeks removes unwanted hair, evens skin tone, and gives a polished facial appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Quick and visible results\n\n- Suitable for all skin types\n\n**Results you will get:**\n\n- Smooth cheeks\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Posket",
+            "summary": "Laserkarvanpoisto poskien alueelta takaa pysyvän ratkaisun ei-toivotuille kasvojen karvoille. Hoito parantaa ihon ulkonäköä ja tekee siitä tasaisen ja sileän.",
+            "description": "Laserkarvanpoisto poskien alueelta takaa pysyvän ratkaisun ei-toivotuille kasvojen karvoille. Hoito parantaa ihon ulkonäköä ja tekee siitä tasaisen ja sileän.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen poskien alueella\n\n- Ei punoitusta, sisäänkasvaneita karvoja tai ärsytystä\n\n- Antaa iholle kirkkaan ja raikkaan ilmeen\n\n- Sopii sekä miehille että naisille\n\n**Tulokset hoidon jälkeen:**\n\n- Pehmeä ja sileä iho ilman ylimääräisiä karvoja\n\n- Tasainen ja siisti ulkonäkö\n\n- Pitkäaikainen tulos hoitosarjan jälkeen\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Щеки",
+            "summary": "Процедура позволяет убрать нежелательные волосы на щеках, выровнять тон кожи и сделать лицо ухоженным.",
+            "description": "Процедура позволяет убрать нежелательные волосы на щеках, выровнять тон кожи и сделать лицо ухоженным.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Быстрый и заметный эффект\n\n- Подходит для всех типов кожи\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа на щеках\n\n- Отсутствие раздражения\n\n- Долговременный результат\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "45 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-06",
+        "displayOrder": 5,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Forehead",
+            "summary": "Laser hair removal of the forehead removes unwanted hair, giving the skin a smooth and tidy appearance.",
+            "description": "Laser hair removal of the forehead removes unwanted hair, giving the skin a smooth and tidy appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Quick results\n\n**Results you will get:**\n\n- Smooth forehead\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "10 min",
+            "priceLabel": "30 € / 10 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Otsa",
+            "summary": "Laserkarvanpoisto otsan alueelta on tehokas tapa poistaa ei-toivotut karvat ja saavuttaa tasainen, sileä iho. Menetelmä sopii sekä naisille että miehille, jotka haluavat pysyvän ja huolitellun ilmeen ilman toistuvaa karvanpoistoa.",
+            "description": "Laserkarvanpoisto otsan alueelta on tehokas tapa poistaa ei-toivotut karvat ja saavuttaa tasainen, sileä iho. Menetelmä sopii sekä naisille että miehille, jotka haluavat pysyvän ja huolitellun ilmeen ilman toistuvaa karvanpoistoa.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen otsan alueella\n\n- Iho näyttää siistiltä ja kirkkaalta\n\n- Ei sisäänkasvaneita karvoja tai ihon ärsytystä\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja raikas iho\n\n- Luonnollinen ja huoliteltu ulkonäkö\n\n- Pitkäaikainen vaikutus hoitosarjan jälkeen\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "10 min",
+            "priceLabel": "30 € / 10 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Лоб",
+            "summary": "Процедура позволяет удалить волосы с лба, сделать кожу гладкой и ухоженной, а контур лица аккуратным.",
+            "description": "Процедура позволяет удалить волосы с лба, сделать кожу гладкой и ухоженной, а контур лица аккуратным.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Быстрый результат\n\n**Какие результаты вы получите:**\n\n- Гладкий лоб\n\n- Отсутствие волос и раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "10 мин",
+            "priceLabel": "30 € / 10 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-07",
+        "displayOrder": 6,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Full Face",
+            "summary": "Full-face laser hair removal targets every zone—forehead, cheeks, chin, and lip—for flawless, smooth skin.",
+            "description": "Laser hair removal of the full face removes hair from all areas, including the forehead, cheeks, chin, and upper lip, giving smooth and well-groomed skin.\n\n**Benefits of the procedure:**\n\n- Comprehensive facial hair removal\n\n- Long-lasting results\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n**Results you will get:**\n\n- Smooth and refreshed facial skin\n\n- No irritation or stubble\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "85 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Koko kasvot",
+            "summary": "Laserkarvanpoisto koko kasvojen alueelta tarjoaa kokonaisvaltaisen ratkaisun ei-toivotuille karvoille. Hoito tekee ihosta tasaisen, sileän ja raikkaan ilman parranajoa, vahausta tai sokerointia.",
+            "description": "Laserkarvanpoisto koko kasvojen alueelta tarjoaa kokonaisvaltaisen ratkaisun ei-toivotuille karvoille. Hoito tekee ihosta tasaisen, sileän ja raikkaan ilman parranajoa, vahausta tai sokerointia.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen kaikilla kasvojen alueilla\n\n- Ei ärsytystä, haavaumia tai sisäänkasvaneita karvoja\n\n- Sopii naisille ja miehille, jotka haluavat huolitellun ulkonäön\n\n- Antaa iholle nuorekkaan ja raikkaan ilmeen\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä iho ilman ylimääräisiä karvoja\n\n- Tasainen ja siisti kokonaisuus\n\n- Pysyvä vaikutus hoitosarjan jälkeen\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "85 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Всё лицо",
+            "summary": "Лазерная эпиляция всего лица позволяет удалить волосы на всех участках лица, включая лоб, щеки, подбородок и верхнюю губу, обеспечивая ровный и ухоженный вид кожи.",
+            "description": "Лазерная эпиляция всего лица позволяет удалить волосы на всех участках лица, включая лоб, щеки, подбородок и верхнюю губу, обеспечивая ровный и ухоженный вид кожи.\n\n**Преимущества процедуры:**\n\n- Комплексное удаление волос с лица\n\n- Долговременный результат\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n**Какие результаты вы получите:**\n\n- Гладкая и ухоженная кожа\n\n- Отсутствие раздражения и щетины\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "85 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-08",
+        "displayOrder": 7,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Front of Neck",
+            "summary": "Laser hair removal of the front neck removes unwanted hair, making the area smooth and well-groomed.",
+            "description": "Laser hair removal of the front neck removes unwanted hair, making the area smooth and well-groomed.\n\n**Benefits of the procedure:**\n\n- Effective hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Long-lasting results\n\n**Results you will get:**\n\n- Smooth skin on the front of the neck\n\n- No irritation or stubble\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "25 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Kaula edestä",
+            "summary": "Laserkarvanpoisto kaulan etupuolelta auttaa poistamaan häiritsevät karvat ja tekee ihosta sileän ja siistin. Hoito sopii erityisesti niille, jotka kärsivät tummista varjoista, parranajon aiheuttamista iho-ongelmista tai toistuvasta karvanpoistosta.",
+            "description": "Laserkarvanpoisto kaulan etupuolelta auttaa poistamaan häiritsevät karvat ja tekee ihosta sileän ja siistin. Hoito sopii erityisesti niille, jotka kärsivät tummista varjoista, parranajon aiheuttamista iho-ongelmista tai toistuvasta karvanpoistosta.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen kaulan etupuolella\n\n- Ei parranajon aiheuttamaa ärsytystä tai punoitusta\n\n- Antaa iholle raikkaan ja huolitellun ulkonäön\n\n- Sopii sekä naisille että miehille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja pehmeä iho ilman karvoja\n\n- Selkeä ja siisti kaulan alue\n\n- Pitkäaikainen tulos hoitosarjan jälkeen\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "25 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Шея (спереди)",
+            "summary": "Лазерная эпиляция передней части шеи удаляет нежелательные волосы, делая кожу ровной и ухоженной.",
+            "description": "Лазерная эпиляция передней части шеи удаляет нежелательные волосы, делая кожу ровной и ухоженной.\n\n**Преимущества процедуры:**\n\n- Эффективное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Долговременный эффект\n\n**Какие результаты вы получите:**\n\n- Гладкая и ухоженная кожа передней части шеи\n\n- Отсутствие раздражения и щетины\n\n- Долговременный результат\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "25 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-09",
+        "displayOrder": 8,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Male Front of Neck",
+            "summary": "Laser hair removal of the front neck removes unwanted hair, making the area smooth and well-groomed.",
+            "description": "Laser hair removal of the front neck removes unwanted hair, making the area smooth and well-groomed.\n\n**Benefits of the procedure:**\n\n- Effective hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Long-lasting results\n\n**Results you will get:**\n\n- Smooth skin on the front of the neck\n\n- No irritation or stubble\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Miehen kaula edestä",
+            "summary": "Laserkarvanpoisto kaulan etupuolelta auttaa poistamaan häiritsevät karvat ja tekee ihosta sileän ja siistin. Hoito sopii erityisesti niille, jotka kärsivät tummista varjoista, parranajon aiheuttamista iho-ongelmista tai toistuvasta karvanpoistosta.",
+            "description": "Laserkarvanpoisto kaulan etupuolelta auttaa poistamaan häiritsevät karvat ja tekee ihosta sileän ja siistin. Hoito sopii erityisesti niille, jotka kärsivät tummista varjoista, parranajon aiheuttamista iho-ongelmista tai toistuvasta karvanpoistosta.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen kaulan etupuolella\n\n- Ei parranajon aiheuttamaa ärsytystä tai punoitusta\n\n- Antaa iholle raikkaan ja huolitellun ulkonäön\n\n- Sopii sekä naisille että miehille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja pehmeä iho ilman karvoja\n\n- Selkeä ja siisti kaulan alue\n\n- Pitkäaikainen tulos hoitosarjan jälkeen\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Шея (спереди) мужская",
+            "summary": "Лазерная эпиляция передней части шеи удаляет нежелательные волосы, делая кожу ровной и ухоженной.",
+            "description": "Лазерная эпиляция передней части шеи удаляет нежелательные волосы, делая кожу ровной и ухоженной.\n\n**Преимущества процедуры:**\n\n- Эффективное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Долговременный эффект\n\n**Какие результаты вы получите:**\n\n- Гладкая и ухоженная кожа передней части шеи\n\n- Отсутствие раздражения и щетины\n\n- Долговременный результат\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "45 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-10",
+        "displayOrder": 9,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Back of Neck",
+            "summary": "Laser hair removal of the back of the neck removes hair, creating a neat and hygienic appearance.",
+            "description": "Laser hair removal of the back of the neck removes hair, creating a neat and hygienic appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Quick and safe procedure\n\n**Results you will get:**\n\n- Smooth back of the neck\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "25 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Kaula takaa",
+            "summary": "Laserkarvanpoisto kaulan takaosasta on tehokas ratkaisu ylimääräisten karvojen poistoon niska-alueelta. Menetelmä sopii erityisesti niille, joilla karvat kasvavat tiheästi hiusrajan alapuolella tai aiheuttavat epäsiistin ulkonäön.",
+            "description": "Laserkarvanpoisto kaulan takaosasta on tehokas ratkaisu ylimääräisten karvojen poistoon niska-alueelta. Menetelmä sopii erityisesti niille, joilla karvat kasvavat tiheästi hiusrajan alapuolella tai aiheuttavat epäsiistin ulkonäön.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen niskan alueella\n\n- Siisti ja huoliteltu hiusraja\n\n- Ei sisäänkasvaneita karvoja tai ihoärsytystä\n\n- Sopii sekä naisille että miehille\n\n**Tulokset hoidon jälkeen:**\n\n- Selkeä ja sileä niskan alue\n\n- Pitkäkestoinen vaikutus ilman toistuvaa karvanpoistoa\n\n- Huoliteltu ulkonäkö joka päivä\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "25 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Шея (сзади)",
+            "summary": "Процедура удаляет волосы с задней части шеи, обеспечивая аккуратный вид и гигиеничность.",
+            "description": "Процедура удаляет волосы с задней части шеи, обеспечивая аккуратный вид и гигиеничность.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Быстрый результат\n\n**Какие результаты вы получите:**\n\n- Гладкая задняя часть шеи\n\n- Устранение нежелательных волос\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "25 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-11",
+        "displayOrder": 10,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Male Back of Neck",
+            "summary": "Laser hair removal of the back of the neck removes hair, creating a neat and hygienic appearance.",
+            "description": "Laser hair removal of the back of the neck removes hair, creating a neat and hygienic appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Quick and safe procedure\n\n**Results you will get:**\n\n- Smooth back of the neck\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Miehen kaula takaa",
+            "summary": "Laserkarvanpoisto kaulan takaosasta on tehokas ratkaisu ylimääräisten karvojen poistoon niska-alueelta. Menetelmä sopii erityisesti niille, joilla karvat kasvavat tiheästi hiusrajan alapuolella tai aiheuttavat epäsiistin ulkonäön.",
+            "description": "Laserkarvanpoisto kaulan takaosasta on tehokas ratkaisu ylimääräisten karvojen poistoon niska-alueelta. Menetelmä sopii erityisesti niille, joilla karvat kasvavat tiheästi hiusrajan alapuolella tai aiheuttavat epäsiistin ulkonäön.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen niskan alueella\n\n- Siisti ja huoliteltu hiusraja\n\n- Ei sisäänkasvaneita karvoja tai ihoärsytystä\n\n- Sopii sekä naisille että miehille\n\n**Tulokset hoidon jälkeen:**\n\n- Selkeä ja sileä niskan alue\n\n- Pitkäkestoinen vaikutus ilman toistuvaa karvanpoistoa\n\n- Huoliteltu ulkonäkö joka päivä\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Шея (сзади) мужская",
+            "summary": "Процедура удаляет волосы с задней части шеи, обеспечивая аккуратный вид и гигиеничность.",
+            "description": "Процедура удаляет волосы с задней части шеи, обеспечивая аккуратный вид и гигиеничность.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Быстрый результат\n\n**Какие результаты вы получите:**\n\n- Гладкая задняя часть шеи\n\n- Устранение нежелательных волос\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "45 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-12",
+        "displayOrder": 11,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Shoulders",
+            "summary": "Laser hair removal of the shoulders removes unwanted hair, leaving the skin smooth and well-groomed.",
+            "description": "Laser hair removal of the shoulders removes unwanted hair, leaving the skin smooth and well-groomed.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth shoulders\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "50 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Olkapäät",
+            "summary": "Laserkarvanpoisto olkapäiden alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin. Tämä hoito on erityisen suosittu miehillä, mutta sopii myös naisille.",
+            "description": "Laserkarvanpoisto olkapäiden alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin. Tämä hoito on erityisen suosittu miehillä, mutta sopii myös naisille.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen olkapäillä\n\n- Iho näyttää siistiltä ja tasaiselta\n\n- Ei ihon ärsytystä, haavaumia tai sisäänkasvaneita karvoja\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileät ja huolitellut olkapäät\n\n- Pitkäkestoinen tulos ilman jatkuvaa karvanpoistoa\n\n- Parantaa ihon ulkonäköä ja mukavuutta\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "50 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Плечи",
+            "summary": "Лазерная эпиляция плеч позволяет удалить нежелательные волосы, делая зону ровной, аккуратной и ухоженной.",
+            "description": "Лазерная эпиляция плеч позволяет удалить нежелательные волосы, делая зону ровной, аккуратной и ухоженной.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Быстрый и безопасный результат\n\n**Какие результаты вы получите:**\n\n- Гладкие и ухоженные плечи\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "50 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-13",
+        "displayOrder": 12,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Chest",
+            "summary": "Laser hair removal of the chest removes unwanted hair, leaving the area smooth and tidy.",
+            "description": "Laser hair removal of the chest removes unwanted hair, leaving the area smooth and tidy.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for both men and women\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth chest skin\n\n- No irritation\n\n- Long-lasting results\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "70 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Rinta",
+            "summary": "Laserkarvanpoisto rinnan alueelta tarjoaa pysyvän ratkaisun ylimääräisten karvojen poistamiseen. Hoito sopii erityisesti naisille, joilla esiintyy häiritseviä karvoja rintakehällä, mutta myös miehille, jotka haluavat sileän ja siistin rinnan.",
+            "description": "Laserkarvanpoisto rinnan alueelta tarjoaa pysyvän ratkaisun ylimääräisten karvojen poistamiseen. Hoito sopii erityisesti naisille, joilla esiintyy häiritseviä karvoja rintakehällä, mutta myös miehille, jotka haluavat sileän ja siistin rinnan.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen rinnan alueella\n\n- Iho näyttää huolitellulta ja siistiltä\n\n- Ei sisäänkasvaneita karvoja tai ihoärsytystä\n\n- Sopii eri ihotyypeille ja karvanlaaduille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja pehmeä iho rintakehällä\n\n- Pitkäkestoinen vaikutus hoitosarjan jälkeen\n\n- Luonnollinen ja siisti ulkonäkö\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "70 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Грудь",
+            "summary": "Лазерная эпиляция груди удаляет нежелательные волосы, делая зону аккуратной и ухоженной.",
+            "description": "Лазерная эпиляция груди удаляет нежелательные волосы, делая зону аккуратной и ухоженной.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для мужчин и женщин\n\n- Ровная и гладкая кожа\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа груди\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "70 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-14",
+        "displayOrder": 13,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Male Chest",
+            "summary": "Specialized procedure for men to remove chest hair for a neat and well-groomed appearance.",
+            "description": "Specialized procedure for men to remove chest hair for a neat and well-groomed appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Safe and comfortable procedure\n\n**Results you will get:**\n\n- Smooth male chest\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "90 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Miehen rinta",
+            "summary": "Laserkarvanpoisto miehen rintakehältä on suosittu hoito, joka poistaa tehokkaasti ja pitkäaikaisesti ei-toivotut karvat. Tämä menetelmä tekee ihosta sileän ja helpottaa henkilökohtaista hygieniaa.",
+            "description": "Laserkarvanpoisto miehen rintakehältä on suosittu hoito, joka poistaa tehokkaasti ja pitkäaikaisesti ei-toivotut karvat. Tämä menetelmä tekee ihosta sileän ja helpottaa henkilökohtaista hygieniaa.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen rintakehällä\n\n- Iho näyttää siistiltä ja hyvin hoidetulta\n\n- Ei sisäänkasvaneita karvoja eikä ihoärsytystä\n\n- Lisää mukavuutta urheilussa ja arjessa\n\n**Tulokset hoidon jälkeen:**\n\n- Huoliteltu ja sileä rintakehä\n\n- Pitkäkestoinen tulos ilman jatkuvaa ajelua\n\n- Parannettu ihon ulkonäkö ja itsevarmuus\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "90 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Грудь мужская",
+            "summary": "Специальная процедура для мужчин, удаляющая волосы на груди, создавая аккуратный и ухоженный вид.",
+            "description": "Специальная процедура для мужчин, удаляющая волосы на груди, создавая аккуратный и ухоженный вид.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Быстрый и безопасный результат\n\n**Какие результаты вы получите:**\n\n- Гладкая мужская грудь\n\n- Отсутствие раздражения и щетины\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "90 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-15",
+        "displayOrder": 14,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Back",
+            "summary": "Laser hair removal of the back removes hair from both upper and lower back, giving a neat and tidy appearance.",
+            "description": "Laser hair removal of the back removes hair from both upper and lower back, giving a neat and tidy appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for both men and women\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth back\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "110 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Selkä",
+            "summary": "Laserkarvanpoisto selästä tarjoaa ratkaisun ylimääräisten karvojen poistoon koko selän alueelta. Hoito sopii sekä naisille että miehille, joilla karvankasvu selässä aiheuttaa epämukavuutta tai esteettisiä haittoja.",
+            "description": "Laserkarvanpoisto selästä tarjoaa ratkaisun ylimääräisten karvojen poistoon koko selän alueelta. Hoito sopii sekä naisille että miehille, joilla karvankasvu selässä aiheuttaa epämukavuutta tai esteettisiä haittoja.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen selässä\n\n- Sileä ja pehmeä iho ilman ärsytystä\n\n- Ei tarvetta toistuvalle vahaukselle tai ajelulle\n\n- Sopii eri ihotyypeille ja karvanlaaduille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja huoliteltu selkä\n\n- Pitkäaikainen vaikutus ja mukavuus\n\n- Luonnollinen ja siisti ulkonäkö\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "110 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Спина",
+            "summary": "Лазерная эпиляция спины удаляет волосы с верхней и нижней части спины, обеспечивая аккуратный вид и гигиеничность.",
+            "description": "Лазерная эпиляция спины удаляет волосы с верхней и нижней части спины, обеспечивая аккуратный вид и гигиеничность.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для мужчин и женщин\n\n- Ровная и гладкая кожа\n\n**Какие результаты вы получите:**\n\n- Гладкая и ухоженная спина\n\n- Отсутствие раздражения и щетины\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "110 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-16",
+        "displayOrder": 15,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Male Back",
+            "summary": "Specialized procedure for men to remove hair from the back, ensuring a neat and well-groomed appearance.",
+            "description": "Specialized procedure for men to remove hair from the back, ensuring a neat and well-groomed appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Safe and comfortable procedure\n\n**Results you will get:**\n\n- Smooth male back\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "140 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Miehen selkä",
+            "summary": "Laserkarvanpoisto miehen selästä on erityisesti miehille suunnattu tehokas hoito, joka poistaa ei-toivotut karvat laajalta alueelta ja parantaa ihon ulkonäköä.",
+            "description": "Laserkarvanpoisto miehen selästä on erityisesti miehille suunnattu tehokas hoito, joka poistaa ei-toivotut karvat laajalta alueelta ja parantaa ihon ulkonäköä.\n\n**Edut:**\n\n- Tehokas ja pysyvä karvojen vähennys laajalla alueella\n\n- Ei sisäänkasvaneita karvoja eikä ihoärsytystä\n\n- Helpottaa ihonhoitoa ja parantaa ulkonäköä\n\n- Sopii aktiivisille miehille, jotka arvostavat siistiä ilmettä\n\n**Tulokset hoidon jälkeen:**\n\n- Karvaton ja huoliteltu selkä\n\n- Pitkäaikainen sileys ilman jatkuvaa karvanpoistoa\n\n- Itsevarmempi olo jokapäiväisessä elämässä\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "140 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Спина мужская",
+            "summary": "Процедура специально для мужчин, удаляющая волосы с всей спины, создавая аккуратный и эстетичный вид.",
+            "description": "Процедура специально для мужчин, удаляющая волосы с всей спины, создавая аккуратный и эстетичный вид.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Безболезненно и безопасно\n\n**Какие результаты вы получите:**\n\n- Гладкая мужская спина\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "140 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-17",
+        "displayOrder": 16,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Upper Arms",
+            "summary": "Laser hair removal for the upper arms (shoulders to elbows) ensures smooth and well-groomed skin.",
+            "description": "Laser hair removal for the upper arms (shoulders to elbows) ensures smooth and well-groomed skin.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth upper arms\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "45 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Käsivarret (yläosa)",
+            "summary": "Laserkarvanpoisto käsivarsien yläosasta on tehokas hoito, joka poistaa ei-toivotut karvat olkavarsista. Hoito tekee ihosta sileän ja siistin ilman jatkuvaa ajelua tai vahauksen tarvetta.",
+            "description": "Laserkarvanpoisto käsivarsien yläosasta on tehokas hoito, joka poistaa ei-toivotut karvat olkavarsista. Hoito tekee ihosta sileän ja siistin ilman jatkuvaa ajelua tai vahauksen tarvetta.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen käsivarsien yläosassa\n\n- Sileä ja pehmeä iho ilman ärsytystä\n\n- Sopii kaikille ihotyypeille ja karvanlaaduille\n\n- Ei sisäänkasvaneita karvoja\n\n**Tulokset hoidon jälkeen:**\n\n- Sileät ja huolitellut käsivarret\n\n- Pitkäkestoinen tulos ilman jatkuvaa karvanpoistoa\n\n- Parantunut ihon ulkonäkö ja mukavuus\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "45 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Руки (верхняя часть)",
+            "summary": "Лазерная эпиляция верхней части рук удаляет волосы с плеч до локтей, обеспечивая гладкость и ухоженный вид.",
+            "description": "Лазерная эпиляция верхней части рук удаляет волосы с плеч до локтей, обеспечивая гладкость и ухоженный вид.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Гладкая и ухоженная кожа\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа на верхней части рук\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "45 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-18",
+        "displayOrder": 17,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Lower Arms",
+            "summary": "Laser hair removal for lower arms (elbows to wrists) provides a neat and tidy appearance.",
+            "description": "Laser hair removal for lower arms (elbows to wrists) provides a neat and tidy appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Quick and effective\n\n**Results you will get:**\n\n- Smooth lower arms\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "40 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Käsivarret (alaosa)",
+            "summary": "Laserkarvanpoisto käsivarsien alaosasta kohdistuu kyynärvarsiin ja poistaa tehokkaasti ei-toivotut karvat. Menetelmä antaa sileän ja siistin ihon pitkäksi aikaa.",
+            "description": "Laserkarvanpoisto käsivarsien alaosasta kohdistuu kyynärvarsiin ja poistaa tehokkaasti ei-toivotut karvat. Menetelmä antaa sileän ja siistin ihon pitkäksi aikaa.\n\n**Edut:**\n\n- Tehokas ja pysyvä karvojen vähennys kyynärvarsista\n\n- Ei ihoärsytystä, punoitusta tai sisäänkasvaneita karvoja\n\n- Sopii sekä naisille että miehille\n\n- Nopea ja kivuton hoito\n\n**Tulokset hoidon jälkeen:**\n\n- Pehmeä ja huoliteltu iho käsivarsien alaosassa\n\n- Pitkäaikainen sileys ilman ajelua tai vahausta\n\n- Parantunut itsevarmuus arjessa\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "40 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Руки (нижняя часть)",
+            "summary": "Удаление волос с нижней части рук (от локтя до кистей) для аккуратного и ухоженного результата.",
+            "description": "Удаление волос с нижней части рук (от локтя до кистей) для аккуратного и ухоженного результата.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Быстрый и безопасный результат\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа на нижней части рук\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "40 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-19",
+        "displayOrder": 18,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Full Arms",
+            "summary": "Comprehensive procedure removing hair from the entire arms, from shoulders to wrists.",
+            "description": "Comprehensive procedure removing hair from the entire arms, from shoulders to wrists.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Complete treatment in one session\n\n**Results you will get:**\n\n- Smooth arms\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "70 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Käsivarret kokonaan",
+            "summary": "Laserkarvanpoisto koko käsivarsien alueelta poistaa karvat sekä ylä- että alaosasta. Tämä kattava hoito takaa tasaisen ja pitkäaikaisen sileän lopputuloksen.",
+            "description": "Laserkarvanpoisto koko käsivarsien alueelta poistaa karvat sekä ylä- että alaosasta. Tämä kattava hoito takaa tasaisen ja pitkäaikaisen sileän lopputuloksen.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen koko käsivarsien alueella\n\n- Ei enää tarvetta ajella tai vahata\n\n- Ei ihoärsytystä eikä sisäänkasvaneita karvoja\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Täysin sileät ja pehmeät käsivarret\n\n- Pitkäkestoinen tulos hoitosarjan jälkeen\n\n- Kaunis ja huoliteltu ihon ulkonäkö\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "70 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Руки целиком",
+            "summary": "Комплексная процедура удаления волос с рук полностью — от плеч до кистей.",
+            "description": "Комплексная процедура удаления волос с рук полностью — от плеч до кистей.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Одновременная обработка всех зон рук\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа на руках полностью\n\n- Отсутствие раздражения\n\n- Долговременный результат\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "70 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-20",
+        "displayOrder": 19,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Underarms",
+            "summary": "Laser hair removal of the underarms removes hair, preventing irritation and ingrown hairs, leaving the area smooth.",
+            "description": "Laser hair removal of the underarms removes hair, preventing irritation and ingrown hairs, leaving the area smooth.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Reduced irritation and ingrown hairs\n\n- Minimal trauma\n\n- Quick and safe procedure\n\n**Results you will get:**\n\n- Smooth underarms\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 week",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Kainalot",
+            "summary": "Laserkarvanpoisto kainaloista on yksi suosituimmista alueista, sillä se tekee arjesta huomattavasti helpompaa ja mukavampaa. Ei enää päivittäistä ajelua tai ärsyyntynyttä ihoa.",
+            "description": "Laserkarvanpoisto kainaloista on yksi suosituimmista alueista, sillä se tekee arjesta huomattavasti helpompaa ja mukavampaa. Ei enää päivittäistä ajelua tai ärsyyntynyttä ihoa.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen kainaloissa\n\n- Ei sisäänkasvaneita karvoja tai ihoärsytystä\n\n- Raikas ja siisti tunne joka päivä\n\n- Nopeasti toteutettava hoito\n\n**Tulokset hoidon jälkeen:**\n\n- Sileät ja karvattomat kainalot\n\n- Pitkäaikainen vaikutus ilman jatkuvaa karvanpoistoa\n\n- Lisää mukavuutta ja itsevarmuutta\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "45 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Подмышки",
+            "summary": "Лазерная эпиляция подмышек удаляет нежелательные волосы, предотвращает раздражение и врастание волос, делая кожу гладкой.",
+            "description": "Лазерная эпиляция подмышек удаляет нежелательные волосы, предотвращает раздражение и врастание волос, делая кожу гладкой.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Уменьшение раздражения и врастания волос\n\n- Минимальная травматичность\n\n- Быстрый и безопасный результат\n\n**Какие результаты вы получите:**\n\n- Гладкие подмышки\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "45 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-21",
+        "displayOrder": 20,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Areolas",
+            "summary": "Laser hair removal of the areolas removes unwanted hair around the nipples, leaving the area smooth, neat, and well-groomed.",
+            "description": "Laser hair removal of the areolas removes unwanted hair around the nipples, leaving the area smooth, neat, and well-groomed.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for sensitive skin\n\n- Smooth and even area\n\n**Results you will get:**\n\n- Hair-free areolas\n\n- No irritation or ingrown hairs\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks",
+            "imageAlt": null,
+            "durationLabel": "10 min",
+            "priceLabel": "25 € / 10 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Areolat",
+            "summary": "Laserkarvanpoisto nännipihoilta on hellävarainen ja tarkka hoito, joka poistaa ei-toivotut karvat herkästä rinnan alueesta.",
+            "description": "Laserkarvanpoisto nännipihoilta on hellävarainen ja tarkka hoito, joka poistaa ei-toivotut karvat herkästä rinnan alueesta.\n\n**Edut:**\n\n- Tehokas ja hellävarainen karvojen poisto intiimiltä alueelta\n\n- Ei ihoärsytystä eikä sisäänkasvaneita karvoja\n\n- Luonnollinen ja huoliteltu ulkonäkö\n\n- Sopii sekä naisille että miehille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä iho nännipihojen ympärillä\n\n- Pitkäkestoinen tulos ilman toistuvaa karvanpoistoa\n\n- Lisää itsevarmuutta ja mukavuutta arjessa\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "10 min",
+            "priceLabel": "25 € / 10 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Ареолы",
+            "summary": "Лазерная эпиляция ареол позволяет аккуратно удалить волосы вокруг сосков, делая кожу ровной и ухоженной.",
+            "description": "Лазерная эпиляция ареол позволяет аккуратно удалить волосы вокруг сосков, делая кожу ровной и ухоженной.\n\n**Преимущества процедуры:**\n\n- Деликатное и безопасное удаление волос\n\n- Долговременный эффект\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n**Какие результаты вы получите:**\n\n- Гладкая и ухоженная зона ареол\n\n- Отсутствие раздражения\n\n- Долговременный результат\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "10 мин",
+            "priceLabel": "25 € / 10 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-22",
+        "displayOrder": 21,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Abdomen",
+            "summary": "Laser hair removal for the abdomen removes unwanted hair, leaving the area smooth and tidy.",
+            "description": "Laser hair removal for the abdomen removes unwanted hair, leaving the area smooth and tidy.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth abdomen\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "55 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Vatsa",
+            "summary": "Laserkarvanpoisto vatsan alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin.",
+            "description": "Laserkarvanpoisto vatsan alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen vatsan alueella\n\n- Ei ajelun tai vahauksen tarvetta\n\n- Ei ihoärsytystä tai sisäänkasvaneita karvoja\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja huoliteltu iho vatsan alueella\n\n- Pitkäaikainen vaikutus ja mukavuus\n\n- Kaunis ja siisti ulkonäkö\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "55 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Живот",
+            "summary": "Лазерная эпиляция живота удаляет нежелательные волосы с передней части живота, обеспечивая аккуратный и ухоженный вид.",
+            "description": "Лазерная эпиляция живота удаляет нежелательные волосы с передней части живота, обеспечивая аккуратный и ухоженный вид.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Гладкая и ухоженная кожа\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа на животе\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "55 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-23",
+        "displayOrder": 22,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Male Abdomen",
+            "summary": "Laser hair removal for the abdomen removes unwanted hair, leaving the area smooth and tidy.",
+            "description": "Laser hair removal for the abdomen removes unwanted hair, leaving the area smooth and tidy.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth abdomen\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "90 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Miehen vatsa",
+            "summary": "Laserkarvanpoisto vatsan alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin.",
+            "description": "Laserkarvanpoisto vatsan alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta sileän ja siistin.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen vatsan alueella\n\n- Ei ajelun tai vahauksen tarvetta\n\n- Ei ihoärsytystä tai sisäänkasvaneita karvoja\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja huoliteltu iho vatsan alueella\n\n- Pitkäaikainen vaikutus ja mukavuus\n\n- Kaunis ja siisti ulkonäkö\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "90 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Живот мужской",
+            "summary": "Лазерная эпиляция живота удаляет нежелательные волосы с передней части живота, обеспечивая аккуратный и ухоженный вид.",
+            "description": "Лазерная эпиляция живота удаляет нежелательные волосы с передней части живота, обеспечивая аккуратный и ухоженный вид.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Гладкая и ухоженная кожа\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа на животе\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "90 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-24",
+        "displayOrder": 23,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Abdomen Line",
+            "summary": "Laser hair removal along the abdomen line (from navel to bikini line) provides a neat and aesthetic appearance.",
+            "description": "Laser hair removal along the abdomen line (from navel to bikini line) provides a neat and aesthetic appearance.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and well-groomed skin\n\n**Results you will get:**\n\n- Smooth abdomen line\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "10 min",
+            "priceLabel": "25 € / 10 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Vatsalinja",
+            "summary": "Laserkarvanpoisto vatsalinjasta kohdistuu erityisesti karvoihin navasta alaspäin kulkevalla alueella. Hoito on suosittu sekä naisilla että miehillä.",
+            "description": "Laserkarvanpoisto vatsalinjasta kohdistuu erityisesti karvoihin navasta alaspäin kulkevalla alueella. Hoito on suosittu sekä naisilla että miehillä.\n\n**Edut:**\n\n- Tehokas ja pysyvä karvojen väheneminen vatsalinjassa\n\n- Ei tarvetta jatkuvalle ajelulle tai vahaukselle\n\n- Ei ihoärsytystä eikä sisäänkasvaneita karvoja\n\n- Luonnollinen ja siisti lopputulos\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä vatsalinjan alue\n\n- Pitkäkestoinen vaikutus hoitosarjan jälkeen\n\n- Lisää itsevarmuutta arjessa\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "10 min",
+            "priceLabel": "25 € / 10 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Линия живота",
+            "summary": "Удаление волос по линии живота (от пупка до линии бикини) для аккуратного и эстетичного результата.",
+            "description": "Удаление волос по линии живота (от пупка до линии бикини) для аккуратного и эстетичного результата.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Гладкая и ухоженная кожа\n\n**Какие результаты вы получите:**\n\n- Аккуратная и гладкая зона линии живота\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "10 мин",
+            "priceLabel": "25 € / 10 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-25",
+        "displayOrder": 24,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Bikini Line",
+            "summary": "Laser hair removal of the bikini line removes unwanted hair along the panty line, leaving the area smooth and tidy.",
+            "description": "Laser hair removal of the bikini line removes unwanted hair along the panty line, leaving the area smooth and tidy.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and well-groomed skin\n\n**Results you will get:**\n\n- Neat and smooth bikini line\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "55 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Bikinilinja",
+            "summary": "Laserkarvanpoisto bikinirajasta tekee ihosta sileän ja huolitellun ilman päivittäistä ajelua. Hoito kohdistuu karvoihin alusvaatteiden reunan ulkopuolelta.",
+            "description": "Laserkarvanpoisto bikinirajasta tekee ihosta sileän ja huolitellun ilman päivittäistä ajelua. Hoito kohdistuu karvoihin alusvaatteiden reunan ulkopuolelta.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen bikinirajassa\n\n- Ei sisäänkasvaneita karvoja tai ihoärsytystä\n\n- Huoliteltu ja siisti ulkonäkö ympäri vuoden\n\n- Nopeasti toteutettava hoito\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja kaunis bikinirajan alue\n\n- Pitkäaikainen vaikutus ilman jatkuvaa karvanpoistoa\n\n- Lisää itsevarmuutta rannalla ja arjessa\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "55 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Линия бикини",
+            "summary": "Лазерная эпиляция линии бикини удаляет волосы с зоны по контуру трусиков, обеспечивая аккуратный и ухоженный вид.",
+            "description": "Лазерная эпиляция линии бикини удаляет волосы с зоны по контуру трусиков, обеспечивая аккуратный и ухоженный вид.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Гладкая и ухоженная кожа\n\n**Какие результаты вы получите:**\n\n- Аккуратная и гладкая линия бикини\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "20 мин",
+            "priceLabel": "55 € / 20 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-26",
+        "displayOrder": 25,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Deep Bikini",
+            "summary": "Laser hair removal of the deep bikini area removes hair from a wider intimate zone, ensuring maximum neatness and comfort.",
+            "description": "Laser hair removal of the deep bikini area removes hair from a wider intimate zone, ensuring maximum neatness and comfort.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for sensitive skin\n\n- Smooth and well-groomed intimate area\n\n**Results you will get:**\n\n- Smooth intimate area\n\n- No irritation or ingrown hairs\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "85 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Syvä bikini",
+            "summary": "Laserkarvanpoisto syvältä bikinialueelta antaa vielä huolitellumman ja siistimmän lopputuloksen. Karvat poistetaan laajemmalta alueelta alusvaatteiden reunan sisäpuolelta.",
+            "description": "Laserkarvanpoisto syvältä bikinialueelta antaa vielä huolitellumman ja siistimmän lopputuloksen. Karvat poistetaan laajemmalta alueelta alusvaatteiden reunan sisäpuolelta.\n\n**Edut:**\n\n- Laajempi ja tarkempi karvanpoisto kuin perinteisessä bikinirajassa\n\n- Ei ihoärsytystä eikä sisäänkasvaneita karvoja\n\n- Huoliteltu ja sileä lopputulos\n\n- Pitkäkestoinen vaikutus\n\n**Tulokset hoidon jälkeen:**\n\n- Erittäin sileä bikinialue\n\n- Pitkäaikainen tulos ilman jatkuvaa karvojen poistoa\n\n- Lisää mukavuutta ja itsevarmuutta\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "85 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Глубокое бикини",
+            "summary": "Удаление волос с более широкой зоны бикини, включая интимные участки, с максимальной аккуратностью и комфортом.",
+            "description": "Удаление волос с более широкой зоны бикини, включая интимные участки, с максимальной аккуратностью и комфортом.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для чувствительной кожи\n\n- Гладкая и ухоженная зона\n\n**Какие результаты вы получите:**\n\n- Гладкая интимная зона\n\n- Отсутствие раздражения и вросших волос\n\n- Долговременный результат\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "85 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-27",
+        "displayOrder": 26,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Brazilian Bikini",
+            "summary": "Laser hair removal of the Brazilian bikini removes all hair from the intimate zone for a fully smooth result.",
+            "description": "Laser hair removal of the Brazilian bikini removes all hair from the intimate zone for a fully smooth result.\n\n**Benefits of the procedure:**\n\n- Complete hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and well-groomed intimate area\n\n**Results you will get:**\n\n- Fully smooth intimate zone\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "120 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Brasilialainen bikini",
+            "summary": "Brasilialainen bikinihoito poistaa karvat lähes kokonaan bikinialueelta, jättäen halutessa vain pienen muodon. Tämä hoito sopii erinomaisesti niille, jotka haluavat täydellisen sileän lopputuloksen.",
+            "description": "Brasilialainen bikinihoito poistaa karvat lähes kokonaan bikinialueelta, jättäen halutessa vain pienen muodon. Tämä hoito sopii erinomaisesti niille, jotka haluavat täydellisen sileän lopputuloksen.\n\n**Edut:**\n\n- Maksimaalinen sileys bikinialueella\n\n- Ei ihoärsytystä eikä sisäänkasvaneita karvoja\n\n- Hygieeninen ja esteettinen lopputulos\n\n- Sopii täydellisesti rannalle ja arkeen\n\n**Tulokset hoidon jälkeen:**\n\n- Täysin sileä bikinialue\n\n- Pitkäaikainen vaikutus ilman ajelua tai vahausta\n\n- Lisää itsevarmuutta ja mukavuutta\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "120 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Бразильское бикини",
+            "summary": "Удаление всех волос с интимной зоны, включая межьягодичную складку, для максимально гладкой и ухоженной кожи.",
+            "description": "Удаление всех волос с интимной зоны, включая межьягодичную складку, для максимально гладкой и ухоженной кожи.\n\n**Преимущества процедуры:**\n\n- Полное удаление волос\n\n- Деликатная и безопасная процедура\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n**Какие результаты вы получите:**\n\n- Полностью гладкая интимная зона\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "120 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-28",
+        "displayOrder": 27,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Buttocks",
+            "summary": "Laser hair removal of the buttocks removes unwanted hair, leaving the skin smooth and well-groomed.",
+            "description": "Laser hair removal of the buttocks removes unwanted hair, leaving the skin smooth and well-groomed.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth buttocks\n\n- No irritation or ingrown hairs\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "70 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Pakarat",
+            "summary": "Laserkarvanpoisto pakaroista tekee ihosta sileän ja huolitellun ilman jatkuvaa karvanpoistoa. Hoito sopii sekä naisille että miehille.",
+            "description": "Laserkarvanpoisto pakaroista tekee ihosta sileän ja huolitellun ilman jatkuvaa karvanpoistoa. Hoito sopii sekä naisille että miehille.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen pakaroiden alueella\n\n- Ei ihoärsytystä tai sisäänkasvaneita karvoja\n\n- Pehmeä ja sileä iho\n\n- Helppo ja mukava hoito\n\n**Tulokset hoidon jälkeen:**\n\n- Sileät ja huolitellut pakarat\n\n- Pitkäaikainen vaikutus hoitosarjan jälkeen\n\n- Lisää itsevarmuutta arjessa ja urheilussa\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "70 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Ягодицы",
+            "summary": "Лазерная эпиляция ягодиц удаляет нежелательные волосы, обеспечивая гладкость и ухоженный вид кожи.",
+            "description": "Лазерная эпиляция ягодиц удаляет нежелательные волосы, обеспечивая гладкость и ухоженный вид кожи.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Гладкая и ровная поверхность кожи\n\n**Какие результаты вы получите:**\n\n- Гладкие ягодицы\n\n- Отсутствие раздражения и вросших волос\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "70 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-29",
+        "displayOrder": 28,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Thighs",
+            "summary": "Laser hair removal of the thighs removes unwanted hair, leaving the upper legs smooth and tidy.",
+            "description": "Laser hair removal of the thighs removes unwanted hair, leaving the upper legs smooth and tidy.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth thighs\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "110 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Reidet",
+            "summary": "Laserkarvanpoisto reisien alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta tasaisen ja sileän.",
+            "description": "Laserkarvanpoisto reisien alueelta poistaa tehokkaasti ei-toivotut karvat ja tekee ihosta tasaisen ja sileän.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen reisien alueella\n\n- Ei sisäänkasvaneita karvoja tai ihoärsytystä\n\n- Huoliteltu ja sileä iho\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileät ja siistit reidet\n\n- Pitkäaikainen vaikutus ilman jatkuvaa ajelua\n\n- Lisää mukavuutta ja itsevarmuutta\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "110 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Бедра",
+            "summary": "Удаление волос с бедер, обеспечивая гладкую и ухоженную поверхность.",
+            "description": "Удаление волос с бедер, обеспечивая гладкую и ухоженную поверхность.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Быстрый и безопасный результат\n\n- Подходит для всех типов кожи\n\n**Какие результаты вы получите:**\n\n- Гладкие бедра\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "110 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-30",
+        "displayOrder": 29,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Calves + Knees",
+            "summary": "Laser hair removal of calves and knees removes hair for smooth and well-groomed lower legs.",
+            "description": "Laser hair removal of calves and knees removes hair for smooth and well-groomed lower legs.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and even skin\n\n**Results you will get:**\n\n- Smooth calves and knees\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "95 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Sääret + polvet",
+            "summary": "Laserkarvanpoisto säärien ja polvien alueelta tarjoaa kokonaisvaltaisen ratkaisun ei-toivotuille karvoille alaraajoissa. Hoito tekee ihosta sileän ja tasaisen.",
+            "description": "Laserkarvanpoisto säärien ja polvien alueelta tarjoaa kokonaisvaltaisen ratkaisun ei-toivotuille karvoille alaraajoissa. Hoito tekee ihosta sileän ja tasaisen.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen säärissä ja polvissa\n\n- Ei ihoärsytystä tai sisäänkasvaneita karvoja\n\n- Sileä ja pehmeä iho\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Huolitellut sääret ja polvet\n\n- Pitkäaikainen vaikutus hoitosarjan jälkeen\n\n- Lisää itsevarmuutta ja mukavuutta\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "95 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Голень + Колени",
+            "summary": "Удаление волос с голеней и коленей, обеспечивая аккуратный и ровный результат.",
+            "description": "Удаление волос с голеней и коленей, обеспечивая аккуратный и ровный результат.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Гладкая и ухоженная кожа\n\n**Какие результаты вы получите:**\n\n- Гладкие голени и колени\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "95 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-31",
+        "displayOrder": 30,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Full Legs",
+            "summary": "Laser hair removal of the full legs removes hair from thighs to calves, leaving smooth and well-groomed skin.",
+            "description": "Laser hair removal of the full legs removes hair from thighs to calves, leaving smooth and well-groomed skin.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Smooth and even legs\n\n**Results you will get:**\n\n- Smooth legs\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "210 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Jalat kokonaan",
+            "summary": "Laserkarvanpoisto jaloista kokonaan kattaa sekä reidet että sääret ja polvet, tarjoten kattavan ja pitkäkestoisen sileän lopputuloksen.",
+            "description": "Laserkarvanpoisto jaloista kokonaan kattaa sekä reidet että sääret ja polvet, tarjoten kattavan ja pitkäkestoisen sileän lopputuloksen.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen koko jalkojen alueella\n\n- Ei ihoärsytystä eikä sisäänkasvaneita karvoja\n\n- Tasainen ja sileä lopputulos\n\n- Sopii kaikille ihotyypeille ja karvanlaaduille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileät ja huolitellut jalat kokonaan\n\n- Pitkäaikainen vaikutus hoitosarjan jälkeen\n\n- Lisää mukavuutta ja itsevarmuutta arjessa ja urheilussa\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "210 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Ноги целиком",
+            "summary": "Удаление волос с ног от бедер до голеней для ровного и гладкого результата.",
+            "description": "Удаление волос с ног от бедер до голеней для ровного и гладкого результата.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Гладкая и ухоженная кожа\n\n**Какие результаты вы получите:**\n\n- Гладкие ноги\n\n- Отсутствие раздражения и щетины\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "210 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-32",
+        "displayOrder": 31,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Underarms + Bikini Line",
+            "summary": "Achieve flawless, smooth, and well-groomed underarms and bikini line with our advanced combined hair removal treatment.",
+            "description": "A combined procedure to remove hair from underarms and the bikini line, providing smoothness and well-groomed skin.\n\n**Benefits of the procedure:**\n\n- Long-lasting hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Simultaneous treatment of two areas\n\n**Results you will get:**\n\n- Smooth underarms and bikini line\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "70 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Kainalot + Bikinilinja",
+            "summary": "Laserkarvanpoisto kainaloista ja bikinirajasta tarjoaa tehokkaan ja kattavan ratkaisun ei-toivotuille karvoille ylävartalon intiimeillä alueilla.",
+            "description": "Laserkarvanpoisto kainaloista ja bikinirajasta tarjoaa tehokkaan ja kattavan ratkaisun ei-toivotuille karvoille ylävartalon intiimeillä alueilla.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen kainaloissa ja bikinirajassa\n\n- Ei ihoärsytystä tai sisäänkasvaneita karvoja\n\n- Sileä ja huoliteltu iho\n\n- Lisää mukavuutta arjessa ja urheilussa\n\n**Tulokset hoidon jälkeen:**\n\n- Sileät ja siistit kainalot ja bikiniraja\n\n- Pitkäaikainen vaikutus hoitosarjan jälkeen\n\n- Lisää itsevarmuutta ja huoliteltu ulkonäkö\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "70 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Подмышки + Линия бикини",
+            "summary": "Комплексная процедура для удаления волос с подмышек и линии бикини, обеспечивающая гладкость и ухоженный вид.",
+            "description": "Комплексная процедура для удаления волос с подмышек и линии бикини, обеспечивающая гладкость и ухоженный вид.\n\n**Преимущества процедуры:**\n\n- Долговременное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Одновременный уход за двумя зонами\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа подмышек и линии бикини\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "70 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-33",
+        "displayOrder": 32,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Underarms + Brazilian Bikini",
+            "summary": "Laser hair removal for underarms and the Brazilian bikini area ensures complete smoothness and comfort.",
+            "description": "Laser hair removal for underarms and the Brazilian bikini area ensures complete smoothness and comfort.\n\n**Benefits of the procedure:**\n\n- Long-lasting results\n\n- Minimal trauma\n\n- Suitable for sensitive skin\n\n- Simultaneous treatment of two zones\n\n**Results you will get:**\n\n- Smooth underarms and Brazilian area\n\n- No irritation or ingrown hairs\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "50 min",
+            "priceLabel": "145 € / 50 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Kainalot + Brasilialainen bikini",
+            "summary": "Laserkarvanpoisto kainaloista ja brasilialaisesta bikinistä antaa täydellisen sileän lopputuloksen ylävartalon intiimeillä alueilla.",
+            "description": "Laserkarvanpoisto kainaloista ja brasilialaisesta bikinistä antaa täydellisen sileän lopputuloksen ylävartalon intiimeillä alueilla.\n\n**Edut:**\n\n- Karvojen pysyvä väheneminen laajoilla alueilla\n\n- Ei ihoärsytystä eikä sisäänkasvaneita karvoja\n\n- Huoliteltu ja esteettinen lopputulos\n\n- Sopii naisille ja miehille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileä ja siisti iho koko hoidetulla alueella\n\n- Pitkäaikainen vaikutus ilman jatkuvaa karvanpoistoa\n\n- Lisää itsevarmuutta ja mukavuutta\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "50 min",
+            "priceLabel": "145 € / 50 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Подмышки + Бразильское бикини",
+            "summary": "Удаление волос с подмышек и интимной зоны для полной гладкости и комфорта.",
+            "description": "Удаление волос с подмышек и интимной зоны для полной гладкости и комфорта.\n\n**Преимущества процедуры:**\n\n- Долговременный эффект\n\n- Минимальная травматичность\n\n- Подходит для чувствительной кожи\n\n- Комплексная обработка зон\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа подмышек и бразильской зоны\n\n- Отсутствие раздражения\n\n- Долговременный результат\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "50 мин",
+            "priceLabel": "145 € / 50 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-34",
+        "displayOrder": 33,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Brazilian Bikini + Full Legs",
+            "summary": "Comprehensive hair removal for women, covering the Brazilian bikini area and full legs for a flawless result.",
+            "description": "Comprehensive hair removal for women, covering the Brazilian bikini area and full legs for a flawless result.\n\n**Benefits of the procedure:**\n\n- Complete hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Multiple zones treated simultaneously\n\n**Results you will get:**\n\n- Smooth Brazilian area and legs\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "90 min",
+            "priceLabel": "290 € / 90 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Brasilialainen bikini + Jalat kokonaan",
+            "summary": "Tämä kattava hoito poistaa karvat brasilialaisen bikinialueen lisäksi kokonaan jaloista, tarjoten maksimaalisen sileän ja huolitellun lopputuloksen.",
+            "description": "Tämä kattava hoito poistaa karvat brasilialaisen bikinialueen lisäksi kokonaan jaloista, tarjoten maksimaalisen sileän ja huolitellun lopputuloksen.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen laajalla alueella\n\n- Ei ihoärsytystä tai sisäänkasvaneita karvoja\n\n- Huoliteltu ja esteettinen ulkonäkö\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Täysin sileä ja huoliteltu iho\n\n- Pitkäaikainen vaikutus hoitosarjan jälkeen\n\n- Lisää itsevarmuutta ja mukavuutta\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "90 min",
+            "priceLabel": "290 € / 90 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Бразильское бикини + Ноги целиком",
+            "summary": "Комплексная эпиляция для женщин, включающая интимную зону и ноги полностью, обеспечивая безупречный результат.",
+            "description": "Комплексная эпиляция для женщин, включающая интимную зону и ноги полностью, обеспечивая безупречный результат.\n\n**Преимущества процедуры:**\n\n- Полное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Одновременная обработка нескольких зон\n\n**Какие результаты вы получите:**\n\n- Гладкая интимная зона и ноги\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "90 мин",
+            "priceLabel": "290 € / 90 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-35",
+        "displayOrder": 34,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Underarms + Brazilian Bikini + Full Legs",
+            "summary": "Maximum coverage procedure removing hair from underarms, Brazilian bikini area, and full legs for complete smoothness.",
+            "description": "Maximum coverage procedure removing hair from underarms, Brazilian bikini area, and full legs for complete smoothness.\n\n**Benefits of the procedure:**\n\n- Complete hair removal across multiple areas\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Time-efficient treatment\n\n**Results you will get:**\n\n- Smooth underarms, Brazilian area, and legs\n\n- No irritation\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "120 min",
+            "priceLabel": "315 € / 120 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Kainalot + Brasilialainen bikini + Jalat kokonaan",
+            "summary": "Yksi kattavimmista hoidoista, joka poistaa ei-toivotut karvat kainaloista, brasilialaisesta bikinistä ja jaloista kokonaan. Tarjoaa pitkään kestävän sileän ja huolitellun lopputuloksen.",
+            "description": "Yksi kattavimmista hoidoista, joka poistaa ei-toivotut karvat kainaloista, brasilialaisesta bikinistä ja jaloista kokonaan. Tarjoaa pitkään kestävän sileän ja huolitellun lopputuloksen.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen kaikilla hoidetulla alueella\n\n- Ei ihoärsytystä eikä sisäänkasvaneita karvoja\n\n- Huoliteltu, sileä ja esteettinen lopputulos\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Sileät ja huolitellut alueet koko vartalossa\n\n- Pitkäaikainen vaikutus hoitosarjan jälkeen\n\n- Lisää itsevarmuutta ja mukavuutta arjessa ja urheilussa\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "120 min",
+            "priceLabel": "315 € / 120 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Подмышки + Бразильское бикини + Ноги целиком",
+            "summary": "Максимальный комплекс для удаления волос с подмышек, бразильской зоны и ног, обеспечивая полный уход и долговременный эффект.",
+            "description": "Максимальный комплекс для удаления волос с подмышек, бразильской зоны и ног, обеспечивая полный уход и долговременный эффект.\n\n**Преимущества процедуры:**\n\n- Полное удаление волос с нескольких зон\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Экономия времени при комбинированной процедуре\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа на подмышках, интимной зоне и ногах\n\n- Отсутствие раздражения\n\n- Долговременный эффект\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "120 мин",
+            "priceLabel": "315 € / 120 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-36",
+        "displayOrder": 35,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser Hair Removal",
+            "name": "Full Body",
+            "summary": "Complete hair removal for the entire body, including face, arms, legs, underarms, bikini, chest, and back.",
+            "description": "Complete hair removal for the entire body, including face, arms, legs, underarms, bikini, chest, and back.\n\n**Benefits of the procedure:**\n\n- Comprehensive hair removal\n\n- Minimal trauma\n\n- Suitable for all skin types\n\n- Maximum effect in one course\n\n**Results you will get:**\n\n- Smooth skin all over the body\n\n- No irritation or stubble\n\n- Long-lasting effect\n\n**Course:**\n\n5–15 sessions at intervals of 4–6 weeks.",
+            "imageAlt": null,
+            "durationLabel": "180 min",
+            "priceLabel": "1000 € / 180 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoisto",
+            "name": "Koko keho",
+            "summary": "Kokonaisvaltainen laserkarvanpoisto koko keholle tarjoaa maksimaalisen sileän lopputuloksen ja huolitellun ulkonäön. Tämä hoito poistaa karvat tehokkaasti kaikilta alueilta.",
+            "description": "Kokonaisvaltainen laserkarvanpoisto koko keholle tarjoaa maksimaalisen sileän lopputuloksen ja huolitellun ulkonäön. Tämä hoito poistaa karvat tehokkaasti kaikilta alueilta.\n\n**Edut:**\n\n- Pysyvä karvojen väheneminen koko kehossa\n\n- Ei ihoärsytystä tai sisäänkasvaneita karvoja\n\n- Tasainen ja sileä lopputulos\n\n- Sopii kaikille ihotyypeille\n\n**Tulokset hoidon jälkeen:**\n\n- Koko keho sileä ja huoliteltu\n\n- Pitkäaikainen vaikutus ilman jatkuvaa karvanpoistoa\n\n- Lisää itsevarmuutta ja mukavuutta jokapäiväisessä elämässä\n\n**Kurssi:**\n\nSuositeltu 5–15 hoitokerran sarja 3–4 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "180 min",
+            "priceLabel": "1000 € / 180 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Лазерная эпиляция",
+            "name": "Всё тело",
+            "summary": "Полный уход за всем телом с удалением волос с лица, рук, ног, подмышек, зоны бикини, груди и спины.",
+            "description": "Полный уход за всем телом с удалением волос с лица, рук, ног, подмышек, зоны бикини, груди и спины.\n\n**Преимущества процедуры:**\n\n- Комплексное удаление волос\n\n- Минимальная травматичность\n\n- Подходит для всех типов кожи\n\n- Максимальный эффект за один курс\n\n**Какие результаты вы получите:**\n\n- Гладкая кожа по всему телу\n\n- Отсутствие раздражения и щетины\n\n- Долговременный результат\n\n**Курс:**\n\n5–15 процедур с интервалом 4–6 недель.",
+            "imageAlt": null,
+            "durationLabel": "180 мин",
+            "priceLabel": "1000 € / 180 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}

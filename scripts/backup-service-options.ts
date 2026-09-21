@@ -9,8 +9,9 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 const force = process.argv.includes("--force");
 const slug = process.argv.find((a) => a.startsWith("--service="))?.split("=")[1];
-if (!slug) throw new Error("Usage: backup-service-options.ts --service=<slug>");
-const OUTPUT = join(process.cwd(), `content/backups/${slug}-original-page.json`);
+if (!slug) throw new Error("Usage: backup-service-options.ts --service=<slug> [--out=filename-stem]");
+const outStem = process.argv.find((a) => a.startsWith("--out="))?.split("=")[1] ?? `${slug}-original-page`;
+const OUTPUT = join(process.cwd(), `content/backups/${outStem}.json`);
 
 async function main() {
   if (existsSync(OUTPUT) && !force) {

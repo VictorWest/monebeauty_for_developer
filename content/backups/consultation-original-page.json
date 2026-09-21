@@ -1,0 +1,55 @@
+{
+  "capturedAt": "2026-09-21T20:26:13.697Z",
+  "service": {
+    "slug": "consultation",
+    "images": [
+      "/media/clinic/medical-consultation-black-logo.png"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "consultation-30",
+        "displayOrder": 0,
+        "image": "/media/clinic/medical-consultation-black-logo.png",
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Appointments",
+            "name": "Medical consultation in Helsinki",
+            "summary": "A 30-minute one-to-one appointment: you describe what you want to change, a specialist assesses it in person and you agree the next step.",
+            "description": "A medical consultation is a 30-minute one-to-one appointment at the Helsinki clinic. You explain what you would like to change, the specialist assesses the relevant area in person, and you discuss the available next steps together.\n\nThe consultation is a standalone visit and does not oblige you to book a treatment. If you decide to continue, the specialist explains the proposed timing and cost before anything is agreed.",
+            "imageAlt": "Medical consultation in Helsinki",
+            "durationLabel": "30 min",
+            "priceLabel": null,
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Vastaanotot",
+            "name": "Lääketieteellinen konsultaatio Helsingissä",
+            "summary": "30 minuutin henkilökohtainen vastaanotto: kerrot mitä haluaisit muuttaa, asiantuntija arvioi tilanteen paikan päällä ja sovitte jatkosta.",
+            "description": "Lääketieteellinen konsultaatio on 30 minuutin henkilökohtainen vastaanotto Helsingin klinikalla. Kerrot, mitä haluaisit muuttaa, asiantuntija arvioi kyseisen alueen paikan päällä ja keskustelette mahdollisista jatkoaskelista.\n\nKonsultaatio on itsenäinen käynti eikä velvoita varaamaan hoitoa. Jos päätät jatkaa, asiantuntija kertoo ehdotetun aikataulun ja kustannukset ennen kuin mistään sovitaan.",
+            "imageAlt": "Lääketieteellinen konsultaatio Helsingissä",
+            "durationLabel": "30 min",
+            "priceLabel": null,
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Приёмы",
+            "name": "Медицинская консультация в Хельсинки",
+            "summary": "Индивидуальный приём на 30 минут: вы рассказываете, что хотите изменить, специалист оценивает это очно, и вы намечаете следующий шаг.",
+            "description": "Медицинская консультация — это индивидуальный 30-минутный приём в клинике в Хельсинки. Вы рассказываете, что хотели бы изменить, специалист очно оценивает соответствующую область, и вы вместе обсуждаете возможные дальнейшие шаги.\n\nКонсультация является самостоятельным визитом и не обязывает записываться на процедуру. Если вы решите продолжить, специалист заранее объяснит предполагаемые сроки и стоимость.",
+            "imageAlt": "Медицинская консультация в Хельсинки",
+            "durationLabel": "30 мин",
+            "priceLabel": null,
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}

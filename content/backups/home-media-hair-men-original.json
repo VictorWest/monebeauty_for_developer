@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-09-21T20:25:47.658Z",
+  "slots": [
+    {
+      "key": "home.area.hair",
+      "image": "/media/home/treatment-areas/hair.jpeg",
+      "focalX": 50,
+      "focalY": 50
+    },
+    {
+      "key": "home.area.men",
+      "image": "/media/home/treatment-areas/men.png",
+      "focalX": 50,
+      "focalY": 50
+    }
+  ]
+}

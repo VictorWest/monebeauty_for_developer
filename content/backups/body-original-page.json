@@ -1,0 +1,307 @@
+{
+  "capturedAt": "2026-09-21T20:26:00.080Z",
+  "service": {
+    "slug": "body",
+    "images": [
+      "/media/clinic/body/body-treatment.png"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "treatment-01",
+        "displayOrder": 0,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Endosphere therapy",
+            "summary": "Procedure for one area\n\nDuration: 30 minutes\nArea of choice: legs, abdomen, buttocks, back",
+            "description": "Procedure for one area\n\nDuration: 30 minutes\nArea of choice: legs, abdomen, buttocks, back",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "65 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Endospheres Therapy",
+            "summary": "Hoito yhdelle alueelle\n\nAika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, pakarat, selkä",
+            "description": "Hoito yhdelle alueelle\n\nAika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, pakarat, selkä",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "65 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Эндосфера-терапия",
+            "summary": "**Процедура на одну зону**\n\nВремя: 30 минут\nЗона на выбор: ноги, живот, ягодицы, спина",
+            "description": "**Процедура на одну зону**\n\nВремя: 30 минут\nЗона на выбор: ноги, живот, ягодицы, спина",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "65 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-02",
+        "displayOrder": 1,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "For men",
+            "name": "Endosphere therapy",
+            "summary": "Procedure for one area\n\nDuration: 30 minutes\nArea of choice: legs, abdomen, hands, back",
+            "description": "Procedure for one area\n\nDuration: 30 minutes\nArea of choice: legs, abdomen, hands, back",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "80 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Miehille",
+            "name": "Endospheres Therapy",
+            "summary": "Hoito yhdelle alueelle\n\nAika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, kädet, selkä",
+            "description": "Hoito yhdelle alueelle\n\nAika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, kädet, selkä",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "80 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Для мужчин",
+            "name": "Эндосфера-терапия",
+            "summary": "**Процедура на одну зону**\n\nВремя: 30 минут\nЗона на выбор: ноги, живот, руки, спина",
+            "description": "**Процедура на одну зону**\n\nВремя: 30 минут\nЗона на выбор: ноги, живот, руки, спина",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "80 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-03",
+        "displayOrder": 2,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Anti-cellulite program",
+            "name": "Endosphere therapy",
+            "summary": "Anti-cellulite program\nDuration: 45 minutes\nAreas: legs, buttocks, abdomen",
+            "description": "Anti-cellulite program\nDuration: 45 minutes\nAreas: legs, buttocks, abdomen",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "85 € / 45 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Selluliittihoito-ohjelma",
+            "name": "Endospheres Therapy",
+            "summary": "Selluliittihoito-ohjelma\n\nAika: 45 minuuttia Alueet: jalat, pakarat, vatsa",
+            "description": "Selluliittihoito-ohjelma\n\nAika: 45 minuuttia Alueet: jalat, pakarat, vatsa",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "85 € / 45 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Антицеллюлитная программа",
+            "name": "Эндосфера-терапия",
+            "summary": "**Антицеллюлитная программа**\nВремя: 45 минут\nЗоны: ноги, ягодицы, живот",
+            "description": "**Антицеллюлитная программа**\nВремя: 45 минут\nЗоны: ноги, ягодицы, живот",
+            "imageAlt": null,
+            "durationLabel": "45 мин",
+            "priceLabel": "85 € / 45 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-04",
+        "displayOrder": 3,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Full-body procedure",
+            "name": "Endosphere therapy",
+            "summary": "Endosphere therapy for the whole body (express)\n\nThe procedure follows the full protocol, but less time is spent on smaller areas and details. The main focus is on improving blood circulation, lymphatic drainage, and overall skin toning.\n\nDuration: 60 minutes\n\nProtocol: legs, buttocks, abdomen, back",
+            "description": "Endosphere therapy for the whole body (express)\n\nThe procedure follows the full protocol, but less time is spent on smaller areas and details. The main focus is on improving blood circulation, lymphatic drainage, and overall skin toning.\n\nDuration: 60 minutes\n\nProtocol: legs, buttocks, abdomen, back",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "105 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Koko vartalolle",
+            "name": "Endospheres Therapy",
+            "summary": "**Endospheres hoito koko vartalolle (60 minuuttia, express):**\nHoito suoritetaan täydellisen protokollan mukaisesti, mutta pieniin alueisiin ja yksityiskohtiin käytetään vähemmän aikaa. Päähuomio keskittyy verenkierron parantamiseen, lymfakierron aktivointiin ja ihon yleiseen kiinteyttämiseen.\n\nAika: 60 minuuttia\nProtokolla: jalat, pakarat, vatsa, selkä",
+            "description": "**Endospheres hoito koko vartalolle (60 minuuttia, express):**\nHoito suoritetaan täydellisen protokollan mukaisesti, mutta pieniin alueisiin ja yksityiskohtiin käytetään vähemmän aikaa. Päähuomio keskittyy verenkierron parantamiseen, lymfakierron aktivointiin ja ihon yleiseen kiinteyttämiseen.\n\nAika: 60 minuuttia\nProtokolla: jalat, pakarat, vatsa, selkä",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "105 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Процедура на все тело",
+            "name": "Эндосфера-терапия",
+            "summary": "Эндосферотерапия на все тело ( экспресс)\n\nПроцедура проводится по полному регламенту, однако уделяется меньше времени обработке мелких зон и деталей. Основное внимание направлено на улучшение кровообращения, лимфодренаж и общее тонизирование кожи.\n\nВремя: 60 минут\n\nПротокол: ноги, ягодицы, живот, спина",
+            "description": "Эндосферотерапия на все тело ( экспресс)\n\nПроцедура проводится по полному регламенту, однако уделяется меньше времени обработке мелких зон и деталей. Основное внимание направлено на улучшение кровообращения, лимфодренаж и общее тонизирование кожи.\n\nВремя: 60 минут\n\nПротокол: ноги, ягодицы, живот, спина",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "105 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-05",
+        "displayOrder": 4,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Full Protocol",
+            "name": "Endosphere therapy",
+            "summary": "Full Protocol (Full-body Procedure)\nDuration: 75 minutes\nAreas: legs, buttocks, abdomen, hands, back\n\nDescription: This procedure includes the complete protocol, targeting all major areas of the body. Unlike the express procedure, more attention is given to each area, allowing for deeper impact and visible results. The thorough treatment of each zone promotes improved blood circulation, relief of muscle tension, and active cellulite reduction. The extended duration of the procedure ensures maximum effectiveness, providing comprehensive care and a noticeable improvement in overall skin tone and body contours.",
+            "description": "Full Protocol (Full-body Procedure)\nDuration: 75 minutes\nAreas: legs, buttocks, abdomen, hands, back\n\nDescription: This procedure includes the complete protocol, targeting all major areas of the body. Unlike the express procedure, more attention is given to each area, allowing for deeper impact and visible results. The thorough treatment of each zone promotes improved blood circulation, relief of muscle tension, and active cellulite reduction. The extended duration of the procedure ensures maximum effectiveness, providing comprehensive care and a noticeable improvement in overall skin tone and body contours.",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "125 € / 75 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Täysi protokolla hoito koko vartalolle",
+            "name": "Endospheres Therapy",
+            "summary": "**Täysi protokolla (hoito koko vartalolle)**\nAika: 75 minuuttia\nAlueet: jalat, pakarat, vatsa, selkä\n\nKuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen, tarjoten kokonaisvaltaista hoitoa sekä huomattavaa parannusta ihon kiinteyteen ja vartalon muotoihin.",
+            "description": "**Täysi protokolla (hoito koko vartalolle)**\nAika: 75 minuuttia\nAlueet: jalat, pakarat, vatsa, selkä\n\nKuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen, tarjoten kokonaisvaltaista hoitoa sekä huomattavaa parannusta ihon kiinteyteen ja vartalon muotoihin.",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "125 € / 75 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Полный протокол",
+            "name": "Эндосфера-терапия",
+            "summary": "**Полный протокол (Процедура на все тело)**\nВремя: 75 минут\nЗоны: ноги, ягодицы, живот, спина\n\n**Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе с целлюлитом. Длительность процедуры позволяет достичь максимального эффекта, обеспечивая комплексный уход и заметное улучшение общего тонуса кожи и контуров тела.",
+            "description": "**Полный протокол (Процедура на все тело)**\nВремя: 75 минут\nЗоны: ноги, ягодицы, живот, спина\n \n\n**Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе с целлюлитом. Длительность процедуры позволяет достичь максимального эффекта, обеспечивая комплексный уход и заметное улучшение общего тонуса кожи и контуров тела.",
+            "imageAlt": null,
+            "durationLabel": "75 мин",
+            "priceLabel": "125 € / 75 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-06",
+        "displayOrder": 5,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Arosha Body Wraps",
+            "summary": "Arosha body wrap procedures consist of several stages designed to prepare the skin, restore its balance, and address specific concerns such as cellulite, localized fat deposits, or loss of firmness. To achieve maximum effect, a three-step system is used: RESET (preparation and cleansing), RESTORE (recovery), and ATTACK (targeted action on specific issues).\n\nThe range includes various types of wraps, such as draining, anti-cellulite, lipolytic, and others, tailored to the client's individual needs. These treatments pair perfectly with Arosha's home care products, allowing clients to maintain and enhance the effects of professional procedures at home.",
+            "description": "Arosha body wrap procedures consist of several stages designed to prepare the skin, restore its balance, and address specific concerns such as cellulite, localized fat deposits, or loss of firmness. To achieve maximum effect, a three-step system is used: RESET (preparation and cleansing), RESTORE (recovery), and ATTACK (targeted action on specific issues).\n\nThe range includes various types of wraps, such as draining, anti-cellulite, lipolytic, and others, tailored to the client's individual needs. These treatments pair perfectly with Arosha's home care products, allowing clients to maintain and enhance the effects of professional procedures at home.\n\nIn beauty salons, these wraps are often offered as part of comprehensive body care programs that not only improve appearance but also promote overall skin and body health.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "70 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "AROSHA-merkin vartalokääreet",
+            "summary": "**AROSHA-vartalokäärehoidot sisältävät useita vaiheita, jotka auttavat valmistelemaan ihoa, palauttamaan sen tasapainon ja taistelemaan tiettyjä ongelmia, kuten selluliittia, paikallisia rasvakertymiä tai ihon kimmoisuuden menetystä vastaan. Parhaan tuloksen saavuttamiseksi käytetään kolmen vaiheen järjestelmää: RESET (valmistelu ja puhdistus), RESTORE (kosteutus ja palautus) ja ATTACK (kohdistettu vaikutus tiettyihin ongelmiin).**\n\nValikoimassa on erilaisia kääreitä, kuten nesteenpoistoon tarkoitettuja, selluliittia ehkäiseviä, rasvaa hajottavia ja muita, jotka valitaan yksilöllisesti asiakkaan tarpeiden mukaan. Nämä hoidot yhdistyvät täydellisesti AROSHA",
+            "description": "**AROSHA-vartalokäärehoidot sisältävät useita vaiheita, jotka auttavat valmistelemaan ihoa, palauttamaan sen tasapainon ja taistelemaan tiettyjä ongelmia, kuten selluliittia, paikallisia rasvakertymiä tai ihon kimmoisuuden menetystä vastaan. Parhaan tuloksen saavuttamiseksi käytetään kolmen vaiheen järjestelmää: RESET (valmistelu ja puhdistus), RESTORE (kosteutus ja palautus) ja ATTACK (kohdistettu vaikutus tiettyihin ongelmiin).**\n\nValikoimassa on erilaisia kääreitä, kuten nesteenpoistoon tarkoitettuja, selluliittia ehkäiseviä, rasvaa hajottavia ja muita, jotka valitaan yksilöllisesti asiakkaan tarpeiden mukaan. Nämä hoidot yhdistyvät täydellisesti AROSHA\n\nkotikäyttöön tarkoitettujen tuotteiden kanssa, mikä auttaa ylläpitämään ja vahvistamaan ammattilaishoidon vaikutuksia kotona.\n\nKauneushoitoloissa nämä vartalokääreet voivat olla osa kattavia vartalonhoito-ohjelmia, jotka eivät ainoastaan paranna ulkonäköä, vaan myös edistävät ihon ja koko kehon hyvinvointia.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "70 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Обертывания от бренда AROSHA",
+            "summary": "Процедуры обертываний AROSHA включают несколько этапов, которые помогают подготовить кожу, восстановить её баланс и бороться с конкретными проблемами, такими как целлюлит, локализованные жировые отложения или потеря упругости. Для достижения максимального эффекта используется система трех этапов: RESET (подготовка и очищение), RESTORE (восстановление) и ATTACK (направленное действие на конкретные проблемы).\n\nАссортимент включает разные виды обертываний, такие как дренажные, антицеллюлитные, липолитические и другие, которые подбираются индивидуально в зависимости от потребностей клиента. Эти процедуры идеально сочетаются с другими продуктами домашнего ухода от AROSHA, что позволяет поддерживать и усиливать эффект профессиональных процедур в условиях дома.",
+            "description": "Процедуры обертываний AROSHA включают несколько этапов, которые помогают подготовить кожу, восстановить её баланс и бороться с конкретными проблемами, такими как целлюлит, локализованные жировые отложения или потеря упругости. Для достижения максимального эффекта используется система трех этапов: RESET (подготовка и очищение), RESTORE (восстановление) и ATTACK (направленное действие на конкретные проблемы).\n\nАссортимент включает разные виды обертываний, такие как дренажные, антицеллюлитные, липолитические и другие, которые подбираются индивидуально в зависимости от потребностей клиента. Эти процедуры идеально сочетаются с другими продуктами домашнего ухода от AROSHA, что позволяет поддерживать и усиливать эффект профессиональных процедур в условиях дома.\n\nВ салонах красоты эти обертывания могут быть представлены как часть комплексных программ по уходу за телом, которые не только улучшают внешний вид, но и способствуют общему оздоровлению кожи и организма.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "70 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-07",
+        "displayOrder": 6,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Pressotherapy",
+            "summary": "A hardware-based lymphatic drainage massage that gently and effectively works on the entire body. During the treatment, a special suit applies rhythmic compression and decompression, stimulating lymphatic flow and blood circulation.",
+            "description": "A hardware-based lymphatic drainage massage that gently and effectively works on the entire body. During the treatment, a special suit applies rhythmic compression and decompression, stimulating lymphatic flow and blood circulation.\n\n**Benefits of the treatment:**\n\n- Reduces swelling and heaviness in the legs\n\n- Activates lymphatic and blood circulation\n\n- Removes excess fluids and toxins\n\n- Improves skin tone and texture\n\n- Helps prevent cellulite and varicose veins\n\n**Course:**\n\nFor long-lasting results, a course of 6–10 sessions is recommended, 1–2 times per week.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "55 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Pressoterapia",
+            "summary": "Laiteavusteinen lymfaterapia, joka vaikuttaa hellävaraisesti ja tehokkaasti koko kehoon. Hoidon aikana erityinen puku luo rytmistä painetta ja rentoutumista, mikä aktivoi imunestekiertoa ja verenkiertoa.",
+            "description": "Laiteavusteinen lymfaterapia, joka vaikuttaa hellävaraisesti ja tehokkaasti koko kehoon. Hoidon aikana erityinen puku luo rytmistä painetta ja rentoutumista, mikä aktivoi imunestekiertoa ja verenkiertoa.\n\n**Hoidon vaikutukset:**\n\n- Vähentää turvotusta ja jalkojen raskautta\n\n- Aktivoi lymfa- ja verenkiertoa\n\n- Poistaa ylimääräistä nestettä ja kuona-aineita\n\n- Parantaa ihon sävyä ja laatua\n\n- Ehkäisee selluliittia ja suonikohjuja\n\n**Kurssi:**\n\nPysyvien tulosten saavuttamiseksi suositellaan 6–10 hoitokerran sarjaa, 1–2 kertaa viikossa.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "55 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Прессотерапия",
+            "summary": "Аппаратный лимфодренажный массаж, который мягко и эффективно воздействует на все тело. Во время процедуры с помощью специального костюма происходит ритмичное сжатие и расслабление тканей, что активирует лимфоток и кровообращение.",
+            "description": "Аппаратный лимфодренажный массаж, который мягко и эффективно воздействует на все тело. Во время процедуры с помощью специального костюма происходит ритмичное сжатие и расслабление тканей, что активирует лимфоток и кровообращение.\n\n**Эффекты процедуры:**\n\n- Уменьшение отёков и тяжести в ногах\n\n- Активизация лимфо- и кровообращения\n\n- Выведение лишней жидкости и токсинов\n\n- Улучшение тонуса и качества кожи\n\n- Профилактика целлюлита и варикозного расширения вен\n\n**Курс:**\n\nДля стойкого результата рекомендуется курс из 6–10 процедур, 1–2 раза в неделю.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "55 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}

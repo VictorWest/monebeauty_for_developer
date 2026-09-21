@@ -1,0 +1,223 @@
+{
+  "capturedAt": "2026-09-21T20:27:38.155Z",
+  "service": {
+    "slug": "endospheres",
+    "images": [
+      "/media/clinic/endospheres/endospheres-treatment.png"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "endospheres-intro-75",
+        "displayOrder": 0,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Italian Compressive Microvibration® technology",
+            "name": "Introductory Endospheres Therapy® — 75 min Full Body Protocol",
+            "summary": "Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.",
+            "description": "## What is Endospheres Therapy®?\n\nEndospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.\n\nToday, Endospheres Therapy® is widely used in aesthetic medicine, sports rehabilitation, and wellness programs around the world.\n\nThe primary goal of the treatment is not only to improve appearance but also to support the body’s natural ability to recover, regenerate, and maintain healthy tissue function.\n\nMany clients notice visible aesthetic improvements together with lighter legs, reduced swelling, improved circulation, and an overall feeling of wellbeing after the very first session.\n\n## The History of Endospheres Therapy®\n\nDeveloped in Italy by biomedical engineers and medical specialists, the patented Compressive Microvibration® technology provides a safe, non-invasive alternative to aggressive body contouring procedures. Today it is used in more than 60 countries in aesthetic medicine, physiotherapy, sports recovery and rehabilitation.\n\n## How Does It Work?\n\nThe rotating silicone spheres generate rhythmic compressive microvibrations that stimulate lymphatic drainage, venous circulation, microcirculation, tissue oxygenation, cellular metabolism, reduce fluid retention and support regeneration—without tissue trauma or downtime.\n\n## Why Does Every Treatment Begin with the Lymphatic System?\n\nEvery treatment follows the original manufacturer protocol, beginning with activation of the major lymphatic pathways before treating target areas. This approach maximizes both therapeutic and aesthetic results.\n\n## Clinical Evidence\n\nClinical observations demonstrate improvements in circulation, oxygenation, skin elasticity, reduction of swelling and cellulite after a complete treatment course. The technology is non-invasive and can be combined with other treatments when recommended by a qualified specialist.\n\n## Which Treatment Duration Should I Choose?\n\n### 75 min Full Body Protocol\n\nComplete original protocol including lymphatic activation, back, legs, buttocks and abdomen. Recommended for the best long-term clinical and aesthetic results.",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "€99",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Täysi protokolla hoito koko vartalolle",
+            "name": "Endospheres Therapy® -tutustumishoito — 75 min koko vartalon protokolla",
+            "summary": "**Täysi protokolla (hoito koko vartalolle)**\nAika: 75 minuuttia\nAlueet: jalat, pakarat, vatsa, selkä\n\nKuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen, tarjoten kokonaisvaltaista hoitoa sekä huomattavaa parannusta ihon kiinteyteen ja vartalon muotoihin.",
+            "description": "**Täysi protokolla (hoito koko vartalolle)**\nAika: 75 minuuttia\nAlueet: jalat, pakarat, vatsa, selkä\n\nKuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen, tarjoten kokonaisvaltaista hoitoa sekä huomattavaa parannusta ihon kiinteyteen ja vartalon muotoihin.",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "99 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Полный протокол",
+            "name": "Знакомство с Endospheres Therapy® — протокол для всего тела, 75 мин",
+            "summary": "**Полный протокол (Процедура на все тело)**\nВремя: 75 минут\nЗоны: ноги, ягодицы, живот, спина\n\n**Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе с целлюлитом. Длительность процедуры позволяет достичь максимального эффекта, обеспечивая комплексный уход и заметное улучшение общего тонуса кожи и контуров тела.",
+            "description": "**Полный протокол (Процедура на все тело)**\nВремя: 75 минут\nЗоны: ноги, ягодицы, живот, спина\n \n\n**Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе с целлюлитом. Длительность процедуры позволяет достичь максимального эффекта, обеспечивая комплексный уход и заметное улучшение общего тонуса кожи и контуров тела.",
+            "imageAlt": null,
+            "durationLabel": "75 мин",
+            "priceLabel": "99 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-30",
+        "displayOrder": 1,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Italian Compressive Microvibration® technology",
+            "name": "Endospheres Therapy® — 30 min",
+            "summary": "Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.",
+            "description": "## What is Endospheres Therapy®?\n\nEndospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.\n\nToday, Endospheres Therapy® is widely used in aesthetic medicine, sports rehabilitation, and wellness programs around the world.\n\nThe primary goal of the treatment is not only to improve appearance but also to support the body’s natural ability to recover, regenerate, and maintain healthy tissue function.\n\nMany clients notice visible aesthetic improvements together with lighter legs, reduced swelling, improved circulation, and an overall feeling of wellbeing after the very first session.\n\n## The History of Endospheres Therapy®\n\nDeveloped in Italy by biomedical engineers and medical specialists, the patented Compressive Microvibration® technology provides a safe, non-invasive alternative to aggressive body contouring procedures. Today it is used in more than 60 countries in aesthetic medicine, physiotherapy, sports recovery and rehabilitation.\n\n## How Does It Work?\n\nThe rotating silicone spheres generate rhythmic compressive microvibrations that stimulate lymphatic drainage, venous circulation, microcirculation, tissue oxygenation, cellular metabolism, reduce fluid retention and support regeneration—without tissue trauma or downtime.\n\n## Why Does Every Treatment Begin with the Lymphatic System?\n\nEvery treatment follows the original manufacturer protocol, beginning with activation of the major lymphatic pathways before treating target areas. This approach maximizes both therapeutic and aesthetic results.\n\n## Clinical Evidence\n\nClinical observations demonstrate improvements in circulation, oxygenation, skin elasticity, reduction of swelling and cellulite after a complete treatment course. The technology is non-invasive and can be combined with other treatments when recommended by a qualified specialist.\n\n## Which Treatment Duration Should I Choose?\n\n### 30 min\n\nOne target area (abdomen, buttocks, thighs, back).",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "€65",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Endospheres-terapia 30 min",
+            "summary": "Hoito yhdelle alueelle\n\nAika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, pakarat, selkä",
+            "description": "Hoito yhdelle alueelle\n\nAika: 30 minuuttia Valittavissa oleva alue: jalat, vatsa, pakarat, selkä",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "65 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Терапия Endospheres 30 мин",
+            "summary": "**Процедура на одну зону**\n\nВремя: 30 минут\nЗона на выбор: ноги, живот, ягодицы, спина",
+            "description": "**Процедура на одну зону**\n\nВремя: 30 минут\nЗона на выбор: ноги, живот, ягодицы, спина",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "65 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-45",
+        "displayOrder": 2,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Italian Compressive Microvibration® technology",
+            "name": "Endospheres Therapy® — 45 min",
+            "summary": "Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.",
+            "description": "## What is Endospheres Therapy®?\n\nEndospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.\n\nToday, Endospheres Therapy® is widely used in aesthetic medicine, sports rehabilitation, and wellness programs around the world.\n\nThe primary goal of the treatment is not only to improve appearance but also to support the body’s natural ability to recover, regenerate, and maintain healthy tissue function.\n\nMany clients notice visible aesthetic improvements together with lighter legs, reduced swelling, improved circulation, and an overall feeling of wellbeing after the very first session.\n\n## The History of Endospheres Therapy®\n\nDeveloped in Italy by biomedical engineers and medical specialists, the patented Compressive Microvibration® technology provides a safe, non-invasive alternative to aggressive body contouring procedures. Today it is used in more than 60 countries in aesthetic medicine, physiotherapy, sports recovery and rehabilitation.\n\n## How Does It Work?\n\nThe rotating silicone spheres generate rhythmic compressive microvibrations that stimulate lymphatic drainage, venous circulation, microcirculation, tissue oxygenation, cellular metabolism, reduce fluid retention and support regeneration—without tissue trauma or downtime.\n\n## Why Does Every Treatment Begin with the Lymphatic System?\n\nEvery treatment follows the original manufacturer protocol, beginning with activation of the major lymphatic pathways before treating target areas. This approach maximizes both therapeutic and aesthetic results.\n\n## Clinical Evidence\n\nClinical observations demonstrate improvements in circulation, oxygenation, skin elasticity, reduction of swelling and cellulite after a complete treatment course. The technology is non-invasive and can be combined with other treatments when recommended by a qualified specialist.\n\n## Which Treatment Duration Should I Choose?\n\n### 45 min\n\nLegs, buttocks and abdomen.",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "€85",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Selluliittihoito-ohjelma",
+            "name": "Endospheres-terapia 45 min",
+            "summary": "Selluliittihoito-ohjelma\n\nAika: 45 minuuttia Alueet: jalat, pakarat, vatsa",
+            "description": "Selluliittihoito-ohjelma\n\nAika: 45 minuuttia Alueet: jalat, pakarat, vatsa",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "85 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Антицеллюлитная программа",
+            "name": "Терапия Endospheres 45 мин",
+            "summary": "**Антицеллюлитная программа**\nВремя: 45 минут\nЗоны: ноги, ягодицы, живот",
+            "description": "**Антицеллюлитная программа**\nВремя: 45 минут\nЗоны: ноги, ягодицы, живот",
+            "imageAlt": null,
+            "durationLabel": "45 мин",
+            "priceLabel": "85 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-60",
+        "displayOrder": 3,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Italian Compressive Microvibration® technology",
+            "name": "Endospheres Therapy® — 60 min",
+            "summary": "Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.",
+            "description": "## What is Endospheres Therapy®?\n\nEndospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.\n\nToday, Endospheres Therapy® is widely used in aesthetic medicine, sports rehabilitation, and wellness programs around the world.\n\nThe primary goal of the treatment is not only to improve appearance but also to support the body’s natural ability to recover, regenerate, and maintain healthy tissue function.\n\nMany clients notice visible aesthetic improvements together with lighter legs, reduced swelling, improved circulation, and an overall feeling of wellbeing after the very first session.\n\n## The History of Endospheres Therapy®\n\nDeveloped in Italy by biomedical engineers and medical specialists, the patented Compressive Microvibration® technology provides a safe, non-invasive alternative to aggressive body contouring procedures. Today it is used in more than 60 countries in aesthetic medicine, physiotherapy, sports recovery and rehabilitation.\n\n## How Does It Work?\n\nThe rotating silicone spheres generate rhythmic compressive microvibrations that stimulate lymphatic drainage, venous circulation, microcirculation, tissue oxygenation, cellular metabolism, reduce fluid retention and support regeneration—without tissue trauma or downtime.\n\n## Why Does Every Treatment Begin with the Lymphatic System?\n\nEvery treatment follows the original manufacturer protocol, beginning with activation of the major lymphatic pathways before treating target areas. This approach maximizes both therapeutic and aesthetic results.\n\n## Clinical Evidence\n\nClinical observations demonstrate improvements in circulation, oxygenation, skin elasticity, reduction of swelling and cellulite after a complete treatment course. The technology is non-invasive and can be combined with other treatments when recommended by a qualified specialist.\n\n## Which Treatment Duration Should I Choose?\n\n### 60 min\n\nLegs, buttocks, abdomen and additional focus areas.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "€105",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Koko vartalolle",
+            "name": "Endospheres-terapia 60 min",
+            "summary": "**Endospheres hoito koko vartalolle (60 minuuttia, express):**\nHoito suoritetaan täydellisen protokollan mukaisesti, mutta pieniin alueisiin ja yksityiskohtiin käytetään vähemmän aikaa. Päähuomio keskittyy verenkierron parantamiseen, lymfakierron aktivointiin ja ihon yleiseen kiinteyttämiseen.\n\nAika: 60 minuuttia\nProtokolla: jalat, pakarat, vatsa, selkä",
+            "description": "**Endospheres hoito koko vartalolle (60 minuuttia, express):**\nHoito suoritetaan täydellisen protokollan mukaisesti, mutta pieniin alueisiin ja yksityiskohtiin käytetään vähemmän aikaa. Päähuomio keskittyy verenkierron parantamiseen, lymfakierron aktivointiin ja ihon yleiseen kiinteyttämiseen.\n\nAika: 60 minuuttia\nProtokolla: jalat, pakarat, vatsa, selkä",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "105 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Процедура на все тело",
+            "name": "Терапия Endospheres 60 мин",
+            "summary": "Эндосферотерапия на все тело ( экспресс)\n\nПроцедура проводится по полному регламенту, однако уделяется меньше времени обработке мелких зон и деталей. Основное внимание направлено на улучшение кровообращения, лимфодренаж и общее тонизирование кожи.\n\nВремя: 60 минут\n\nПротокол: ноги, ягодицы, живот, спина",
+            "description": "Эндосферотерапия на все тело ( экспресс)\n\nПроцедура проводится по полному регламенту, однако уделяется меньше времени обработке мелких зон и деталей. Основное внимание направлено на улучшение кровообращения, лимфодренаж и общее тонизирование кожи.\n\nВремя: 60 минут\n\nПротокол: ноги, ягодицы, живот, спина",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "105 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-75",
+        "displayOrder": 4,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Italian Compressive Microvibration® technology",
+            "name": "Endospheres Therapy® — 75 min Full Body Protocol",
+            "summary": "Endospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.",
+            "description": "## What is Endospheres Therapy®?\n\nEndospheres Therapy® is an innovative Italian technology based on Compressive Microvibration®, designed to improve lymphatic drainage, stimulate blood circulation, reduce fluid retention, and restore healthy tissue function.\n\nUnlike traditional massage techniques or treatments that focus only on the skin’s surface, Endospheres Therapy® works with the body’s natural physiological processes. Improved body contours and healthier-looking skin are the result of restoring proper circulation, lymphatic flow, and tissue metabolism.\n\nToday, Endospheres Therapy® is widely used in aesthetic medicine, sports rehabilitation, and wellness programs around the world.\n\nThe primary goal of the treatment is not only to improve appearance but also to support the body’s natural ability to recover, regenerate, and maintain healthy tissue function.\n\nMany clients notice visible aesthetic improvements together with lighter legs, reduced swelling, improved circulation, and an overall feeling of wellbeing after the very first session.\n\n## The History of Endospheres Therapy®\n\nDeveloped in Italy by biomedical engineers and medical specialists, the patented Compressive Microvibration® technology provides a safe, non-invasive alternative to aggressive body contouring procedures. Today it is used in more than 60 countries in aesthetic medicine, physiotherapy, sports recovery and rehabilitation.\n\n## How Does It Work?\n\nThe rotating silicone spheres generate rhythmic compressive microvibrations that stimulate lymphatic drainage, venous circulation, microcirculation, tissue oxygenation, cellular metabolism, reduce fluid retention and support regeneration—without tissue trauma or downtime.\n\n## Why Does Every Treatment Begin with the Lymphatic System?\n\nEvery treatment follows the original manufacturer protocol, beginning with activation of the major lymphatic pathways before treating target areas. This approach maximizes both therapeutic and aesthetic results.\n\n## Clinical Evidence\n\nClinical observations demonstrate improvements in circulation, oxygenation, skin elasticity, reduction of swelling and cellulite after a complete treatment course. The technology is non-invasive and can be combined with other treatments when recommended by a qualified specialist.\n\n## Which Treatment Duration Should I Choose?\n\n### 75 min Full Body Protocol\n\nComplete original protocol including lymphatic activation, back, legs, buttocks and abdomen. Recommended for the best long-term clinical and aesthetic results.",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "€125",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Täysi protokolla hoito koko vartalolle",
+            "name": "Endospheres-terapia koko vartalolle 75 min",
+            "summary": "**Täysi protokolla (hoito koko vartalolle)**\nAika: 75 minuuttia\nAlueet: jalat, pakarat, vatsa, selkä\n\nKuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen, tarjoten kokonaisvaltaista hoitoa sekä huomattavaa parannusta ihon kiinteyteen ja vartalon muotoihin.",
+            "description": "**Täysi protokolla (hoito koko vartalolle)**\nAika: 75 minuuttia\nAlueet: jalat, pakarat, vatsa, selkä\n\nKuvaus: Tämä hoito sisältää koko vartalon täydellisen protokollan, jossa käsitellään kaikki tärkeimmät alueet. Toisin kuin pikahoito, tässä jokaiselle alueelle käytetään enemmän aikaa, mikä mahdollistaa syvemmän vaikutuksen ja näkyvämmät tulokset. Jokaisen alueen huolellinen käsittely parantaa verenkiertoa, lievittää lihasjännitystä ja tehostaa selluliitin vastaista taistelua. Hoidon pituus mahdollistaa maksimaalisen vaikutuksen, tarjoten kokonaisvaltaista hoitoa sekä huomattavaa parannusta ihon kiinteyteen ja vartalon muotoihin.",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "125 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Полный протокол",
+            "name": "Endospheres для всего тела 75 мин",
+            "summary": "**Полный протокол (Процедура на все тело)**\nВремя: 75 минут\nЗоны: ноги, ягодицы, живот, спина\n\n**Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе с целлюлитом. Длительность процедуры позволяет достичь максимального эффекта, обеспечивая комплексный уход и заметное улучшение общего тонуса кожи и контуров тела.",
+            "description": "**Полный протокол (Процедура на все тело)**\nВремя: 75 минут\nЗоны: ноги, ягодицы, живот, спина\n \n\n**Описание:** Эта процедура включает в себя полный протокол работы со всеми основными зонами тела. В отличие от экспресс-процедуры, здесь уделяется больше внимания каждой зоне, что позволяет добиться более глубокого воздействия и видимых результатов. Тщательная проработка каждой области способствует улучшению кровообращения, снятию мышечного напряжения и активной борьбе с целлюлитом. Длительность процедуры позволяет достичь максимального эффекта, обеспечивая комплексный уход и заметное улучшение общего тонуса кожи и контуров тела.",
+            "imageAlt": null,
+            "durationLabel": "75 мин",
+            "priceLabel": "125 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}
