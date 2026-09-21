@@ -1,0 +1,42 @@
+{
+  "capturedAt": "2026-09-21T15:01:09.743Z",
+  "slots": [
+    {
+      "key": "home.hero-poster",
+      "image": "/media/hero-poster.jpg",
+      "focalX": 50,
+      "focalY": 50,
+      "decorative": false,
+      "contents": [
+        {
+          "locale": "fi",
+          "alt": "Mone Beauty Clinicin hoitotila"
+        },
+        {
+          "locale": "en",
+          "alt": "Treatment room at Mone Beauty Clinic"
+        },
+        {
+          "locale": "ru",
+          "alt": "Процедурный кабинет Mone Beauty Clinic"
+        }
+      ]
+    },
+    {
+      "key": "home.area.face",
+      "image": "/media/home/treatment-areas/face.jpeg",
+      "focalX": 50,
+      "focalY": 50,
+      "decorative": true,
+      "contents": []
+    },
+    {
+      "key": "home.area.body",
+      "image": "/media/home/treatment-areas/body.jpeg",
+      "focalX": 50,
+      "focalY": 50,
+      "decorative": true,
+      "contents": []
+    }
+  ]
+}
