@@ -1,0 +1,223 @@
+{
+  "capturedAt": "2026-09-21T17:32:59.483Z",
+  "service": {
+    "slug": "trichology",
+    "images": [
+      "/media/files/land/303/8b2e9288e47ba7705d700a8d7edb596e.jpeg"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "treatment-01",
+        "displayOrder": 0,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Computerized Scalp and Hair Analysis",
+            "summary": "The procedure allows assessment of the condition of the scalp and hair using a specialized camera, helps identify potential issues, and provides personalized care recommendations.",
+            "description": "The procedure allows assessment of the condition of the scalp and hair using a specialized camera, helps identify potential issues, and provides personalized care recommendations.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "75 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Päänahan ja hiusten tietokoneellinen analyysi",
+            "summary": "Toimenpide mahdollistaa päänahan ja hiusten kunnon arvioinnin erikoiskameran avulla, auttaa tunnistamaan mahdolliset ongelmat ja antaa hoitosuosituksia.",
+            "description": "Toimenpide mahdollistaa päänahan ja hiusten kunnon arvioinnin erikoiskameran avulla, auttaa tunnistamaan mahdolliset ongelmat ja antaa hoitosuosituksia.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "75 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Компьютерная диагностика кожи головы и волос",
+            "summary": "Процедура позволяет оценить состояние кожи головы и волос с помощью специальной камеры, выявить возможные проблемы и получить рекомендации по уходу.",
+            "description": "Процедура позволяет оценить состояние кожи головы и волос с помощью специальной камеры, выявить возможные проблемы и получить рекомендации по уходу.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "75 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-02",
+        "displayOrder": 1,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "LED Scalp Therapy",
+            "summary": "LED scalp therapy is a non-invasive treatment based on the use of specific light wavelengths. The procedure stimulates hair follicles, improves scalp microcirculation, and supports overall scalp health. Light therapy helps reduce inflammation, regulate sebaceous gland activity, and activate hair growth.\n\n**Benefits of the treatment:**\n- Stimulates hair growth\n- Improves scalp blood circulation\n- Reduces hair loss\n- Decreases inflammation and irritation\n- Painless and safe procedure",
+            "description": "LED scalp therapy is a non-invasive treatment based on the use of specific light wavelengths. The procedure stimulates hair follicles, improves scalp microcirculation, and supports overall scalp health. Light therapy helps reduce inflammation, regulate sebaceous gland activity, and activate hair growth.\n\n**Benefits of the treatment:**\n- Stimulates hair growth\n- Improves scalp blood circulation\n- Reduces hair loss\n- Decreases inflammation and irritation\n- Painless and safe procedure\n\n**What results can you expect?**\n- Improved scalp condition\n- Reduced hair loss\n- Activation of new hair growth\n- Comfortable and relaxing sensation\n\n**Course:**\nA course of 6–10 sessions is recommended, with intervals of 7–10 days.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "35 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "LED-valohoito päänahalle",
+            "summary": "LED-valohoito päänahalle on ei-invasiivinen hoito, joka perustuu tietyn aallonpituuden valon vaikutukseen. Hoito stimuloi hiustuppeja, parantaa päänahan mikroverenkiertoa ja edistää päänahan yleistä hyvinvointia. Valohoito auttaa vähentämään tulehdusta, normalisoimaan talirauhasten toimintaa ja aktivoimaan hiusten kasvua.\n\n**Hoidon hyödyt:**\n- Stimuloi hiusten kasvua\n- Parantaa päänahan verenkiertoa\n- Vähentää hiustenlähtöä\n- Lievittää tulehdusta ja ärsytystä\n- Kivuton ja turvallinen hoito\n\n**Mitä tuloksia saat?**\n- Päänahan kunnon paraneminen\n- Hiustenlähdön väheneminen\n- Uusien hiusten kasvun aktivoituminen\n- Miellyttävä ja rentouttava tunne",
+            "description": "LED-valohoito päänahalle on ei-invasiivinen hoito, joka perustuu tietyn aallonpituuden valon vaikutukseen. Hoito stimuloi hiustuppeja, parantaa päänahan mikroverenkiertoa ja edistää päänahan yleistä hyvinvointia. Valohoito auttaa vähentämään tulehdusta, normalisoimaan talirauhasten toimintaa ja aktivoimaan hiusten kasvua.\n\n**Hoidon hyödyt:**\n- Stimuloi hiusten kasvua\n- Parantaa päänahan verenkiertoa\n- Vähentää hiustenlähtöä\n- Lievittää tulehdusta ja ärsytystä\n- Kivuton ja turvallinen hoito\n\n**Mitä tuloksia saat?**\n- Päänahan kunnon paraneminen\n- Hiustenlähdön väheneminen\n- Uusien hiusten kasvun aktivoituminen\n- Miellyttävä ja rentouttava tunne\n\n**Hoitojakso:**\nSuositellaan 6–10 hoidon sarjaa 7–10 päivän välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "35 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "LED-терапия",
+            "summary": "LED-терапия кожи головы — это неинвазивная процедура, основанная на воздействии световых волн определённого спектра. Процедура направлена на стимуляцию волосяных фолликулов, улучшение микроциркуляции и общего состояния кожи головы. Световая терапия способствует снижению воспаления, нормализации работы сальных желёз и активации роста волос.\n\n**Преимущества процедуры:**\n- Стимуляция роста волос\n- Улучшение кровообращения кожи головы\n- Снижение выпадения волос\n- Уменьшение воспаления и раздражения\n- Безболезненность и безопасность\n\n**Какие результаты вы получите?**\n- Улучшение состояния кожи головы\n- Снижение выпадения волос\n- Активизация роста новых волос\n- Ощущение комфорта и лёгкости",
+            "description": "LED-терапия кожи головы — это неинвазивная процедура, основанная на воздействии световых волн определённого спектра. Процедура направлена на стимуляцию волосяных фолликулов, улучшение микроциркуляции и общего состояния кожи головы. Световая терапия способствует снижению воспаления, нормализации работы сальных желёз и активации роста волос.\n\n**Преимущества процедуры:**\n- Стимуляция роста волос\n- Улучшение кровообращения кожи головы\n- Снижение выпадения волос\n- Уменьшение воспаления и раздражения\n- Безболезненность и безопасность\n\n**Какие результаты вы получите?**\n- Улучшение состояния кожи головы\n- Снижение выпадения волос\n- Активизация роста новых волос\n- Ощущение комфорта и лёгкости\n\n**Курс:**\nРекомендуется курс из 6–10 процедур с интервалом 7–10 дней.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "35 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-03",
+        "displayOrder": 2,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Scalp Peeling",
+            "summary": "Scalp peeling is a deep cleansing treatment aimed at removing dead skin cells, excess sebum, and impurities. **The peeling is selected individually** based on scalp type, presence of dandruff, sensitivity, and other individual characteristics. The procedure helps normalize sebaceous gland activity, improves microcirculation, and prepares the scalp for subsequent treatments.\n\n**Benefits of the treatment:**\n- Individually selected peeling\n- Deep cleansing of the scalp\n- Regulation of oil balance\n- Reduction of itching and flaking\n- Increased effectiveness of subsequent care",
+            "description": "Scalp peeling is a deep cleansing treatment aimed at removing dead skin cells, excess sebum, and impurities. **The peeling is selected individually** based on scalp type, presence of dandruff, sensitivity, and other individual characteristics. The procedure helps normalize sebaceous gland activity, improves microcirculation, and prepares the scalp for subsequent treatments.\n\n**Benefits of the treatment:**\n- Individually selected peeling\n- Deep cleansing of the scalp\n- Regulation of oil balance\n- Reduction of itching and flaking\n- Increased effectiveness of subsequent care\n\n**What results can you expect?**\n- Clean and healthy scalp\n- Improved scalp comfort\n- Reduced oiliness and dandruff\n- Improved hair growth\n\n**Course:**\nIt is recommended to perform 1–3 sessions every 2–4 weeks or according to a specialist’s recommendation.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "120 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Päänahan kuorinta",
+            "summary": "Päänahan kuorinta on syväpuhdistava hoito, jonka tarkoituksena on poistaa kuolleet ihosolut, ylimääräinen tali ja epäpuhtaudet. **Kuorinta valitaan yksilöllisesti** päänahan tyypin, hilseen, herkkyyden ja muiden yksilöllisten tekijöiden mukaan. Hoito normalisoi talirauhasten toimintaa, parantaa mikroverenkiertoa ja valmistelee päänahan seuraavia hoitoja varten.\n\n**Hoidon hyödyt:**\n- Yksilöllisesti valittu kuorinta\n- Päänahan syväpuhdistus\n- Rasvoittumisen tasapainottaminen\n- Kutinan ja hilseilyn vähentyminen\n- Seuraavien hoitojen tehon parantuminen\n\n**Mitä tuloksia saat?**\n- Puhdas ja terve päänahka\n- Päänahan mukavuuden paraneminen\n- Rasvoittumisen ja hilseen väheneminen\n- Hiusten kasvun paraneminen",
+            "description": "Päänahan kuorinta on syväpuhdistava hoito, jonka tarkoituksena on poistaa kuolleet ihosolut, ylimääräinen tali ja epäpuhtaudet. **Kuorinta valitaan yksilöllisesti** päänahan tyypin, hilseen, herkkyyden ja muiden yksilöllisten tekijöiden mukaan. Hoito normalisoi talirauhasten toimintaa, parantaa mikroverenkiertoa ja valmistelee päänahan seuraavia hoitoja varten.\n\n**Hoidon hyödyt:**\n- Yksilöllisesti valittu kuorinta\n- Päänahan syväpuhdistus\n- Rasvoittumisen tasapainottaminen\n- Kutinan ja hilseilyn vähentyminen\n- Seuraavien hoitojen tehon parantuminen\n\n**Mitä tuloksia saat?**\n- Puhdas ja terve päänahka\n- Päänahan mukavuuden paraneminen\n- Rasvoittumisen ja hilseen väheneminen\n- Hiusten kasvun paraneminen\n\n**Hoitojakso:**\nSuositellaan 1–3 hoitokertaa 2–4 viikon välein tai asiantuntijan suosituksen mukaan.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "120 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Пилинг",
+            "summary": "Пилинг кожи головы — это процедура глубокого очищения, направленная на удаление ороговевших клеток, излишков себума и загрязнений. **Пилинги подбираются индивидуально** в зависимости от типа кожи головы, наличия перхоти, чувствительности и других особенностей. Процедура нормализует работу сальных желез, улучшает микроциркуляцию и подготавливает кожу головы к последующим процедурам.\n\n**Преимущества процедуры:**\n- Индивидуальный подбор пилинга\n- Глубокое очищение кожи головы\n- Нормализация жирности\n- Снижение зуда и шелушения\n- Повышение эффективности последующего ухода",
+            "description": "Пилинг кожи головы — это процедура глубокого очищения, направленная на удаление ороговевших клеток, излишков себума и загрязнений. **Пилинги подбираются индивидуально** в зависимости от типа кожи головы, наличия перхоти, чувствительности и других особенностей. Процедура нормализует работу сальных желез, улучшает микроциркуляцию и подготавливает кожу головы к последующим процедурам.\n\n**Преимущества процедуры:**\n- Индивидуальный подбор пилинга\n- Глубокое очищение кожи головы\n- Нормализация жирности\n- Снижение зуда и шелушения\n- Повышение эффективности последующего ухода\n\n**Какие результаты вы получите?**\n- Чистая и здоровая кожа головы\n- Улучшение комфорта кожи головы\n- Снижение жирности и перхоти\n- Улучшение роста волос\n\n**Курс:**\nРекомендуется проводить 1–3 раз в 2–4 недели или по рекомендации специалиста.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "120 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-04",
+        "displayOrder": 3,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Scalp Mesotherapy",
+            "summary": "Scalp mesotherapy is an injectable treatment aimed at restoring and strengthening hair by delivering active ingredients directly into the scalp. **Mesotherapy cocktails are selected individually** based on the condition of the scalp, the type of hair loss, and treatment goals. The procedure improves nourishment of hair follicles, stimulates hair growth, and increases hair density.\n\n**Benefits of the treatment:**\n- Individually selected mesotherapy cocktails\n- Intensive nourishment of hair follicles\n- Reduction of hair loss\n- Stimulation of hair growth\n- Improved hair quality and density",
+            "description": "Scalp mesotherapy is an injectable treatment aimed at restoring and strengthening hair by delivering active ingredients directly into the scalp. **Mesotherapy cocktails are selected individually** based on the condition of the scalp, the type of hair loss, and treatment goals. The procedure improves nourishment of hair follicles, stimulates hair growth, and increases hair density.\n\n**Benefits of the treatment:**\n- Individually selected mesotherapy cocktails\n- Intensive nourishment of hair follicles\n- Reduction of hair loss\n- Stimulation of hair growth\n- Improved hair quality and density\n\n**What results can you expect?**\n- Reduced hair loss\n- Stronger and thicker hair\n- Growth of new, healthier hair\n- Improved scalp condition\n\n**Course:**\nA course of 5–20 sessions is recommended, with intervals of 1–2 weeks.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "90 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Päänahan mesoterapia",
+            "summary": "Päänahan mesoterapia on injektiohoito, jonka tavoitteena on hiusten palauttaminen ja vahvistaminen viemällä aktiivisia ainesosia suoraan päänahkaan. **Mesokoktailit valitaan yksilöllisesti** päänahan kunnon, hiustenlähdön tyypin ja hoidon tavoitteiden mukaan. Hoito parantaa hiustuppien ravitsemusta, aktivoi hiusten kasvua ja lisää hiusten tiheyttä.\n\n**Hoidon hyödyt:**\n- Yksilöllisesti valitut mesokoktailit\n- Hiustuppien tehostettu ravitseminen\n- Hiustenlähdön väheneminen\n- Hiusten kasvun stimulointi\n- Hiusten laadun ja tiheyden paraneminen\n\n**Mitä tuloksia saat?**\n- Hiustenlähdön väheneminen\n- Hiusten vahvistuminen ja paksuuntuminen\n- Uusien, vahvempien hiusten kasvu\n- Päänahan kunnon paraneminen",
+            "description": "Päänahan mesoterapia on injektiohoito, jonka tavoitteena on hiusten palauttaminen ja vahvistaminen viemällä aktiivisia ainesosia suoraan päänahkaan. **Mesokoktailit valitaan yksilöllisesti** päänahan kunnon, hiustenlähdön tyypin ja hoidon tavoitteiden mukaan. Hoito parantaa hiustuppien ravitsemusta, aktivoi hiusten kasvua ja lisää hiusten tiheyttä.\n\n**Hoidon hyödyt:**\n- Yksilöllisesti valitut mesokoktailit\n- Hiustuppien tehostettu ravitseminen\n- Hiustenlähdön väheneminen\n- Hiusten kasvun stimulointi\n- Hiusten laadun ja tiheyden paraneminen\n\n**Mitä tuloksia saat?**\n- Hiustenlähdön väheneminen\n- Hiusten vahvistuminen ja paksuuntuminen\n- Uusien, vahvempien hiusten kasvu\n- Päänahan kunnon paraneminen\n\n**Hoitojakso:**\nSuositellaan 5–20 hoitokerran sarjaa 1–2 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "90 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Мезотерапия кожи головы",
+            "summary": "Мезотерапия кожи головы — это инъекционная методика, направленная на восстановление и укрепление волос за счёт введения активных компонентов непосредственно в кожу головы. **Мезококтейли подбираются индивидуально** с учётом состояния кожи головы, типа выпадения волос и поставленных задач. Процедура улучшает питание волосяных фолликулов, активизирует рост волос и повышает их плотность.\n\n**Преимущества процедуры:**\n- Индивидуальный подбор мезококтейлей\n- Интенсивное питание волосяных фолликулов\n- Снижение выпадения волос\n- Стимуляция роста\n- Улучшение качества и плотности волос",
+            "description": "Мезотерапия кожи головы — это инъекционная методика, направленная на восстановление и укрепление волос за счёт введения активных компонентов непосредственно в кожу головы. **Мезококтейли подбираются индивидуально** с учётом состояния кожи головы, типа выпадения волос и поставленных задач. Процедура улучшает питание волосяных фолликулов, активизирует рост волос и повышает их плотность.\n\n**Преимущества процедуры:**\n- Индивидуальный подбор мезококтейлей\n- Интенсивное питание волосяных фолликулов\n- Снижение выпадения волос\n- Стимуляция роста\n- Улучшение качества и плотности волос\n\n**Какие результаты вы получите?**\n- Уменьшение выпадения волос\n- Укрепление и уплотнение волос\n- Появление новых, более крепких волос\n- Улучшение состояния кожи головы\n\n**Курс:**\nРекомендуется курс из 5–20 процедур с интервалом 1–2 недели.",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "90 € / 30 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-05",
+        "displayOrder": 4,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Hair Fillers",
+            "summary": "Hair fillers are an intensive treatment for restoring scalp and hair health, aimed at strengthening hair follicles, improving hair structure, and stimulating hair growth. Active ingredients help replenish nutrient deficiencies and enhance hair quality from within.\n\n**Benefits of the treatment:**\n- Intensive hair restoration\n- Strengthening of hair follicles\n- Increased hair density\n- Improved scalp condition\n- Fast and visible results\n\n**What results can you expect?**\n- Thicker and stronger hair\n- Reduced breakage and hair loss\n- Improved hair growth\n- Healthy-looking scalp",
+            "description": "Hair fillers are an intensive treatment for restoring scalp and hair health, aimed at strengthening hair follicles, improving hair structure, and stimulating hair growth. Active ingredients help replenish nutrient deficiencies and enhance hair quality from within.\n\n**Benefits of the treatment:**\n- Intensive hair restoration\n- Strengthening of hair follicles\n- Increased hair density\n- Improved scalp condition\n- Fast and visible results\n\n**What results can you expect?**\n- Thicker and stronger hair\n- Reduced breakage and hair loss\n- Improved hair growth\n- Healthy-looking scalp\n\n**Course:**\nA course of 3–5 sessions is recommended, with intervals of 2–3 weeks.",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "280 - 450 € / 45 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Hiusten filler-hoito",
+            "summary": "Hiusten filler-hoito on tehokas hoitomenetelmä päänahan ja hiusten intensiiviseen palauttamiseen. Hoidon tavoitteena on vahvistaa hiustuppeja, parantaa hiusten rakennetta ja stimuloida hiusten kasvua. Aktiiviset ainesosat täydentävät ravintoaineiden puutosta ja parantavat hiusten laatua sisältäpäin.\n\n**Hoidon hyödyt:**\n- Hiusten intensiivinen palautuminen\n- Hiustuppien vahvistuminen\n- Hiusten tiheyden lisääntyminen\n- Päänahan kunnon paraneminen\n- Nopea ja näkyvä tulos\n\n**Mitä tuloksia saat?**\n- Tiheämmät ja vahvemmat hiukset\n- Hiusten katkeilun ja hiustenlähdön väheneminen\n- Hiusten kasvun paraneminen\n- Päänahan terve ja hyvinvoiva ulkonäkö",
+            "description": "Hiusten filler-hoito on tehokas hoitomenetelmä päänahan ja hiusten intensiiviseen palauttamiseen. Hoidon tavoitteena on vahvistaa hiustuppeja, parantaa hiusten rakennetta ja stimuloida hiusten kasvua. Aktiiviset ainesosat täydentävät ravintoaineiden puutosta ja parantavat hiusten laatua sisältäpäin.\n\n**Hoidon hyödyt:**\n- Hiusten intensiivinen palautuminen\n- Hiustuppien vahvistuminen\n- Hiusten tiheyden lisääntyminen\n- Päänahan kunnon paraneminen\n- Nopea ja näkyvä tulos\n\n**Mitä tuloksia saat?**\n- Tiheämmät ja vahvemmat hiukset\n- Hiusten katkeilun ja hiustenlähdön väheneminen\n- Hiusten kasvun paraneminen\n- Päänahan terve ja hyvinvoiva ulkonäkö\n\n**Hoitojakso:**\nSuositellaan 3–5 hoitokerran sarjaa 2–3 viikon välein.",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "280 - 450 € / 45 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Филлеры для волос",
+            "summary": "Филлеры для волос — это процедура интенсивного восстановления кожи головы и волос, направленная на укрепление волосяных фолликулов, улучшение структуры волос и стимуляцию их роста. Активные компоненты восполняют дефицит питательных веществ и улучшают качество волос изнутри.\n\n**Преимущества процедуры:**\n- Интенсивное восстановление волос\n- Укрепление волосяных фолликулов\n- Повышение плотности волос\n- Улучшение качества кожи головы\n- Быстрый и заметный результат\n\n**Какие результаты вы получите?**\n- Более плотные и крепкие волосы\n- Снижение ломкости и выпадения\n- Улучшение роста волос\n- Здоровый внешний вид кожи головы",
+            "description": "Филлеры для волос — это процедура интенсивного восстановления кожи головы и волос, направленная на укрепление волосяных фолликулов, улучшение структуры волос и стимуляцию их роста. Активные компоненты восполняют дефицит питательных веществ и улучшают качество волос изнутри.\n\n**Преимущества процедуры:**\n- Интенсивное восстановление волос\n- Укрепление волосяных фолликулов\n- Повышение плотности волос\n- Улучшение качества кожи головы\n- Быстрый и заметный результат\n\n**Какие результаты вы получите?**\n- Более плотные и крепкие волосы\n- Снижение ломкости и выпадения\n- Улучшение роста волос\n- Здоровый внешний вид кожи головы\n\n**Курс:**\nРекомендуется курс из 3–5 процедур с интервалом 2–3 недели.",
+            "imageAlt": null,
+            "durationLabel": "45 мин",
+            "priceLabel": "280 - 450 € / 45 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}

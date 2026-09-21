@@ -1,0 +1,1052 @@
+{
+  "capturedAt": "2026-09-21T17:33:14.439Z",
+  "service": {
+    "slug": "packages",
+    "images": [
+      "/media/home/packages.jpg"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "reset-course",
+        "displayOrder": 0,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "“Reset” Package",
+            "name": "Reset",
+            "summary": "The package includes:\n- **Body diagnostics** (composition analysis: fat, muscle, fluids)\n- **Personalized nutrition plan** from a nutritionist\n- **12 Endospheres sessions**\n- **6 pressotherapy sessions**\n- **One personal training session + trainer support**\n- **Ongoing expert guidance throughout the entire program**",
+            "description": "The package includes:\n- **Body diagnostics** (composition analysis: fat, muscle, fluids)\n- **Personalized nutrition plan** from a nutritionist\n- **12 Endospheres sessions**\n- **6 pressotherapy sessions**\n- **One personal training session + trainer support**\n- **Ongoing expert guidance throughout the entire program**",
+            "imageAlt": null,
+            "durationLabel": "90 min",
+            "priceLabel": "1390 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "“Uudistuminen” – hoitopaketti",
+            "name": "Uudistuminen",
+            "summary": "Paketti sisältää:\n- **Kehon diagnostiikka** (rasva, lihakset, nesteet)\n- **Yksilöllinen ruokasuunnitelma** ravitsemusterapeutilta\n- **12 Endospheres-hoitoa**\n- **6 lymfaprässihoitoa (pressoterapia)**\n- **Henkilökohtainen treeni + valmentajan tuki**\n- **Asiantuntijoiden jatkuva ohjaus koko ohjelman ajan**",
+            "description": "Paketti sisältää:\n- **Kehon diagnostiikka** (rasva, lihakset, nesteet)\n- **Yksilöllinen ruokasuunnitelma** ravitsemusterapeutilta\n- **12 Endospheres-hoitoa**\n- **6 lymfaprässihoitoa (pressoterapia)**\n- **Henkilökohtainen treeni + valmentajan tuki**\n- **Asiantuntijoiden jatkuva ohjaus koko ohjelman ajan**",
+            "imageAlt": null,
+            "durationLabel": "90 min",
+            "priceLabel": "1390 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур \"Перезагрузка\"",
+            "name": "Перезагрузка",
+            "summary": "- **Диагностику тела** (анализ состава: жир, мышцы, отёки)\n- **Индивидуальный план питания** от нутрициолога\n- **12 сеансов эндосферы**\n- **6 сеансов прессотерапии**\n- **Персональную тренировку** + сопровождение тренера\n- **Поддержку специалистов на протяжении всего курса**",
+            "description": "### **Пакет “Перезагрузка” включает:**\n\n- **Диагностику тела** (анализ состава: жир, мышцы, отёки)\n- **Индивидуальный план питания** от нутрициолога\n- **12 сеансов эндосферы**\n- **6 сеансов прессотерапии**\n- **Персональную тренировку** + сопровождение тренера\n- **Поддержку специалистов на протяжении всего курса**",
+            "imageAlt": null,
+            "durationLabel": "90 мин",
+            "priceLabel": "1390 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-30-6",
+        "displayOrder": 10,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Endospheres Therapy Packages",
+            "name": "Package of 6 sessions (30 minutes each)",
+            "summary": "30-Minute Procedure Packages\n\nPackages based on course recommendations\n\nThe recommended course is 12 sessions. You can choose a package at a discounted price:",
+            "description": "30-Minute Procedure Packages\n\nPackages based on course recommendations\n\nThe recommended course is 12 sessions. You can choose a package at a discounted price:\n\n- **Package of 6 sessions (30 minutes each)**\nThe procedure can be performed on any selected area: legs, abdomen, buttocks, or back.\n**Price**: €350\n\n- **Package of 12 sessions (30 minutes each)**\nThe procedure can be performed on any selected area: legs, abdomen, buttocks, or back.\n**Price**: €650",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "€350",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Endospheres Therapy hoitopaketit",
+            "name": "30 minuutin hoitopaketit 6 kerta",
+            "summary": "Hoitopaketit suositellun hoitokurssin perusteella.",
+            "description": "Hoitopaketit suositellun hoitokurssin perusteella.\n\nSuositeltu kurssi – 12 käyntiä. Voit valita edullisen paketin:\n\n- **6 hoitokerran paketti, 30 minuuttia per hoito**\nHoito tehdään valitulle alueelle: jalat, vatsa, pakarat tai selkä.\n**Hinta:** 350 euroa",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "350 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакеты процедур Endospheres Therapy",
+            "name": "Пакет из 6 процедур по 30 минут",
+            "summary": "**Пакеты процедур по рекомендациям курса**\n\nРекомендованный курс – 12 посещений. Вы можете выбрать пакет по выгодной цене:",
+            "description": "**Пакеты процедур по рекомендациям курса**\n\nРекомендованный курс – 12 посещений. Вы можете выбрать пакет по выгодной цене:\n\n1. **Пакет из 6 процедур по 30 минут**\nПроцедура проводится на любую выбранную зону: ноги, живот, ягодицы или спина.\n**Цена: 350 евро**",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "350 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-30-12",
+        "displayOrder": 11,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Endospheres Therapy Packages",
+            "name": "Package of 12 sessions (30 minutes each)",
+            "summary": "30-Minute Procedure Packages\n\nPackages based on course recommendations\n\nThe recommended course is 12 sessions. You can choose a package at a discounted price:",
+            "description": "30-Minute Procedure Packages\n\nPackages based on course recommendations\n\nThe recommended course is 12 sessions. You can choose a package at a discounted price:\n\n- **Package of 6 sessions (30 minutes each)**\nThe procedure can be performed on any selected area: legs, abdomen, buttocks, or back.\n**Price**: €350\n\n- **Package of 12 sessions (30 minutes each)**\nThe procedure can be performed on any selected area: legs, abdomen, buttocks, or back.\n**Price**: €650",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "€650",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Endospheres Therapy hoitopaketit",
+            "name": "30 minuutin hoitopaketit 12 kerta",
+            "summary": "- **12 hoitokerran paketti, 30 minuuttia per hoito**\nHoito tehdään valitulle alueelle: jalat, vatsa, pakarat tai selkä.\n**Hinta:** 650 euroa",
+            "description": "### Endospheres Therapy hoitopaketit\n\n- **12 hoitokerran paketti, 30 minuuttia per hoito**\nHoito tehdään valitulle alueelle: jalat, vatsa, pakarat tai selkä.\n**Hinta:** 650 euroa",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "650 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакеты процедур Endospheres Therapy",
+            "name": "Пакет из 12 процедур по 30 минут",
+            "summary": "1. **Пакет из 12 процедур по 30 минут**\nПроцедура проводится на любую выбранную зону: ноги, живот, ягодицы или спина.\n**Цена: 650 евро**",
+            "description": "1. **Пакет из 12 процедур по 30 минут**\nПроцедура проводится на любую выбранную зону: ноги, живот, ягодицы или спина.\n**Цена: 650 евро**",
+            "imageAlt": null,
+            "durationLabel": "30 мин",
+            "priceLabel": "650 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-45-6",
+        "displayOrder": 12,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Endospheres Therapy Packages",
+            "name": "Package of 6 sessions (45 minutes each)",
+            "summary": "- **Package of 6 sessions (45 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, and abdomen.\n**Price**: €450\n- **Package of 12 sessions (45 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, and abdomen.\n**Price**: €850",
+            "description": "- **Package of 6 sessions (45 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, and abdomen.\n**Price**: €450\n\n- **Package of 12 sessions (45 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, and abdomen.\n**Price**: €850",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "€450",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Endospheres Therapy hoitopaketit",
+            "name": "45 minuutin hoitopaketit 6 kerta",
+            "summary": "- Hoito sisältää käsittelyn alueille: jalat, pakarat ja vatsa.\n**Hinta:** 450 euroa",
+            "description": "#### 45 minuutin hoitopaketit 6 kerta\n\n- Hoito sisältää käsittelyn alueille: jalat, pakarat ja vatsa.\n**Hinta:** 450 euroa",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "450 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакеты процедур Endospheres Therapy",
+            "name": "Пакет из 6 процедур по 45 минут",
+            "summary": "- **Пакет из 6 процедур по 45 минут**\nПроцедура включает работу с зонами: ноги, ягодицы и живот.\n**Цена: 450 евро**",
+            "description": "- **Пакет из 6 процедур по 45 минут**\nПроцедура включает работу с зонами: ноги, ягодицы и живот.\n**Цена: 450 евро**",
+            "imageAlt": null,
+            "durationLabel": "45 мин",
+            "priceLabel": "450 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-45-12",
+        "displayOrder": 13,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Endospheres Therapy Packages",
+            "name": "Package of 12 sessions (45 minutes each)",
+            "summary": "- **Package of 6 sessions (45 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, and abdomen.\n**Price**: €450\n- **Package of 12 sessions (45 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, and abdomen.\n**Price**: €850",
+            "description": "- **Package of 6 sessions (45 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, and abdomen.\n**Price**: €450\n\n- **Package of 12 sessions (45 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, and abdomen.\n**Price**: €850",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "€850",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Endospheres Therapy hoitopaketit",
+            "name": "45 minuutin hoitopaketit 12 kerta",
+            "summary": "**12 hoitokerran paketti, 45 minuuttia per hoito**",
+            "description": "**12 hoitokerran paketti, 45 minuuttia per hoito**\n\n- Hoito sisältää käsittelyn alueille: jalat, pakarat ja vatsa.\n**Hinta:** 850 euroa",
+            "imageAlt": null,
+            "durationLabel": "45 min",
+            "priceLabel": "850 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакеты процедур Endospheres Therapy",
+            "name": "Пакет из 12 процедур по 45 минут",
+            "summary": "- **Пакет из 12 процедур по 45 минут**\nПроцедура включает работу с зонами: ноги, ягодицы и живот.\n**Цена: 850 евро**",
+            "description": "- **Пакет из 12 процедур по 45 минут**\nПроцедура включает работу с зонами: ноги, ягодицы и живот.\n**Цена: 850 евро**",
+            "imageAlt": null,
+            "durationLabel": "45 мин",
+            "priceLabel": "850 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-60-6",
+        "displayOrder": 14,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Endospheres Therapy Packages",
+            "name": "Package of 6 sessions (60 minutes each)",
+            "summary": "For optimal results, a full course of 12 sessions is recommended.\n\n**Full Body Express Packages**",
+            "description": "For optimal results, a full course of 12 sessions is recommended.\n\n**Full Body Express Packages**\n\n- **Package of 6 sessions (60 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, abdomen, back.\n**Price**: €570\n\n- **Package of 12 sessions (60 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, abdomen, back.\n**Price**: €960",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "€570",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Endospheres Therapy hoitopaketit",
+            "name": "60 minuutin hoitopaketit 6 kerta",
+            "summary": "Parhaiden tulosten saavuttamiseksi suositellaan 6 hoitokerran täyttä kurssia.\n\n**Koko kehon hoitopaketit (Express)**",
+            "description": "#### hoitokerran paketti, 60 minuuttia\n\nParhaiden tulosten saavuttamiseksi suositellaan 6 hoitokerran täyttä kurssia.\n\n**Koko kehon hoitopaketit (Express)**\n\n- **6 hoitokerran paketti, 60 minuuttia per hoito**\nHoito sisältää käsittelyn alueille: jalat, pakarat, vatsa ja selkä.\n**Hinta:** 570 euroa",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "570 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакеты процедур Endospheres Therapy",
+            "name": "Пакет из 6 процедур по 60 минут",
+            "summary": "- **Пакет из 6 процедур по 60 минут**\nПроцедура включает работу с зонами: ноги, ягодицы и живот.\n**Цена: 570 евро**",
+            "description": "- **Пакет из 6 процедур по 60 минут**\nПроцедура включает работу с зонами: ноги, ягодицы и живот.\n**Цена: 570 евро**",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "570 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-60-12",
+        "displayOrder": 15,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Endospheres Therapy Packages",
+            "name": "Package of 12 sessions (60 minutes each)",
+            "summary": "For optimal results, a full course of 12 sessions is recommended.\n\n**Full Body Express Packages**",
+            "description": "For optimal results, a full course of 12 sessions is recommended.\n\n**Full Body Express Packages**\n\n- **Package of 6 sessions (60 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, abdomen, back.\n**Price**: €570\n\n- **Package of 12 sessions (60 minutes each)**\nThe procedure includes work on the following areas: legs, buttocks, abdomen, back.\n**Price**: €960",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "€1050",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Endospheres Therapy hoitopaketit",
+            "name": "60 minuutin hoitopaketit 12 kerta",
+            "summary": "**Koko kehon hoitopaketit**",
+            "description": "#### hoitokerran paketti, 60 minuuttia\n\n**Koko kehon hoitopaketit** \n\n- **12 hoitokerran paketti, 60 minuuttia per hoito**\nHoito sisältää käsittelyn alueille: jalat, pakarat, vatsa ja selkä.\n**Hinta:** 960 euroa",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "1050 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакеты процедур Endospheres Therapy",
+            "name": "Пакет из 12 процедур по 60 минут",
+            "summary": "- **Пакет из 12 процедур по 60 минут**\nПроцедура включает работу с зонами: ноги, ягодицы и живот.\n**Цена: 1050 евро**",
+            "description": "- **Пакет из 12 процедур по 60 минут**\nПроцедура включает работу с зонами: ноги, ягодицы и живот.\n**Цена: 1050 евро**",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "1050 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-75-6",
+        "displayOrder": 16,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Endospheres Therapy Packages",
+            "name": "Package of 6 sessions (75 minutes each)",
+            "summary": "For optimal results, a full course of 12 sessions is recommended.\n\n**Full Body Packages (Complete Protocol)**",
+            "description": "For optimal results, a full course of 12 sessions is recommended.\n\n**Full Body Packages (Complete Protocol)**\n\n- **Package of 6 sessions (75 minutes each)**\nComplete protocol for the whole body: legs, buttocks, abdomen, back.\n**Price**: €650\n\n- **Package of 12 sessions (75 minutes each)**\nComplete protocol for the whole body: legs, buttocks, abdomen, back.\n**Price**: €1150",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "€650",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Endospheres Therapy hoitopaketit",
+            "name": "75 minuutin hoitopaketit 6 kerta",
+            "summary": "Parhaiden tulosten saavuttamiseksi suositellaan 6 hoitokerran täyttä kurssia.\n\n**Koko kehon hoitopaketit (Täysi protokolla)**",
+            "description": "#### 75 minuutin hoitopaketit\n\nParhaiden tulosten saavuttamiseksi suositellaan 6 hoitokerran täyttä kurssia.\n\n**Koko kehon hoitopaketit (Täysi protokolla)**\n\n- **6 hoitokerran paketti, 75 minuuttia per hoito**\nKoko kehon täysi protokolla: jalat, pakarat, vatsa, selkä.\n**Hinta:** 650 euroa",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "650 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакеты процедур Endospheres Therapy",
+            "name": "Пакет из 6 процедур по 75 минут",
+            "summary": "**Пакеты процедур на все тело (Полный протокол)**",
+            "description": "### Пакет процедур по 75 минут\n\n#### Для достижения оптимальных результатов рекомендуется пройти полный курс из 12 процедур.\n\n**Пакеты процедур на все тело (Полный протокол)**\n\n1. **Пакет из 6 процедур по 75 минут**\nПолный протокол на все тело: ноги, ягодицы, живот, спина.\n**Цена: 650 евро**",
+            "imageAlt": null,
+            "durationLabel": "75 мин",
+            "priceLabel": "650 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-75-12",
+        "displayOrder": 17,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Endospheres Therapy Packages",
+            "name": "Package of 12 sessions (75 minutes each)",
+            "summary": "For optimal results, a full course of 12 sessions is recommended.\n\n**Full Body Packages (Complete Protocol)**",
+            "description": "For optimal results, a full course of 12 sessions is recommended.\n\n**Full Body Packages (Complete Protocol)**\n\n- **Package of 6 sessions (75 minutes each)**\nComplete protocol for the whole body: legs, buttocks, abdomen, back.\n**Price**: €650\n\n- **Package of 12 sessions (75 minutes each)**\nComplete protocol for the whole body: legs, buttocks, abdomen, back.\n**Price**: €1150",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "€1250",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Endospheres Therapy hoitopaketit",
+            "name": "75 minuutin hoitopaketit 12 kerta",
+            "summary": "**Koko kehon hoitopaketit (Täysi protokolla)**",
+            "description": "#### 75 minuutin hoitopaketit\n\n**Koko kehon hoitopaketit (Täysi protokolla)**\n\n- **12 hoitokerran paketti, 75 minuuttia per hoito**\nKoko kehon täysi protokolla: jalat, pakarat, vatsa, selkä.\n**Hinta:** 1250 euroa",
+            "imageAlt": null,
+            "durationLabel": "75 min",
+            "priceLabel": "1250 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакеты процедур Endospheres Therapy",
+            "name": "Пакет из 12 процедур по 75 минут",
+            "summary": "**Пакеты процедур на все тело (Полный протокол)**",
+            "description": "### Пакет процедур по 75 минут\n\n**Пакеты процедур на все тело (Полный протокол)**\n\n1. **Пакет из 12 процедур по 75 минут**\nПолный протокол на все тело: ноги, ягодицы, живот, спина.\n**Цена: 1250 евро**",
+            "imageAlt": null,
+            "durationLabel": "75 мин",
+            "priceLabel": "1250 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "arosha-wrap-6",
+        "displayOrder": 20,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "AROSHA Body Wrap Packages",
+            "name": "Package of 6 sessions",
+            "summary": "We offer AROSHA body wrap packages designed for 6 or 12 sessions, helping you achieve the perfect figure and improve skin condition.",
+            "description": "We offer AROSHA body wrap packages designed for 6 or 12 sessions, helping you achieve the perfect figure and improve skin condition.\n\n**Package options:**\n\n- Package of 6 sessions — €350\n- Package of 12 sessions — €650\nDuration of each session: 60 minutes\n\n**Description:**\n\nYou can choose either the same type of treatment for each session or combine different ones based on your individual needs and goals. You can focus on specific issues such as cellulite, localized fat deposits, or opt for a comprehensive approach to improve overall skin condition and body contouring.\n\nAROSHA treatments combine science and innovation, delivering quick and noticeable results. Each session follows a three-step system (RESET, RESTORE, ATTACK) that provides deep cleansing, skin balance restoration, and targeted treatment for problem areas.\n\nSign up for an AROSHA body wrap course and give your body the care it deserves!",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "€350",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "AROSHA-vartalokäärehoitopaketti",
+            "name": "AROSHA-vartalokäärehoitopaketti 6 kerta",
+            "summary": "Tarjoamme AROSHA-vartalokäärehoitopaketin, joka sisältää 6 hoitokertaa ja auttaa sinua saavuttamaan täydellisen vartalon sekä parantamaan ihon kuntoa.",
+            "description": "Tarjoamme AROSHA-vartalokäärehoitopaketin, joka sisältää 6 hoitokertaa ja auttaa sinua saavuttamaan täydellisen vartalon sekä parantamaan ihon kuntoa.\n\n**Pakettivaihtoehdot:**\n\n- **6 hoitokerran paketti** — 350 euroa\nJokaisen hoidon kesto: 60 minuuttia\n\n**Kuvaus:**\n\nVoit valita joko samat hoidot jokaiselle kerralle tai yhdistellä niitä tarpeidesi ja tavoitteidesi mukaan. Voit keskittyä ratkaisemaan tietyn ongelman, kuten selluliitin tai paikalliset rasvakertymät, tai valita kokonaisvaltaisen lähestymistavan ihon kunnon parantamiseen ja vartalon muokkaamiseen.\n\nAROSHA-hoidot yhdistävät tieteen ja innovaation, mikä mahdollistaa nopeat ja näkyvät tulokset. Jokaisessa hoitokerrassa käytetään kolmen vaiheen järjestelmää (RESET, RESTORE, ATTACK), joka tarjoaa syväpuhdistuksen, ihon tasapainon palauttamisen ja kohdennetun vaikutuksen ongelma-alueille.\n\nVaraa AROSHA-vartalokäärehoitokurssi ja anna kehollesi ansaitsemansa hoito!",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "350 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет обертываний от AROSHA",
+            "name": "Пакет обертываний на 6 процедур",
+            "summary": "Предлагаем пакет процедур обертываний от AROSHA, рассчитанный на 6 или 12 сеансов, которые позволят вам достичь идеальной фигуры и улучшить состояние кожи.",
+            "description": "### Пакет обертываний от AROSHA\n\nПредлагаем пакет процедур обертываний от AROSHA, рассчитанный на 6 или 12 сеансов, которые позволят вам достичь идеальной фигуры и улучшить состояние кожи.\n\n**Варианты пакетов:**\n\n1. **Пакет на 6 процедур** — 370 евро\n\n**Длительность каждой процедуры:** 60 минут\n\n**Описание:**\n\nПроцедуры можно выбрать как одинаковые, так и комбинировать в зависимости от ваших индивидуальных потребностей и целей. Вы можете сосредоточиться на решении конкретной проблемы, такой как целлюлит, локализованные жировые отложения, или же выбрать комплексный подход для общего улучшения состояния кожи и моделирования фигуры.\n\nПроцедуры AROSHA сочетают в себе науку и инновации, что позволяет достигать быстрых и заметных результатов. В каждом сеансе используется система трех этапов (RESET, RESTORE, ATTACK), которая обеспечивает глубокое очищение, восстановление баланса кожи и направленное воздействие на конкретные проблемные зоны.\n\n**Запишитесь на курс обертываний AROSHA и подарите своему телу заботу, которой оно заслуживает!**",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "370 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "arosha-wrap-12",
+        "displayOrder": 21,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "AROSHA Body Wrap Packages",
+            "name": "Package of 12 sessions",
+            "summary": "We offer AROSHA body wrap packages designed for 6 or 12 sessions, helping you achieve the perfect figure and improve skin condition.",
+            "description": "We offer AROSHA body wrap packages designed for 6 or 12 sessions, helping you achieve the perfect figure and improve skin condition.\n\n**Package options:**\n\n- Package of 6 sessions — €350\n- Package of 12 sessions — €650\nDuration of each session: 60 minutes\n\n**Description:**\n\nYou can choose either the same type of treatment for each session or combine different ones based on your individual needs and goals. You can focus on specific issues such as cellulite, localized fat deposits, or opt for a comprehensive approach to improve overall skin condition and body contouring.\n\nAROSHA treatments combine science and innovation, delivering quick and noticeable results. Each session follows a three-step system (RESET, RESTORE, ATTACK) that provides deep cleansing, skin balance restoration, and targeted treatment for problem areas.\n\nSign up for an AROSHA body wrap course and give your body the care it deserves!",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "€650",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "AROSHA-vartalokäärehoitopaketti",
+            "name": "AROSHA-vartalokäärehoitopaketti 12 kerta",
+            "summary": "Tarjoamme AROSHA-vartalokäärehoitopaketin, joka sisältää 12 hoitokertaa ja auttaa sinua saavuttamaan täydellisen vartalon sekä parantamaan ihon kuntoa.",
+            "description": "#### AROSHA-vartalokäärehoitopaketti\n\nTarjoamme AROSHA-vartalokäärehoitopaketin, joka sisältää 12 hoitokertaa ja auttaa sinua saavuttamaan täydellisen vartalon sekä parantamaan ihon kuntoa.\n\n**Pakettivaihtoehdot:**\n\n- **12 hoitokerran paketti** — 650 euroa\nJokaisen hoidon kesto: 60 minuuttia\n\n**Kuvaus:**\n\nVoit valita joko samat hoidot jokaiselle kerralle tai yhdistellä niitä tarpeidesi ja tavoitteidesi mukaan. Voit keskittyä ratkaisemaan tietyn ongelman, kuten selluliitin tai paikalliset rasvakertymät, tai valita kokonaisvaltaisen lähestymistavan ihon kunnon parantamiseen ja vartalon muokkaamiseen.\n\nAROSHA-hoidot yhdistävät tieteen ja innovaation, mikä mahdollistaa nopeat ja näkyvät tulokset. Jokaisessa hoitokerrassa käytetään kolmen vaiheen järjestelmää (RESET, RESTORE, ATTACK), joka tarjoaa syväpuhdistuksen, ihon tasapainon palauttamisen ja kohdennetun vaikutuksen ongelma-alueille.\n\nVaraa AROSHA-vartalokäärehoitokurssi ja anna kehollesi ansaitsemansa hoito!",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "650 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет обертываний от AROSHA",
+            "name": "Пакет обертываний на 12 процедур",
+            "summary": "Предлагаем пакет процедур обертываний от AROSHA, рассчитанный на 6 или 12 сеансов, которые позволят вам достичь идеальной фигуры и улучшить состояние кожи.",
+            "description": "### Пакет обертываний от AROSHA\n\nПредлагаем пакет процедур обертываний от AROSHA, рассчитанный на 6 или 12 сеансов, которые позволят вам достичь идеальной фигуры и улучшить состояние кожи.\n\n**Варианты пакетов:**\n\n1. **Пакет на 12 процедур** — 720 евро\n\n**Длительность каждой процедуры:** 60 минут\n\n**Описание:**\n\nПроцедуры можно выбрать как одинаковые, так и комбинировать в зависимости от ваших индивидуальных потребностей и целей. Вы можете сосредоточиться на решении конкретной проблемы, такой как целлюлит, локализованные жировые отложения, или же выбрать комплексный подход для общего улучшения состояния кожи и моделирования фигуры.\n\nПроцедуры AROSHA сочетают в себе науку и инновации, что позволяет достигать быстрых и заметных результатов. В каждом сеансе используется система трех этапов (RESET, RESTORE, ATTACK), которая обеспечивает глубокое очищение, восстановление баланса кожи и направленное воздействие на конкретные проблемные зоны.\n\n**Запишитесь на курс обертываний AROSHA и подарите своему телу заботу, которой оно заслуживает!**",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "720 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "endospheres-face-care-6",
+        "displayOrder": 30,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "fi",
+            "group": "Endospheres-hoito kasvoille",
+            "name": "60 minuutin hoitopaketit 6 kerta",
+            "summary": "Endospheres-hoito kasvoille 60 minuutin 6 kerta hoitopaketti\n\nEndospheres-hoito kasvoille on moderni kosmetologinen menetelmä, jossa käytetään erityistä laitetta, jossa on värähtelevät sfäärirullat. Tämä teknologia on saavuttanut laajaa suosiota esteettisessä lääketieteessä sen ikääntymistä ehkäisevien ja terapeuttisten vaikutusten vuoksi.",
+            "description": "Endospheres-hoito kasvoille 60 minuutin 6 kerta hoitopaketti\n\nEndospheres-hoito kasvoille on moderni kosmetologinen menetelmä, jossa käytetään erityistä laitetta, jossa on värähtelevät sfäärirullat. Tämä teknologia on saavuttanut laajaa suosiota esteettisessä lääketieteessä sen ikääntymistä ehkäisevien ja terapeuttisten vaikutusten vuoksi.\n\nEndospheres-hoidon keskeiset kohdat kasvoille:\n\nToimintaperiaate:\n\n- Laite tuottaa mikrovärähtelyjä ja kompressiopainetta kasvojen kudoksiin. Tämä parantaa mikroverenkiertoa, lymfakiertoa ja lisää ihon kimmoisuutta.\n- Hoidon tuloksena stimuloidaan kollageenin ja elastaanin tuotantoa, mikä tekee ihosta kiinteämmän ja vähentää ryppyjä.\n\nHoitoa suositellaan, kun:\n\n- Iho on menettänyt kimmoisuutensa tai siinä on ryppyjä.\n- Kasvoissa on turvotusta, erityisesti silmien alueella.\n- Ihonväri on epätasainen.\n- Iho on veltostunut tai menettänyt hehkunsa.\n\nEdut:\n\n- Hoito on vähäinvaasinen eikä vaadi toipumisaikaa.\n- Iho näyttää terveemmältä jo ensimmäisten hoitokertojen jälkeen.\n- Kokonaisvaltainen vaikutus: ei ainoastaan paranna ihon ulkonäköä, vaan myös edistää lymfakiertoa ja verenkiertoa.\n\nHoitokurssi:\n\n- Suositellaan 6–12 hoitokerran sarjaa, jossa hoitojen väli on 3–7 päivää riippuen ihon kunnosta ja tavoitteista.\n\nTulokset:\n\n- Iho kiinteytyy ja rypyt vähenevät.\n- Kasvojen turvotus vähenee ja ääriviivat paranevat.\n- Pigmentaation väheneminen ja ihon värin paraneminen.\n\nEndospheres-hoito kasvoille on turvallinen ja tehokas menetelmä, joka sopii erilaisille ihotyypeille. Se voidaan tehdä yksittäisenä hoitona tai yhdistää muihin kosmetologisiin hoitoihin.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "450 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур для лица",
+            "name": "Эндосфера и уход для лица 6 процедур",
+            "summary": "**Идеальный дуэт для максимального эффекта лифтинга и комплексного ухода за кожей.**",
+            "description": "### **Пакет процедур для лица: \"Эндосфера и уход\"**\n\n**Идеальный дуэт для максимального эффекта лифтинга и комплексного ухода за кожей.**\n\n**Что входит в одну процедуру:**\n\n- **Эндосферотерапия лица** — подтяжка, улучшение тонуса кожи и борьба с отеками.\n- **Уход за лицом** — очищение, индивидуально подобранная маска, массаж и финальный уход с активными компонентами.\n\n**Варианты пакетов:**\n **Пакет из 6 процедур:**\n\n- Подходит для начального курса, чтобы заметить эффект и улучшить состояние кожи.\n- Рекомендуется для подготовки к важным мероприятиям или просто для поддержания свежести.\n- Стоимость пакета: 450,00",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "450 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "fractional-mesotherapy-5",
+        "displayOrder": 31,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedling Treatment Package — 5 Sessions",
+            "name": "Fractional Mesotherapy",
+            "summary": "Comprehensive skin renewal with the Italian method\n\nA five-session course of microneedling (fractional mesotherapy) with individually selected serums provides step-by-step skin restoration, firming, and rejuvenation from within. The Dermapen device stimulates active regeneration, while powerful cocktails infuse the skin with essential nutrients.",
+            "description": "Comprehensive skin renewal with the Italian method\n\nA five-session course of microneedling (fractional mesotherapy) with individually selected serums provides step-by-step skin restoration, firming, and rejuvenation from within. The Dermapen device stimulates active regeneration, while powerful cocktails infuse the skin with essential nutrients.\n\n**The course includes:**\n\n- 5 microneedling procedures tailored to individual skin needs\n\n- Certified Italian technique and professional products\n\n- Personalized selection of serums based on skin type and condition\n\n**Results after the course:**\n\n- Significant improvement in skin texture and tone\n\n- Reduction of pores, post-acne marks, and fine lines\n\n- Hydration, elasticity, and a healthy glow\n\n- Smooth, firm, and renewed skin with a pronounced anti-aging effect\n\nPerfectly suited for restoring skin after stress, photo-damage, reduced firmness, and the first signs of aging.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "500 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulaus-hoitopaketti — 5 kertaa",
+            "name": "Fraktionaalinen mesoterapia",
+            "summary": "Kokonaisvaltainen ihon uudistaminen italialaisella menetelmällä\n\nViiden kerran mikroneulauskurssi (fraktionaalinen mesoterapia) yksilöllisesti valituilla seerumeilla on vaiheittainen ihon uudistamis-, vahvistamis- ja nuorennusprosessi sisältäpäin. Dermapen-laite stimuloi aktiivista regeneroitumista ja tehokkaat cocktailit ravitsevat ihoa välttämättömillä aineilla.",
+            "description": "Kokonaisvaltainen ihon uudistaminen italialaisella menetelmällä\n\nViiden kerran mikroneulauskurssi (fraktionaalinen mesoterapia) yksilöllisesti valituilla seerumeilla on vaiheittainen ihon uudistamis-, vahvistamis- ja nuorennusprosessi sisältäpäin. Dermapen-laite stimuloi aktiivista regeneroitumista ja tehokkaat cocktailit ravitsevat ihoa välttämättömillä aineilla.\n\n**Kurssiin sisältyy:**\n\n- 5 mikroneulaushoitoa ihon yksilölliset tarpeet huomioiden\n\n- Sertifioitu italialainen menetelmä ja ammattilaisvalmisteet\n\n- Henkilökohtaisesti valitut seerumit ihotyypin ja ihon kunnon mukaan\n\n**Tulokset kurssin jälkeen:**\n\n- Ihon rakenteen ja sävyn merkittävä parantuminen\n\n- Huokosten, aknearpien ja pintaryppyjen väheneminen\n\n- Kosteutus, kimmoisuus ja terve hehku\n\n- Sileä, kiinteä ja uudistunut iho, jolla on selkeästi nuorentava vaikutus\n\nSopii täydellisesti ihon palauttamiseen stressin, auringonvalon aiheuttamien vaurioiden, alentuneen sävyn ja ensimmäisten ikääntymisen merkkien jälkeen.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "500 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур Микронидлинг — 5 сеансов",
+            "name": "Фракционная мезотерапия",
+            "summary": "Комплексное обновление кожи по итальянской методике\n\nПятисеансовый курс микроигольчатой фракционной мезотерапии (микронидлинга) с применением индивидуально подобранных сывороток — это пошаговое восстановление, уплотнение и омоложение кожи изнутри. Аппарат Dermapen стимулирует активную регенерацию, а мощные коктейли насыщают кожу необходимыми компонентами.",
+            "description": "Комплексное обновление кожи по итальянской методике\n\nПятисеансовый курс микроигольчатой фракционной мезотерапии (микронидлинга) с применением индивидуально подобранных сывороток — это пошаговое восстановление, уплотнение и омоложение кожи изнутри. Аппарат Dermapen стимулирует активную регенерацию, а мощные коктейли насыщают кожу необходимыми компонентами.\n\n**Что входит в курс:**\n\n- 5 процедур микронидлинга с учётом индивидуальных особенностей кожи\n\n- Использование сертифицированной итальянской методики и профессиональных препаратов\n\n- Персональный подбор сывороток по состоянию и типу кожи\n\n**Результат после курса:**\n\n- Значительное улучшение текстуры и тона кожи\n\n- Сокращение пор, постакне и поверхностных морщин\n\n- Увлажнение, упругость и здоровое сияние\n\n- Эффект гладкой, плотной и обновлённой кожи с выраженным антивозрастным действием\n\nИдеально подходит для восстановления кожи после стресса, фотоповреждений, сниженного тонуса и первых возрастных изменений.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "500 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-upper-lip-chin-5",
+        "displayOrder": 40,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Upper Lip + Chin 5 sessions",
+            "summary": "Comprehensive laser hair removal package for the **upper lip + chin**.\nIncludes **5 sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the **upper lip + chin**.\nIncludes **5 sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "202 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Ylähuuli + Leuka 5 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle ylähuuli + leuka.\nSisältää **5 hoitokertaa**.\nPaketin hinta on 10 **% edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle ylähuuli + leuka.\nSisältää **5 hoitokertaa**.\nPaketin hinta on 10 **% edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "202 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Верхняя губа + Подбородок 5 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны **верхней губы + подбородок**.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны **верхней губы + подбородок**.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "202 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-upper-lip-chin-10",
+        "displayOrder": 41,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Upper Lip + Chin 10 sessions",
+            "summary": "Comprehensive laser hair removal package for the **upper lip + chin**.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the **upper lip + chin**.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "360 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Ylähuuli + Leuka 10 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle ylähuuli + leuka.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on 20 **% edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle ylähuuli + leuka.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on 20 **% edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "360 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Верхняя губа + Подбородок 10 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны **верхней губы + подбородок**.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны **верхней губы + подбородок**.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "360 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-underarms-bikini-line-5",
+        "displayOrder": 42,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Underarms + Bikini Line 5 sessions",
+            "summary": "Comprehensive laser hair removal package for the underarms + bikini line.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the underarms + bikini line.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "315 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Kainalot + Bikinilinja 5 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + bikinilinja.\nSisältää **5 hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + bikinilinja.\nSisältää **5 hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "315 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Подмышки + Линия бикини 5 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны **подмышки + линия бикини**.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны **подмышки + линия бикини**.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "315 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-underarms-bikini-line-10",
+        "displayOrder": 43,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Underarms + Bikini Line 10 sessions",
+            "summary": "Comprehensive laser hair removal package for the underarms + bikini line.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the underarms + bikini line.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "560 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Kainalot + Bikinilinja 10 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + bikinilinja.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + bikinilinja.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "560 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Подмышки + Линия бикини 10 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны **подмышки + линия бикини**.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны **подмышки + линия бикини**.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "560 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-underarms-brazilian-5",
+        "displayOrder": 44,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Underarms + Brazilian Bikini 5 sessions",
+            "summary": "Comprehensive laser hair removal package for the underarms + brazilian bikini.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the underarms + brazilian bikini.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "652 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Kainalot + Brasilialainen bikini 5 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini.\nSisältää 5 **hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini.\nSisältää 5 **hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "652 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Подмышки + Бразильское бикини 5 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны **подмышки + бразильское бикини**.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны **подмышки + бразильское бикини**.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "652 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-underarms-brazilian-10",
+        "displayOrder": 45,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Underarms + Brazilian Bikini 10 sessions",
+            "summary": "Comprehensive laser hair removal package for the underarms + brazilian bikini.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the underarms + brazilian bikini.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "1160 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Kainalot + Brasilialainen bikini 10 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "1160 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Подмышки + Бразильское бикини 10 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны **подмышки + бразильское бикини**.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны **подмышки + бразильское бикини**.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "1160 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-brazilian-full-legs-5",
+        "displayOrder": 46,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Brazilian Bikini + Full Legs 5 sessions",
+            "summary": "Comprehensive laser hair removal package for the brazilian bikini + full legs.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the brazilian bikini + full legs.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "1305 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Brasilialainen bikini + Jalat kokonaan 5 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle brasilialainen bikini + jalat kokonaan.\nSisältää 5 **hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle brasilialainen bikini + jalat kokonaan.\nSisältää 5 **hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "1305 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Бразильское бикини + Ноги целиком 5 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны бразильское бикини + ноги целиком.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны бразильское бикини + ноги целиком.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "1305 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-brazilian-full-legs-10",
+        "displayOrder": 47,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Brazilian Bikini + Full Legs 10 sessions",
+            "summary": "Comprehensive laser hair removal package for the brazilian bikini + full legs.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the brazilian bikini + full legs.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "2320 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Brasilialainen bikini + Jalat kokonaan 10 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle brasilialainen bikini + jalat kokonaan.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle brasilialainen bikini + jalat kokonaan.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "2320 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Бразильское бикини + Ноги целиком 10 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны бразильское бикини + ноги целиком.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны бразильское бикини + ноги целиком.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "2320 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-underarms-brazilian-full-legs-5",
+        "displayOrder": 48,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Underarms + Brazilian Bikini + Full Legs 5 sessions",
+            "summary": "Comprehensive laser hair removal package for the underarms + brazilian bikini + full legs.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the underarms + brazilian bikini + full legs.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "1417 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Kainalot + Brasilialainen bikini + Jalat kokonaan 5 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini + jalat kokonaan.\nSisältää 5 **hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini + jalat kokonaan.\nSisältää 5 **hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "1417 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Подмышки + Бразильское бикини + Ноги целиком 5 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны подмышки + бразильское бикини + ноги целиком.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны подмышки + бразильское бикини + ноги целиком.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "1417 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-underarms-brazilian-full-legs-10",
+        "displayOrder": 49,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Underarms + Brazilian Bikini + Full Legs 10 sessions",
+            "summary": "Comprehensive laser hair removal package for the underarms + brazilian bikini + full legs.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the underarms + brazilian bikini + full legs.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "2520 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Kainalot + Brasilialainen bikini + Jalat kokonaan 10 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini + jalat kokonaan.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle kainalot + brasilialainen bikini + jalat kokonaan.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "2520 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Подмышки + Бразильское бикини + Ноги целиком 10 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны подмышки + бразильское бикини + ноги целиком.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны подмышки + бразильское бикини + ноги целиком.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "2520 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-full-body-5",
+        "displayOrder": 50,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Full Body 5 sessions",
+            "summary": "Comprehensive laser hair removal package for the full body.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the full body.\nIncludes 5 **sessions**.\nThe package price is **10% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "4500 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Koko keho 5 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle koko keho.\nSisältää 5 **hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle koko keho.\nSisältää 5 **hoitokertaa**.\nPaketin hinta on **10 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "4500 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Всё тело 5 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны **все тело**.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны **все тело**.\nВключает **5 сеансов**.\nСтоимость пакета на **10% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "4500 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "laser-full-body-10",
+        "displayOrder": 51,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Laser hair removal package",
+            "name": "Full Body 10 sessions",
+            "summary": "Comprehensive laser hair removal package for the full body.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "description": "Comprehensive laser hair removal package for the full body.\nIncludes 10 **sessions**.\nThe package price is **20% more выгоднее** than purchasing each session separately.\nThe package is valid for **12 months from the date of purchase**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "8000 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Laserkarvanpoistopaketti",
+            "name": "Koko keho 10 kertaa",
+            "summary": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle koko keho.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "description": "Kokonaisvaltainen laserkarvanpoistopaketti alueelle koko keho.\nSisältää 10 **hoitokertaa**.\nPaketin hinta on **20 % edullisempi** kuin yksittäisten hoitokertojen ostaminen erikseen.\nPaketin voimassaoloaika on **12 kuukautta ostopäivästä**.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "8000 €",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Пакет процедур лазерная эпиляция",
+            "name": "Всё тело 10 сеансов",
+            "summary": "Комплексный пакет лазерной эпиляции зоны **все тело**.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "description": "Комплексный пакет лазерной эпиляции зоны **все тело**.\nВключает 10 **сеансов**.\nСтоимость пакета на **20% выгоднее**, чем оплата каждого сеанса отдельно.\nСрок действия пакета — **12 месяцев** с момента покупки.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "8000 €",
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}
