@@ -1,0 +1,265 @@
+{
+  "capturedAt": "2026-09-22T08:06:39.678Z",
+  "service": {
+    "slug": "brows",
+    "images": [
+      "/media/home/brows-card.jpg"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "treatment-01",
+        "displayOrder": 0,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "VELVET Lamination",
+            "name": "Lash Lamination",
+            "summary": "VELVET lash lamination is a premium treatment that gives your lashes a natural curl, volume, and rich color while strengthening and restoring their structure. Using high-quality VELVET products, your lashes receive deep nourishment and protection, making them stronger and more resistant to external factors.",
+            "description": "**Duration of the procedure:** 60-90 minutes\n\n**Procedure description:**\n\nVELVET lash lamination is a premium treatment that gives your lashes a natural curl, volume, and rich color while strengthening and restoring their structure. Using high-quality VELVET products, your lashes receive deep nourishment and protection, making them stronger and more resistant to external factors.\n\n**What the procedure offers:**\n\n- **Natural curl and volume:** Your lashes will look longer and fuller without the need for daily mascara or curling.\n- **Strengthening and restoration:** The unique VELVET formula, including keratin and vitamins, restores the lash structure, making them thicker and healthier.\n- **Rich color:** The procedure also includes safe tinting, giving your lashes a deep, expressive hue.\n- **Long-lasting effect:** The results of the lamination last up to 6-8 weeks, providing long-term care and an attractive lash appearance.\n\nThis procedure is suitable for all lash types, including weak and damaged lashes. VELVET lamination is the perfect solution for those who want to enhance the natural beauty of their lashes without extensions or daily makeup.",
+            "imageAlt": null,
+            "durationLabel": "60 minutes",
+            "priceLabel": "70 € / 60 minutes",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Ripsien laminointi VELVET-tuotteilla",
+            "name": "Ripsien laminointi",
+            "summary": "Toimenpiteen kesto: 60–90 minuuttia",
+            "description": "### Ripsien laminointi VELVET-tuotteilla\n\nToimenpiteen kesto: 60–90 minuuttia\n\n**Toimenpiteen kuvaus:**\n\nVELVET-ripsien laminointi on premium-hoito, joka antaa ripsillesi luonnollisen kaaren, volyymin ja intensiivisen värin samalla vahvistaen ja palauttaen niiden rakenteen. Käyttämällä korkealaatuisia VELVET-tuotteita, ripset saavat syvää ravintoa ja suojaa, mikä tekee niistä vahvempia ja kestävämpiä ulkoisia vaikutuksia vastaan.\n\n**Mitä hoito antaa:**\n\n- **Luonnollinen kaarevuus ja volyymi:** Ripset näyttävät pidemmiltä ja tuuheammilta ilman päivittäistä ripsivärin käyttöä tai taivutusta.\n- **Vahvistus ja palautus:** VELVET-tuotteiden ainutlaatuinen koostumus, joka sisältää keratiinia ja vitamiineja, palauttaa ripsien rakenteen ja tekee niistä tiheämmät ja terveemmät.\n- **Intensiivinen väri:** Hoito sisältää myös turvallisen värjäyksen, joka antaa ripsille syvän ja ilmeikkään sävyn.\n- **Pitkäkestoinen vaikutus:** Laminoinnin tulos säilyy 6–8 viikkoa, tarjoten pitkäaikaista hoitoa ja houkuttelevan ulkonäön ripsille.\n\nHoito sopii kaikille ripsityypeille, myös heikoille ja vaurioituneille ripsille. VELVET-laminointi on ihanteellinen ratkaisu niille, jotka haluavat korostaa ripsiensä luonnollista kauneutta ilman pidennyksiä tai päivittäistä meikkiä.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "70 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Ламинирование VELVET",
+            "name": "Ламинирование ресниц",
+            "summary": "**Продолжительность процедуры**: 60-90 минут",
+            "description": "### Ламинирование ресниц с использованием средств VELVET\n\n**Продолжительность процедуры**: 60-90 минут\n\n**Описание процедуры**:\n\nЛаминирование ресниц VELVET – это премиальная уходовая процедура, которая придает вашим ресницам естественный изгиб, объем и насыщенный цвет, при этом укрепляя и восстанавливая их структуру. С использованием высококачественных средств VELVET, ваши ресницы получают глубокое питание и защиту, что делает их более крепкими и устойчивыми к внешним воздействиям.\n\n**Что дает процедура:**\n\n- **Естественный изгиб и объем**: Ваши ресницы будут выглядеть длиннее и гуще без необходимости ежедневного использования туши или завивки.\n- **Укрепление и восстановление**: Уникальный состав средств VELVET, включающий кератин и витамины, восстанавливает структуру ресниц, делает их более плотными и здоровыми.\n- **Насыщенный цвет**: Процедура также включает безопасное окрашивание, которое придает ресницам глубокий и выразительный оттенок.\n- **Длительный эффект**: Результат ламинирования сохраняется до 6-8 недель, обеспечивая вам долгосрочный уход и привлекательный внешний вид ресниц.\n\nПроцедура подходит для всех типов ресниц, включая слабые и поврежденные. Ламинирование VELVET – это идеальное решение для тех, кто хочет подчеркнуть естественную красоту своих ресниц, не прибегая к наращиванию или ежедневному макияжу.",
+            "imageAlt": null,
+            "durationLabel": "60 минут",
+            "priceLabel": "70 € / 60 минут",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-02",
+        "displayOrder": 1,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Brow Lamination",
+            "summary": "VELVET brow lamination is an innovative procedure that helps create perfectly shaped brows, adding volume and a well-groomed look. The VELVET products used during the lamination process provide nourishment and restoration to brow hairs, making them thicker and easier to manage.",
+            "description": "**Procedure description:**\n\nVELVET brow lamination is an innovative procedure that helps create perfectly shaped brows, adding volume and a well-groomed look. The VELVET products used during the lamination process provide nourishment and restoration to brow hairs, making them thicker and easier to manage.\n\n**What the procedure offers:**\n\n- **Shape correction and fixation:** Lamination helps create the desired brow shape by fixing the hairs in the right direction. This is especially useful for those with unruly or irregularly growing brows.\n- **Volume and fullness:** The procedure makes brows appear visually thicker and more voluminous, which is particularly important for thin or sparse brows.\n- **Nourishment and restoration:** VELVET products contain active ingredients, such as keratin and vitamins, that nourish and strengthen the brow hairs, improving their structure.\n- **Long-lasting result:** The lamination effect lasts up to 6-8 weeks, giving you perfect brows without the need for daily maintenance or styling.\n\nVELVET brow lamination is the ideal solution for those who want to enhance the natural beauty of their brows, giving them a polished and well-maintained look for an extended period. Regardless of brow type or condition, this procedure will provide you with confidence in your appearance every day.",
+            "imageAlt": null,
+            "durationLabel": "60 minutes",
+            "priceLabel": "70 € / 60 minutes",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Kulmakarvojen laminointi",
+            "summary": "VELVET-kulmakarvojen laminointi on innovatiivinen toimenpide, joka luo täydelliset kulmakarvat, antaen niille halutun muodon, volyymin ja huolitellun ulkonäön. Laminoinnissa käytettävät VELVET-tuotteet ravitsevat ja palauttavat kulmakarvojen karvat, tehden niistä paksummat ja helpommin muotoiltavat.",
+            "description": "**Toimenpiteen kuvaus:**\n\nVELVET-kulmakarvojen laminointi on innovatiivinen toimenpide, joka luo täydelliset kulmakarvat, antaen niille halutun muodon, volyymin ja huolitellun ulkonäön. Laminoinnissa käytettävät VELVET-tuotteet ravitsevat ja palauttavat kulmakarvojen karvat, tehden niistä paksummat ja helpommin muotoiltavat.\n\n**Mitä hoito antaa:**\n\n- **Muodon korjaus ja kiinnitys:** Laminointi auttaa luomaan halutun kulmakarvojen muodon ja kiinnittää karvat oikeaan suuntaan. Tämä on erityisen hyödyllistä, jos kulmakarvat ovat pörröiset tai kasvavat epätasaisesti.\n- **Volyymi ja tuuheus:** Hoito tekee kulmakarvoista visuaalisesti tuuheammat ja volyymikkaammat, mikä on tärkeää erityisesti ohuissa tai harvoissa kulmakarvoissa.\n- **Ravitseminen ja palautus:** VELVET-tuotteet sisältävät aktiivisia ainesosia, kuten keratiinia ja vitamiineja, jotka ravitsevat ja vahvistavat karvoja, parantaen niiden rakennetta.\n- **Pitkäkestoinen tulos:** Laminoinnin vaikutus kestää jopa 6–8 viikkoa, tarjoten täydelliset kulmakarvat ilman päivittäistä hoitoa ja muotoilua.\n\nVELVET-kulmakarvojen laminointi on täydellinen ratkaisu niille, jotka haluavat korostaa kulmakarvojensa luonnollista kauneutta ja saavuttaa huolitellun ulkonäön pitkäksi aikaa. Riippumatta kulmakarvojen tyypistä tai kunnosta, tämä hoito antaa sinulle itsevarmuutta jokaiseen päivään.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "70 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Ламинирование бровей",
+            "summary": "Ламинирование бровей VELVET – это инновационная процедура, которая позволяет создать идеальные брови, придавая им желаемую форму, объем и ухоженный вид. Средства VELVET, используемые в процессе ламинирования, обеспечивают питание и восстановление волосков бровей, делая их более плотными и послушными.",
+            "description": "**Описание процедуры**:\n\nЛаминирование бровей VELVET – это инновационная процедура, которая позволяет создать идеальные брови, придавая им желаемую форму, объем и ухоженный вид. Средства VELVET, используемые в процессе ламинирования, обеспечивают питание и восстановление волосков бровей, делая их более плотными и послушными.\n\n**Что дает процедура:**\n\n- **Коррекция и фиксация формы**: Ламинирование помогает создать желаемую форму бровей, фиксируя волоски в нужном направлении. Это особенно актуально для тех, у кого брови склонны к пушистости или неправильному росту.\n- **Объем и густота**: Процедура делает брови визуально более густыми и объемными, что особенно важно для тонких и редких бровей.\n- **Питание и восстановление**: Средства VELVET содержат активные компоненты, такие как кератин и витамины, которые питают и укрепляют волоски, улучшая их структуру.\n- **Долговременный результат**: Эффект ламинирования сохраняется до 6-8 недель, обеспечивая вам идеальные брови без необходимости ежедневного ухода и укладки.\n\nПроцедура ламинирования бровей VELVET идеально подходит для тех, кто хочет подчеркнуть естественную красоту своих бровей, придать им ухоженный и аккуратный вид на длительное время. Независимо от типа и состояния бровей, процедура подарит вам уверенность в своем внешнем виде каждый день.",
+            "imageAlt": null,
+            "durationLabel": "60 минут",
+            "priceLabel": "70 € / 60 минут",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-03",
+        "displayOrder": 2,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Simultaneous Lash and Brow Lamination",
+            "summary": "We offer a comprehensive lash and brow lamination service using VELVET products, which simultaneously enhances your lashes with a beautiful curl and volume, while giving your brows perfect shape and fullness. These two procedures can be performed at the same time, saving you time and ensuring a harmonious, well-groomed appearance.",
+            "description": "We offer a comprehensive lash and brow lamination service using VELVET products, which simultaneously enhances your lashes with a beautiful curl and volume, while giving your brows perfect shape and fullness. These two procedures can be performed at the same time, saving you time and ensuring a harmonious, well-groomed appearance.",
+            "imageAlt": null,
+            "durationLabel": "60-80 minutes",
+            "priceLabel": "110 € / 60-80 minutes",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Ripsien ja kulmakarvojen laminointi samanaikaisesti.",
+            "summary": "Tarjoamme kattavan ripsien ja kulmakarvojen laminoinnin VELVET-tuotteilla, joka antaa ripsille kauniin kaarevuuden ja volyymin sekä kulmakarvoille täydellisen muodon ja tuuheuden. Nämä kaksi toimenpidettä voidaan tehdä samanaikaisesti, mikä säästää aikaa ja varmistaa harmonisen, huolitellun ulkonäön.",
+            "description": "Tarjoamme kattavan ripsien ja kulmakarvojen laminoinnin VELVET-tuotteilla, joka antaa ripsille kauniin kaarevuuden ja volyymin sekä kulmakarvoille täydellisen muodon ja tuuheuden. Nämä kaksi toimenpidettä voidaan tehdä samanaikaisesti, mikä säästää aikaa ja varmistaa harmonisen, huolitellun ulkonäön.",
+            "imageAlt": null,
+            "durationLabel": "60-80 min",
+            "priceLabel": "110 € / 60-80 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Ламинирование ресниц и бровей одновременно",
+            "summary": "Мы предлагаем комплексное ламинирование ресниц и бровей с использованием средств VELVET, которое позволяет одновременно придать вашим ресницам красивый изгиб и объем, а бровям – идеальную форму и густоту. Эти две процедуры можно провести одновременно, что экономит ваше время и обеспечивает гармоничный, ухоженный внешний вид.",
+            "description": "Мы предлагаем комплексное ламинирование ресниц и бровей с использованием средств VELVET, которое позволяет одновременно придать вашим ресницам красивый изгиб и объем, а бровям – идеальную форму и густоту. Эти две процедуры можно провести одновременно, что экономит ваше время и обеспечивает гармоничный, ухоженный внешний вид.",
+            "imageAlt": null,
+            "durationLabel": "60-80 минут",
+            "priceLabel": "120 € / 60-80 минут",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-04",
+        "displayOrder": 3,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Lash Tinting",
+            "summary": "Lash tinting is a quick and safe procedure that gives your lashes a rich and long-lasting color. Using special dyes, the specialist selects a shade that harmonizes perfectly with your appearance, making your lashes more expressive.",
+            "description": "Lash tinting is a quick and safe procedure that gives your lashes a rich and long-lasting color. Using special dyes, the specialist selects a shade that harmonizes perfectly with your appearance, making your lashes more expressive.",
+            "imageAlt": null,
+            "durationLabel": "20 minutes",
+            "priceLabel": "30 € / 20 minutes",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Kulmakarvojen muotoilu ja värjäys",
+            "summary": "Tarjoamme kulmakarvojen muotoilu- ja värjäyspalvelua, joka auttaa luomaan täydellisen muodon ja korostamaan kulmakarvojesi luonnollista väriä. Toimenpiteen aikana ammattilainen muotoilee kulmakarvat ottaen huomioon kasvojesi piirteet ja värjää ne antaen syvän, pitkäkestoisen sävyn. Tämä antaa huolitellun ilmeen ja korostaa luonnollista kauneuttasi, tehden katseestasi ilmeikkäämmän.",
+            "description": "Tarjoamme kulmakarvojen muotoilu- ja värjäyspalvelua, joka auttaa luomaan täydellisen muodon ja korostamaan kulmakarvojesi luonnollista väriä. Toimenpiteen aikana ammattilainen muotoilee kulmakarvat ottaen huomioon kasvojesi piirteet ja värjää ne antaen syvän, pitkäkestoisen sävyn. Tämä antaa huolitellun ilmeen ja korostaa luonnollista kauneuttasi, tehden katseestasi ilmeikkäämmän.",
+            "imageAlt": null,
+            "durationLabel": "30 min",
+            "priceLabel": "37 € / 30 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Окрашивание ресниц",
+            "summary": "Окрашивание ресниц – это быстрая и безопасная процедура, которая придает ресницам насыщенный и стойкий цвет. Используя специальные краски, мастер подбирает оттенок, который наиболее гармонично сочетается с вашим типом внешности, делая ресницы более выразительными.",
+            "description": "Окрашивание ресниц – это быстрая и безопасная процедура, которая придает ресницам насыщенный и стойкий цвет. Используя специальные краски, мастер подбирает оттенок, который наиболее гармонично сочетается с вашим типом внешности, делая ресницы более выразительными.",
+            "imageAlt": null,
+            "durationLabel": "20 минут",
+            "priceLabel": "30 € / 20 минут",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-05",
+        "displayOrder": 4,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Brow Shaping and Tinting",
+            "summary": "We offer a brow shaping and tinting service that helps create the perfect brow shape and enhances their natural color. During the procedure, the specialist adjusts the shape of your brows, taking into account your facial features, and then applies a rich, long-lasting tint. This ensures a polished look and highlights your natural beauty, making your gaze more expressive.",
+            "description": "We offer a brow shaping and tinting service that helps create the perfect brow shape and enhances their natural color. During the procedure, the specialist adjusts the shape of your brows, taking into account your facial features, and then applies a rich, long-lasting tint. This ensures a polished look and highlights your natural beauty, making your gaze more expressive.",
+            "imageAlt": null,
+            "durationLabel": "30 minutes",
+            "priceLabel": "37 € / 30 minutes",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": null,
+            "name": "Ripsien värjäys",
+            "summary": "Ripsien värjäys on nopea ja turvallinen toimenpide, joka antaa ripsille intensiivisen ja pitkäkestoisen värin. Käyttäen erityisiä väriaineita, ammattilainen valitsee sävyn, joka sopii parhaiten ulkonäköösi, tehden ripsistäsi ilmeikkäämmät ja korostaen katsettasi.",
+            "description": "Ripsien värjäys on nopea ja turvallinen toimenpide, joka antaa ripsille intensiivisen ja pitkäkestoisen värin. Käyttäen erityisiä väriaineita, ammattilainen valitsee sävyn, joka sopii parhaiten ulkonäköösi, tehden ripsistäsi ilmeikkäämmät ja korostaen katsettasi.",
+            "imageAlt": null,
+            "durationLabel": "20 min",
+            "priceLabel": "30 € / 20 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Моделирование и окрашивание бровей",
+            "summary": "Мы предлагаем услугу моделирования и окрашивания бровей, которая помогает создать идеальную форму и подчеркнуть естественный цвет ваших бровей. В ходе процедуры мастер корректирует форму бровей, учитывая особенности вашего лица, а затем окрашивает их, придавая насыщенный, стойкий оттенок. Это обеспечивает ухоженный вид и подчеркивает вашу естественную красоту, делая взгляд более выразительным.",
+            "description": "Мы предлагаем услугу моделирования и окрашивания бровей, которая помогает создать идеальную форму и подчеркнуть естественный цвет ваших бровей. В ходе процедуры мастер корректирует форму бровей, учитывая особенности вашего лица, а затем окрашивает их, придавая насыщенный, стойкий оттенок. Это обеспечивает ухоженный вид и подчеркивает вашу естественную красоту, делая взгляд более выразительным.",
+            "imageAlt": null,
+            "durationLabel": "30 минут",
+            "priceLabel": "37 € / 30 минут",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-06",
+        "displayOrder": 5,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": null,
+            "name": "Brow Shaping and Tinting + Lash Tinting",
+            "summary": "Brow shaping and tinting combined with lash tinting is a comprehensive procedure that creates a harmonious and expressive look. The service includes shaping the brows and tinting them to a suitable shade, as well as tinting the lashes, resulting in a deeper and more defined gaze.",
+            "description": "Brow shaping and tinting combined with lash tinting is a comprehensive procedure that creates a harmonious and expressive look. The service includes shaping the brows and tinting them to a suitable shade, as well as tinting the lashes, resulting in a deeper and more defined gaze.",
+            "imageAlt": null,
+            "durationLabel": "30-40 minutes",
+            "priceLabel": "45 € / 30-40 minutes",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Kulmakarvojen muotoilu ja värjäys + ripsien värjäys",
+            "name": "Kulmakarvojen muotoilu ja värjäys + ripsien värjäys",
+            "summary": "Kulmakarvojen muotoilu ja värjäys yhdistettynä ripsien värjäykseen on kattava toimenpide, joka luo harmonisen ja ilmeikkään ulkonäön. Samalla muotoillaan kulmakarvat ja värjätään ne sopivaan sävyyn, sekä värjätään ripset, mikä tekee katseesta syvemmän ja ilmeikkäämmän.",
+            "description": "Kulmakarvojen muotoilu ja värjäys yhdistettynä ripsien värjäykseen on kattava toimenpide, joka luo harmonisen ja ilmeikkään ulkonäön. Samalla muotoillaan kulmakarvat ja värjätään ne sopivaan sävyyn, sekä värjätään ripset, mikä tekee katseesta syvemmän ja ilmeikkäämmän.",
+            "imageAlt": null,
+            "durationLabel": "30-40 min",
+            "priceLabel": "45 € / 30-40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": null,
+            "name": "Моделирование и окрашивание бровей + окрашивание ресниц",
+            "summary": "Моделирование и окрашивание бровей в сочетании с окрашиванием ресниц – это комплексная процедура, которая позволяет создать гармоничный и выразительный образ. Одновременно проводится коррекция формы бровей и их окрашивание в подходящий оттенок, а также окрашивание ресниц, что делает взгляд более глубоким и выразительным",
+            "description": "Моделирование и окрашивание бровей в сочетании с окрашиванием ресниц – это комплексная процедура, которая позволяет создать гармоничный и выразительный образ. Одновременно проводится коррекция формы бровей и их окрашивание в подходящий оттенок, а также окрашивание ресниц, что делает взгляд более глубоким и выразительным",
+            "imageAlt": null,
+            "durationLabel": "30-40 минут",
+            "priceLabel": "45 € / 30-40 минут",
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}

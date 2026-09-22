@@ -13,7 +13,7 @@ import { managedLocalizedMetadata } from "@/lib/site-media";
 import { routing, type Locale } from "@/i18n/routing";
 import { PUBLIC_PATHS, serviceLandingContentPath } from "@/lib/public-routes";
 import { ENDOSPHERES_EN } from "@/content/endospheres";
-import { ContentPage } from "@/components/ContentPage";
+import { GiftCardsPage } from "@/components/services/GiftCardsPage";
 
 export async function generateMetadata({
   params,
@@ -78,7 +78,7 @@ export default async function Page({
   if (!routing.locales.includes(locale as Locale)) notFound();
   setRequestLocale(locale);
   if (slug === "lahjakortit")
-    return <ContentPage slug="services/gift-cards" locale={locale as Locale} />;
+    return <GiftCardsPage slug="services/gift-cards" locale={locale as Locale} />;
   const path = serviceLandingContentPath(`${PUBLIC_PATHS.services}/${slug}`);
   return <ServiceDetailPage slug={path.slice(1)} locale={locale as Locale} />;
 }

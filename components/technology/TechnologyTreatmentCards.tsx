@@ -88,11 +88,17 @@ export function TechnologyTreatmentCards({
             {heading}
           </h2>
 
-          <div className="mt-8 grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Flex-wrap with a fixed basis, not CSS grid: with grid, a group whose
+              count doesn't divide evenly into the column count (e.g. 5 items
+              in 3 columns) leaves its last row's items pinned to the left with
+              a bare gap on the right. Flex-wrap centers a short last row
+              instead, and each row still stretches to its tallest card via
+              flexbox's own per-line stretch behavior — no auto-rows-fr needed. */}
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             {treatments.map((item) => (
               <article
                 key={item.key}
-                className="flex flex-col overflow-hidden rounded-(--radius) border border-line-card bg-card shadow-(--shadow-card-soft) transition-[border-color,box-shadow] hover:border-line-card-hover hover:shadow-(--shadow-card) motion-reduce:transition-none"
+                className="flex w-full flex-col overflow-hidden rounded-(--radius) border border-line-card bg-card shadow-(--shadow-card-soft) transition-[border-color,box-shadow] hover:border-line-card-hover hover:shadow-(--shadow-card) motion-reduce:transition-none sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]"
               >
                 {showImages && item.image ? (
                   <div className="relative aspect-[16/10] bg-alt">

@@ -86,10 +86,17 @@ export function ServiceCourseCards({
                   >
                     {group}
                   </h3>
+                  {/* Flex-wrap with a fixed basis, not CSS grid: with grid, a
+                      group whose count doesn't divide evenly into the column
+                      count (e.g. 5 items in 3 columns) leaves its last row's
+                      items pinned to the left with a bare gap on the right.
+                      Flex-wrap centers a short last row instead, and each row
+                      still stretches to its tallest card via flexbox's own
+                      per-line stretch behavior — no auto-rows-fr needed. */}
                   <div
                     className={cn(
-                      "mt-4 grid auto-rows-fr grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3",
-                      soleOption && "sm:grid-cols-1 xl:grid-cols-1",
+                      "mt-4 flex flex-wrap justify-center gap-4",
+                      soleOption && "sm:flex-nowrap",
                     )}
                   >
                     {groupOptions.map((option) => {
@@ -105,8 +112,10 @@ export function ServiceCourseCards({
                         <article
                           key={option.key}
                           className={cn(
-                            "group/card relative flex h-full min-h-90 flex-col rounded-(--radius) border border-line-card bg-card p-[clamp(20px,3vw,28px)] shadow-(--shadow-card-soft) transition-[background-color,box-shadow,transform] focus-within:shadow-(--shadow-card) hover:-translate-y-0.5 hover:bg-page hover:shadow-(--shadow-card) motion-reduce:transform-none motion-reduce:transition-none",
-                            soleOption && "min-h-72",
+                            "group/card relative flex h-full min-h-90 w-full flex-col rounded-(--radius) border border-line-card bg-card p-[clamp(20px,3vw,28px)] shadow-(--shadow-card-soft) transition-[background-color,box-shadow,transform] focus-within:shadow-(--shadow-card) hover:-translate-y-0.5 hover:bg-page hover:shadow-(--shadow-card) motion-reduce:transform-none motion-reduce:transition-none",
+                            soleOption
+                              ? "min-h-72"
+                              : "sm:w-[calc(50%-8px)] xl:w-[calc(33.333%-11px)]",
                           )}
                         >
                           <h4 className="font-display text-[clamp(25px,3vw,32px)] leading-[1.08] font-medium text-ink">

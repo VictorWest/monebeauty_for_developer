@@ -1,0 +1,632 @@
+{
+  "capturedAt": "2026-09-22T08:07:14.538Z",
+  "service": {
+    "slug": "rf",
+    "images": [
+      "/media/rf/rf-hero-full-room.jpg"
+    ],
+    "imageFocalX": 50,
+    "imageFocalY": 50,
+    "options": [
+      {
+        "key": "treatment-01",
+        "displayOrder": 0,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF-Lifting",
+            "name": "Full Face",
+            "summary": "Microneedle RF lifting is a modern, minimally invasive rejuvenation method that combines radiofrequency energy with microneedling. During the treatment, fine needles create controlled micro-injuries, while radiofrequency pulses heat the deeper layers of the skin. This dual action stimulates collagen and elastin production, making the skin firmer, smoother, and more youthful without surgery.",
+            "description": "Microneedle RF lifting is a modern, minimally invasive rejuvenation method that combines radiofrequency energy with microneedling. During the treatment, fine needles create controlled micro-injuries, while radiofrequency pulses heat the deeper layers of the skin. This dual action stimulates collagen and elastin production, making the skin firmer, smoother, and more youthful without surgery.\n\n**Benefits of the treatment:**\n\n- Comprehensive rejuvenation of the entire face\n\n- Reduction and prevention of wrinkles\n\n- Pore tightening and improved skin texture\n\n- Restored firmness and definition of facial contours\n\n- Minimal downtime and quick recovery\n\n**Results you can expect:**\n\n- Even skin tone and a refreshed look\n\n- Smoothing of fine and medium wrinkles\n\n- Firmer, denser skin with less sagging\n\n- Improved jawline and reduced double chin\n\n- Slowed aging thanks to natural collagen stimulation\n\n**Course:**\n\nFor long-lasting results, a course of 3–5 sessions is recommended with 3–6 week intervals. The effect lasts up to 12 months and continues to improve as collagen remodeling progresses.",
+            "imageAlt": null,
+            "durationLabel": "70 min",
+            "priceLabel": "285 € / 70 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Koko kasvot",
+            "summary": "Mikroneulan RF nosto on nykyaikainen, vähän invasiivinen nuorennusmenetelmä, jossa yhdistyvät radiofrekvenssienergia ja mikroneulaus. Hoidon aikana ohuet neulat luovat hallittuja mikrovaurioita, samalla kun radiofrekvenssi lämmittää ihon syvempiä kerroksia. Tämä stimuloi kollageenin ja elastiinin tuotantoa, jolloin iho muuttuu kiinteämmäksi, sileämmäksi ja nuorekkaammaksi ilman kirurgiaa.",
+            "description": "Mikroneulan RF nosto on nykyaikainen, vähän invasiivinen nuorennusmenetelmä, jossa yhdistyvät radiofrekvenssienergia ja mikroneulaus. Hoidon aikana ohuet neulat luovat hallittuja mikrovaurioita, samalla kun radiofrekvenssi lämmittää ihon syvempiä kerroksia. Tämä stimuloi kollageenin ja elastiinin tuotantoa, jolloin iho muuttuu kiinteämmäksi, sileämmäksi ja nuorekkaammaksi ilman kirurgiaa.\n\n**Hoidon hyödyt:**\n\n- Koko kasvojen kokonaisvaltainen nuorennus\n\n- Ryppyjen vähentäminen ja ehkäisy\n\n- Huokosten supistuminen ja ihon rakenteen paraneminen\n\n- Kiinteämpi iho ja kasvojen muotojen korostuminen\n\n- Lyhyt toipumisaika ja vähän haittavaikutuksia\n\n**Tulokset, joita voit odottaa:**\n\n- Tasainen ihonsävy ja raikkaampi ulkonäkö\n\n- Pienten ja keskisuurten ryppyjen siloittuminen\n\n- Kiinteämpi ja kimmoisampi iho\n\n- Selkeämpi leukalinja ja vähentynyt kaksoisleuka\n\n- Ikääntymisen hidastuminen luonnollisen kollageenin aktivoitumisen ansiosta\n\n**Kurssi:**\n\nParhaan tuloksen saavuttamiseksi suositellaan 3–5 hoitokerran sarjaa 3–6 viikon välein. Vaikutus kestää jopa 12 kuukautta ja paranee vähitellen kollageenin uudistumisen myötä.",
+            "imageAlt": null,
+            "durationLabel": "70 min",
+            "priceLabel": "285 € / 70 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Всё лицо",
+            "summary": "Микроигольчатый RF-лифтинг для лица — это современная малоинвазивная методика омоложения, которая сочетает действие радиочастотной энергии и микроигольчатого воздействия. В процессе процедуры тонкие иглы создают контролируемые микроповреждения, а радиочастотный импульс прогревает глубокие слои кожи, стимулируя выработку коллагена и эластина. В результате кожа становится более плотной, упругой и гладкой без хирургического вмешательства.",
+            "description": "Микроигольчатый RF-лифтинг для лица — это современная малоинвазивная методика омоложения, которая сочетает действие радиочастотной энергии и микроигольчатого воздействия. В процессе процедуры тонкие иглы создают контролируемые микроповреждения, а радиочастотный импульс прогревает глубокие слои кожи, стимулируя выработку коллагена и эластина. В результате кожа становится более плотной, упругой и гладкой без хирургического вмешательства.\n\n**Преимущества процедуры:**\n\n- Комплексное омоложение всей кожи лица\n\n- Сокращение морщин и профилактика их появления\n\n- Сужение пор и улучшение текстуры кожи\n\n- Повышение упругости и восстановление чёткого овала\n\n- Минимальная травматичность и короткий период восстановления\n\n**Какие результаты вы получите?**\n\n- Ровный тон кожи и эффект «свежего лица»\n\n- Сглаживание мелких и средних морщин\n\n- Уплотнение кожи и устранение дряблости\n\n- Подтянутый овал и уменьшение второго подбородка\n\n- Замедление процессов старения за счёт активации коллагена\n\n**Курс:**\n\nДля стойкого результата рекомендуется пройти курс из 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев и усиливается со временем благодаря постепенному восстановлению коллагенового каркаса кожи.",
+            "imageAlt": null,
+            "durationLabel": "70 мин",
+            "priceLabel": "285 € / 70 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-02",
+        "displayOrder": 1,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Forehead",
+            "summary": "Microneedle RF lifting for the forehead is a modern rejuvenation procedure designed to smooth out expression and age-related wrinkles, strengthen the skin, and restore its density. During the procedure, microneedles penetrate the skin to a controlled depth while radiofrequency energy heats the tissues from within, stimulating active collagen and elastin production. As a result, the forehead skin becomes smoother, firmer, and more youthful.",
+            "description": "Microneedle RF lifting for the forehead is a modern rejuvenation procedure designed to smooth out expression and age-related wrinkles, strengthen the skin, and restore its density. During the procedure, microneedles penetrate the skin to a controlled depth while radiofrequency energy heats the tissues from within, stimulating active collagen and elastin production. As a result, the forehead skin becomes smoother, firmer, and more youthful.\n\n**Procedure benefits:**\n\n- Effective smoothing of horizontal forehead wrinkles\n\n- Strengthening of the skin and improvement of tone\n\n- Minimal trauma and short recovery period\n\n- Prevention of new wrinkle formation\n\n- Safe and long-lasting results\n\n**What results you will get:**\n\n- Noticeable smoothing of forehead wrinkles\n\n- Reduction of skin folds and irregularities\n\n- Increased firmness and density of the skin\n\n- Fresh and rejuvenated appearance\n\n**Course:**\n\nFor long-lasting results, it is recommended to undergo 3–5 sessions at 3–6 week intervals. The effect can last up to 12 months and gradually increases as the skin’s collagen structure restores.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "185 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Otsa",
+            "summary": "Mikroneulan RF-nosto otsalle on moderni nuorentamismenetelmä, joka tasoittaa ilme- ja ikääntymisryppyjä, vahvistaa ihoa ja palauttaa sen tiheyden. Hoidon aikana mikroneulat tunkeutuvat kontrolloidusti ihoon, samalla kun radiofrekvenssi lämmittää kudoksia syvältä, stimuloiden kollageenin ja elastaanin tuotantoa. Tämän seurauksena otsan iho muuttuu sileämmäksi, kiinteämmäksi ja nuorekkaammaksi.",
+            "description": "Mikroneulan RF-nosto otsalle on moderni nuorentamismenetelmä, joka tasoittaa ilme- ja ikääntymisryppyjä, vahvistaa ihoa ja palauttaa sen tiheyden. Hoidon aikana mikroneulat tunkeutuvat kontrolloidusti ihoon, samalla kun radiofrekvenssi lämmittää kudoksia syvältä, stimuloiden kollageenin ja elastaanin tuotantoa. Tämän seurauksena otsan iho muuttuu sileämmäksi, kiinteämmäksi ja nuorekkaammaksi.\n\n**Hoidon edut:**\n\n- Tehokas otsaryppyjen silotus\n\n- Ihon vahvistuminen ja sävyn parantuminen\n\n- Minimivauriot ja lyhyt toipumisaika\n\n- Uusien ryppyjen muodostumisen ehkäisy\n\n- Turvalliset ja pitkäkestoiset tulokset\n\n**Tulokset:**\n\n- Huomattava otsaryppyjen tasoitus\n\n- Ihon juonteiden ja epätasaisuuksien vähentyminen\n\n- Lisääntynyt ihon kiinteys ja tiheys\n\n- Raikas ja nuorekkaampi ulkonäkö\n\n**Kurssi:**\n\nPitkäkestoisten tulosten saavuttamiseksi suositellaan 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta ja paranee vähitellen kollageenirakenteen palautuessa.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "185 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Лоб",
+            "summary": "Микроигольчатый RF-лифтинг для области лба — это современная методика омоложения, направленная на сокращение мимических и возрастных морщин, укрепление кожи и восстановление её плотности. В процессе процедуры микроиглы проникают в кожу на контролируемую глубину, а радиочастотная энергия прогревает ткани изнутри, стимулируя активный синтез коллагена и эластина. В результате кожа лба становится более гладкой, упругой и молодой.",
+            "description": "Микроигольчатый RF-лифтинг для области лба — это современная методика омоложения, направленная на сокращение мимических и возрастных морщин, укрепление кожи и восстановление её плотности. В процессе процедуры микроиглы проникают в кожу на контролируемую глубину, а радиочастотная энергия прогревает ткани изнутри, стимулируя активный синтез коллагена и эластина. В результате кожа лба становится более гладкой, упругой и молодой.\n\n**Преимущества процедуры:**\n\n- Эффективное разглаживание горизонтальных морщин\n\n- Укрепление кожи и повышение её тонуса\n\n- Минимальная травматичность и быстрый восстановительный период\n\n- Профилактика появления новых морщин\n\n- Безопасность и длительный результат\n\n**Какие результаты вы получите?**\n\n- Заметное разглаживание морщин на лбу\n\n- Сокращение заломов кожи и неровностей\n\n- Повышение упругости и плотности кожи\n\n- Свежий и отдохнувший вид лица\n\n**Курс:**\n\nДля стойкого результата рекомендуется пройти курс из 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев и усиливается постепенно, по мере активации собственных процессов регенерации кожи.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "185 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-03",
+        "displayOrder": 2,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Eye Area",
+            "summary": "Microneedle RF lifting for the eye area is a delicate and safe procedure designed to reduce fine lines, skin laxity, and signs of fatigue. The gentle action of microneedles combined with radiofrequency energy stimulates new collagen and elastin production, strengthening the thin eyelid skin and giving the eyes a refreshed, youthful appearance.",
+            "description": "Microneedle RF lifting for the eye area is a delicate and safe procedure designed to reduce fine lines, skin laxity, and signs of fatigue. The gentle action of microneedles combined with radiofrequency energy stimulates new collagen and elastin production, strengthening the thin eyelid skin and giving the eyes a refreshed, youthful appearance.\n\n**Procedure benefits:**\n\n- Reduction of crow’s feet and fine lines\n\n- Eyelid tightening and skin firming\n\n- Decreased puffiness and dark circles\n\n- Minimal trauma and fast recovery\n\n- Safe for the delicate eye area\n\n**What results you will get:**\n\n- Refreshed and open-eyed look\n\n- Smoother skin around the eyes\n\n- Firmer, stronger eyelid skin\n\n- Reduced signs of fatigue and aging\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 10–12 months, providing long-lasting rejuvenation of the eye area.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "150 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Silmänympärysalue",
+            "summary": "Mikroneulan RF-nosto silmänympärysalueelle on hellävarainen ja turvallinen hoito, joka vähentää hienoja juonteita, ihon löystymistä ja väsymyksen merkkejä. Mikroneulojen ja radiofrekvenssin yhdistelmä stimuloi kollageenin ja elastaanin tuotantoa, vahvistaen ohutta silmäluomen ihoa ja antaen raikkaan ja nuorekkaan ilmeen.",
+            "description": "Mikroneulan RF-nosto silmänympärysalueelle on hellävarainen ja turvallinen hoito, joka vähentää hienoja juonteita, ihon löystymistä ja väsymyksen merkkejä. Mikroneulojen ja radiofrekvenssin yhdistelmä stimuloi kollageenin ja elastaanin tuotantoa, vahvistaen ohutta silmäluomen ihoa ja antaen raikkaan ja nuorekkaan ilmeen.\n\n**Hoidon edut:**\n\n- Silmänympärysryppyjen ja juonteiden vähentäminen\n\n- Silmäluomien kiinteytys ja vahvistuminen\n\n- Turvotuksen ja tummien silmänalusten vähentäminen\n\n- Minimivauriot ja nopea toipuminen\n\n- Soveltuu herkälle silmänympärysalueelle\n\n**Tulokset:**\n\n- Raikas ja avoin katse\n\n- Sileämpi silmänympärysiho\n\n- Kiinteämpi ja vahvempi silmäluomen iho\n\n- Väsymyksen ja ikääntymisen merkkien vähentyminen\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 10–12 kuukautta, tarjoten pitkäkestoisen nuorennuksen silmänympärysalueelle.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "150 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Вокруг глаз",
+            "summary": "Микроигольчатый RF-лифтинг для зоны вокруг глаз — это деликатная и безопасная процедура, которая помогает устранить мелкие морщины, дряблость кожи и признаки усталости. Мягкое воздействие микроигл в сочетании с радиочастотной энергией стимулирует образование нового коллагена и эластина, укрепляя тонкую кожу век и придавая взгляду свежесть.",
+            "description": "Микроигольчатый RF-лифтинг для зоны вокруг глаз — это деликатная и безопасная процедура, которая помогает устранить мелкие морщины, дряблость кожи и признаки усталости. Мягкое воздействие микроигл в сочетании с радиочастотной энергией стимулирует образование нового коллагена и эластина, укрепляя тонкую кожу век и придавая взгляду свежесть.\n\n**Преимущества процедуры:**\n\n- Устранение «гусиных лапок» и мелких морщин\n\n- Подтяжка век и уменьшение дряблости кожи\n\n- Снижение отёков и тёмных кругов под глазами\n\n- Минимальная травматичность и быстрый восстановительный период\n\n- Безопасность для деликатной зоны\n\n**Какие результаты вы получите?**\n\n- Освежённый и открытый взгляд\n\n- Разглаживание морщин вокруг глаз\n\n- Уплотнение и укрепление кожи век\n\n- Уменьшение признаков усталости и возрастных изменений\n\n**Курс:**\n\nРекомендуется пройти 3–5 процедуры с интервалом 3–6 недели. Эффект сохраняется до 10–12 месяцев, обеспечивая длительное омоложение зоны вокруг глаз.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "150 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-04",
+        "displayOrder": 3,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Cheeks",
+            "summary": "Microneedle RF lifting for the cheeks is aimed at restoring skin firmness, reducing sagging, and evening out skin texture. Radiofrequency pulses combined with microneedle action stimulate collagen production, making the skin denser, firmer, and lifted. This treatment is ideal for early signs of sagging and loss of tone.",
+            "description": "Microneedle RF lifting for the cheeks is aimed at restoring skin firmness, reducing sagging, and evening out skin texture. Radiofrequency pulses combined with microneedle action stimulate collagen production, making the skin denser, firmer, and lifted. This treatment is ideal for early signs of sagging and loss of tone.\n\n**Procedure benefits:**\n\n- Cheek lifting and skin strengthening\n\n- Pore reduction and improved skin texture\n\n- Reduction of sagging and early ptosis\n\n- Restoration of skin firmness and density\n\n- Safe, minimally invasive procedure with short recovery\n\n**What results you will get:**\n\n- Firmer, lifted cheeks\n\n- Healthy skin tone and even texture\n\n- Smoothing of wrinkles and folds\n\n- Natural rejuvenation effect without surgery\n\n**Course:**\n\nFor optimal results, 3–5 sessions are recommended at 3–6 week intervals. The effect lasts up to 12 months.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "185 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Posket",
+            "summary": "Mikroneulan RF-nosto poskille on suunniteltu palauttamaan ihon kiinteys, vähentämään löystymistä ja tasoittamaan ihon rakennetta. Radiofrekvenssi yhdistettynä mikroneuloihin stimuloi kollageenin tuotantoa, tehden ihosta tiheämmän, kiinteämmän ja kohotetun. Hoito on ihanteellinen varhaisiin löystymisen merkkeihin ja heikentyneeseen ihon sävyyn.",
+            "description": "Mikroneulan RF-nosto poskille on suunniteltu palauttamaan ihon kiinteys, vähentämään löystymistä ja tasoittamaan ihon rakennetta. Radiofrekvenssi yhdistettynä mikroneuloihin stimuloi kollageenin tuotantoa, tehden ihosta tiheämmän, kiinteämmän ja kohotetun. Hoito on ihanteellinen varhaisiin löystymisen merkkeihin ja heikentyneeseen ihon sävyyn.\n\n**Hoidon edut:**\n\n- Poskien kohotus ja ihon vahvistuminen\n\n- Huokosten supistuminen ja ihon rakenteen parantuminen\n\n- Löystymisen ja ihon varhaisen roikkumisen vähentäminen\n\n- Ihon kiinteyden ja tiheyden palautuminen\n\n- Turvallinen ja vähän invasiivinen hoito, lyhyt toipumisaika\n\n**Tulokset:**\n\n- Kiinteämmät ja kohotetut posket\n\n- Terve ja tasainen ihon sävy\n\n- Juonteiden ja ihopoimujen tasoittuminen\n\n- Luonnollinen nuorentava vaikutus\n\n**Kurssi:**\n\nParhaan tuloksen saavuttamiseksi suositellaan 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "185 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Щёки",
+            "summary": "Микроигольчатый RF-лифтинг для щёк направлен на восстановление упругости кожи, устранение дряблости и выравнивание текстуры. Радиочастотные импульсы в сочетании с микроигольчатым воздействием стимулируют выработку коллагена, делают кожу более плотной и подтянутой. Это идеальное решение при первых признаках птоза и потере тонуса.",
+            "description": "Микроигольчатый RF-лифтинг для щёк направлен на восстановление упругости кожи, устранение дряблости и выравнивание текстуры. Радиочастотные импульсы в сочетании с микроигольчатым воздействием стимулируют выработку коллагена, делают кожу более плотной и подтянутой. Это идеальное решение при первых признаках птоза и потере тонуса.\n\n**Преимущества процедуры:**\n\n- Подтяжка и укрепление кожи щёк\n\n- Сокращение пор и улучшение текстуры кожи\n\n- Устранение дряблости и первых признаков птоза\n\n- Восстановление упругости и плотности тканей\n\n- Безопасность и короткий реабилитационный период\n\n**Какие результаты вы получите?**\n\n- Подтянутые и упругие щёки\n\n- Здоровый цвет лица и ровная кожа\n\n- Сглаживание морщин и заломов\n\n- Естественный эффект омоложения без хирургии\n\n**Курс:**\n\nДля достижения выраженного результата рекомендуется пройти 3–5 процедуры с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "185 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-05",
+        "displayOrder": 4,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Chin & Facial Contour",
+            "summary": "Microneedle RF lifting for the chin and facial contour helps to refine facial lines and restore clear contours. The treatment combines microneedle micro-injuries with deep tissue heating via radiofrequency, which activates skin renewal, increases density, and reduces sagging.",
+            "description": "Microneedle RF lifting for the chin and facial contour helps to refine facial lines and restore clear contours. The treatment combines microneedle micro-injuries with deep tissue heating via radiofrequency, which activates skin renewal, increases density, and reduces sagging.\n\n**Procedure benefits:**\n\n- Chin and facial contour lifting\n\n- Reduction of double chin\n\n- Restoration of defined facial lines\n\n- Smoothing of wrinkles and folds in the lower face\n\n- Quick recovery with minimal trauma\n\n**What results you will get:**\n\n- Lifted and defined facial contour\n\n- Reduced sagging around the chin\n\n- Firmer and denser skin\n\n- Lifting effect without surgery\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months and gradually improves as the collagen framework restores.",
+            "imageAlt": null,
+            "durationLabel": "50 min",
+            "priceLabel": "150 € / 50 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Leuka & Kasvojen ääriviivat",
+            "summary": "Mikroneulan RF-nosto leualle ja kasvojen ääriviivoille auttaa tarkentamaan kasvonmuotoja ja palauttamaan selkeät linjat. Hoidossa yhdistyy mikroneulojen mikrovauriot ja syvä kudosten lämmitys radiofrekvenssillä, mikä aktivoi ihon uusiutumisprosessit, lisää tiheyttä ja vähentää löystymistä.",
+            "description": "Mikroneulan RF-nosto leualle ja kasvojen ääriviivoille auttaa tarkentamaan kasvonmuotoja ja palauttamaan selkeät linjat. Hoidossa yhdistyy mikroneulojen mikrovauriot ja syvä kudosten lämmitys radiofrekvenssillä, mikä aktivoi ihon uusiutumisprosessit, lisää tiheyttä ja vähentää löystymistä.\n\n**Hoidon edut:**\n\n- Leuan ja kasvojen ääriviivojen kohotus\n\n- Kaksoisleuan vähentäminen\n\n- Selkeiden kasvolinjojen palautuminen\n\n- Juonteiden ja poimujen tasoittuminen alakasvoilla\n\n- Nopea toipuminen ja minimaalinen trauma\n\n**Tulokset:**\n\n- Kohotettu ja selkeä kasvojen ääriviiva\n\n- Löystymisen vähentyminen leuan alueella\n\n- Kiinteämpi ja tiheämpi iho\n\n- Kohottava vaikutus ilman kirurgista toimenpidettä\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta ja paranee vähitellen kollageenirakenteen palautuessa.",
+            "imageAlt": null,
+            "durationLabel": "50 min",
+            "priceLabel": "150 € / 50 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Подбородок и овал лица",
+            "summary": "Микроигольчатый RF-лифтинг в зоне подбородка и овала лица помогает скорректировать контуры и восстановить чёткие линии лица. Технология сочетает микропроколы и прогрев тканей радиочастотной энергией, что запускает активное обновление кожи, повышает её плотность и уменьшает дряблость.",
+            "description": "Микроигольчатый RF-лифтинг в зоне подбородка и овала лица помогает скорректировать контуры и восстановить чёткие линии лица. Технология сочетает микропроколы и прогрев тканей радиочастотной энергией, что запускает активное обновление кожи, повышает её плотность и уменьшает дряблость.\n\n**Преимущества процедуры:**\n\n- Подтяжка овала лица и подбородка\n\n- Уменьшение второго подбородка\n\n- Восстановление чётких линий лица\n\n- Сокращение морщин и складок в нижней части лица\n\n- Быстрое восстановление после процедуры\n\n**Какие результаты вы получите?**\n\n- Подтянутый и чёткий овал лица\n\n- Уменьшение дряблости подбородка\n\n- Более плотная и упругая кожа\n\n- Эффект лифтинга без хирургического вмешательства\n\n**Курс:**\n\nРекомендуется пройти курс из 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев и усиливается благодаря накоплению собственного коллагена.",
+            "imageAlt": null,
+            "durationLabel": "50 мин",
+            "priceLabel": "150 € / 50 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-06",
+        "displayOrder": 5,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Neck",
+            "summary": "Microneedle RF lifting for the neck is an effective rejuvenation procedure aimed at combating sagging, wrinkles, and loss of skin tone. Radiofrequency energy combined with microneedle stimulation boosts collagen production, improves microcirculation, and restores tissue density.",
+            "description": "Microneedle RF lifting for the neck is an effective rejuvenation procedure aimed at combating sagging, wrinkles, and loss of skin tone. Radiofrequency energy combined with microneedle stimulation boosts collagen production, improves microcirculation, and restores tissue density.\n\n**Procedure benefits:**\n\n- Neck lifting and wrinkle reduction\n\n- Increased firmness and skin density\n\n- Reduction of sagging and prevention of “neck rings”\n\n- Minimal trauma and fast recovery\n\n- Long-lasting results\n\n**What results you will get:**\n\n- Firmer and tighter neck skin\n\n- Noticeable reduction of wrinkles and folds\n\n- Even skin tone and smooth texture\n\n- Overall rejuvenated appearance\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "150 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Kaula",
+            "summary": "Mikroneulan RF-nosto kaulalle on tehokas nuorentamismenetelmä, joka vähentää löystymistä, ryppyjä ja ihon sävyn heikkenemistä. Radiofrekvenssi yhdistettynä mikroneuloihin stimuloi kollageenin ja elastaanin tuotantoa, parantaa mikroverenkiertoa ja palauttaa kudosten tiheyden.",
+            "description": "Mikroneulan RF-nosto kaulalle on tehokas nuorentamismenetelmä, joka vähentää löystymistä, ryppyjä ja ihon sävyn heikkenemistä. Radiofrekvenssi yhdistettynä mikroneuloihin stimuloi kollageenin ja elastaanin tuotantoa, parantaa mikroverenkiertoa ja palauttaa kudosten tiheyden.\n\n**Hoidon edut:**\n\n- Kaulan kohotus ja ryppyjen vähentäminen\n\n- Ihon kiinteyden ja tiheyden lisääntyminen\n\n- Löystymisen vähentyminen ja \"kaularenkaiden\" ehkäisy\n\n- Minimivauriot ja nopea toipuminen\n\n- Pitkäkestoinen vaikutus\n\n**Tulokset:**\n\n- Kiinteämpi ja napakampi kaulan iho\n\n- Ryppyjen ja poimujen vähentyminen\n\n- Tasainen sävy ja sileä rakenne\n\n- Nuorekkaampi kokonaisilme\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "150 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Шея",
+            "summary": "Микроигольчатый RF-лифтинг для шеи — это эффективная методика омоложения, направленная на борьбу с дряблостью кожи, морщинами и снижением тонуса. Радиочастотная энергия в сочетании с микроигольчатым воздействием стимулирует выработку коллагена, улучшает микроциркуляцию и восстанавливает плотность тканей.",
+            "description": "Микроигольчатый RF-лифтинг для шеи — это эффективная методика омоложения, направленная на борьбу с дряблостью кожи, морщинами и снижением тонуса. Радиочастотная энергия в сочетании с микроигольчатым воздействием стимулирует выработку коллагена, улучшает микроциркуляцию и восстанавливает плотность тканей.\n\n**Преимущества процедуры:**\n\n- Подтяжка кожи шеи и устранение морщин\n\n- Повышение плотности и упругости тканей\n\n- Сокращение дряблости и профилактика «кольцевых морщин»\n\n- Минимальная травматичность и быстрый результат\n\n- Безопасность и долговременный эффект\n\n**Какие результаты вы получите?**\n\n- Подтянутая и упругая кожа шеи\n\n- Заметное уменьшение морщин и складок\n\n- Ровный тон и гладкая текстура кожи\n\n- Общий эффект омоложения и восстановления\n\n**Курс:**\n\nДля стойкого результата рекомендуется пройти 3–5 процедуры с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "150 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-07",
+        "displayOrder": 6,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Décolleté",
+            "summary": "Microneedle RF lifting for the décolleté area restores skin elasticity, reduces wrinkles, and addresses signs of photoaging. The combination of radiofrequency energy and microneedle action makes the skin firmer, smoother, and rejuvenated.",
+            "description": "Microneedle RF lifting for the décolleté area restores skin elasticity, reduces wrinkles, and addresses signs of photoaging. The combination of radiofrequency energy and microneedle action makes the skin firmer, smoother, and rejuvenated.\n\n**Procedure benefits:**\n\n- Smoothing wrinkles and folds in the décolleté\n\n- Increased skin firmness and elasticity\n\n- Reduction of photoaging signs and dryness\n\n- Gentle, minimally invasive procedure\n\n- Long-lasting effect\n\n**What results you will get:**\n\n- Smooth and firm décolleté skin\n\n- Reduced wrinkles and aging signs\n\n- Hydrated, even-toned skin\n\n- Overall youthful and refreshed appearance\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 10–12 months.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "150 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Dekoltee",
+            "summary": "Mikroneulan RF-nosto dekolteelle palauttaa ihon kimmoisuuden, vähentää ryppyjä ja ehkäisee valovaurioiden merkkejä. Radiofrekvenssi yhdessä mikroneulojen kanssa tekee ihosta kiinteämmän, sileämmän ja nuorekkaamman.",
+            "description": "Mikroneulan RF-nosto dekolteelle palauttaa ihon kimmoisuuden, vähentää ryppyjä ja ehkäisee valovaurioiden merkkejä. Radiofrekvenssi yhdessä mikroneulojen kanssa tekee ihosta kiinteämmän, sileämmän ja nuorekkaamman.\n\n**Hoidon edut:**\n\n- Dekolteen ryppyjen ja poimujen silotus\n\n- Ihon kiinteyden ja kimmoisuuden lisääminen\n\n- Valovaurioiden ja kuivumisen vähentäminen\n\n- Hellävarainen, vähän invasiivinen hoito\n\n- Pitkäkestoinen vaikutus\n\n**Tulokset:**\n\n- Sileä ja kiinteä dekolteen iho\n\n- Ryppyjen ja ikääntymisen merkkien vähentyminen\n\n- Kosteutettu, tasainen ja hehkuva iho\n\n- Nuorekkaampi ja raikkaampi ilme\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 10–12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "40 min",
+            "priceLabel": "150 € / 40 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Декольте",
+            "summary": "Микроигольчатый RF-лифтинг для зоны декольте — это методика, которая позволяет восстановить упругость кожи, устранить морщины и признаки фотостарения. Благодаря сочетанию радиочастотной энергии и микроигольчатого воздействия кожа становится более плотной, гладкой и молодой.",
+            "description": "Микроигольчатый RF-лифтинг для зоны декольте — это методика, которая позволяет восстановить упругость кожи, устранить морщины и признаки фотостарения. Благодаря сочетанию радиочастотной энергии и микроигольчатого воздействия кожа становится более плотной, гладкой и молодой.\n\n**Преимущества процедуры:**\n\n- Разглаживание морщин и складок в зоне декольте\n\n- Повышение упругости и плотности кожи\n\n- Сокращение признаков фотостарения и сухости\n\n- Мягкое воздействие без повреждения кожи\n\n- Долговременный результат\n\n**Какие результаты вы получите?**\n\n- Гладкая и подтянутая кожа в зоне декольте\n\n- Сокращение морщин и признаков старения\n\n- Увлажнённый и ровный тон кожи\n\n- Эффект омоложения без хирургии\n\n**Курс:**\n\nРекомендуется пройти курс из 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 10–12 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "40 мин",
+            "priceLabel": "150 € / 40 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-08",
+        "displayOrder": 7,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Abdomen",
+            "summary": "Microneedle RF lifting for the abdomen helps to combat sagging, loss of tone, and stretch marks. Radiofrequency pulses heat deep skin layers, while microneedles stimulate cell renewal and activate collagen and elastin production.",
+            "description": "Microneedle RF lifting for the abdomen helps to combat sagging, loss of tone, and stretch marks. Radiofrequency pulses heat deep skin layers, while microneedles stimulate cell renewal and activate collagen and elastin production.\n\n**Procedure benefits:**\n\n- Abdomen skin tightening and firming\n\n- Reduction of sagging and stretch marks\n\n- Restoration of skin density and elasticity\n\n- Improved texture and tone\n\n- Minimal trauma and quick recovery\n\n**What results you will get:**\n\n- Firmer, tighter abdomen skin\n\n- Reduced stretch marks and irregularities\n\n- Restored elasticity and smooth texture\n\n- Noticeable rejuvenating effect\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "285 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Vatsa",
+            "summary": "Mikroneulan RF-nosto vatsalle auttaa vähentämään löystymistä, ihon sävyn heikkenemistä ja raskaus- tai painonmuutosarpia. Radiofrekvenssipurkaukset lämmittävät syvät ihokerrokset, ja mikroneulat stimuloivat solujen uusiutumista sekä kollageenin ja elastaanin tuotantoa.",
+            "description": "Mikroneulan RF-nosto vatsalle auttaa vähentämään löystymistä, ihon sävyn heikkenemistä ja raskaus- tai painonmuutosarpia. Radiofrekvenssipurkaukset lämmittävät syvät ihokerrokset, ja mikroneulat stimuloivat solujen uusiutumista sekä kollageenin ja elastaanin tuotantoa.\n\n**Hoidon edut:**\n\n- Vatsan ihon kiinteytys ja kohotus\n\n- Löystymisen ja arpien vähentäminen\n\n- Ihon tiheyden ja kimmoisuuden palauttaminen\n\n- Rakenteen ja sävyn parantaminen\n\n- Minimivauriot ja nopea toipuminen\n\n**Tulokset:**\n\n- Kiinteämpi ja kohotettu vatsan iho\n\n- Arpien ja epätasaisuuksien väheneminen\n\n- Kimmoisa ja sileä rakenne\n\n- Huomattava nuorentava vaikutus\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "285 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Живот",
+            "summary": "Микроигольчатый RF-лифтинг для живота помогает справиться с дряблостью кожи, снижением её тонуса и растяжками. Радиочастотные импульсы прогревают глубокие слои кожи, а микроиглы стимулируют обновление клеток, активируя синтез коллагена и эластина.",
+            "description": "Микроигольчатый RF-лифтинг для живота помогает справиться с дряблостью кожи, снижением её тонуса и растяжками. Радиочастотные импульсы прогревают глубокие слои кожи, а микроиглы стимулируют обновление клеток, активируя синтез коллагена и эластина.\n\n**Преимущества процедуры:**\n\n- Подтяжка и укрепление кожи живота\n\n- Уменьшение дряблости и растяжек\n\n- Восстановление плотности и упругости кожи\n\n- Улучшение текстуры и тона\n\n- Минимальная травматичность и короткий восстановительный период\n\n**Какие результаты вы получите?**\n\n- Более упругая и подтянутая кожа живота\n\n- Сокращение растяжек и неровностей\n\n- Восстановление эластичности кожи\n\n- Заметный омолаживающий эффект\n\n**Курс:**\n\nДля выраженного результата рекомендуется 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "285 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-09",
+        "displayOrder": 8,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Thighs",
+            "summary": "Microneedle RF lifting for the thighs is designed to tighten and firm the skin, improve texture, and reduce sagging. Radiofrequency energy combined with microneedle stimulation boosts collagen and elastin production, making the skin denser and more lifted.",
+            "description": "Microneedle RF lifting for the thighs is designed to tighten and firm the skin, improve texture, and reduce sagging. Radiofrequency energy combined with microneedle stimulation boosts collagen and elastin production, making the skin denser and more lifted.\n\n**Procedure benefits:**\n\n- Thigh skin lifting and firming\n\n- Improved skin texture and tone\n\n- Reduction of sagging and imperfections\n\n- Minimal trauma and quick recovery\n\n- Long-lasting results\n\n**What results you will get:**\n\n- Firmer and lifted thigh skin\n\n- Reduced sagging and unevenness\n\n- Restored elasticity and smooth texture\n\n- Natural rejuvenation effect\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months.",
+            "imageAlt": null,
+            "durationLabel": "70 min",
+            "priceLabel": "285 € / 70 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Reidet",
+            "summary": "Mikroneulan RF-nosto reisille on suunniteltu kiinteyttämään ihoa, parantamaan sen rakennetta ja vähentämään löystymistä. Radiofrekvenssi yhdistettynä mikroneuloihin stimuloi kollageenin ja elastaanin tuotantoa, tehden ihosta tiheämmän ja kohotetun.",
+            "description": "Mikroneulan RF-nosto reisille on suunniteltu kiinteyttämään ihoa, parantamaan sen rakennetta ja vähentämään löystymistä. Radiofrekvenssi yhdistettynä mikroneuloihin stimuloi kollageenin ja elastaanin tuotantoa, tehden ihosta tiheämmän ja kohotetun.\n\n**Hoidon edut:**\n\n- Reiden ihon kohotus ja kiinteytys\n\n- Ihon rakenteen ja sävyn parantaminen\n\n- Löystymisen ja epätasaisuuksien vähentäminen\n\n- Minimivauriot ja nopea toipuminen\n\n- Pitkäkestoinen vaikutus\n\n**Tulokset:**\n\n- Kiinteämmät ja kohotetut reidet\n\n- Löystymisen ja epätasaisuuksien väheneminen\n\n- Kimmoisa ja sileä rakenne\n\n- Luonnollinen nuorentava vaikutus\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "70 min",
+            "priceLabel": "285 € / 70 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Бёдра",
+            "summary": "Микроигольчатый RF-лифтинг для бёдер — это процедура, направленная на подтяжку и укрепление кожи, улучшение её текстуры и устранение дряблости. Радиочастотная энергия в сочетании с микроигольчатым воздействием стимулирует выработку коллагена и эластина, повышая упругость кожи и делая её более плотной.",
+            "description": "Микроигольчатый RF-лифтинг для бёдер — это процедура, направленная на подтяжку и укрепление кожи, улучшение её текстуры и устранение дряблости. Радиочастотная энергия в сочетании с микроигольчатым воздействием стимулирует выработку коллагена и эластина, повышая упругость кожи и делая её более плотной.\n\n**Преимущества процедуры:**\n\n- Подтяжка кожи бёдер и устранение дряблости\n\n- Улучшение текстуры и ровный тон\n\n- Сокращение растяжек и неровностей\n\n- Минимальная травматичность и быстрый восстановительный период\n\n- Долговременный эффект\n\n**Какие результаты вы получите?**\n\n- Более упругая и подтянутая кожа бёдер\n\n- Заметное сокращение дряблости и неровностей\n\n- Восстановление эластичности кожи\n\n- Эффект омоложения без хирургического вмешательства\n\n**Курс:**\n\nРекомендуется пройти 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "70 мин",
+            "priceLabel": "285 € / 70 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-10",
+        "displayOrder": 9,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Knees",
+            "summary": "Microneedle RF lifting for the knees helps strengthen the skin, increase elasticity, and reduce sagging. The procedure stimulates collagen and elastin production, improves microcirculation, and enhances skin texture.",
+            "description": "Microneedle RF lifting for the knees helps strengthen the skin, increase elasticity, and reduce sagging. The procedure stimulates collagen and elastin production, improves microcirculation, and enhances skin texture.\n\n**Procedure benefits:**\n\n- Lifting and firming of knee skin\n\n- Reduction of sagging and wrinkles\n\n- Improved skin density and elasticity\n\n- Minimal tissue damage\n\n- Long-lasting rejuvenating effect\n\n**What results you will get:**\n\n- Firmer and smoother skin around the knees\n\n- Reduced wrinkles and folds\n\n- Evened skin tone and improved texture\n\n- Toned and rejuvenated appearance\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months.",
+            "imageAlt": null,
+            "durationLabel": "50 min",
+            "priceLabel": "130 € / 50 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Polvet",
+            "summary": "Mikroneulan RF-nosto polville auttaa vahvistamaan ihoa, lisäämään kimmoisuutta ja vähentämään löystymistä. Hoito stimuloi kollageenin ja elastaanin tuotantoa, parantaa mikroverenkiertoa ja kohentaa ihon rakennetta.",
+            "description": "Mikroneulan RF-nosto polville auttaa vahvistamaan ihoa, lisäämään kimmoisuutta ja vähentämään löystymistä. Hoito stimuloi kollageenin ja elastaanin tuotantoa, parantaa mikroverenkiertoa ja kohentaa ihon rakennetta.\n\n**Hoidon edut:**\n\n- Polvien ihon kohotus ja kiinteytys\n\n- Löystymisen ja ryppyjen vähentäminen\n\n- Ihon tiheyden ja kimmoisuuden palauttaminen\n\n- Minimivauriot\n\n- Pitkäkestoinen nuorentava vaikutus\n\n**Tulokset:**\n\n- Kiinteämpi ja sileämpi polvien iho\n\n- Ryppyjen ja poimujen väheneminen\n\n- Tasaisempi sävy ja parantunut rakenne\n\n- Kiinteä ja nuorekas ulkonäkö\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "50 min",
+            "priceLabel": "130 € / 50 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Ягодицы",
+            "summary": "Микроигольчатый RF-лифтинг для ягодиц — это эффективная методика для подтяжки и укрепления кожи, повышения её плотности и упругости. Радиочастотные импульсы и микроигольчатое воздействие стимулируют выработку коллагена и эластина, делая кожу более гладкой и подтянутой.",
+            "description": "Микроигольчатый RF-лифтинг для ягодиц — это эффективная методика для подтяжки и укрепления кожи, повышения её плотности и упругости. Радиочастотные импульсы и микроигольчатое воздействие стимулируют выработку коллагена и эластина, делая кожу более гладкой и подтянутой.\n\n**Преимущества процедуры:**\n\n- Подтяжка и укрепление кожи ягодиц\n\n- Сокращение дряблости и неровностей\n\n- Улучшение текстуры и тонуса кожи\n\n- Минимальная травматичность и короткий восстановительный период\n\n- Длительный эффект\n\n**Какие результаты вы получите?**\n\n- Подтянутые и упругие ягодицы\n\n- Более ровная текстура кожи\n\n- Устранение дряблости и растяжек\n\n- Естественный эффект омоложения и лифтинга\n\n**Курс:**\n\nРекомендуется пройти 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "70 мин",
+            "priceLabel": "285 € / 70 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-11",
+        "displayOrder": 10,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Buttocks",
+            "summary": "Microneedle RF lifting for the buttocks is an effective method to tighten and firm the skin, increase its density, and reduce sagging. Radiofrequency pulses and microneedle action stimulate collagen and elastin production, leaving the skin smoother and lifted.",
+            "description": "Microneedle RF lifting for the buttocks is an effective method to tighten and firm the skin, increase its density, and reduce sagging. Radiofrequency pulses and microneedle action stimulate collagen and elastin production, leaving the skin smoother and lifted.\n\n**Procedure benefits:**\n\n- Buttock skin lifting and firming\n\n- Reduction of sagging and irregularities\n\n- Improved skin texture and tone\n\n- Minimal trauma and quick recovery\n\n- Long-lasting results\n\n**What results you will get:**\n\n- Firmer and lifted buttocks\n\n- Smoother, more even skin texture\n\n- Reduced sagging and stretch marks\n\n- Natural rejuvenation and lifting effect\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months.",
+            "imageAlt": null,
+            "durationLabel": "70 min",
+            "priceLabel": "285 € / 70 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Pakarat",
+            "summary": "Mikroneulan RF-nosto pakaroille on tehokas hoito ihon kiinteyttämiseen ja kohottamiseen, sen tiheyden lisäämiseen ja löystymisen vähentämiseen. Radiofrekvenssipurkaukset yhdessä mikroneulojen kanssa stimuloivat kollageenia ja elastaania, tehden ihosta sileämmän ja kohotetun.",
+            "description": "Mikroneulan RF-nosto pakaroille on tehokas hoito ihon kiinteyttämiseen ja kohottamiseen, sen tiheyden lisäämiseen ja löystymisen vähentämiseen. Radiofrekvenssipurkaukset yhdessä mikroneulojen kanssa stimuloivat kollageenia ja elastaania, tehden ihosta sileämmän ja kohotetun.\n\n**Hoidon edut:**\n\n- Pakaroiden ihon kohotus ja kiinteytys\n\n- Löystymisen ja epätasaisuuksien vähentäminen\n\n- Ihon rakenteen ja sävyn parantaminen\n\n- Minimivauriot ja nopea toipuminen\n\n- Pitkäkestoinen vaikutus\n\n**Tulokset:**\n\n- Kiinteämmät ja kohotetut pakarat\n\n- Sileä ja tasainen iho\n\n- Löystymisen ja epätasaisuuksien väheneminen\n\n- Luonnollinen nuorentava ja kohottava vaikutus\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "70 min",
+            "priceLabel": "285 € / 70 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Руки",
+            "summary": "Микроигольчатый RF-лифтинг для рук — это процедура, направленная на подтяжку и укрепление кожи в области предплечий и кистей. Радиочастотная энергия в сочетании с микроигольчатым воздействием стимулирует выработку коллагена и эластина, повышая упругость и плотность кожи.",
+            "description": "Микроигольчатый RF-лифтинг для рук — это процедура, направленная на подтяжку и укрепление кожи в области предплечий и кистей. Радиочастотная энергия в сочетании с микроигольчатым воздействием стимулирует выработку коллагена и эластина, повышая упругость и плотность кожи.\n\n**Преимущества процедуры:**\n\n- Подтяжка и укрепление кожи рук\n\n- Сокращение дряблости и мелких морщин\n\n- Улучшение текстуры и тона кожи\n\n- Минимальная травматичность и быстрый восстановительный период\n\n- Долговременный эффект омоложения\n\n**Какие результаты вы получите?**\n\n- Более упругая и подтянутая кожа рук\n\n- Сокращение морщин и складок\n\n- Восстановление плотности и эластичности кожи\n\n- Естественный эффект омоложения\n\n**Курс:**\n\nРекомендуется пройти 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "60 мин",
+            "priceLabel": "180 € / 60 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-12",
+        "displayOrder": 11,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Arms",
+            "summary": "Microneedle RF lifting for the arms is a procedure aimed at tightening and firming the skin of the forearms and hands. Radiofrequency energy combined with microneedle stimulation boosts collagen and elastin production, increasing skin firmness and density.",
+            "description": "Microneedle RF lifting for the arms is a procedure aimed at tightening and firming the skin of the forearms and hands. Radiofrequency energy combined with microneedle stimulation boosts collagen and elastin production, increasing skin firmness and density.\n\n**Procedure benefits:**\n\n- Arm skin lifting and firming\n\n- Reduction of sagging and fine lines\n\n- Improved skin texture and tone\n\n- Minimal trauma and quick recovery\n\n- Long-lasting rejuvenation effect\n\n**What results you will get:**\n\n- Firmer, more lifted arm skin\n\n- Reduced wrinkles and folds\n\n- Restored elasticity and skin density\n\n- Natural rejuvenation effect\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "180 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Kädet",
+            "summary": "Mikroneulan RF-nosto käsille on suunniteltu kiinteyttämään ja vahvistamaan käsien ihoa. Radiofrekvenssi yhdessä mikroneulojen kanssa stimuloi kollageenin ja elastaanin tuotantoa, lisäten ihon tiheyttä ja kiinteyttä.",
+            "description": "Mikroneulan RF-nosto käsille on suunniteltu kiinteyttämään ja vahvistamaan käsien ihoa. Radiofrekvenssi yhdessä mikroneulojen kanssa stimuloi kollageenin ja elastaanin tuotantoa, lisäten ihon tiheyttä ja kiinteyttä.\n\n**Hoidon edut:**\n\n- Käsien ihon kohotus ja kiinteytys\n\n- Löystymisen ja hienojen juonteiden vähentäminen\n\n- Ihon rakenteen ja sävyn parantaminen\n\n- Minimivauriot ja nopea toipuminen\n\n- Pitkäkestoinen nuorentava vaikutus\n\n**Tulokset:**\n\n- Kiinteämmät ja kohotetut kädet\n\n- Juonteiden ja poimujen väheneminen\n\n- Kimmoisa ja sileä iho\n\n- Luonnollinen nuorentava vaikutus\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "60 min",
+            "priceLabel": "180 € / 60 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Лицо + Шея",
+            "summary": "Микроигольчатый RF-лифтинг для лица и шеи — это эффективная малоинвазивная процедура омоложения, направленная на комплексную работу с кожей двух ключевых зон. Сочетание микроигольчатого воздействия и радиочастотной энергии позволяет прогревать глубокие слои кожи, запуская активную выработку коллагена и эластина. Процедура улучшает плотность кожи, повышает упругость и заметно освежает внешний вид без хирургического вмешательства.",
+            "description": "Микроигольчатый RF-лифтинг для лица и шеи — это эффективная малоинвазивная процедура омоложения, направленная на комплексную работу с кожей двух ключевых зон. Сочетание микроигольчатого воздействия и радиочастотной энергии позволяет прогревать глубокие слои кожи, запуская активную выработку коллагена и эластина. Процедура улучшает плотность кожи, повышает упругость и заметно освежает внешний вид без хирургического вмешательства.\n\n### Преимущества процедуры:\n\n- Комплексное омоложение кожи лица и шеи\n\n- Разглаживание морщин и профилактика возрастных изменений\n\n- Укрепление кожи шеи и уменьшение «кольцевых» морщин\n\n- Улучшение текстуры кожи и сужение пор\n\n- Восстановление чёткого овала и лифтинг-эффект\n\n- Минимальная травматичность и короткий период восстановления\n\n### Какие результаты вы получите?\n\n- Ровный тон кожи и выраженный эффект свежести\n\n- Сглаживание мелких и средних морщин на лице и шее\n\n- Уплотнение кожи и уменьшение дряблости\n\n- Подтянутый овал лица и более чёткий контур шеи\n\n- Замедление процессов старения за счёт активации коллагена\n\n### Курс:\n\nДля достижения стойкого результата рекомендуется курс из **3–5 процедур** с интервалом **3–6 недель**. Эффект сохраняется до **12 месяцев** и постепенно усиливается по мере восстановления коллагенового каркаса кожи.",
+            "imageAlt": null,
+            "durationLabel": "90 мин",
+            "priceLabel": "335 € / 90 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-13",
+        "displayOrder": 12,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Face + Neck",
+            "summary": "Microneedling RF lifting for the face and neck is an effective minimally invasive rejuvenation treatment designed to work comprehensively on two key areas. The combination of microneedling and radiofrequency energy heats the deeper layers of the skin, stimulating the production of collagen and elastin. The treatment improves skin density, firmness, and elasticity, delivering a fresher, more youthful appearance without surgical intervention.",
+            "description": "Microneedling RF lifting for the face and neck is an effective minimally invasive rejuvenation treatment designed to work comprehensively on two key areas. The combination of microneedling and radiofrequency energy heats the deeper layers of the skin, stimulating the production of collagen and elastin. The treatment improves skin density, firmness, and elasticity, delivering a fresher, more youthful appearance without surgical intervention.\n\n### Benefits of the treatment:\n\n- Comprehensive rejuvenation of the face and neck\n\n- Reduction of wrinkles and prevention of age-related changes\n\n- Firming of the neck area and reduction of horizontal neck lines\n\n- Improved skin texture and reduced pore size\n\n- Enhanced facial contour and lifting effect\n\n- Minimal trauma and short recovery period\n\n### What results can you expect?\n\n- More even skin tone and a refreshed appearance\n\n- Smoothing of fine and moderate wrinkles on the face and neck\n\n- Firmer skin with reduced laxity\n\n- More defined facial and neck contours\n\n- Slowing of the aging process through collagen activation\n\n### Course:\n\nFor long-lasting results, a course of **3–5 treatments** is recommended at intervals of **3–6 weeks**. The results can last up to **12 months** and continue to improve over time as the skin’s collagen framework regenerates.",
+            "imageAlt": null,
+            "durationLabel": "90 min",
+            "priceLabel": "335 € / 90 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Kasvot + Kaula",
+            "summary": "Mikroneulainen RF-lifting kasvoille ja kaulalle on tehokas ja vähän invasiivinen nuorennushoito, joka kohdistuu kokonaisvaltaisesti kahteen keskeiseen ihoalueeseen. Mikroneulauksen ja radiotaajuusenergian yhdistelmä lämmittää ihon syvempiä kerroksia ja aktivoi kollageenin ja elastiinin tuotantoa. Hoito parantaa ihon tiheyttä, kimmoisuutta ja antaa kasvoille raikkaamman ilmeen ilman kirurgisia toimenpiteitä.",
+            "description": "Mikroneulainen RF-lifting kasvoille ja kaulalle on tehokas ja vähän invasiivinen nuorennushoito, joka kohdistuu kokonaisvaltaisesti kahteen keskeiseen ihoalueeseen. Mikroneulauksen ja radiotaajuusenergian yhdistelmä lämmittää ihon syvempiä kerroksia ja aktivoi kollageenin ja elastiinin tuotantoa. Hoito parantaa ihon tiheyttä, kimmoisuutta ja antaa kasvoille raikkaamman ilmeen ilman kirurgisia toimenpiteitä.\n\n### Hoidon hyödyt:\n\n- Kasvojen ja kaulan ihon kokonaisvaltainen nuorennus\n\n- Ryppyjen silottaminen ja ikääntymisen ennaltaehkäisy\n\n- Kaulan ihon kiinteytyminen ja vaakaryppyjen väheneminen\n\n- Ihon rakenteen paraneminen ja huokosten supistuminen\n\n- Kasvojen ovaalin selkeytyminen ja kohottava vaikutus\n\n- Vähäinen kudostraumatisoituminen ja lyhyt toipumisaika\n\n### Mitä tuloksia saat?\n\n- Tasaisempi ihonsävy ja raikas, levännyt ilme\n\n- Pienten ja keskisuurten ryppyjen madaltuminen kasvoilla ja kaulalla\n\n- Ihon kiinteytyminen ja veltostumisen väheneminen\n\n- Selkeämpi kasvojen ja kaulan ääriviiva\n\n- Ikääntymisprosessin hidastuminen kollageenin aktivoitumisen ansiosta\n\n### Kurssi:\n\nParhaan ja pitkäkestoisen tuloksen saavuttamiseksi suositellaan **3–5 hoitokerran** sarjaa **3–6 viikon** välein. Tulokset säilyvät jopa **12 kuukautta** ja vahvistuvat ajan myötä ihon kollageenirakenteen uusiutuessa.",
+            "imageAlt": null,
+            "durationLabel": "90 min",
+            "priceLabel": "335 € / 90 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Лицо + Шея + Декольте",
+            "summary": "Микроигольчатый RF-лифтинг для лица, шеи и декольте — это комплексная малоинвазивная методика омоложения, которая одновременно подтягивает кожу всех зон, улучшает её текстуру и стимулирует выработку коллагена. Процедура обеспечивает выраженный лифтинг и восстановление упругости кожи, не повреждая ткани и без хирургического вмешательства.",
+            "description": "Микроигольчатый RF-лифтинг для лица, шеи и декольте — это комплексная малоинвазивная методика омоложения, которая одновременно подтягивает кожу всех зон, улучшает её текстуру и стимулирует выработку коллагена. Процедура обеспечивает выраженный лифтинг и восстановление упругости кожи, не повреждая ткани и без хирургического вмешательства.\n\n**Преимущества процедуры:**\n\n- Комплексное омоложение лица, шеи и зоны декольте\n\n- Подтяжка кожи и устранение дряблости\n\n- Сокращение морщин и заломов\n\n- Выравнивание тона и улучшение текстуры кожи\n\n- Минимальная травматичность и короткий восстановительный период\n\n**Какие результаты вы получите?**\n\n- Подтянутая и упругая кожа всех зон\n\n- Заметное разглаживание морщин и складок\n\n- Ровный тон и сияние кожи\n\n- Общий эффект омоложения и свежести\n\n**Курс:**\n\nДля стойкого результата рекомендуется пройти курс из 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев и усиливается со временем благодаря постепенному восстановлению коллагенового каркаса кожи.",
+            "imageAlt": null,
+            "durationLabel": "90 мин",
+            "priceLabel": "390 € / 90 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-14",
+        "displayOrder": 13,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Face + Neck + Décolleté",
+            "summary": "Microneedle RF lifting for the face, neck, and décolleté is a comprehensive minimally invasive rejuvenation procedure that simultaneously tightens the skin in all areas, improves texture, and stimulates collagen production. The treatment provides a pronounced lifting effect and restores skin firmness without damaging tissues or surgery.",
+            "description": "Microneedle RF lifting for the face, neck, and décolleté is a comprehensive minimally invasive rejuvenation procedure that simultaneously tightens the skin in all areas, improves texture, and stimulates collagen production. The treatment provides a pronounced lifting effect and restores skin firmness without damaging tissues or surgery.\n\n**Procedure benefits:**\n\n- Comprehensive rejuvenation of the face, neck, and décolleté\n\n- Skin lifting and reduction of sagging\n\n- Smoothing of wrinkles and folds\n\n- Even skin tone and improved texture\n\n- Minimal trauma and short recovery\n\n**What results you will get:**\n\n- Firmer, lifted skin in all treated areas\n\n- Noticeable smoothing of wrinkles and folds\n\n- Even tone and radiant skin\n\n- Overall rejuvenation and refreshed appearance\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months and gradually improves as the skin’s collagen structure restores.",
+            "imageAlt": null,
+            "durationLabel": "90 min",
+            "priceLabel": "390 € / 90 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Kasvot + Kaula + Dekoltee",
+            "summary": "Mikroneulan RF-nosto kasvoille, kaulalle ja dekolteelle on kokonaisvaltainen, vähän invasiivinen nuorennushoito, joka kohottaa ihoa kaikilla alueilla, parantaa rakennetta ja stimuloi kollageenin tuotantoa. Hoito antaa näkyvän kohotusvaikutuksen ja palauttaa ihon kiinteyden ilman kudosvaurioita tai kirurgista toimenpidettä.",
+            "description": "Mikroneulan RF-nosto kasvoille, kaulalle ja dekolteelle on kokonaisvaltainen, vähän invasiivinen nuorennushoito, joka kohottaa ihoa kaikilla alueilla, parantaa rakennetta ja stimuloi kollageenin tuotantoa. Hoito antaa näkyvän kohotusvaikutuksen ja palauttaa ihon kiinteyden ilman kudosvaurioita tai kirurgista toimenpidettä.\n\n**Hoidon edut:**\n\n- Kasvojen, kaulan ja dekolteen kokonaisvaltainen nuorennus\n\n- Ihojen kohotus ja löystymisen vähentäminen\n\n- Juonteiden ja poimujen silotus\n\n- Tasainen sävy ja parantunut rakenne\n\n- Minimivauriot ja lyhyt toipumisaika\n\n**Tulokset:**\n\n- Kiinteämmät ja kohotetut alueet\n\n- Juonteiden ja poimujen väheneminen\n\n- Tasainen sävy ja hehkuva iho\n\n- Kokonaisvaltainen nuorentava ja raikastava vaikutus\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta ja paranee vähitellen kollageenirakenteen palautuessa.",
+            "imageAlt": null,
+            "durationLabel": "90 min",
+            "priceLabel": "390 € / 90 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "ru",
+            "group": "Микроигольчатый RF-лифтинг",
+            "name": "Живот + Бёдра + Ягодицы",
+            "summary": "Микроигольчатый RF-лифтинг для живота, бёдер и ягодиц — это комплексная методика подтяжки и укрепления кожи, направленная на восстановление упругости, улучшение текстуры и уменьшение дряблости. Радиочастотная энергия и микроигольчатое воздействие стимулируют выработку коллагена и эластина, обеспечивая заметный лифтинг и омолаживающий эффект.",
+            "description": "Микроигольчатый RF-лифтинг для живота, бёдер и ягодиц — это комплексная методика подтяжки и укрепления кожи, направленная на восстановление упругости, улучшение текстуры и уменьшение дряблости. Радиочастотная энергия и микроигольчатое воздействие стимулируют выработку коллагена и эластина, обеспечивая заметный лифтинг и омолаживающий эффект.\n\n**Преимущества процедуры:**\n\n- Комплексная подтяжка кожи всех зон нижней части тела\n\n- Сокращение дряблости и растяжек\n\n- Улучшение текстуры и тонуса кожи\n\n- Минимальная травматичность и короткий восстановительный период\n\n- Долговременный эффект\n\n**Какие результаты вы получите?**\n\n- Более упругая и подтянутая кожа живота, бёдер и ягодиц\n\n- Сокращение растяжек и неровностей\n\n- Выравнивание тона и улучшение текстуры кожи\n\n- Естественный эффект омоложения и лифтинга\n\n**Курс:**\n\nРекомендуется пройти 3–5 процедур с интервалом 3–6 недели. Эффект сохраняется до 12 месяцев.",
+            "imageAlt": null,
+            "durationLabel": "120 мин",
+            "priceLabel": "720 € / 120 мин",
+            "status": "PUBLISHED"
+          }
+        ]
+      },
+      {
+        "key": "treatment-15",
+        "displayOrder": 14,
+        "image": null,
+        "imageFocalX": 50,
+        "imageFocalY": 50,
+        "contents": [
+          {
+            "locale": "en",
+            "group": "Microneedle RF Lifting",
+            "name": "Abdomen + Thighs + Buttocks",
+            "summary": "Microneedle RF lifting for the abdomen, thighs, and buttocks is a comprehensive method for skin tightening and firming, aimed at restoring elasticity, improving texture, and reducing sagging. Radiofrequency energy and microneedle stimulation boost collagen and elastin production, resulting in a noticeable lifting and rejuvenating effect.",
+            "description": "Microneedle RF lifting for the abdomen, thighs, and buttocks is a comprehensive method for skin tightening and firming, aimed at restoring elasticity, improving texture, and reducing sagging. Radiofrequency energy and microneedle stimulation boost collagen and elastin production, resulting in a noticeable lifting and rejuvenating effect.\n\n**Procedure benefits:**\n\n- Comprehensive lifting of the skin in the lower body\n\n- Reduction of sagging and stretch marks\n\n- Improved skin texture and tone\n\n- Minimal trauma and short recovery\n\n- Long-lasting effect\n\n**What results you will get:**\n\n- Firmer, lifted skin on the abdomen, thighs, and buttocks\n\n- Reduced stretch marks and irregularities\n\n- Even tone and improved texture\n\n- Natural rejuvenation and lifting effect\n\n**Course:**\n\nRecommended course: 3–5 sessions at 3–6 week intervals. The effect lasts up to 12 months.",
+            "imageAlt": null,
+            "durationLabel": "120 min",
+            "priceLabel": "720 € / 120 min",
+            "status": "PUBLISHED"
+          },
+          {
+            "locale": "fi",
+            "group": "Mikroneulan RF-nosto",
+            "name": "Vatsa + Reidet + Pakarat",
+            "summary": "Mikroneulan RF-nosto vatsalle, reisille ja pakaroille on kokonaisvaltainen hoito ihon kiinteyttämiseen ja kohottamiseen, kimmoisuuden palauttamiseen, rakenteen parantamiseen ja löystymisen vähentämiseen. Radiofrekvenssi yhdessä mikroneulojen kanssa stimuloi kollageenia ja elastaania, tarjoten näkyvän kohotus- ja nuorentumisvaikutuksen.",
+            "description": "Mikroneulan RF-nosto vatsalle, reisille ja pakaroille on kokonaisvaltainen hoito ihon kiinteyttämiseen ja kohottamiseen, kimmoisuuden palauttamiseen, rakenteen parantamiseen ja löystymisen vähentämiseen. Radiofrekvenssi yhdessä mikroneulojen kanssa stimuloi kollageenia ja elastaania, tarjoten näkyvän kohotus- ja nuorentumisvaikutuksen.\n\n**Hoidon edut:**\n\n- Alaosan ihon kokonaisvaltainen kohotus\n\n- Löystymisen ja arpien vähentäminen\n\n- Ihon rakenteen ja sävyn parantaminen\n\n- Minimivauriot ja nopea toipuminen\n\n- Pitkäkestoinen vaikutus\n\n**Tulokset:**\n\n- Kiinteämmät ja kohotetut alueet\n\n- Arpien ja epätasaisuuksien väheneminen\n\n- Tasainen sävy ja parantunut rakenne\n\n- Luonnollinen nuorentava ja kohottava vaikutus\n\n**Kurssi:**\n\nSuositeltu kurssi: 3–5 hoitoa 3–6 viikon välein. Teho säilyy jopa 12 kuukautta.",
+            "imageAlt": null,
+            "durationLabel": "120 min",
+            "priceLabel": "720 € / 120 min",
+            "status": "PUBLISHED"
+          }
+        ]
+      }
+    ]
+  }
+}
