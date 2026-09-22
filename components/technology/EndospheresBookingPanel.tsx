@@ -260,11 +260,11 @@ export function EndospheresBookingPanel({
                     <span>{option.durationLabel}</span>
                     <span>{option.priceLabel}</span>
                   </div>
-                  <h3 className="mt-3 font-display text-[clamp(21px,1.9vw,26px)] leading-[1.28] font-medium text-ink">
+                  <h3 className="line-clamp-2 mt-3 font-display text-[clamp(21px,1.9vw,26px)] leading-[1.28] font-medium text-ink">
                     {lead ?? option.name}
                   </h3>
                   {rest ? (
-                    <p className="mt-3 font-sans text-[clamp(15px,1.02vw,17px)] leading-[1.65] text-body">
+                    <p className="line-clamp-3 mt-3 font-sans text-[clamp(15px,1.02vw,17px)] leading-[1.65] text-body">
                       {rest}
                     </p>
                   ) : null}

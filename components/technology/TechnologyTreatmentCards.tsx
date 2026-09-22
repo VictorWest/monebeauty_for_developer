@@ -126,11 +126,11 @@ export function TechnologyTreatmentCards({
                     )}
                     {item.priceLabel ? <span>{item.priceLabel}</span> : null}
                   </div>
-                  <h3 className="mt-3 font-display text-[clamp(21px,1.9vw,26px)] leading-[1.25] font-medium text-ink">
+                  <h3 className="line-clamp-2 mt-3 font-display text-[clamp(21px,1.9vw,26px)] leading-[1.25] font-medium text-ink">
                     {item.name}
                   </h3>
                   {item.summary ? (
-                    <p className="mt-3 font-sans text-[clamp(15px,1.02vw,17px)] leading-[1.65] text-body">
+                    <p className="line-clamp-3 mt-3 font-sans text-[clamp(15px,1.02vw,17px)] leading-[1.65] text-body">
                       {item.summary}
                     </p>
                   ) : null}

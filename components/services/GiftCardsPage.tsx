@@ -119,14 +119,14 @@ export async function GiftCardsPage({
                 key={card.name + (card.price ?? "")}
                 className="flex h-full w-full flex-col rounded-(--radius) border border-line-card bg-card p-[clamp(20px,3vw,28px)] shadow-(--shadow-card-soft) sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)]"
               >
-                <h3 className="font-display text-[clamp(23px,2.4vw,28px)] leading-[1.15] font-medium text-ink">
+                <h3 className="line-clamp-2 font-display text-[clamp(23px,2.4vw,28px)] leading-[1.15] font-medium text-ink">
                   {card.name}
                 </h3>
                 {card.body.length ? (
                   <div className="mt-3 flex-1">
                     <Markdown
                       variant="treatment-summary"
-                      className="[&_p]:text-[15px] [&_p]:leading-[1.65] [&_p]:text-body"
+                      className="line-clamp-3 [&_p]:text-[15px] [&_p]:leading-[1.65] [&_p]:text-body"
                     >
                       {card.body.join("\n\n")}
                     </Markdown>

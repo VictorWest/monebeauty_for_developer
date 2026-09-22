@@ -118,13 +118,13 @@ export function ServiceCourseCards({
                               : "sm:w-[calc(50%-8px)] xl:w-[calc(33.333%-11px)]",
                           )}
                         >
-                          <h4 className="font-display text-[clamp(25px,3vw,32px)] leading-[1.08] font-medium text-ink">
+                          <h4 className="line-clamp-2 font-display text-[clamp(25px,3vw,32px)] leading-[1.08] font-medium text-ink">
                             {option.name}
                           </h4>
                           {option.summary ? (
                             <Markdown
                               variant="treatment-summary"
-                              className="mt-4"
+                              className="mt-4 line-clamp-3"
                             >
                               {option.summary}
                             </Markdown>
