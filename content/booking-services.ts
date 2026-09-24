@@ -25,13 +25,22 @@ export interface BookingService {
   bookable: boolean;
 }
 
+// Image paths below were re-audited against client feedback that photos
+// don't always match the selected service — this registry is a separate,
+// hand-authored list (not read from the DB `Service` table), so it was
+// invisible to every earlier CMS-driven photo replacement pass and still had
+// several stale/wrong images: a flat-lay product photo reused for both
+// Facial and Packages, a real archival clinic photo (old white coat, no navy
+// uniform) misused for Consultation, and a body card that actually showed
+// laser equipment. Repointed to the on-brand assets already verified
+// elsewhere on the site.
 export const BOOKING_SERVICES: BookingService[] = [
   {
     key: "facial",
     contentSlug: "services/face",
     category: "FACE",
     durationMin: 60,
-    image: "/media/home/facial.jpg",
+    image: "/media/facial/facial-skincare-application.jpg",
     bookable: true,
   },
   {
@@ -39,7 +48,7 @@ export const BOOKING_SERVICES: BookingService[] = [
     contentSlug: "services/body",
     category: "BODY",
     durationMin: 60,
-    image: "/media/clinic/body/body-treatment.png",
+    image: "/media/home/body-card.jpg",
     bookable: true,
   },
   {
@@ -47,7 +56,7 @@ export const BOOKING_SERVICES: BookingService[] = [
     contentSlug: "instrumental/endosphere",
     category: "DEVICE",
     durationMin: 45,
-    image: "/media/clinic/endospheres/endospheres-treatment.png",
+    image: "/media/home/endospheres-card.jpg",
     bookable: true,
   },
   {
@@ -55,7 +64,7 @@ export const BOOKING_SERVICES: BookingService[] = [
     contentSlug: "services/laser",
     category: "LASER",
     durationMin: 30,
-    image: "/media/clinic/laser/laser-upper-arm-hair-removal.jpeg",
+    image: "/media/home/laser-card.jpg",
     bookable: true,
   },
   {
@@ -63,7 +72,7 @@ export const BOOKING_SERVICES: BookingService[] = [
     contentSlug: "services/mikroneulanrf",
     category: "DEVICE",
     durationMin: 60,
-    image: "/media/files/land/280/21b80358547be97456baf00ac6a98ac9.jpeg",
+    image: "/media/rf/rf-hero-full-room.jpg",
     bookable: true,
   },
   {
@@ -71,7 +80,7 @@ export const BOOKING_SERVICES: BookingService[] = [
     contentSlug: "services/tricho",
     category: "HAIR",
     durationMin: 45,
-    image: "/media/files/land/303/8b2e9288e47ba7705d700a8d7edb596e.jpeg",
+    image: "/media/home/trichology-card.jpg",
     bookable: true,
   },
   {
@@ -87,7 +96,7 @@ export const BOOKING_SERVICES: BookingService[] = [
     contentSlug: "services/packages",
     category: "BODY",
     durationMin: 90,
-    image: "/media/home/packages.jpg",
+    image: "/media/home/packages-hero.jpg",
     bookable: true,
   },
   // SCOPE.md aesthetic-medicine services. They have no scraped copy, so their pages are
@@ -106,7 +115,7 @@ export const BOOKING_SERVICES: BookingService[] = [
     contentSlug: "services/consultation",
     category: "CONSULTATION",
     durationMin: 30,
-    image: "/media/clinic/medical-consultation-black-logo.png",
+    image: "/media/home/consultation-card.jpg",
     bookable: true,
   },
 ];
