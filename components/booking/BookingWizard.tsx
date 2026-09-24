@@ -656,6 +656,14 @@ export function BookingWizard({
     void loadAvailableDates(serviceKey, [option.key], "any");
   }
 
+  // Single-select services (mutually-exclusive tiers/options, so they never
+  // get the "+"-cart) still need a visible confirm step rather than jumping
+  // straight to Date on the first click — this only highlights the choice;
+  // the Continue button below the list is what actually calls pickOption.
+  function selectSingleOption(option: BookingServiceOption["options"][number]) {
+    setProcedure({ ...option, description: "" });
+  }
+
   function toggleCartOption(option: BookingServiceOption["options"][number]) {
     setCart((current) =>
       current.some((item) => item.key === option.key)
@@ -1267,14 +1275,15 @@ export function BookingWizard({
                   })
                 : selectedService.options.map((option) => {
                     // Highlights the option a "Book now" deep link already
-                    // pointed at, so the client can see what's pre-chosen
-                    // while still being free to click a different one.
+                    // pointed at, or one the client has just clicked — either
+                    // way it only marks the choice. The Continue bar below
+                    // the list is what actually advances to Date.
                     const preselected = procedure?.key === option.key;
                     return (
                       <button
                         key={option.key}
                         type="button"
-                        onClick={() => pickOption(selectedService.key, option)}
+                        onClick={() => selectSingleOption(option)}
                         aria-pressed={preselected}
                         className={cn(
                           "flex min-h-16 items-center justify-between gap-4 rounded-(--radius) border p-4 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
@@ -1330,6 +1339,24 @@ export function BookingWizard({
                   onBook={() => pickCart(selectedService.key)}
                   t={t}
                 />
+              ) : null}
+              {!selectedService.multiProcedureBooking && procedure ? (
+                <div className="sticky bottom-4 z-10 mt-2 flex flex-wrap items-center justify-between gap-3 rounded-(--radius) border border-line-card bg-card p-4 shadow-card">
+                  <div className="font-sans text-[14px] text-ink">
+                    <span className="font-medium">{procedure.title}</span>
+                    {procedure.durationLabel ? (
+                      <span className="text-muted"> · {procedure.durationLabel}</span>
+                    ) : null}
+                  </div>
+                  <ButtonAction
+                    type="button"
+                    size="sm"
+                    iconRight={ArrowRight}
+                    onClick={() => pickOption(selectedService.key, procedure)}
+                  >
+                    {t("singleSelect.continue")}
+                  </ButtonAction>
+                </div>
               ) : null}
             </fieldset>
           ) : (

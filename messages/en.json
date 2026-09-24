@@ -476,6 +476,9 @@
       "selected": "Your selection",
       "remove": "Remove {title}"
     },
+    "singleSelect": {
+      "continue": "Continue"
+    },
     "loadingSpecialists": "Loading specialists…",
     "noSpecialists": "No specialist is currently available online for this procedure.",
     "pickDate": "Choose a date",

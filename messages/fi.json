@@ -462,6 +462,9 @@
       "selected": "Valintasi",
       "remove": "Poista {title}"
     },
+    "singleSelect": {
+      "continue": "Jatka"
+    },
     "loadingSpecialists": "Ladataan asiantuntijoita…",
     "noSpecialists": "Tälle toimenpiteelle ei ole juuri nyt verkossa varattavaa asiantuntijaa.",
     "pickDate": "Valitse päivä",
