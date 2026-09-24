@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "body",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "brows",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "consultation",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "endospheres",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "endospheres-30",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "endospheres-45",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "endospheres-60",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "endospheres-75",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "endospheres-intro-75",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "facial",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "injectable",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "laser",
+    "multiProcedureBooking": true
+  },
+  {
+    "slug": "packages",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "rf",
+    "multiProcedureBooking": false
+  },
+  {
+    "slug": "trichology",
+    "multiProcedureBooking": false
+  }
+]

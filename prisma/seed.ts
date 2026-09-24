@@ -27,7 +27,15 @@ const SERVICES: {
   published?: boolean;
   multiProcedureBooking?: boolean;
 }[] = [
-  { slug: "facial", category: "FACE", bookable: true },
+  {
+    slug: "facial",
+    category: "FACE",
+    bookable: true,
+    // 22 distinct standalone treatments a client can genuinely combine in
+    // one visit (peel + biorevitalization, etc.) — same shape as laser's
+    // zones, so it gets the same "+"-cart flow.
+    multiProcedureBooking: true,
+  },
   { slug: "body", category: "BODY", bookable: true },
   {
     slug: "endospheres",
@@ -102,8 +110,22 @@ const SERVICES: {
     // one visit) — the first, and so far only, service enabled for it.
     multiProcedureBooking: true,
   },
-  { slug: "rf", category: "DEVICE", bookable: true },
-  { slug: "trichology", category: "HAIR", bookable: true },
+  {
+    slug: "rf",
+    category: "DEVICE",
+    bookable: true,
+    // Body-zone treatments, same shape as laser's zones — combinable in
+    // one visit, so it gets the same "+"-cart flow.
+    multiProcedureBooking: true,
+  },
+  {
+    slug: "trichology",
+    category: "HAIR",
+    bookable: true,
+    // 5 distinct scalp treatments a client can combine in one visit —
+    // same "+"-cart flow as laser/facial/rf.
+    multiProcedureBooking: true,
+  },
   { slug: "brows", category: "FACE", bookable: true },
   { slug: "packages", category: "BODY", bookable: true },
   { slug: "injectable", category: "INJECTABLE", bookable: true },
