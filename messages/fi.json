@@ -458,7 +458,9 @@
     "anySpecialist": "Kuka tahansa asiantuntija",
     "cart": {
       "count": "{count, plural, one {# palvelu valittu} other {# palvelua valittu}}",
-      "book": "Varaa valitut palvelut ({count})"
+      "book": "Varaa valitut palvelut ({count})",
+      "selected": "Valintasi",
+      "remove": "Poista {title}"
     },
     "loadingSpecialists": "Ladataan asiantuntijoita…",
     "noSpecialists": "Tälle toimenpiteelle ei ole juuri nyt verkossa varattavaa asiantuntijaa.",

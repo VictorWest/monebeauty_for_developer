@@ -472,7 +472,9 @@
     "anySpecialist": "Any specialist",
     "cart": {
       "count": "{count, plural, one {# service selected} other {# services selected}}",
-      "book": "Book selected services ({count})"
+      "book": "Book selected services ({count})",
+      "selected": "Your selection",
+      "remove": "Remove {title}"
     },
     "loadingSpecialists": "Loading specialists…",
     "noSpecialists": "No specialist is currently available online for this procedure.",

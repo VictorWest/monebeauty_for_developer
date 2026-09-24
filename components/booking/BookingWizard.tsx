@@ -9,6 +9,7 @@ import {
   CheckCircle,
   Phone,
   EnvelopeSimple,
+  X,
 } from "@phosphor-icons/react";
 import { ButtonAction } from "@/components/ui/Button";
 import { BookingCalendar } from "@/components/booking/BookingCalendar";
@@ -1186,6 +1187,31 @@ export function BookingWizard({
               <legend className="mb-3 font-display text-[26px] font-medium text-ink">
                 {selectedService.name}
               </legend>
+              {selectedService.multiProcedureBooking && cart.length > 0 ? (
+                <div className="mb-3 rounded-(--radius) border border-line-card bg-alt p-3.5">
+                  <p className="mb-2 font-sans text-meta font-medium tracking-[.1em] text-muted uppercase">
+                    {t("cart.selected")}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {cart.map((item) => (
+                      <span
+                        key={item.key}
+                        className="inline-flex items-center gap-1.5 rounded-full border border-accent bg-card py-1 pr-1.5 pl-3 font-sans text-[13px] text-ink"
+                      >
+                        {item.title}
+                        <button
+                          type="button"
+                          onClick={() => toggleCartOption(item)}
+                          aria-label={t("cart.remove", { title: item.title })}
+                          className="grid h-5 w-5 shrink-0 place-items-center rounded-full text-muted hover:bg-line-hair hover:text-ink"
+                        >
+                          <X size={12} weight="bold" />
+                        </button>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
               {selectedService.multiProcedureBooking
                 ? selectedService.options.map((option) => {
                     const selected = cart.some(
