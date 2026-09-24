@@ -22,26 +22,31 @@ import { ProductTabs } from "./ProductTabs";
 import { ServicePicker } from "./ServicePicker";
 import { PUBLIC_PATHS, TECHNOLOGY_PUBLIC_PATHS } from "@/lib/public-routes";
 
+// These were still pointing at the original pre-refresh stock photos (no
+// navy-blue uniforms, generic clinical stock look) — this array is hardcoded
+// here rather than CMS-driven, so it was invisible to every earlier
+// project-wide photo replacement pass. Repointed to the same on-brand assets
+// already verified elsewhere on the site.
 const technologyRows = [
   [
     "instrumental/endosphere",
     TECHNOLOGY_PUBLIC_PATHS.endospheres,
-    "/media/clinic/endospheres/endospheres-treatment.png",
+    "/media/home/endospheres-card.jpg",
   ],
   [
     "instrumental/laser",
     TECHNOLOGY_PUBLIC_PATHS.laser,
-    "/media/clinic/laser/laser-forearm-hair-removal.jpeg",
+    "/media/home/laser-card.jpg",
   ],
   [
     "instrumental/mikroneulanrf",
     TECHNOLOGY_PUBLIC_PATHS.rf,
-    "/media/files/land/280/21b80358547be97456baf00ac6a98ac9.jpeg",
+    "/media/rf/rf-hero-full-room.jpg",
   ],
   [
     "trichology",
     TECHNOLOGY_PUBLIC_PATHS.trichology,
-    "/media/files/land/303/8b2e9288e47ba7705d700a8d7edb596e.jpeg",
+    "/media/home/trichology-card.jpg",
   ],
 ] as const;
 
