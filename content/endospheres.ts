@@ -330,27 +330,19 @@ export const ENDOSPHERES_EDITORIAL = {
 
 export const ENDOSPHERES_EDITORIAL_IMAGES = [
   {
-    src: "/media/clinic/endospheres/endospheres-treatment.png",
+    src: "/media/clinic/endospheres/endospheres-device-real.jpg",
     alt: {
-      en: "Endospheres treatment at Mone Beauty Clinic",
-      fi: "Endospheres-hoito Mone Beauty Clinicillä",
-      ru: "Процедура Endospheres в Mone Beauty Clinic",
+      en: "Endospheres device at Mone Beauty Clinic",
+      fi: "Endospheres-laite Mone Beauty Clinicillä",
+      ru: "Аппарат Endospheres в Mone Beauty Clinic",
     },
   },
   {
-    src: "/media/files/land/104/8c6f2e75d8051e304bca2fd6f22fa512.jpg",
+    src: "/media/endospheres/hero.jpg",
     alt: {
       en: "Endospheres treatment handpiece in use",
       fi: "Endospheres-hoitokäsikappale käytössä",
       ru: "Манипула Endospheres во время процедуры",
-    },
-  },
-  {
-    src: "/media/files/land/99/e0e1d71833938c1a93b8b48246cfda7e.jpg",
-    alt: {
-      en: "Endospheres silicone sphere handpiece",
-      fi: "Endospheres-käsikappaleen silikonipallot",
-      ru: "Силиконовые сферы манипулы Endospheres",
     },
   },
 ] as const;
