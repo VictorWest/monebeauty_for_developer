@@ -11,6 +11,11 @@ const prisma = new PrismaClient();
 const MALE_IMAGES: Record<string, string> = {
   facial: "/media/home/treatment-areas/men.jpg",
   laser: "/media/clinic/laser/laser-men-back-hair-removal.jpg",
+  body: "/media/men/body.jpg",
+  endospheres: "/media/men/endospheres.jpg",
+  rf: "/media/men/rf.jpg",
+  trichology: "/media/men/trichology.jpg",
+  brows: "/media/men/brows.jpg",
 };
 
 async function main() {
