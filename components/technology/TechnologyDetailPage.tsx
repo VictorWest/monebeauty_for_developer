@@ -124,6 +124,11 @@ export async function TechnologyDetailPage({
     ? BOOKING_ANCHOR.endospheres
     : BOOKING_ANCHOR.treatments;
   const showBookingCta = isEditorial && bookable && Boolean(entryOption);
+  // The client wants visitors to read about the laser device and procedure
+  // before seeing any invitation to book — the immediate hero CTA (and the
+  // treatment-cards grid, which is itself a "book this" invitation) both
+  // moved below the informational editorial content for laser only.
+  const showHeroBookingCta = showBookingCta && !isLaser;
 
   return (
     <article className="bg-page">
@@ -185,7 +190,7 @@ export async function TechnologyDetailPage({
             >
               {heroLead}
             </p>
-            {showBookingCta ? (
+            {showHeroBookingCta ? (
               <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-4">
                 <a
                   href={`#${bookingAnchor}`}
@@ -223,15 +228,52 @@ export async function TechnologyDetailPage({
           locale={locale}
         />
       ) : null}
-      {showTreatmentCards && technology.relatedService ? (
-        <TechnologyTreatmentCards
-          serviceKey={technology.relatedService.slug}
-          treatments={treatments}
-          locale={locale}
-          title={isLaser ? laserTreatmentCardsTitle[locale] : undefined}
-          centerTitle={isLaser}
-        />
-      ) : null}
+      {(() => {
+        const treatmentCardsSection =
+          showTreatmentCards && technology.relatedService ? (
+            <TechnologyTreatmentCards
+              serviceKey={technology.relatedService.slug}
+              treatments={treatments}
+              locale={locale}
+              title={isLaser ? laserTreatmentCardsTitle[locale] : undefined}
+              centerTitle={isLaser}
+            />
+          ) : null;
+        const editorialSection = isEditorial ? (
+          <TechnologyEditorial
+            body={technology.content.body}
+            slug={technology.slug}
+            locale={locale}
+            serviceKey={technology.relatedService?.slug}
+            closingCtaLabel={bookable ? endospheresHeroCta[locale] : undefined}
+          />
+        ) : (
+          <section className="py-[clamp(40px,6vw,76px)]">
+            <Container>
+              <div className="mx-auto max-w-[860px]">
+                <Markdown variant="technology">
+                  {technology.content.body}
+                </Markdown>
+              </div>
+            </Container>
+          </section>
+        );
+        // Laser reads device/procedure information first; the treatment
+        // cards (each with their own "book" button) come after, as the
+        // invitation to book. Every other technology page keeps its
+        // original order — this wasn't asked for elsewhere.
+        return isLaser ? (
+          <>
+            {editorialSection}
+            {treatmentCardsSection}
+          </>
+        ) : (
+          <>
+            {treatmentCardsSection}
+            {editorialSection}
+          </>
+        );
+      })()}
       {showBookingCta && technology.relatedService ? (
         <TechnologyStickyBook
           label={endospheresHeroCta[locale]}
@@ -242,25 +284,6 @@ export async function TechnologyDetailPage({
           anchorId={bookingAnchor}
         />
       ) : null}
-      {isEditorial ? (
-        <TechnologyEditorial
-          body={technology.content.body}
-          slug={technology.slug}
-          locale={locale}
-          serviceKey={technology.relatedService?.slug}
-          closingCtaLabel={bookable ? endospheresHeroCta[locale] : undefined}
-        />
-      ) : (
-        <section className="py-[clamp(40px,6vw,76px)]">
-          <Container>
-            <div className="mx-auto max-w-[860px]">
-              <Markdown variant="technology">
-                {technology.content.body}
-              </Markdown>
-            </div>
-          </Container>
-        </section>
-      )}
       {/* Technologies outside the editorial grammar keep the plain picker. */}
       {!isEditorial &&
       !isEndospheres &&
