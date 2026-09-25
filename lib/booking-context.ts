@@ -16,12 +16,14 @@ export type BookingOptionSummary = {
   price: string;
   durationMin: number;
   offerRequiresAccount: boolean;
+  targetGender: ServiceGender;
 };
 
 export type BookingServiceOption = {
   key: string;
   name: string;
   image: string | null;
+  maleImage: string | null;
   imageAlt: string;
   imageFocalX: number;
   imageFocalY: number;
@@ -91,6 +93,7 @@ export async function getBookingServiceOptions(
         key: service.slug,
         name: content.h1,
         image: service.images[0] ?? null,
+        maleImage: service.maleImage ?? null,
         imageAlt: content.imageAlt || content.h1,
         imageFocalX: service.imageFocalX,
         imageFocalY: service.imageFocalY,
@@ -169,6 +172,7 @@ export async function getBookingContext(
           price: selectedContent.priceLabel ?? "",
           durationMin: selected.bookingDurationMin,
           offerRequiresAccount: selected.offerRequiresAccount,
+          targetGender: selected.targetGender,
         }
       : null;
   return {
@@ -176,6 +180,7 @@ export async function getBookingContext(
       key: service.slug,
       name: content.h1,
       image: service.images[0] ?? null,
+      maleImage: service.maleImage ?? null,
       imageAlt: content.imageAlt || content.h1,
       imageFocalX: service.imageFocalX,
       imageFocalY: service.imageFocalY,
@@ -199,6 +204,7 @@ function localizedOptions(
     type: ServiceOptionType;
     bookingDurationMin: number | null;
     offerRequiresAccount: boolean;
+    targetGender: ServiceGender;
     contents: Array<{
       group: string | null;
       name: string;
@@ -220,6 +226,7 @@ function localizedOptions(
             price: content.priceLabel ?? "",
             durationMin: option.bookingDurationMin,
             offerRequiresAccount: option.offerRequiresAccount,
+            targetGender: option.targetGender,
           },
         ]
       : [];

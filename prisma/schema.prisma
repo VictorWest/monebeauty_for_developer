@@ -77,6 +77,11 @@ model Service {
   // 6-pack vs. 12-pack options) must never be combinable this way.
   multiProcedureBooking Boolean                         @default(false)
   images                String[]                        @default([])
+  // Optional override shown instead of images[0] when the public wizard's
+  // gender step is set to MEN (e.g. laser's shared card would otherwise
+  // always show the women's treatment photo). Null everywhere except
+  // services where that mismatch was reported.
+  maleImage             String?
   imageFocalX           Int                             @default(50)
   imageFocalY           Int                             @default(50)
   order                 Int                             @default(0)
@@ -162,6 +167,11 @@ model ServiceOption {
   image                String?
   imageFocalX          Int                                      @default(50)
   imageFocalY          Int                                      @default(50)
+  // Lets one service (e.g. laser's shared zone list) mix options meant for
+  // different audiences — a "Male Chest" option next to a "Chest" one meant
+  // for women — without splitting them into separate services. BOTH by
+  // default: most options apply regardless of who's booking.
+  targetGender         ServiceGender                            @default(BOTH)
   type                 ServiceOptionType                        @default(APPOINTMENT)
   bookable             Boolean                                  @default(true)
   offerRequiresAccount Boolean                                  @default(false)

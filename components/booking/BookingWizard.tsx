@@ -1091,6 +1091,14 @@ export function BookingWizard({
     (initialContext?.service.key === service
       ? initialContext.service
       : undefined);
+  // Some services (laser) mix options meant for different audiences in one
+  // list (e.g. "Chest" for women alongside "Male Chest") — hide whichever
+  // don't match the gender step so the two flows never cross.
+  const visibleOptions = gender
+    ? (selectedService?.options.filter(
+        (item) => item.targetGender === "BOTH" || item.targetGender === gender,
+      ) ?? [])
+    : (selectedService?.options ?? []);
   const offerAccountGate =
     Boolean(
       selectedService?.offerRequiresAccount ||
@@ -1190,7 +1198,7 @@ export function BookingWizard({
 
       {step === 1 && (
         <div className="mt-[clamp(20px,3vw,32px)]">
-          {selectedService && selectedService.options.length > 1 ? (
+          {selectedService && visibleOptions.length > 1 ? (
             <fieldset className="grid gap-3 pb-20">
               <legend className="mb-3 font-display text-[26px] font-medium text-ink">
                 {selectedService.name}
@@ -1221,7 +1229,7 @@ export function BookingWizard({
                 </div>
               ) : null}
               {selectedService.multiProcedureBooking
-                ? selectedService.options.map((option) => {
+                ? visibleOptions.map((option) => {
                     const selected = cart.some(
                       (item) => item.key === option.key,
                     );
@@ -1273,7 +1281,7 @@ export function BookingWizard({
                       </button>
                     );
                   })
-                : selectedService.options.map((option) => {
+                : visibleOptions.map((option) => {
                     // Highlights the option a "Book now" deep link already
                     // pointed at, or one the client has just clicked — either
                     // way it only marks the choice. The Continue bar below
@@ -1361,17 +1369,22 @@ export function BookingWizard({
             </fieldset>
           ) : (
             <div className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3.5">
-              {visibleServices.map((s) => (
+              {visibleServices.map((s) => {
+                // Falls back to the default photo when a service has no
+                // dedicated men's shot yet — better than showing nothing.
+                const cardImage =
+                  (gender === "MEN" ? s.maleImage : null) ?? s.image;
+                return (
                 <button
                   key={s.key}
                   type="button"
                   onClick={() => pickService(s.key)}
                   className="group flex min-h-11 flex-col overflow-hidden rounded-(--radius) border border-line-card bg-card text-left transition-all hover:-translate-y-0.75 hover:border-line-card-hover hover:shadow-card"
                 >
-                  {s.image && (
+                  {cardImage && (
                     <span className="relative block h-32 w-full overflow-hidden">
                       <Image
-                        src={s.image}
+                        src={cardImage}
                         alt={s.imageAlt}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
@@ -1391,7 +1404,8 @@ export function BookingWizard({
                     />
                   </span>
                 </button>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
