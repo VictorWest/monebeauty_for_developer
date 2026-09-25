@@ -1,11 +1,11 @@
 [
   {
     "slug": "body",
-    "maleImage": null
+    "maleImage": "/media/men/body.jpg"
   },
   {
     "slug": "brows",
-    "maleImage": null
+    "maleImage": "/media/men/brows.jpg"
   },
   {
     "slug": "consultation",
@@ -13,7 +13,7 @@
   },
   {
     "slug": "endospheres",
-    "maleImage": null
+    "maleImage": "/media/men/endospheres.jpg"
   },
   {
     "slug": "endospheres-30",
@@ -53,10 +53,10 @@
   },
   {
     "slug": "rf",
-    "maleImage": null
+    "maleImage": "/media/men/rf.jpg"
   },
   {
     "slug": "trichology",
-    "maleImage": null
+    "maleImage": "/media/men/trichology.jpg"
   }
 ]

@@ -16,6 +16,9 @@ const MALE_IMAGES: Record<string, string> = {
   rf: "/media/men/rf.jpg",
   trichology: "/media/men/trichology.jpg",
   brows: "/media/men/brows.jpg",
+  packages: "/media/men/packages.jpg",
+  injectable: "/media/men/injectable.jpg",
+  consultation: "/media/men/consultation.jpg",
 };
 
 async function main() {
