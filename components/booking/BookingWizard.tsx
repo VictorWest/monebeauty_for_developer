@@ -841,6 +841,7 @@ export function BookingWizard({
                   durationLabel: procedure?.durationLabel ?? null,
                   group: procedure?.group ?? null,
                   offerRequiresAccount: procedure?.offerRequiresAccount ?? false,
+                  targetGender: procedure?.targetGender ?? "BOTH",
                   description: procedure?.description ?? "",
                 }
               : null,
