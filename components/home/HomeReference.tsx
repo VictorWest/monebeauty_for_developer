@@ -466,7 +466,7 @@ export function HomeReference({
                     </h3>
                     <p>{t("areas.items.men.body")}</p>
                     <Link
-                      href={PUBLIC_PATHS.services}
+                      href={PUBLIC_PATHS.servicesForMen}
                       className="hr-area-more card-stretch"
                     >
                       {t("common.readMore")}

@@ -2,6 +2,7 @@ export const PUBLIC_PATHS = {
   home: "/",
   clinic: "/klinikka",
   services: "/palvelut",
+  servicesForMen: "/palvelut/miehille",
   technologies: "/laitehoidot",
   trichology: "/trikologia",
   arosha: "/arosha",
