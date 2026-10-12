@@ -400,7 +400,6 @@ export function SharedCalendar({
     durationMin?: number;
   } | null>(null);
   const [zoom, setZoom] = useState<Zoom>("default");
-  const [pickerDates, setPickerDates] = useState<string[] | undefined>();
   const [editing, setEditing] = useState<{
     appointment: Appointment;
     start: string;
@@ -619,31 +618,6 @@ export function SharedCalendar({
 
   const visiblePractitioners =
     data?.practitioners.filter((item) => selected.includes(item.id)) ?? [];
-
-  const loadPickerDates = useCallback(
-    async (from: string, to: string) => {
-      const ids = selected.length
-        ? selected
-        : (data?.practitioners.map((item) => item.id) ?? []);
-      if (!ids.length) return;
-      try {
-        const params = new URLSearchParams({
-          from,
-          to,
-          practitionerIds: ids.join(","),
-        });
-        const response = await fetch(`/api/calendar/working-dates?${params}`);
-        if (!response.ok) throw new Error("working_dates");
-        const payload = (await response.json()) as { dates?: string[] };
-        setPickerDates(
-          Array.isArray(payload.dates) ? payload.dates : undefined,
-        );
-      } catch {
-        setPickerDates(undefined);
-      }
-    },
-    [data?.practitioners, selected],
-  );
 
   function navigate(direction: -1 | 1) {
     setDate(
@@ -992,8 +966,7 @@ export function SharedCalendar({
             onValueChange={setDate}
             ariaLabel={t.today}
             className="w-[170px]"
-            availableDates={pickerDates}
-            onMonthChange={loadPickerDates}
+            disableClosedDays={false}
           />
           <p className="min-w-[180px] text-center font-sans text-[13px] font-medium text-ink md:flex-1">
             {view === "day"
